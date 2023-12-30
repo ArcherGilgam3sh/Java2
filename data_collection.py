@@ -13,6 +13,7 @@ data_list = []
 # 发起 API 请求以获取数据
 api_url = "https://api.stackexchange.com/2.2/questions"
 params = {
+    "tagged": "java",
     "site": "stackoverflow",
     "key": api_key,
     "pagesize": 100,  # 每页的问题数量
@@ -40,7 +41,11 @@ while total_collected < 600:
                 "Question ID": question["question_id"],
                 "Title": question["title"],
                 "Creation Date": question["creation_date"],
-                "Answer Count": question["answer_count"]
+                "Answer Count": question["answer_count"],
+                "View Count": question["view_count"],
+                "Score": question["score"],
+                # "Closed": question["closed_date"],  # 问题被关闭的状态
+                # "Accepted Answer": question["accepted_answer_id"]  # 问题是否已接受答案
             })
         total_collected += 1
     
@@ -64,11 +69,11 @@ with open("java_questions.csv", "w", newline="", encoding="utf-8") as csv_file:
     csv_writer = csv.writer(csv_file)
     
     # 写入 CSV 头部
-    csv_writer.writerow(["Tag", "Question ID", "Title", "Creation Date", "Answer Count"])
+    csv_writer.writerow(["Tag", "Question ID", "Title", "Creation Date", "Answer Count", "View Count", "Score",])
     
     # 写入每个问题的数据
     for question in data_list:
-        csv_writer.writerow([question["Tag"], question["Question ID"], question["Title"], question["Creation Date"], question["Answer Count"]])
+        csv_writer.writerow([question["Tag"], question["Question ID"], question["Title"], question["Creation Date"], question["Answer Count"], question["View Count"], question["Score"]])
 
 print("Data collection completed.")
 
