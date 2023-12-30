@@ -1,0 +1,5618 @@
+[
+    {
+        "Tag": "docker",
+        "Question ID": 77735728,
+        "Title": "Flask + Docker =&gt; No connection",
+        "Creation Date": 1703934844,
+        "Answer Count": 2,
+        "View Count": 31,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 56727980,
+        "Title": "How to get list of local videos and display them in grid format in React Native?",
+        "Creation Date": 1561326517,
+        "Answer Count": 2,
+        "View Count": 710,
+        "Score": 2
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77735903,
+        "Title": "OAuth 2.0 Access Token Response: 401 with spring boot 3 and azure ad",
+        "Creation Date": 1703939358,
+        "Answer Count": 0,
+        "View Count": 5,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77735903,
+        "Title": "OAuth 2.0 Access Token Response: 401 with spring boot 3 and azure ad",
+        "Creation Date": 1703939358,
+        "Answer Count": 0,
+        "View Count": 5,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 59078288,
+        "Title": "Using ANTLR with java and maven to parse expressions and convert them to SpEL",
+        "Creation Date": 1574888083,
+        "Answer Count": 1,
+        "View Count": 218,
+        "Score": 2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77735705,
+        "Title": "Unable to connect to Docker Host network",
+        "Creation Date": 1703934572,
+        "Answer Count": 0,
+        "View Count": 21,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735379,
+        "Title": "Firebase vulnerability in Realtime Database with access token from files",
+        "Creation Date": 1703926719,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77735841,
+        "Title": "Connect multiple macvlan networks to one container",
+        "Creation Date": 1703937495,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733588,
+        "Title": "Qt 6.6.1 Android Build Error: use of undeclared identifier &#39;GL_DRAW_FRAMEBUFFER&#39;",
+        "Creation Date": 1703876313,
+        "Answer Count": 0,
+        "View Count": 45,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730518,
+        "Title": "App already has local storage (sharedPrefrences) on fresh install flutter",
+        "Creation Date": 1703830702,
+        "Answer Count": 0,
+        "View Count": 45,
+        "Score": 2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77735290,
+        "Title": "Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (Java)",
+        "Creation Date": 1703924412,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 22631011,
+        "Title": "download failed because resources could not be found in some of android devices",
+        "Creation Date": 1395741568,
+        "Answer Count": 1,
+        "View Count": 10144,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 49628505,
+        "Title": "postgres container doesn&#39;t take password from environment variable",
+        "Creation Date": 1522753539,
+        "Answer Count": 1,
+        "View Count": 1373,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77620023,
+        "Title": "How can a Spring Cloud Gateway expose its (dynamic) routes through a Swagger UI?",
+        "Creation Date": 1701952300,
+        "Answer Count": 1,
+        "View Count": 60,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77735648,
+        "Title": "Sending data over a socket in Java at the zeroth nanosecond of a specific hour",
+        "Creation Date": 1703933298,
+        "Answer Count": 1,
+        "View Count": 40,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77714573,
+        "Title": "Flutter, How do I default an RxBool variable to a value from Firebase",
+        "Creation Date": 1703527319,
+        "Answer Count": 0,
+        "View Count": 35,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 50133244,
+        "Title": "File Upload by docker container",
+        "Creation Date": 1525259454,
+        "Answer Count": 1,
+        "View Count": 16290,
+        "Score": 4
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 50133244,
+        "Title": "File Upload by docker container",
+        "Creation Date": 1525259454,
+        "Answer Count": 1,
+        "View Count": 16290,
+        "Score": 4
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735245,
+        "Title": "Android SDK 34 AppCompatActivity.requestPermissions does not display permission dialog, but does with Android SDK 29",
+        "Creation Date": 1703923414,
+        "Answer Count": 2,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735775,
+        "Title": "Flutter Autofill not working with Android biometric verification",
+        "Creation Date": 1703935956,
+        "Answer Count": 0,
+        "View Count": 4,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77155917,
+        "Title": "Update a pinned device owner managed android app silently (in kiosk mode)",
+        "Creation Date": 1695370702,
+        "Answer Count": 1,
+        "View Count": 86,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 75820814,
+        "Title": "Is it possible to run a local Snowflake instance using Docker?",
+        "Creation Date": 1679561057,
+        "Answer Count": 1,
+        "View Count": 2923,
+        "Score": 6
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 76988533,
+        "Title": "java.lang.NoClassDefFoundError: io/mockk/proxy/jvm/advice/jvm/JvmMockKProxyInterceptor ERROR while mocking org.w3c.dom.Node using mockk",
+        "Creation Date": 1693162969,
+        "Answer Count": 1,
+        "View Count": 127,
+        "Score": 1
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 76988533,
+        "Title": "java.lang.NoClassDefFoundError: io/mockk/proxy/jvm/advice/jvm/JvmMockKProxyInterceptor ERROR while mocking org.w3c.dom.Node using mockk",
+        "Creation Date": 1693162969,
+        "Answer Count": 1,
+        "View Count": 127,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735223,
+        "Title": "Push Notification doesn&#39;t appear like Heads-up in Flutter",
+        "Creation Date": 1703922688,
+        "Answer Count": 2,
+        "View Count": 21,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 66146088,
+        "Title": "Docker gets error &quot;failed to compute cache key: not found&quot; - runs fine in Visual Studio",
+        "Creation Date": 1612996365,
+        "Answer Count": 24,
+        "View Count": 385940,
+        "Score": 266
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77721173,
+        "Title": "Docker Angular+Nginx error code 403 or 500",
+        "Creation Date": 1703670547,
+        "Answer Count": 1,
+        "View Count": 33,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77735703,
+        "Title": "Could not write XML test results when running parallel tests for different browsers in different workspaces",
+        "Creation Date": 1703934553,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": -2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 76669481,
+        "Title": "Ionic 7 (Angular), Capacitor, Error saving image to Firebase Storage",
+        "Creation Date": 1689156832,
+        "Answer Count": 2,
+        "View Count": 106,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77511739,
+        "Title": "Suppressing Javadoc 21 DocLint warnings specifically for &quot;no main description&quot;",
+        "Creation Date": 1700414466,
+        "Answer Count": 1,
+        "View Count": 126,
+        "Score": 3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 54762296,
+        "Title": "How to implement Branch SDK in my Flutter app",
+        "Creation Date": 1550566792,
+        "Answer Count": 4,
+        "View Count": 3444,
+        "Score": 11
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70998910,
+        "Title": "Augmented reality app : convert a drawing into a animated 3D model",
+        "Creation Date": 1644071142,
+        "Answer Count": 0,
+        "View Count": 67,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 36143287,
+        "Title": "How to configure log4j in a Spring Mvc application configured with Java Annotations and using a log4j.properties file",
+        "Creation Date": 1458601531,
+        "Answer Count": 2,
+        "View Count": 11656,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733165,
+        "Title": "Any scrolling calendar that can start with the current date?",
+        "Creation Date": 1703869894,
+        "Answer Count": 0,
+        "View Count": 36,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735513,
+        "Title": "How can i add a delete button in this app?",
+        "Creation Date": 1703930221,
+        "Answer Count": 2,
+        "View Count": 35,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77648069,
+        "Title": "Swagger UI put my every endpoint in the &quot;default&quot; group. Why is it doing it?",
+        "Creation Date": 1702402856,
+        "Answer Count": 1,
+        "View Count": 31,
+        "Score": -2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 72485521,
+        "Title": "The provided definition does not specify a valid version field when render openapi",
+        "Creation Date": 1654237766,
+        "Answer Count": 2,
+        "View Count": 7962,
+        "Score": 5
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735621,
+        "Title": "Friends, I am making an Instagram clone and I am having problems following users, can you help me?",
+        "Creation Date": 1703932873,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77735621,
+        "Title": "Friends, I am making an Instagram clone and I am having problems following users, can you help me?",
+        "Creation Date": 1703932873,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77434647,
+        "Title": "My Cordova Splash Screen not working on Android",
+        "Creation Date": 1699311222,
+        "Answer Count": 1,
+        "View Count": 117,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77735585,
+        "Title": "Refreshing expired JWT token automatically in Spring",
+        "Creation Date": 1703931883,
+        "Answer Count": 1,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77735602,
+        "Title": "In jpa, in which table should the associated key be saved?",
+        "Creation Date": 1703932256,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77735602,
+        "Title": "In jpa, in which table should the associated key be saved?",
+        "Creation Date": 1703932256,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77735602,
+        "Title": "In jpa, in which table should the associated key be saved?",
+        "Creation Date": 1703932256,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735593,
+        "Title": "How to organize a peer group call?",
+        "Creation Date": 1703931993,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735584,
+        "Title": "Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++",
+        "Creation Date": 1703931878,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77720509,
+        "Title": "react-navigation optimizations in low-performance Android",
+        "Creation Date": 1703660895,
+        "Answer Count": 1,
+        "View Count": 34,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 72864680,
+        "Title": "Implement CollapsingToolbar using Jetpack compose",
+        "Creation Date": 1657001347,
+        "Answer Count": 1,
+        "View Count": 870,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735291,
+        "Title": "How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?",
+        "Creation Date": 1703924416,
+        "Answer Count": 1,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77735291,
+        "Title": "How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?",
+        "Creation Date": 1703924416,
+        "Answer Count": 1,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77735542,
+        "Title": "I want to connect to react login page when spring security is being added in the gradle project",
+        "Creation Date": 1703930953,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77721311,
+        "Title": "Unable to start existing react native project. Facing gradle issue",
+        "Creation Date": 1703672371,
+        "Answer Count": 1,
+        "View Count": 59,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77721311,
+        "Title": "Unable to start existing react native project. Facing gradle issue",
+        "Creation Date": 1703672371,
+        "Answer Count": 1,
+        "View Count": 59,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733253,
+        "Title": "Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",
+        "Creation Date": 1703871134,
+        "Answer Count": 0,
+        "View Count": 39,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70992083,
+        "Title": "Android Error: Cannot resolve symbol &#39;PackageList&#39;",
+        "Creation Date": 1644004023,
+        "Answer Count": 4,
+        "View Count": 11161,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735480,
+        "Title": "Capacitor startActivityForResult() trigger callnack function on second activity start",
+        "Creation Date": 1703929521,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77717771,
+        "Title": "How does Spring distinguish which controller method to execute?",
+        "Creation Date": 1703601539,
+        "Answer Count": 0,
+        "View Count": 48,
+        "Score": -4
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732069,
+        "Title": "How do we code/edit react native mobile apps on android studio. (Not talking about the emulator or env setup but writing code in Android studio)",
+        "Creation Date": 1703854029,
+        "Answer Count": 1,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77722354,
+        "Title": "&#39;Failed to determine a suitable driver class&#39; by running fat jar file",
+        "Creation Date": 1703686148,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77722354,
+        "Title": "&#39;Failed to determine a suitable driver class&#39; by running fat jar file",
+        "Creation Date": 1703686148,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735092,
+        "Title": "Issue on Android 13 : Android — Repeat notification daily on specific time",
+        "Creation Date": 1703919089,
+        "Answer Count": 1,
+        "View Count": 29,
+        "Score": 1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77735125,
+        "Title": "SpringBoot @ConfigurationProperties",
+        "Creation Date": 1703919796,
+        "Answer Count": 0,
+        "View Count": 38,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77735125,
+        "Title": "SpringBoot @ConfigurationProperties",
+        "Creation Date": 1703919796,
+        "Answer Count": 0,
+        "View Count": 38,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734852,
+        "Title": "How to fix &#39;package org.springframework.jdbc.core does not exist&#39;",
+        "Creation Date": 1703910155,
+        "Answer Count": 2,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732157,
+        "Title": "How to set a custom icon to an Android / IOS push notification in expo react native app?",
+        "Creation Date": 1703855564,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735382,
+        "Title": "Fragment is transparent and shows Activity below(changing to dark mode or light mode)",
+        "Creation Date": 1703926837,
+        "Answer Count": 1,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77735382,
+        "Title": "Fragment is transparent and shows Activity below(changing to dark mode or light mode)",
+        "Creation Date": 1703926837,
+        "Answer Count": 1,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77735065,
+        "Title": "Calling a sql function from java gives error",
+        "Creation Date": 1703918260,
+        "Answer Count": 0,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 26902555,
+        "Title": "How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT",
+        "Creation Date": 1415859570,
+        "Answer Count": 1,
+        "View Count": 14014,
+        "Score": 2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77685959,
+        "Title": "ERROR: for nginx: Bind for 0.0.0.0:443 failed: port is already allocated while running Coolify &amp; BTCPayServer",
+        "Creation Date": 1702996520,
+        "Answer Count": 1,
+        "View Count": 77,
+        "Score": 1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734617,
+        "Title": "Dockerizing Golang with Apache-Kafka",
+        "Creation Date": 1703900690,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": -1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77732459,
+        "Title": "Spring Boot 3.2 JDBC",
+        "Creation Date": 1703859876,
+        "Answer Count": 0,
+        "View Count": 34,
+        "Score": -3
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732459,
+        "Title": "Spring Boot 3.2 JDBC",
+        "Creation Date": 1703859876,
+        "Answer Count": 0,
+        "View Count": 34,
+        "Score": -3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735288,
+        "Title": "How does &quot;Android CI&quot; GitHub Action work without setting up Android tools?",
+        "Creation Date": 1703924382,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77735323,
+        "Title": "Cannot connect to postgreSQL using Docker",
+        "Creation Date": 1703925421,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77735323,
+        "Title": "Cannot connect to postgreSQL using Docker",
+        "Creation Date": 1703925421,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 63426705,
+        "Title": "How to create HTTP server app in flutter?",
+        "Creation Date": 1597499062,
+        "Answer Count": 2,
+        "View Count": 10943,
+        "Score": 5
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733087,
+        "Title": "Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working",
+        "Creation Date": 1703868766,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77733087,
+        "Title": "Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working",
+        "Creation Date": 1703868766,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 75825235,
+        "Title": "Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE",
+        "Creation Date": 1679586789,
+        "Answer Count": 2,
+        "View Count": 4352,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 75825235,
+        "Title": "Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE",
+        "Creation Date": 1679586789,
+        "Answer Count": 2,
+        "View Count": 4352,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77715897,
+        "Title": "Implementing Complex Motion and Choreography in Android Animation",
+        "Creation Date": 1703571263,
+        "Answer Count": 0,
+        "View Count": 29,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77715897,
+        "Title": "Implementing Complex Motion and Choreography in Android Animation",
+        "Creation Date": 1703571263,
+        "Answer Count": 0,
+        "View Count": 29,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 76016637,
+        "Title": "java language options not show in android studio",
+        "Creation Date": 1681485598,
+        "Answer Count": 6,
+        "View Count": 12910,
+        "Score": 8
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77735237,
+        "Title": "Access TextField value from another composable function in by click FloatingActionButt",
+        "Creation Date": 1703923147,
+        "Answer Count": 0,
+        "View Count": 6,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77735237,
+        "Title": "Access TextField value from another composable function in by click FloatingActionButt",
+        "Creation Date": 1703923147,
+        "Answer Count": 0,
+        "View Count": 6,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734973,
+        "Title": "SpringBoot API Authentication with AuthenticationManager",
+        "Creation Date": 1703914710,
+        "Answer Count": 1,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77735216,
+        "Title": "Consul all service checks failing with service with server ssl enabled true",
+        "Creation Date": 1703922399,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77735216,
+        "Title": "Consul all service checks failing with service with server ssl enabled true",
+        "Creation Date": 1703922399,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77734574,
+        "Title": "How can JavaDocs be configured to be generated in a specified project root directory?",
+        "Creation Date": 1703899112,
+        "Answer Count": 1,
+        "View Count": 23,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 57937350,
+        "Title": "Cannot save snapshot AVD",
+        "Creation Date": 1568478506,
+        "Answer Count": 1,
+        "View Count": 1027,
+        "Score": 9
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77732714,
+        "Title": "AppEngine Flex instance using custom python and virtualenv failed to deploy",
+        "Creation Date": 1703863409,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 66328022,
+        "Title": "Captcha Implementation in Angular and Spring Based web application",
+        "Creation Date": 1614061053,
+        "Answer Count": 2,
+        "View Count": 2333,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77735107,
+        "Title": "best practice for implementing pagination in spring reactive data mongodb",
+        "Creation Date": 1703919457,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77735107,
+        "Title": "best practice for implementing pagination in spring reactive data mongodb",
+        "Creation Date": 1703919457,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 75521775,
+        "Title": "Buildx Docker Image Claims to be a Manifest List",
+        "Creation Date": 1676989209,
+        "Answer Count": 2,
+        "View Count": 1373,
+        "Score": 3
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733266,
+        "Title": "GitHub Action failing on mvn clean install",
+        "Creation Date": 1703871324,
+        "Answer Count": 0,
+        "View Count": 31,
+        "Score": -1
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77733266,
+        "Title": "GitHub Action failing on mvn clean install",
+        "Creation Date": 1703871324,
+        "Answer Count": 0,
+        "View Count": 31,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77721006,
+        "Title": "Usage of remembering a lambda function in rememberUpdatedState()",
+        "Creation Date": 1703668499,
+        "Answer Count": 1,
+        "View Count": 39,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77721006,
+        "Title": "Usage of remembering a lambda function in rememberUpdatedState()",
+        "Creation Date": 1703668499,
+        "Answer Count": 1,
+        "View Count": 39,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731857,
+        "Title": "onstatus catches exception but mono error is ignored and client gets http status code 200",
+        "Creation Date": 1703851159,
+        "Answer Count": 0,
+        "View Count": 21,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70604161,
+        "Title": "Failed to resolve: org.jitsi.react:jitsi-meet-sdk:3.+",
+        "Creation Date": 1641456604,
+        "Answer Count": 6,
+        "View Count": 3919,
+        "Score": 3
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 69402824,
+        "Title": "Java 17 with Maven Wrapper results in Unrecognized VM option &#39;MaxPermSize=512m&#39;",
+        "Creation Date": 1633076985,
+        "Answer Count": 3,
+        "View Count": 30477,
+        "Score": 18
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 69402824,
+        "Title": "Java 17 with Maven Wrapper results in Unrecognized VM option &#39;MaxPermSize=512m&#39;",
+        "Creation Date": 1633076985,
+        "Answer Count": 3,
+        "View Count": 30477,
+        "Score": 18
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734441,
+        "Title": "Querying audio files from external storage on Android in Kotlin not working",
+        "Creation Date": 1703895086,
+        "Answer Count": 1,
+        "View Count": 20,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77734441,
+        "Title": "Querying audio files from external storage on Android in Kotlin not working",
+        "Creation Date": 1703895086,
+        "Answer Count": 1,
+        "View Count": 20,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734056,
+        "Title": "raise the Android Files app in the Download folder and let the user manipulate files",
+        "Creation Date": 1703884764,
+        "Answer Count": 0,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77701903,
+        "Title": "Android Studio: The device may not have sufficient computing power for encoding display contents",
+        "Creation Date": 1703224292,
+        "Answer Count": 1,
+        "View Count": 32,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734927,
+        "Title": "Adding a page title and back button to fragments in Android Studio",
+        "Creation Date": 1703913085,
+        "Answer Count": 1,
+        "View Count": 29,
+        "Score": 1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734999,
+        "Title": "not able create recursine build in pnpm repo while building up docker image",
+        "Creation Date": 1703915747,
+        "Answer Count": 0,
+        "View Count": 6,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734982,
+        "Title": "Problem on Android Studio (Kotlin). RecyclerView in Fragment not showing anythig",
+        "Creation Date": 1703915082,
+        "Answer Count": 0,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734942,
+        "Title": "java.lang.ClassNotFoundException - Didn&#39;t find class &quot;dgnc&quot; on path: DexPathList[[zip file &quot;/system/framework/com.android.media.remotedisplay.jar&quot;",
+        "Creation Date": 1703913743,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77734935,
+        "Title": "Problems with Java/Kotlin Build Application using IDEA",
+        "Creation Date": 1703913488,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731499,
+        "Title": "Android build fails because of missing import",
+        "Creation Date": 1703846814,
+        "Answer Count": 1,
+        "View Count": 21,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 66722104,
+        "Title": "New Google Sign-In API - refresh token",
+        "Creation Date": 1616246558,
+        "Answer Count": 2,
+        "View Count": 1178,
+        "Score": 3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 34810794,
+        "Title": "Google sign in API token expiration",
+        "Creation Date": 1452859815,
+        "Answer Count": 2,
+        "View Count": 2600,
+        "Score": 4
+    },
+    {
+        "Tag": "android",
+        "Question ID": 63674765,
+        "Title": "How to get valid Google ID token after it expires in 1 hour",
+        "Creation Date": 1598891910,
+        "Answer Count": 2,
+        "View Count": 866,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 63674765,
+        "Title": "How to get valid Google ID token after it expires in 1 hour",
+        "Creation Date": 1598891910,
+        "Answer Count": 2,
+        "View Count": 866,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 17255565,
+        "Title": "Memory dump an app in android",
+        "Creation Date": 1371937065,
+        "Answer Count": 1,
+        "View Count": 10005,
+        "Score": 5
+    },
+    {
+        "Tag": "android",
+        "Question ID": 38737021,
+        "Title": "How to refresh ID token after it expires when integrating Google sign-in on Android?",
+        "Creation Date": 1470209102,
+        "Answer Count": 2,
+        "View Count": 6617,
+        "Score": 17
+    },
+    {
+        "Tag": "android",
+        "Question ID": 36431152,
+        "Title": "google sign-in for android, token expires, Authenticate with a backend server",
+        "Creation Date": 1459871163,
+        "Answer Count": 2,
+        "View Count": 785,
+        "Score": 5
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734882,
+        "Title": "APK built by Unity won&#39;t install - INSTALL_PARSE_FAILED_NO_CERTIFICATES - APK Signature Scheme v2: SHA-256 digest of contents did not verify",
+        "Creation Date": 1703911732,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77734492,
+        "Title": "More than 1 Component for injection",
+        "Creation Date": 1703896557,
+        "Answer Count": 1,
+        "View Count": 31,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 4258623,
+        "Title": "Show soft keyboard for dialog",
+        "Creation Date": 1290531363,
+        "Answer Count": 6,
+        "View Count": 44394,
+        "Score": 85
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 4258623,
+        "Title": "Show soft keyboard for dialog",
+        "Creation Date": 1290531363,
+        "Answer Count": 6,
+        "View Count": 44394,
+        "Score": 85
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77733648,
+        "Title": "NoClassDefFoundError: com/fasterxml/jackson/databind/AnnotationIntrospector$XmlExtensions",
+        "Creation Date": 1703877456,
+        "Answer Count": 0,
+        "View Count": 31,
+        "Score": -3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 18572014,
+        "Title": "Enabling zoom on scroll view",
+        "Creation Date": 1378120831,
+        "Answer Count": 2,
+        "View Count": 9111,
+        "Score": 7
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734816,
+        "Title": "Is there any way to better my APN for T-Mobile network",
+        "Creation Date": 1703908626,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": -3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734457,
+        "Title": "SDL2 Android image not rendering",
+        "Creation Date": 1703895607,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": -3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 41089042,
+        "Title": "How do I install a previous version of build tools in addition to the sdk?",
+        "Creation Date": 1481477861,
+        "Answer Count": 3,
+        "View Count": 10822,
+        "Score": 20
+    },
+    {
+        "Tag": "android",
+        "Question ID": 7200535,
+        "Title": "How to convert Views to bitmaps?",
+        "Creation Date": 1314338197,
+        "Answer Count": 7,
+        "View Count": 50558,
+        "Score": 36
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77709560,
+        "Title": "Oracle Connnection issue in Hibernate Reactive",
+        "Creation Date": 1703386096,
+        "Answer Count": 1,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77675150,
+        "Title": "Error when tring to fetch data from MongoDb",
+        "Creation Date": 1702830329,
+        "Answer Count": 1,
+        "View Count": 106,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731063,
+        "Title": "Is it possible to trigger Android app updates programmatically without user interaction using Google Play Core Library?",
+        "Creation Date": 1703840764,
+        "Answer Count": 1,
+        "View Count": 44,
+        "Score": 1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77614433,
+        "Title": "Using Hibernate-Reactive and together R2DBC in one project",
+        "Creation Date": 1701876981,
+        "Answer Count": 3,
+        "View Count": 106,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734752,
+        "Title": "resttemplate does not retrieve the full data of a file from server",
+        "Creation Date": 1703906237,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 55494154,
+        "Title": "How to fix org.apache.spark.SparkException: Job aborted due to stage failure Task &amp; com.datastax.spark.connector.rdd.partitioner.CassandraPartition",
+        "Creation Date": 1554291170,
+        "Answer Count": 1,
+        "View Count": 13010,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732453,
+        "Title": "change tint and saturation of live camera in flutter using camera package",
+        "Creation Date": 1703859748,
+        "Answer Count": 1,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77732961,
+        "Title": "Django-based Docker project will connect to local postgres DB on windows machines but not on a Mac or Linux machine",
+        "Creation Date": 1703867070,
+        "Answer Count": 1,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734688,
+        "Title": "Android Layout Inspector too smart",
+        "Creation Date": 1703903295,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 68647737,
+        "Title": "Ignoring specific files in Dockerfile.dockerignore does not work",
+        "Creation Date": 1628064976,
+        "Answer Count": 3,
+        "View Count": 1611,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734674,
+        "Title": "Searching between two dates greater and less than just works with new ISODate within the @query expression declared in java with mongorepository jpa",
+        "Creation Date": 1703902861,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77734674,
+        "Title": "Searching between two dates greater and less than just works with new ISODate within the @query expression declared in java with mongorepository jpa",
+        "Creation Date": 1703902861,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 40561414,
+        "Title": "Getting a nullpointerexception for my EntityManager",
+        "Creation Date": 1478942658,
+        "Answer Count": 2,
+        "View Count": 12247,
+        "Score": 5
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77734633,
+        "Title": "Deploying a Java Lambda function with container images",
+        "Creation Date": 1703901429,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734629,
+        "Title": "Data is reapting and mutitype views are overlapping in recyclerview, i am using delegate adapter pattern - android",
+        "Creation Date": 1703901340,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77734619,
+        "Title": "Gradle signing failing because &quot;because it has no configured signatory&quot; when using useInMemoryPgpKeys",
+        "Creation Date": 1703900783,
+        "Answer Count": 0,
+        "View Count": 5,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 52867948,
+        "Title": "Illegal character in opaque part at index 2 flutter",
+        "Creation Date": 1539843016,
+        "Answer Count": 10,
+        "View Count": 39956,
+        "Score": 23
+    },
+    {
+        "Tag": "android",
+        "Question ID": 11930054,
+        "Title": "Receiving Cell Broadcast for showing current location (Channel 50) in android",
+        "Creation Date": 1344843847,
+        "Answer Count": 1,
+        "View Count": 12403,
+        "Score": 9
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 74325956,
+        "Title": "docker: Error response from daemon: network mongo-network not found",
+        "Creation Date": 1667633727,
+        "Answer Count": 1,
+        "View Count": 1574,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734353,
+        "Title": "Save images in a certain folder when taking picture mkdirs() android/java",
+        "Creation Date": 1703892338,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 62254314,
+        "Title": "Spring JPA - Hibernate: Batch insert execute too much select nextval (‘sequence’)",
+        "Creation Date": 1591585013,
+        "Answer Count": 3,
+        "View Count": 4234,
+        "Score": 5
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 62254314,
+        "Title": "Spring JPA - Hibernate: Batch insert execute too much select nextval (‘sequence’)",
+        "Creation Date": 1591585013,
+        "Answer Count": 3,
+        "View Count": 4234,
+        "Score": 5
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 62254314,
+        "Title": "Spring JPA - Hibernate: Batch insert execute too much select nextval (‘sequence’)",
+        "Creation Date": 1591585013,
+        "Answer Count": 3,
+        "View Count": 4234,
+        "Score": 5
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734579,
+        "Title": "Flutter - Font not rendering properly",
+        "Creation Date": 1703899245,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77725066,
+        "Title": "Access to XMLHttpRequest at &#39;http:/vm_address:8080/api/v1/contacts/&#39; from origin &#39;http://vm_address:5173&#39; has been blocked by CORS policy: Response",
+        "Creation Date": 1703739065,
+        "Answer Count": 0,
+        "View Count": 50,
+        "Score": -2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 54050657,
+        "Title": "pass OnActivityResult data back to hybrid app from capacitor",
+        "Creation Date": 1546680177,
+        "Answer Count": 2,
+        "View Count": 3666,
+        "Score": 2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734564,
+        "Title": "Jib Maven Plugin Error: &quot;Missing target image parameter&quot; When Building Docker Image",
+        "Creation Date": 1703898916,
+        "Answer Count": 0,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77734564,
+        "Title": "Jib Maven Plugin Error: &quot;Missing target image parameter&quot; When Building Docker Image",
+        "Creation Date": 1703898916,
+        "Answer Count": 0,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77734561,
+        "Title": "How can I access the clipboard without a window?",
+        "Creation Date": 1703898868,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 76771312,
+        "Title": "Java Docker API CPU Calculation",
+        "Creation Date": 1690374447,
+        "Answer Count": 2,
+        "View Count": 39,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 47660841,
+        "Title": "How do I check if an image:tag exists in gitlab container registry",
+        "Creation Date": 1512500474,
+        "Answer Count": 5,
+        "View Count": 17840,
+        "Score": 15
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734518,
+        "Title": "The thymeleaf template does not display the date from the database",
+        "Creation Date": 1703897612,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734516,
+        "Title": "COPY two folders in docker (failed to compute cache key: failed to calculate checksum of ref)",
+        "Creation Date": 1703897572,
+        "Answer Count": 0,
+        "View Count": 6,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77734505,
+        "Title": "Kotlin KAPT to KSP can&#39;t find bean",
+        "Creation Date": 1703897220,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77734505,
+        "Title": "Kotlin KAPT to KSP can&#39;t find bean",
+        "Creation Date": 1703897220,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77734293,
+        "Title": "[Spring][JPA] Automatic save when ManyToMany",
+        "Creation Date": 1703890386,
+        "Answer Count": 1,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77734293,
+        "Title": "[Spring][JPA] Automatic save when ManyToMany",
+        "Creation Date": 1703890386,
+        "Answer Count": 1,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77734293,
+        "Title": "[Spring][JPA] Automatic save when ManyToMany",
+        "Creation Date": 1703890386,
+        "Answer Count": 1,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77734436,
+        "Title": "IntelliJ IDEA&#39;s &quot;External Libraries&quot; shows every class shows twice after adding dependency",
+        "Creation Date": 1703894857,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 76987080,
+        "Title": "CORS in Spring Security (Spring Boot 3)",
+        "Creation Date": 1693138749,
+        "Answer Count": 4,
+        "View Count": 896,
+        "Score": 1
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77734449,
+        "Title": "Gradle Kotlin DSL use jniLibs",
+        "Creation Date": 1703895455,
+        "Answer Count": 0,
+        "View Count": 6,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734058,
+        "Title": "Images from Firebase Storage won&#39;t load",
+        "Creation Date": 1703884827,
+        "Answer Count": 1,
+        "View Count": 60,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77734036,
+        "Title": "Spring Boot with Kubernetes Java Client API - Edit Namespace",
+        "Creation Date": 1703884404,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734036,
+        "Title": "Spring Boot with Kubernetes Java Client API - Edit Namespace",
+        "Creation Date": 1703884404,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734442,
+        "Title": "Azure Function on AKS with KEDA always stops",
+        "Creation Date": 1703895088,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 64507704,
+        "Title": "Java swagger-ui doesn&#39;t render allowableValues for parameter",
+        "Creation Date": 1603489772,
+        "Answer Count": 1,
+        "View Count": 9691,
+        "Score": 2
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 64507704,
+        "Title": "Java swagger-ui doesn&#39;t render allowableValues for parameter",
+        "Creation Date": 1603489772,
+        "Answer Count": 1,
+        "View Count": 9691,
+        "Score": 2
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 52123521,
+        "Title": "Maven Clean Issue - Non-resolvable import POM - Could not transfer artifact from NEXUS",
+        "Creation Date": 1535757048,
+        "Answer Count": 4,
+        "View Count": 8698,
+        "Score": 1
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 52123521,
+        "Title": "Maven Clean Issue - Non-resolvable import POM - Could not transfer artifact from NEXUS",
+        "Creation Date": 1535757048,
+        "Answer Count": 4,
+        "View Count": 8698,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77734434,
+        "Title": "Mutiny how to interupt chain operation",
+        "Creation Date": 1703894810,
+        "Answer Count": 0,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 55315107,
+        "Title": "Flutter Webview change webpage is not available",
+        "Creation Date": 1553353485,
+        "Answer Count": 3,
+        "View Count": 14329,
+        "Score": 4
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734414,
+        "Title": "How to connect Android Java App to MongoDB",
+        "Creation Date": 1703894049,
+        "Answer Count": 0,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734380,
+        "Title": "How to create a .devcontainer for a git repository that holds two different node apps with two different package.json files?",
+        "Creation Date": 1703892965,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730734,
+        "Title": "ViewModel Structure not maintaining variable values when called in seperate Jetpack Compose Composables",
+        "Creation Date": 1703834792,
+        "Answer Count": 2,
+        "View Count": 34,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730734,
+        "Title": "ViewModel Structure not maintaining variable values when called in seperate Jetpack Compose Composables",
+        "Creation Date": 1703834792,
+        "Answer Count": 2,
+        "View Count": 34,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734267,
+        "Title": "Android : Spinner : set ArrayAdapter in code want no call onItemSelected and only call when user click on spinner",
+        "Creation Date": 1703889677,
+        "Answer Count": 0,
+        "View Count": 33,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77734267,
+        "Title": "Android : Spinner : set ArrayAdapter in code want no call onItemSelected and only call when user click on spinner",
+        "Creation Date": 1703889677,
+        "Answer Count": 0,
+        "View Count": 33,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77733246,
+        "Title": "Kotlin dataclass function is getting called during serialization",
+        "Creation Date": 1703870909,
+        "Answer Count": 0,
+        "View Count": 30,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 21903934,
+        "Title": "How to debug webview remotely?",
+        "Creation Date": 1392889552,
+        "Answer Count": 7,
+        "View Count": 68024,
+        "Score": 50
+    },
+    {
+        "Tag": "android",
+        "Question ID": 60807411,
+        "Title": "Remove Augmented Image and add a new one when new image is detected",
+        "Creation Date": 1584932249,
+        "Answer Count": 0,
+        "View Count": 128,
+        "Score": 2
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 60807411,
+        "Title": "Remove Augmented Image and add a new one when new image is detected",
+        "Creation Date": 1584932249,
+        "Answer Count": 0,
+        "View Count": 128,
+        "Score": 2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734249,
+        "Title": "Trouble Accessing Selenium Grid on Google Cloud Run from Remote Client",
+        "Creation Date": 1703889309,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732906,
+        "Title": "Implement Springboot Webclient with PKCS12 configuration",
+        "Creation Date": 1703866208,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734255,
+        "Title": "Docker pull starts fast then becomes extremely slow",
+        "Creation Date": 1703889413,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734246,
+        "Title": "Preload android application on tablet",
+        "Creation Date": 1703889164,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77713414,
+        "Title": "KMP: Failing to add &#39;cafe.adriel.voyager&#39; dependency",
+        "Creation Date": 1703501734,
+        "Answer Count": 1,
+        "View Count": 65,
+        "Score": 1
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77713414,
+        "Title": "KMP: Failing to add &#39;cafe.adriel.voyager&#39; dependency",
+        "Creation Date": 1703501734,
+        "Answer Count": 1,
+        "View Count": 65,
+        "Score": 1
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77734213,
+        "Title": "@ManyToOne is generating as &quot;not null&quot; and should be nullable",
+        "Creation Date": 1703888299,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77734213,
+        "Title": "@ManyToOne is generating as &quot;not null&quot; and should be nullable",
+        "Creation Date": 1703888299,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77734213,
+        "Title": "@ManyToOne is generating as &quot;not null&quot; and should be nullable",
+        "Creation Date": 1703888299,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77734228,
+        "Title": "JPA and Hibernate - Select same object twice and get two instances",
+        "Creation Date": 1703888694,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77734228,
+        "Title": "JPA and Hibernate - Select same object twice and get two instances",
+        "Creation Date": 1703888694,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 67455823,
+        "Title": "No Activity found to handle intent OPEN_DOCUMENT_TREE on some Samsung Android devices",
+        "Creation Date": 1620549851,
+        "Answer Count": 3,
+        "View Count": 1841,
+        "Score": 2
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77733410,
+        "Title": "Create object with list of another object",
+        "Creation Date": 1703873677,
+        "Answer Count": 1,
+        "View Count": 32,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734187,
+        "Title": "Updating RecyclerView to display downloaded PDF bitmaps using DownloadManager in Android",
+        "Creation Date": 1703887599,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734189,
+        "Title": "Docker discovery server and client API Java Spring boot",
+        "Creation Date": 1703887621,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77734189,
+        "Title": "Docker discovery server and client API Java Spring boot",
+        "Creation Date": 1703887621,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77734159,
+        "Title": "Spring Boot 3.2 REST API Call with Generic Response: Type Mismatch Issue",
+        "Creation Date": 1703887110,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77724836,
+        "Title": "how to custom intent to ask for permisson in mediaProjection in android?",
+        "Creation Date": 1703732228,
+        "Answer Count": 1,
+        "View Count": 35,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734122,
+        "Title": "Why the published app android don&#39;t login with Google?",
+        "Creation Date": 1703886334,
+        "Answer Count": 1,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 60790653,
+        "Title": "How to fix INSTALL_FAILED_INVALID_APK error in Android Studio?",
+        "Creation Date": 1584810035,
+        "Answer Count": 11,
+        "View Count": 22445,
+        "Score": 12
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 60790653,
+        "Title": "How to fix INSTALL_FAILED_INVALID_APK error in Android Studio?",
+        "Creation Date": 1584810035,
+        "Answer Count": 11,
+        "View Count": 22445,
+        "Score": 12
+    },
+    {
+        "Tag": "android",
+        "Question ID": 25274296,
+        "Title": "ADB Install Fails With INSTALL_FAILED_TEST_ONLY",
+        "Creation Date": 1407878674,
+        "Answer Count": 28,
+        "View Count": 187918,
+        "Score": 277
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734051,
+        "Title": "Android for Cars - access MainActivity to variables from MediaBrowserServiceCompat service",
+        "Creation Date": 1703884684,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77734101,
+        "Title": "مشكلة تبعيات الغرادل والتوافق مع المحاكي emulator vs gradle",
+        "Creation Date": 1703885871,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733301,
+        "Title": "&#39;libsample.so&#39; Not Found error when trying two use more than one cpp in android JNI?",
+        "Creation Date": 1703871888,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77734067,
+        "Title": "File search in kotlin",
+        "Creation Date": 1703884961,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 42510002,
+        "Title": "Docker: How to clear the logs properly for a Docker container?",
+        "Creation Date": 1488288328,
+        "Answer Count": 25,
+        "View Count": 705044,
+        "Score": 531
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732637,
+        "Title": "Error when setting fields and putting data in a database (H2) from the website using Thymeleaf and Spring boot",
+        "Creation Date": 1703862030,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77734053,
+        "Title": "using two observes to update one EditText",
+        "Creation Date": 1703884696,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77729895,
+        "Title": "how to bypass your account is not verified on google dev",
+        "Creation Date": 1703814110,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733567,
+        "Title": "error: [Dagger/MissingBinding]. Cannot be provided without an @Provides-annotated method",
+        "Creation Date": 1703875927,
+        "Answer Count": 1,
+        "View Count": 52,
+        "Score": -1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77733567,
+        "Title": "error: [Dagger/MissingBinding]. Cannot be provided without an @Provides-annotated method",
+        "Creation Date": 1703875927,
+        "Answer Count": 1,
+        "View Count": 52,
+        "Score": -1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 71329742,
+        "Title": "timescaledb with spring data jpa",
+        "Creation Date": 1646258873,
+        "Answer Count": 3,
+        "View Count": 2321,
+        "Score": 3
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 71329742,
+        "Title": "timescaledb with spring data jpa",
+        "Creation Date": 1646258873,
+        "Answer Count": 3,
+        "View Count": 2321,
+        "Score": 3
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77733933,
+        "Title": "How to prevent MVN from changing file dates as it packages a WAR file?",
+        "Creation Date": 1703882222,
+        "Answer Count": 1,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 25538752,
+        "Title": "How to mute the beep sound for SpeechRecognizer?",
+        "Creation Date": 1409183922,
+        "Answer Count": 4,
+        "View Count": 21166,
+        "Score": 10
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77724807,
+        "Title": "How to switch between Docker Containers using the same service name?",
+        "Creation Date": 1703731384,
+        "Answer Count": 1,
+        "View Count": 27,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 57231039,
+        "Title": "Choose the format of Date of an attribute in The Entity Class",
+        "Creation Date": 1564221687,
+        "Answer Count": 3,
+        "View Count": 24787,
+        "Score": 3
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 57231039,
+        "Title": "Choose the format of Date of an attribute in The Entity Class",
+        "Creation Date": 1564221687,
+        "Answer Count": 3,
+        "View Count": 24787,
+        "Score": 3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 63865126,
+        "Title": "Why would google maps not show up in flutter?",
+        "Creation Date": 1599946574,
+        "Answer Count": 2,
+        "View Count": 2296,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733708,
+        "Title": "Trying to use an EditText inside an infoWindow in android studio (Java)",
+        "Creation Date": 1703878534,
+        "Answer Count": 1,
+        "View Count": 25,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733930,
+        "Title": "Advice on learning about Android GPS Tethering via USB",
+        "Creation Date": 1703882199,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": -2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 43731872,
+        "Title": "how to get video id from clicking YouTube search page link in a webview",
+        "Creation Date": 1493708120,
+        "Answer Count": 2,
+        "View Count": 1048,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 42174931,
+        "Title": "Android 5+ how to change preferred network",
+        "Creation Date": 1486809867,
+        "Answer Count": 0,
+        "View Count": 294,
+        "Score": 2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77726297,
+        "Title": "How can I invoke lambda handler in custom runtime environment?",
+        "Creation Date": 1703759127,
+        "Answer Count": 2,
+        "View Count": 57,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 24386771,
+        "Title": "javax.validation.ValidationException: HV000183: Unable to load &#39;javax.el.ExpressionFactory&#39;",
+        "Creation Date": 1403613247,
+        "Answer Count": 16,
+        "View Count": 165489,
+        "Score": 137
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 24386771,
+        "Title": "javax.validation.ValidationException: HV000183: Unable to load &#39;javax.el.ExpressionFactory&#39;",
+        "Creation Date": 1403613247,
+        "Answer Count": 16,
+        "View Count": 165489,
+        "Score": 137
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 76443422,
+        "Title": "Unable to connect to Postgres Docker container with DBeaver",
+        "Creation Date": 1686342031,
+        "Answer Count": 2,
+        "View Count": 1068,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 68247187,
+        "Title": "Connect to PostgreSQL Database in Docker Container from DBeaver",
+        "Creation Date": 1625419310,
+        "Answer Count": 2,
+        "View Count": 3740,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77725693,
+        "Title": "Android Kotlin: NFC Tag not reading by the app",
+        "Creation Date": 1703750910,
+        "Answer Count": 1,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77725693,
+        "Title": "Android Kotlin: NFC Tag not reading by the app",
+        "Creation Date": 1703750910,
+        "Answer Count": 1,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733775,
+        "Title": "My app in android studio is crashing due to ContactViewModell class . It is an list of contacts app with CRUD operations",
+        "Creation Date": 1703879479,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733350,
+        "Title": "Error in CredentialManager.createCredential method without much information",
+        "Creation Date": 1703872478,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77733687,
+        "Title": "StepScope bean duplication when using XML based bean definition",
+        "Creation Date": 1703878028,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733687,
+        "Title": "StepScope bean duplication when using XML based bean definition",
+        "Creation Date": 1703878028,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77733183,
+        "Title": "Check if there is specific object in kotlin",
+        "Creation Date": 1703870058,
+        "Answer Count": 1,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77733286,
+        "Title": "Best way to initialize named volume from Docker image/container",
+        "Creation Date": 1703871619,
+        "Answer Count": 1,
+        "View Count": 33,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 64682749,
+        "Title": "Running Redis rq worker on Docker",
+        "Creation Date": 1604502848,
+        "Answer Count": 1,
+        "View Count": 2413,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70043592,
+        "Title": "How to sign apk programmatically with &quot;apksig library&quot; in Android studio",
+        "Creation Date": 1637387772,
+        "Answer Count": 0,
+        "View Count": 224,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 62269466,
+        "Title": "Java MapStruct always convert boolean to false",
+        "Creation Date": 1591643090,
+        "Answer Count": 1,
+        "View Count": 473,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77592215,
+        "Title": "How do I get a good form layout in Compose?",
+        "Creation Date": 1701551829,
+        "Answer Count": 1,
+        "View Count": 38,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77733463,
+        "Title": "Docker DNS (127.0.0.11) cannot resolve anything",
+        "Creation Date": 1703874421,
+        "Answer Count": 1,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733627,
+        "Title": "My build keeps failing - execution failed for task &#39;:location:parseReleaseLocalResources&#39;",
+        "Creation Date": 1703877109,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77733627,
+        "Title": "My build keeps failing - execution failed for task &#39;:location:parseReleaseLocalResources&#39;",
+        "Creation Date": 1703877109,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733459,
+        "Title": "How to take a picture and set it as my ImageButton, without using the deprecated method startActivityForResult()?",
+        "Creation Date": 1703874396,
+        "Answer Count": 1,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77727026,
+        "Title": "Is it possible to use Spring Boot SSL bundles internally, while keeping legacy configuration (e.g. javax.net.ssl.*) in application.properties?",
+        "Creation Date": 1703768354,
+        "Answer Count": 1,
+        "View Count": 35,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77727026,
+        "Title": "Is it possible to use Spring Boot SSL bundles internally, while keeping legacy configuration (e.g. javax.net.ssl.*) in application.properties?",
+        "Creation Date": 1703768354,
+        "Answer Count": 1,
+        "View Count": 35,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77721233,
+        "Title": "Database PostgreSql: column String or JSON?",
+        "Creation Date": 1703671378,
+        "Answer Count": 1,
+        "View Count": 38,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77682600,
+        "Title": "How to fix &quot;android.support.v4.content.LocalBroadcastManager&quot; import error jetpack compose and MqttService.java",
+        "Creation Date": 1702951621,
+        "Answer Count": 0,
+        "View Count": 100,
+        "Score": -1
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77733553,
+        "Title": "Implementing Different Build Configurations in Compose Multiplatform for Android and iOS",
+        "Creation Date": 1703875730,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 72382777,
+        "Title": "How to benefit on &quot;warm start&quot; from the saved instance state bundle passed into onCreate() or onRestoreInstanceState()",
+        "Creation Date": 1653504446,
+        "Answer Count": 1,
+        "View Count": 81,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77733475,
+        "Title": "Unable to run a streamlit app using docker and supervisor",
+        "Creation Date": 1703874620,
+        "Answer Count": 0,
+        "View Count": 26,
+        "Score": -1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77729835,
+        "Title": "How do I configure Spring to retrieve the OIDC user?",
+        "Creation Date": 1703811913,
+        "Answer Count": 1,
+        "View Count": 29,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 47593537,
+        "Title": "Disable Spring Security config class for @WebMvcTest in Spring Boot",
+        "Creation Date": 1512131730,
+        "Answer Count": 12,
+        "View Count": 53323,
+        "Score": 43
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 47593537,
+        "Title": "Disable Spring Security config class for @WebMvcTest in Spring Boot",
+        "Creation Date": 1512131730,
+        "Answer Count": 12,
+        "View Count": 53323,
+        "Score": 43
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733482,
+        "Title": "CircuitBreaker fallback method getting call for every case",
+        "Creation Date": 1703874770,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 11648706,
+        "Title": "Spring RestTemplate Client - connection refused exception",
+        "Creation Date": 1343215739,
+        "Answer Count": 2,
+        "View Count": 108078,
+        "Score": 13
+    },
+    {
+        "Tag": "android",
+        "Question ID": 68164883,
+        "Title": "How do I create a Jetpack Compose Column where a middle child is scrollable but all of the other children are always visible?",
+        "Creation Date": 1624889493,
+        "Answer Count": 3,
+        "View Count": 66150,
+        "Score": 59
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70939513,
+        "Title": "When to initialize resources to be used inside Compose Canvas?",
+        "Creation Date": 1643713447,
+        "Answer Count": 2,
+        "View Count": 997,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 76745981,
+        "Title": "Can&#39;t downgrade to a specific version of &quot;android gradle plugin version&quot;",
+        "Creation Date": 1690064339,
+        "Answer Count": 1,
+        "View Count": 421,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732725,
+        "Title": "Should I use main-safety code to run callbacks in Android (Kotlin)?",
+        "Creation Date": 1703863565,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77732725,
+        "Title": "Should I use main-safety code to run callbacks in Android (Kotlin)?",
+        "Creation Date": 1703863565,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733409,
+        "Title": "flutter_html_to_pdf - The Android Gradle plugin supports only Kotlin Gradle plugin version 1.5.20 and higher",
+        "Creation Date": 1703873634,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77733409,
+        "Title": "flutter_html_to_pdf - The Android Gradle plugin supports only Kotlin Gradle plugin version 1.5.20 and higher",
+        "Creation Date": 1703873634,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733400,
+        "Title": "Flutter - Execution failed for task &#39;:app:processDebugMainManifest&#39;",
+        "Creation Date": 1703873447,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77733400,
+        "Title": "Flutter - Execution failed for task &#39;:app:processDebugMainManifest&#39;",
+        "Creation Date": 1703873447,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733391,
+        "Title": "ionic capacitor in app purchase requires to open app to confirm subscription",
+        "Creation Date": 1703873222,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733360,
+        "Title": "how to implement predictive text functionality inside the text field or text view In Android java so the next word will populate as placeword",
+        "Creation Date": 1703872666,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 74731898,
+        "Title": "Why tailwind css is not applying as style in react-native?",
+        "Creation Date": 1670510081,
+        "Answer Count": 3,
+        "View Count": 781,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733139,
+        "Title": "How to implement Zipkin in Spring Boot 3?",
+        "Creation Date": 1703869539,
+        "Answer Count": 1,
+        "View Count": 37,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733275,
+        "Title": "Beanshell syntax parsing error (lambdas, returns...)",
+        "Creation Date": 1703871497,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 66212513,
+        "Title": "Whats is benefits or difrrencess between Viewpager vs ViewPager2",
+        "Creation Date": 1613409513,
+        "Answer Count": 2,
+        "View Count": 8586,
+        "Score": 8
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733261,
+        "Title": "Why do threads keep uploading in my app and how can I control them?",
+        "Creation Date": 1703871253,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733259,
+        "Title": "Cacheable principle of REST Architecture Implementation on Spring Boot",
+        "Creation Date": 1703871217,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77729624,
+        "Title": "VMWare not recognizing my android phone (the device was unable to connect to its ideal host controller)",
+        "Creation Date": 1703806041,
+        "Answer Count": 1,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733186,
+        "Title": "Can Spring Boot JSP limitation be solved?",
+        "Creation Date": 1703870094,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 69426486,
+        "Title": "Android Databinding Cannot find a setter for * that accepts parameter type *",
+        "Creation Date": 1633276588,
+        "Answer Count": 5,
+        "View Count": 6582,
+        "Score": 2
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 69426486,
+        "Title": "Android Databinding Cannot find a setter for * that accepts parameter type *",
+        "Creation Date": 1633276588,
+        "Answer Count": 5,
+        "View Count": 6582,
+        "Score": 2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733237,
+        "Title": "JdbcSQLSyntaxErrorException while executing flyway migration script in h2 on spring-boot startup",
+        "Creation Date": 1703870805,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77733237,
+        "Title": "JdbcSQLSyntaxErrorException while executing flyway migration script in h2 on spring-boot startup",
+        "Creation Date": 1703870805,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77733237,
+        "Title": "JdbcSQLSyntaxErrorException while executing flyway migration script in h2 on spring-boot startup",
+        "Creation Date": 1703870805,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 48732435,
+        "Title": "Spring Boot Serving .jsp &lt;jar&gt;",
+        "Creation Date": 1518358555,
+        "Answer Count": 3,
+        "View Count": 829,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 48732435,
+        "Title": "Spring Boot Serving .jsp &lt;jar&gt;",
+        "Creation Date": 1518358555,
+        "Answer Count": 3,
+        "View Count": 829,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77303677,
+        "Title": "Virtual Threads and Spring WebFlux",
+        "Creation Date": 1697474942,
+        "Answer Count": 1,
+        "View Count": 1482,
+        "Score": 2
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77733158,
+        "Title": "Which Spring Boot version is compatibe with Tomcat 10.0.27?",
+        "Creation Date": 1703869814,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": -2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733158,
+        "Title": "Which Spring Boot version is compatibe with Tomcat 10.0.27?",
+        "Creation Date": 1703869814,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": -2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77635384,
+        "Title": "How to use a viewpager inside another fragment and not get any lifecycle issues?",
+        "Creation Date": 1702222960,
+        "Answer Count": 1,
+        "View Count": 50,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77635384,
+        "Title": "How to use a viewpager inside another fragment and not get any lifecycle issues?",
+        "Creation Date": 1702222960,
+        "Answer Count": 1,
+        "View Count": 50,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733214,
+        "Title": "Springboot metric &quot;disk_free&quot; shows unit in &quot;Tri&quot; instead of MB/GB in grafana",
+        "Creation Date": 1703870406,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": -1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732873,
+        "Title": "How to use @Query annotation for mongodb queries along with the repository methods like findTop",
+        "Creation Date": 1703865829,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 26757264,
+        "Title": "npm package.json and docker (mounting it...)",
+        "Creation Date": 1415190622,
+        "Answer Count": 5,
+        "View Count": 5401,
+        "Score": 8
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77733167,
+        "Title": "Mounting a volume on host in a docker container",
+        "Creation Date": 1703869921,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733071,
+        "Title": "Unable to update using Retrofit from the ID i declared into it",
+        "Creation Date": 1703868564,
+        "Answer Count": 1,
+        "View Count": 21,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77733071,
+        "Title": "Unable to update using Retrofit from the ID i declared into it",
+        "Creation Date": 1703868564,
+        "Answer Count": 1,
+        "View Count": 21,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77725174,
+        "Title": "How to manually get a light version of a color?",
+        "Creation Date": 1703741662,
+        "Answer Count": 1,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 43738389,
+        "Title": "VideoView Uri redirection",
+        "Creation Date": 1493729525,
+        "Answer Count": 0,
+        "View Count": 125,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733114,
+        "Title": "Springboot metric &quot;process_files_open&quot; shows large numbers for both &quot;open&quot; and &quot;max&quot;",
+        "Creation Date": 1703869208,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": -2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 31255934,
+        "Title": "How come my kubernetes&#39; service can&#39;t find an endpoint?",
+        "Creation Date": 1436218021,
+        "Answer Count": 6,
+        "View Count": 46301,
+        "Score": 18
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733085,
+        "Title": "Activate Button is disabled in Device Admin Screen in android",
+        "Creation Date": 1703868730,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77720202,
+        "Title": "Detect onclick of any element in a list (android studio)",
+        "Creation Date": 1703655269,
+        "Answer Count": 1,
+        "View Count": 25,
+        "Score": -1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77720202,
+        "Title": "Detect onclick of any element in a list (android studio)",
+        "Creation Date": 1703655269,
+        "Answer Count": 1,
+        "View Count": 25,
+        "Score": -1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77733046,
+        "Title": "metric &quot;application_started_time&quot; for springboot shows 01/01/1970, 08:00:00 AM in grafana",
+        "Creation Date": 1703868160,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": -2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77548936,
+        "Title": "Minikube on Docker shows high CPU utilization every 10 seconds",
+        "Creation Date": 1700934084,
+        "Answer Count": 0,
+        "View Count": 65,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77733042,
+        "Title": "MAUI How to emulate screen width of android being 1080?",
+        "Creation Date": 1703868064,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 54684814,
+        "Title": "react native secureTextEntry not working on android",
+        "Creation Date": 1550127789,
+        "Answer Count": 7,
+        "View Count": 14937,
+        "Score": 3
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77731193,
+        "Title": "Why does Spring boot ignore spring.datasource.url in application.properties for my h2 database?",
+        "Creation Date": 1703842443,
+        "Answer Count": 1,
+        "View Count": 86,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731193,
+        "Title": "Why does Spring boot ignore spring.datasource.url in application.properties for my h2 database?",
+        "Creation Date": 1703842443,
+        "Answer Count": 1,
+        "View Count": 86,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77732986,
+        "Title": "Does getReference() method don&#39;t work in Kotlin?",
+        "Creation Date": 1703867372,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": -1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77732986,
+        "Title": "Does getReference() method don&#39;t work in Kotlin?",
+        "Creation Date": 1703867372,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77717346,
+        "Title": "androidx.credentials.exceptions.GetCredentialCancellationException: activity is cancelled by the user",
+        "Creation Date": 1703595033,
+        "Answer Count": 1,
+        "View Count": 40,
+        "Score": 2
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77717346,
+        "Title": "androidx.credentials.exceptions.GetCredentialCancellationException: activity is cancelled by the user",
+        "Creation Date": 1703595033,
+        "Answer Count": 1,
+        "View Count": 40,
+        "Score": 2
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730256,
+        "Title": "Is class can declared as type for a variable in Kotlyn",
+        "Creation Date": 1703824165,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77732979,
+        "Title": "ERROR: No primary or single unique constructor found for class [Ldsawmain.entity.vo.TagVO;",
+        "Creation Date": 1703867247,
+        "Answer Count": 0,
+        "View Count": 26,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732979,
+        "Title": "ERROR: No primary or single unique constructor found for class [Ldsawmain.entity.vo.TagVO;",
+        "Creation Date": 1703867247,
+        "Answer Count": 0,
+        "View Count": 26,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732962,
+        "Title": "Thymeleaf template th:include strange behaviour",
+        "Creation Date": 1703867072,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732969,
+        "Title": "Net Maui Navigation Back button",
+        "Creation Date": 1703867127,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 76160943,
+        "Title": "Docker Desktop - An unexpected error was encountered while executing a WSL command",
+        "Creation Date": 1683094843,
+        "Answer Count": 19,
+        "View Count": 70562,
+        "Score": 15
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731381,
+        "Title": "Cannot use Guava library in iOS by Kotlin Multiplatform",
+        "Creation Date": 1703845133,
+        "Answer Count": 1,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 11523797,
+        "Title": "How to add a MOOV atom in a mp4 video file",
+        "Creation Date": 1342532562,
+        "Answer Count": 7,
+        "View Count": 134821,
+        "Score": 54
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732825,
+        "Title": "Laggy keyboard after first keystroke in TextField Jetpack Compose",
+        "Creation Date": 1703865151,
+        "Answer Count": 1,
+        "View Count": 38,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77732318,
+        "Title": "CASA APK Scan - NoCredentialsError: Unable to locate credentials",
+        "Creation Date": 1703857719,
+        "Answer Count": 1,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732572,
+        "Title": "How to get white color when on dark theme and dark color when on light theme?",
+        "Creation Date": 1703861269,
+        "Answer Count": 2,
+        "View Count": 30,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77728809,
+        "Title": "I was trying to identify the two face are similar are not using face recognition with opencv",
+        "Creation Date": 1703791780,
+        "Answer Count": 0,
+        "View Count": 23,
+        "Score": -3
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77728809,
+        "Title": "I was trying to identify the two face are similar are not using face recognition with opencv",
+        "Creation Date": 1703791780,
+        "Answer Count": 0,
+        "View Count": 23,
+        "Score": -3
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 63437878,
+        "Title": "Creating a mongodb user from env variables",
+        "Creation Date": 1597586911,
+        "Answer Count": 2,
+        "View Count": 1648,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77732829,
+        "Title": "What to use instead of ${CI_REGISTRY_PASSWORD} from Gitlab CI for Docker Login?",
+        "Creation Date": 1703865186,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732781,
+        "Title": "AppCenter Build: Project {project-name} at : is either no Android app project or build version has not been set to override. Skipping",
+        "Creation Date": 1703864477,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732752,
+        "Title": "How to implement logic that processes conditions after a specific time has passed following an API call?",
+        "Creation Date": 1703864038,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77082912,
+        "Title": "Springboot keycloak SAML Failed to resolve any signing credential",
+        "Creation Date": 1694445858,
+        "Answer Count": 0,
+        "View Count": 117,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732757,
+        "Title": "Android application with baselineprofile macro benchmark is failing with profileinstaller library issue",
+        "Creation Date": 1703864112,
+        "Answer Count": 0,
+        "View Count": 5,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732746,
+        "Title": "Build apk from Android-Studio works not from command line",
+        "Creation Date": 1703863963,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 74753391,
+        "Title": "Migration to SpringBoot 3: trunc a date with oracle driver no longer works (hibernate)",
+        "Creation Date": 1670679412,
+        "Answer Count": 5,
+        "View Count": 4959,
+        "Score": 9
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 74753391,
+        "Title": "Migration to SpringBoot 3: trunc a date with oracle driver no longer works (hibernate)",
+        "Creation Date": 1670679412,
+        "Answer Count": 5,
+        "View Count": 4959,
+        "Score": 9
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 74753391,
+        "Title": "Migration to SpringBoot 3: trunc a date with oracle driver no longer works (hibernate)",
+        "Creation Date": 1670679412,
+        "Answer Count": 5,
+        "View Count": 4959,
+        "Score": 9
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 66972941,
+        "Title": "What are the best practices for creating a quarkus multi-module project?",
+        "Creation Date": 1617727532,
+        "Answer Count": 2,
+        "View Count": 9186,
+        "Score": 3
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77732696,
+        "Title": "Blazor Webassembly and ASP.NET API: &quot;TypeError: Failed to fetch&quot; error when API is dockerized",
+        "Creation Date": 1703863040,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731511,
+        "Title": "Android unusual Image Buttons",
+        "Creation Date": 1703846983,
+        "Answer Count": 1,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 72184143,
+        "Title": "Caused by: java.util.zip.ZipException: zip END header not found",
+        "Creation Date": 1652176187,
+        "Answer Count": 1,
+        "View Count": 16053,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 72184143,
+        "Title": "Caused by: java.util.zip.ZipException: zip END header not found",
+        "Creation Date": 1652176187,
+        "Answer Count": 1,
+        "View Count": 16053,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 15652825,
+        "Title": "How can I access a method from another fragment class?",
+        "Creation Date": 1364364445,
+        "Answer Count": 1,
+        "View Count": 8661,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 37977320,
+        "Title": "How to mock a Kotlin singleton object?",
+        "Creation Date": 1466626057,
+        "Answer Count": 7,
+        "View Count": 60823,
+        "Score": 60
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732098,
+        "Title": "Detecting if the app is running on the Virtual Android Environment apps like clone app or multi app space",
+        "Creation Date": 1703854455,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77732098,
+        "Title": "Detecting if the app is running on the Virtual Android Environment apps like clone app or multi app space",
+        "Creation Date": 1703854455,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732630,
+        "Title": "How to push critical/emergency alerts/notifications on Android with Expo",
+        "Creation Date": 1703862014,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70719971,
+        "Title": "Is it possible to use an Android SDK on Raspberry Pi 4?",
+        "Creation Date": 1642235936,
+        "Answer Count": 1,
+        "View Count": 572,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732621,
+        "Title": "how to load css and font locally for jHipster 7",
+        "Creation Date": 1703861873,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77731785,
+        "Title": "Hibernate multitenancy fails after upgrade to 6.2",
+        "Creation Date": 1703850145,
+        "Answer Count": 1,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732593,
+        "Title": "Why might my app suddenly be running much slower after a system update?",
+        "Creation Date": 1703861495,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": -1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77732593,
+        "Title": "Why might my app suddenly be running much slower after a system update?",
+        "Creation Date": 1703861495,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": -1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732584,
+        "Title": "JBWEB000124: The requested resource is not available",
+        "Creation Date": 1703861443,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": 2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732582,
+        "Title": "How to request a file and a json list on an endpoint?",
+        "Creation Date": 1703861416,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77716036,
+        "Title": "how to load JPA Entities and Repositories in sprint boot app from external folder/jar",
+        "Creation Date": 1703573953,
+        "Answer Count": 2,
+        "View Count": 38,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77716036,
+        "Title": "how to load JPA Entities and Repositories in sprint boot app from external folder/jar",
+        "Creation Date": 1703573953,
+        "Answer Count": 2,
+        "View Count": 38,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77696969,
+        "Title": "How to trim video in jectpack compose with custom slider to select start and the end point in the video",
+        "Creation Date": 1703151320,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 72837802,
+        "Title": "Eclipse maven exception java.lang.ExceptionInInitializerError: Cannot access defaults field of Properties [in thread &quot;Worker-27: Building&quot;]",
+        "Creation Date": 1656752503,
+        "Answer Count": 2,
+        "View Count": 6342,
+        "Score": 1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77732517,
+        "Title": "Spring boot dont record multipart data from curl",
+        "Creation Date": 1703860702,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": -1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732517,
+        "Title": "Spring boot dont record multipart data from curl",
+        "Creation Date": 1703860702,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 57883438,
+        "Title": "SigningConfig &quot;release&quot; is missing required property &quot;keyPassword&quot;",
+        "Creation Date": 1568184020,
+        "Answer Count": 10,
+        "View Count": 37004,
+        "Score": 26
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731931,
+        "Title": "How can i change keyboard language while changing the text field in flutter?",
+        "Creation Date": 1703852025,
+        "Answer Count": 1,
+        "View Count": 26,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732202,
+        "Title": "Even though I didn&#39;t send any data via intent I get this error: FAILED BINDER TRANSACTION",
+        "Creation Date": 1703856059,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732467,
+        "Title": "How to implement a search function in my Application that have a sqlite database?",
+        "Creation Date": 1703860005,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732462,
+        "Title": "Create of a Jetpack Compose project problem with gradle-plugin:1.9.0",
+        "Creation Date": 1703859932,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77732462,
+        "Title": "Create of a Jetpack Compose project problem with gradle-plugin:1.9.0",
+        "Creation Date": 1703859932,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77732452,
+        "Title": "Maven WildFly Deployment Failure with Conflicting JNDI Bindings and Missing Dependencies",
+        "Creation Date": 1703859742,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77732452,
+        "Title": "Maven WildFly Deployment Failure with Conflicting JNDI Bindings and Missing Dependencies",
+        "Creation Date": 1703859742,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77732410,
+        "Title": "Unsatisfied dependency for type org.hibernate.search.mapper.orm.session.SearchSession using programmatic mapping in Quarkus Hibernate Search",
+        "Creation Date": 1703859193,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 75787244,
+        "Title": "Show self in freeform window",
+        "Creation Date": 1679294651,
+        "Answer Count": 0,
+        "View Count": 127,
+        "Score": 1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 55269036,
+        "Title": "Spring MockMvc: match a collection of JSON objects in any order",
+        "Creation Date": 1553111138,
+        "Answer Count": 4,
+        "View Count": 32994,
+        "Score": 24
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77730216,
+        "Title": "azure app service can&#39;t find my endpoints added after first deploy",
+        "Creation Date": 1703823087,
+        "Answer Count": 1,
+        "View Count": 56,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77729982,
+        "Title": "List all IP addresses of Docker containers from different machines connected to an overlay network",
+        "Creation Date": 1703816607,
+        "Answer Count": 1,
+        "View Count": 22,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 53332435,
+        "Title": "How can I get a enum member by the ordinal value in kotlin?",
+        "Creation Date": 1542349024,
+        "Answer Count": 4,
+        "View Count": 9419,
+        "Score": 12
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 53332435,
+        "Title": "How can I get a enum member by the ordinal value in kotlin?",
+        "Creation Date": 1542349024,
+        "Answer Count": 4,
+        "View Count": 9419,
+        "Score": 12
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732379,
+        "Title": "How to pick an image from imageslide show as wallpaper | Android Studio |Kotlin",
+        "Creation Date": 1703858699,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77732379,
+        "Title": "How to pick an image from imageslide show as wallpaper | Android Studio |Kotlin",
+        "Creation Date": 1703858699,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731274,
+        "Title": "Error while trying to return a list of objects from a rest api",
+        "Creation Date": 1703843560,
+        "Answer Count": 1,
+        "View Count": 41,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77731274,
+        "Title": "Error while trying to return a list of objects from a rest api",
+        "Creation Date": 1703843560,
+        "Answer Count": 1,
+        "View Count": 41,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730911,
+        "Title": "ConcurrentModificationException on a object wrapped with lock",
+        "Creation Date": 1703837840,
+        "Answer Count": 2,
+        "View Count": 62,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 21252800,
+        "Title": "How to tell Maven to disregard SSL errors (and trusting all certs)?",
+        "Creation Date": 1390292900,
+        "Answer Count": 9,
+        "View Count": 359058,
+        "Score": 178
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732336,
+        "Title": "Problem with recording and saving video with CAMERA MAUI",
+        "Creation Date": 1703858031,
+        "Answer Count": 0,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77730455,
+        "Title": "How to use @PostMapping to create/delete/delete API",
+        "Creation Date": 1703829357,
+        "Answer Count": 2,
+        "View Count": 46,
+        "Score": -2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77728685,
+        "Title": "PyCharm on Ubuntu - Debugging Docker Application Connection Refused",
+        "Creation Date": 1703790018,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 56789748,
+        "Title": "Is there a widget that supports rowspan and colspan in flutter?",
+        "Creation Date": 1561633821,
+        "Answer Count": 4,
+        "View Count": 20015,
+        "Score": 16
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77729953,
+        "Title": "java.lang.NullPointerException: Attempt to invoke virtual method &#39;boolean java.lang.Class.isInterface()&#39; on a null object reference in build release",
+        "Creation Date": 1703815980,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": -2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732270,
+        "Title": "WebProgramming - SpringBoot ( IntelliJ)",
+        "Creation Date": 1703856984,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": -3
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77732259,
+        "Title": "how can i assign perticular user to EFS mount container folder",
+        "Creation Date": 1703856765,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77730491,
+        "Title": "How to install Java 11 in TeamCity?",
+        "Creation Date": 1703830099,
+        "Answer Count": 1,
+        "View Count": 33,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732240,
+        "Title": "BlueCove library is not supported for Android",
+        "Creation Date": 1703856517,
+        "Answer Count": 0,
+        "View Count": 21,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77717747,
+        "Title": "Use ExternalPythonOperator in Apache Airflow with a Windows venv on a Docker for Desktop setup",
+        "Creation Date": 1703601166,
+        "Answer Count": 0,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 47067302,
+        "Title": "What is difference between &quot;as&quot; and &quot;is&quot; operator in Kotlin?",
+        "Creation Date": 1509594642,
+        "Answer Count": 10,
+        "View Count": 30142,
+        "Score": 27
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77732150,
+        "Title": "Spring Boot Test Controller with Security Parameter in Method Signature",
+        "Creation Date": 1703855385,
+        "Answer Count": 0,
+        "View Count": 32,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732139,
+        "Title": "Android studio has a different preview on emulator and activity_main.xml",
+        "Creation Date": 1703855150,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77732141,
+        "Title": "Why BLE scanning not working for me on Android 13?",
+        "Creation Date": 1703855193,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77732141,
+        "Title": "Why BLE scanning not working for me on Android 13?",
+        "Creation Date": 1703855193,
+        "Answer Count": 0,
+        "View Count": 18,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77732140,
+        "Title": "Getting SIGSEGV (0xb) at pc=0x00007fe2deb92bb0, pid=4611, tid=140613335000832 when running my java jar (flink)",
+        "Creation Date": 1703855169,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 20822976,
+        "Title": "The client to invoke an error is as follows:org.xml.sax.SAXException: SimpleDeserializer encountered a child element, which is NOT expected",
+        "Creation Date": 1388301265,
+        "Answer Count": 1,
+        "View Count": 9387,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 75027717,
+        "Title": "Confirm Subscription plan from play Store Flutter",
+        "Creation Date": 1672986900,
+        "Answer Count": 1,
+        "View Count": 262,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77732112,
+        "Title": "I am working on spring MVCORM practice i got this error",
+        "Creation Date": 1703854656,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": -3
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77725359,
+        "Title": "Sail npm run dev",
+        "Creation Date": 1703745586,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731876,
+        "Title": "I am not able to build the apk file of the project, whenever I try to build I get thi error. dexBuilderDebug FAILED",
+        "Creation Date": 1703851368,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77731876,
+        "Title": "I am not able to build the apk file of the project, whenever I try to build I get thi error. dexBuilderDebug FAILED",
+        "Creation Date": 1703851368,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731420,
+        "Title": "Regarding Casting on all SMART TVs",
+        "Creation Date": 1703845812,
+        "Answer Count": 0,
+        "View Count": 14,
+        "Score": -2
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 39209450,
+        "Title": "i have this error java.lang.NoSuchMethodError",
+        "Creation Date": 1472483089,
+        "Answer Count": 3,
+        "View Count": 8310,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77732013,
+        "Title": "Why run multiple containers of the same docker image in single EC2 instance",
+        "Creation Date": 1703853060,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77732007,
+        "Title": "LWJGL not working with Gradle - Linux ARM64 - Java 17",
+        "Creation Date": 1703853001,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77731994,
+        "Title": "The customer sent the project in the format.war and unpacked .war(META-INF etc, where instead of files .java is only there .class and a lot of groovy)",
+        "Creation Date": 1703852816,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731970,
+        "Title": "como a&#241;adir google wallet en ionic",
+        "Creation Date": 1703852448,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77571107,
+        "Title": "Spring Boot neo4j",
+        "Creation Date": 1701260419,
+        "Answer Count": 1,
+        "View Count": 53,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 65565717,
+        "Title": "Istio 1.8 upstream connect error or disconnect/reset before headers. reset reason: connection failure",
+        "Creation Date": 1609775907,
+        "Answer Count": 0,
+        "View Count": 1956,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 7021578,
+        "Title": "Resize Drawable in Android",
+        "Creation Date": 1313043366,
+        "Answer Count": 8,
+        "View Count": 96576,
+        "Score": 42
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77725624,
+        "Title": "Getting error while integrating docker-java api",
+        "Creation Date": 1703749890,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77725624,
+        "Title": "Getting error while integrating docker-java api",
+        "Creation Date": 1703749890,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 46435582,
+        "Title": "How to import org.apache.httpcomponents using Gradle",
+        "Creation Date": 1506458954,
+        "Answer Count": 1,
+        "View Count": 17743,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 46435582,
+        "Title": "How to import org.apache.httpcomponents using Gradle",
+        "Creation Date": 1506458954,
+        "Answer Count": 1,
+        "View Count": 17743,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 44450265,
+        "Title": "What is a docker-compose.yml file?",
+        "Creation Date": 1496987799,
+        "Answer Count": 3,
+        "View Count": 41002,
+        "Score": 23
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 52522282,
+        "Title": "Using kotlinx.coroutines in IntelliJ IDEA project",
+        "Creation Date": 1537979063,
+        "Answer Count": 3,
+        "View Count": 25540,
+        "Score": 37
+    },
+    {
+        "Tag": "android",
+        "Question ID": 68656889,
+        "Title": "Jetpack compose: How to detect what is causing a Composable to recompose",
+        "Creation Date": 1628104456,
+        "Answer Count": 5,
+        "View Count": 3925,
+        "Score": 21
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77731866,
+        "Title": "Problem translating retrofit multipart call to ktor",
+        "Creation Date": 1703851256,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731863,
+        "Title": "LinkageError after adding javax.ws.rs-api to Gradle build in Spring Boot 3.2 Kotlin project",
+        "Creation Date": 1703851242,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77721223,
+        "Title": "problem with displaying grid layout while app has different theme than system",
+        "Creation Date": 1703671283,
+        "Answer Count": 1,
+        "View Count": 34,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77721223,
+        "Title": "problem with displaying grid layout while app has different theme than system",
+        "Creation Date": 1703671283,
+        "Answer Count": 1,
+        "View Count": 34,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77731292,
+        "Title": "How can i run keycloak on docker container?",
+        "Creation Date": 1703843784,
+        "Answer Count": 1,
+        "View Count": 45,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731114,
+        "Title": "How to get phone number from an incoming call from Android 12?",
+        "Creation Date": 1703841364,
+        "Answer Count": 1,
+        "View Count": 51,
+        "Score": 4
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77731114,
+        "Title": "How to get phone number from an incoming call from Android 12?",
+        "Creation Date": 1703841364,
+        "Answer Count": 1,
+        "View Count": 51,
+        "Score": 4
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77710470,
+        "Title": "Travel through Parents components (containers) from last element to first",
+        "Creation Date": 1703417322,
+        "Answer Count": 0,
+        "View Count": 87,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77731823,
+        "Title": "Dotnet Runtime 8.0.0 not found in Ubuntu 23.10 arm64",
+        "Creation Date": 1703850714,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731551,
+        "Title": "io.ktor.utils.io.charsets.MalformedInputException: Input length = 1 error",
+        "Creation Date": 1703847566,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77727503,
+        "Title": "Disable semicolon path paramaters in Tomcat to prevent access to secured folders (security vulnerabilty)",
+        "Creation Date": 1703774226,
+        "Answer Count": 0,
+        "View Count": 34,
+        "Score": 0
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77731780,
+        "Title": "Webpack process exited with non-zero exit code",
+        "Creation Date": 1703850093,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77727519,
+        "Title": "Actuator endpoints masking the values post Spring boot v3.2.1 migration",
+        "Creation Date": 1703774397,
+        "Answer Count": 1,
+        "View Count": 33,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77724140,
+        "Title": "How to make RecyclerView items &quot;pop&quot; in place?",
+        "Creation Date": 1703713745,
+        "Answer Count": 1,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77731755,
+        "Title": "Running SQL Server and MySQL in Docker engine on Ubuntu vs. Local Machine Ubuntu. Which is best option for excellent performance?",
+        "Creation Date": 1703849722,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": -2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 68395975,
+        "Title": "java.lang.IllegalStateException: ViewTreeLifecycleOwner not found from androidx.constraintlayout.widget.ConstraintLayout",
+        "Creation Date": 1626360278,
+        "Answer Count": 5,
+        "View Count": 8113,
+        "Score": 12
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731699,
+        "Title": "Sharing files and data between apps on android - intents +",
+        "Creation Date": 1703849008,
+        "Answer Count": 0,
+        "View Count": 21,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731678,
+        "Title": "Unable to Register TelephonyManager for Signal Strength Changes due to SecurityException",
+        "Creation Date": 1703848672,
+        "Answer Count": 0,
+        "View Count": 6,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 14122756,
+        "Title": "Spring Security using both username or email",
+        "Creation Date": 1357132529,
+        "Answer Count": 8,
+        "View Count": 14771,
+        "Score": 11
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77727914,
+        "Title": "Admob LoadAdError &#39;message: No fill&#39; on Test Devices - Flutter",
+        "Creation Date": 1703779326,
+        "Answer Count": 1,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77726749,
+        "Title": "How to get the image name and version from manifest.json",
+        "Creation Date": 1703764802,
+        "Answer Count": 2,
+        "View Count": 46,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77574031,
+        "Title": "puppeteer Error : Navigating frame was detached on page.goto",
+        "Creation Date": 1701286263,
+        "Answer Count": 0,
+        "View Count": 197,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77724963,
+        "Title": "Is there any dev documentation for Apache Druid maven repositories?",
+        "Creation Date": 1703735926,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731574,
+        "Title": "Spring boot running on Azure container restarted with the error. Has anyone come across this before?",
+        "Creation Date": 1703847769,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 57216444,
+        "Title": "How to solve Error: Invalid or corrupt jarfile",
+        "Creation Date": 1564131095,
+        "Answer Count": 1,
+        "View Count": 20458,
+        "Score": 2
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731553,
+        "Title": "Video Streaming Using Spring Boot, Web Flux and Amazon S3 Not working Reactively from Backend to S3",
+        "Creation Date": 1703847575,
+        "Answer Count": 0,
+        "View Count": 21,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731547,
+        "Title": "ESCPOS-ThermalPrinter-Android (3.4.0) got extra large size text",
+        "Creation Date": 1703847493,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 28296237,
+        "Title": "Set ANDROID_HOME environment variable in mac",
+        "Creation Date": 1422958183,
+        "Answer Count": 18,
+        "View Count": 275351,
+        "Score": 125
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731537,
+        "Title": "Image picker / file picker packages don&#39;t behave as expected on Android 14",
+        "Creation Date": 1703847331,
+        "Answer Count": 0,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 58607203,
+        "Title": "Failed resolution of: Ljavax/imageio/stream/FileImageInputStream when using Java library",
+        "Creation Date": 1572350978,
+        "Answer Count": 1,
+        "View Count": 320,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77731518,
+        "Title": "Send file by Feign - No serializer found",
+        "Creation Date": 1703847135,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": -1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731342,
+        "Title": "POST requests sent by https to Tomcat via an Apache reverse proxy return status 403 in https",
+        "Creation Date": 1703844536,
+        "Answer Count": 1,
+        "View Count": 25,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77731509,
+        "Title": "Keycloak admin client always gives 401 Unauthorized exception",
+        "Creation Date": 1703846971,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 57606462,
+        "Title": "A failure occurred while executing com.android.build.gradle.internal.tasks",
+        "Creation Date": 1566467002,
+        "Answer Count": 54,
+        "View Count": 876181,
+        "Score": 285
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 57606462,
+        "Title": "A failure occurred while executing com.android.build.gradle.internal.tasks",
+        "Creation Date": 1566467002,
+        "Answer Count": 54,
+        "View Count": 876181,
+        "Score": 285
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77725020,
+        "Title": "Upload video to S3 with React-Native",
+        "Creation Date": 1703737936,
+        "Answer Count": 1,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731462,
+        "Title": "Set-up the same TransactionManager on Batch repository and Task repository with Spring Boot auto-config",
+        "Creation Date": 1703846307,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731456,
+        "Title": "How to sync springboot entity changes",
+        "Creation Date": 1703846225,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": -1
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77731456,
+        "Title": "How to sync springboot entity changes",
+        "Creation Date": 1703846225,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": -1
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77731456,
+        "Title": "How to sync springboot entity changes",
+        "Creation Date": 1703846225,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 75393206,
+        "Title": "issues running multiple build jobs in parallel usin DIND",
+        "Creation Date": 1675904510,
+        "Answer Count": 2,
+        "View Count": 395,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731425,
+        "Title": "How to handle Badge on app icon properly for Xiaomi phone?",
+        "Creation Date": 1703845842,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77731425,
+        "Title": "How to handle Badge on app icon properly for Xiaomi phone?",
+        "Creation Date": 1703845842,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731372,
+        "Title": "(SpringBoot) can&#39;t read resources - already changed the file route - java.lang.NullPointerException",
+        "Creation Date": 1703845027,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77731403,
+        "Title": "Hibernate Custom ID Type with @GeneratedValue",
+        "Creation Date": 1703845568,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77731403,
+        "Title": "Hibernate Custom ID Type with @GeneratedValue",
+        "Creation Date": 1703845568,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77726321,
+        "Title": "Why does it not work by changing anything in the code on the expo go app but on the physical Android device it doesn&#39;t work?",
+        "Creation Date": 1703759363,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 75133577,
+        "Title": "How to read Azure web site app settings values in Spring boot java class",
+        "Creation Date": 1673868445,
+        "Answer Count": 3,
+        "View Count": 454,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 76863262,
+        "Title": "Different Trace Id between applications on spring boot 2 and spring boot 3",
+        "Creation Date": 1691529502,
+        "Answer Count": 1,
+        "View Count": 586,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 69649929,
+        "Title": "React native Scrollview not scrolling at all",
+        "Creation Date": 1634747999,
+        "Answer Count": 2,
+        "View Count": 4044,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731341,
+        "Title": "Should we set the max virtual thread number with tomcat?",
+        "Creation Date": 1703844481,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": -1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 75460831,
+        "Title": "Spring Boot 3 security cannot access H2 console - 403",
+        "Creation Date": 1676469142,
+        "Answer Count": 2,
+        "View Count": 1191,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 48929228,
+        "Title": "External library and JNI with Android: dlopen failed: library &quot;libcrypto.so.1.1&quot; not found, even with SONAME set correctly",
+        "Creation Date": 1519307827,
+        "Answer Count": 2,
+        "View Count": 1999,
+        "Score": 4
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70735719,
+        "Title": "Unable to load class &#39;org.jetbrains.kotlin.config.LanguageVersion&#39;",
+        "Creation Date": 1642384240,
+        "Answer Count": 4,
+        "View Count": 9364,
+        "Score": 3
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 70735719,
+        "Title": "Unable to load class &#39;org.jetbrains.kotlin.config.LanguageVersion&#39;",
+        "Creation Date": 1642384240,
+        "Answer Count": 4,
+        "View Count": 9364,
+        "Score": 3
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 70735719,
+        "Title": "Unable to load class &#39;org.jetbrains.kotlin.config.LanguageVersion&#39;",
+        "Creation Date": 1642384240,
+        "Answer Count": 4,
+        "View Count": 9364,
+        "Score": 3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 56305791,
+        "Title": "Unresolved reference: viewModelScope - Kotlin Android",
+        "Creation Date": 1558794976,
+        "Answer Count": 14,
+        "View Count": 38983,
+        "Score": 55
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 56305791,
+        "Title": "Unresolved reference: viewModelScope - Kotlin Android",
+        "Creation Date": 1558794976,
+        "Answer Count": 14,
+        "View Count": 38983,
+        "Score": 55
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77725301,
+        "Title": "Hibernate 3.1.3 to Hibernate 5.6.15.Final",
+        "Creation Date": 1703744399,
+        "Answer Count": 0,
+        "View Count": 47,
+        "Score": -1
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 62147493,
+        "Title": "Minimum supported Gradle version is 6.1.1. Current version is 5.6.4",
+        "Creation Date": 1591085107,
+        "Answer Count": 18,
+        "View Count": 203930,
+        "Score": 83
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 59139453,
+        "Title": "Repository is not signed in docker build",
+        "Creation Date": 1575291655,
+        "Answer Count": 15,
+        "View Count": 134971,
+        "Score": 206
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 6081617,
+        "Title": "Missing maven .m2 folder",
+        "Creation Date": 1305979808,
+        "Answer Count": 9,
+        "View Count": 367651,
+        "Score": 86
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77704880,
+        "Title": "MariaDB Sequence",
+        "Creation Date": 1703263900,
+        "Answer Count": 0,
+        "View Count": 60,
+        "Score": 1
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77704880,
+        "Title": "MariaDB Sequence",
+        "Creation Date": 1703263900,
+        "Answer Count": 0,
+        "View Count": 60,
+        "Score": 1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77730887,
+        "Title": "What is the right order of Spring profiles?",
+        "Creation Date": 1703837357,
+        "Answer Count": 1,
+        "View Count": 37,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77730887,
+        "Title": "What is the right order of Spring profiles?",
+        "Creation Date": 1703837357,
+        "Answer Count": 1,
+        "View Count": 37,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77729910,
+        "Title": "React Native android bundle overrides",
+        "Creation Date": 1703814582,
+        "Answer Count": 1,
+        "View Count": 42,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730882,
+        "Title": "How to use Retrofit with general response in Android",
+        "Creation Date": 1703837288,
+        "Answer Count": 1,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730882,
+        "Title": "How to use Retrofit with general response in Android",
+        "Creation Date": 1703837288,
+        "Answer Count": 1,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77677605,
+        "Title": "jakarta.servlet.ServletException: At least one resource class should be specified at org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet",
+        "Creation Date": 1702885212,
+        "Answer Count": 1,
+        "View Count": 56,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77731147,
+        "Title": "Jpa @CollectionTable very slow query",
+        "Creation Date": 1703841722,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77731147,
+        "Title": "Jpa @CollectionTable very slow query",
+        "Creation Date": 1703841722,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 70374885,
+        "Title": "Lombok not generating getter and setter?",
+        "Creation Date": 1639637048,
+        "Answer Count": 6,
+        "View Count": 6253,
+        "Score": 1
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 70374885,
+        "Title": "Lombok not generating getter and setter?",
+        "Creation Date": 1639637048,
+        "Answer Count": 6,
+        "View Count": 6253,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731117,
+        "Title": "How to reduce initial OSM file loading time with GraphHopper in a Spring Boot project?",
+        "Creation Date": 1703841389,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730690,
+        "Title": "Record Video from react-native-image-crop-picker not working in android 13",
+        "Creation Date": 1703834043,
+        "Answer Count": 2,
+        "View Count": 31,
+        "Score": 3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730545,
+        "Title": "I encountered error trying to run a Android Build using React-native (error Failed to build the app: No package name found)",
+        "Creation Date": 1703831089,
+        "Answer Count": 1,
+        "View Count": 33,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77731162,
+        "Title": "Why Spring need remove earlySingletonObjects?",
+        "Creation Date": 1703842082,
+        "Answer Count": 0,
+        "View Count": 17,
+        "Score": -1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 37999762,
+        "Title": "Efficient way to have Jackson serialize Java 8 Instant as epoch milliseconds?",
+        "Creation Date": 1466708485,
+        "Answer Count": 6,
+        "View Count": 24323,
+        "Score": 20
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77716873,
+        "Title": "Unable to download pdf from link in Android Using downloadManager",
+        "Creation Date": 1703587733,
+        "Answer Count": 2,
+        "View Count": 51,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77716873,
+        "Title": "Unable to download pdf from link in Android Using downloadManager",
+        "Creation Date": 1703587733,
+        "Answer Count": 2,
+        "View Count": 51,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77731084,
+        "Title": "Spring boot 403 forbidden without cors, csrf",
+        "Creation Date": 1703841005,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": -2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 72020904,
+        "Title": "Minio console not accessible behind nginx reverse proxy",
+        "Creation Date": 1651009771,
+        "Answer Count": 4,
+        "View Count": 9634,
+        "Score": 7
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731118,
+        "Title": "The soft keyboard that pops up from the input box will squeeze the Flutter page",
+        "Creation Date": 1703841389,
+        "Answer Count": 0,
+        "View Count": 25,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 25873132,
+        "Title": "Android - How to redirect my app to default messaging application?",
+        "Creation Date": 1410882272,
+        "Answer Count": 3,
+        "View Count": 1533,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 20117760,
+        "Title": "How to create customized menu inside a layout in android?",
+        "Creation Date": 1385028156,
+        "Answer Count": 3,
+        "View Count": 13721,
+        "Score": 4
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77696611,
+        "Title": "jakarta.xml.bind.PropertyException: name: com.sun.xml.bind.namespacePrefixMapper value - com.abc$NamespacePrefixMapperImpl@65c3d713",
+        "Creation Date": 1703146994,
+        "Answer Count": 2,
+        "View Count": 40,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77727328,
+        "Title": "Execution failed for task &#39;:wsdl2java&#39; Failed to notify dependency resolution listener",
+        "Creation Date": 1703772178,
+        "Answer Count": 0,
+        "View Count": 11,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77730740,
+        "Title": "Getting default apache page",
+        "Creation Date": 1703835056,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 76499688,
+        "Title": "What&#39;s the right way to configure Nginx for MinIO server running as a docker service",
+        "Creation Date": 1687077431,
+        "Answer Count": 1,
+        "View Count": 361,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 39364466,
+        "Title": "How to dockerized java microservices efficiently",
+        "Creation Date": 1473235607,
+        "Answer Count": 2,
+        "View Count": 1173,
+        "Score": 3
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731004,
+        "Title": "flutter: Google sign-in error: PlatformException(google_sign_in, No active configuration. Make sure GIDClientID is set in Info.plist",
+        "Creation Date": 1703839575,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77731010,
+        "Title": "Problems with the application react native working in real time after the phone wakes up",
+        "Creation Date": 1703839667,
+        "Answer Count": 0,
+        "View Count": 26,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730999,
+        "Title": "Create background activity on Samsung smartphone that will run for hours",
+        "Creation Date": 1703839459,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730999,
+        "Title": "Create background activity on Samsung smartphone that will run for hours",
+        "Creation Date": 1703839459,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 16312792,
+        "Title": "How to check color brightness in android?",
+        "Creation Date": 1367382917,
+        "Answer Count": 3,
+        "View Count": 5978,
+        "Score": 3
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 70305343,
+        "Title": "Spring Security OAuth2 token refreshed by WebClient but stored as &quot;anonymousUser&quot;",
+        "Creation Date": 1639143308,
+        "Answer Count": 1,
+        "View Count": 726,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 61879607,
+        "Title": "Fill Color in Specific Part of Image but with Touch only and not with FloodFill",
+        "Creation Date": 1589838767,
+        "Answer Count": 2,
+        "View Count": 136,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 11627892,
+        "Title": "onOptionsItemSelected not called when using actionLayout (SherlockActionBar)",
+        "Creation Date": 1343121962,
+        "Answer Count": 7,
+        "View Count": 30355,
+        "Score": 53
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77730960,
+        "Title": "How to troubleshoot SpringBoot 4 QueryDLS 5 app missing QClasses missing?",
+        "Creation Date": 1703838705,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 77730960,
+        "Title": "How to troubleshoot SpringBoot 4 QueryDLS 5 app missing QClasses missing?",
+        "Creation Date": 1703838705,
+        "Answer Count": 0,
+        "View Count": 9,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 70013553,
+        "Title": "kotlin.Any not found when enabling Proguard",
+        "Creation Date": 1637199336,
+        "Answer Count": 1,
+        "View Count": 351,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 70013553,
+        "Title": "kotlin.Any not found when enabling Proguard",
+        "Creation Date": 1637199336,
+        "Answer Count": 1,
+        "View Count": 351,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77667022,
+        "Title": "Ignoring Compose function naming error in Spotless(ktlint)",
+        "Creation Date": 1702651386,
+        "Answer Count": 1,
+        "View Count": 77,
+        "Score": 3
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77730817,
+        "Title": "Java: PostgreSQL Hibernate ERROR: INSERT has more expressions than target columns",
+        "Creation Date": 1703836266,
+        "Answer Count": 1,
+        "View Count": 48,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730918,
+        "Title": "Disabling Ripple Effect in Modifier.clickable Using CompositionLocalProvide",
+        "Creation Date": 1703837984,
+        "Answer Count": 0,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77730826,
+        "Title": "java.lang.NoSuchMethodError: &#39;boolean io.swagger.v3.oas.models.media.Schema.getExampleSetFlag()&#39;",
+        "Creation Date": 1703836480,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": -1
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77730826,
+        "Title": "java.lang.NoSuchMethodError: &#39;boolean io.swagger.v3.oas.models.media.Schema.getExampleSetFlag()&#39;",
+        "Creation Date": 1703836480,
+        "Answer Count": 0,
+        "View Count": 19,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77729240,
+        "Title": "Cannot connect to SQL Server using sqlcmd in Docker image, Gitlab CI",
+        "Creation Date": 1703798724,
+        "Answer Count": 1,
+        "View Count": 25,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 38447545,
+        "Title": "How to mock location without enabling setting",
+        "Creation Date": 1468885770,
+        "Answer Count": 2,
+        "View Count": 20734,
+        "Score": 1
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 51963312,
+        "Title": "Mocking an extension function with Mockito",
+        "Creation Date": 1534928635,
+        "Answer Count": 3,
+        "View Count": 5470,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 51963312,
+        "Title": "Mocking an extension function with Mockito",
+        "Creation Date": 1534928635,
+        "Answer Count": 3,
+        "View Count": 5470,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 72271130,
+        "Title": "Jetpack Compose: nested LazyColumn / LazyRow",
+        "Creation Date": 1652778191,
+        "Answer Count": 6,
+        "View Count": 21031,
+        "Score": 45
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 72271130,
+        "Title": "Jetpack Compose: nested LazyColumn / LazyRow",
+        "Creation Date": 1652778191,
+        "Answer Count": 6,
+        "View Count": 21031,
+        "Score": 45
+    },
+    {
+        "Tag": "android",
+        "Question ID": 37963947,
+        "Title": "Fix “Ignoring InnerClasses attribute” warning",
+        "Creation Date": 1466587816,
+        "Answer Count": 1,
+        "View Count": 4392,
+        "Score": 8
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 37963947,
+        "Title": "Fix “Ignoring InnerClasses attribute” warning",
+        "Creation Date": 1466587816,
+        "Answer Count": 1,
+        "View Count": 4392,
+        "Score": 8
+    },
+    {
+        "Tag": "android",
+        "Question ID": 69960884,
+        "Title": "indexoutofboundexception while implementing Recyclerview filter",
+        "Creation Date": 1636872496,
+        "Answer Count": 1,
+        "View Count": 297,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 69960884,
+        "Title": "indexoutofboundexception while implementing Recyclerview filter",
+        "Creation Date": 1636872496,
+        "Answer Count": 1,
+        "View Count": 297,
+        "Score": 1
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 77725614,
+        "Title": "Unable to resolve import from (src/test/java) Test classes packages from one subproject to another subproject (src/test/java) test classes",
+        "Creation Date": 1703749763,
+        "Answer Count": 1,
+        "View Count": 25,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77723247,
+        "Title": "How to fix Coroutine Timeout in Unit Test",
+        "Creation Date": 1703698105,
+        "Answer Count": 1,
+        "View Count": 24,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77730745,
+        "Title": "use three-level url in spring controller - kotlin",
+        "Creation Date": 1703835122,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77730745,
+        "Title": "use three-level url in spring controller - kotlin",
+        "Creation Date": 1703835122,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730745,
+        "Title": "use three-level url in spring controller - kotlin",
+        "Creation Date": 1703835122,
+        "Answer Count": 0,
+        "View Count": 22,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77460175,
+        "Title": "Upgrade from Google VR to Google Cardboard XR Plugin…limiting reticle distance and using event triggers component in editor",
+        "Creation Date": 1699620921,
+        "Answer Count": 1,
+        "View Count": 36,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77729549,
+        "Title": "Can&#39;t add Playwright to a Dockerized Java app",
+        "Creation Date": 1703804485,
+        "Answer Count": 0,
+        "View Count": 40,
+        "Score": 1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77702335,
+        "Title": "MavenCentral :image-preview:publishReleasePublicationToImagePreviewRepository FAILED",
+        "Creation Date": 1703231401,
+        "Answer Count": 1,
+        "View Count": 85,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730684,
+        "Title": "Bionic header is inconsistent with the kernel header",
+        "Creation Date": 1703833912,
+        "Answer Count": 0,
+        "View Count": 4,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77720392,
+        "Title": "Handling ExoPlayer Audio Focus Loss When Resuming Video in Android App",
+        "Creation Date": 1703658676,
+        "Answer Count": 0,
+        "View Count": 23,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77730675,
+        "Title": "PF4j loading interface and plugin with difference classload, how to solve?",
+        "Creation Date": 1703833726,
+        "Answer Count": 0,
+        "View Count": 6,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 72383490,
+        "Title": "SQL Server Docker container immediately exiting",
+        "Creation Date": 1653508598,
+        "Answer Count": 4,
+        "View Count": 5737,
+        "Score": 3
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77692766,
+        "Title": "BIRT Report Engine API createFactoryObject returns null",
+        "Creation Date": 1703086437,
+        "Answer Count": 0,
+        "View Count": 74,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 34390220,
+        "Title": "How to mount external volume for mongoDB using docker-compose and docker-machine",
+        "Creation Date": 1450680378,
+        "Answer Count": 7,
+        "View Count": 54860,
+        "Score": 31
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 25821579,
+        "Title": "TransactionRequiredException Executing an update/delete query",
+        "Creation Date": 1410598989,
+        "Answer Count": 27,
+        "View Count": 365258,
+        "Score": 134
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 25821579,
+        "Title": "TransactionRequiredException Executing an update/delete query",
+        "Creation Date": 1410598989,
+        "Answer Count": 27,
+        "View Count": 365258,
+        "Score": 134
+    },
+    {
+        "Tag": "jpa",
+        "Question ID": 25821579,
+        "Title": "TransactionRequiredException Executing an update/delete query",
+        "Creation Date": 1410598989,
+        "Answer Count": 27,
+        "View Count": 365258,
+        "Score": 134
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 45872591,
+        "Title": "Spring Bean Factory Using Class Name",
+        "Creation Date": 1503619366,
+        "Answer Count": 1,
+        "View Count": 8790,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730648,
+        "Title": "How to disable the talkback green point when use ExploreByTouchHelper",
+        "Creation Date": 1703833129,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 69020535,
+        "Title": "How to prevent docker build from redownloading copied Go vendor",
+        "Creation Date": 1630530220,
+        "Answer Count": 2,
+        "View Count": 6258,
+        "Score": 8
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77729571,
+        "Title": "java.lang.NullPointerException:Parameter specified as non null is null: method WeatherEntityMapper.mapWeatherEntityToWeatherData",
+        "Creation Date": 1703804905,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77729571,
+        "Title": "java.lang.NullPointerException:Parameter specified as non null is null: method WeatherEntityMapper.mapWeatherEntityToWeatherData",
+        "Creation Date": 1703804905,
+        "Answer Count": 0,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 11860475,
+        "Title": "How to get Contact ID, Email, Phone number in one SQLite query ? Contacts Android Optimization",
+        "Creation Date": 1344414141,
+        "Answer Count": 2,
+        "View Count": 18774,
+        "Score": 22
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730626,
+        "Title": "Error: Untracked working tree file &#39;lib&#39; would be overwritten by merge",
+        "Creation Date": 1703832478,
+        "Answer Count": 0,
+        "View Count": 26,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730624,
+        "Title": "Application crashes in release mode due to a missing no-argument constructor for the s1.d class during deserialization but not in debug mode",
+        "Creation Date": 1703832405,
+        "Answer Count": 0,
+        "View Count": 26,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 76704424,
+        "Title": "Prevent scrolling to the top of list when item is selected/unselected in pagingAdapter, paging 3 library",
+        "Creation Date": 1689596623,
+        "Answer Count": 1,
+        "View Count": 36,
+        "Score": 2
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 76704424,
+        "Title": "Prevent scrolling to the top of list when item is selected/unselected in pagingAdapter, paging 3 library",
+        "Creation Date": 1689596623,
+        "Answer Count": 1,
+        "View Count": 36,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 7778746,
+        "Title": "handleMessage not called",
+        "Creation Date": 1318692551,
+        "Answer Count": 1,
+        "View Count": 4500,
+        "Score": 2
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 46151540,
+        "Title": "Added Springfox Swagger-UI and it&#39;s not working, what am I missing?",
+        "Creation Date": 1505119536,
+        "Answer Count": 25,
+        "View Count": 108214,
+        "Score": 55
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 46151540,
+        "Title": "Added Springfox Swagger-UI and it&#39;s not working, what am I missing?",
+        "Creation Date": 1505119536,
+        "Answer Count": 25,
+        "View Count": 108214,
+        "Score": 55
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77730147,
+        "Title": "Sa-Token and Spring Gateway Conflict",
+        "Creation Date": 1703821638,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": -1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 69299878,
+        "Title": "Required by: project :app &gt; com.google.android.libraries.places:places:2.4.0",
+        "Creation Date": 1632399565,
+        "Answer Count": 2,
+        "View Count": 1183,
+        "Score": 0
+    },
+    {
+        "Tag": "gradle",
+        "Question ID": 77730516,
+        "Title": "How to include generated sources with Gradle&#39;s javadoc task?",
+        "Creation Date": 1703830681,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730514,
+        "Title": "java.lang.RuntimeException - Parcel android.os.Parcel@a8d79e2: Unmarshalling unknown type code",
+        "Creation Date": 1703830675,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": -1
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730514,
+        "Title": "java.lang.RuntimeException - Parcel android.os.Parcel@a8d79e2: Unmarshalling unknown type code",
+        "Creation Date": 1703830675,
+        "Answer Count": 0,
+        "View Count": 8,
+        "Score": -1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77661101,
+        "Title": "Spring Boot 3 migration spring-cloud-starter-contract-verifier and MessageVerifierReceiver",
+        "Creation Date": 1702566200,
+        "Answer Count": 1,
+        "View Count": 85,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77661101,
+        "Title": "Spring Boot 3 migration spring-cloud-starter-contract-verifier and MessageVerifierReceiver",
+        "Creation Date": 1702566200,
+        "Answer Count": 1,
+        "View Count": 85,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77729881,
+        "Title": "Android kotlin dialog transparent background blur not working",
+        "Creation Date": 1703813590,
+        "Answer Count": 0,
+        "View Count": 31,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730471,
+        "Title": "Multiple transformation Animation Jetpack Compose",
+        "Creation Date": 1703829585,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730462,
+        "Title": "Redmi Note 9 Pro / Joyeuse restarting when i answer a call (or whenever i use receiver / earpiece)",
+        "Creation Date": 1703829463,
+        "Answer Count": 0,
+        "View Count": 7,
+        "Score": -1
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 63103546,
+        "Title": "Docker file postgres initial schemas not executed",
+        "Creation Date": 1595785039,
+        "Answer Count": 3,
+        "View Count": 3840,
+        "Score": 1
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77728386,
+        "Title": "I need a command that redoes filter-repo",
+        "Creation Date": 1703785509,
+        "Answer Count": 1,
+        "View Count": 33,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730413,
+        "Title": "Is there any alternative IoT app Platform to Blynk?",
+        "Creation Date": 1703828311,
+        "Answer Count": 0,
+        "View Count": 12,
+        "Score": -2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77579451,
+        "Title": "Gunicorn Timeout - How to increase timeout?",
+        "Creation Date": 1701356107,
+        "Answer Count": 1,
+        "View Count": 28,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77729821,
+        "Title": "Docker Compose up causes &quot;Conflict. The container name is already in use by container&quot;?",
+        "Creation Date": 1703811447,
+        "Answer Count": 0,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77728784,
+        "Title": "Whitelabel Error Page containing the HTTP status code and an error message if no mappings for the /error endpoint are found",
+        "Creation Date": 1703791439,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 61859247,
+        "Title": "Cannot connect with SSMS to SQL Server on Docker",
+        "Creation Date": 1589751951,
+        "Answer Count": 10,
+        "View Count": 21699,
+        "Score": 17
+    },
+    {
+        "Tag": "android",
+        "Question ID": 5050005,
+        "Title": "What is the difference between an Android Activity and Service",
+        "Creation Date": 1298107998,
+        "Answer Count": 2,
+        "View Count": 30588,
+        "Score": 16
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77730359,
+        "Title": "Error creating bean with name cacheManager defined in class path resource org/springframework/boot/autoconfigure/cache/JCacheCacheConfiguration.class",
+        "Creation Date": 1703827057,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-data-jpa",
+        "Question ID": 77730359,
+        "Title": "Error creating bean with name cacheManager defined in class path resource org/springframework/boot/autoconfigure/cache/JCacheCacheConfiguration.class",
+        "Creation Date": 1703827057,
+        "Answer Count": 0,
+        "View Count": 10,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77238731,
+        "Title": "(KotlinSourceSet with name &#39;iosMain&#39; not found.) How can I add android as a build target to a Kotlin Multiplatform project",
+        "Creation Date": 1696521162,
+        "Answer Count": 2,
+        "View Count": 473,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 15461077,
+        "Title": "onListItemClick on Activity extends ListActivity",
+        "Creation Date": 1363525792,
+        "Answer Count": 3,
+        "View Count": 8624,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77728383,
+        "Title": "How to add vm_args for a java web application to run on tomcat added using community server connector in vscode",
+        "Creation Date": 1703785497,
+        "Answer Count": 0,
+        "View Count": 17,
+        "Score": 0
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77364109,
+        "Title": "Spring Modulith Events",
+        "Creation Date": 1698294235,
+        "Answer Count": 1,
+        "View Count": 86,
+        "Score": 0
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 77364109,
+        "Title": "Spring Modulith Events",
+        "Creation Date": 1698294235,
+        "Answer Count": 1,
+        "View Count": 86,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77723387,
+        "Title": "Is there an alternative way of driver.startActivity() Function?",
+        "Creation Date": 1703700330,
+        "Answer Count": 0,
+        "View Count": 13,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77730284,
+        "Title": "How to solve the pen-test Possible Cross-Site Scripting via postMessage?",
+        "Creation Date": 1703824926,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": -3
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 56002338,
+        "Title": "How to use Kaniko on the local kubernetes",
+        "Creation Date": 1557134787,
+        "Answer Count": 2,
+        "View Count": 1230,
+        "Score": 1
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 77730269,
+        "Title": "Spring and Hibernate Upgrade from 4.x to 5.x",
+        "Creation Date": 1703824613,
+        "Answer Count": 0,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "hibernate",
+        "Question ID": 77730269,
+        "Title": "Spring and Hibernate Upgrade from 4.x to 5.x",
+        "Creation Date": 1703824613,
+        "Answer Count": 0,
+        "View Count": 27,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 77730268,
+        "Title": "Issue with DNS resolution from docker container",
+        "Creation Date": 1703824590,
+        "Answer Count": 0,
+        "View Count": 20,
+        "Score": -2
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 66236859,
+        "Title": "Container Optimized OS Docker Shutdown Behavior",
+        "Creation Date": 1613543921,
+        "Answer Count": 3,
+        "View Count": 1231,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 15097004,
+        "Title": "XAPK File Validation Failed - APK Expansion Files",
+        "Creation Date": 1361904705,
+        "Answer Count": 2,
+        "View Count": 29060,
+        "Score": 5
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730167,
+        "Title": "Put object request in AWS S3 Kotlin SDK fails for big files because of timeout",
+        "Creation Date": 1703822059,
+        "Answer Count": 0,
+        "View Count": 15,
+        "Score": 0
+    },
+    {
+        "Tag": "docker",
+        "Question ID": 74683876,
+        "Title": "How Sentry is cleaned up correctly",
+        "Creation Date": 1670219417,
+        "Answer Count": 2,
+        "View Count": 908,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 53408940,
+        "Title": "Retrieving data from firebase takes too much time",
+        "Creation Date": 1542792661,
+        "Answer Count": 4,
+        "View Count": 1922,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77651220,
+        "Title": "Media projection permission dialog popup again &amp; again in (Samsung Android 14 One UI 6) &amp;&amp; Pixel 6 (Android14)",
+        "Creation Date": 1702444048,
+        "Answer Count": 2,
+        "View Count": 71,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77729213,
+        "Title": "Why page transitions are so slow with NavController",
+        "Creation Date": 1703798393,
+        "Answer Count": 1,
+        "View Count": 41,
+        "Score": 0
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77729213,
+        "Title": "Why page transitions are so slow with NavController",
+        "Creation Date": 1703798393,
+        "Answer Count": 1,
+        "View Count": 41,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 2681499,
+        "Title": "Android: How to auto-restart an application after it has been &quot;force closed&quot;?",
+        "Creation Date": 1271840495,
+        "Answer Count": 8,
+        "View Count": 99827,
+        "Score": 90
+    },
+    {
+        "Tag": "android",
+        "Question ID": 10265350,
+        "Title": "NotePad sample in Android sdk: Where is a note stored?",
+        "Creation Date": 1335070591,
+        "Answer Count": 2,
+        "View Count": 9988,
+        "Score": 2
+    },
+    {
+        "Tag": "android",
+        "Question ID": 76269655,
+        "Title": "Emulator: WARNING | Please update the emulator to one that supports the feature(s): Vulkan",
+        "Creation Date": 1684309474,
+        "Answer Count": 1,
+        "View Count": 2180,
+        "Score": 2
+    },
+    {
+        "Tag": "kotlin",
+        "Question ID": 77730049,
+        "Title": "how to initialize baresip in MainActivity in Android kotlin",
+        "Creation Date": 1703818688,
+        "Answer Count": 0,
+        "View Count": 16,
+        "Score": 0
+    },
+    {
+        "Tag": "android",
+        "Question ID": 68569259,
+        "Title": "How to perform an action on MaterialDatePicker in an Espresso test?",
+        "Creation Date": 1627525118,
+        "Answer Count": 2,
+        "View Count": 526,
+        "Score": 5
+    },
+    {
+        "Tag": "spring",
+        "Question ID": 64639836,
+        "Title": "Plugin &#39;org.springframework.boot:spring-boot-maven-plugin:&#39; not found",
+        "Creation Date": 1604291786,
+        "Answer Count": 27,
+        "View Count": 298222,
+        "Score": 142
+    },
+    {
+        "Tag": "spring-boot",
+        "Question ID": 64639836,
+        "Title": "Plugin &#39;org.springframework.boot:spring-boot-maven-plugin:&#39; not found",
+        "Creation Date": 1604291786,
+        "Answer Count": 27,
+        "View Count": 298222,
+        "Score": 142
+    },
+    {
+        "Tag": "maven",
+        "Question ID": 64639836,
+        "Title": "Plugin &#39;org.springframework.boot:spring-boot-maven-plugin:&#39; not found",
+        "Creation Date": 1604291786,
+        "Answer Count": 27,
+        "View Count": 298222,
+        "Score": 142
+    },
+    {
+        "Tag": "android",
+        "Question ID": 77730000,
+        "Title": "How to get my APK signing certificate recognized by Android without uploading APK to PlayStore?",
+        "Creation Date": 1703816996,
+        "Answer Count": 0,
+        "View Count": 52,
+        "Score": 0
+    }
+]
