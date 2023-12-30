@@ -1,0 +1,1846 @@
+Tag,Question ID,Title,Creation Date,Answer Count
+android,77735621,"Friends, I am making an Instagram clone and I am having problems following users, can you help me?",1703932873,0
+kotlin,77735621,"Friends, I am making an Instagram clone and I am having problems following users, can you help me?",1703932873,0
+reactjs,77735620,React Vite App is not working when deployed to Ubuntu EC2 instance,1703932833,0
+amazon-ec2,77735620,React Vite App is not working when deployed to Ubuntu EC2 instance,1703932833,0
+docker-compose,77735620,React Vite App is not working when deployed to Ubuntu EC2 instance,1703932833,0
+dockerfile,77735620,React Vite App is not working when deployed to Ubuntu EC2 instance,1703932833,0
+vite,77735620,React Vite App is not working when deployed to Ubuntu EC2 instance,1703932833,0
+c#,77735472,UEFN crash at random moment,1703929367,0
+cassandra,77735560,Unable to connect to cassandra Docker from docker host / externally,1703931334,0
+cassandra-3.0,77735560,Unable to connect to cassandra Docker from docker host / externally,1703931334,0
+cqlsh,77735560,Unable to connect to cassandra Docker from docker host / externally,1703931334,0
+swift,77734746,How do I check whether a ModelContainer is stored inMemory,1703906008,2
+swift-data,77734746,How do I check whether a ModelContainer is stored inMemory,1703906008,2
+typescript,77735619,"Typescript error in Nextjs server actions, prisma, and nextauth",1703932768,0
+next.js,77735619,"Typescript error in Nextjs server actions, prisma, and nextauth",1703932768,0
+prisma,77735619,"Typescript error in Nextjs server actions, prisma, and nextauth",1703932768,0
+next-auth,77735619,"Typescript error in Nextjs server actions, prisma, and nextauth",1703932768,0
+python-3.x,77735596,How to decode image data from camera stream?,1703932078,0
+python-imaging-library,77735596,How to decode image data from camera stream?,1703932078,0
+hikvision,77735596,How to decode image data from camera stream?,1703932078,0
+angular,77735618,Angular 16 - error NG8002: Can&#39;t bind to &#39;ngModel&#39; since it isn&#39;t a known property of &#39;input&#39;,1703932718,0
+javascript,77434647,My Cordova Splash Screen not working on Android,1699311222,2
+android,77434647,My Cordova Splash Screen not working on Android,1699311222,2
+cordova,77434647,My Cordova Splash Screen not working on Android,1699311222,2
+cordova-plugins,77434647,My Cordova Splash Screen not working on Android,1699311222,2
+hybrid-mobile-app,77434647,My Cordova Splash Screen not working on Android,1699311222,2
+python,68728492,MLFLOW Artifacts stored on ftp server but not showing in ui,1628604942,1
+machine-learning,68728492,MLFLOW Artifacts stored on ftp server but not showing in ui,1628604942,1
+ftp,68728492,MLFLOW Artifacts stored on ftp server but not showing in ui,1628604942,1
+pytorch,68728492,MLFLOW Artifacts stored on ftp server but not showing in ui,1628604942,1
+mlflow,68728492,MLFLOW Artifacts stored on ftp server but not showing in ui,1628604942,1
+azure,77735358,Kindly suggest me on this cpu granularity,1703926298,0
+azure-web-app-service,77735358,Kindly suggest me on this cpu granularity,1703926298,0
+reactjs,77735571,React useEffect with async functions and Intersection Observer,1703931633,1
+react-hooks,77735571,React useEffect with async functions and Intersection Observer,1703931633,1
+async-await,77735571,React useEffect with async functions and Intersection Observer,1703931633,1
+react-intersection-observer,77735571,React useEffect with async functions and Intersection Observer,1703931633,1
+git,77735467,Apply changes onto an earlier (not last) commit,1703929189,1
+intellij-idea,77735467,Apply changes onto an earlier (not last) commit,1703929189,1
+linkedin-api,77682738,Can&#39;t change / rename the LinkedIn document,1702955003,1
+javascript,77735613,Online streaming of video on the site live and non-downloadable,1703932633,0
+php,77735613,Online streaming of video on the site live and non-downloadable,1703932633,0
+laravel,77735613,Online streaming of video on the site live and non-downloadable,1703932633,0
+video-streaming,77735613,Online streaming of video on the site live and non-downloadable,1703932633,0
+command-line-interface,77735612,What is the best way to manage reimbursements across different currencies?,1703932632,0
+java,77735611,How to Build Java Dynamic Web Project using Ubuntu (Dependency file is not present),1703932624,0
+eclipse,77735611,How to Build Java Dynamic Web Project using Ubuntu (Dependency file is not present),1703932624,0
+build,77735611,How to Build Java Dynamic Web Project using Ubuntu (Dependency file is not present),1703932624,0
+gitlab,77735611,How to Build Java Dynamic Web Project using Ubuntu (Dependency file is not present),1703932624,0
+gitlab-ci,77735611,How to Build Java Dynamic Web Project using Ubuntu (Dependency file is not present),1703932624,0
+reactjs,76936624,Spotlight isn&#39;t working whereas hemisphere Light and Point Light is working in my code,1692471255,2
+three.js,76936624,Spotlight isn&#39;t working whereas hemisphere Light and Point Light is working in my code,1692471255,2
+react-three-fiber,76936624,Spotlight isn&#39;t working whereas hemisphere Light and Point Light is working in my code,1692471255,2
+react-three-drei,76936624,Spotlight isn&#39;t working whereas hemisphere Light and Point Light is working in my code,1692471255,2
+windows,77725413,Can I avoid password typing using okinit utility?,1703746400,2
+oracle,77725413,Can I avoid password typing using okinit utility?,1703746400,2
+kerberos,77725413,Can I avoid password typing using okinit utility?,1703746400,2
+flutter,77734224,Firebase unable to initialize,1703888542,1
+firebase,77734224,Firebase unable to initialize,1703888542,1
+dart,77734224,Firebase unable to initialize,1703888542,1
+firebase-authentication,77734224,Firebase unable to initialize,1703888542,1
+linux,32866503,Can I get the system home directory in CMake on Linux?,1443617184,2
+cmake,32866503,Can I get the system home directory in CMake on Linux?,1443617184,2
+javascript,77735537,How to Merge Array of Objects present in an Array and remove duplicates if any?,1703930760,3
+arrays,77735537,How to Merge Array of Objects present in an Array and remove duplicates if any?,1703930760,3
+object,77735537,How to Merge Array of Objects present in an Array and remove duplicates if any?,1703930760,3
+filtering,77735537,How to Merge Array of Objects present in an Array and remove duplicates if any?,1703930760,3
+python,77733776,Trouble sharing Slack file in channel using files.upload API in Python,1703879496,1
+slack,77733776,Trouble sharing Slack file in channel using files.upload API in Python,1703879496,1
+slack-api,77733776,Trouble sharing Slack file in channel using files.upload API in Python,1703879496,1
+c++,77732652,Intel DPC++ 2024 compiled binary missing sycl7.dll and pi_win_proxy_loader.dll,1703862323,0
+windows,77732652,Intel DPC++ 2024 compiled binary missing sycl7.dll and pi_win_proxy_loader.dll,1703862323,0
+icc,77732652,Intel DPC++ 2024 compiled binary missing sycl7.dll and pi_win_proxy_loader.dll,1703862323,0
+python,77735590,Python Regex: Unable to Find A Solution For Searching With A Specific Text For Multiple Variations Of Texts,1703931938,0
+regex,77735590,Python Regex: Unable to Find A Solution For Searching With A Specific Text For Multiple Variations Of Texts,1703931938,0
+haskell,77734420,How to fix Haskell rigid type variable error?,1703894294,1
+regex,52385414,How to break a line of source code in Qt QML,1537269549,1
+qt,52385414,How to break a line of source code in Qt QML,1537269549,1
+syntax,52385414,How to break a line of source code in Qt QML,1537269549,1
+qml,52385414,How to break a line of source code in Qt QML,1537269549,1
+c++,77735459,how to access the stored huffman tree from the file?,1703929000,0
+python,77731600,pip - What is the difference between `pip install djangorestframework` and `pip install django_rest_framework`?,1703847922,1
+python-3.x,77731600,pip - What is the difference between `pip install djangorestframework` and `pip install django_rest_framework`?,1703847922,1
+pip,77731600,pip - What is the difference between `pip install djangorestframework` and `pip install django_rest_framework`?,1703847922,1
+android,77735223,Push Notification doesn&#39;t appear like Heads-up in Flutter,1703922688,1
+flutter,77735223,Push Notification doesn&#39;t appear like Heads-up in Flutter,1703922688,1
+firebase,77735223,Push Notification doesn&#39;t appear like Heads-up in Flutter,1703922688,1
+push-notification,77735223,Push Notification doesn&#39;t appear like Heads-up in Flutter,1703922688,1
+heads-up-notifications,77735223,Push Notification doesn&#39;t appear like Heads-up in Flutter,1703922688,1
+django,77735510,Trouble with CSRF token validation in python django,1703930117,1
+django-templates,77735510,Trouble with CSRF token validation in python django,1703930117,1
+r,58846420,install.packages(&quot;knitr&quot;) leads to error untar2: incomplete block on file and installation of package ‘knitr’ had non-zero exit status,1573683173,1
+knitr,58846420,install.packages(&quot;knitr&quot;) leads to error untar2: incomplete block on file and installation of package ‘knitr’ had non-zero exit status,1573683173,1
+spring-boot,77735585,Refreshing expired JWT token automatically in Spring,1703931883,1
+jwt,77735585,Refreshing expired JWT token automatically in Spring,1703931883,1
+openid-connect,77735585,Refreshing expired JWT token automatically in Spring,1703931883,1
+quarkus,77735585,Refreshing expired JWT token automatically in Spring,1703931883,1
+spring-security-oauth2,77735585,Refreshing expired JWT token automatically in Spring,1703931883,1
+java,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0
+hibernate,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0
+jpa,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0
+spring-data-jpa,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0
+authentication,77735601,Is Blazor AuthenticationState safe?,1703932237,0
+blazor,77735601,Is Blazor AuthenticationState safe?,1703932237,0
+python,77734025,Strange duplicate logs in django app while starting,1703884236,0
+django,77734025,Strange duplicate logs in django app while starting,1703884236,0
+multithreading,77734025,Strange duplicate logs in django app while starting,1703884236,0
+c++,77735548,"When calling a C++ function, how to skip several default parameters in uncertain positions？",1703931105,1
+parameters,77735548,"When calling a C++ function, how to skip several default parameters in uncertain positions？",1703931105,1
+node.js,77735600,Import * as not working as expected in node,1703932180,0
+npm,77735600,Import * as not working as expected in node,1703932180,0
+xlsx,77735600,Import * as not working as expected in node,1703932180,0
+sharepoint,77735599,Third party cookies deprecation for provider-hosted SP online app,1703932170,0
+sharepoint-online,77735599,Third party cookies deprecation for provider-hosted SP online app,1703932170,0
+sharepoint-jsom,77735599,Third party cookies deprecation for provider-hosted SP online app,1703932170,0
+sharepoint-addin,77735599,Third party cookies deprecation for provider-hosted SP online app,1703932170,0
+c++,77735598,Why is an implementation of a stack with two queues not working correctly?,1703932166,0
+data-structures,77735598,Why is an implementation of a stack with two queues not working correctly?,1703932166,0
+queue,77735598,Why is an implementation of a stack with two queues not working correctly?,1703932166,0
+stack,77735598,Why is an implementation of a stack with two queues not working correctly?,1703932166,0
+php,77732550,Why does Laravel on localhost (xampp) run slow compared to a normal html site?,1703861071,1
+html,77732550,Why does Laravel on localhost (xampp) run slow compared to a normal html site?,1703861071,1
+laravel,77732550,Why does Laravel on localhost (xampp) run slow compared to a normal html site?,1703861071,1
+xampp,77732550,Why does Laravel on localhost (xampp) run slow compared to a normal html site?,1703861071,1
+reactjs,77735568,"Deploying a react app on hosting platforms (github pages, netlify)",1703931531,1
+create-react-app,77735568,"Deploying a react app on hosting platforms (github pages, netlify)",1703931531,1
+github-pages,77735568,"Deploying a react app on hosting platforms (github pages, netlify)",1703931531,1
+netlify,77735568,"Deploying a react app on hosting platforms (github pages, netlify)",1703931531,1
+npm-package,77735568,"Deploying a react app on hosting platforms (github pages, netlify)",1703931531,1
+javascript,77697359,"I want to display user data if he entered the correct login info , but not getting expected results , I&#39;m using react , java with tailwind",1703155088,0
+reactjs,77697359,"I want to display user data if he entered the correct login info , but not getting expected results , I&#39;m using react , java with tailwind",1703155088,0
+react-router,77697359,"I want to display user data if he entered the correct login info , but not getting expected results , I&#39;m using react , java with tailwind",1703155088,0
+javascript,69841129,How to upload a file to FTP server with javascript?,1636037319,2
+file-upload,69841129,How to upload a file to FTP server with javascript?,1636037319,2
+ftp,69841129,How to upload a file to FTP server with javascript?,1636037319,2
+javascript,77735474,Write snowflake stored procedure in SQL and JS using for loop,1703929401,0
+sql,77735474,Write snowflake stored procedure in SQL and JS using for loop,1703929401,0
+stored-procedures,77735474,Write snowflake stored procedure in SQL and JS using for loop,1703929401,0
+snowflake-cloud-data-platform,77735474,Write snowflake stored procedure in SQL and JS using for loop,1703929401,0
+winapi,77732669,Getting The System&#39;s Folder Icon With SHGetFileInfo() - Getting Wrong Icon,1703862609,0
+directory,77732669,Getting The System&#39;s Folder Icon With SHGetFileInfo() - Getting Wrong Icon,1703862609,0
+icons,77732669,Getting The System&#39;s Folder Icon With SHGetFileInfo() - Getting Wrong Icon,1703862609,0
+vhdl,29591938,my program is to generate a code for calculating 4 point fft,1428857384,2
+javascript,77735593,How to organize a peer group call?,1703931993,0
+android,77735593,How to organize a peer group call?,1703931993,0
+localhost,77735593,How to organize a peer group call?,1703931993,0
+getusermedia,77735593,How to organize a peer group call?,1703931993,0
+git,51262422,Git: man command don&#39;t work,1531217039,4
+windows-10,51262422,Git: man command don&#39;t work,1531217039,4
+javascript,11787665,Making sure at least one checkbox is checked,1343953481,11
+html,11787665,Making sure at least one checkbox is checked,1343953481,11
+checkbox,11787665,Making sure at least one checkbox is checked,1343953481,11
+java,20412354,Reverse HashMap keys and values in Java,1386283484,13
+hashmap,20412354,Reverse HashMap keys and values in Java,1386283484,13
+r,77735449,Replace all occurrences not matching any regex element of a vector of values in an R data frame,1703928795,1
+android,77735584,Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++,1703931878,0
+c++,77735584,Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++,1703931878,0
+admob,77735584,Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++,1703931878,0
+java-native-interface,77735584,Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++,1703931878,0
+native-activity,77735584,Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++,1703931878,0
+r,77735583,Unexpected Power Analysis Results: Discrepancy between Fisher Exact Test OR and epi.sscc Sample Size Calculations,1703931877,0
+html,77735070,Align of Numbered Circle and Line,1703918450,1
+css,77735070,Align of Numbered Circle and Line,1703918450,1
+sql,77735046,What is the difference between direct addition (1 + 1) vs aggregate function SUM(1 + 1),1703917555,2
+database,77735046,What is the difference between direct addition (1 + 1) vs aggregate function SUM(1 + 1),1703917555,2
+postgresql,77735046,What is the difference between direct addition (1 + 1) vs aggregate function SUM(1 + 1),1703917555,2
+aggregate-functions,77735046,What is the difference between direct addition (1 + 1) vs aggregate function SUM(1 + 1),1703917555,2
+reactjs,71433951,Module not found: Can&#39;t resolve Next.js - TypeScript,1646975929,4
+typescript,71433951,Module not found: Can&#39;t resolve Next.js - TypeScript,1646975929,4
+react-native,71433951,Module not found: Can&#39;t resolve Next.js - TypeScript,1646975929,4
+next.js,71433951,Module not found: Can&#39;t resolve Next.js - TypeScript,1646975929,4
+swift,77735581,How to create a floating panel that appears in whole screen in MacOS with swift,1703931829,0
+macos,77735581,How to create a floating panel that appears in whole screen in MacOS with swift,1703931829,0
+swiftui,77735581,How to create a floating panel that appears in whole screen in MacOS with swift,1703931829,0
+c#,72426015,Iterate through list objects to find object with matching property value,1653846767,5
+list,72426015,Iterate through list objects to find object with matching property value,1653846767,5
+loops,72426015,Iterate through list objects to find object with matching property value,1653846767,5
+object,72426015,Iterate through list objects to find object with matching property value,1653846767,5
+bash,77732136,Bash script to find and return files in directory,1703855106,4
+java,77735579,Separate the thread-pool of hazelcast java client,1703931743,0
+hazelcast,77735579,Separate the thread-pool of hazelcast java client,1703931743,0
+javascript,77735578,I m receving signature mismatch exception when I try to send http request to aws dynamodb using low-level api (calculating signature by myself),1703931737,0
+amazon-dynamodb,77735578,I m receving signature mismatch exception when I try to send http request to aws dynamodb using low-level api (calculating signature by myself),1703931737,0
+reactjs,47257519,React contenteditable cursor jumps to beginning,1510550383,4
+contenteditable,47257519,React contenteditable cursor jumps to beginning,1510550383,4
+sql,77735502,Cannot take second argument with select max() is used,1703929861,1
+oracle,77735502,Cannot take second argument with select max() is used,1703929861,1
+oracle11g,77735502,Cannot take second argument with select max() is used,1703929861,1
+reactjs,67978459,Vitejs | Uncaught Error: Dynamic require of &quot;&lt;path&gt;.svg&quot; is not supported,1623715539,4
+vite,67978459,Vitejs | Uncaught Error: Dynamic require of &quot;&lt;path&gt;.svg&quot; is not supported,1623715539,4
+python,77735535,How to fill a pandas dataframe from two 2d numpy arrays in an efficient way?,1703930721,1
+pandas,77735535,How to fill a pandas dataframe from two 2d numpy arrays in an efficient way?,1703930721,1
+dataframe,77735535,How to fill a pandas dataframe from two 2d numpy arrays in an efficient way?,1703930721,1
+numpy,77735535,How to fill a pandas dataframe from two 2d numpy arrays in an efficient way?,1703930721,1
+android,77720509,react-navigation optimizations in low-performance Android,1703660895,1
+react-native,77720509,react-navigation optimizations in low-performance Android,1703660895,1
+react-navigation,77720509,react-navigation optimizations in low-performance Android,1703660895,1
+react-navigation-stack,77720509,react-navigation optimizations in low-performance Android,1703660895,1
+react-navigation-v6,77720509,react-navigation optimizations in low-performance Android,1703660895,1
+android,72864680,Implement CollapsingToolbar using Jetpack compose,1657001347,1
+android-jetpack-compose,72864680,Implement CollapsingToolbar using Jetpack compose,1657001347,1
+android-collapsingtoolbarlayout,72864680,Implement CollapsingToolbar using Jetpack compose,1657001347,1
+reactjs,77735566,Different ways to define props in React.FunctionalComponent,1703931475,0
+typescript,77735566,Different ways to define props in React.FunctionalComponent,1703931475,0
+ssl,77735158,SSL configuration for shiny server open source,1703920752,0
+shiny,77735158,SSL configuration for shiny server open source,1703920752,0
+https,77735158,SSL configuration for shiny server open source,1703920752,0
+web-config,77735158,SSL configuration for shiny server open source,1703920752,0
+shiny-server,77735158,SSL configuration for shiny server open source,1703920752,0
+reactjs,77735187,React - Toast message not working properly,1703921365,1
+toast,77735187,React - Toast message not working properly,1703921365,1
+sql,77735520,Join tables by datetime excluding seconds,1703930380,0
+sql-server,77735520,Join tables by datetime excluding seconds,1703930380,0
+javascript,76883909,How to move fabricjs object created in nextjs useState?,1691759899,1
+reactjs,76883909,How to move fabricjs object created in nextjs useState?,1691759899,1
+next.js,76883909,How to move fabricjs object created in nextjs useState?,1691759899,1
+html5-canvas,76883909,How to move fabricjs object created in nextjs useState?,1691759899,1
+fabricjs,76883909,How to move fabricjs object created in nextjs useState?,1691759899,1
+java,77735539,"Drag and Drop a file with GWT+elemntal2 - events dragover and dragEnd and drop are is registered, but they not firing",1703930865,0
+html,77735539,"Drag and Drop a file with GWT+elemntal2 - events dragover and dragEnd and drop are is registered, but they not firing",1703930865,0
+gwt,77735539,"Drag and Drop a file with GWT+elemntal2 - events dragover and dragEnd and drop are is registered, but they not firing",1703930865,0
+android,77735513,How can i add a delete button in this app?,1703930221,1
+ios,77735513,How can i add a delete button in this app?,1703930221,1
+flutter,77735513,How can i add a delete button in this app?,1703930221,1
+dart,77735513,How can i add a delete button in this app?,1703930221,1
+mobile,77735513,How can i add a delete button in this app?,1703930221,1
+r,77732371,Make prediction on new data set in R,1703858604,0
+machine-learning,77732371,Make prediction on new data set in R,1703858604,0
+prediction,77732371,Make prediction on new data set in R,1703858604,0
+ruby-on-rails,34399832,No routes work after adding Alchemy CMS to Spree project,1450713996,3
+spree,34399832,No routes work after adding Alchemy CMS to Spree project,1450713996,3
+alchemy-cms,34399832,No routes work after adding Alchemy CMS to Spree project,1450713996,3
+alchemy-spree,34399832,No routes work after adding Alchemy CMS to Spree project,1450713996,3
+android,77735291,How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?,1703924416,1
+kotlin,77735291,How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?,1703924416,1
+android-jetpack-compose,77735291,How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?,1703924416,1
+android-animation,77735291,How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?,1703924416,1
+python,77734998,python manage.py runserver not working or showing errors,1703915712,2
+django,77734998,python manage.py runserver not working or showing errors,1703915712,2
+migrate,77734998,python manage.py runserver not working or showing errors,1703915712,2
+javascript,77702941,Inconsistency in Focus Behavior when Opening a URL in a New Tab Using window.open(),1703239227,2
+html,77702941,Inconsistency in Focus Behavior when Opening a URL in a New Tab Using window.open(),1703239227,2
+typescript,77702941,Inconsistency in Focus Behavior when Opening a URL in a New Tab Using window.open(),1703239227,2
+url,77702941,Inconsistency in Focus Behavior when Opening a URL in a New Tab Using window.open(),1703239227,2
+browser,77702941,Inconsistency in Focus Behavior when Opening a URL in a New Tab Using window.open(),1703239227,2
+r,77735487,Aes ggplot categorize by color not filling the whole barplot,1703929596,1
+dataframe,77735487,Aes ggplot categorize by color not filling the whole barplot,1703929596,1
+ggplot2,77735487,Aes ggplot categorize by color not filling the whole barplot,1703929596,1
+bar-chart,77735487,Aes ggplot categorize by color not filling the whole barplot,1703929596,1
+visualization,77735487,Aes ggplot categorize by color not filling the whole barplot,1703929596,1
+sha256,77735559,Hashes/s vs MB/s?,1703931312,0
+maui,77735558,How to configure RadioButton grouping in DataTemplateSelector,1703931262,0
+wordpress,77735557,how to scrape products browser automation studio,1703931262,0
+product,77735557,how to scrape products browser automation studio,1703931262,0
+scrape,77735557,how to scrape products browser automation studio,1703931262,0
+browser-automation,77735557,how to scrape products browser automation studio,1703931262,0
+python,77735538,I can&#39;t import tensorflow.keras,1703930803,0
+tensorflow,77735538,I can&#39;t import tensorflow.keras,1703930803,0
+keras,77735538,I can&#39;t import tensorflow.keras,1703930803,0
+server-side-rendering,77730605,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for WrappedSocket,1703832203,1
+angular-universal,77730605,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for WrappedSocket,1703832203,1
+angular-standalone-components,77730605,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for WrappedSocket,1703832203,1
+angular17,77730605,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for WrappedSocket,1703832203,1
+ngx-socket-io,77730605,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for WrappedSocket,1703832203,1
+javascript,496052,jQuery - setting the selected value of a select control via its text description,1233331937,23
+jquery,496052,jQuery - setting the selected value of a select control via its text description,1233331937,23
+c#,77704169,Mocking RouteData for AuthorizationHandler Tests,1703254806,0
+asp.net-core,77704169,Mocking RouteData for AuthorizationHandler Tests,1703254806,0
+.net-core,77704169,Mocking RouteData for AuthorizationHandler Tests,1703254806,0
+asp.net-web-api,77704169,Mocking RouteData for AuthorizationHandler Tests,1703254806,0
+moq,77704169,Mocking RouteData for AuthorizationHandler Tests,1703254806,0
+c++,77734884,qt_create_translation doesn&#39;t change .ts file or create .qm file,1703911786,1
+qt,77734884,qt_create_translation doesn&#39;t change .ts file or create .qm file,1703911786,1
+cmake,77734884,qt_create_translation doesn&#39;t change .ts file or create .qm file,1703911786,1
+translation,77734884,qt_create_translation doesn&#39;t change .ts file or create .qm file,1703911786,1
+python,77735263,Comparing between two pandas code snippets,1703923730,2
+pandas,77735263,Comparing between two pandas code snippets,1703923730,2
+python,77735551,property of &#39;QuadContourSet&#39; object has no setter error after update matplotlib in python,1703931139,0
+matplotlib,77735551,property of &#39;QuadContourSet&#39; object has no setter error after update matplotlib in python,1703931139,0
+matplotlib-basemap,77735551,property of &#39;QuadContourSet&#39; object has no setter error after update matplotlib in python,1703931139,0
+css,77735530,Honeycomb structure or Polygon with react,1703930578,0
+reactjs,77735530,Honeycomb structure or Polygon with react,1703930578,0
+polygon,77735530,Honeycomb structure or Polygon with react,1703930578,0
+javascript,77725854,Link to an anchor within an iFrame,1703753494,1
+html,77725854,Link to an anchor within an iFrame,1703753494,1
+iframe,77725854,Link to an anchor within an iFrame,1703753494,1
+cross-domain,77725854,Link to an anchor within an iFrame,1703753494,1
+anchor,77725854,Link to an anchor within an iFrame,1703753494,1
+javascript,77735228,Multiple replaces with regular expression pattern using js,1703922826,1
+regex,77735228,Multiple replaces with regular expression pattern using js,1703922826,1
+replace,77735228,Multiple replaces with regular expression pattern using js,1703922826,1
+callback,77735228,Multiple replaces with regular expression pattern using js,1703922826,1
+qregularexpression,77735228,Multiple replaces with regular expression pattern using js,1703922826,1
+r,77733994,R: Count instances where row value is within range of other row values,1703883350,3
+purrr,77733994,R: Count instances where row value is within range of other row values,1703883350,3
+solidity,77735547,how to transfer 2+ tokens from one address to another wallet?,1703931058,0
+smartcontracts,77735547,how to transfer 2+ tokens from one address to another wallet?,1703931058,0
+authentication,77735546,FastAPI integration with KeyCloak OpenID,1703931052,0
+keycloak,77735546,FastAPI integration with KeyCloak OpenID,1703931052,0
+fastapi,77735546,FastAPI integration with KeyCloak OpenID,1703931052,0
+python,77732355,Hovering horizontal line displaying y values of multiple lines Matplot,1703858205,0
+matplotlib,77732355,Hovering horizontal line displaying y values of multiple lines Matplot,1703858205,0
+javascript,77735182,How can i scroll to next div after clicking on radio button or check box using java script,1703921273,1
+html,77735182,How can i scroll to next div after clicking on radio button or check box using java script,1703921273,1
+php,77730168,"I would like to Echo Fields from a Database Table, based on the entries already submitted and stored in a database",1703822063,0
+mysqli,77730168,"I would like to Echo Fields from a Database Table, based on the entries already submitted and stored in a database",1703822063,0
+html-table,77730168,"I would like to Echo Fields from a Database Table, based on the entries already submitted and stored in a database",1703822063,0
+deep-learning,77735115,How to train a Bayesian network that includes hidden variables?,1703919646,0
+bayesian-networks,77735115,How to train a Bayesian network that includes hidden variables?,1703919646,0
+pgmpy,77735115,How to train a Bayesian network that includes hidden variables?,1703919646,0
+pytorch,77735543,How can 1X1 Conv act as a fully connected layer?,1703930965,0
+conv-neural-network,77735543,How can 1X1 Conv act as a fully connected layer?,1703930965,0
+reactjs,77735542,I want to connect to react login page when spring security is being added in the gradle project,1703930953,0
+spring-boot,77735542,I want to connect to react login page when spring security is being added in the gradle project,1703930953,0
+spring-boot-security,77735542,I want to connect to react login page when spring security is being added in the gradle project,1703930953,0
+c++,5697328,Why is there no universal base class in C++?,1303084917,6
+language-design,5697328,Why is there no universal base class in C++?,1303084917,6
+base-class,5697328,Why is there no universal base class in C++?,1303084917,6
+tensorflow,77735071,Improving the model by decreasing val_loss and increasing val_accuracy?,1703918464,0
+machine-learning,77735071,Improving the model by decreasing val_loss and increasing val_accuracy?,1703918464,0
+keras,77735071,Improving the model by decreasing val_loss and increasing val_accuracy?,1703918464,0
+lstm,77735071,Improving the model by decreasing val_loss and increasing val_accuracy?,1703918464,0
+mobilenet,77735071,Improving the model by decreasing val_loss and increasing val_accuracy?,1703918464,0
+c++,3913726,Why can empty base classes have a zero size?,1286879785,5
+compiler-optimization,3913726,Why can empty base classes have a zero size?,1286879785,5
+base-class,3913726,Why can empty base classes have a zero size?,1286879785,5
+empty-class,3913726,Why can empty base classes have a zero size?,1286879785,5
+c#,77735176,How can I use Order By for a generic IList&lt;List&lt;object&gt;&gt; in C#?,1703921155,1
+.net,77735176,How can I use Order By for a generic IList&lt;List&lt;object&gt;&gt; in C#?,1703921155,1
+linq,77735176,How can I use Order By for a generic IList&lt;List&lt;object&gt;&gt; in C#?,1703921155,1
+django,32964820,Nested annotate fields in Django REST Framework serializers,1444118973,3
+django-rest-framework,32964820,Nested annotate fields in Django REST Framework serializers,1444118973,3
+javascript,37796710,Javascript check if url param exists,1465842322,3
+ab-testing,37796710,Javascript check if url param exists,1465842322,3
+vwo,37796710,Javascript check if url param exists,1465842322,3
+windows,36092541,PowerShell Cannot dot-source this command because it was defined in a different language mode,1458328352,1
+visual-studio,36092541,PowerShell Cannot dot-source this command because it was defined in a different language mode,1458328352,1
+powershell,36092541,PowerShell Cannot dot-source this command because it was defined in a different language mode,1458328352,1
+javascript,27982245,Running Batch file using Javascript - Firefox,1421405181,1
+file,27982245,Running Batch file using Javascript - Firefox,1421405181,1
+batch-file,27982245,Running Batch file using Javascript - Firefox,1421405181,1
+video,26493613,Converting DAV to MP4 and OGG,1413915825,3
+browser,26493613,Converting DAV to MP4 and OGG,1413915825,3
+ffmpeg,26493613,Converting DAV to MP4 and OGG,1413915825,3
+html5-video,26493613,Converting DAV to MP4 and OGG,1413915825,3
+ogg,26493613,Converting DAV to MP4 and OGG,1413915825,3
+android,77721311,Unable to start existing react native project. Facing gradle issue,1703672371,1
+ios,77721311,Unable to start existing react native project. Facing gradle issue,1703672371,1
+react-native,77721311,Unable to start existing react native project. Facing gradle issue,1703672371,1
+gradle,77721311,Unable to start existing react native project. Facing gradle issue,1703672371,1
+sqlite,20240315,How to import csv file to sqlite with correct data types,1385549259,8
+csv,20240315,How to import csv file to sqlite with correct data types,1385549259,8
+types,20240315,How to import csv file to sqlite with correct data types,1385549259,8
+import,20240315,How to import csv file to sqlite with correct data types,1385549259,8
+html,77735529,How can I change the time keeper&#39;s input font size in angular?,1703930574,0
+css,77735529,How can I change the time keeper&#39;s input font size in angular?,1703930574,0
+angular,77735529,How can I change the time keeper&#39;s input font size in angular?,1703930574,0
+angularjs,77735529,How can I change the time keeper&#39;s input font size in angular?,1703930574,0
+javascript,77735196,How to solve Type error: is not a valid Page expor,1703921688,1
+reactjs,77735196,How to solve Type error: is not a valid Page expor,1703921688,1
+next.js,77735196,How to solve Type error: is not a valid Page expor,1703921688,1
+vercel,77735196,How to solve Type error: is not a valid Page expor,1703921688,1
+react-server-components,77735196,How to solve Type error: is not a valid Page expor,1703921688,1
+c#,16428326,Setting asp.net timer interval programmatically,1367959859,1
+asp.net,16428326,Setting asp.net timer interval programmatically,1367959859,1
+visual-studio-2010,16428326,Setting asp.net timer interval programmatically,1367959859,1
+json,77734365,"why keeps the value of Map&lt;String, dynamic&gt; empty (Flutter application)?",1703892549,1
+flutter,77734365,"why keeps the value of Map&lt;String, dynamic&gt; empty (Flutter application)?",1703892549,1
+null,77734365,"why keeps the value of Map&lt;String, dynamic&gt; empty (Flutter application)?",1703892549,1
+javascript,77735385,use form id as variable in javascript,1703926973,2
+html,77735385,use form id as variable in javascript,1703926973,2
+forms,77735385,use form id as variable in javascript,1703926973,2
+html,77735318,Fit content property not working on shrinking the Viweport,1703925263,1
+css,77735318,Fit content property not working on shrinking the Viweport,1703925263,1
+laravel,77735525,Migrating Custom Components from Vue2 to Vue3 in Laravel Nova: Issues with $watch Property Replacement,1703930464,0
+vue.js,77735525,Migrating Custom Components from Vue2 to Vue3 in Laravel Nova: Issues with $watch Property Replacement,1703930464,0
+vuejs2,77735525,Migrating Custom Components from Vue2 to Vue3 in Laravel Nova: Issues with $watch Property Replacement,1703930464,0
+vuejs3,77735525,Migrating Custom Components from Vue2 to Vue3 in Laravel Nova: Issues with $watch Property Replacement,1703930464,0
+laravel-nova,77735525,Migrating Custom Components from Vue2 to Vue3 in Laravel Nova: Issues with $watch Property Replacement,1703930464,0
+python,77733862,How to make bullets fired at a certain degree apart from each other in my pygame based game?,1703880960,0
+pygame,77733862,How to make bullets fired at a certain degree apart from each other in my pygame based game?,1703880960,0
+java,7999192,Creating an array of Sets in Java,1320340990,4
+node.js,42098008,Compute Engine : &quot;This site can’t be reached&quot;,1486494623,5
+google-cloud-platform,42098008,Compute Engine : &quot;This site can’t be reached&quot;,1486494623,5
+google-compute-engine,42098008,Compute Engine : &quot;This site can’t be reached&quot;,1486494623,5
+laravel,77735522,"Trying to group by id using query builder, not working",1703930389,0
+eloquent,77735522,"Trying to group by id using query builder, not working",1703930389,0
+laravel-query-builder,77735522,"Trying to group by id using query builder, not working",1703930389,0
+ssl,77734398,SSH-like implementation of OpenSSL handshake for self-signed certificate,1703893467,1
+ssh,77734398,SSH-like implementation of OpenSSL handshake for self-signed certificate,1703893467,1
+openssl,77734398,SSH-like implementation of OpenSSL handshake for self-signed certificate,1703893467,1
+python,77735255,Elementree XML to dataframe in multiple sheet with attributes extraction,1703923576,2
+xml,77735255,Elementree XML to dataframe in multiple sheet with attributes extraction,1703923576,2
+dataframe,77735255,Elementree XML to dataframe in multiple sheet with attributes extraction,1703923576,2
+go,77735518,How to execute goose command with quotes via exec.Command,1703930339,0
+git,77732715,Visual Studio 2022 keeps asking for Git credentials even though it says authorization was successful,1703863419,1
+visual-studio,77732715,Visual Studio 2022 keeps asking for Git credentials even though it says authorization was successful,1703863419,1
+github,77732715,Visual Studio 2022 keeps asking for Git credentials even though it says authorization was successful,1703863419,1
+c++,45880238,How to draw while resizing GLFW window?,1503660081,4
+opengl,45880238,How to draw while resizing GLFW window?,1503660081,4
+glfw,45880238,How to draw while resizing GLFW window?,1503660081,4
+window-resize,45880238,How to draw while resizing GLFW window?,1503660081,4
+c#,77728863,Immutable dictionary property initialization in C#,1703792657,0
+initialization,77728863,Immutable dictionary property initialization in C#,1703792657,0
+immutable-collections,77728863,Immutable dictionary property initialization in C#,1703792657,0
+flutter,77735517,Flutter create subCollection in cloud storage,1703930289,0
+firebase-storage,77735517,Flutter create subCollection in cloud storage,1703930289,0
+php,77735515,PHP random string with random spaces,1703930238,0
+string,77735515,PHP random string with random spaces,1703930238,0
+random,77735515,PHP random string with random spaces,1703930238,0
+php,77735516,Trouble Sending Emails with PHP Using PHPMailer: Getting &#39;Cannot Send Mail&#39; Error,1703930287,0
+email,77735516,Trouble Sending Emails with PHP Using PHPMailer: Getting &#39;Cannot Send Mail&#39; Error,1703930287,0
+visual-studio-code,77735516,Trouble Sending Emails with PHP Using PHPMailer: Getting &#39;Cannot Send Mail&#39; Error,1703930287,0
+phpmailer,77735516,Trouble Sending Emails with PHP Using PHPMailer: Getting &#39;Cannot Send Mail&#39; Error,1703930287,0
+python,77733599,How to get Python to recognize installed ost module,1703876627,0
+vue.js,77735460,Clicking in an input field does not focus,1703929070,2
+javascript,77735512,React Native: Issue with FlatList - Dynamic Data Rendering Problem,1703930217,0
+react-native,77735512,React Native: Issue with FlatList - Dynamic Data Rendering Problem,1703930217,0
+javascript,77735488,I can not import the javascript file in my android studio,1703929621,1
+android-studio,77735488,I can not import the javascript file in my android studio,1703929621,1
+import,77735488,I can not import the javascript file in my android studio,1703929621,1
+calculator,77735488,I can not import the javascript file in my android studio,1703929621,1
+python,70047447,sending emails on a loop using Python,1637423118,2
+python-3.x,70047447,sending emails on a loop using Python,1637423118,2
+loops,70047447,sending emails on a loop using Python,1637423118,2
+email,70047447,sending emails on a loop using Python,1637423118,2
+smtplib,70047447,sending emails on a loop using Python,1637423118,2
+javascript,77717510,Expandable sidenav using a draggable cursor,1703597284,1
+html,77717510,Expandable sidenav using a draggable cursor,1703597284,1
+css,77717510,Expandable sidenav using a draggable cursor,1703597284,1
+flexbox,77717510,Expandable sidenav using a draggable cursor,1703597284,1
+tailwind-css,77717510,Expandable sidenav using a draggable cursor,1703597284,1
+python,77735374,How does direct access array sort work when it sorts keys instead of values?,1703926681,1
+algorithm,77735374,How does direct access array sort work when it sorts keys instead of values?,1703926681,1
+sorting,77735374,How does direct access array sort work when it sorts keys instead of values?,1703926681,1
+python,77734305,TypeError: &#39;Flask&#39; object is not iterable,1703891031,1
+flask,77734305,TypeError: &#39;Flask&#39; object is not iterable,1703891031,1
+sqlalchemy,77734305,TypeError: &#39;Flask&#39; object is not iterable,1703891031,1
+gunicorn,77734305,TypeError: &#39;Flask&#39; object is not iterable,1703891031,1
+flutter,73697986,What&#39;s the best use case of enum value in dart?,1663047699,3
+dart,73697986,What&#39;s the best use case of enum value in dart?,1663047699,3
+python,77734544,Breaking up dataframe into chunks for a loop,1703898121,3
+pandas,77734544,Breaking up dataframe into chunks for a loop,1703898121,3
+javascript,77732042,Is there a way to use CSS transition without defining any properties?,1703853519,2
+html,77732042,Is there a way to use CSS transition without defining any properties?,1703853519,2
+css,77732042,Is there a way to use CSS transition without defining any properties?,1703853519,2
+css-transitions,77732042,Is there a way to use CSS transition without defining any properties?,1703853519,2
+windows-7,14430342,How to play random video files in a folder and move on to the next folder and do the same with batch script?,1358722911,2
+random,14430342,How to play random video files in a folder and move on to the next folder and do the same with batch script?,1358722911,2
+batch-file,14430342,How to play random video files in a folder and move on to the next folder and do the same with batch script?,1358722911,2
+playlist,14430342,How to play random video files in a folder and move on to the next folder and do the same with batch script?,1358722911,2
+javascript,77735498,"Bitfinex Api v2 [ &#39;error&#39;, 10112, &#39;signature: invalid&#39; ]",1703929766,0
+api,77735498,"Bitfinex Api v2 [ &#39;error&#39;, 10112, &#39;signature: invalid&#39; ]",1703929766,0
+cryptocurrency,77735498,"Bitfinex Api v2 [ &#39;error&#39;, 10112, &#39;signature: invalid&#39; ]",1703929766,0
+html,29662009,Select element only if a later sibling exists,1429136744,8
+css,29662009,Select element only if a later sibling exists,1429136744,8
+css-selectors,29662009,Select element only if a later sibling exists,1429136744,8
+conditional-formatting,29662009,Select element only if a later sibling exists,1429136744,8
+image,77735506,How do you make content in a website cover the hero image as scrolling down,1703929959,0
+scroll,77735506,How do you make content in a website cover the hero image as scrolling down,1703929959,0
+css-position,77735506,How do you make content in a website cover the hero image as scrolling down,1703929959,0
+swiftui,57459727,Why is an ObservedObject array not updated in my SwiftUI application?,1565606590,7
+html,77729859,Iframe content causes the iframe to jump inside parent,1703812878,1
+css,77729859,Iframe content causes the iframe to jump inside parent,1703812878,1
+c#,77726090,Nonfactors mvcgrid paging server side problems,1703756491,1
+paging,77726090,Nonfactors mvcgrid paging server side problems,1703756491,1
+nonfactors-mvc-grid,77726090,Nonfactors mvcgrid paging server side problems,1703756491,1
+python,77733420,Django APIView.throttle_scope attribute doesn&#39;t seem to work,1703873767,1
+django,77733420,Django APIView.throttle_scope attribute doesn&#39;t seem to work,1703873767,1
+django-rest-framework,77733420,Django APIView.throttle_scope attribute doesn&#39;t seem to work,1703873767,1
+throttling,77733420,Django APIView.throttle_scope attribute doesn&#39;t seem to work,1703873767,1
+sql,77735285,Error SQL statement for Inserting data with timestamps into Postgres from Go,1703924178,2
+postgresql,77735285,Error SQL statement for Inserting data with timestamps into Postgres from Go,1703924178,2
+go,77735285,Error SQL statement for Inserting data with timestamps into Postgres from Go,1703924178,2
+javascript,77735501,How to promptly clear Safari&#39;s video requests for Blob?,1703929811,0
+flutter,77721547,Flutter Sliverlist should start from bottom of the screen,1703675890,1
+python,77734995,How to define dynamic arrays for intent out in Fortran subroutines and call them in Python using f2py?,1703915621,1
+arrays,77734995,How to define dynamic arrays for intent out in Fortran subroutines and call them in Python using f2py?,1703915621,1
+fortran,77734995,How to define dynamic arrays for intent out in Fortran subroutines and call them in Python using f2py?,1703915621,1
+gfortran,77734995,How to define dynamic arrays for intent out in Fortran subroutines and call them in Python using f2py?,1703915621,1
+f2py,77734995,How to define dynamic arrays for intent out in Fortran subroutines and call them in Python using f2py?,1703915621,1
+android,77733253,"Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",1703871134,0
+flutter,77733253,"Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",1703871134,0
+firebase,77733253,"Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",1703871134,0
+dart,77733253,"Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",1703871134,0
+google-cloud-firestore,77733253,"Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",1703871134,0
+c#,77726105,How to send data between Class Library and Winforms (both are different projects),1703756758,1
+winforms,77726105,How to send data between Class Library and Winforms (both are different projects),1703756758,1
+class-library,77726105,How to send data between Class Library and Winforms (both are different projects),1703756758,1
+uipath,77726105,How to send data between Class Library and Winforms (both are different projects),1703756758,1
+c#,77735339,How Can i add a &quot;AddNew&quot; button at the end of drop downs in a Custom ComboBox Control?,1703925781,1
+wpf,77735339,How Can i add a &quot;AddNew&quot; button at the end of drop downs in a Custom ComboBox Control?,1703925781,1
+xaml,77735339,How Can i add a &quot;AddNew&quot; button at the end of drop downs in a Custom ComboBox Control?,1703925781,1
+data-binding,77735339,How Can i add a &quot;AddNew&quot; button at the end of drop downs in a Custom ComboBox Control?,1703925781,1
+wpf-controls,77735339,How Can i add a &quot;AddNew&quot; button at the end of drop downs in a Custom ComboBox Control?,1703925781,1
+html,77735497,background colour and container,1703929747,0
+css,77735497,background colour and container,1703929747,0
+containers,77735497,background colour and container,1703929747,0
+clone,77735497,background colour and container,1703929747,0
+numpy,77735491,don&#39;t understand how does ~ work with boolean in numpy,1703929658,0
+java,77731449,Intellij idea running build is failing with NoSuchMethodError: getTypographicFamilyName(),1703846100,0
+intellij-idea,77731449,Intellij idea running build is failing with NoSuchMethodError: getTypographicFamilyName(),1703846100,0
+ssh,77735496,SSH only working on Termius not any other terminal or ide on same PC to fedora 39,1703929712,0
+ssh-keys,77735496,SSH only working on Termius not any other terminal or ide on same PC to fedora 39,1703929712,0
+openssh,77735496,SSH only working on Termius not any other terminal or ide on same PC to fedora 39,1703929712,0
+vscode-remote,77735496,SSH only working on Termius not any other terminal or ide on same PC to fedora 39,1703929712,0
+vscode-remote-ssh,77735496,SSH only working on Termius not any other terminal or ide on same PC to fedora 39,1703929712,0
+php,9657807,how to fetch only a row from a mysql query,1331491393,10
+mysql,9657807,how to fetch only a row from a mysql query,1331491393,10
+android,70992083,Android Error: Cannot resolve symbol &#39;PackageList&#39;,1644004023,4
+reactjs,70992083,Android Error: Cannot resolve symbol &#39;PackageList&#39;,1644004023,4
+react-native,70992083,Android Error: Cannot resolve symbol &#39;PackageList&#39;,1644004023,4
+expo,70992083,Android Error: Cannot resolve symbol &#39;PackageList&#39;,1644004023,4
+visual-studio-code,77735494,Can vscode be prohibited from editing official library files?,1703929681,0
+pycharm,77735494,Can vscode be prohibited from editing official library files?,1703929681,0
+readonly,77735494,Can vscode be prohibited from editing official library files?,1703929681,0
+reactjs,77735493,XML error. CLient cant get a simple response. Axios React node json,1703929680,0
+node.js,77735493,XML error. CLient cant get a simple response. Axios React node json,1703929680,0
+json,77735493,XML error. CLient cant get a simple response. Axios React node json,1703929680,0
+xml,77735493,XML error. CLient cant get a simple response. Axios React node json,1703929680,0
+axios,77735493,XML error. CLient cant get a simple response. Axios React node json,1703929680,0
+nginx,17359413,Nginx change /phpmyadmin directory,1372404301,3
+phpmyadmin,17359413,Nginx change /phpmyadmin directory,1372404301,3
+react-native,77693636,View is shrinked when using KeyboardAvoidingView and multiple flat lists in react native,1703095586,2
+textfield,77693636,View is shrinked when using KeyboardAvoidingView and multiple flat lists in react native,1703095586,2
+react-native-flatlist,77693636,View is shrinked when using KeyboardAvoidingView and multiple flat lists in react native,1703095586,2
+r,77735484,Looking for a properly working post hoc test for my experimental analysis. Any suggestions?,1703929562,0
+rstudio,77735484,Looking for a properly working post hoc test for my experimental analysis. Any suggestions?,1703929562,0
+posthoc,77735484,Looking for a properly working post hoc test for my experimental analysis. Any suggestions?,1703929562,0
+android,77735480,Capacitor startActivityForResult() trigger callnack function on second activity start,1703929521,0
+capacitor,77735480,Capacitor startActivityForResult() trigger callnack function on second activity start,1703929521,0
+angular,77735194,My project is not redirecting me to the specified path of a component with Angular,1703921627,1
+web,77735194,My project is not redirecting me to the specified path of a component with Angular,1703921627,1
+routes,77735194,My project is not redirecting me to the specified path of a component with Angular,1703921627,1
+frontend,77735194,My project is not redirecting me to the specified path of a component with Angular,1703921627,1
+angular-cli,77735194,My project is not redirecting me to the specified path of a component with Angular,1703921627,1
+javascript,77735005,how to avoid a new line,1703915936,1
+html,77735005,how to avoid a new line,1703915936,1
+tablerow,77735005,how to avoid a new line,1703915936,1
+c,38198638,OpenSSL SSL_write from multiple buffers / SSL_writev,1467707299,2
+openssl,38198638,OpenSSL SSL_write from multiple buffers / SSL_writev,1467707299,2
+posix,38198638,OpenSSL SSL_write from multiple buffers / SSL_writev,1467707299,2
+php,11076334,PHP - Strtotime - Add hours,1339986364,8
+strtotime,11076334,PHP - Strtotime - Add hours,1339986364,8
+azure,77735050,How are these data structures ever related to databases in Azure?,1703917755,1
+python,77735354,there has been an admin login error in my code,1703926165,1
+django,77735354,there has been an admin login error in my code,1703926165,1
+django-models,77735354,there has been an admin login error in my code,1703926165,1
+java,77717583,Grouping items in a list using Stream API,1703598408,4
+java-stream,77717583,Grouping items in a list using Stream API,1703598408,4
+grouping,77717583,Grouping items in a list using Stream API,1703598408,4
+collectors,77717583,Grouping items in a list using Stream API,1703598408,4
+angular,74167935,How to use Ngxs in a standalone component?,1666484170,2
+ngxs,74167935,How to use Ngxs in a standalone component?,1666484170,2
+angular-standalone-components,74167935,How to use Ngxs in a standalone component?,1666484170,2
+ruby-on-rails,73702356,How to solve ActiveStorage::FileNotFoundError: when running tests with rspec?,1663069140,1
+rspec,73702356,How to solve ActiveStorage::FileNotFoundError: when running tests with rspec?,1663069140,1
+rails-activestorage,73702356,How to solve ActiveStorage::FileNotFoundError: when running tests with rspec?,1663069140,1
+java,77717771,How does Spring distinguish which controller method to execute?,1703601539,0
+spring-boot,77717771,How does Spring distinguish which controller method to execute?,1703601539,0
+http,77717771,How does Spring distinguish which controller method to execute?,1703601539,0
+path-variables,77717771,How does Spring distinguish which controller method to execute?,1703601539,0
+stata,77735478,Distinguishing between several t-tests in STATA,1703929460,0
+t-test,77735478,Distinguishing between several t-tests in STATA,1703929460,0
+large-language-model,77734237,How to fine tune an already fine-tuned LLM model using peft?,1703889031,0
+fine-tuning,77734237,How to fine tune an already fine-tuned LLM model using peft?,1703889031,0
+peft,77734237,How to fine tune an already fine-tuned LLM model using peft?,1703889031,0
+google-generativeai,77734237,How to fine tune an already fine-tuned LLM model using peft?,1703889031,0
+html,77735475,Why do we need to Ctrl-click in a multi-select box in HTML?,1703929404,0
+web,77735475,Why do we need to Ctrl-click in a multi-select box in HTML?,1703929404,0
+windows-services,77711403,&#39;Access to the path is denied&#39; when a NamedPipeClientStream tries to connect to a NamedPipeServerStream in a Windows service,1703439762,1
+named-pipes,77711403,&#39;Access to the path is denied&#39; when a NamedPipeClientStream tries to connect to a NamedPipeServerStream in a Windows service,1703439762,1
+matrix,77735476,how can i Execute TileSPGEMM on my system?,1703929406,0
+cuda,77735476,how can i Execute TileSPGEMM on my system?,1703929406,0
+sparse-matrix,77735476,how can i Execute TileSPGEMM on my system?,1703929406,0
+multiplication,77735476,how can i Execute TileSPGEMM on my system?,1703929406,0
+wpf,4226740,How do I get the current mouse screen coordinates in WPF?,1290182262,10
+mouse-coordinates,4226740,How do I get the current mouse screen coordinates in WPF?,1290182262,10
+python,77734781,NoReverseMatch at /login/login/signup,1703907140,2
+django,77734781,NoReverseMatch at /login/login/signup,1703907140,2
+redirect,77734781,NoReverseMatch at /login/login/signup,1703907140,2
+django-views,77734781,NoReverseMatch at /login/login/signup,1703907140,2
+python,77735471,I have problems with anaconda and jupyter notebook,1703929360,0
+jupyter-notebook,77735471,I have problems with anaconda and jupyter notebook,1703929360,0
+pycharm,77735471,I have problems with anaconda and jupyter notebook,1703929360,0
+anaconda,77735471,I have problems with anaconda and jupyter notebook,1703929360,0
+anaconda3,77735471,I have problems with anaconda and jupyter notebook,1703929360,0
+machine-learning,77664921,AutoTrain advanced CLI: error: unrecognized arguments: --fp16 --use-int4,1702626811,2
+chatbot,77664921,AutoTrain advanced CLI: error: unrecognized arguments: --fp16 --use-int4,1702626811,2
+large-language-model,77664921,AutoTrain advanced CLI: error: unrecognized arguments: --fp16 --use-int4,1702626811,2
+fine-tuning,77664921,AutoTrain advanced CLI: error: unrecognized arguments: --fp16 --use-int4,1702626811,2
+peft,77664921,AutoTrain advanced CLI: error: unrecognized arguments: --fp16 --use-int4,1702626811,2
+arrays,25142122,Turn an array into a string,1407250950,1
+perl,25142122,Turn an array into a string,1407250950,1
+rstudio,77735469,How can I use R to organize teams?,1703929248,0
+sql,77735170,Remove &#39;pid=&quot;%&quot; dateline=&quot;%&quot;&#39; string from a quote tag using SQL,1703921114,2
+mysql,77735170,Remove &#39;pid=&quot;%&quot; dateline=&quot;%&quot;&#39; string from a quote tag using SQL,1703921114,2
+c,77735399,time issue with my C code on bitwise operator. Please tell me some changes so that my C code becomes efficient to run in minimum time,1703927311,1
+bitwise-operators,77735399,time issue with my C code on bitwise operator. Please tell me some changes so that my C code becomes efficient to run in minimum time,1703927311,1
+python,55219655,How to install a .zip package via requirements.txt?,1552906314,4
+pip,55219655,How to install a .zip package via requirements.txt?,1552906314,4
+android,77732069,How do we code/edit react native mobile apps on android studio. (Not talking about the emulator or env setup but writing code in Android studio),1703854029,1
+react-native,77732069,How do we code/edit react native mobile apps on android studio. (Not talking about the emulator or env setup but writing code in Android studio),1703854029,1
+android-studio,77732069,How do we code/edit react native mobile apps on android studio. (Not talking about the emulator or env setup but writing code in Android studio),1703854029,1
+mobile,77732069,How do we code/edit react native mobile apps on android studio. (Not talking about the emulator or env setup but writing code in Android studio),1703854029,1
+ios,73040979,UIViewRepresentable - MKMapView doesn&#39;t get updated,1658250440,2
+swiftui,73040979,UIViewRepresentable - MKMapView doesn&#39;t get updated,1658250440,2
+uikit,73040979,UIViewRepresentable - MKMapView doesn&#39;t get updated,1658250440,2
+mkmapview,73040979,UIViewRepresentable - MKMapView doesn&#39;t get updated,1658250440,2
+uiviewrepresentable,73040979,UIViewRepresentable - MKMapView doesn&#39;t get updated,1658250440,2
+python,77735458,Reduce number of loaded image plugins in Python Pillow library,1703928983,0
+image-processing,77735458,Reduce number of loaded image plugins in Python Pillow library,1703928983,0
+python-imaging-library,77735458,Reduce number of loaded image plugins in Python Pillow library,1703928983,0
+startup,77735458,Reduce number of loaded image plugins in Python Pillow library,1703928983,0
+reactjs,77735457,Why does this reducer return a promise? despite my use of Async?,1703928983,0
+angular,77735173,Property &#39;apiUrl&#39; does not exist on type &#39;{}&#39; error on my Angular App,1703921144,3
+javascript,77735455,React Flow - pan the flow on drag a node with drag handle,1703928929,0
+reactjs,77735455,React Flow - pan the flow on drag a node with drag handle,1703928929,0
+react-flow,77735455,React Flow - pan the flow on drag a node with drag handle,1703928929,0
+perl,25555841,How do I get just the directory part of a path in Perl?,1409251382,4
+python,65716628,Received ValueError: I/O operation on closed file but the data printed well,1610617455,2
+python-3.x,65716628,Received ValueError: I/O operation on closed file but the data printed well,1610617455,2
+pandas,65716628,Received ValueError: I/O operation on closed file but the data printed well,1610617455,2
+sys,65716628,Received ValueError: I/O operation on closed file but the data printed well,1610617455,2
+machine-learning,77735344,Wrong normalizing data in libsvm,1703925924,1
+libsvm,77735344,Wrong normalizing data in libsvm,1703925924,1
+normalize,77735344,Wrong normalizing data in libsvm,1703925924,1
+flutter,77735453,How to Implement Nested Filters in a Supabase Query with Flutter,1703928860,0
+dart,77735453,How to Implement Nested Filters in a Supabase Query with Flutter,1703928860,0
+supabase,77735453,How to Implement Nested Filters in a Supabase Query with Flutter,1703928860,0
+nested-filters,77735453,How to Implement Nested Filters in a Supabase Query with Flutter,1703928860,0
+query-building,77735453,How to Implement Nested Filters in a Supabase Query with Flutter,1703928860,0
+reactjs,77734976,Cannot change font in NextUI NextJS,1703914830,1
+next.js,77734976,Cannot change font in NextUI NextJS,1703914830,1
+tailwind-css,77734976,Cannot change font in NextUI NextJS,1703914830,1
+nextui,77734976,Cannot change font in NextUI NextJS,1703914830,1
+c#,51201586,How to Extend SignInManager in .net Core 2.0,1530837062,2
+asp.net-mvc,51201586,How to Extend SignInManager in .net Core 2.0,1530837062,2
+asp.net-core,51201586,How to Extend SignInManager in .net Core 2.0,1530837062,2
+asp.net-identity,51201586,How to Extend SignInManager in .net Core 2.0,1530837062,2
+asp.net-core-2.0,51201586,How to Extend SignInManager in .net Core 2.0,1530837062,2
+c++,77723718,How to create multiple mouse pointers in Python 3 or C++ 20? (in windows),1703706019,0
+python-3.x,77723718,How to create multiple mouse pointers in Python 3 or C++ 20? (in windows),1703706019,0
+controls,77723718,How to create multiple mouse pointers in Python 3 or C++ 20? (in windows),1703706019,0
+mouse,77723718,How to create multiple mouse pointers in Python 3 or C++ 20? (in windows),1703706019,0
+excel,77728049,How to get XY position of image pasted inside Excel worksheet,1703781068,0
+vba,77728049,How to get XY position of image pasted inside Excel worksheet,1703781068,0
+python,73340770,"Pytorch torchvision, negative samples, ValueError Expected target boxes to be a tensor of shape [N, 4] got torch.Size([0])",1660349416,2
+pytorch,73340770,"Pytorch torchvision, negative samples, ValueError Expected target boxes to be a tensor of shape [N, 4] got torch.Size([0])",1660349416,2
+bounding-box,73340770,"Pytorch torchvision, negative samples, ValueError Expected target boxes to be a tensor of shape [N, 4] got torch.Size([0])",1660349416,2
+torchvision,73340770,"Pytorch torchvision, negative samples, ValueError Expected target boxes to be a tensor of shape [N, 4] got torch.Size([0])",1660349416,2
+sanity,77735439,Sanity Desk Tool Crash: Cannot Resolve DOM Point from Slate Point when Adding Highlight Decorator to Richtext Block Field,1703928414,0
+richtext,77735439,Sanity Desk Tool Crash: Cannot Resolve DOM Point from Slate Point when Adding Highlight Decorator to Richtext Block Field,1703928414,0
+javascript,42441472,Draw a &quot;squiggly line&quot; in SVG,1487947507,4
+svg,42441472,Draw a &quot;squiggly line&quot; in SVG,1487947507,4
+javascript,77735447,Leaflet map doesn&#39;t fire any of the events I&#39;ve created?,1703928680,0
+leaflet,77735447,Leaflet map doesn&#39;t fire any of the events I&#39;ve created?,1703928680,0
+gis,77735447,Leaflet map doesn&#39;t fire any of the events I&#39;ve created?,1703928680,0
+spring-boot,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0
+gradle,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0
+jar,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0
+executable-jar,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0
+shadow,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0
+mongodb,46293070,How to check if collection exists or not MongoDB Golang,1505801498,2
+go,46293070,How to check if collection exists or not MongoDB Golang,1505801498,2
+mgo,46293070,How to check if collection exists or not MongoDB Golang,1505801498,2
+c++,77710537,ERROR : &#39;EBADMSG&#39; was not declared in this scope,1703418904,0
+sql,77710537,ERROR : &#39;EBADMSG&#39; was not declared in this scope,1703418904,0
+database,77710537,ERROR : &#39;EBADMSG&#39; was not declared in this scope,1703418904,0
+sqlplus,77710537,ERROR : &#39;EBADMSG&#39; was not declared in this scope,1703418904,0
+ruby,36350321,Ruby: No such file or directory @ rb_sysopen - testfile (Errno::ENOENT),1459495326,8
+file,36350321,Ruby: No such file or directory @ rb_sysopen - testfile (Errno::ENOENT),1459495326,8
+google-sheets,77723547,How do I lock a range that has been edited today so that it cannot be edited again tomorrow in google sheet?,1703703331,0
+google-sheets-formula,77723547,How do I lock a range that has been edited today so that it cannot be edited again tomorrow in google sheet?,1703703331,0
+python,77735322,Pyhton runtime error message is not shown,1703925421,1
+runtime-error,77735322,Pyhton runtime error message is not shown,1703925421,1
+android,77735092,Issue on Android 13 : Android — Repeat notification daily on specific time,1703919089,1
+alarmmanager,77735092,Issue on Android 13 : Android — Repeat notification daily on specific time,1703919089,1
+alarm,77735092,Issue on Android 13 : Android — Repeat notification daily on specific time,1703919089,1
+r,77735352,Error Occurs when attempting to assign taxonomy against the MiDAS database using the DADA2 package in R,1703926131,0
+python,77734929,Time Limit Getting Exceeded even with O(n) complexity,1703913147,3
+time-complexity,77734929,Time Limit Getting Exceeded even with O(n) complexity,1703913147,3
+java,77735125,SpringBoot @ConfigurationProperties,1703919796,0
+spring,77735125,SpringBoot @ConfigurationProperties,1703919796,0
+spring-boot,77735125,SpringBoot @ConfigurationProperties,1703919796,0
+qt,77735443,Can I load multiple .qm files at a time or unite them somehow? And why not?,1703928494,0
+translation,77735443,Can I load multiple .qm files at a time or unite them somehow? And why not?,1703928494,0
+sql,77735177,Calculate time duration in a group and between a particular range of data in both SQL Server and Oracle,1703921171,1
+file,45746085,How to update .env file and share among teammates?,1503010577,1
+environment-variables,45746085,How to update .env file and share among teammates?,1503010577,1
+c,77735307,Back to C Programming - String seems to be mutated after iterating over the char pointer,1703924989,1
+jupyter-notebook,59225719,LaTeX error related to tcolorbox.sty not found,1575719673,7
+latex,59225719,LaTeX error related to tcolorbox.sty not found,1575719673,7
+jupyter,59225719,LaTeX error related to tcolorbox.sty not found,1575719673,7
+javascript,77735289,Chrome Extension: Appending element to popup window instead of browser window,1703924395,1
+html,77735289,Chrome Extension: Appending element to popup window instead of browser window,1703924395,1
+google-chrome-extension,77735289,Chrome Extension: Appending element to popup window instead of browser window,1703924395,1
+browser,77735289,Chrome Extension: Appending element to popup window instead of browser window,1703924395,1
+popup,77735289,Chrome Extension: Appending element to popup window instead of browser window,1703924395,1
+django,77735355,Select for update through a foreign key,1703926191,0
+django-models,77735355,Select for update through a foreign key,1703926191,0
+query-optimization,77735355,Select for update through a foreign key,1703926191,0
+django-orm,77735355,Select for update through a foreign key,1703926191,0
+select-for-update,77735355,Select for update through a foreign key,1703926191,0
+node.js,77726504,How to downgrade Yeoman on linux using npm,1703761753,1
+linux,77726504,How to downgrade Yeoman on linux using npm,1703761753,1
+npm,77726504,How to downgrade Yeoman on linux using npm,1703761753,1
+yeoman,77726504,How to downgrade Yeoman on linux using npm,1703761753,1
+yo,77726504,How to downgrade Yeoman on linux using npm,1703761753,1
+java,77734852,How to fix &#39;package org.springframework.jdbc.core does not exist&#39;,1703910155,2
+spring-boot,77734852,How to fix &#39;package org.springframework.jdbc.core does not exist&#39;,1703910155,2
+jdbc,77734852,How to fix &#39;package org.springframework.jdbc.core does not exist&#39;,1703910155,2
+javascript,77735248,How come this `e.currentTarget` is null in debouncing function?,1703923436,0
+event-handling,77735248,How come this `e.currentTarget` is null in debouncing function?,1703923436,0
+dom-events,77735248,How come this `e.currentTarget` is null in debouncing function?,1703923436,0
+debouncing,77735248,How come this `e.currentTarget` is null in debouncing function?,1703923436,0
+javascript,77735435,Javascript to update active sidebar menuSubItems linked to TabPanel in dashboard Shiny App,1703928302,0
+shiny,77735435,Javascript to update active sidebar menuSubItems linked to TabPanel in dashboard Shiny App,1703928302,0
+shinydashboard,77735435,Javascript to update active sidebar menuSubItems linked to TabPanel in dashboard Shiny App,1703928302,0
+sidebar,77735435,Javascript to update active sidebar menuSubItems linked to TabPanel in dashboard Shiny App,1703928302,0
+shinyjs,77735435,Javascript to update active sidebar menuSubItems linked to TabPanel in dashboard Shiny App,1703928302,0
+html,7690355,How do I put two spaces after every period in our HTML?,1318006181,6
+spaces,7690355,How do I put two spaces after every period in our HTML?,1318006181,6
+azure,77732331,Dynamically create property name for connection string bicep module,1703857984,2
+azure-resource-manager,77732331,Dynamically create property name for connection string bicep module,1703857984,2
+azure-bicep,77732331,Dynamically create property name for connection string bicep module,1703857984,2
+azure-appservice,77732331,Dynamically create property name for connection string bicep module,1703857984,2
+java,77735245,"Android SDK 34 AppCompatActivity.requestPermissions does not display permission dialog, but does with Android SDK 29",1703923414,1
+android,77735245,"Android SDK 34 AppCompatActivity.requestPermissions does not display permission dialog, but does with Android SDK 29",1703923414,1
+permissions,77735245,"Android SDK 34 AppCompatActivity.requestPermissions does not display permission dialog, but does with Android SDK 29",1703923414,1
+django,77735012,Is there a way to copy annotations from one Django queryset to another?,1703916233,2
+postgresql,77735012,Is there a way to copy annotations from one Django queryset to another?,1703916233,2
+mv,29135986,mv: &quot;Directory not Empty&quot; - how do you merge directories with `mv`?,1426730311,4
+rust,77735432,Why is moving data out of the reference allowed in this situation?,1703928184,0
+python,75606197,"Write a program to accept a number from the user and count the zeros, odd digits and non-zero even digits from the entered number",1677686833,2
+python-3.x,75606197,"Write a program to accept a number from the user and count the zeros, odd digits and non-zero even digits from the entered number",1677686833,2
+for-loop,75606197,"Write a program to accept a number from the user and count the zeros, odd digits and non-zero even digits from the entered number",1677686833,2
+c++,77734589,Not getting WM_LBUTTONDBLCLK in WndProc function,1703899604,0
+winapi,77734589,Not getting WM_LBUTTONDBLCLK in WndProc function,1703899604,0
+android,77732157,How to set a custom icon to an Android / IOS push notification in expo react native app?,1703855564,1
+ios,77732157,How to set a custom icon to an Android / IOS push notification in expo react native app?,1703855564,1
+react-native,77732157,How to set a custom icon to an Android / IOS push notification in expo react native app?,1703855564,1
+push-notification,77732157,How to set a custom icon to an Android / IOS push notification in expo react native app?,1703855564,1
+expo,77732157,How to set a custom icon to an Android / IOS push notification in expo react native app?,1703855564,1
+reactjs,51831824,Where to store Class instance for reusability in Redux?,1534202705,2
+redux,51831824,Where to store Class instance for reusability in Redux?,1534202705,2
+redux-saga,51831824,Where to store Class instance for reusability in Redux?,1534202705,2
+c++,77735266,ESP32-CAM MAX98357A Audio Player,1703923780,0
+arduino,77735266,ESP32-CAM MAX98357A Audio Player,1703923780,0
+esp32,77735266,ESP32-CAM MAX98357A Audio Player,1703923780,0
+arduino-esp32,77735266,ESP32-CAM MAX98357A Audio Player,1703923780,0
+flutter,77733457,Custom SliverAppBar flexible space shape using a CustomClipper,1703874344,0
+google-sheets-formula,77735375,google sheet : combine 2 set of data using query formula,1703926694,1
+django-templates,5686044,TemplateDoesNotExist at/,1302951814,23
+javascript,37181887,Using Syntax highligter with Ajax - html and python brush,1463043153,2
+jquery,37181887,Using Syntax highligter with Ajax - html and python brush,1463043153,2
+html,37181887,Using Syntax highligter with Ajax - html and python brush,1463043153,2
+ajax,37181887,Using Syntax highligter with Ajax - html and python brush,1463043153,2
+pyqt,77735427,how to make a smooth gradient filling step?,1703927971,0
+python-3.x,77735425,MOdulenotFound Error in python script vscode,1703927950,0
+vscode-extensions,77735425,MOdulenotFound Error in python script vscode,1703927950,0
+ubuntu-23.10,77735425,MOdulenotFound Error in python script vscode,1703927950,0
+java,14780667,How to set positions of snakes and ladders in java Snake and Ladder game?,1360354708,4
+algorithm,14780667,How to set positions of snakes and ladders in java Snake and Ladder game?,1360354708,4
+swing,14780667,How to set positions of snakes and ladders in java Snake and Ladder game?,1360354708,4
+user-interface,14780667,How to set positions of snakes and ladders in java Snake and Ladder game?,1360354708,4
+php,77735326,How can I create Stripe express accounts on WordPress?,1703925506,0
+wordpress,77735326,How can I create Stripe express accounts on WordPress?,1703925506,0
+stripe-payments,77735326,How can I create Stripe express accounts on WordPress?,1703925506,0
+python,77735398,pytorch CTC loss works strange on my test data,1703927289,0
+deep-learning,77735398,pytorch CTC loss works strange on my test data,1703927289,0
+pytorch,77735398,pytorch CTC loss works strange on my test data,1703927289,0
+computer-vision,77735398,pytorch CTC loss works strange on my test data,1703927289,0
+ctc,77735398,pytorch CTC loss works strange on my test data,1703927289,0
+python,77727609,"I wrote a calculator that I want to find the answer before hitting the equation but no matter what I try it don&#39;t work at all, work with kivymd python",1703775524,0
+kivy,77727609,"I wrote a calculator that I want to find the answer before hitting the equation but no matter what I try it don&#39;t work at all, work with kivymd python",1703775524,0
+calculator,77727609,"I wrote a calculator that I want to find the answer before hitting the equation but no matter what I try it don&#39;t work at all, work with kivymd python",1703775524,0
+kivymd,77727609,"I wrote a calculator that I want to find the answer before hitting the equation but no matter what I try it don&#39;t work at all, work with kivymd python",1703775524,0
+ms-access,24190530,Summing columns in access reports based on other column&#39;s text,1402594352,3
+tensorboard,77735421,How to vertically maximize a plot in tensorboard?,1703927891,0
+xml,77724793,"USFX (XML); Extract verse by giving book, chapter and verse ID; Powershell",1703730707,3
+powershell,77724793,"USFX (XML); Extract verse by giving book, chapter and verse ID; Powershell",1703730707,3
+html,77735264,Only two out of the three fonts listed in &lt;style&gt; show up,1703923740,0
+css,77735264,Only two out of the three fonts listed in &lt;style&gt; show up,1703923740,0
+fonts,77735264,Only two out of the three fonts listed in &lt;style&gt; show up,1703923740,0
+font-face,77735264,Only two out of the three fonts listed in &lt;style&gt; show up,1703923740,0
+python,77735420,"How do I loop through a list in a data frame, select only one element from it. Then remove rows that contains the elements which was not selected",1703927871,0
+loops,77735420,"How do I loop through a list in a data frame, select only one element from it. Then remove rows that contains the elements which was not selected",1703927871,0
+blazor-webassembly,77735419,"Blazor Webassembly server2 project reference added to server1 project, Server2 controller methods not calling",1703927825,0
+hosted,77735419,"Blazor Webassembly server2 project reference added to server1 project, Server2 controller methods not calling",1703927825,0
+reactjs,77735418,Why won&#39;t my ReactJS / Typescript project deploy on Vercel?,1703927783,0
+typescript,77735418,Why won&#39;t my ReactJS / Typescript project deploy on Vercel?,1703927783,0
+git,77735418,Why won&#39;t my ReactJS / Typescript project deploy on Vercel?,1703927783,0
+next.js,77735418,Why won&#39;t my ReactJS / Typescript project deploy on Vercel?,1703927783,0
+vercel,77735418,Why won&#39;t my ReactJS / Typescript project deploy on Vercel?,1703927783,0
+node.js,77707301,Deploy Site Frontend Backend Angular NodeJs MySQL PhpAdmin,1703326645,0
+angular,77707301,Deploy Site Frontend Backend Angular NodeJs MySQL PhpAdmin,1703326645,0
+c#,75033870,Getting HttpContext (or just user information) into DbConnectionInterceptor in .Net Core 6 with EF,1673024126,2
+entity-framework-6,75033870,Getting HttpContext (or just user information) into DbConnectionInterceptor in .Net Core 6 with EF,1673024126,2
+interceptor,75033870,Getting HttpContext (or just user information) into DbConnectionInterceptor in .Net Core 6 with EF,1673024126,2
+asp.net-core-6.0,75033870,Getting HttpContext (or just user information) into DbConnectionInterceptor in .Net Core 6 with EF,1673024126,2
+row-level-security,75033870,Getting HttpContext (or just user information) into DbConnectionInterceptor in .Net Core 6 with EF,1673024126,2
+tcp,77735416,How to make connection with Thermal printer from browser and send ESCPOS print commands,1703927745,0
+printing,77735416,How to make connection with Thermal printer from browser and send ESCPOS print commands,1703927745,0
+thermal-printer,77735416,How to make connection with Thermal printer from browser and send ESCPOS print commands,1703927745,0
+epson,77735416,How to make connection with Thermal printer from browser and send ESCPOS print commands,1703927745,0
+posprinter,77735416,How to make connection with Thermal printer from browser and send ESCPOS print commands,1703927745,0
+flutter,77712648,Can I change the font style of a labelText in a TextFormField?,1703484298,2
+dart,77712648,Can I change the font style of a labelText in a TextFormField?,1703484298,2
+html,77728243,Why is my table empty when i print it to an html file?,1703783499,0
+r,77728243,Why is my table empty when i print it to an html file?,1703783499,0
+xtable,77728243,Why is my table empty when i print it to an html file?,1703783499,0
+r,77735377,Crontab fails but command works in terminal,1703926704,2
+bash,77735377,Crontab fails but command works in terminal,1703926704,2
+macos,77735377,Crontab fails but command works in terminal,1703926704,2
+cron,77735377,Crontab fails but command works in terminal,1703926704,2
+cron-task,77735377,Crontab fails but command works in terminal,1703926704,2
+reactjs,77727507,"ReactJs with MUI 5 Autocomplete using http request, filtered options not displayed for specific search",1703774282,1
+material-ui,77727507,"ReactJs with MUI 5 Autocomplete using http request, filtered options not displayed for specific search",1703774282,1
+rust,77735353,Temporarily Mutating Immutable Structs,1703926163,0
+immutability,77735353,Temporarily Mutating Immutable Structs,1703926163,0
+mutability,77735353,Temporarily Mutating Immutable Structs,1703926163,0
+javascript,77735328,module resolution not done properly in a vitest test case while using a dependency with type module,1703925622,0
+node.js,77735328,module resolution not done properly in a vitest test case while using a dependency with type module,1703925622,0
+npm,77735328,module resolution not done properly in a vitest test case while using a dependency with type module,1703925622,0
+vite,77735328,module resolution not done properly in a vitest test case while using a dependency with type module,1703925622,0
+vitest,77735328,module resolution not done properly in a vitest test case while using a dependency with type module,1703925622,0
+javascript,77731895,ChartJS: chartjs-plugin-datalabels not showing value properly,1703851620,1
+canvas,77731895,ChartJS: chartjs-plugin-datalabels not showing value properly,1703851620,1
+charts,77731895,ChartJS: chartjs-plugin-datalabels not showing value properly,1703851620,1
+chart.js,77731895,ChartJS: chartjs-plugin-datalabels not showing value properly,1703851620,1
+chart.js-datalabels,77731895,ChartJS: chartjs-plugin-datalabels not showing value properly,1703851620,1
+android,77735382,Fragment is transparent and shows Activity below(changing to dark mode or light mode),1703926837,1
+kotlin,77735382,Fragment is transparent and shows Activity below(changing to dark mode or light mode),1703926837,1
+android-studio,77735382,Fragment is transparent and shows Activity below(changing to dark mode or light mode),1703926837,1
+php,77729452,Serve index.php file with openswoole or roadrunner,1703802886,0
+openswoole,77729452,Serve index.php file with openswoole or roadrunner,1703802886,0
+roadrunner,77729452,Serve index.php file with openswoole or roadrunner,1703802886,0
+sqlite,77735411,How do I store an existing sqlite file in .Net Maui?,1703927542,0
+maui,77735411,How do I store an existing sqlite file in .Net Maui?,1703927542,0
+r,77735410,What corelation test to perform for two rasters?,1703927524,0
+gis,77735410,What corelation test to perform for two rasters?,1703927524,0
+raster,77735410,What corelation test to perform for two rasters?,1703927524,0
+powerapps,77735409,How to filter SharePointList in order only the next (smallest) not yet completed working step is displayed in gallery,1703927517,0
+java,77735408,Can i compile antlr4 files to java on vs code?,1703927508,0
+visual-studio-code,77735408,Can i compile antlr4 files to java on vs code?,1703927508,0
+antlr4,77735408,Can i compile antlr4 files to java on vs code?,1703927508,0
+wordpress,77726190,Wanting to adjust the sizing/padding in my cart hover,1703757765,0
+woocommerce,77726190,Wanting to adjust the sizing/padding in my cart hover,1703757765,0
+shopping-cart,77726190,Wanting to adjust the sizing/padding in my cart hover,1703757765,0
+java,77735065,Calling a sql function from java gives error,1703918260,0
+sql,77735065,Calling a sql function from java gives error,1703918260,0
+jpa,77735065,Calling a sql function from java gives error,1703918260,0
+jdbc,77735065,Calling a sql function from java gives error,1703918260,0
+procedure,77735065,Calling a sql function from java gives error,1703918260,0
+laravel,77715883,Why I do not see any algolia global-search request with search method of laravel/scout 10?,1703570920,0
+laravel-scout,77715883,Why I do not see any algolia global-search request with search method of laravel/scout 10?,1703570920,0
+excel,77733851,I need to create a XY graph depicting a warehouse rack layout from rows of x&amp;y coordinates,1703880751,0
+vba,77733851,I need to create a XY graph depicting a warehouse rack layout from rows of x&amp;y coordinates,1703880751,0
+charts,77733851,I need to create a XY graph depicting a warehouse rack layout from rows of x&amp;y coordinates,1703880751,0
+lldb,18374568,reverse debugging with lldb,1377157803,3
+reverse-debugging,18374568,reverse debugging with lldb,1377157803,3
+javascript,77735169,Nothing is displayed in localhost when I use the getday() method from javascript Date() class,1703921041,2
+r,77735404,Nonparametric way to perform ANOVA of linear mixed model and power calcualtion,1703927428,0
+anova,77735404,Nonparametric way to perform ANOVA of linear mixed model and power calcualtion,1703927428,0
+mixed-models,77735404,Nonparametric way to perform ANOVA of linear mixed model and power calcualtion,1703927428,0
+resampling,77735404,Nonparametric way to perform ANOVA of linear mixed model and power calcualtion,1703927428,0
+random-effects,77735404,Nonparametric way to perform ANOVA of linear mixed model and power calcualtion,1703927428,0
+google-chrome-devtools,53827406,Why barcode scanner opens Chrome developer console in chrome?,1545114039,3
+barcode,53827406,Why barcode scanner opens Chrome developer console in chrome?,1545114039,3
+barcode-scanner,53827406,Why barcode scanner opens Chrome developer console in chrome?,1545114039,3
+laravel,77735188,How can I get id of update request in request file?,1703921368,1
+database,77735320,Flutter application not working when converted to apk,1703925318,2
+flutter,77735320,Flutter application not working when converted to apk,1703925318,2
+mobile-application,77735320,Flutter application not working when converted to apk,1703925318,2
+supabase,77735397,Is it possible to incorporate an OR condition in Supabase Realtime using the PostgresChangeFilter?,1703927283,0
+supabase-flutter,77735397,Is it possible to incorporate an OR condition in Supabase Realtime using the PostgresChangeFilter?,1703927283,0
+supabase-realtime,77735397,Is it possible to incorporate an OR condition in Supabase Realtime using the PostgresChangeFilter?,1703927283,0
+lldb,73871433,is it possible &#39;catch syscall&#39; in LLDB now?,1664298746,2
+ffmpeg,77735357,Playback drops frames or stutter on good hardware,1703926274,0
+hevc,77735357,Playback drops frames or stutter on good hardware,1703926274,0
+javascript,77703207,How to add a class to the body that will change depending on the page in the remix?,1703242280,1
+html,77703207,How to add a class to the body that will change depending on the page in the remix?,1703242280,1
+css,77703207,How to add a class to the body that will change depending on the page in the remix?,1703242280,1
+tags,77703207,How to add a class to the body that will change depending on the page in the remix?,1703242280,1
+remix.run,77703207,How to add a class to the body that will change depending on the page in the remix?,1703242280,1
+transactions,77735392,How to calculate the cardano&#39;s network throughput (transactions per second)?,1703927211,0
+cryptocurrency,77735392,How to calculate the cardano&#39;s network throughput (transactions per second)?,1703927211,0
+cardano,77735392,How to calculate the cardano&#39;s network throughput (transactions per second)?,1703927211,0
+django,77723055,Django Custom Authentication Not Authenticating Custom User,1703695442,3
+django-models,77723055,Django Custom Authentication Not Authenticating Custom User,1703695442,3
+django-views,77723055,Django Custom Authentication Not Authenticating Custom User,1703695442,3
+django-forms,77723055,Django Custom Authentication Not Authenticating Custom User,1703695442,3
+django-authentication,77723055,Django Custom Authentication Not Authenticating Custom User,1703695442,3
+javascript,77735179,How do I remove an image after adding it though JavaScript?,1703921221,1
+html,77735179,How do I remove an image after adding it though JavaScript?,1703921221,1
+nodes,77735179,How do I remove an image after adding it though JavaScript?,1703921221,1
+excel,77732273,"How to convert either to decimal to binary a 64bit, fixed point precision number in Google Sheets or EXCEL?",1703857016,0
+google-sheets,77732273,"How to convert either to decimal to binary a 64bit, fixed point precision number in Google Sheets or EXCEL?",1703857016,0
+google-sheets-formula,77732273,"How to convert either to decimal to binary a 64bit, fixed point precision number in Google Sheets or EXCEL?",1703857016,0
+ios,38946462,Core Data&#39;s NSPersistentContainer in iOS 10 / macOS Sierra,1471207536,1
+core-data,38946462,Core Data&#39;s NSPersistentContainer in iOS 10 / macOS Sierra,1471207536,1
+containers,38946462,Core Data&#39;s NSPersistentContainer in iOS 10 / macOS Sierra,1471207536,1
+wwdc,38946462,Core Data&#39;s NSPersistentContainer in iOS 10 / macOS Sierra,1471207536,1
+viewcontext,38946462,Core Data&#39;s NSPersistentContainer in iOS 10 / macOS Sierra,1471207536,1
+python,77735389,What is the difference between these two TSP Branch-and-Bound Methods,1703927107,0
+optimization,77735389,What is the difference between these two TSP Branch-and-Bound Methods,1703927107,0
+traveling-salesman,77735389,What is the difference between these two TSP Branch-and-Bound Methods,1703927107,0
+heuristics,77735389,What is the difference between these two TSP Branch-and-Bound Methods,1703927107,0
+branch-and-bound,77735389,What is the difference between these two TSP Branch-and-Bound Methods,1703927107,0
+flutter,57973177,Dart dependency injection of a class with parameters,1568719245,5
+dart,57973177,Dart dependency injection of a class with parameters,1568719245,5
+dependency-injection,57973177,Dart dependency injection of a class with parameters,1568719245,5
+freebsd,23368236,tmux in putty displays border as &#39;qqqqq&#39; or &#39;xxxx&#39;,1398783374,5
+putty,23368236,tmux in putty displays border as &#39;qqqqq&#39; or &#39;xxxx&#39;,1398783374,5
+tmux,23368236,tmux in putty displays border as &#39;qqqqq&#39; or &#39;xxxx&#39;,1398783374,5
+java,38987073,How to analyze a large core dump generated when JVM crashes,1471399793,2
+coredump,38987073,How to analyze a large core dump generated when JVM crashes,1471399793,2
+roles,65915730,Add a new firebird-db user with acces to specific tables?,1611737599,1
+firebird2.5,65915730,Add a new firebird-db user with acces to specific tables?,1611737599,1
+python,65655024,LAB: Sorting TV Shows (dictionaries and lists),1610293044,5
+list,65655024,LAB: Sorting TV Shows (dictionaries and lists),1610293044,5
+sorting,65655024,LAB: Sorting TV Shows (dictionaries and lists),1610293044,5
+dictionary,65655024,LAB: Sorting TV Shows (dictionaries and lists),1610293044,5
+python,50656471,estimator should be an estimator implementing &#39;fit&#39; method,1527939177,2
+scikit-learn,50656471,estimator should be an estimator implementing &#39;fit&#39; method,1527939177,2
+android,26902555,How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT,1415859570,1
+eclipse,26902555,How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT,1415859570,1
+google-maps,26902555,How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT,1415859570,1
+tagging,26902555,How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT,1415859570,1
+geotagging,26902555,How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT,1415859570,1
+windows-8,10396739,how to show toast notification or popup notification in win 8?,1335869774,2
+windows-runtime,10396739,how to show toast notification or popup notification in win 8?,1335869774,2
+windows-store-apps,10396739,how to show toast notification or popup notification in win 8?,1335869774,2
+toast,10396739,how to show toast notification or popup notification in win 8?,1335869774,2
+azure,77735361,Azure Virtual Machine and PHP Development Mode Errors,1703926404,1
+php-8,77735361,Azure Virtual Machine and PHP Development Mode Errors,1703926404,1
+windows-server-2022,77735361,Azure Virtual Machine and PHP Development Mode Errors,1703926404,1
+c#,77735384,how to use EmguCV libraries in .Net Core windowsform application?,1703926956,0
+.net,77735384,how to use EmguCV libraries in .Net Core windowsform application?,1703926956,0
+.net-core,77735384,how to use EmguCV libraries in .Net Core windowsform application?,1703926956,0
+emgucv,77735384,how to use EmguCV libraries in .Net Core windowsform application?,1703926956,0
+python,77734074,Python Statsmodels lib showing Power TTest,1703885191,0
+statsmodels,77734074,Python Statsmodels lib showing Power TTest,1703885191,0
+php,6433643,File Permissions and CHMOD: How to set 777 in PHP upon file creation?,1308703183,3
+file,6433643,File Permissions and CHMOD: How to set 777 in PHP upon file creation?,1308703183,3
+file-permissions,6433643,File Permissions and CHMOD: How to set 777 in PHP upon file creation?,1308703183,3
+chmod,6433643,File Permissions and CHMOD: How to set 777 in PHP upon file creation?,1308703183,3
+postgresql,77735383,Powershel Error while executing Postgresl procedure,1703926891,0
+powershell,77735383,Powershel Error while executing Postgresl procedure,1703926891,0
+reactjs,76843283,Error : ClerkInstanceContext not found : Got this error while building app for nex tjs,1691264895,7
+next.js,76843283,Error : ClerkInstanceContext not found : Got this error while building app for nex tjs,1691264895,7
+clerk,76843283,Error : ClerkInstanceContext not found : Got this error while building app for nex tjs,1691264895,7
+c#,77211786,How to start a full .NET Core Worker Service in an integration/ end-to-end test?,1696184993,2
+.net-core,77211786,How to start a full .NET Core Worker Service in an integration/ end-to-end test?,1696184993,2
+integration-testing,77211786,How to start a full .NET Core Worker Service in an integration/ end-to-end test?,1696184993,2
+xunit,77211786,How to start a full .NET Core Worker Service in an integration/ end-to-end test?,1696184993,2
+c#,77735052,Abstract class with enum won&#39;t serialize correctly,1703917779,1
+oop,77735052,Abstract class with enum won&#39;t serialize correctly,1703917779,1
+inheritance,77735052,Abstract class with enum won&#39;t serialize correctly,1703917779,1
+serialization,77735052,Abstract class with enum won&#39;t serialize correctly,1703917779,1
+enums,77735052,Abstract class with enum won&#39;t serialize correctly,1703917779,1
+google-apps-script,77735341,Creating basic football league table,1703925853,0
+google-sheets,77735341,Creating basic football league table,1703925853,0
+android,77735379,Firebase vulnerability in Realtime Database with access token from files,1703926719,0
+firebase,77735379,Firebase vulnerability in Realtime Database with access token from files,1703926719,0
+firebase-realtime-database,77735379,Firebase vulnerability in Realtime Database with access token from files,1703926719,0
+php,77735369,Stackposts ffmpeg error (Instagram videos),1703926633,0
+ffmpeg,77735369,Stackposts ffmpeg error (Instagram videos),1703926633,0
+python,77735368,BMI calculator giving obesity for weight of 50kg and height of 100cm,1703926630,0
+if-statement,77735368,BMI calculator giving obesity for weight of 50kg and height of 100cm,1703926630,0
+reactjs,77274088,Unable to create prisma schema,1697035166,1
+prisma,77274088,Unable to create prisma schema,1697035166,1
+r,77735372,Group data by a column and check if the contents of the designated columns are identical across the groups,1703926675,0
+group-by,77735372,Group data by a column and check if the contents of the designated columns are identical across the groups,1703926675,0
+duplicates,77735372,Group data by a column and check if the contents of the designated columns are identical across the groups,1703926675,0
+grouping,77735372,Group data by a column and check if the contents of the designated columns are identical across the groups,1703926675,0
+distinct,77735372,Group data by a column and check if the contents of the designated columns are identical across the groups,1703926675,0
+docker,77685959,ERROR: for nginx: Bind for 0.0.0.0:443 failed: port is already allocated while running Coolify &amp; BTCPayServer,1702996520,1
+nginx,77685959,ERROR: for nginx: Bind for 0.0.0.0:443 failed: port is already allocated while running Coolify &amp; BTCPayServer,1702996520,1
+btcpay-server,77685959,ERROR: for nginx: Bind for 0.0.0.0:443 failed: port is already allocated while running Coolify &amp; BTCPayServer,1702996520,1
+node.js,77735363,Redis keeps disconnecting and connecting in expressJS from AWS Elasticache,1703926502,1
+express,77735363,Redis keeps disconnecting and connecting in expressJS from AWS Elasticache,1703926502,1
+redis,77735363,Redis keeps disconnecting and connecting in expressJS from AWS Elasticache,1703926502,1
+amazon-elasticache,77735363,Redis keeps disconnecting and connecting in expressJS from AWS Elasticache,1703926502,1
+ruby-on-rails,5056626,Different layouts and routes on single views for a resource,1298200152,3
+ubuntu,77735367,LetsEncryptCerfifcates Fail in Docker Compose Wordpress,1703926613,0
+docker-compose,77735367,LetsEncryptCerfifcates Fail in Docker Compose Wordpress,1703926613,0
+lets-encrypt,77735367,LetsEncryptCerfifcates Fail in Docker Compose Wordpress,1703926613,0
+json,77735366,How to extend syntax highlighting for a language (markdown) in VS code,1703926608,0
+visual-studio,77735366,How to extend syntax highlighting for a language (markdown) in VS code,1703926608,0
+markdown,77735366,How to extend syntax highlighting for a language (markdown) in VS code,1703926608,0
+syntax-highlighting,77735366,How to extend syntax highlighting for a language (markdown) in VS code,1703926608,0
+f#,77732881,"This type uses an invalid mix of the attributes &#39;NoEquality&#39;, &#39;ReferenceEquality&#39;, &#39;StructuralEquality&#39;, &#39;NoComparison&#39; and &#39;StructuralComparison",1703865915,1
+php,77730903,Trouble Extracting Numeric Values for Summation in a Yii Grid Column Using TSumColumn,1703837698,1
+yii,77730903,Trouble Extracting Numeric Values for Summation in a Yii Grid Column Using TSumColumn,1703837698,1
+yii2,77730903,Trouble Extracting Numeric Values for Summation in a Yii Grid Column Using TSumColumn,1703837698,1
+angular,68203480,How to fix http_parser deprecated warning in angular?,1625105781,1
+typescript,68203480,How to fix http_parser deprecated warning in angular?,1625105781,1
+javascript,77735253,How can I set a photo in the chartjs-plugin-data labels v2.1.0 plugin?,1703923564,0
+canvas,77735253,How can I set a photo in the chartjs-plugin-data labels v2.1.0 plugin?,1703923564,0
+python,77672308,Facebook API Video Upload - Video Successfully Uploaded but Not Appearing on Page,1702756694,0
+facebook,77672308,Facebook API Video Upload - Video Successfully Uploaded but Not Appearing on Page,1702756694,0
+facebook-graph-api,77672308,Facebook API Video Upload - Video Successfully Uploaded but Not Appearing on Page,1702756694,0
+request,77672308,Facebook API Video Upload - Video Successfully Uploaded but Not Appearing on Page,1702756694,0
+python,77732629,Pyright not detect current pyenv environment,1703861994,0
+pre-commit-hook,77732629,Pyright not detect current pyenv environment,1703861994,0
+pre-commit,77732629,Pyright not detect current pyenv environment,1703861994,0
+pre-commit.com,77732629,Pyright not detect current pyenv environment,1703861994,0
+pyright,77732629,Pyright not detect current pyenv environment,1703861994,0
+html,77734567,Different Precedence of text-decoration and text-shadow in Firefox vs Chrome,1703898995,3
+css,77734567,Different Precedence of text-decoration and text-shadow in Firefox vs Chrome,1703898995,3
+google-chrome,77734567,Different Precedence of text-decoration and text-shadow in Firefox vs Chrome,1703898995,3
+firefox,77734567,Different Precedence of text-decoration and text-shadow in Firefox vs Chrome,1703898995,3
+visual-studio,38988833,How to go to a line when clicked on a Visual Studio scrollbar caret,1471412351,1
+asp.net,77735064,asp-for does not work in my project this big problem dotnet7,1703918246,0
+asp.net-core,77735064,asp-for does not work in my project this big problem dotnet7,1703918246,0
+.net-core,77735064,asp-for does not work in my project this big problem dotnet7,1703918246,0
+java,77734319,How do I instantiate bean properties in Jakarta Faces for future pages?,1703891353,0
+jakarta-ee,77734319,How do I instantiate bean properties in Jakarta Faces for future pages?,1703891353,0
+javabeans,77734319,How do I instantiate bean properties in Jakarta Faces for future pages?,1703891353,0
+javascript,77735039,How to delete element from JSON array of objects by ID,1703917294,2
+arrays,77735039,How to delete element from JSON array of objects by ID,1703917294,2
+json,77735039,How to delete element from JSON array of objects by ID,1703917294,2
+r,77734204,stack bar plot with positive values above x axis and negative values below x axis,1703888133,0
+bar-chart,77734204,stack bar plot with positive values above x axis and negative values below x axis,1703888133,0
+php,77733583,PHP ESCPOS - Failed printing in more printers in same process,1703876230,0
+escpos,77733583,PHP ESCPOS - Failed printing in more printers in same process,1703876230,0
+c#,77706524,"C# Form, key input while in the background",1703301599,1
+forms,77706524,"C# Form, key input while in the background",1703301599,1
+input,77706524,"C# Form, key input while in the background",1703301599,1
+variables,77735334,Index out of bound for array in OPL CPLEX,1703925709,0
+cplex,77735334,Index out of bound for array in OPL CPLEX,1703925709,0
+opl,77735334,Index out of bound for array in OPL CPLEX,1703925709,0
+docker,77734617,Dockerizing Golang with Apache-Kafka,1703900690,0
+go,77734617,Dockerizing Golang with Apache-Kafka,1703900690,0
+apache-kafka,77734617,Dockerizing Golang with Apache-Kafka,1703900690,0
+python,77735349,Unable to access Google Sheet API through proxy,1703926049,0
+pycharm,77735349,Unable to access Google Sheet API through proxy,1703926049,0
+google-sheets-api,77735349,Unable to access Google Sheet API through proxy,1703926049,0
+http-proxy,77735349,Unable to access Google Sheet API through proxy,1703926049,0
+r,27267510,how to speed up a &#39;unique&#39; dataframe search,1417597497,5
+performance,27267510,how to speed up a &#39;unique&#39; dataframe search,1417597497,5
+search,27267510,how to speed up a &#39;unique&#39; dataframe search,1417597497,5
+unique,27267510,how to speed up a &#39;unique&#39; dataframe search,1417597497,5
+pandas,77735347,How can I get the Pandas Table to display without the extra line?,1703925997,0
+dataframe,77735347,How can I get the Pandas Table to display without the extra line?,1703925997,0
+.net-core,77022394,MAUI Best method of setting the configuration per environment,1693564528,2
+maui,77022394,MAUI Best method of setting the configuration per environment,1693564528,2
+spring-webflux,77735345,SpringBoot 3 WebFlux - 415 Unsupported MediaType,1703925956,0
+javascript,77311439,Remix V2 - How to type useLoaderData correctly,1697567401,2
+typescript,77311439,Remix V2 - How to type useLoaderData correctly,1697567401,2
+remix,77311439,Remix V2 - How to type useLoaderData correctly,1697567401,2
+remix.run,77311439,Remix V2 - How to type useLoaderData correctly,1697567401,2
+python,3264828,Change default float print format,1279283495,9
+python-3.x,3264828,Change default float print format,1279283495,9
+floating-point,3264828,Change default float print format,1279283495,9
+string-formatting,3264828,Change default float print format,1279283495,9
+pine-script,77730892,how to draw horizontal lines and show price tag for each line?,1703837480,2
+pine-script-v5,77730892,how to draw horizontal lines and show price tag for each line?,1703837480,2
+tradingview-api,77730892,how to draw horizontal lines and show price tag for each line?,1703837480,2
+visualization,77735342,Tableau: Use one bin for multiple variables in &quot;side-by-side bars&quot; chart/ histogram,1703925860,0
+tableau-desktop,77735342,Tableau: Use one bin for multiple variables in &quot;side-by-side bars&quot; chart/ histogram,1703925860,0
+syntax-error,77735340,"Even after installing BS4 and Beautiful soup and its showing its download , but then also my jupyter notebook shows error",1703925820,0
+modulenotfounderror,77735340,"Even after installing BS4 and Beautiful soup and its showing its download , but then also my jupyter notebook shows error",1703925820,0
+java,77725278,Calendar Class method in Java seems to be not giving correct result,1703743942,2
+date,77725278,Calendar Class method in Java seems to be not giving correct result,1703743942,2
+calendar,77725278,Calendar Class method in Java seems to be not giving correct result,1703743942,2
+simpledateformat,77725278,Calendar Class method in Java seems to be not giving correct result,1703743942,2
+java,77732459,Spring Boot 3.2 JDBC,1703859876,0
+spring,77732459,Spring Boot 3.2 JDBC,1703859876,0
+spring-boot,77732459,Spring Boot 3.2 JDBC,1703859876,0
+javascript,77734718,Image slider issue with margin-left,1703904748,0
+jquery,77734718,Image slider issue with margin-left,1703904748,0
+slideshow,77734718,Image slider issue with margin-left,1703904748,0
+image-slider,77734718,Image slider issue with margin-left,1703904748,0
+c++,77735226,(Visual Studio 2022) I cannot open projects. It gives a blank screen which cannot be edited,1703922784,0
+visual-studio-2022,77735226,(Visual Studio 2022) I cannot open projects. It gives a blank screen which cannot be edited,1703922784,0
+swift,77735338,Shortcut to Click on Xcode Canvas,1703925765,0
+xcode,77735338,Shortcut to Click on Xcode Canvas,1703925765,0
+typescript,77733833,Filter an existing file tree and only return path to the endpoints,1703880434,1
+filetree,77733833,Filter an existing file tree and only return path to the endpoints,1703880434,1
+flutter,77734286,How To add padding to `SingleChildScrollView`,1703890256,2
+dart,77734286,How To add padding to `SingleChildScrollView`,1703890256,2
+php,3172332,Convert seconds to Hour:Minute:Second,1278179803,31
+time,3172332,Convert seconds to Hour:Minute:Second,1278179803,31
+python,77735317,Assistance with basic Python,1703925251,0
+tailwind-css,77735333,Al hacer build en Astro no cargan los estilos de Tailwind u otros,1703925706,0
+astro,77735333,Al hacer build en Astro no cargan los estilos de Tailwind u otros,1703925706,0
+unity-game-engine,77735332,"Using ScriptableObject instead of Enums in Unity, overcomplicated for this use case?",1703925691,0
+enums,77735332,"Using ScriptableObject instead of Enums in Unity, overcomplicated for this use case?",1703925691,0
+scriptable-object,77735332,"Using ScriptableObject instead of Enums in Unity, overcomplicated for this use case?",1703925691,0
+python,77705212,Dividing some columns in Pandas Dataframe with Stock values with a Variable. First Column is DatetimeArray,1703268922,1
+pandas,77705212,Dividing some columns in Pandas Dataframe with Stock values with a Variable. First Column is DatetimeArray,1703268922,1
+dataframe,77705212,Dividing some columns in Pandas Dataframe with Stock values with a Variable. First Column is DatetimeArray,1703268922,1
+division,77705212,Dividing some columns in Pandas Dataframe with Stock values with a Variable. First Column is DatetimeArray,1703268922,1
+stockquotes,77705212,Dividing some columns in Pandas Dataframe with Stock values with a Variable. First Column is DatetimeArray,1703268922,1
+swift,77734991,How to set antialiasing on or off in a SwiftUI Canvas,1703915453,1
+swiftui,77734991,How to set antialiasing on or off in a SwiftUI Canvas,1703915453,1
+core-graphics,77734991,How to set antialiasing on or off in a SwiftUI Canvas,1703915453,1
+xamarin.forms,46069662,"Xamarin Forms Staging, Production and Development environment",1504684375,2
+javascript,65108033,Property `user` does not exist on type `Session &amp; Partial&lt;SessionData&gt;`,1606911900,8
+node.js,65108033,Property `user` does not exist on type `Session &amp; Partial&lt;SessionData&gt;`,1606911900,8
+typescript,65108033,Property `user` does not exist on type `Session &amp; Partial&lt;SessionData&gt;`,1606911900,8
+express,65108033,Property `user` does not exist on type `Session &amp; Partial&lt;SessionData&gt;`,1606911900,8
+session,65108033,Property `user` does not exist on type `Session &amp; Partial&lt;SessionData&gt;`,1606911900,8
+laravel,77734775,Is it possible to &quot;alias&quot; a model relation?,1703907025,0
+relation,77734775,Is it possible to &quot;alias&quot; a model relation?,1703907025,0
+powershell,77734970,Openvpn connect Command line,1703914567,0
+openvpn-connect,77734970,Openvpn connect Command line,1703914567,0
+python-3.x,53506257,Fitting 3d data,1543344488,2
+curve-fitting,53506257,Fitting 3d data,1543344488,2
+sql,77735273,How can I get week of date column(MySQL),1703924000,0
+mysql,77735273,How can I get week of date column(MySQL),1703924000,0
+week-number,77735273,How can I get week of date column(MySQL),1703924000,0
+javascript,77270706,event listener not responding even after getting called,1697006387,1
+addeventlistener,77270706,event listener not responding even after getting called,1697006387,1
+android,77735288,How does &quot;Android CI&quot; GitHub Action work without setting up Android tools?,1703924382,0
+github,77735288,How does &quot;Android CI&quot; GitHub Action work without setting up Android tools?,1703924382,0
+github-actions,77735288,How does &quot;Android CI&quot; GitHub Action work without setting up Android tools?,1703924382,0
+prisma,75019247,Unknown error getting started with Prisma,1672925667,1
+qt,15287707,qt:: mouseDoubleClickEvent doesn&#39;t work when ui being set,1362722503,2
+mouseevent,15287707,qt:: mouseDoubleClickEvent doesn&#39;t work when ui being set,1362722503,2
+double-click,15287707,qt:: mouseDoubleClickEvent doesn&#39;t work when ui being set,1362722503,2
+caching,77735325,Can I insert the dummy data or disable cache line to Rocket core cache?,1703925461,0
+riscv,77735325,Can I insert the dummy data or disable cache line to Rocket core cache?,1703925461,0
+rocket-chip,77735325,Can I insert the dummy data or disable cache line to Rocket core cache?,1703925461,0
+python,77735324,How to stop position to go carry forward,1703925460,0
+pine-script-v5,77735324,How to stop position to go carry forward,1703925460,0
+tradingview-api,77735324,How to stop position to go carry forward,1703925460,0
+trading,77735324,How to stop position to go carry forward,1703925460,0
+algorithmic-trading,77735324,How to stop position to go carry forward,1703925460,0
+java,77735323,Cannot connect to postgreSQL using Docker,1703925421,0
+spring,77735323,Cannot connect to postgreSQL using Docker,1703925421,0
+postgresql,77735323,Cannot connect to postgreSQL using Docker,1703925421,0
+docker,77735323,Cannot connect to postgreSQL using Docker,1703925421,0
+javascript,77387611,Smooth scroll doesn&#39;t work with Lenis when link with id clicked,1698659475,1
+html,77387611,Smooth scroll doesn&#39;t work with Lenis when link with id clicked,1698659475,1
+css,77387611,Smooth scroll doesn&#39;t work with Lenis when link with id clicked,1698659475,1
+smooth-scrolling,77387611,Smooth scroll doesn&#39;t work with Lenis when link with id clicked,1698659475,1
+python,77735321,"I have 2 csv files with historical crypto data, how can I delete the rows that only exist in one file and absent in another?",1703925350,0
+pandas,77735321,"I have 2 csv files with historical crypto data, how can I delete the rows that only exist in one file and absent in another?",1703925350,0
+dataframe,77735321,"I have 2 csv files with historical crypto data, how can I delete the rows that only exist in one file and absent in another?",1703925350,0
+csv,77735321,"I have 2 csv files with historical crypto data, how can I delete the rows that only exist in one file and absent in another?",1703925350,0
+cryptocurrency,77735321,"I have 2 csv files with historical crypto data, how can I delete the rows that only exist in one file and absent in another?",1703925350,0
+google-apps-script,77733916,Creating New Google Doc from Google Sheets using Apps Script,1703881888,0
+google-sheets,77733916,Creating New Google Doc from Google Sheets using Apps Script,1703881888,0
+google-docs,77733916,Creating New Google Doc from Google Sheets using Apps Script,1703881888,0
+typescript,77734408,VSCode autocomplete nextjs imports,1703893805,0
+visual-studio-code,77734408,VSCode autocomplete nextjs imports,1703893805,0
+next.js,77734408,VSCode autocomplete nextjs imports,1703893805,0
+sed,77735284,sed multiple different patterns: delete line following a pattern and the next line,1703924122,0
+mysql,76235134,Cannot find xxx/mysql-server/sql/sql_yacc.h during cmake mysql,1683885366,2
+reactjs,77732690,Next.js Error: async/await Not Supported in React Client Component Despite No Usage - &#39;use client&#39; Causing Issue&quot;,1703862953,2
+typescript,77732690,Next.js Error: async/await Not Supported in React Client Component Despite No Usage - &#39;use client&#39; Causing Issue&quot;,1703862953,2
+next.js,77732690,Next.js Error: async/await Not Supported in React Client Component Despite No Usage - &#39;use client&#39; Causing Issue&quot;,1703862953,2
+runtime-error,77732690,Next.js Error: async/await Not Supported in React Client Component Despite No Usage - &#39;use client&#39; Causing Issue&quot;,1703862953,2
+react-context,77732690,Next.js Error: async/await Not Supported in React Client Component Despite No Usage - &#39;use client&#39; Causing Issue&quot;,1703862953,2
+android,63426705,How to create HTTP server app in flutter?,1597499062,2
+flutter,63426705,How to create HTTP server app in flutter?,1597499062,2
+httpserver,63426705,How to create HTTP server app in flutter?,1597499062,2
+reactjs,77735315,Firebase realtime database: how to get subset data by using query?,1703925225,0
+firebase-realtime-database,77735315,Firebase realtime database: how to get subset data by using query?,1703925225,0
+javascript,61180853,"fs Error: EISDIR: illegal operation on a directory, read",1586746055,2
+node.js,61180853,"fs Error: EISDIR: illegal operation on a directory, read",1586746055,2
+filesystems,61180853,"fs Error: EISDIR: illegal operation on a directory, read",1586746055,2
+runtime-error,61180853,"fs Error: EISDIR: illegal operation on a directory, read",1586746055,2
+python,77734553,Python - reverse nested dictionaries dict in dict,1703898677,1
+dictionary,77734553,Python - reverse nested dictionaries dict in dict,1703898677,1
+nested,77734553,Python - reverse nested dictionaries dict in dict,1703898677,1
+reverse,77734553,Python - reverse nested dictionaries dict in dict,1703898677,1
+yield,77734553,Python - reverse nested dictionaries dict in dict,1703898677,1
+php,77732383,"Woocommerce, redirection sequence and validation of sessions",1703858745,0
+wordpress,77732383,"Woocommerce, redirection sequence and validation of sessions",1703858745,0
+redirect,77732383,"Woocommerce, redirection sequence and validation of sessions",1703858745,0
+woocommerce,77732383,"Woocommerce, redirection sequence and validation of sessions",1703858745,0
+reactjs,77735313,"I Can&#39;t set the first item as default in listing in react js, suggest me a solution",1703925148,0
+codesandbox,77735313,"I Can&#39;t set the first item as default in listing in react js, suggest me a solution",1703925148,0
+java,77733087,Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working,1703868766,1
+json,77733087,Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working,1703868766,1
+spring-boot,77733087,Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working,1703868766,1
+spring-data-jpa,77733087,Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working,1703868766,1
+c,77734821,I created a new C program and designated its workspace but it says that launch.json is not present. What does that mean?,1703908799,1
+visual-studio-code,77734821,I created a new C program and designated its workspace but it says that launch.json is not present. What does that mean?,1703908799,1
+java,75825235,Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE,1679586789,2
+spring,75825235,Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE,1679586789,2
+spring-boot,75825235,Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE,1679586789,2
+spring-webflux,75825235,Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE,1679586789,2
+ansible,77733766,Ansible: Don&#39;t execute the vars_prompt for a specific tag in playbook?,1703879317,2
+angular,77719847,Select multiple date ranges for the same event using Full Calendar,1703645394,0
+fullcalendar,77719847,Select multiple date ranges for the same event using Full Calendar,1703645394,0
+date-range,77719847,Select multiple date ranges for the same event using Full Calendar,1703645394,0
+fullcalendar-5,77719847,Select multiple date ranges for the same event using Full Calendar,1703645394,0
+reactjs,77735168,Read .html files from the next.js react public/assets and format it with tailwind.css,1703920996,3
+tailwind-css,77735168,Read .html files from the next.js react public/assets and format it with tailwind.css,1703920996,3
+next.js13,77735168,Read .html files from the next.js react public/assets and format it with tailwind.css,1703920996,3
+javascript,77735124,How do I clear a Javascript variable?,1703919757,0
+jquery,77735124,How do I clear a Javascript variable?,1703919757,0
+pine-script,77731310,PineScript order entry being inconsistent when a take profit is added,1703844011,0
+pine-script-v5,77731310,PineScript order entry being inconsistent when a take profit is added,1703844011,0
+tradingview-api,77731310,PineScript order entry being inconsistent when a take profit is added,1703844011,0
+android,77715897,Implementing Complex Motion and Choreography in Android Animation,1703571263,0
+kotlin,77715897,Implementing Complex Motion and Choreography in Android Animation,1703571263,0
+animation,77715897,Implementing Complex Motion and Choreography in Android Animation,1703571263,0
+ios,77735286,How do I read and write to OneDrive using Expo?,1703924231,0
+expo,77735286,How do I read and write to OneDrive using Expo?,1703924231,0
+php,77734846,Subdomain pages not displayed,1703909901,1
+subdomain,77734846,Subdomain pages not displayed,1703909901,1
+node.js,77735294,Hosting Next js Ecommerce site,1703924508,1
+next.js,77735294,Hosting Next js Ecommerce site,1703924508,1
+hosting,77735294,Hosting Next js Ecommerce site,1703924508,1
+e-commerce,77735294,Hosting Next js Ecommerce site,1703924508,1
+jsfiddle,16527958,How can I pass URL query parameters to a jsFiddle?,1368466902,5
+sanity,77735300,Cannot get data from sanity database in nextjs,1703924660,0
+next.js14,77735300,Cannot get data from sanity database in nextjs,1703924660,0
+git,77733963,Git push New in Renesas E2 Studio,1703882730,1
+eclipse,77733963,Git push New in Renesas E2 Studio,1703882730,1
+embedded,77733963,Git push New in Renesas E2 Studio,1703882730,1
+renesas-rx,77733963,Git push New in Renesas E2 Studio,1703882730,1
+c#,77735297,Is there any similar way to handle hiding endpoints from swagger documentation?,1703924606,0
+rest,77735297,Is there any similar way to handle hiding endpoints from swagger documentation?,1703924606,0
+swagger-2.0,77735297,Is there any similar way to handle hiding endpoints from swagger documentation?,1703924606,0
+python,77735296,New event loop per request Django+ASGI,1703924592,0
+django,77735296,New event loop per request Django+ASGI,1703924592,0
+asynchronous,77735296,New event loop per request Django+ASGI,1703924592,0
+daphne,77735296,New event loop per request Django+ASGI,1703924592,0
+asgi,77735296,New event loop per request Django+ASGI,1703924592,0
+wordpress,19848478,Contact Form 7 not sending in WordPress 3.7.2,1383865250,5
+contact-form-7,19848478,Contact Form 7 not sending in WordPress 3.7.2,1383865250,5
+c#,11222427,Convert Date from Persian to Gregorian,1340786533,9
+.net,11222427,Convert Date from Persian to Gregorian,1340786533,9
+datetime,11222427,Convert Date from Persian to Gregorian,1340786533,9
+calendar,11222427,Convert Date from Persian to Gregorian,1340786533,9
+visual-studio-code,77735244,The oh-my-posh in my vscode powershell is not showing correctly,1703923350,0
+oh-my-posh,77735244,The oh-my-posh in my vscode powershell is not showing correctly,1703923350,0
+css,77730201,How to get CSS flex and relative + absolute to work together,1703822733,8
+flexbox,77730201,How to get CSS flex and relative + absolute to work together,1703822733,8
+reactjs,77733887,Next13 application crashes,1703881376,0
+web,77733887,Next13 application crashes,1703881376,0
+next.js,77733887,Next13 application crashes,1703881376,0
+android,76016637,java language options not show in android studio,1681485598,6
+android-studio,76016637,java language options not show in android studio,1681485598,6
+java,77735290,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (java),1703924412,0
+spring-boot,77735290,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (java),1703924412,0
+api,77735290,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (java),1703924412,0
+error-handling,77735290,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (java),1703924412,0
+postman,77735290,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (java),1703924412,0
+python,77734988,How can I crawl the internal links of a page with Scrapy?,1703915365,1
+scrapy,77734988,How can I crawl the internal links of a page with Scrapy?,1703915365,1
+web-crawler,77734988,How can I crawl the internal links of a page with Scrapy?,1703915365,1
+python,77735127,Compare a date column to a specific date,1703920038,0
+pandas,77735127,Compare a date column to a specific date,1703920038,0
+date,77735127,Compare a date column to a specific date,1703920038,0
+time,77735127,Compare a date column to a specific date,1703920038,0
+timestamp,77735127,Compare a date column to a specific date,1703920038,0
+python,77735200,Why I get NAN when calculate corr of those two series?,1703921934,1
+pandas,77735200,Why I get NAN when calculate corr of those two series?,1703921934,1
+dataframe,77735200,Why I get NAN when calculate corr of those two series?,1703921934,1
+python,77735276,How can i fix this issue of the &quot;Control must be added to the page first &quot; in Flet,1703924045,0
+flet,77735276,How can i fix this issue of the &quot;Control must be added to the page first &quot; in Flet,1703924045,0
+python,77735278,How to Automatically add current user&#39;s Timezone in ISO 8601 Date Time,1703924071,0
+python-3.x,77735278,How to Automatically add current user&#39;s Timezone in ISO 8601 Date Time,1703924071,0
+ffmpeg,77735164,Latest FFmpeg fails to create a good MP4 out of JPG file (Windows 10),1703920939,0
+jpeg,77735164,Latest FFmpeg fails to create a good MP4 out of JPG file (Windows 10),1703920939,0
+mp4,77735164,Latest FFmpeg fails to create a good MP4 out of JPG file (Windows 10),1703920939,0
+python,77734721,Is there a way to disable a Pylint check for modules matching a string or regex?,1703905065,1
+pylint,77734721,Is there a way to disable a Pylint check for modules matching a string or regex?,1703905065,1
+xml,77735283,Odoo Pass Value During Create,1703924107,0
+odoo,77735283,Odoo Pass Value During Create,1703924107,0
+odoo-15,77735283,Odoo Pass Value During Create,1703924107,0
+python,77735282,How to automatically resize the font of a Kivy Spinner?,1703924088,0
+kivy,77735282,How to automatically resize the font of a Kivy Spinner?,1703924088,0
+python,77732342,How to do join pandas dataframes based on multiple columns?,1703858113,1
+pandas,77732342,How to do join pandas dataframes based on multiple columns?,1703858113,1
+dataframe,77732342,How to do join pandas dataframes based on multiple columns?,1703858113,1
+join,77732342,How to do join pandas dataframes based on multiple columns?,1703858113,1
+reactjs,77734304,Variable passed to endpoint is returning value and undefine simultaneously,1703890972,1
+react-hooks,77734304,Variable passed to endpoint is returning value and undefine simultaneously,1703890972,1
+endpoint,77734304,Variable passed to endpoint is returning value and undefine simultaneously,1703890972,1
+mobx,77734304,Variable passed to endpoint is returning value and undefine simultaneously,1703890972,1
+mobx-react,77734304,Variable passed to endpoint is returning value and undefine simultaneously,1703890972,1
+file,77735279,I don&#39;t understand what&#39;s the error while using template in C++ class.cpp file,1703924076,0
+class,77735279,I don&#39;t understand what&#39;s the error while using template in C++ class.cpp file,1703924076,0
+templates,77735279,I don&#39;t understand what&#39;s the error while using template in C++ class.cpp file,1703924076,0
+c++17,77735279,I don&#39;t understand what&#39;s the error while using template in C++ class.cpp file,1703924076,0
+amazon-web-services,77735277,Cannot run any commands on AWS instance,1703924047,0
+ubuntu,77735277,Cannot run any commands on AWS instance,1703924047,0
+system-administration,77735277,Cannot run any commands on AWS instance,1703924047,0
+amazon-lightsail,77735277,Cannot run any commands on AWS instance,1703924047,0
+c++,77735250,How can I get the ENUM field name from an d2d effect property by using the GetValueByName method,1703923482,0
+properties,77735250,How can I get the ENUM field name from an d2d effect property by using the GetValueByName method,1703923482,0
+com,77735250,How can I get the ENUM field name from an d2d effect property by using the GetValueByName method,1703923482,0
+effects,77735250,How can I get the ENUM field name from an d2d effect property by using the GetValueByName method,1703923482,0
+direct2d,77735250,How can I get the ENUM field name from an d2d effect property by using the GetValueByName method,1703923482,0
+reactjs,73739898,Token undefined in put and patch request. MERN stack application,1663302904,1
+express,73739898,Token undefined in put and patch request. MERN stack application,1663302904,1
+axios,73739898,Token undefined in put and patch request. MERN stack application,1663302904,1
+patch,73739898,Token undefined in put and patch request. MERN stack application,1663302904,1
+put,73739898,Token undefined in put and patch request. MERN stack application,1663302904,1
+adaptive-cards,47376524,Carousel schema in Microsoft adaptive cards,1511092469,3
+wordpress,20372010,Contact form 7 will not email form due to it thinks its SPAM,1386150679,6
+contact-form-7,20372010,Contact form 7 will not email form due to it thinks its SPAM,1386150679,6
+php,77735098,Laravel Eloquent: How to achieve a unique constraint on multiple columns in a database table?,1703919220,4
+sql,77735098,Laravel Eloquent: How to achieve a unique constraint on multiple columns in a database table?,1703919220,4
+laravel,77735098,Laravel Eloquent: How to achieve a unique constraint on multiple columns in a database table?,1703919220,4
+web,77735098,Laravel Eloquent: How to achieve a unique constraint on multiple columns in a database table?,1703919220,4
+linux,77735267,Slow Performance in WSL for Qt Development,1703923831,0
+qt,77735267,Slow Performance in WSL for Qt Development,1703923831,0
+windows-subsystem-for-linux,77735267,Slow Performance in WSL for Qt Development,1703923831,0
+grafana,77735261,How to send image in alert grafana v9.5 into google chat hangouts,1703923713,0
+google-hangouts,77735261,How to send image in alert grafana v9.5 into google chat hangouts,1703923713,0
+grafana-alerts,77735261,How to send image in alert grafana v9.5 into google chat hangouts,1703923713,0
+gcc,72675085,gcc: error: No such file or directory or fatal error: no input files compilation terminated,1655624371,2
+apt,77735262,Fail to install libsdl2-dev using apt,1703923725,0
+ubuntu-22.04,77735262,Fail to install libsdl2-dev using apt,1703923725,0
+libs,77735262,Fail to install libsdl2-dev using apt,1703923725,0
+ios,73777636,The operation couldn’t be completed. (AppThinning.StubError error 1.),1663611040,14
+xcode,73777636,The operation couldn’t be completed. (AppThinning.StubError error 1.),1663611040,14
+java,77735234,Sound playing even after closing the application in Java,1703922977,1
+swing,77735234,Sound playing even after closing the application in Java,1703922977,1
+audio,77735234,Sound playing even after closing the application in Java,1703922977,1
+jframe,77735234,Sound playing even after closing the application in Java,1703922977,1
+node.js,77722672,How to answer two requests in socket io and without delay,1703690261,2
+websocket,77722672,How to answer two requests in socket io and without delay,1703690261,2
+server,77722672,How to answer two requests in socket io and without delay,1703690261,2
+socket.io,77722672,How to answer two requests in socket io and without delay,1703690261,2
+client,77722672,How to answer two requests in socket io and without delay,1703690261,2
+python,77734479,Can some one help me with my tensorflow code,1703896136,0
+tensorflow,77734479,Can some one help me with my tensorflow code,1703896136,0
+machine-learning,77734479,Can some one help me with my tensorflow code,1703896136,0
+tensorflow-datasets,77734479,Can some one help me with my tensorflow code,1703896136,0
+machine-learning-model,77734479,Can some one help me with my tensorflow code,1703896136,0
+regex,77725361,Chop a string in Ruby into max length string considering new line and space characters,1703745605,4
+ruby,77725361,Chop a string in Ruby into max length string considering new line and space characters,1703745605,4
+asp.net,77735220,Calling web service from ASP.NET web app in Azure App service error (httpclient.SendAsync),1703922608,1
+azure-web-app-service,77735220,Calling web service from ASP.NET web app in Azure App service error (httpclient.SendAsync),1703922608,1
+go,71237568,Gobuffalo error &quot;There is no connection named development defined!&quot;,1645621856,6
+data-migration,71237568,Gobuffalo error &quot;There is no connection named development defined!&quot;,1645621856,6
+python,77735247,R_HOME must be set in the environment or Registry,1703923427,0
+r,77735247,R_HOME must be set in the environment or Registry,1703923427,0
+visual-studio-code,77735247,R_HOME must be set in the environment or Registry,1703923427,0
+deep-learning,77735252,How do I build TensorRT engine during MSI installation procedure?,1703923524,0
+wix,77735252,How do I build TensorRT engine during MSI installation procedure?,1703923524,0
+tensorrt,77735252,How do I build TensorRT engine during MSI installation procedure?,1703923524,0
+cpack,77735252,How do I build TensorRT engine during MSI installation procedure?,1703923524,0
+php,77735246,localhost working good but live server throw error,1703923414,0
+python,77735251,Selenium taking alot of time to process,1703923496,0
+selenium-webdriver,77735251,Selenium taking alot of time to process,1703923496,0
+web-scraping,77735251,Selenium taking alot of time to process,1703923496,0
+linux,1152362,How to send data to local clipboard from a remote SSH session,1248078947,15
+macos,1152362,How to send data to local clipboard from a remote SSH session,1248078947,15
+unix,1152362,How to send data to local clipboard from a remote SSH session,1248078947,15
+shell,1152362,How to send data to local clipboard from a remote SSH session,1248078947,15
+clipboard,1152362,How to send data to local clipboard from a remote SSH session,1248078947,15
+node.js,77735249,Trouble Building CDK NodejsFunction in Github Actions,1703923437,0
+github-actions,77735249,Trouble Building CDK NodejsFunction in Github Actions,1703923437,0
+aws-cdk,77735249,Trouble Building CDK NodejsFunction in Github Actions,1703923437,0
+esbuild,77735249,Trouble Building CDK NodejsFunction in Github Actions,1703923437,0
+html,77735243,How can I resolve this error with DOCTYPE?,1703923348,0
+google-chrome,77735243,How can I resolve this error with DOCTYPE?,1703923348,0
+doctype,77735243,How can I resolve this error with DOCTYPE?,1703923348,0
+php,77735141,fix the coding this,1703920434,0
+mysql,77735141,fix the coding this,1703920434,0
+batch-file,45521755,How to kill a Robocopy batch script via Taskkill?,1501935247,1
+robocopy,45521755,How to kill a Robocopy batch script via Taskkill?,1501935247,1
+taskkill,45521755,How to kill a Robocopy batch script via Taskkill?,1501935247,1
+c#,27252339,"OWIN authentication, expire current token and remove cookie",1417532150,1
+authentication,27252339,"OWIN authentication, expire current token and remove cookie",1417532150,1
+owin,27252339,"OWIN authentication, expire current token and remove cookie",1417532150,1
+html,25389802,Audio autoplay not working and no errors in console,1408470492,3
+audio,25389802,Audio autoplay not working and no errors in console,1408470492,3
+c++,13575010,How to add dot character to a character in string?,1353972840,5
+php,77734786,Excel File Corrupted after downloaded,1703907289,0
+jquery,77734786,Excel File Corrupted after downloaded,1703907289,0
+ajax,77734786,Excel File Corrupted after downloaded,1703907289,0
+laravel,77734786,Excel File Corrupted after downloaded,1703907289,0
+javascript,77734650,Access element attributes in `ref` callback,1703901943,2
+solid-js,77734650,Access element attributes in `ref` callback,1703901943,2
+git,10054318,How do I provide a username and password when running &quot;git clone git@remote.git&quot;?,1333800322,17
+swift,77735242,how to prevent long text going out of video bounds?,1703923190,0
+video,77735242,how to prevent long text going out of video bounds?,1703923190,0
+ffmpeg,77735242,how to prevent long text going out of video bounds?,1703923190,0
+c#,57784425,Can&#39;t Locate Razor Pages in Default Blazor Server Side Project,1567585690,2
+asp.net-core,57784425,Can&#39;t Locate Razor Pages in Default Blazor Server Side Project,1567585690,2
+blazor,57784425,Can&#39;t Locate Razor Pages in Default Blazor Server Side Project,1567585690,2
+blazor-server-side,57784425,Can&#39;t Locate Razor Pages in Default Blazor Server Side Project,1567585690,2
+asp.net,9941074,How to get the client IP address from SQL Server 2008 itself?,1333102574,8
+.net,9941074,How to get the client IP address from SQL Server 2008 itself?,1333102574,8
+sql,9941074,How to get the client IP address from SQL Server 2008 itself?,1333102574,8
+sql-server,9941074,How to get the client IP address from SQL Server 2008 itself?,1333102574,8
+sql-server-2008,9941074,How to get the client IP address from SQL Server 2008 itself?,1333102574,8
+android,77735237,Access TextField value from another composable function in by click FloatingActionButt,1703923147,0
+kotlin,77735237,Access TextField value from another composable function in by click FloatingActionButt,1703923147,0
+textfield,77735237,Access TextField value from another composable function in by click FloatingActionButt,1703923147,0
+reactjs,77735236,How to update child prop with @react-navigation/native,1703923139,0
+react-native,77735236,How to update child prop with @react-navigation/native,1703923139,0
+react-native-navigation,77735236,How to update child prop with @react-navigation/native,1703923139,0
+c++,77735235,Can we store data in a linked list without using the add node operation?,1703923111,0
+data-structures,77735235,Can we store data in a linked list without using the add node operation?,1703923111,0
+linked-list,77735235,Can we store data in a linked list without using the add node operation?,1703923111,0
+singly-linked-list,77735235,Can we store data in a linked list without using the add node operation?,1703923111,0
+c++,77733310,vscode feature &#39;Go To References&#39; is broken,1703871967,0
+visual-studio-code,77733310,vscode feature &#39;Go To References&#39; is broken,1703871967,0
+ide,77733310,vscode feature &#39;Go To References&#39; is broken,1703871967,0
+routes,77735205,Laravel: how to write a route to get a hasMany relationship?,1703922033,0
+laravel-10,77735205,Laravel: how to write a route to get a hasMany relationship?,1703922033,0
+laravel,77735062,how to validate datetime on laravel validator with date_format rule,1703918171,0
+datetime-format,77735062,how to validate datetime on laravel validator with date_format rule,1703918171,0
+laravel-validation,77735062,how to validate datetime on laravel validator with date_format rule,1703918171,0
+javascript,77735233,Load CSS based on network speed,1703922953,0
+css,77735233,Load CSS based on network speed,1703922953,0
+reactjs,77735233,Load CSS based on network speed,1703922953,0
+web,77735233,Load CSS based on network speed,1703922953,0
+core-web-vitals,77735233,Load CSS based on network speed,1703922953,0
+pytorch,77735232,How to get the representation of each individual word of each input sample of a dataset from an ALBERT model?,1703922933,0
+huggingface-transformers,77735232,How to get the representation of each individual word of each input sample of a dataset from an ALBERT model?,1703922933,0
+text-classification,77735232,How to get the representation of each individual word of each input sample of a dataset from an ALBERT model?,1703922933,0
+large-language-model,77735232,How to get the representation of each individual word of each input sample of a dataset from an ALBERT model?,1703922933,0
+pre-trained-model,77735232,How to get the representation of each individual word of each input sample of a dataset from an ALBERT model?,1703922933,0
+chart.js,77735231,[ChartJs]How can I modify the height of the chart instead of changing it through canvas,1703922918,0
+three.js,77735230,Is this how texture sampling works under the hood?,1703922901,0
+graphics,77735230,Is this how texture sampling works under the hood?,1703922901,0
+textures,77735230,Is this how texture sampling works under the hood?,1703922901,0
+r,77728016,How to make a multivariable barplot?,1703780555,1
+ggplot2,77728016,How to make a multivariable barplot?,1703780555,1
+graph,77728016,How to make a multivariable barplot?,1703780555,1
+python,70063369,"Updated : np.arange(min(indp),max(indp),0.01) ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",1637572701,1
+pandas,70063369,"Updated : np.arange(min(indp),max(indp),0.01) ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",1637572701,1
+numpy,70063369,"Updated : np.arange(min(indp),max(indp),0.01) ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",1637572701,1
+regression,70063369,"Updated : np.arange(min(indp),max(indp),0.01) ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",1637572701,1
+random-forest,70063369,"Updated : np.arange(min(indp),max(indp),0.01) ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",1637572701,1
+spring-boot,77734973,SpringBoot API Authentication with AuthenticationManager,1703914710,1
+spring-security,77734973,SpringBoot API Authentication with AuthenticationManager,1703914710,1
+python-polars,70431642,"in polars, how could i use rank() to get most popular category per user",1640069660,2
+reactjs,77735033,How can I remove the default value (DD.MM.YYYY) given by the format?,1703917009,1
+material-ui,77735033,How can I remove the default value (DD.MM.YYYY) given by the format?,1703917009,1
+mui-x-date-picker,77735033,How can I remove the default value (DD.MM.YYYY) given by the format?,1703917009,1
+javascript,77735006,wxWidgets with GUI with javascript interacting with C++,1703915949,0
+html,77735006,wxWidgets with GUI with javascript interacting with C++,1703915949,0
+c++,77735006,wxWidgets with GUI with javascript interacting with C++,1703915949,0
+wxwidgets,77735006,wxWidgets with GUI with javascript interacting with C++,1703915949,0
+laravel,73279806,How can i Skip email Form unique Validation when update user data In Laravel,1659970085,2
+validation,73279806,How can i Skip email Form unique Validation when update user data In Laravel,1659970085,2
+ios,77734972,Link Preview - Instagram Share Sheet,1703914655,0
+swift,77734972,Link Preview - Instagram Share Sheet,1703914655,0
+instagram,77734972,Link Preview - Instagram Share Sheet,1703914655,0
+ios-sharesheet,77734972,Link Preview - Instagram Share Sheet,1703914655,0
+ios,77735218,"Snapchat Sharing in Swift - How to Open Snapchat with URL Link (link, photo preview, title)",1703922496,0
+swift,77735218,"Snapchat Sharing in Swift - How to Open Snapchat with URL Link (link, photo preview, title)",1703922496,0
+url,77735218,"Snapchat Sharing in Swift - How to Open Snapchat with URL Link (link, photo preview, title)",1703922496,0
+snapchat,77735218,"Snapchat Sharing in Swift - How to Open Snapchat with URL Link (link, photo preview, title)",1703922496,0
+python,77734068,How to get the primary email from the member of organization repo using python requests? I am getting none,1703885014,0
+github,77734068,How to get the primary email from the member of organization repo using python requests? I am getting none,1703885014,0
+python-requests,77734068,How to get the primary email from the member of organization repo using python requests? I am getting none,1703885014,0
+github-api,77734068,How to get the primary email from the member of organization repo using python requests? I am getting none,1703885014,0
+postgresql,77712957,Postgres selecting latest record from a huge table,1703491967,1
+git,18010820,Git: the meaning of object &#39;size&#39; returned by git verify-pack,1375427385,3
+git-verify-pack,18010820,Git: the meaning of object &#39;size&#39; returned by git verify-pack,1375427385,3
+java,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0
+spring,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0
+docker,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0
+ssl,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0
+consul,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0
+ios,56456786,ScrollView get/set scroll position with SwiftUI,1559723294,2
+swift,56456786,ScrollView get/set scroll position with SwiftUI,1559723294,2
+xcode,56456786,ScrollView get/set scroll position with SwiftUI,1559723294,2
+swiftui,56456786,ScrollView get/set scroll position with SwiftUI,1559723294,2
+ios,77735215,iOS Access to the photo library is not allowed until the photo library is obtainable,1703922370,0
+linux,53182688,dotnet-install.sh not adding dotnet command on Ubuntu,1541556012,3
+bash,53182688,dotnet-install.sh not adding dotnet command on Ubuntu,1541556012,3
+ubuntu,53182688,dotnet-install.sh not adding dotnet command on Ubuntu,1541556012,3
+asp.net-core,53182688,dotnet-install.sh not adding dotnet command on Ubuntu,1541556012,3
+.net-core,53182688,dotnet-install.sh not adding dotnet command on Ubuntu,1541556012,3
+python,42548300,No module named pipeline,1488436145,2
+pip,42548300,No module named pipeline,1488436145,2
+anaconda,42548300,No module named pipeline,1488436145,2
+spacy,42548300,No module named pipeline,1488436145,2
+rasa-nlu,42548300,No module named pipeline,1488436145,2
+css,77735212,Change the width of the region containing text on a GitHub Pages site,1703922217,0
+jekyll,77735212,Change the width of the region containing text on a GitHub Pages site,1703922217,0
+github-pages,77735212,Change the width of the region containing text on a GitHub Pages site,1703922217,0
+next.js,77735211,Button toggle to store &quot;true&quot; or &quot;false&quot; value in localStorage does not update upon first click,1703922208,0
+local-storage,77735211,Button toggle to store &quot;true&quot; or &quot;false&quot; value in localStorage does not update upon first click,1703922208,0
+toggle,77735211,Button toggle to store &quot;true&quot; or &quot;false&quot; value in localStorage does not update upon first click,1703922208,0
+c#,77733562,How to add subfolder to requests urls in Swagger in ASP.NET Core Web API?,1703875827,1
+swagger,77733562,How to add subfolder to requests urls in Swagger in ASP.NET Core Web API?,1703875827,1
+asp.net-core-webapi,77733562,How to add subfolder to requests urls in Swagger in ASP.NET Core Web API?,1703875827,1
+javascript,77735126,"Looping through an object to display the grades of a student object and the function displays undefined, what could be the reason?",1703920008,2
+arrays,77735126,"Looping through an object to display the grades of a student object and the function displays undefined, what could be the reason?",1703920008,2
+loops,77735126,"Looping through an object to display the grades of a student object and the function displays undefined, what could be the reason?",1703920008,2
+object,77735126,"Looping through an object to display the grades of a student object and the function displays undefined, what could be the reason?",1703920008,2
+foreach,77735126,"Looping through an object to display the grades of a student object and the function displays undefined, what could be the reason?",1703920008,2
+reactjs,77712143,Why is my Page not rerendering when the Context changes,1703462721,1
+typescript,77712143,Why is my Page not rerendering when the Context changes,1703462721,1
+next.js,77712143,Why is my Page not rerendering when the Context changes,1703462721,1
+java,77734574,How can JavaDocs be configured to be generated in a specified project root directory?,1703899112,1
+gradle,77734574,How can JavaDocs be configured to be generated in a specified project root directory?,1703899112,1
+github-pages,77734574,How can JavaDocs be configured to be generated in a specified project root directory?,1703899112,1
+publish,77734574,How can JavaDocs be configured to be generated in a specified project root directory?,1703899112,1
+javadoc,77734574,How can JavaDocs be configured to be generated in a specified project root directory?,1703899112,1
+python,76090845,how to add Comment form inside a post detailed,1682331478,2
+django,76090845,how to add Comment form inside a post detailed,1682331478,2
+python,7580532,How to check whether a method exists in Python?,1317199477,11
+methods,7580532,How to check whether a method exists in Python?,1317199477,11
+go,77720640,Does Go support nontype generic parameter as in C++?,1703662963,2
+generics,77720640,Does Go support nontype generic parameter as in C++?,1703662963,2
+laravel,77735201,Request failed with status code 419 Laravel Vue js,1703921980,0
+vue.js,77735201,Request failed with status code 419 Laravel Vue js,1703921980,0
+axios,77735201,Request failed with status code 419 Laravel Vue js,1703921980,0
+vuejs3,77735201,Request failed with status code 419 Laravel Vue js,1703921980,0
+powershell,48214950,Remove specific files in a folder using powershell,1515700854,2
+python,77735153,Creating a new column by giving multiple conditions priority,1703920597,0
+pandas,77735153,Creating a new column by giving multiple conditions priority,1703920597,0
+extjs,77732839,Deselect an item from combo on clicking backspace or delete button,1703865290,0
+combobox,77732839,Deselect an item from combo on clicking backspace or delete button,1703865290,0
+multi-select,77732839,Deselect an item from combo on clicking backspace or delete button,1703865290,0
+python,20926909,Python check if function exists without running it,1388870488,8
+function,20926909,Python check if function exists without running it,1388870488,8
+python-2.7,20926909,Python check if function exists without running it,1388870488,8
+try-catch,20926909,Python check if function exists without running it,1388870488,8
+excel,77735097,Excel VBA invoice generation,1703919208,0
+laravel,26194771,Laravel multiple whereHas criteria for relationship,1412440148,3
+eloquent,26194771,Laravel multiple whereHas criteria for relationship,1412440148,3
+relationship,26194771,Laravel multiple whereHas criteria for relationship,1412440148,3
+java,77735195,OpenGL Texture rendering over another with 3D Batch Renderer,1703921676,0
+opengl,77735195,OpenGL Texture rendering over another with 3D Batch Renderer,1703921676,0
+3d,77735195,OpenGL Texture rendering over another with 3D Batch Renderer,1703921676,0
+lwjgl,77735195,OpenGL Texture rendering over another with 3D Batch Renderer,1703921676,0
+reactjs,77732911,Stopwatch timer is not accurate it is slower than the real time in react native expo,1703866240,1
+react-native,77732911,Stopwatch timer is not accurate it is slower than the real time in react native expo,1703866240,1
+timer,77732911,Stopwatch timer is not accurate it is slower than the real time in react native expo,1703866240,1
+expo,77732911,Stopwatch timer is not accurate it is slower than the real time in react native expo,1703866240,1
+expo-go,77732911,Stopwatch timer is not accurate it is slower than the real time in react native expo,1703866240,1
+visual-studio,77735193,Empty Diagnostic Tools Window,1703921533,0
+maui,77735193,Empty Diagnostic Tools Window,1703921533,0
+video,75606509,FFMPEG and MSA1 Codec Issues when Converting WMV to MP4 Video,1677688366,2
+ffmpeg,75606509,FFMPEG and MSA1 Codec Issues when Converting WMV to MP4 Video,1677688366,2
+mp4,75606509,FFMPEG and MSA1 Codec Issues when Converting WMV to MP4 Video,1677688366,2
+codec,75606509,FFMPEG and MSA1 Codec Issues when Converting WMV to MP4 Video,1677688366,2
+wmv,75606509,FFMPEG and MSA1 Codec Issues when Converting WMV to MP4 Video,1677688366,2
+python,71628074,Problem with Python Web App accessing Power BI embedded report,1648297933,2
+web,71628074,Problem with Python Web App accessing Power BI embedded report,1648297933,2
+powerbi-embedded,71628074,Problem with Python Web App accessing Power BI embedded report,1648297933,2
+flutter,77730579,Cant Receive the Push Notification - FCM + Flutter,1703831752,1
+dart,77730579,Cant Receive the Push Notification - FCM + Flutter,1703831752,1
+firebase-cloud-messaging,77730579,Cant Receive the Push Notification - FCM + Flutter,1703831752,1
+java,77730407,How to parse a json requestbody in post request,1703828211,0
+json,77730407,How to parse a json requestbody in post request,1703828211,0
+parsing,77730407,How to parse a json requestbody in post request,1703828211,0
+jackson,77730407,How to parse a json requestbody in post request,1703828211,0
+javascript,77734767,I&#39;m having issues with Phaser 3 collisions,1703906745,1
+game-physics,77734767,I&#39;m having issues with Phaser 3 collisions,1703906745,1
+phaser-framework,77734767,I&#39;m having issues with Phaser 3 collisions,1703906745,1
+phaserjs,77734767,I&#39;m having issues with Phaser 3 collisions,1703906745,1
+c#,77734915,System.Data.OleDb.OleDbException: &#39;Syntax error in INSERT INTO statement.&#39; when connect to Access,1703912728,1
+ms-access,77734915,System.Data.OleDb.OleDbException: &#39;Syntax error in INSERT INTO statement.&#39; when connect to Access,1703912728,1
+python,52322594,Integrating MS Power BI w/ Python / Django,1536877913,2
+django,52322594,Integrating MS Power BI w/ Python / Django,1536877913,2
+powerbi,52322594,Integrating MS Power BI w/ Python / Django,1536877913,2
+adal,52322594,Integrating MS Power BI w/ Python / Django,1536877913,2
+woocommerce,77735184,Updating prices on subscription renewals with WooCommerce,1703921296,0
+woocommerce-subscriptions,77735184,Updating prices on subscription renewals with WooCommerce,1703921296,0
+javascript,65308050,How to detect if Xiaomi&#39;s Mi Browser using JS,1608043188,1
+web,65308050,How to detect if Xiaomi&#39;s Mi Browser using JS,1608043188,1
+browser-detection,65308050,How to detect if Xiaomi&#39;s Mi Browser using JS,1608043188,1
+responsiveness,65308050,How to detect if Xiaomi&#39;s Mi Browser using JS,1608043188,1
+mi,65308050,How to detect if Xiaomi&#39;s Mi Browser using JS,1608043188,1
+c#,49781548,Database operation expected to affect 1 row(s) but actually affected 0 row(s),1523469064,15
+asp.net-core,49781548,Database operation expected to affect 1 row(s) but actually affected 0 row(s),1523469064,15
+ef-code-first,49781548,Database operation expected to affect 1 row(s) but actually affected 0 row(s),1523469064,15
+entity-framework-core,49781548,Database operation expected to affect 1 row(s) but actually affected 0 row(s),1523469064,15
+aspnetboilerplate,49781548,Database operation expected to affect 1 row(s) but actually affected 0 row(s),1523469064,15
+c#,77702167,InMemoryCache return old cache during refreshing (long running ) cache .net framework 4.8,1703228936,1
+multithreading,77702167,InMemoryCache return old cache during refreshing (long running ) cache .net framework 4.8,1703228936,1
+thread-safety,77702167,InMemoryCache return old cache during refreshing (long running ) cache .net framework 4.8,1703228936,1
+next.js,77735178,nextJS navbar &lt;Link&gt; menu collapse toggle functionality,1703921198,0
+drop-down-menu,77735178,nextJS navbar &lt;Link&gt; menu collapse toggle functionality,1703921198,0
+navbar,77735178,nextJS navbar &lt;Link&gt; menu collapse toggle functionality,1703921198,0
+react-bootstrap,77735178,nextJS navbar &lt;Link&gt; menu collapse toggle functionality,1703921198,0
+react-bootstrap-nav,77735178,nextJS navbar &lt;Link&gt; menu collapse toggle functionality,1703921198,0
+reactjs,77735171,React Router with Github Pages Subfolder,1703921117,0
+github,77735171,React Router with Github Pages Subfolder,1703921117,0
+react-router,77735171,React Router with Github Pages Subfolder,1703921117,0
+github-pages,77735171,React Router with Github Pages Subfolder,1703921117,0
+c,77735108,FFTW: stride vs. transpose,1703919505,0
+fftw,77735108,FFTW: stride vs. transpose,1703919505,0
+python,63470478,Matplotlib Usage in Standalone (Exe) Python File,1597759830,2
+matplotlib,63470478,Matplotlib Usage in Standalone (Exe) Python File,1597759830,2
+pyinstaller,63470478,Matplotlib Usage in Standalone (Exe) Python File,1597759830,2
+python-standalone,63470478,Matplotlib Usage in Standalone (Exe) Python File,1597759830,2
+c#,4805094,Pass connection string to code-first DbContext,1296048629,12
+entity-framework,4805094,Pass connection string to code-first DbContext,1296048629,12
+database-connection,4805094,Pass connection string to code-first DbContext,1296048629,12
+flutter,77735043,copyWith method with json_serializable package and clean architecture,1703917360,1
+dart,77735043,copyWith method with json_serializable package and clean architecture,1703917360,1
+clean-architecture,77735043,copyWith method with json_serializable package and clean architecture,1703917360,1
+highcharts,37371616,Different setting in drawn chart of exporting and original chart in highchart,1463901631,1
+export,37371616,Different setting in drawn chart of exporting and original chart in highchart,1463901631,1
+python,77734222,how to read space-separated values (csv) file made using shell-like syntax into DataFrame,1703888494,3
+pandas,77734222,how to read space-separated values (csv) file made using shell-like syntax into DataFrame,1703888494,3
+dataframe,77734222,how to read space-separated values (csv) file made using shell-like syntax into DataFrame,1703888494,3
+csv,77734222,how to read space-separated values (csv) file made using shell-like syntax into DataFrame,1703888494,3
+shlex,77734222,how to read space-separated values (csv) file made using shell-like syntax into DataFrame,1703888494,3
+python,61834266,Super fast way to compare if two strings are equal,1589619480,2
+java,65660266,Java TargetDataLine not picking up any audio?,1610328065,2
+intellij-idea,65660266,Java TargetDataLine not picking up any audio?,1610328065,2
+audio,65660266,Java TargetDataLine not picking up any audio?,1610328065,2
+signal-processing,65660266,Java TargetDataLine not picking up any audio?,1610328065,2
+wav,65660266,Java TargetDataLine not picking up any audio?,1610328065,2
+html,77735162,Scroll Snapping in horizontal scrolling,1703920839,0
+css,77735162,Scroll Snapping in horizontal scrolling,1703920839,0
+scroll-snap,77735162,Scroll Snapping in horizontal scrolling,1703920839,0
+android,57937350,Cannot save snapshot AVD,1568478506,1
+android-studio,57937350,Cannot save snapshot AVD,1568478506,1
+android-emulator,57937350,Cannot save snapshot AVD,1568478506,1
+android-virtual-device,57937350,Cannot save snapshot AVD,1568478506,1
+amd-processor,57937350,Cannot save snapshot AVD,1568478506,1
+javascript,77734913,Receiving &quot;You need to enable JavaScript to run this app.&quot; error with my Firebase API,1703912582,0
+firebase,77734913,Receiving &quot;You need to enable JavaScript to run this app.&quot; error with my Firebase API,1703912582,0
+google-cloud-functions,77734913,Receiving &quot;You need to enable JavaScript to run this app.&quot; error with my Firebase API,1703912582,0
+github,77726552,How to deploy a website with GitHub pages from a folder other than &quot;docs/&quot;?,1703762329,1
+github-pages,77726552,How to deploy a website with GitHub pages from a folder other than &quot;docs/&quot;?,1703762329,1
+macos,77721359,How can I change the app name and icon from the default &quot;Java&quot; to something else with JavaFX on MacOS 14?,1703673025,1
+intellij-idea,77721359,How can I change the app name and icon from the default &quot;Java&quot; to something else with JavaFX on MacOS 14?,1703673025,1
+javafx,77721359,How can I change the app name and icon from the default &quot;Java&quot; to something else with JavaFX on MacOS 14?,1703673025,1
+desktop-application,77721359,How can I change the app name and icon from the default &quot;Java&quot; to something else with JavaFX on MacOS 14?,1703673025,1
+ios,77735101,Issue with MFMailComposeViewController bar button colour,1703919274,1
+swift,77735101,Issue with MFMailComposeViewController bar button colour,1703919274,1
+navigation,77735101,Issue with MFMailComposeViewController bar button colour,1703919274,1
+mfmailcomposeviewcontroller,77735101,Issue with MFMailComposeViewController bar button colour,1703919274,1
+amazon-web-services,77735157,AWS SES Production Access Request Denied for OTP Email Verification,1703920743,0
+amazon-ses,77735157,AWS SES Production Access Request Denied for OTP Email Verification,1703920743,0
+python,77725381,Size of image in customtkinter inside a label,1703745884,3
+tkinter,77725381,Size of image in customtkinter inside a label,1703745884,3
+python-imaging-library,77725381,Size of image in customtkinter inside a label,1703745884,3
+customtkinter,77725381,Size of image in customtkinter inside a label,1703745884,3
+reactjs,75549826,react-quill component disappears when I start Typing in it or in any other input field,1677182898,4
+quill,75549826,react-quill component disappears when I start Typing in it or in any other input field,1677182898,4
+react-quill,75549826,react-quill component disappears when I start Typing in it or in any other input field,1677182898,4
+reactjs,77735155,API Layer in React using custom hooks?,1703920696,0
+react-hooks,77735155,API Layer in React using custom hooks?,1703920696,0
+elasticsearch,77735154,Creating a distribution histogram of a field in Elasticsearch index using Kibana,1703920642,0
+visualization,77735154,Creating a distribution histogram of a field in Elasticsearch index using Kibana,1703920642,0
+kibana,77735154,Creating a distribution histogram of a field in Elasticsearch index using Kibana,1703920642,0
+kubernetes,73843439,Kubernetes cert-manager no certificate found on AWS ALB ingress,1664098326,2
+ssl,73843439,Kubernetes cert-manager no certificate found on AWS ALB ingress,1664098326,2
+amazon-eks,73843439,Kubernetes cert-manager no certificate found on AWS ALB ingress,1664098326,2
+cert-manager,73843439,Kubernetes cert-manager no certificate found on AWS ALB ingress,1664098326,2
+javascript,75972805,Yup validator allow multiple types like string and number,1681073359,3
+yup,75972805,Yup validator allow multiple types like string and number,1681073359,3
+firebase,77735148,"ERROR: &quot;type &#39;List&lt;dynamic&gt;&#39; is not a subtype of type &#39;List&lt;Map&lt;String, dynamic&gt;&gt;&#39; in type cast&quot; when pulling data from Firestore with StreamBuilder",1703920534,0
+casting,77735148,"ERROR: &quot;type &#39;List&lt;dynamic&gt;&#39; is not a subtype of type &#39;List&lt;Map&lt;String, dynamic&gt;&gt;&#39; in type cast&quot; when pulling data from Firestore with StreamBuilder",1703920534,0
+stream-builder,77735148,"ERROR: &quot;type &#39;List&lt;dynamic&gt;&#39; is not a subtype of type &#39;List&lt;Map&lt;String, dynamic&gt;&gt;&#39; in type cast&quot; when pulling data from Firestore with StreamBuilder",1703920534,0
+next.js,77735144,NextJS - After moving pages to app directory none of my images are working,1703920465,0
+plesk,77735144,NextJS - After moving pages to app directory none of my images are working,1703920465,0
+nextjs-image,77735144,NextJS - After moving pages to app directory none of my images are working,1703920465,0
+html,63066518,Visual Studio debug error &quot;Error processing launch: Error: Could not attach to main target,1595562640,7
+visual-studio,63066518,Visual Studio debug error &quot;Error processing launch: Error: Could not attach to main target,1595562640,7
+debugging,63066518,Visual Studio debug error &quot;Error processing launch: Error: Could not attach to main target,1595562640,7
+visual-studio-code,63066518,Visual Studio debug error &quot;Error processing launch: Error: Could not attach to main target,1595562640,7
+docker,77732714,AppEngine Flex instance using custom python and virtualenv failed to deploy,1703863409,0
+google-cloud-platform,77732714,AppEngine Flex instance using custom python and virtualenv failed to deploy,1703863409,0
+app-engine-flexible,77732714,AppEngine Flex instance using custom python and virtualenv failed to deploy,1703863409,0
+x86,77734692,Does Skylake have Loop Stream Detector?,1703903496,1
+cpu-architecture,77734692,Does Skylake have Loop Stream Detector?,1703903496,1
+javascript,75862984,TypeError: Cannot read properties of undefined (reading &#39;JsonRpcProvider&#39;) when running testcase for FundMe Constructor,1679984991,2
+ethereum,75862984,TypeError: Cannot read properties of undefined (reading &#39;JsonRpcProvider&#39;) when running testcase for FundMe Constructor,1679984991,2
+hardhat,75862984,TypeError: Cannot read properties of undefined (reading &#39;JsonRpcProvider&#39;) when running testcase for FundMe Constructor,1679984991,2
+ether,75862984,TypeError: Cannot read properties of undefined (reading &#39;JsonRpcProvider&#39;) when running testcase for FundMe Constructor,1679984991,2
+google-apps-script,77735138,Last month of day complexity while setting up a time trigger using Google Apps Script,1703920318,0
+google-sheets,77735138,Last month of day complexity while setting up a time trigger using Google Apps Script,1703920318,0
+triggers,77735138,Last month of day complexity while setting up a time trigger using Google Apps Script,1703920318,0
+angular,66328022,Captcha Implementation in Angular and Spring Based web application,1614061053,2
+spring-boot,66328022,Captcha Implementation in Angular and Spring Based web application,1614061053,2
+spring-mvc,66328022,Captcha Implementation in Angular and Spring Based web application,1614061053,2
+recaptcha,66328022,Captcha Implementation in Angular and Spring Based web application,1614061053,2
+captcha,66328022,Captcha Implementation in Angular and Spring Based web application,1614061053,2
+c++,77735136,identifier &quot;GdkEventKey&quot; is undefined C/C++(20),1703920265,0
+event-handling,77735136,identifier &quot;GdkEventKey&quot; is undefined C/C++(20),1703920265,0
+gtk4,77735136,identifier &quot;GdkEventKey&quot; is undefined C/C++(20),1703920265,0
+gitignore,34344772,gitignore does not ignore .DS_Store files,1450388521,2
+flutter,77735134,in image editor plus package when i edit a picture its dimensions changes after saving image,1703920231,0
+image,77735134,in image editor plus package when i edit a picture its dimensions changes after saving image,1703920231,0
+image-editor,77735134,in image editor plus package when i edit a picture its dimensions changes after saving image,1703920231,0
+javascript,2450954,How to randomize (shuffle) a JavaScript array?,1268692631,72
+arrays,2450954,How to randomize (shuffle) a JavaScript array?,1268692631,72
+random,2450954,How to randomize (shuffle) a JavaScript array?,1268692631,72
+shuffle,2450954,How to randomize (shuffle) a JavaScript array?,1268692631,72
+unity-game-engine,77735132,Unity velocity very unaccurate,1703920180,0
+2d,77735132,Unity velocity very unaccurate,1703920180,0
+velocity,77735132,Unity velocity very unaccurate,1703920180,0
+javascript,77725777,Tailwind CSS JIT Not Compiling Classes Inside @layer Directive,1703752282,2
+css,77725777,Tailwind CSS JIT Not Compiling Classes Inside @layer Directive,1703752282,2
+tailwind-css,77725777,Tailwind CSS JIT Not Compiling Classes Inside @layer Directive,1703752282,2
+next.js13,77725777,Tailwind CSS JIT Not Compiling Classes Inside @layer Directive,1703752282,2
+jit,77725777,Tailwind CSS JIT Not Compiling Classes Inside @layer Directive,1703752282,2
+angular,77735128,ckEditor doesn&#39;t show in production mode in angular 17 and cause an error,1703920047,0
+ckeditor,77735128,ckEditor doesn&#39;t show in production mode in angular 17 and cause an error,1703920047,0
+esbuild,77735128,ckEditor doesn&#39;t show in production mode in angular 17 and cause an error,1703920047,0
+javascript,52433500,Cordova will not open iframe target links in system browser (or at all),1537478565,1
+ios,52433500,Cordova will not open iframe target links in system browser (or at all),1537478565,1
+cordova,52433500,Cordova will not open iframe target links in system browser (or at all),1537478565,1
+vue.js,52433500,Cordova will not open iframe target links in system browser (or at all),1537478565,1
+quasar-framework,52433500,Cordova will not open iframe target links in system browser (or at all),1537478565,1
+unity-game-engine,54409308,Access public bool from another script in Unity,1548705176,2
+node.js,53459595,"&quot;Peer dependency not installed&quot; warning, but they are installed",1543072852,2
+reactjs,53459595,"&quot;Peer dependency not installed&quot; warning, but they are installed",1543072852,2
+npm,53459595,"&quot;Peer dependency not installed&quot; warning, but they are installed",1543072852,2
+react-redux,53459595,"&quot;Peer dependency not installed&quot; warning, but they are installed",1543072852,2
+javascript,46368237,using array.findIndex() on state in React,1506094133,2
+arrays,46368237,using array.findIndex() on state in React,1506094133,2
+reactjs,46368237,using array.findIndex() on state in React,1506094133,2
+filtering,46368237,using array.findIndex() on state in React,1506094133,2
+state,46368237,using array.findIndex() on state in React,1506094133,2
+php,21086140,How to add a image banner to the top of the woocommerce shop base page,1389598942,3
+wordpress,21086140,How to add a image banner to the top of the woocommerce shop base page,1389598942,3
+woocommerce,21086140,How to add a image banner to the top of the woocommerce shop base page,1389598942,3
+npm,77731074,Why does my workflow deploy to the wrong .env file despite the correct Vite argument?,1703840923,0
+vuejs3,77731074,Why does my workflow deploy to the wrong .env file despite the correct Vite argument?,1703840923,0
+github-actions,77731074,Why does my workflow deploy to the wrong .env file despite the correct Vite argument?,1703840923,0
+vite,77731074,Why does my workflow deploy to the wrong .env file despite the correct Vite argument?,1703840923,0
+pca,77442906,RunUMAP code error after merged spatial transcriptomic objects,1699419214,5
+seurat,77442906,RunUMAP code error after merged spatial transcriptomic objects,1699419214,5
+python,77735121,how to record button clicks by their custom_id | pycord,1703919703,0
+discord,77735121,how to record button clicks by their custom_id | pycord,1703919703,0
+discord.py,77735121,how to record button clicks by their custom_id | pycord,1703919703,0
+pycord,77735121,how to record button clicks by their custom_id | pycord,1703919703,0
+laravel,77734917,Laravel - How to categorize data by the 3rd table relation,1703912747,1
+eloquent,77734917,Laravel - How to categorize data by the 3rd table relation,1703912747,1
+ios,56491881,Move TextField up when the keyboard has appeared in SwiftUI,1559900587,30
+swift,56491881,Move TextField up when the keyboard has appeared in SwiftUI,1559900587,30
+swiftui,56491881,Move TextField up when the keyboard has appeared in SwiftUI,1559900587,30
+amazon-s3,45624175,"AmazonS3: Getting warning: S3AbortableInputStream:Not all bytes were read from the S3ObjectInputStream, aborting HTTP connection",1502403082,7
+aws-sdk,45624175,"AmazonS3: Getting warning: S3AbortableInputStream:Not all bytes were read from the S3ObjectInputStream, aborting HTTP connection",1502403082,7
+aws-java-sdk,45624175,"AmazonS3: Getting warning: S3AbortableInputStream:Not all bytes were read from the S3ObjectInputStream, aborting HTTP connection",1502403082,7
+c++,77735032,"in case of empty class sizeof object is 1 bytes, but in case of non empty class sizeof object is not equals to size of class members + 1",1703916946,1
+access-token,77735114,Spring Boot 3 Authorization server config for token generation with TokenStore,1703919601,0
+spring-authorization-server,77735114,Spring Boot 3 Authorization server config for token generation with TokenStore,1703919601,0
+spring-boot-3,77735114,Spring Boot 3 Authorization server config for token generation with TokenStore,1703919601,0
+spring-security-6,77735114,Spring Boot 3 Authorization server config for token generation with TokenStore,1703919601,0
+reactjs,77735113,"How to stream music tracks using Spotify Web PlayBack SDK using Express, React, NodeJS",1703919581,0
+node.js,77735113,"How to stream music tracks using Spotify Web PlayBack SDK using Express, React, NodeJS",1703919581,0
+express,77735113,"How to stream music tracks using Spotify Web PlayBack SDK using Express, React, NodeJS",1703919581,0
+spotify,77735113,"How to stream music tracks using Spotify Web PlayBack SDK using Express, React, NodeJS",1703919581,0
+playwright,77735111,how to run a playwright file using python,1703919547,0
+playwright-python,77735111,how to run a playwright file using python,1703919547,0
+c#,77735110,Blazor Server (.net 8) Dynamic Image Rendering only happening at the end of processing,1703919545,0
+.net,77735110,Blazor Server (.net 8) Dynamic Image Rendering only happening at the end of processing,1703919545,0
+blazor,77735110,Blazor Server (.net 8) Dynamic Image Rendering only happening at the end of processing,1703919545,0
+blazor-server-side,77735110,Blazor Server (.net 8) Dynamic Image Rendering only happening at the end of processing,1703919545,0
+.net-8.0,77735110,Blazor Server (.net 8) Dynamic Image Rendering only happening at the end of processing,1703919545,0
+react-native,44437554,react-native\react.gradle&#39; does not exist,1496929711,14
+spring,77735107,best practice for implementing pagination in spring reactive data mongodb,1703919457,0
+spring-boot,77735107,best practice for implementing pagination in spring reactive data mongodb,1703919457,0
+spring-data-mongodb,77735107,best practice for implementing pagination in spring reactive data mongodb,1703919457,0
+reactive,77735107,best practice for implementing pagination in spring reactive data mongodb,1703919457,0
+reactjs,77735105,React-native audio waveform,1703919404,0
+react-native,77735105,React-native audio waveform,1703919404,0
+npm,77735105,React-native audio waveform,1703919404,0
+waveform,77735105,React-native audio waveform,1703919404,0
+azure,26382334,Azure: Is there a way to view deployed files in Azure?,1413375201,13
+azure-web-app-service,26382334,Azure: Is there a way to view deployed files in Azure?,1413375201,13
+docker,75521775,Buildx Docker Image Claims to be a Manifest List,1676989209,2
+manifest,75521775,Buildx Docker Image Claims to be a Manifest List,1676989209,2
+multiplatform,75521775,Buildx Docker Image Claims to be a Manifest List,1676989209,2
+buildx,75521775,Buildx Docker Image Claims to be a Manifest List,1676989209,2
+node.js,77735077,mqtt nodejs &amp;&amp; flutter App Not Connect to vps,1703918711,0
+flutter,77735077,mqtt nodejs &amp;&amp; flutter App Not Connect to vps,1703918711,0
+go,77718022,Go http get force to use ipv4,1703605602,1
+http,77718022,Go http get force to use ipv4,1703605602,1
+get,77718022,Go http get force to use ipv4,1703605602,1
+httpclient,77718022,Go http get force to use ipv4,1703605602,1
+ipv4,77718022,Go http get force to use ipv4,1703605602,1
+c#,37253297,How to Prove Immutabiltiy of String in C#?,1463399545,2
+string,37253297,How to Prove Immutabiltiy of String in C#?,1463399545,2
+immutability,37253297,How to Prove Immutabiltiy of String in C#?,1463399545,2
+java,77733266,GitHub Action failing on mvn clean install,1703871324,0
+spring-boot,77733266,GitHub Action failing on mvn clean install,1703871324,0
+maven,77733266,GitHub Action failing on mvn clean install,1703871324,0
+github-actions,77733266,GitHub Action failing on mvn clean install,1703871324,0
+diagram,59870265,Tool for generating ASCII diagrams from some markup?,1579740828,2
+markup,59870265,Tool for generating ASCII diagrams from some markup?,1579740828,2
+php,7041334,PHP - $GET and delete from MySQL,1313158264,8
+php,69537810,How to get session data in Laravel Dusk?,1634029568,4
+laravel,69537810,How to get session data in Laravel Dusk?,1634029568,4
+session,69537810,How to get session data in Laravel Dusk?,1634029568,4
+laravel-dusk,69537810,How to get session data in Laravel Dusk?,1634029568,4
+xaml,77732107,How to read images from memory to ImageSource in C++/WinRT (WinUI3)?,1703854559,0
+windows-runtime,77732107,How to read images from memory to ImageSource in C++/WinRT (WinUI3)?,1703854559,0
+winui-3,77732107,How to read images from memory to ImageSource in C++/WinRT (WinUI3)?,1703854559,0
+memorystream,77732107,How to read images from memory to ImageSource in C++/WinRT (WinUI3)?,1703854559,0
+c++-winrt,77732107,How to read images from memory to ImageSource in C++/WinRT (WinUI3)?,1703854559,0
+flutter,77734993,get error of size.isFinite when set positioned for container in stack,1703915606,0
+dart,77734993,get error of size.isFinite when set positioned for container in stack,1703915606,0
+flutter-container,77734993,get error of size.isFinite when set positioned for container in stack,1703915606,0
+flutter-positioned,77734993,get error of size.isFinite when set positioned for container in stack,1703915606,0
+flutter-stacked,77734993,get error of size.isFinite when set positioned for container in stack,1703915606,0
+sql-server,18932,How can I remove duplicate rows?,1219269089,43
+t-sql,18932,How can I remove duplicate rows?,1219269089,43
+duplicates,18932,How can I remove duplicate rows?,1219269089,43
+machine-learning,77735091,Encode all features or just string features?,1703919088,0
+neural-network,77735091,Encode all features or just string features?,1703919088,0
+model,77735091,Encode all features or just string features?,1703919088,0
+encode,77735091,Encode all features or just string features?,1703919088,0
+training-data,77735091,Encode all features or just string features?,1703919088,0
+helidon,77735096,Jersey Multi Part Upload Failure with Caused by: java.lang.ClassNotFoundException: jakarta.ws.rs.core.EntityPart,1703919150,0
+google-signin,77730644,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for SocialAuthServiceConfig,1703833044,1
+server-side-rendering,77730644,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for SocialAuthServiceConfig,1703833044,1
+angular-standalone-components,77730644,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for SocialAuthServiceConfig,1703833044,1
+angular17,77730644,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for SocialAuthServiceConfig,1703833044,1
+angular-social-login,77730644,Angular V17-SSR-ERROR Error: NullInjectorError: No provider for SocialAuthServiceConfig,1703833044,1
+javascript,76847871,How to fetch twitter profile picture URL from the profile link?,1691358064,1
+google-apps-script,76847871,How to fetch twitter profile picture URL from the profile link?,1691358064,1
+google-sheets,76847871,How to fetch twitter profile picture URL from the profile link?,1691358064,1
+twitter,76847871,How to fetch twitter profile picture URL from the profile link?,1691358064,1
+google-sheets-formula,76847871,How to fetch twitter profile picture URL from the profile link?,1691358064,1
+sql,18390574,How to delete duplicate rows in SQL Server?,1377204674,29
+sql-server-2008,18390574,How to delete duplicate rows in SQL Server?,1377204674,29
+duplicates,18390574,How to delete duplicate rows in SQL Server?,1377204674,29
+sql-delete,18390574,How to delete duplicate rows in SQL Server?,1377204674,29
+google-chrome-extension,77730373,"chrome extension converted to safari, chrome.runtime.sendMessage does not work on iOS",1703827449,1
+chrome-extension-manifest-v3,77730373,"chrome extension converted to safari, chrome.runtime.sendMessage does not work on iOS",1703827449,1
+safari-extension,77730373,"chrome extension converted to safari, chrome.runtime.sendMessage does not work on iOS",1703827449,1
+safari-web-extension,77730373,"chrome extension converted to safari, chrome.runtime.sendMessage does not work on iOS",1703827449,1
+c#,4163483,What is the difference between &amp; and &amp;&amp; operators in C#,1289556117,9
+java,77634130,I can&#39;t get the ImageIcon to display properly,1702196485,2
+jframe,77634130,I can&#39;t get the ImageIcon to display properly,1702196485,2
+jpanel,77634130,I can&#39;t get the ImageIcon to display properly,1702196485,2
+imageicon,77634130,I can&#39;t get the ImageIcon to display properly,1702196485,2
+python,77735086,How to use Multithreading executor of Callback Group in ROS2 with callback function that contain &lt;run_async&gt; from LaunchService,1703918928,0
+multithreading,77735086,How to use Multithreading executor of Callback Group in ROS2 with callback function that contain &lt;run_async&gt; from LaunchService,1703918928,0
+multiprocessing,77735086,How to use Multithreading executor of Callback Group in ROS2 with callback function that contain &lt;run_async&gt; from LaunchService,1703918928,0
+ros,77735086,How to use Multithreading executor of Callback Group in ROS2 with callback function that contain &lt;run_async&gt; from LaunchService,1703918928,0
+ros2,77735086,How to use Multithreading executor of Callback Group in ROS2 with callback function that contain &lt;run_async&gt; from LaunchService,1703918928,0
+keras,77735085,Problem with ROC Curve for multiclass classification model,1703918914,0
+scikit-learn,77735085,Problem with ROC Curve for multiclass classification model,1703918914,0
+conv-neural-network,77735085,Problem with ROC Curve for multiclass classification model,1703918914,0
+classification,77735085,Problem with ROC Curve for multiclass classification model,1703918914,0
+roc,77735085,Problem with ROC Curve for multiclass classification model,1703918914,0
+c++,77735078,"Qt, C++, Sqlite: AVG and SUM Sqlite column of time as a string (HH:mm:ss)",1703918712,0
+sqlite,77735078,"Qt, C++, Sqlite: AVG and SUM Sqlite column of time as a string (HH:mm:ss)",1703918712,0
+qt,77735078,"Qt, C++, Sqlite: AVG and SUM Sqlite column of time as a string (HH:mm:ss)",1703918712,0
+average,77735078,"Qt, C++, Sqlite: AVG and SUM Sqlite column of time as a string (HH:mm:ss)",1703918712,0
+qtime,77735078,"Qt, C++, Sqlite: AVG and SUM Sqlite column of time as a string (HH:mm:ss)",1703918712,0
+apache-poi,77734944,Update embedded worksheet in ppt slide apache poi,1703913752,1
