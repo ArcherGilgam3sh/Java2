@@ -20,6 +20,7 @@ try:
 
     # 创建名为 top_tags_question 的表格
     create_table_query = '''CREATE TABLE IF NOT EXISTS top_tags_question (
+                                Tags TEXT,
                                 Tag TEXT,
                                 Question_ID BIGINT,
                                 Title TEXT,
@@ -33,9 +34,10 @@ try:
 
     # 插入数据到数据库表格中
     for item in data:
-        insert_query = '''INSERT INTO top_tags_question (Tag, Question_ID, Title, Creation_Date, Answer_Count, View_Count, Score)
-                          VALUES (%s, %s, %s, %s, %s, %s, %s);'''
+        insert_query = '''INSERT INTO top_tags_question (Tags, Tag, Question_ID, Title, Creation_Date, Answer_Count, View_Count, Score)
+                          VALUES (%s, %s, %s, %s, %s, %s, %s, %s);'''
         cursor.execute(insert_query, (
+            ','.join(item['Tags']),
             item['Tag'],
             item['Question ID'],
             item['Title'],

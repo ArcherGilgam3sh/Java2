@@ -5,7 +5,8 @@ data_collection
 - high_freq_tags.py: 用于寻找出现频率最高的10个tag  
 - top_tags_questions.csv: data  
 - top_tags_questions.json: data  
-- write_data.py: 用于在数据库中创建表格，并写入数据
+- write_top_tags.py: 用于在数据库中创建Top Tags Question表格，并写入数据
+- write_error_exception.py: 用于在数据库中创建Error Exception Question表格，并写入数据
 
 java_questions.csv: 未经筛选的原始数据  
 java_questions.json: 未经筛选的原始数据  
