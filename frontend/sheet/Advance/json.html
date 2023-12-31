@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about json</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to parse JSON in Java</td><td>36</td><td>1251</td><td>2149956</td><td>2015-08-12</td><td><a href="https://stackoverflow.com/questions/2591098/how-to-parse-json-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use Jackson to deserialise an array of objects</td><td>9</td><td>976</td><td>865042</td><td>2014-07-16</td><td><a href="https://stackoverflow.com/questions/6349421/how-to-use-jackson-to-deserialise-an-array-of-objects" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson with JSON: Unrecognized field, not marked as ignorable</td><td>48</td><td>862</td><td>1068983</td><td>2014-04-18</td><td><a href="https://stackoverflow.com/questions/4486787/jackson-with-json-unrecognized-field-not-marked-as-ignorable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Ignoring new fields on JSON objects using Jackson</td><td>12</td><td>697</td><td>604349</td><td>2014-05-23</td><td><a href="https://stackoverflow.com/questions/5455014/ignoring-new-fields-on-json-objects-using-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Infinite Recursion with Jackson JSON and Hibernate JPA issue</td><td>28</td><td>509</td><td>384944</td><td>2015-12-16</td><td><a href="https://stackoverflow.com/questions/3325387/infinite-recursion-with-jackson-json-and-hibernate-jpa-issue" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert jsonString to JSONObject in Java</td><td>20</td><td>509</td><td>1816680</td><td>2016-02-10</td><td><a href="https://stackoverflow.com/questions/5245840/how-to-convert-jsonstring-to-jsonobject-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Deserialize a List&lt;T&gt; object with Gson?</td><td>15</td><td>500</td><td>384350</td><td>2016-08-11</td><td><a href="https://stackoverflow.com/questions/5554217/deserialize-a-listt-object-with-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JsonMappingException: No suitable constructor found for type [simple type, class ]: can not instantiate from JSON object</td><td>14</td><td>462</td><td>462086</td><td>2014-04-13</td><td><a href="https://stackoverflow.com/questions/7625783/jsonmappingexception-no-suitable-constructor-found-for-type-simple-type-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Gson: How to exclude specific fields from Serialization without annotations</td><td>16</td><td>443</td><td>356585</td><td>2015-07-26</td><td><a href="https://stackoverflow.com/questions/4802887/gson-how-to-exclude-specific-fields-from-serialization-without-annotations" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should I declare Jackson&#39;s ObjectMapper as a static field?</td><td>6</td><td>435</td><td>188149</td><td>2015-05-12</td><td><a href="https://stackoverflow.com/questions/3907929/should-i-declare-jacksons-objectmapper-as-a-static-field" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Only using @JsonIgnore during serialization, but not deserialization</td><td>9</td><td>408</td><td>410216</td><td>2016-10-16</td><td><a href="https://stackoverflow.com/questions/12505141/only-using-jsonignore-during-serialization-but-not-deserialization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson Vs. Gson</td><td>5</td><td>391</td><td>189028</td><td>2011-11-28</td><td><a href="https://stackoverflow.com/questions/2378402/jackson-vs-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to iterate over a JSONObject?</td><td>16</td><td>381</td><td>721894</td><td>2014-05-09</td><td><a href="https://stackoverflow.com/questions/9151619/how-to-iterate-over-a-jsonobject" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert hashmap to JSON object in Java</td><td>29</td><td>354</td><td>893551</td><td>2014-05-31</td><td><a href="https://stackoverflow.com/questions/12155800/how-to-convert-hashmap-to-json-object-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to upload a file and JSON data in Postman?</td><td>23</td><td>352</td><td>714990</td><td>2018-05-17</td><td><a href="https://stackoverflow.com/questions/39037049/how-to-upload-a-file-and-json-data-in-postman" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Serializing with Jackson (JSON) - getting &quot;No serializer found&quot;?</td><td>20</td><td>332</td><td>425022</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/8367312/serializing-with-jackson-json-getting-no-serializer-found" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Gson: Directly convert String to JsonObject (no POJO)</td><td>10</td><td>324</td><td>348947</td><td>2014-05-29</td><td><a href="https://stackoverflow.com/questions/4110664/gson-directly-convert-string-to-jsonobject-no-pojo" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I convert JSON to a HashMap using Gson?</td><td>16</td><td>310</td><td>365518</td><td>2015-11-07</td><td><a href="https://stackoverflow.com/questions/2779251/how-can-i-convert-json-to-a-hashmap-using-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting JSON data to Java object</td><td>13</td><td>286</td><td>450805</td><td>2013-12-21</td><td><a href="https://stackoverflow.com/questions/1688099/converting-json-data-to-java-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Simplest way to read JSON from a URL in Java</td><td>11</td><td>276</td><td>579224</td><td>2016-01-30</td><td><a href="https://stackoverflow.com/questions/4308554/simplest-way-to-read-json-from-a-url-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Testing two JSON objects for equality ignoring child order in Java</td><td>28</td><td>273</td><td>348921</td><td>2014-08-13</td><td><a href="https://stackoverflow.com/questions/2253750/testing-two-json-objects-for-equality-ignoring-child-order-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Pretty-Print JSON in Java</td><td>20</td><td>265</td><td>325986</td><td>2013-04-09</td><td><a href="https://stackoverflow.com/questions/4105795/pretty-print-json-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.net.SocketException: socket failed: EPERM (Operation not permitted)</td><td>14</td><td>263</td><td>147739</td><td>2019-05-23</td><td><a href="https://stackoverflow.com/questions/56266801/java-net-socketexception-socket-failed-eperm-operation-not-permitted" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to parse a JSON string into JsonNode in Jackson?</td><td>6</td><td>254</td><td>330323</td><td>2015-11-05</td><td><a href="https://stackoverflow.com/questions/3653996/how-to-parse-a-json-string-into-jsonnode-in-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Gson - convert from Json to a typed ArrayList&lt;T&gt;</td><td>9</td><td>242</td><td>265996</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/12384064/gson-convert-from-json-to-a-typed-arraylistt" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generate Java class from JSON?</td><td>13</td><td>242</td><td>362510</td><td>2015-09-01</td><td><a href="https://stackoverflow.com/questions/1957406/generate-java-class-from-json" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert JSON to Map</td><td>18</td><td>226</td><td>610014</td><td>2013-06-22</td><td><a href="https://stackoverflow.com/questions/443499/convert-json-to-map" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting Java objects to JSON with Jackson</td><td>9</td><td>221</td><td>604084</td><td>2013-07-27</td><td><a href="https://stackoverflow.com/questions/15786129/converting-java-objects-to-json-with-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to specify jackson to only use fields - preferably globally</td><td>9</td><td>216</td><td>161655</td><td>2015-10-13</td><td><a href="https://stackoverflow.com/questions/7105745/how-to-specify-jackson-to-only-use-fields-preferably-globally" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>HTTP POST using JSON in Java</td><td>12</td><td>214</td><td>820354</td><td>2014-09-20</td><td><a href="https://stackoverflow.com/questions/7181534/http-post-using-json-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I parse a local JSON file from assets folder into a ListView?</td><td>9</td><td>212</td><td>306331</td><td>2017-04-19</td><td><a href="https://stackoverflow.com/questions/19945411/how-can-i-parse-a-local-json-file-from-assets-folder-into-a-listview" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson - Deserialize using generic class</td><td>10</td><td>210</td><td>237260</td><td>2015-05-07</td><td><a href="https://stackoverflow.com/questions/11664894/jackson-deserialize-using-generic-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if a JSON key exists?</td><td>13</td><td>206</td><td>405347</td><td>2017-05-19</td><td><a href="https://stackoverflow.com/questions/17487205/how-to-check-if-a-json-key-exists" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 LocalDate Jackson format</td><td>17</td><td>200</td><td>328100</td><td>2017-06-28</td><td><a href="https://stackoverflow.com/questions/28802544/java-8-localdate-jackson-format" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Different names of JSON property during serialization and deserialization</td><td>12</td><td>195</td><td>254419</td><td>2014-12-19</td><td><a href="https://stackoverflow.com/questions/8560348/different-names-of-json-property-during-serialization-and-deserialization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert JSON String to Pretty Print JSON output using Jackson</td><td>10</td><td>194</td><td>257208</td><td>2016-01-04</td><td><a href="https://stackoverflow.com/questions/14515994/convert-json-string-to-pretty-print-json-output-using-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check whether a given string is valid JSON in Java</td><td>21</td><td>194</td><td>306800</td><td>2013-02-27</td><td><a href="https://stackoverflow.com/questions/10174898/how-to-check-whether-a-given-string-is-valid-json-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert a JSON String to a HashMap</td><td>19</td><td>193</td><td>455416</td><td>2016-04-22</td><td><a href="https://stackoverflow.com/questions/21720759/convert-a-json-string-to-a-hashmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to parse JSON in Kotlin?</td><td>16</td><td>187</td><td>386834</td><td>2019-05-07</td><td><a href="https://stackoverflow.com/questions/41928803/how-to-parse-json-in-kotlin" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert JsonNode into POJO</td><td>5</td><td>185</td><td>169711</td><td>2014-12-13</td><td><a href="https://stackoverflow.com/questions/19711695/convert-jsonnode-into-pojo" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert Java Object to JsonNode in Jackson</td><td>1</td><td>185</td><td>191916</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11828368/convert-java-object-to-jsonnode-in-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Date format Mapping to JSON Jackson</td><td>9</td><td>182</td><td>540004</td><td>2015-03-18</td><td><a href="https://stackoverflow.com/questions/12463049/date-format-mapping-to-json-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Quickest way to convert XML to JSON in Java</td><td>6</td><td>180</td><td>424306</td><td>2012-04-26</td><td><a href="https://stackoverflow.com/questions/1823264/quickest-way-to-convert-xml-to-json-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson: how to prevent field serialization</td><td>9</td><td>178</td><td>150876</td><td>2016-06-03</td><td><a href="https://stackoverflow.com/questions/9112900/jackson-how-to-prevent-field-serialization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Http 415 Unsupported Media type error with JSON</td><td>20</td><td>173</td><td>703276</td><td>2017-05-02</td><td><a href="https://stackoverflow.com/questions/22566433/http-415-unsupported-media-type-error-with-json" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&quot;Expected BEGIN_OBJECT but was STRING at line 1 column 1&quot;</td><td>20</td><td>172</td><td>470895</td><td>2016-05-08</td><td><a href="https://stackoverflow.com/questions/28418662/expected-begin-object-but-was-string-at-line-1-column-1" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How should I escape strings in JSON?</td><td>18</td><td>170</td><td>459201</td><td>2014-10-22</td><td><a href="https://stackoverflow.com/questions/3020094/how-should-i-escape-strings-in-json" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JSON parsing using Gson for Java</td><td>11</td><td>166</td><td>381584</td><td>2013-11-04</td><td><a href="https://stackoverflow.com/questions/5490789/json-parsing-using-gson-for-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring MVC - How to return simple String as JSON in Rest Controller</td><td>10</td><td>165</td><td>454124</td><td>2016-06-04</td><td><a href="https://stackoverflow.com/questions/30895286/spring-mvc-how-to-return-simple-string-as-json-in-rest-controller" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you return a JSON object from a Java Servlet</td><td>13</td><td>164</td><td>495653</td><td>2011-07-01</td><td><a href="https://stackoverflow.com/questions/2010990/how-do-you-return-a-json-object-from-a-java-servlet" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>HttpServletRequest get JSON POST data</td><td>2</td><td>163</td><td>429621</td><td>2016-01-20</td><td><a href="https://stackoverflow.com/questions/3831680/httpservletrequest-get-json-post-data" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson serialization: ignore empty values (or null)</td><td>8</td><td>161</td><td>369755</td><td>2016-02-03</td><td><a href="https://stackoverflow.com/questions/16089651/jackson-serialization-ignore-empty-values-or-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Pretty printing JSON from Jackson 2.2&#39;s ObjectMapper</td><td>8</td><td>159</td><td>133973</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17617370/pretty-printing-json-from-jackson-2-2s-objectmapper" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JSON Array iteration in Android/Java</td><td>8</td><td>154</td><td>223321</td><td>2012-06-03</td><td><a href="https://stackoverflow.com/questions/3408985/json-array-iteration-in-android-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert object to JSON in Android</td><td>7</td><td>153</td><td>170505</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5571092/convert-object-to-json-in-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Issue with parsing the content from JSON file with Jackson &amp; message- JsonMappingException -Cannot deserialize as out of START_ARRAY token</td><td>5</td><td>149</td><td>427720</td><td>2017-07-07</td><td><a href="https://stackoverflow.com/questions/19333106/issue-with-parsing-the-content-from-json-file-with-jackson-message-jsonmappin" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Gson ignoring map entries with value=null</td><td>1</td><td>146</td><td>80926</td><td>2012-11-10</td><td><a href="https://stackoverflow.com/questions/3923759/gson-ignoring-map-entries-with-value-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can you avoid Gson converting &quot;&lt;&quot; and &quot;&gt;&quot; into unicode escape sequences?</td><td>2</td><td>146</td><td>44859</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4147012/can-you-avoid-gson-converting-and-into-unicode-escape-sequences" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to modify JsonNode in Java?</td><td>6</td><td>146</td><td>181974</td><td>2016-06-08</td><td><a href="https://stackoverflow.com/questions/30997362/how-to-modify-jsonnode-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using Enums while parsing JSON with GSON</td><td>7</td><td>144</td><td>107980</td><td>2014-12-04</td><td><a href="https://stackoverflow.com/questions/8211304/using-enums-while-parsing-json-with-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to fluently build JSON in Java?</td><td>12</td><td>144</td><td>248013</td><td>2014-09-19</td><td><a href="https://stackoverflow.com/questions/8876089/how-to-fluently-build-json-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson renames primitive boolean field by removing &#39;is&#39;</td><td>11</td><td>144</td><td>87864</td><td>2018-09-10</td><td><a href="https://stackoverflow.com/questions/32270422/jackson-renames-primitive-boolean-field-by-removing-is" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson how to transform JsonNode to ArrayNode without casting?</td><td>5</td><td>143</td><td>258330</td><td>2016-10-13</td><td><a href="https://stackoverflow.com/questions/16788213/jackson-how-to-transform-jsonnode-to-arraynode-without-casting" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I tell jackson to ignore a property for which I don&#39;t have control over the source code?</td><td>8</td><td>142</td><td>231781</td><td>2013-12-27</td><td><a href="https://stackoverflow.com/questions/7421474/how-can-i-tell-jackson-to-ignore-a-property-for-which-i-dont-have-control-over" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JSON Java 8 LocalDateTime format in Spring Boot</td><td>16</td><td>142</td><td>242813</td><td>2015-04-29</td><td><a href="https://stackoverflow.com/questions/29956175/json-java-8-localdatetime-format-in-spring-boot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson and generic type reference</td><td>3</td><td>142</td><td>193207</td><td>2016-06-19</td><td><a href="https://stackoverflow.com/questions/6846244/jackson-and-generic-type-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to deserialize a list using GSON or another JSON library in Java?</td><td>4</td><td>141</td><td>127064</td><td>2015-03-30</td><td><a href="https://stackoverflow.com/questions/4318458/how-to-deserialize-a-list-using-gson-or-another-json-library-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>POST request via RestTemplate in JSON</td><td>15</td><td>138</td><td>429691</td><td>2014-10-05</td><td><a href="https://stackoverflow.com/questions/4075991/post-request-via-resttemplate-in-json" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create correct JSONArray in Java using JSONObject</td><td>4</td><td>138</td><td>549366</td><td>2016-03-04</td><td><a href="https://stackoverflow.com/questions/18983185/how-to-create-correct-jsonarray-in-java-using-jsonobject" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Ignore fields from Java object dynamically while sending as JSON from Spring MVC</td><td>16</td><td>137</td><td>327086</td><td>2014-04-16</td><td><a href="https://stackoverflow.com/questions/23101260/ignore-fields-from-java-object-dynamically-while-sending-as-json-from-spring-mvc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why when a constructor is annotated with @JsonCreator, its arguments must be annotated with @JsonProperty?</td><td>8</td><td>136</td><td>131679</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/21920367/why-when-a-constructor-is-annotated-with-jsoncreator-its-arguments-must-be-ann" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson databind enum case insensitive</td><td>13</td><td>135</td><td>91273</td><td>2014-11-08</td><td><a href="https://stackoverflow.com/questions/24157817/jackson-databind-enum-case-insensitive" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Kotlin Data Class from Json using GSON</td><td>3</td><td>135</td><td>119255</td><td>2017-11-02</td><td><a href="https://stackoverflow.com/questions/44117970/kotlin-data-class-from-json-using-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert Json Array to normal Java list</td><td>16</td><td>132</td><td>270012</td><td>2015-01-27</td><td><a href="https://stackoverflow.com/questions/3395729/convert-json-array-to-normal-java-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to de/serialize an immutable object without default constructor using ObjectMapper?</td><td>4</td><td>132</td><td>66993</td><td>2015-06-01</td><td><a href="https://stackoverflow.com/questions/30568353/how-to-de-serialize-an-immutable-object-without-default-constructor-using-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the basic purpose of @SerializedName annotation in Android using Gson</td><td>4</td><td>130</td><td>97079</td><td>2017-08-23</td><td><a href="https://stackoverflow.com/questions/28957285/what-is-the-basic-purpose-of-serializedname-annotation-in-android-using-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Accessing members of items in a JSONArray with Java</td><td>6</td><td>130</td><td>407488</td><td>2011-08-28</td><td><a href="https://stackoverflow.com/questions/1568762/accessing-members-of-items-in-a-jsonarray-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Parsing JSON array into java.util.List with Gson</td><td>5</td><td>129</td><td>214062</td><td>2013-08-31</td><td><a href="https://stackoverflow.com/questions/18544133/parsing-json-array-into-java-util-list-with-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Multiple GSON @SerializedName per field?</td><td>4</td><td>127</td><td>50407</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/25707728/multiple-gson-serializedname-per-field" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JsonParseException : Illegal unquoted character ((CTRL-CHAR, code 10)</td><td>5</td><td>127</td><td>180358</td><td>2017-10-22</td><td><a href="https://stackoverflow.com/questions/31537153/jsonparseexception-illegal-unquoted-character-ctrl-char-code-10" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Returning JSON object as response in Spring Boot</td><td>9</td><td>126</td><td>478750</td><td>2018-12-22</td><td><a href="https://stackoverflow.com/questions/44839753/returning-json-object-as-response-in-spring-boot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to serialize Joda DateTime with Jackson JSON processor?</td><td>9</td><td>126</td><td>155589</td><td>2014-11-13</td><td><a href="https://stackoverflow.com/questions/3269459/how-to-serialize-joda-datetime-with-jackson-json-processor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert JSON style properties names to Java CamelCase names with GSON</td><td>4</td><td>124</td><td>61934</td><td>2010-11-14</td><td><a href="https://stackoverflow.com/questions/2370745/convert-json-style-properties-names-to-java-camelcase-names-with-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I use a custom Serializer with Jackson?</td><td>11</td><td>123</td><td>281182</td><td>2015-04-14</td><td><a href="https://stackoverflow.com/questions/7161638/how-do-i-use-a-custom-serializer-with-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>org.codehaus.jackson versus com.fasterxml.jackson.core</td><td>1</td><td>122</td><td>59187</td><td>2018-06-07</td><td><a href="https://stackoverflow.com/questions/30782706/org-codehaus-jackson-versus-com-fasterxml-jackson-core" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Most efficient conversion of ResultSet to JSON?</td><td>14</td><td>121</td><td>188908</td><td>2014-01-17</td><td><a href="https://stackoverflow.com/questions/6514876/most-efficient-conversion-of-resultset-to-json" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between JSONObject and JSONArray</td><td>8</td><td>120</td><td>168389</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/12289844/difference-between-jsonobject-and-jsonarray" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I include raw JSON in an object using Jackson?</td><td>12</td><td>120</td><td>105208</td><td>2011-01-24</td><td><a href="https://stackoverflow.com/questions/4783421/how-can-i-include-raw-json-in-an-object-using-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to read json file into java with simple JSON library</td><td>18</td><td>119</td><td>731260</td><td>2013-07-07</td><td><a href="https://stackoverflow.com/questions/10926353/how-to-read-json-file-into-java-with-simple-json-library" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert a JSON string to object in Java ME?</td><td>14</td><td>117</td><td>454655</td><td>2012-12-17</td><td><a href="https://stackoverflow.com/questions/1395551/convert-a-json-string-to-object-in-java-me" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create JSON Object using String?</td><td>5</td><td>116</td><td>499227</td><td>2013-11-21</td><td><a href="https://stackoverflow.com/questions/20117148/how-to-create-json-object-using-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get nested JSON object with GSON using retrofit</td><td>13</td><td>115</td><td>104199</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23070298/get-nested-json-object-with-gson-using-retrofit" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using GSON to parse a JSON array</td><td>4</td><td>115</td><td>163786</td><td>2015-11-13</td><td><a href="https://stackoverflow.com/questions/18421674/using-gson-to-parse-a-json-array" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>what&#39;s the correct way to send a file from REST web service to client?</td><td>4</td><td>114</td><td>253993</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/12239868/whats-the-correct-way-to-send-a-file-from-rest-web-service-to-client" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert string to JSON array</td><td>10</td><td>113</td><td>526106</td><td>2016-03-04</td><td><a href="https://stackoverflow.com/questions/15609306/convert-string-to-json-array" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android JSONObject - How can I loop through a flat JSON object to get each key and value</td><td>5</td><td>111</td><td>112780</td><td>2016-01-01</td><td><a href="https://stackoverflow.com/questions/13573913/android-jsonobject-how-can-i-loop-through-a-flat-json-object-to-get-each-key-a" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert the following json string to java object?</td><td>5</td><td>111</td><td>446930</td><td>2016-10-01</td><td><a href="https://stackoverflow.com/questions/10308452/how-to-convert-the-following-json-string-to-java-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson JSON custom serialization for certain fields</td><td>7</td><td>111</td><td>136828</td><td>2014-04-30</td><td><a href="https://stackoverflow.com/questions/12046786/jackson-json-custom-serialization-for-certain-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Deserialize JSON to ArrayList&lt;POJO&gt; using Jackson</td><td>5</td><td>109</td><td>200533</td><td>2012-03-22</td><td><a href="https://stackoverflow.com/questions/9829403/deserialize-json-to-arraylistpojo-using-jackson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is Maven similar to npm?</td><td>4</td><td>109</td><td>54381</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/38388824/is-maven-similar-to-npm" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

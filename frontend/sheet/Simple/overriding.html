@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about overriding</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&#39;Must Override a Superclass Method&#39; Errors after importing a project into Eclipse</td><td>13</td><td>1292</td><td>263331</td><td>2015-01-27</td><td><a href="https://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What issues should be considered when overriding equals and hashCode in Java?</td><td>11</td><td>617</td><td>596957</td><td>2011-08-19</td><td><a href="https://stackoverflow.com/questions/27581/what-issues-should-be-considered-when-overriding-equals-and-hashcode-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t Java allow overriding of static methods?</td><td>22</td><td>566</td><td>289300</td><td>2010-02-08</td><td><a href="https://stackoverflow.com/questions/2223386/why-doesnt-java-allow-overriding-of-static-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&amp;#39;s wrong with overridable method calls in constructors?</td><td>8</td><td>396</td><td>135813</td><td>2013-11-27</td><td><a href="https://stackoverflow.com/questions/3404301/what39s-wrong-with-overridable-method-calls-in-constructors" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism vs Overriding vs Overloading</td><td>21</td><td>370</td><td>295224</td><td>2012-10-15</td><td><a href="https://stackoverflow.com/questions/154577/polymorphism-vs-overriding-vs-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implementing two interfaces in a class with same method. Which interface method is overridden?</td><td>8</td><td>279</td><td>216143</td><td>2012-04-10</td><td><a href="https://stackoverflow.com/questions/2801878/implementing-two-interfaces-in-a-class-with-same-method-which-interface-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Override back button to act like home button</td><td>10</td><td>256</td><td>321011</td><td>2013-07-07</td><td><a href="https://stackoverflow.com/questions/2000102/override-back-button-to-act-like-home-button" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to override class variables in Java?</td><td>17</td><td>175</td><td>219939</td><td>2010-10-01</td><td><a href="https://stackoverflow.com/questions/685300/is-there-a-way-to-override-class-variables-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can overridden methods differ in return type?</td><td>12</td><td>168</td><td>211450</td><td>2014-05-28</td><td><a href="https://stackoverflow.com/questions/14694852/can-overridden-methods-differ-in-return-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding the java equals() method - not working?</td><td>8</td><td>153</td><td>256021</td><td>2013-09-17</td><td><a href="https://stackoverflow.com/questions/185937/overriding-the-java-equals-method-not-working" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between dynamic and static polymorphism in Java?</td><td>14</td><td>137</td><td>251836</td><td>2014-08-04</td><td><a href="https://stackoverflow.com/questions/20783266/what-is-the-difference-between-dynamic-and-static-polymorphism-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Override valueof() and toString() in Java enum</td><td>7</td><td>137</td><td>173788</td><td>2014-03-16</td><td><a href="https://stackoverflow.com/questions/9662170/override-valueof-and-tostring-in-java-enum" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to override equals method in Java</td><td>10</td><td>126</td><td>305634</td><td>2015-04-30</td><td><a href="https://stackoverflow.com/questions/8180430/how-to-override-equals-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When NOT to call super() method when overriding?</td><td>7</td><td>118</td><td>51471</td><td>2012-04-20</td><td><a href="https://stackoverflow.com/questions/10244785/when-not-to-call-super-method-when-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Calling a super method which calls an overridden method</td><td>13</td><td>105</td><td>115249</td><td>2011-01-04</td><td><a href="https://stackoverflow.com/questions/4595512/java-calling-a-super-method-which-calls-an-overridden-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I override and overload static methods in Java?</td><td>19</td><td>97</td><td>275300</td><td>2010-12-03</td><td><a href="https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding vs Hiding Java - Confused</td><td>17</td><td>97</td><td>51676</td><td>2016-02-24</td><td><a href="https://stackoverflow.com/questions/10594052/overriding-vs-hiding-java-confused" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>@Override is not allowed when implementing interface method</td><td>7</td><td>91</td><td>46636</td><td>2015-06-16</td><td><a href="https://stackoverflow.com/questions/15402615/override-is-not-allowed-when-implementing-interface-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to force derived class to call super method? (Like Android does)</td><td>8</td><td>87</td><td>48442</td><td>2011-09-12</td><td><a href="https://stackoverflow.com/questions/4217013/how-to-force-derived-class-to-call-super-method-like-android-does" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do Java method annotations work in conjunction with method overriding?</td><td>4</td><td>75</td><td>38167</td><td>2016-06-26</td><td><a href="https://stackoverflow.com/questions/10082619/how-do-java-method-annotations-work-in-conjunction-with-method-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does @Override mean?</td><td>3</td><td>74</td><td>94620</td><td>2012-06-01</td><td><a href="https://stackoverflow.com/questions/4341432/what-does-override-mean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding member variables in Java ( Variable Hiding)</td><td>13</td><td>72</td><td>88353</td><td>2015-10-29</td><td><a href="https://stackoverflow.com/questions/10722110/overriding-member-variables-in-java-variable-hiding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding equals() &amp; hashCode() in sub classes ... considering super fields</td><td>10</td><td>71</td><td>64535</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2066917/overriding-equals-hashcode-in-sub-classes-considering-super-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android @Override usage</td><td>4</td><td>69</td><td>66119</td><td>2011-03-22</td><td><a href="https://stackoverflow.com/questions/2950074/android-override-usage" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why inner class can override private final method?</td><td>5</td><td>66</td><td>4090</td><td>2013-01-10</td><td><a href="https://stackoverflow.com/questions/9524025/why-inner-class-can-override-private-final-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is @Override for in Java?</td><td>4</td><td>59</td><td>77370</td><td>2013-09-14</td><td><a href="https://stackoverflow.com/questions/561365/what-is-override-for-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should I add an @Override annotation when implementing abstract methods in Java?</td><td>4</td><td>57</td><td>19822</td><td>2014-06-28</td><td><a href="https://stackoverflow.com/questions/1005898/should-i-add-an-override-annotation-when-implementing-abstract-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to make a method which is not abstract but must be overridden?</td><td>13</td><td>57</td><td>12209</td><td>2011-10-20</td><td><a href="https://stackoverflow.com/questions/7832444/is-there-a-way-to-make-a-method-which-is-not-abstract-but-must-be-overridden" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do we really need @Override and so on when code Java?</td><td>8</td><td>56</td><td>35530</td><td>2014-03-26</td><td><a href="https://stackoverflow.com/questions/4822954/do-we-really-need-override-and-so-on-when-code-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Force a class to override the .equals method</td><td>12</td><td>55</td><td>18166</td><td>2009-10-23</td><td><a href="https://stackoverflow.com/questions/1612273/force-a-class-to-override-the-equals-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to call the overridden method of a superclass?</td><td>12</td><td>54</td><td>98267</td><td>2015-10-28</td><td><a href="https://stackoverflow.com/questions/15668032/how-to-call-the-overridden-method-of-a-superclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding synchronized methods in Java</td><td>2</td><td>50</td><td>11213</td><td>2013-03-12</td><td><a href="https://stackoverflow.com/questions/15374521/overriding-synchronized-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to call a superclass method using Java reflection</td><td>8</td><td>49</td><td>47845</td><td>2015-09-05</td><td><a href="https://stackoverflow.com/questions/5411434/how-to-call-a-superclass-method-using-java-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The Meaning of @override in Android Studio</td><td>6</td><td>48</td><td>55897</td><td>2014-10-12</td><td><a href="https://stackoverflow.com/questions/4736212/the-meaning-of-override-in-android-studio" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generic method inheritance and override rules</td><td>6</td><td>48</td><td>53060</td><td>2011-03-18</td><td><a href="https://stackoverflow.com/questions/5346847/java-generic-method-inheritance-and-override-rules" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between method overloading and overriding?</td><td>2</td><td>47</td><td>224080</td><td>2014-04-21</td><td><a href="https://stackoverflow.com/questions/12374399/what-is-the-difference-between-method-overloading-and-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can&#39;t Override onPostExecute() method in AsyncTask Class or get it to trigger</td><td>4</td><td>46</td><td>31509</td><td>2011-09-09</td><td><a href="https://stackoverflow.com/questions/7356243/cant-override-onpostexecute-method-in-asynctask-class-or-get-it-to-trigger" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do we have to call super in Android sometimes?</td><td>6</td><td>45</td><td>47031</td><td>2012-06-01</td><td><a href="https://stackoverflow.com/questions/10843383/why-do-we-have-to-call-super-in-android-sometimes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Calling super super class method</td><td>12</td><td>43</td><td>39185</td><td>2012-12-22</td><td><a href="https://stackoverflow.com/questions/3456177/calling-super-super-class-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does @AttributeOverride mean?</td><td>5</td><td>42</td><td>53089</td><td>2014-01-12</td><td><a href="https://stackoverflow.com/questions/4432748/what-does-attributeoverride-mean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t you reduce the visibility of a method in a Java subclass?</td><td>3</td><td>42</td><td>12576</td><td>2011-11-15</td><td><a href="https://stackoverflow.com/questions/1600667/why-cant-you-reduce-the-visibility-of-a-method-in-a-java-subclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is this type of method overriding called in Java?</td><td>3</td><td>42</td><td>12579</td><td>2009-10-09</td><td><a href="https://stackoverflow.com/questions/1542410/what-is-this-type-of-method-overriding-called-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can java call parent overridden method in other objects but not subtype?</td><td>4</td><td>41</td><td>93425</td><td>2014-06-28</td><td><a href="https://stackoverflow.com/questions/1032847/can-java-call-parent-overridden-method-in-other-objects-but-not-subtype" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>If static methods can&#39;t be overridden, how its working here (For Java)?</td><td>3</td><td>39</td><td>7169</td><td>2016-05-04</td><td><a href="https://stackoverflow.com/questions/32112692/if-static-methods-cant-be-overridden-how-its-working-here-for-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is Constructor Overriding Possible?</td><td>15</td><td>37</td><td>152014</td><td>2011-03-10</td><td><a href="https://stackoverflow.com/questions/5099924/is-constructor-overriding-possible" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding a method in an instantiated Java object</td><td>9</td><td>37</td><td>44734</td><td>2013-10-26</td><td><a href="https://stackoverflow.com/questions/3875666/overriding-a-method-in-an-instantiated-java-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Type erasure, overriding and generics</td><td>2</td><td>36</td><td>23160</td><td>2009-02-02</td><td><a href="https://stackoverflow.com/questions/502614/type-erasure-overriding-and-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it proper for equals() to depend only on an ID?</td><td>5</td><td>35</td><td>7361</td><td>2013-06-08</td><td><a href="https://stackoverflow.com/questions/17003427/is-it-proper-for-equals-to-depend-only-on-an-id" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t the compiler complain when I try to override a static method?</td><td>9</td><td>34</td><td>34727</td><td>2014-11-21</td><td><a href="https://stackoverflow.com/questions/16617408/why-doesnt-the-compiler-complain-when-i-try-to-override-a-static-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can final constants in Java be overridden?</td><td>6</td><td>33</td><td>22388</td><td>2012-12-01</td><td><a href="https://stackoverflow.com/questions/205239/why-can-final-constants-in-java-be-overridden" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Kotlin data class implementing Java interface</td><td>2</td><td>33</td><td>13195</td><td>2016-04-13</td><td><a href="https://stackoverflow.com/questions/35631290/kotlin-data-class-implementing-java-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Overriding function to disable SSL certificate check</td><td>3</td><td>30</td><td>70781</td><td>2015-08-12</td><td><a href="https://stackoverflow.com/questions/19723415/java-overriding-function-to-disable-ssl-certificate-check" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Java enforce return type compatibility for overridden static methods?</td><td>4</td><td>30</td><td>3552</td><td>2014-10-09</td><td><a href="https://stackoverflow.com/questions/9439379/why-does-java-enforce-return-type-compatibility-for-overridden-static-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to determine if a method has been overridden in a Java class</td><td>3</td><td>28</td><td>2324</td><td>2016-07-25</td><td><a href="https://stackoverflow.com/questions/38554763/is-there-a-way-to-determine-if-a-method-has-been-overridden-in-a-java-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is overloading equals worthwhile</td><td>8</td><td>28</td><td>17160</td><td>2015-11-24</td><td><a href="https://stackoverflow.com/questions/2910520/is-overloading-equals-worthwhile" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Equivalent of Java interfaces in C++?</td><td>2</td><td>28</td><td>25228</td><td>2015-01-02</td><td><a href="https://stackoverflow.com/questions/11945993/equivalent-of-java-interfaces-in-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no parameter contra-variance for overriding?</td><td>6</td><td>27</td><td>4901</td><td>2015-09-03</td><td><a href="https://stackoverflow.com/questions/2995926/why-is-there-no-parameter-contra-variance-for-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Superclass method being called even though object is of subclass</td><td>6</td><td>27</td><td>2969</td><td>2016-08-25</td><td><a href="https://stackoverflow.com/questions/39072275/superclass-method-being-called-even-though-object-is-of-subclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Change the access modifier of an overridden method in Java?</td><td>5</td><td>26</td><td>25086</td><td>2012-05-07</td><td><a href="https://stackoverflow.com/questions/9330001/change-the-access-modifier-of-an-overridden-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which method is overridden?</td><td>6</td><td>26</td><td>1178</td><td>2014-03-12</td><td><a href="https://stackoverflow.com/questions/22345011/which-method-is-overridden" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java How to call method of grand parents?</td><td>3</td><td>26</td><td>20997</td><td>2013-10-29</td><td><a href="https://stackoverflow.com/questions/2584377/java-how-to-call-method-of-grand-parents" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Set collection - override equals method</td><td>5</td><td>25</td><td>70512</td><td>2011-12-21</td><td><a href="https://stackoverflow.com/questions/6187294/java-set-collection-override-equals-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should mutable collections override equals and hashCode?</td><td>8</td><td>25</td><td>2451</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5247056/should-mutable-collections-override-equals-and-hashcode" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can I override a protected method with public method?</td><td>3</td><td>24</td><td>18356</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23081671/why-can-i-override-a-protected-method-with-public-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloading is compile-time polymorphism. Really?</td><td>5</td><td>24</td><td>22880</td><td>2013-03-11</td><td><a href="https://stackoverflow.com/questions/8355912/overloading-is-compile-time-polymorphism-really" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>PowerMock: stub methods from parent class</td><td>3</td><td>24</td><td>17393</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/32748884/powermock-stub-methods-from-parent-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Calling overridable methods like Swing&#39;s add() in constructor</td><td>4</td><td>24</td><td>905</td><td>2016-04-04</td><td><a href="https://stackoverflow.com/questions/36410183/calling-overridable-methods-like-swings-add-in-constructor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Override a method in Java generically</td><td>8</td><td>23</td><td>6141</td><td>2015-09-16</td><td><a href="https://stackoverflow.com/questions/12579153/override-a-method-in-java-generically" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to quickly determine if a method is overridden in Java</td><td>9</td><td>22</td><td>21533</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2315445/how-to-quickly-determine-if-a-method-is-overridden-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading and overriding</td><td>9</td><td>22</td><td>14426</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2469767/java-overloading-and-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: How to call super method from inner in-place class</td><td>3</td><td>22</td><td>6133</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7079600/java-how-to-call-super-method-from-inner-in-place-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Hibernate : How override an attribute from mapped super class</td><td>2</td><td>22</td><td>56323</td><td>2011-03-10</td><td><a href="https://stackoverflow.com/questions/5257921/hibernate-how-override-an-attribute-from-mapped-super-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding Constants in Java</td><td>2</td><td>22</td><td>18170</td><td>2011-12-11</td><td><a href="https://stackoverflow.com/questions/8467494/overriding-constants-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inheritance at package visibility in Java</td><td>4</td><td>22</td><td>1479</td><td>2019-09-23</td><td><a href="https://stackoverflow.com/questions/58052667/inheritance-at-package-visibility-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JerseyTest and JUnit throws NullPointerException</td><td>2</td><td>21</td><td>5181</td><td>2015-03-24</td><td><a href="https://stackoverflow.com/questions/25906976/jerseytest-and-junit-throws-nullpointerexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Incorrect variable names in overridden methods</td><td>2</td><td>21</td><td>2726</td><td>2018-07-08</td><td><a href="https://stackoverflow.com/questions/49219439/incorrect-variable-names-in-overridden-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding a method with different return types in java?</td><td>7</td><td>20</td><td>34898</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14519797/overriding-a-method-with-different-return-types-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: How to find if a method is overridden from base class?</td><td>8</td><td>20</td><td>18336</td><td>2011-01-27</td><td><a href="https://stackoverflow.com/questions/4821704/java-how-to-find-if-a-method-is-overridden-from-base-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java override during object creation</td><td>1</td><td>20</td><td>10190</td><td>2011-05-28</td><td><a href="https://stackoverflow.com/questions/1504261/java-override-during-object-creation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are contravariant parameter types in Java not allowed for overriding?</td><td>1</td><td>20</td><td>6699</td><td>2012-09-15</td><td><a href="https://stackoverflow.com/questions/12439649/why-are-contravariant-parameter-types-in-java-not-allowed-for-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is &quot;override-equivalence&quot; and how is it related to @Override?</td><td>2</td><td>20</td><td>2130</td><td>2017-09-13</td><td><a href="https://stackoverflow.com/questions/16207386/what-is-override-equivalence-and-how-is-it-related-to-override" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do we have to override the equals() method in Java?</td><td>8</td><td>19</td><td>199936</td><td>2015-09-21</td><td><a href="https://stackoverflow.com/questions/15175109/why-do-we-have-to-override-the-equals-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android onBackPressed() is not being called?</td><td>5</td><td>19</td><td>27851</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/39532594/android-onbackpressed-is-not-being-called" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can an abstract class force a concrete method to be overridden?</td><td>5</td><td>19</td><td>2632</td><td>2017-03-15</td><td><a href="https://stackoverflow.com/questions/30885142/why-can-an-abstract-class-force-a-concrete-method-to-be-overridden" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inheritance , method signature , method overriding and throws clause</td><td>4</td><td>19</td><td>11262</td><td>2012-10-29</td><td><a href="https://stackoverflow.com/questions/9036016/inheritance-method-signature-method-overriding-and-throws-clause" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Conflicting interface methods in Java</td><td>6</td><td>19</td><td>5350</td><td>2015-01-30</td><td><a href="https://stackoverflow.com/questions/12782491/conflicting-interface-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there something in c# similar to java&#39;s @override annotation?</td><td>4</td><td>19</td><td>7683</td><td>2014-05-20</td><td><a href="https://stackoverflow.com/questions/6025776/is-there-something-in-c-similar-to-javas-override-annotation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>@MustOverride annotation?</td><td>7</td><td>17</td><td>15491</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2742463/mustoverride-annotation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Class is not Abstract and does not Override error in Java</td><td>5</td><td>17</td><td>98248</td><td>2014-04-02</td><td><a href="https://stackoverflow.com/questions/16554801/class-is-not-abstract-and-does-not-override-error-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Eclipse: always notice error when use @Override</td><td>3</td><td>17</td><td>8733</td><td>2012-02-09</td><td><a href="https://stackoverflow.com/questions/9205062/eclipse-always-notice-error-when-use-override" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding a method with a generic return type fails after adding a parameter</td><td>2</td><td>17</td><td>260</td><td>2019-06-01</td><td><a href="https://stackoverflow.com/questions/50296958/overriding-a-method-with-a-generic-return-type-fails-after-adding-a-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to hide or lower access to Inherited Methods in Java?</td><td>8</td><td>16</td><td>21897</td><td>2009-12-14</td><td><a href="https://stackoverflow.com/questions/1902195/is-it-possible-to-hide-or-lower-access-to-inherited-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implementing multiple interfaces having same method</td><td>5</td><td>16</td><td>23390</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17484325/implementing-multiple-interfaces-having-same-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: design interface to force implementations to override toString</td><td>2</td><td>16</td><td>5033</td><td>2013-09-19</td><td><a href="https://stackoverflow.com/questions/10054403/java-design-interface-to-force-implementations-to-override-tostring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Function overriding in Java vs C++</td><td>2</td><td>16</td><td>3334</td><td>2015-06-17</td><td><a href="https://stackoverflow.com/questions/30883519/function-overriding-in-java-vs-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Issue overriding application properties in Spring-boot (profile-specific) application launched with PropertiesLauncher</td><td>1</td><td>16</td><td>13175</td><td>2016-07-31</td><td><a href="https://stackoverflow.com/questions/26662381/issue-overriding-application-properties-in-spring-boot-profile-specific-applic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Override class in java</td><td>1</td><td>16</td><td>11571</td><td>2013-01-05</td><td><a href="https://stackoverflow.com/questions/14168314/override-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The method onClick(View) of type oddg must override a superclass method?</td><td>7</td><td>15</td><td>19674</td><td>2014-10-04</td><td><a href="https://stackoverflow.com/questions/5776126/the-method-onclickview-of-type-oddg-must-override-a-superclass-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to override the (final) equals method in java enums?</td><td>4</td><td>15</td><td>12910</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3564139/how-to-override-the-final-equals-method-in-java-enums" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In java, Can we override a method by passing subclass of the parameter used in super class method?</td><td>7</td><td>15</td><td>20703</td><td>2016-05-22</td><td><a href="https://stackoverflow.com/questions/31820828/in-java-can-we-override-a-method-by-passing-subclass-of-the-parameter-used-in-s" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

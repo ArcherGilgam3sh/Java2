@@ -1,0 +1,612 @@
+Tag,Question ID,Title,Creation Date,Answer Count,View Count,Score
+java;spring-boot;spring-data-jpa,77738570,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman java springboot,1704009465,0,21,0
+java;properties;resourcebundle,77738766,Why is this a MIssingResourceException?,1704016100,0,14,-2
+java;android;gradle,24098494,&#39;:app:lintVitalRelease&#39; error when generating signed apk,1402153082,28,218718,277
+java;burp,67360622,Burp Suite SSL ERROR HANDSHAKE FAILURE ALERT OR ERR SSL PROTOCOL ERROR,1619985615,2,2252,3
+java;imagej;fiji,77719356,Error message after using train+ predict in Noise2Void,1703630500,0,18,0
+java;inheritance;classcastexception,25326534,Why a ClassCastException but not a compilation error?,1408106253,4,1472,6
+java;spring-boot;hibernate;exception;jdbc,77737918,org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column &quot;STOCK&quot; Error,1703984995,0,14,0
+java;docker;maven;jib,77734564,Jib Maven Plugin Error: &quot;Missing target image parameter&quot; When Building Docker Image,1703898916,0,20,0
+java;docker,77737055,Docker logs exception on docer desktop. Exception in thread &quot;main&quot; java.util.NoSuchElementException,1703962023,1,29,-3
+java;selenium-webdriver;staleelementreferenceexception,77703649,StaleElementException while iterating over list of web elements,1703248099,0,28,-1
+java;spring;docker;lombok,77736789,Compiling error with LOG field from @Slf4j Lombok when compiling inside docker,1703956549,0,44,-3
+java;exception,43672300,what does it mean -&gt; public static void main(String[] args) throws IOException,1493355733,4,19680,-3
+java;beanshell;sailpoint,77727341,Getting below error while aggregating the groups from delimited file,1703772329,1,47,0
+java;spring;spring-boot;multipart,77736372,Why does getFile() in org.springframework.core.io.AbstractResource throw an exception?,1703949311,2,46,0
+java;android;android-studio;twilio,77736927,shows error 31008 while doing client to client call in Twilio,1703959457,0,23,0
+java;unit-testing;junit;junit5,77736875,StackOverFlow error when I try to mock ArrayList,1703958277,0,30,-1
+java;kotlin;gradle;xmlnode,76988533,java.lang.NoClassDefFoundError: io/mockk/proxy/jvm/advice/jvm/JvmMockKProxyInterceptor ERROR while mocking org.w3c.dom.Node using mockk,1693162969,2,138,1
+java;android-intent;notifications;alarmmanager;android-anr-dialog,77734466,Context.startForegroundService() did not then call Service.startForeground() error on scheduled AlarmClockInfo while existing Service already,1703895846,1,10,0
+java;netbeans;combobox;hashmap,77736654,How do I fix an error - throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);,1703954329,0,27,-5
+java;eclipse;file;exception,77736379,Why FileNotFoundException,1703949512,0,50,-3
+java;csv;randomaccessfile,77735645,Error when changing value in csv file using random access file,1703933293,1,33,0
+java;android;sql,77726539,Unable to connect to local server facing Network error IOException: connect failed: ETIMEDOUT (Connection timed out),1703762162,0,45,-1
+java;android;android-fragments;android-intent,77732202,Even though I didn&#39;t send any data via intent I get this error: FAILED BINDER TRANSACTION,1703856059,1,28,0
+java,77736132,"JAVAFX, FXML java.lang.reflect.InvocationTargetException",1703944415,0,20,-3
+java;mongodb;morphia,77735950,An error occurred when creating a datastore instance using Morphia,1703940236,1,28,-3
+java;database;sqlite,77735891,Getting java.sql.SQLException: SQLite JDBC internal error: rs.isOpen() on exec,1703939052,0,20,-5
+java;user-interface;helper,77735824,"A error saying (Syntax error on token &quot;.&quot;, @ expected after this token)",1703937160,0,14,-2
+java;intellij-idea,77731449,Intellij idea running build is failing with NoSuchMethodError: getTypographicFamilyName(),1703846100,0,25,-1
+java;sql;jpa;jdbc;procedure,77735065,Calling a sql function from java gives error,1703918260,0,45,0
+java;azure;maven;jackson;noclassdeffounderror,77733648,NoClassDefFoundError: com/fasterxml/jackson/databind/AnnotationIntrospector$XmlExtensions,1703877456,0,35,-3
+java;spring-boot;apache-spark;cassandra;spark-cassandra-connector,55494154,How to fix org.apache.spark.SparkException: Job aborted due to stage failure Task &amp; com.datastax.spark.connector.rdd.partitioner.CassandraPartition,1554291170,1,13010,2
+java;postgresql;hibernate;wildfly;entitymanager,40561414,Getting a nullpointerexception for my EntityManager,1478942658,2,12247,5
+java;rest;loopbackjs;strongloop,27553708,HTTP/1.1 422 Unprocessable Entity Error when sending data to LoopBack from Java client,1418928861,1,8272,4
+java;log4j2,77721145,How can I log all &quot;Caused by&quot; exceptions with log4j2 (json)?,1703670275,2,69,1
+java;oracle;mybatis,77733919,Java MyBatis Call a custom function in mapper to get secure information receive Error Oracle ORA-00904,1703881899,1,33,1
+java;derby;javadb,71541745,I keep getting this error messages when try to use javadb,1647721229,2,8460,0
+java;xml;web-services;soap,32176763,Couldn&#39;t create SOAP message due to exception: Unable to create StAX reader or writer at com.sun.xml.internal.ws.encoding.SOAPBindingCodec.decode,1440401834,1,13333,1
+java;hibernate;validation;maven;hibernate-validator,24386771,javax.validation.ValidationException: HV000183: Unable to load &#39;javax.el.ExpressionFactory&#39;,1403613247,16,165501,137
+java;eclipse;unit-testing;junit;noclassdeffounderror,4228047,java.lang.NoClassDefFoundError in junit,1290190214,18,208566,91
+java;csv;parsing;java.util.scanner;indexoutofboundsexception,77732809,Strange error when trying to parse large TSV file in Java,1703864910,1,34,-2
+java;android;beanshell,77733275,"Beanshell syntax parsing error (lambdas, returns...)",1703871497,0,8,-1
+java;spring;spring-boot;spring-mvc,77732979,ERROR: No primary or single unique constructor found for class [Ldsawmain.entity.vo.TagVO;,1703867247,0,31,0
+java;android;gradle,72184143,Caused by: java.util.zip.ZipException: zip END header not found,1652176187,1,16059,0
+java;eclipse;maven,72837802,Eclipse maven exception java.lang.ExceptionInInitializerError: Cannot access defaults field of Properties [in thread &quot;Worker-27: Building&quot;],1656752503,2,6348,1
+java;spring-boot;rest;maven;junit,77731274,Error while trying to return a list of objects from a rest api,1703843560,1,43,1
+java;kotlin;concurrency;locking;concurrentmodificationexception,77730911,ConcurrentModificationException on a object wrapped with lock,1703837840,2,64,0
+java;javafx;javafx-8;observablelist,32026419,JavaFX pane.getChildren().remove(child) throws IllegalArgumentException,1439653698,1,11490,0
+java;hibernate;apache-axis,20822976,"The client to invoke an error is as follows:org.xml.sax.SAXException: SimpleDeserializer encountered a child element, which is NOT expected",1388301265,1,9387,0
+java;android;gradle;android-gradle-plugin;android-multidex,77731876,"I am not able to build the apk file of the project, whenever I try to build I get thi error. dexBuilderDebug FAILED",1703851368,1,30,0
+java;spring,39209450,i have this error java.lang.NoSuchMethodError,1472483089,3,8310,0
+java;spring-boot;docker,77725624,Getting error while integrating docker-java api,1703749890,0,25,-1
+java;chronicle-queue,77722653,Re-opening a chronicle queue results in exception,1703690053,1,16,-1
+java;serialization;java-io;objectinputstream;objectoutputstream,77730454,ObjectInputStream constructor gives StreamCorruptedException: invalid stream header: EFBFBDEF,1703829327,0,28,0
+java;gradle;intellij-idea;intellij-13,57216444,How to solve Error: Invalid or corrupt jarfile,1564131095,1,20462,2
+java;docker;docker-compose;keycloak;keycloak-rest-api,77731509,Keycloak admin client always gives 401 Unauthorized exception,1703846971,0,27,0
+java;exception;ioexception,77731145,Java error compilation while using checked exception,1703841681,1,27,0
+java;jboss,10025763,Jboss - java.net.SocketException: Too many open files,1333616956,3,10098,3
+java;sql;database;postgresql;hibernate,77730817,Java: PostgreSQL Hibernate ERROR: INSERT has more expressions than target columns,1703836266,1,52,-1
+java;spring;maven;swagger,77730826,java.lang.NoSuchMethodError: &#39;boolean io.swagger.v3.oas.models.media.Schema.getExampleSetFlag()&#39;,1703836480,0,19,-1
+java;parquet;apache-arrow,77730451,java.lang.NoSuchFieldError: chunkSize is visible when trying to run sample program of Apache Arrow,1703829253,0,18,0
+java;spring;hibernate;mongodb;jpa,25821579,TransactionRequiredException Executing an update/delete query,1410598989,27,365280,134
+java;http;tomcat,76571738,org.apache.coyote. CloseNowException: Failed write,1687943927,0,194,1
+java;flyway,77729997,"When upgrade springboot from 2.7.2 to 3.1.2, we met below errors",1703816895,1,24,0
+java;hibernate;jdbc;oracle11g,15063657,"java.sql.SQLException: ORA-12505, TNS:listener does not currently know of SID given in connect descriptor",1361784083,1,10123,1
+java;reactjs;react-native;gradle;react-native-community,77729287,react native build issue on java version21 and android gradle 8.5 : Build failed with an exception,1703799585,1,29,-1
+java;gradle,77729682,"I&#39;m trying to compile a minecraft mod, but I&#39;m getting an error that I don&#39;t understand",1703807619,0,18,-2
+java;compiler-errors;cannot-find-symbol,25706216,What does a &quot;Cannot find symbol&quot; or &quot;Cannot resolve symbol&quot; error mean?,1410052328,18,1589549,538
+java;selenium;jenkins;selenium-webdriver;microsoft-edge,57393690,Using `new EdgeOptions()` is preferred to `DesiredCapabilities.edge()` error launching Remote Microsoft Edge browser through Jenkins and Selenium,1565178259,2,9486,0
+java;spring-boot;spring-mvc;jpa;spring-data-jpa,77728843,Error Creating Bean: Post processing of merged bean definition filed,1703792371,0,18,0
+java;selenium-webdriver,77681024,Selenium 4.11.0 error - The path to the driver executable must be set by the webdriver.chrome.driver system property,1702923621,1,144,1
+java;json;jackson;objectmapper,42621547,Jackson error &quot;Illegal character... only regular white space allowed&quot; when parsing JSON,1488791382,8,59878,26
+java;maven;cloud-foundry;sap-business-technology-platform,77727530,cf push failed due to java runtime version error,1703774539,0,21,0
+java;regex;jersey;openapi;swagger-editor,76435041,OpenAPI 3 Validation Error : should match format &quot;regex&quot;,1686251663,1,894,1
+java;json;android-studio;junit;libgdx,77728077,Duplicate class error using com.googlecode.json-simple without disabling junit,1703781337,0,10,-1
+java;spring-boot;build;jar,77723065,java jar no active profile set so java auto inactive error,1703695606,1,33,0
+java;twitter;oauth-2.0;twitter-oauth;twitter-api-v2,77713165,Forbidden error message using Twitter API,1703496455,0,34,-1
+java;spring-boot;multi-tenant;spring-boot-3;hibernate-6.x,77434924,CannotCreateTransactionException in Multi-Tenant Spring Boot App After Upgrading to Spring Boot 3 and Hibernate 6,1699317041,0,141,0
+java;eclipse;yaml;metadata,62304206,Eclipse - YAML error : Expected a &#39;String&#39; but got a &#39;Mapping&#39; node,1591793967,1,7025,3
+java;xml;validation;xsd-1.1,77722844,Error validating XML with XSD version 1.1 with Xerces,1703692783,1,84,0
+java,77727371,java.io.EOFException: null,1703772721,0,51,0
+java;spring-boot;hibernate-validator;customvalidator,77724410,spring boot validator doesnt return custom error message,1703719400,1,45,0
+java;spring;hibernate,23314894,org.hibernate.HibernateException: No Session found for current thread 5,1398536738,2,13758,3
+java;android;kotlin;android-studio;ktorm,77727165,Android Application using Ktorm should be a correct implementation but gets a ClassNotFoundException,1703769949,0,13,-1
+java;eclipse;maven;access-denied,23986331,Maven Shading Error: Access is Denied,1401673657,6,15771,6
+java;thymeleaf,49398215,"Error resolving template &quot;~{fragments/header&quot;, template might not exist or might not be accessible by any of the configured Template Resolvers",1521606610,2,4424,7
+java;amazon-s3;aws-sdk-java-2.0,68757161,S3Exception: The request signature we calculated does not match the signature you provided,1628769860,2,18820,1
+java;constructor;field;final,77726488,Initializing a final field in a constructor using Class.this.field = value gives an error whereas using this.field = value doesn&#39;t,1703761460,1,40,2
+java;visual-studio-code,45743779,Visual Studio Code - Java - Import Errors and More,1502999097,12,154532,105
+java;protocol-buffers;software-design,77726340,Optional field in proto file causing error,1703759586,0,17,-2
+java;spring-boot;gradle,76020696,"On resolving build.gradle file with org.springframework.boot plugin, PermittedSubclasses requires ASM9 error shown",1681539900,1,1414,0
+java;spring-boot;google-cloud-vertex-ai;google-gemini;gemini-ai,77717061,Google Gemini API error: &quot;The response is blocked due to safety reason.&quot; although I set the harm block threshold to BLOCK_NONE,1703590984,1,100,0
+java;spring-boot;maven;checkstyle,77725757,"There is no hyperlinks in checkstyle errors after I run mvn clean package, I just can see plain text and can&#39;t click it to go to the code",1703751914,0,9,0
+java;web-services,7479739,java.security.PrivilegedActionException while hitting webservices over https,1316488928,1,9954,6
+java;spring-boot;annotations;project-reactor,56791929,Multiple annotation aspects interacting with reactor core chain cause IllegalStateException in method invocation,1561641454,0,815,2
+java;oracle;hibernate;procedure,77720869,Hibernate org.hibernate.TransientObjectException: object references an unsaved transient instance,1703666800,1,34,0
+java;modbus;rxtx,62427431,J2mod :I/O Exception- Failed to Read,1592391613,0,819,0
+java;postgresql;io,17285340,PostgreSQL Exception: &quot;An I/O error occured while sending to the backend&quot;,1372108891,12,163431,34
+java;arraylist,77725221,"Adding int[] matrix into ArrayList in Java, but got an error",1703742793,1,36,1
+java;microsoft-graph-api,75899293,Azure Identity =&gt; ERROR in getToken() call with microsoft-graph,1680270508,2,1387,0
+java;eclipse;gradle;minecraft;minecraft-forge,69998825,I&#39;m making a Minecraft Mod and I get the error &quot;mods.toml missing metadata for modid mymod&quot;,1637122166,2,13149,1
+java;spring;oracle;jpa,77724969,how to resolve Spring boot Oracle Connection Error,1703736031,0,49,-1
+java;gradle,72304659,java.lang.IncompatibleClassChangeError at DotenvPropertyLoader.java:11,1652963701,1,179,0
+java;mysql;spring;hibernate;jpa,77724835,Hibernate Jpa Error: &quot;java.sql.SQLSyntaxErrorException: Table doesn&#39;t exist&quot;,1703732211,1,28,0
+java;email;smtp,11203050,SMTPAddressFailedException: 550-Verification failed,1340697622,1,9844,1
+java;maven;netbeans,77722896,Error in java project with maven Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.1.0:exec (default-cli) on project SistemaVentasBrensKi,1703693320,0,24,0
+java;powershell;fabric;minecraft-fabric,77724271,Minecraft Fabric server error. sun.security.validator.ValidatorException,1703716518,0,45,0
+java;gradlew,77724243,Why is gradle telling me &quot;error: release version 8 not supported&quot;?,1703715986,1,19,0
+java;pdfbox;apache-commons-io,77721160,Minimal JRE gets PDFBOX 3.0.1 Loader Exception - What Module is Missing,1703670442,1,32,1
+java;regex,33272062,In Java what is a dangling meta character and how do I correct this error?,1445477888,2,1610,-2
+java;spring;spring-boot;spring-mvc;enums,77723947,Add custom validation annotation for Enum doesn&#39;t work because of HttpMessageNotReadableException,1703710080,0,14,-1
+java;jsp,2322031,Why did Servlet.service() for servlet jsp throw this exception?,1266961933,6,310986,32
+java;spring-boot;apache-camel;spring-camel;spring-boot-3,77722837,Getting error when starting to use spring boot 3 in my project that uses camel,1703692711,0,18,0
+java;spring;cassandra;datastax-java-driver;spring-data-cassandra,77722662,Cassandra Connection Error [com.datastax.oss.driver.api.core.AllNodesFailedException:],1703690136,0,27,0
+java;compiler-errors;compilation,77722452,Relative to java (Error while importing scanner),1703687382,1,34,-2
+java;lambda;java-8;invokedynamic;methodhandle,27394032,BootstrapMethodError caused by LambdaConversionException caused by using MethodHandle::invokeExact as a method reference,1418190118,1,8030,5
+java;jetty,77717579,Encountering Class Not Found Exception Error After Upgrading Jetty,1703598329,1,40,1
+java;azure-web-app-service,77713310,How to resolve 200 Web App Error - Azure App Service?,1703499398,0,63,-3
+java,50226876,error in getting correct hours and minutes,1525759418,1,139,-2
+java;eclipse;error-handling,77721886,I am able to run Java projects in eclipse ide but not able to debug.While debugging it shows class not found error,1703680285,0,24,0
+java;mysql;spring-boot;docker;testcontainers,77652761,Testcontainers throws ContainerLaunchException for timeout on MySQL 8.2 startup (failed log-matching),1702463003,1,65,0
+java;spring;spring-boot;spring-mvc;spring-security,62486042,Error: connect ECONNREFUSED 127.0.0.1:8080 (Spring Framework),1592657470,3,13358,1
+java;aggregator,77310910,Spring Batch Tasklet for File Validation - Need Exception Handling,1697562122,0,70,0
+java;minecraft;minecraft-fabric,77716165,Minecraft Fabric API import errors,1703576267,0,32,0
+java;jar;classpath;executable-jar,250166,NoClassDefFoundError while trying to run my jar with java.exe -jar...what&#39;s wrong?,1225373213,8,161344,72
+java;session;ssh;connection;jsch,62796891,JSch connection issue: JSchException: Algorithm negotiation fail – Even with JCE installed,1594217811,2,9716,1
+java;error-handling;connection;rundeck;socket-timeout-exception,77721053,A stage in pipeline having java.net.SocketTimeoutException: timeout error for rundeck server connection with child server,1703669234,0,13,0
+java;kotlin;gradle;intellij-idea;tornadofx,77713888,error for lunshing a kotlin intellij application,1703512331,0,30,-1
+java;linux;crystal-reports;report,77720940,Getting error java.lang.AbstractMethodError on ReportClientDocument.open() call on Crystal Report 2016,1703667721,0,12,0
+java;xml;spring-boot;dom;soap,77712627,org.w3c.dom.DOMException: NAMESPACE_ERR: Migration from Java8 to Java17,1703483895,1,75,0
+java,2446426,What is the cause of an UnsatisfiedLinkError?,1268649478,4,52408,11
+java;android;google-play-console;android-wallpaper;wallpapermanager,77720233,Can&#39;t seem to locate the error in my app that Google&#39;s closed testing results show while reviewing my app for Play store,1703656031,0,19,0
+java;nosuchelementexception;apache-httpclient-5.x,77720037,CloseableHttpClient execute call results in NoSuchElementException,1703651116,0,28,1
+java;android-studio,77719806,Caused by: java.net.UnknownHostException: No such host is known (repo.maven.apache.org),1703644076,1,19,0
+java;jackson,77709907,Jackson Error &quot;no delegate- or property-based Creator&quot; on trying to use record after upgrading to 2.15.3,1703401988,1,44,-1
+java;android;qualcomm;quectel,77719758,"java.lang.IllegalStateException,Too many receivers, total of 1000",1703642515,0,41,-2
+java;spring;maven;spring-mvc,24746825,Setting property &#39;source&#39; to &#39;org.eclipse.jst.jee.server (404 Error),1405375676,1,13618,1
+java;spring-boot;hibernate;spring-data-jpa,77719286,Hibernate Core upgrade from version 6.1.7 to 6.2.2 causes DataIntegrityViolationException,1703628868,0,23,0
+java;spring-boot;jackson;deserialization;jackson2,44854799,InvalidDefinitionException while using JsonCreator with JsonProperty.Access.READ_ONLY,1498856659,1,11290,1
+java;spring-boot;couchbase;spring-data-couchbase,53764913,org.springframework.data.mapping.model.MappingInstantiationException: Failed to instantiate object with new boolean field,1544714234,3,2473,3
+java;tomcat;intellij-idea;catalina,61835957,Exception fixing &quot;docBase&quot; for context [/appName],1589628152,1,4717,2
+java;postgresql;spring-boot;docker;maven,77719031,"Running a springboot application in local works fine and I am able to access all the apis, but the docker image running is giving 404 error",1703623396,0,30,0
+java;maven;java-8;struts2;struts2-convention-plugin,77700289,Cannot load web page when running Struts2 v6.3.0.2 - ran java.lang.NoClassDefFoundError,1703189210,0,47,-1
+java;excel;eclipse;apache,43701326,CellType cannot be resolved to a variable setCellType error Apache POI - Java,1493507473,3,12334,2
+java;minecraft;minecraft-forge,77718742,error: &#39;{&#39; expected public static class TutorialMod.java{ AND error: &lt;identifier&gt; expected public TutorialMod.java() {,1703617126,0,45,-4
+java;android;flutter;dart;build,77718714,Flutter : Java error : duplicate class: io.flutter.plugins.GeneratedPluginRegistrant,1703616686,0,19,0
+java;spring-boot;spring-boot-actuator;spring-boot-3,77710370,Actuator endpoints returning 500 error after upgrade to spring boot 3,1703415080,0,54,0
+java;spring-boot;rest;nullpointerexception;sonarqube,68675995,try to fix SonarQube bug - A &quot;NullPointerException&quot; could be thrown,1628222650,2,5748,1
+java;spring;jpa;spring-data-jpa,77717784,JPA fetching list from the database showing error,1703601750,0,32,-2
+java;swing;netbeans,77717475,"Unable to import images, getting error Cannot invoke &quot;java.net.URL.toExternalForm()&quot; because &quot;location&quot; is null",1703596878,0,26,1
+java;flutter;websocket,77717752,HandshakeException: Handshake error in client (OS Error: WRONG_VERSION_NUMBER(tls_record.cc:231)),1703601210,0,13,0
+java;intellij-idea;crystal-reports,37110446,Getting error java.lang.AbstractMethodError on ReportClientDocument.open() call,1462780673,1,1153,1
+java;android;encryption,77717311,javax.crypto.AEADBadTagException: mac check in GCM failed issue facing in android while encrypting/decrypting,1703594641,0,49,0
+java;android-studio;google-maps,77717582,Getting error in Android Studio while using google maps api,1703598404,0,12,0
+java;spring;spring-boot;graalvm;graalvm-native-image,77709123,No such file or directory error on GraalVM,1703367331,1,32,0
+java;multithreading;concurrency,77716768,Thread - JDK0.1 - getting error when I check [this != currentThread()],1703586239,2,55,0
+java;pdfbox,77717421,PDFBox prints giant error and takes very long to create PDF,1703595963,0,22,0
+java;spring-boot;base64;ioexception,77717257,IOException -&gt; invalid stream header: FFD8FFE0,1703594049,0,42,-3
+java;maven;javafx;jar;jsoup,77716740,"Given a .jar file which is running into &quot; java.lang.NoClassDefFoundError: org/jsoup/Jsoup&quot;, how to include JSOUP, so that the .jar runs successfully?",1703585885,0,29,-1
+java;security;applet,20041092,User has denied the privileges to the code error during applet running,1384754367,1,10992,2
+java;android;file;nullpointerexception;google-play-console,77709688,NullPointerException using constructor of `File` class (only on Samsung A series devices) in my application,1703392603,1,102,-1
+java;spring;spring-boot;jpa;spring-data-jpa,77713194,JPA MappedSuperclass (generic) with error Named type [interface java.util.List] did not implement BasicType nor UserType,1703497170,0,37,-2
+java;android;intellij-idea;sdk,77710405,Switching IntelliJ Project from Java 8 to 11 gives compile error,1703415871,1,51,-2
+java;android;github;gradle-kotlin-dsl;jitpack,77716203,ERROR: No build artifacts found while publising library to android sdk to jitpack,1703576720,0,18,0
+java;amazon-web-services;apache-kafka;apache-flink;aws-msk,77716072,Timeout exception for node assignment. Call: describeTopics in Managed Apache flink application using Kafka as source,1703574613,0,21,0
+java;netbeans,77715840,Could not find or load main class Caused by: java.lang.ClassNotFoundException: Mire,1703569856,0,34,-1
+java;spring;spring-boot;spring-security,77715151,spring-boot:3.2.1 (spring-security-config:6.2.1) Upgrade Issue: Error Creating Bean &#39;springSecurityFilterChain&#39;,1703545141,1,190,0
+java;android;android-room;access-modifiers,72508332,Android Studio: &quot;attempting to assign weaker access privileges&quot; error on Room Database implementation,1654440532,10,9778,20
+java;reactjs;spring;spring-boot;okta-api,77430198,springboot x react - Okta OAuth2 (401 error API),1699264812,1,49,1
+java;apktool,77714798,How to fix APK-Multi-Tool java decompile error?,1703533431,0,34,-4
+java;exception;java.util.scanner;inputmismatchexception,77714503,"I get no runtime error using int, but get an error using double",1703525937,0,44,-1
+java;spring-boot;oauth-2.0;todoist,74966828,Spring OAuth2: Error when redirecting to the access_token from Todoist OAuth2,1672446905,0,273,0
+java;spring;spring-boot,77714464,SprinBoot Application-Factory method &#39;dataSource&#39; threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver,1703524807,0,39,-4
+java,36805374,Uncompilable source code - cannot find symbol error,1461372893,4,9467,0
+java;android,16807520,Getting buffer capacity error while trying to download image located by a URL,1369811067,1,512,0
+java;deployment;quarkus;heroku-cli;java-opts,77337621,heroku local web returns java.lang.ClassNotFoundException: \\$JAVA_OPTS for quarkus app,1697919016,0,136,0
+java;android;eclipse;networking;proxy,8818868,java.net.SocketException: Address family not supported by protocol in android emulator,1326283204,4,9617,6
+java;android;flutter,68896788,Flutter development - ERROR: JAVA_HOME is not set and no &#39;java&#39; command could be found in your PATH,1629740121,4,9370,3
+java;android;android-studio,77713778,Errors Android Studio MainActivity.java,1703510013,0,28,0
+java;selenium-webdriver;fluentwait,77343239,Selenium NoSuchElementException when waiting,1698044909,1,52,1
+java;slf4j,14148017,Log exception and parameters,1357250736,2,2057,2
+java;maven;jax-rs;java-ee-8;payara-micro,76917223,Java EE: Payara micro server not generating REST endpoints (404 error),1692221831,2,125,1
+java;php;ajax;tomcat;servlets,77712385,"Ajax call to Servlet: Error occurred during initialization of VM,Failed to mark memory page as executable - check if grsecurity/PaX is enabled",1703474905,0,24,-1
+java;minecraft;minecraft-fabric,77664897,Rendering minecraft fabric error: cannot find symbol,1702626427,1,35,0
+java;spring;upload;spring-webflux;multipart,77712720,"spring webflux multipart file uplad error,Could not find first boundary",1703486383,0,29,0
+java;selenium-webdriver;jmeter;selenium-chromedriver;jmeter-plugins,77712515,WebDriver returns error 500 in Jmeter Selenium,1703480238,2,40,0
+java;gradle;minecraft;gradlew;minecraft-fabric,77712801,error: package net.fabricmc.fabric.api.client.command.v2 does not exist import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;,1703488866,0,23,0
+java;android;android-studio;gradle;aapt,63997710,Android Studio - AAPT: error: file failed to compile with PNG images,1600711451,9,20696,12
+java;xml;web-services;soap;domparser,18734576,org.xmlGetting exception while parsing XML.sax.SAXParseException: The content of elements must consist of well-formed character data or markup,1378882562,1,10070,0
+java;sockets,13691966,SocketException: Permission denied: connect,1354569869,5,30554,6
+java;pdfbox,71063120,PDFBox 2.0.25 java.io.IOException: Unknown dir object c=&#39;&gt;&#39; cInt=62 peek=&#39;&gt;&#39; peekInt=62 at offset 26096 (start offset: 26096),1644487493,2,917,1
+java;hibernate;glassfish-4,18149339,Hibernate: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.spi.CacheImplementor],1376059190,1,12435,0
+java;spring-boot;microservices,46131196,com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server,1504963577,20,128929,47
+python;java;cmake;chromium-embedded,77421784,Chromium Embedded Framework - ModuleNotFoundError: No module named &#39;six.moves&#39;,1699096529,1,65,0
+java;android;android-studio;logcat,67286627,java.lang.NoClassDefFoundError: Failed resolution of: Landroidx/appcompat/app/AppCompatActivity;,1619539261,1,2438,1
+java;jakarta-ee;weblogic;classloader;weblogic-10.x,8761410,java.net.ConnectException: after adding weblogic-application.xml,1325868958,1,11240,2
+java;spring;spring-boot;maven;spring-data-jpa,77711280,Error creating bean with name &#39;entityManagerFactory&#39;: Property &#39;com.example.shopping.models.Account.orders&#39; is not a collection,1703436899,2,87,0
+java;maven;quarkus;quarkus-panache,77711256,Quarkus Arc: Unsatisfied dependency for PanacheRepository in CDI service - jakarta.enterprise.inject.spi.DeploymentException,1703436248,0,21,1
+java;spring-boot;netflix-eureka,77684538,how to solve netflix eureka client error in spring boot 3.2.0 and java 17,1702982092,1,176,0
+java;exception;error-handling;quarkus;quarkus-reactive,77709374,How to properly handle json to class-instance conversion errors in Quarkus,1703376862,1,37,0
+java;minecraft-forge,77706774,Forge1.20.4 - Error at blockState class in unClient,1703311644,1,51,-1
+java;sql;spring-data-jpa;postgis;hibernate-spatial,77710177,ERROR: function does not exist when invoking the function using spring-data repository method,1703410500,0,34,0
+java,75487327,java.time.temporal.UnsupportedTemporalTypeException: Unsupported unit: Seconds,1676653980,5,3251,3
+java;jsp;struts;apache-commons-beanutils,40756636,Error HTTP 500- javax.servlet.ServletException: BeanUtils.populate: NullPointerException,1479878579,1,10167,1
+java,77709606,I can&#39;t run my java code in Eclipse because there is an error about loading/finding the main class,1703388160,0,50,0
+java;spring;postgresql,60824565,"PSQLException: The server requested password-based authentication, but no password was provided",1585020558,2,11968,2
+java;sql-server;exception,9759319,com.microsoft.sqlserver.jdbc.SQLServerException: The index 2 is out of range,1332082597,1,13558,3
+java;oracle;oracle-sqldeveloper;oracle-xe,77676486,ORA-17059 SQL Exception (Fixed),1702859854,0,39,0
+java;ssl;webservice-client,21245796,javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake during web service communicaiton,1390258344,21,623322,104
+java;ssl;tls1.2;tls1.3,72853449,TLSv1.3 - java.io.EOFException: SSL peer shut down incorrectly,1656921555,2,6349,2
+java;spring;hibernate;jpa;inheritance,77707628,JPA Repository with Inheritance - SQL Error: Column &#39;clazz_&#39; not found,1703334464,1,32,0
+java;sonarqube;sonarqube-scan,39753072,Sonarqube scan error with line out of range?,1475080442,12,23973,34
+java;visual-studio-code,77708754,getting a repeated error called Error: Could not find or load main class Array Caused by: java.lang.ClassNotFoundException: Array,1703358861,0,35,-2
+java;android,26453661,"Android java.lang.IndexOutOfBoundsException: Invalid index 1, size is 1",1413741719,3,3322,3
+java;android;android-gradle-plugin;retrofit,55118903,ERROR: Cannot add task &#39;clean&#39; as a task with that name already exists,1552385432,1,32187,25
+java;spring;spring-boot;upgrade,71604411,Running into an error after upgrading springboot from 2.3.9 to 2.6.3,1648132482,1,2779,14
+java;maven;lombok,77703536,Error executing Maven for Lombok with Java 17,1703246737,2,75,0
+java;fortify,12898142,How to avoid false positive &quot;Null Dereference&quot; error in Fortify,1350312453,2,16996,6
+java;spring;spring-mvc;spring-security;openid,20401795,Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener,1386251591,1,56545,1
+java;oracle;servlets;weblogic,11266049,BeanAlreadyExistsException - Oracle WebLogic,1340989700,4,18439,5
+java;android;android-studio;java-native-interface;androidpdfviewer,73408557,"Android: Trying to compile native code, getting UnsatisfiedLinkError: No implementation found",1660851333,1,904,1
+java;sql-server;jdbc;sql-server-2014;mssql-jdbc,77706769,Why do I get errors connecting to SQL Server in NetBeans 19,1703311485,0,34,-1
+java;runtime-error;program-entry-point;nosuchmethoderror,5407250,"&quot;Error: Main method not found in class MyClass, please define the main method as...&quot;",1300892548,11,225699,66
+java;inputstream;parquet,77699903,IOException Unexpected end of stream when trying to read Parquet file from URI as inputstream,1703183708,0,43,-3
+java;spring;spring-boot;email;mail-sender,67061302,Spring boot JavaMailSender NullPointException sending email does not work,1618241765,2,2135,1
+java;spring;postman,72799167,Postman is giving me error &quot;Error: read ECONNRESET&quot;,1656495620,1,20163,1
+java;spring;javabeans;autowired;circular-dependency,49148529,BeanCurrentlyInCreationException when @Autowired and @Bean are present in same class,1520415423,2,13255,6
+java;rest;httpclient;apache-httpclient-4.x,77705632,Apache HttpClient receiving error to a multipart Restful call that others succeed,1703275955,0,27,-2
+java;mockito;matcher,77705247,Using Mockito argThat in a loop results in NullPointerException,1703269333,2,45,0
+java;selenium-webdriver;cucumber;cucumber-java;serenity-bdd,77705315,Error: Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver but we use chrome,1703270347,0,31,0
+java;spring-boot;maven;dependencies,77694710,FileSystemNotFoundException on dependency with spring boot 3.2,1703109678,1,52,0
+java;micronaut;testcontainers;testcontainers-junit5,77352776,org.testcontainers.ext.ScriptUtils$ScriptLoadException: Could not load classpath init script with Micronaut project using Test-Resources,1698156016,1,163,0
+java;postgresql;jdbc;hikaricp,77704661,"Execution time of PostgreSQL `copyIn()` is prolonged, and it results in an error",1703261090,0,40,0
+java;spring;hibernate;jpa,77700674,NullPointerException in Hibernate Query: &quot;org.hibernate.sql.ast.spi.SqlAstProcessingState.getSqlExpressionResolver()&quot; is null,1703194906,1,32,-1
+java;exception;intellij-idea,77703655,InteliJ IDEA gives Illegal State Exception,1703248156,0,41,-1
+java;spring;oracle;hibernate;exception,77702858,org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement with oracle,1703238203,1,43,-1
+java;checkstyle;maven-checkstyle-plugin,77703198,Maven Checkstyle error trying to running custom rules in Java project,1703242161,1,34,1
+java;mysql;tomcat;grails;mysql-connector,77700258,"java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed exception, on Grails5 only when default dataSource used",1703188585,0,65,1
+java;ssl;weblogic12c,77203886,WebLogic Server fails to make secured connection to the Target URL with SSLHandshake exception,1696009487,1,36,0
+java;eclipse;windowbuilder;cardlayout,77702930,Execution errors when opening the design tab of my MainFrame on Eclipse,1703239107,0,23,1
+java;ssl,77701793,What is the reason for &quot;java.io.IOException: Integrity check failed: java.security.NoSuchAlgorithmException: Algorithm HmacPBESHA256 not available&quot;,1703221969,1,39,0
+java;arrays;json,43393706,if else inside a for loop iterating over a json array with custom exception in else block,1492090320,1,288,0
+java;spring-boot;hibernate;spring-data-jpa;spring-data,77208930,java-ClassCastException: class org.hibernate.metamodel.model.domain.internal.EntityTypeImpl cannot be cast to class org.hibernate.query.OutputableType,1696123307,1,287,0
+java;gradle;checkstyle,70188304,Unable to process files error in gradle checkstyle,1638378096,1,1216,7
+java;class;classpath;classnotfoundexception,17408769,How do I resolve ClassNotFoundException?,1372694338,30,1033750,164
+java;android;firebase;flutter;firebase-authentication,66857881,"Unhandled Exception: PlatformException (sign_in_failed, com.google.android.gms.common.api.ApiException: 10: , null, null) - works well in one system",1617034989,3,15166,5
+java;spring-boot;spring-data-jpa;spring-data;java-21,77701921,"ClassCastException on Casting Object to a Map with Spring Boot 3.2 and Java 21,",1703224745,0,55,-1
+java;json;xml;azure-functions;azure-storage-queues,77698839,Azure Storage Queue in Java - Exception: JsonParseException: Unexpected character (&#39;&lt;&#39; (code 60)),1703171198,0,54,0
+java;azure;spring-cloud-config-server;azure-spring-cloud;spring-cloud-config-client,77697706,Azure Deployment Failing with HttpServerErrorException for my Spring App,1703158613,1,69,0
+java;selenium-webdriver;intellij-idea;testng,77700081,How to resolve socket exception in automation testing,1703185995,0,21,-3
+java;hibernate;jpa,25018893,DuplicateMappingException represented by different logical column names,1406646955,1,10503,4
+java;spring-boot;rabbitmq;amqp,55189827,java.lang.IllegalArgumentException when publishing a message with RabbitTemplate,1552679615,4,10979,9
+java;rest;rest-assured,51763857,Getting SSL error in rest assured,1533808163,2,3752,6
+java;selenium;cucumber,70418116,java.lang.NoSuchMethodError: &#39;void org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.constructAppearances()&#39;,1639981840,2,443,0
+java;spring;spring-mvc;dependency-injection;spring-data-jpa,51530140,UnsatisfiedDependencyException : Error creating bean with name &#39;HController&#39; caused by NoSuchBeanDefinitionException:,1532572164,2,9910,1
+java;eclipse;error-handling,77700363,Error occurred during initialization of boot layer java.lang.LayerInstantiationException,1703190128,0,20,-1
+java;spring;spring-boot;eclipse;intellij-idea,77699715,Spring Boot Project Migration from IntelliJ to Eclipse Results in JpaRepository and MongoRepository Interface Errors,1703181075,0,24,-1
+java;linux;ubuntu;host;ngrok,77699540,ngrok gives an error that java does not see,1703178865,0,13,-2
+java;azure-devops;azure-pipelines;playwright;playwright-java,77686539,"Not able to run scripts on Azure ADO pipeline getting failed to create driver exception on local it is working fine, issue on pipeline only",1703002502,0,45,0
+java;spring-boot;spring-data-jpa;sts,77492052,"Upgraded spring boot 4.20.1,getting error in problems tab for spring boot type category",1700103683,1,200,2
+java;docker;maven;continuous-integration;gitlab-ci,77697616,Fatal error compiling: error: release version 17 not supported. What is causing it?,1703157671,0,32,0
+java;audio;ioexception,5529754,java.io.IOException: mark/reset not supported,1301835981,6,79563,89
+java;spring;spring-security;jwt,77694705,Spring Security ExceptionTranslationFilter does&#39;t handle thrown in custom filter exception,1703109556,2,59,-2
+java;eclipse;debugging;tomcat,77698607,Eclipse - FATAL ERROR in native method: processing of -javaagent failed,1703168700,0,40,0
+java;junit;certificate;intellij-14,77694848,Certificate error while running JUnit in Spring Java application in IntelliJ,1703112205,0,26,0
+java;spring;spring-boot,77698232,Using @AutoConfigureTestDatabase a `CommandAcceptanceException` occurs in the test,1703164743,0,50,0
+java;spring-jdbc;oracle12c,40220611,"Oracle 12c - getting SQL Error: 17410, SQLState: 08000",1477318162,2,33292,12
+java;selenium-webdriver;intellij-idea;noclassdeffounderror,70959285,IntelliJ - java.lang.NoClassDefFoundError: net/jodah/failsafe/Policy,1643819518,3,5243,2
+java;eclipse;spring;maven;spring-mvc,36568275,Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException,1460451407,1,16429,0
+java;vert.x;vertx-verticle;vertx-eventbus,77686463,"io.vertx.core.eventbus.ReplyException: Timed out after waiting 30000(ms) for a reply. address: __vertx.reply.1, repliedAddress: prizes",1703001617,0,19,1
+java;spring;spring-boot;spring-boot-actuator,66289094,Spring Boot Actuator not working- Whitelabel Error Page,1613806205,5,4577,5
+java;android;android-studio,67782975,How to fix the &#39;&#39;module java.base does not &quot;opens java.io&quot; to unnamed module &#39;&#39; error in Android Studio?,1622523804,29,388944,224
+java;apache-camel,48057403,How do I convert MultipartEntityBuilder to inputStream when exception message goes to the deadLetterChannel in camel?,1514879429,2,707,0
+java;android;android-studio;gradle;java-11,60474877,syncing : Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed error in syncing.... androidstudio 3.6.1,1583064092,11,50622,14
+java;c#;android;unity-game-engine,72623355,How to solve Android Resolver ERROR in Unity?,1655240758,1,374,1
+java;spring-boot;heroku,77695695,Why Heroku only returns code 500 for all errors?,1703131444,0,15,0
+java;optimization;obfuscation;proguard,2591602,Error: Can&#39;t find common super class of ,1270635981,4,14150,12
+java;scala;akka;proguard,62778789,Proguard - java.lang.IllegalArgumentException: Can&#39;t find common super class of,1594135948,2,1152,1
+java;spring-boot;liquibase;flyway,77638743,Does Liquibase have a similar option to Flyway`s clean-on-validation-error,1702288658,1,62,1
+java;spring;smtp;jakarta-mail;spring-boot-starter,77679815,"springboot javaMailSender SMTP connection error: Couldn&#39;t connect to host, port: localhost, 25; timeout -1;",1702910282,1,46,0
+java;spring;hibernate;exception,77695398,java.lang.IllegalAccessException--&gt;module java.base does not open java.lang to unnamed module @1af2d44a,1703124418,0,45,0
+java;scala;docker;apache-spark;kubernetes,67617032,Spark Kubernetes - FileNotFoundException when copying config files from driver to executors using --files or spark.files,1621500572,2,1190,3
+java;spring;spring-mvc;configuration,19513947,exception sending context initialized event to listener instance of class,1382433991,1,27174,0
+java;hibernate;quarkus;nosuchmethoderror;jakarta-migration,77682920,hibernate validator failed to build due to java.lang.NoSuchMethodError,1702960031,1,48,1
+java;jdbc;mysql-connector,77694444,java.sql.SQLException: No suitable driver found for jbdc://localhost:3306/rede_hoteis,1703105968,1,19,0
+java;maven;javafx;mysql-connector;gluon,77680984,Can&#39;t find bundle for base name com.mysql.cj.LocalizedErrorMessages locale pt_BR,1702923189,0,46,1
+java;maven;ubuntu;snappy,73985967,Xerial SnappyError: pure-java snappy requires access to java.nio.Buffer raw address field,1665139415,0,734,2
+java;android;android-fragments,77693752,NullPointerException while calling setText method in fragment,1703096986,1,54,0
+java;sql-server;hibernate;spring-data-jpa,77694278,Springframework SQLServerException: Invalid object name (database table name),1703103848,0,30,0
+java;exception;javafx;invocationtargetexception,77681021,(JavaFX) Exception in Application start method java.lang.reflect.InvocationTargetException,1702923599,1,71,1
+java;eclipse;maven;tomcat7,26439055,Eclipse Dynamic Web Project with maven is throwing error on mvn tomcat7:run,1413630273,2,4391,4
+java;hibernate;wildfly;hibernate-mapping;hibernate-envers,77694325,Hibernate 6.2 envers classcastexception BasicValue to Component,1703104565,0,27,0
+java;jsp;e-commerce;registration;createuser,72081959,HTTP Status 500 - Error instantiating servlet class in user registration,1651460328,2,2788,0
+java;xml;configuration;struts2,21184476,Exception starting filter action - unable to load configuration - java.net.UnknownHostException: struts.apache.org,1389957003,1,1557,0
+java;spring;maven;struts2;dependency-management,35225905,Bean already registered - struts2-core dependency error,1454680387,1,1101,0
+java;tomcat;struts2,35887897,NoSuchMethodError: ConfigurationManager.addConfigurationProvider while deploying Struts 2 application on Apache Tomcat 8,1457516440,4,2103,0
+java;logging;logback;appender,77692815,Appender with filter &quot;ERROR&quot; and logger with level &quot;INFO&quot; print DEBUG log. How to avoid it?,1703086941,0,22,0
+java;spring-boot;heroku;heroku-cli,77689344,How do I fix an error on Heroku deploy build,1703049388,1,24,0
+java;serial-port;unsatisfiedlinkerror,77620878,java.lang.UnsatisfiedLinkError: no jSerialComm in java.library.path,1701959884,1,69,-1
+java;spring-mvc;jmeter,45950805,org.apache.http.TruncatedChunkException,1504058664,1,12908,1
+java;oracle;open-liberty,77690991,ClassCastException inserting data with Oracle XSU in OpenLiberty,1703069603,1,68,2
+java;desktop;coverity;synopsys-vcs,77690111,ERROR while coverity scan : No snapshot in stream has analysis summaries,1703060332,1,15,1
+java;jdbc;exe4j,76988356,How to solve &quot;java.lang.ClassNotFoundException: java.sql.SQLException&quot; after converting to .exe,1693159278,1,136,0
+java;mysql;jdbc,77692057,How to fix error &quot;column count doesn&#39;t match value count at row 1&quot;,1703080006,0,31,-2
+javascript;java;spring-boot;vuejs3,77691110,Spring Boot always throws 403 and CORS policy error,1703070700,2,39,1
+java;apache-spark;pyspark,72582913,Buffer/Capacity error saving dataframe as parquet in Spark,1654937238,2,1950,1
+java;jenkins,77648042,Why is my jenkins agent logging a fatal error but staying connected - illegal byte sequence error,1702402613,1,192,0
+java;spring-boot;swagger-ui;openapi;springdoc-openapi-ui,75394601,Cannot open swagger-ui with the usage of Openapi in Spring Boot 3 (Whitelabel Error Page),1675920974,1,2198,2
+java;selenium-webdriver;selenium-chromedriver;edgedriver,77691470,SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start,1703074117,0,36,0
+java;xml;spring-boot;spring-jdbc;namedparameterjdbctemplate,77690925,springframework.dao.InvalidDataAccessApiUsageException: No value supplied for the SQL parameter &#39;key]&#39;: No value registered for key &#39;key]&#39;,1703068998,0,28,0
+java;bash;maven;intellij-idea;makefile,77687356,"mvn in bash works, but IntelliJ yields &quot;error: release version 17 not supported&quot;",1703011565,1,47,0
+java;selenium-webdriver;exception;microsoft-edge;ui-automation,77690765,WebDriverException: Unknown Error - First element in result.deepSerializedValue.value list must contain a string,1703067506,0,87,0
+java;mysql;jdbc;mysql-connector,77643817,java.sql.SQLException: No suitbale driver found for jdbc:mysql://localhost:3306/exambledb,1702358048,0,55,0
+java;selenium-webdriver;cucumber-java,77674434,When i execute Test Runner class getting error &quot;cannot invoke FindElement() method,1702816910,1,37,-1
+java;spring-boot;spring-security;jwt,77690440,spring security handle exception throws from filter,1703064361,0,30,0
+java;spring-boot;microservices;spring-cloud,72569019,java.net.UnknownHostException: Failed to resolve &#39;inventory-service&#39; after 4 queries in Spring Boot and Cloud,1654834241,4,17567,3
+java;file-upload;apache-commons-fileupload,12198511,why this exception FileItemStream$ItemSkippedException?,1346334833,3,3613,8
+java;exception,77689286,Fatal Exception: java.lang.IllegalArgumentException: Argument to unpark() was not a Thread,1703048216,0,15,0
+java;oracle,77689408,ExitException: Unable to load resource: http://[host]:[port]/OA_JAVA/oracle/apps/fnd/jar/fndforms.jar,1703050479,0,36,0
+java,77689134,"When sending requests using the Undertow server and Spring framework, occasional error messages may appear:Wrap requestBody failed",1703044330,0,9,0
+java;android;flutter;kotlin,66305553,&quot;error: cannot find symbol&quot; when building for Android in flutter,1613931390,13,25396,19
+java;android;retrofit;okhttp,77687740,I am getting null pointer exception on HttpCookie but not sure why?,1703016459,1,41,0
+java;maven;javafx,77688780,"&quot;Error: JavaFX runtime components are missing, and are required to run this application&quot; in maven application",1703035261,0,42,0
+java;postgresql;spring-boot;hibernate,77651661,"Spring Boot, JDBC: ERROR: column &quot;date&quot; cannot be cast automatically to type timestamp without time zone",1702451275,0,54,-1
+java;spring-boot;jpa;spring-data-jpa;spring-data,77669353,java.sql.SQLRecoverableException: No more data to read from socket when working with 2 mapped tables,1702685060,2,61,1
+java;java-8;xml-parsing;jaxb;saxparser,77682663,JAXB + SAX + Open JDK 8 Getting Connection Reset by Client Exception,1702952999,1,37,0
+java;spring-boot;open-telemetry;micrometer-tracing;observability,77552544,Exception in observability stack after upgrading Spring Boot from 3.1.3 to 3.2.0 using opentelemetry-java,1701016414,1,305,3
+java;javafx;graphics;illegalargumentexception;javafx-css,77687691,JavaFX in Eclipse Helios: IllegalArgumentException (Css2Bin.java:40),1703015716,0,24,-3
+java;groovy;webharvest,58461334,how to fix groovy.lang.MissingMethodException: No signature of method: java.util.ArrayList.get() is applicable for argument types: () values: [],1571468718,1,9802,2
+java;xml,77687141,How do I get list of validation errors from java XSD validation,1703008927,0,19,-1
+java;xml;validation;xerces;xsd-1.1,77656374,XSD Schema validation throws SAXParseException in java application using Xerces fails when there are external xsd&#39;s included in the Parent,1702499289,2,91,0
+java;apache-poi,77673386,java.lang.NoClassDefFoundError: org/apache/xmlbeans/impl/schema/DocumentFactory,1702790011,0,85,0
+java;spring;eclipse;spring-mvc,44644434,Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServlet,1497936123,2,11075,0
+java;apache-poi;powerpoint,77686799,Merge PowerPoint Slides using Apache POI XSLF: How to Resolve &#39;UnsupportedOperationException&#39; When Copying Shapes Between Slides?,1703005031,0,39,0
+java;aws-lambda;apache-commons-httpclient,77686513,LambdaClient - Run Time Exception: Connection pool shut down,1703002150,0,26,0
+java;spring;hibernate;java-17;hibernate-6.x,77684835,java.lang.NullPointerException: Cannot invoke &quot;org.hibernate.sql.results.graph.Initializer.asEntityInitializer()&quot; because &quot;initializer&quot; is null,1702985315,0,38,0
+java;hbase;hbasetestingutility,77544583,Running HBaseTestingUtil in non-test code fail with ClassNotFoundException: org.junit.Assert,1700844277,1,18,0
+java;selenium-webdriver;jenkins;automation,77686043,how to solve this driver error in jenkins?,1702997506,0,39,0
+java;android;imageview;fresco,77078147,Fresco java.lang.UnsatisfiedLinkError: dlopen failed: library &quot;libnative-imagetranscoder.so&quot; not found - Android Studio - Java,1694386392,2,156,0
+java;image;button;jbutton,77685808,I&#39;m trying to add an image to my Jbutton. The Code runs everytime with no error but the Image never appears,1702995137,0,23,-1
+java;eclipse;wsdl;axis,20901089,IWAB0399E Error in generating Java from WSDL: java.io.IOException: Type {http://www.w3.org/2001/XMLSchema}array is referenced but not defined,1388743585,2,12916,2
+java;rocketmq,77429261,RocketMQ V5.x Caused by: java.util.concurrent.CancellationException: Task was cancelled,1699254070,1,100,1
+java;openssl;ssl-certificate;java-stream;keytool,57313084,javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake,1564675784,1,8691,2
+java,42643963,MalformedUrlException unknown protocol classpath in Java,1488877090,3,15565,0
+java;maven;apache-spark;executable-jar;nats.io,77683727,Spark Java code that works fine in Eclipse IDE throws ClassNotFoundException while running the jar generated by maven,1702973733,1,42,1
+java;mockito;reactive;flux,77680014,Why do I have nullPointerException on collectList to a Flux,1702912407,0,42,-1
+java;oracle;plsql,36447240,Invalid SQL type: sqlKind = UNINITIALIZED error is shown,1459935645,5,47666,5
+java;amazon-ec2;websocket;jetty,77684815,WebSocket Connect Error &quot;reason=Failed to open local endpoint&quot;,1702985132,0,10,0
+java;eclipse;maven;m2eclipse,24743054,pom.xml shows multiple annotations errors in Eclipse,1405361569,2,8461,1
+java;android;android-studio;gradle,68728918,Error: Android Gradle plugin requires Java 11 to run. You are currently using Java 1.8. -&amp; Failed to apply plugin &#39;com.android.internal.application&#39;,1628606745,5,38117,14
+java;spring;jpa;spring-data-jpa,51513289,UnknownEntityTypeException: Unable to locate persister,1532504072,5,23279,7
+java;macos;zsh,69203176,Permission Error When Exporting to $JAVA_HOME on MacOS Big Sur,1631772751,4,15364,10
+java;web-applications;web;jakarta-mail;registration,20766044,MailConnectException while sending mail using java mail api,1387914134,7,38197,1
+java;android;flutter,75328050,flutter doctor --android-licenses not working due to java.lang.UnsupportedClassVersionError,1675365835,10,14844,17
+java;spring;spring-boot;spring-security,74940897,NullPointerException in GenericFilterBean on Spring Boot application start after adding a custom filter,1672234401,3,1472,2
+java;spring;spring-boot;junit;spring-retry,77665070,Spring Retry Junit throws Checked exception is invalid for this method! is thrown,1702629028,1,21,0
+java;spring;spring-boot;classcastexception;spring-data-redis,75943457,ClassCastException: with unnamed module of loader &#39;app&#39;: Spring Data Redis,1680724066,3,3980,3
+java;gradle;jboss;wildfly;bean-validation,33806900,java.lang.NoSuchMethodError:org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorContextImpl,1447943985,1,2014,0
+java;spring;spring-boot;gateway;spring-cloud-gateway,68657540,Spring Cloud Gateway doesn&#39;t find the microservices (Not found 404 error),1628108043,5,9243,5
+java;file;filenotfoundexception,27849389,Java fileNotFoundException when accessing program files,1420750771,3,2660,1
+java;bufferedimage;ioexception;javax.imageio,77682476,What could cause javax.imageio.IIOException?,1702948506,0,59,-2
+java,39528162,"In Coursera Algorithms I course, &quot;error: package edu.princeton.cs.algs4 does not exist&quot;",1474018473,2,12136,1
+java;android;android-studio,77682425,Android studio installing error : com.codota.intellij.common.core.CodotaMain does not define or inherit,1702946908,0,27,0
+java;sdk;oracle-cloud-infrastructure,73007996,I am getting:- Exception in thread &quot;main&quot; java.lang.NoSuchFieldError: TOO_MANY_REQUESTS,1658009981,4,631,1
+java,77682242,In BDD selenium while using webdrivermanager I get &quot;IllegalStateException&quot;,1702941944,1,17,0
+java;jmeter,76928671,JMeter bzm - Parallel Controller class java.util.IdentityHashMap cannot be cast to class java.util.HashMap exception,1692355976,1,1167,0
+java;mongodb;timeout;mongodb-java,27607773,com.mongodb.MongoTimeoutException when using MongoClient with list ServerAddress,1419270326,2,11151,5
+java;unit-testing;junit;mockito;junit4,77678077,Error on junit tests: Cannot instantiate @InjectMocks field,1702891200,1,57,0
+java;spring;hibernate,40786833,Spring+hibernate Error creating bean with name &#39;dataSource&#39; defined in class path resource [applicationContext.xml],1479991721,1,840,0
+java;sql-server;spring-boot;maven;flyway,76488497,Migration from Spring Boot 2.6 to 2.7 - FlywayException: Unsupported Database: Microsoft SQL Server 15.0,1686905390,2,1664,4
+java;apache-spark;cassandra;spark-cassandra-connector,77680717,Spark-Cassandra read cassandra table returning NoSuchElementException,1702919814,0,12,0
+java;server;rmi,67213865,java.rmi.server.ExportException: Port already in use: 1099;,1619096708,2,11624,2
+java;eclipse;boot;modulenotfounderror,77680368,Error occurred during initialization of boot layer java.lang.module.FindException: Module javatutos not found,1702916070,0,30,0
+java;android-studio;r.id,77680362,R.id-Error &quot;constant expression required&quot;,1702915946,0,11,0
+java;jpa;eclipselink;glassfish-3,77538298,getting syntax error on a query even if the query is right for sure,1700755984,1,50,-2
+java;spring-boot;oauth-2.0;openid-connect;beancreationexception,77679847,"Using nimbus oauth2 and spring-boot, getting a BeanCreationException with AuthorizationServerMetaData",1702910551,0,10,0
+java;spring;spring-boot;spring-security;spring-data-jpa,77678212,Spring Boot Error: Error starting ApplicationContext,1702892805,2,48,0
+java;spring;jackson;native,77678453,Spring Native with RestClient - RestClientException: No HttpMessageConverter,1702895289,0,40,0
+java;spring-boot;spring-mvc,77671800,Getting an error in a Spring boot MVC app that uses a taglib library,1702746959,2,34,0
+java;eclipse;maven;jboss,23025461,Error resolving version for plugin &#39;org.codehaus.mojo:maven-war-plugin&#39; from the repositories,1397270476,1,9118,0
+java;c#;console-application,77676995,Video files transferring getting error while Transfer files from one location to another,1702874910,1,33,0
+java;spring;urlencode;html-escape-characters;tuckey-urlrewrite-filter,77678633,When a browser opens a URL with params it hangs and Java App (using UrlRewrite) throws RequestRejectedException: the URL contained &quot;;&quot;,1702897364,1,21,-1
+java;richfaces;jboss-eap-7,51677421,RichFaces 4.3.7 in Jboss EAP 7.0.9 : IllegalStateException,1533316962,1,830,0
+java;apache-kafka;spring-kafka;metrics;open-telemetry,77678408,java.lang.ClassNotFoundException: io.opentelemetry.javaagent.shaded.instrumentation.kafka.internal.OpenTelemetryMetricsReporter,1702894746,0,48,0
+java;docker;docker-compose;spring-data-jpa;microservices,75227586,Failed to instantiate com.zaxxer.hikari.HikariDataSource: Factory method &#39;dataSource&#39;exception with message: Failed to determine suitable driver class,1674596575,5,11069,0
+java;android,56266801,java.net.SocketException: socket failed: EPERM (Operation not permitted),1558573350,16,189590,306
+java;mysql;tomcat;salesforce;sailpoint,77603004,Exception during aggregation of Object Type account on Application SalesforceTest,1701730900,1,53,0
+java;spring-boot;json-serialization,77677648,Could not write JSON: Infinite recursion (StackOverflowError)],1702885709,1,50,0
+java;spring;hibernate;spring-mvc;spring-data-jpa,77677409,Failed to instantiate [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean]: java.lang.NoClassDefFoundError: javax/persistence/Convert,1702882881,0,36,0
+java;r;jdbc;batch-insert;rjdbc,39492145,Teradata JDBC Error 1338 after certain number of batch executions,1473860777,3,9796,0
+java;sftp;spring-integration;jsch;mainframe,25877027,spring integration sftp mainframe :failed to write file; nested exception is 3: Permission denied,1410896175,2,8211,2
+java;exception;error-handling;zip;unzip,77637732,Zip Exception not getting caught correctly,1702274893,0,15,0
+java;spring;spring-boot;spring-rest,77635124,Exception not throwed to global api error handler,1702217629,2,70,0
+java;android;build;android-webview;logcat,74274116,Android Studio java.lang.RuntimeException: Unable to start activity {} failed to create web view,1667296362,2,276,-1
+java;spring;spring-boot;rest;error-handling,38117717,What is the best way to return different types of ResponseEntity in Spring-Boot (Error Handling for REST with Spring),1467275170,15,279923,114
+java;pdf;fonts;icepdf,77675038,Error reading font file when using Icepdf,1702828210,1,105,0
+java;hibernate;jpa;spring-data-jpa,63081855,HibernateProxy.toString lazy initialization exception,1595626968,1,2457,1
+java;spring-boot;spring-security,77675762,Error during Spring Boot application startup: BeanCurrentlyInCreationException in securityConfig,1702842140,1,21,0
+java;spring;amazon-web-services;spring-boot;hibernate,77676415,Error using AWS Athena as a Spring Boot Data Source,1702857596,0,25,-1
+java;spring;oracle;spring-boot;hibernate,65105082,Problem with JpaRepository - SQLException: Invalid column name,1606900198,2,8906,1
+java;java.util.scanner;nosuchelementexception,63324948,NoSuchElementException in nextInt() no matter what I do to the code,1596967165,1,130,0
+java;selenium-webdriver;testing;testng,77138392,Why I&#39;m getting &quot;Session ID is null. Using WebDriver after calling quit()?&quot; exception in SeleniumWebdriver?,1695164161,1,43,0
+java;spring-boot;stripe-payments;web-development-server,71706703,Spring Boot Error creating bean with name: Lookup method resolution failed Fail to introspect class from classloader,1648814931,1,9667,2
+java;eclipse;tomcat,40729817,Eclipse Tomcat Error: &quot;Could not launch in profiling mode because no profilers are configured.&quot;,1479764127,1,11407,4
+java,77675823,why I get 404 error when trying to access h2-console in Spring Boot?,1702843187,1,28,0
+java;swing;indexoutofboundsexception;arrayindexoutofboundsexception,77675235,Exception in thread &quot;AWT-EventQueue-0&quot; java.lang.ArrayIndexOutOfBoundsException: 3 &gt;= 3,1702832045,0,22,-1
+java,3707127,406 error in the Java code,1284451969,2,4481,-2
+java;spring;spring-boot;spring-data-jpa,77675219,"Getting &quot;SQLServerException: The statement is closed&quot; when calling save(), but save() works",1702831797,0,38,0
+java;json;apache-kafka;spring-kafka,77674349,Kafka Deserialization Error: No type information in headers and no default type provided,1702815395,1,38,0
+java;apache-spark;pyspark;apache-kafka;spark-kafka-integration,72627688,PySpark - NoClassDefFoundError: kafka/common/TopicAndPartition,1655279579,2,543,0
+python;java;visual-c++;pip;jpype,77674773,Trying to install JPype1 but getting errors: cl.exe&#39; failed with exit code 2,1702823443,1,67,1
+java;eclipse;selenium-webdriver;automation,77671591,I&#39;m getting an error showing &quot; The annotation @FindBy is disallowed for this location &quot;,1702742465,0,20,-1
+java;jdbc;dao,77673254,Program is throwing [SQLITE_BUSY] The database file is locked (database is locked) error but I&#39;ve closed everything,1702785027,1,45,0
+java;spring,55049514,Spring Nosuchbeanexception,1551979071,1,83,0
+java;android,77673840,I have a problem with putExtra from adapter when I click to textview in the adapter I just send Arraylist data to detail but it show error,1702804058,1,16,-1
+java;android,77673549,java.lang.NoSuchMethodError: No static method onPullDistance,1702796193,0,22,-2
+java;selenium-webdriver,77671467,Using @FindBy is displaying an nullpointerexception error message using Selenium - Java,1702740423,1,23,0
+java;angular;rest,77673750,I got an error while fetching data from backend in my angular frontend from springboot backend,1702802035,0,40,-1
+java;spring-boot;maven;jpa;spring-data-jpa,77672854,spring boot (maven with JPA and in memory H2 database) keep getting Not a managed type&quot;&quot; and error creating bean with name&quot;&quot;,1702769119,1,34,0
+java;flutter;azure;build;build.gradle,72140664,Azure build error: &quot;Android Gradle plugin requires Java 11 to run. You are currently using Java 1.8&quot;,1651836049,2,3126,9
+java;java-8;comparator;comparable,40500280,comparing and thenComparing gives compile error,1478666607,1,6741,18
+java;exception,77672706,Unhandled exception when throwing an exception,1702765272,0,40,-1
+java;spring;spring-boot;basic-authentication,73655012,NoSuchBeanDefinitionException: No qualifying bean of type &#39;org.springframework.security.config.annotation.web.builders.HttpSecurity&#39; available,1662671088,5,6549,4
+java;junit;easymock;illegalstateexception,10093105,Java Easymock complains with &quot;java.lang.IllegalStateException: void method cannot return a value&quot; or &quot;no last call on a mock available&quot;,1334077239,1,10890,2
+java;java-7;java-io,42627779,Invalid file path exception,1488809510,2,8452,2
+java;linux;javafx;mp3,77663867,Error creating JavaFX MediaPlayer using mp3 on Ubuntu 23.10,1702604348,1,78,1
+java;graalvm;graalvm-native-image,77672734,GraalVM HelloWorld Application NoClassDefFoundError,1702765870,0,45,0
+java;tomcat;tomcat9;apr;tcnative,77666554,Tomcat 9 APR Connector Failed to initialize component java.lang.UnsatisfiedLinkError,1702646600,1,37,-1
+java;spring;templates;jdbc,28671579,"org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: expected 1, actual 0",1424687207,1,21684,0
+java;android;file-io,61406818,FileNotFoundException open failed: EPERM (Operation not permitted) during saving image file to internal storage on android,1587726015,13,74929,33
+java;hibernate;playframework,10671050,PersistenceException occured : org.hibernate.exception.ConstraintViolationException: could not insert: [models.User],1337491945,4,12032,0
+java;arrays;string;indexoutofboundsexception,70980197,java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1 error is being received and cannot confirm why,1643935266,1,12408,0
+java;windows;maven,11118237,Maven error: Could not find or load main class org.codehaus.plexus.classworlds.launcher.Launcher,1340190506,35,340632,145
+java;postgresql;jdbc,77668924,java.lang.ClassNotFoundException: org.postgresql.Driver but CLASSPATH has jar file directory,1702676085,0,43,-1
+java;spring;spring-boot;spring-mvc;google-cloud-platform,77670796,"Getting BeanCreationException on one of the class which is denoted with @Component, when trying to open the deployed springboot based web application",1702727627,0,69,-2
+java;selenium-webdriver,57231138,java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence,1564222423,3,8826,0
+javascript;java;flutter;firebase;google-cloud-firestore,77657445,"Firebase Unhandle Exception PlatformException(null-error, Host platform returned null value for non-null return value., null, null)",1702519831,2,66,-1
+java;jersey-2.0,45585665,JERSEY : Error Trace : java.lang.IllegalStateException: Entity input stream has already been closed,1502267994,1,9351,3
+javascript;java;reactjs;spring-boot;mustache,77633164,Spring boot error : Loading module from “http://localhost:8080/index.js” was blocked because of a disallowed MIME type (“application/json”),1702162661,1,58,-2
+java;spring-boot;docker;keycloak,77652478,Error: connect ECONNREFUSED 8080 keycloak with spring boot,1702460513,1,97,-2
+java;android;flutter;android-studio,77670898,Error in Android Studio when building bundle: &quot;Task :app:mapDebugSourceSetPaths FAILED&quot;,1702729606,0,14,0
+java;maven;spring-mvc;spring-security;thymeleaf,28698031,Spring-mvc + Spring-Security + Thymeleaf - Error Resolving Template,1424787135,3,12194,1
+java;spring;spring-boot;exception;controller-advice,72477541,ExceptionHandler doesn&#39;t catch HandlerInterceptor exception if endpoint path is unknown,1654178530,2,448,0
+java;android;postgresql,77670305,I have an error when creating a Connection in android studio,1702716188,0,21,0
+java;eclipse;selenium-webdriver;selenium-java,77670025,Trying to run simple test with Selenium with JUnit fails with connect error,1702708716,0,24,0
+java;intellij-idea,67098514,java: error: release version 17 not supported,1618431285,22,158379,62
+java;drools,77667957,Java 17 Drools - NullPointerException: : Cannot invoke &quot;org.drools.compiler.compiler.Dialect.getId()&quot; only happening on kubernetes,1702661980,0,48,1
+java;spring-mvc;websphere,77669195,JNI error while running on Web Sphere Application server,1702680976,0,14,1
+java;spring;spring-boot,77668619,Error in Spring Boot application: &quot;No variable named partyId found!&quot; when trying to create a new Party,1702671154,0,28,-1
+java;eclipse;gradle;minecraft;minecraft-forge,77662954,Minecraft Modding - FileNotFoundException when setting up wokspace,1702586293,0,95,0
+java;android;google-play-services,71914259,Adding Google Play to Unity Project -&gt; java.lang.ClassNotFoundException: com.google.android.gms.games.PlayGames,1650298346,1,1004,6
+java;spring;spring-boot;netflix-eureka,61884617,BeanCreationException: Error creating bean with name &#39;simpleMeterRegistry&#39; is thrown on adding eureka server to spring boot Applicatio,1589869911,1,9260,2
+java;apache-kafka;apache-flink,77667414,Flink-connector-kafka giving Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.kafka.clients.admin.AdminClientConfig,1702655855,1,23,-1
+java;executable,77667235,&quot;Error: Could not find or load main class bin.Main&quot;,1702653752,1,33,-2
+java;record;lambda-metafactory,77662485,java.lang.invoke.LambdaConversionException: Incorrect number of parameters for instance method invokeVirtual,1702579990,1,51,2
+java;jmeter,77667014,"how to fix &quot;CannotResolveClassException: node&quot; Error in JMETER 5.5, suggest please",1702651314,1,18,-1
+java;spring-boot;tomcat;java-21,77654837,Upgrade to version SpringBoot3.2 appear HttpMessageNotReadableException,1702482199,1,50,0
+java;eclipse;jsp;tomcat8.5,72434707,JSP - Java error: Only a type can be imported. main.Config resolves to a package,1653915395,1,231,0
+java;hibernate;jpa,18160394,org.hibernate.QueryException: Not all named parameters have been set:[],1376125717,2,21626,5
+java;eclipse;eclipse-plugin,26216142,NumberFormatException on eclipse start,1412598113,3,1883,2
+java;spring;bazel,77665527,Java application fails with NoClassDefFoundError for org.springframework.boot.autoconfigure.web.ServerProperties on Windows,1702634696,0,73,1
+java;hibernate;jpa,18160394,org.hibernate.QueryException: Not all named parameters have been set:[],1376125717,2,21626,5
+java;eclipse;eclipse-plugin,26216142,NumberFormatException on eclipse start,1412598113,3,1883,2
+java;spring;bazel,77665527,Java application fails with NoClassDefFoundError for org.springframework.boot.autoconfigure.web.ServerProperties on Windows,1702634696,0,73,1
+java;spring-boot;jvm;inputstream;java-io,77659360,Out of memory error java heap space using IOUtils.copyLarge . How can I fix this?,1702548971,1,102,0
+java,77666334,"it give me NumberFormatException even though input is just pure numbers,",1702644212,0,31,-1
+java;gradle;kotlin;spek,49368490,&quot;Unresolved reference:&quot; errors with testCompile,1521478817,2,1743,0
+java;jax-ws,77665805,javax.xml.ws Service NullPointerException when project is packaged in JAR file,1702637717,0,15,0
+java;input;knapsack-problem,46688113,Exception in thread &quot;main&quot; java.lang.NumberFormatException: For input string:,1507724516,2,29290,1
+java;hibernate;concurrentmodification,77665902,Hibernate throwing ConcurrentModificationException on bidirectional mapping,1702638875,0,14,0
+java;spring;spring-boot;heroku;heroku-postgres,70352949,Error creating bean with name &#39;dataSourceScriptDatabaseInitializer&#39; defined in class path resource,1639502045,2,16745,2
+java;selenium-webdriver;google-chrome-devtools;devtools,77660208,Build error: java: cannot access org.openqa.selenium.HasDownloads,1702557462,2,97,0
+java;exception,44963634,NavigableMap.firstKey throwing unwanted NoSuchElementException,1499407704,3,153,-2
+java;hadoop;mapreduce;hive,32266961,"Hive Error : FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask",1440751694,1,16138,0
+java;android;dependencies;build.gradle,77664916,error while running build android app using java it might be because of implementation (&quot;com.a:androidnetworking:1.0.5&quot;),1702626763,0,17,0
+java;spring-boot;spring-boot-test;spring-el;spring-boot-starter,77658990,SpelEvaluationException: EL1005E: Type cannot be found in Springboot 3.2.0,1702545566,1,65,0
+java;jdbc;oracle10g;protocols,18457516,Protocol violation exception in Java application,1377580791,2,18313,1
+java;r;jvm;rstudio;xlconnect,77661464,&quot;Error: OutOfMemoryError (Java): Java heap space&quot; when loading a small file with XLConnect,1702569371,1,36,0
+java;minecraft-forge,63460511,How do I fix Error: could not create the Java VM?,1597713039,3,12898,0
+java;android;retrofit,33979694,java.lang.IllegalArgumentException: Unable to create call adapter for interface retrofit.Call,1448774672,2,4109,4
+java;spring-boot;featuretoggle;maven-unleash-plugin,73050649,Unleash - BeanCreationException: Error creating bean with name &#39;unleashConfig&#39;,1658315654,2,713,0
+java;unit-testing;testing;junit;mockito,77663473,JUnit to catch IOException getResourceAsStream() while loading properties file,1702594624,0,29,-2
+java;spring;rest,51014320,Spring: Type definition error when posting a new object using a REST service,1529877565,4,42560,13
+java;spring-boot;maven,77625443,Getting this error while runing mvn install,1702026130,1,38,0
+java;arrays;out-of-memory;java-11,77630435,Understanding numbers given in OutOfMemoryError: Required array length,1702105428,2,123,-1
+java;spring-boot;utf-8;spring-webclient;400-bad-request,77662832,How to get responseBody from WebClientResponseException?,1702584810,0,45,1
+java;grpc;grpc-java,60968250,"I use gRPC to generate java code &#39;@javax.annotation.Generated&#39; and it reports &#39;Error:(20,18) java: cannot find symbol&#39;. How to solve it？",1585735103,4,9429,10
+java;html;spring;spring-boot,77662347,"Request method &#39;POST&#39; is not supported, whitescreen error",1702578437,0,50,0
+java;exception;spring-integration;throw;exceptionhandler,77661685,Spring integration: exception is not thrown to error channel,1702571541,1,27,0
+java;spring;hibernate;spring-mvc;hibernate-mapping,69233976,You have an error in your SQL syntax check the manual that corresponds to your MariaDB server version for the right syntax to use,1631962421,0,448,0
+java;groovy;junit,77661098,Failed to execute goal org.codehaus.gmavenplus:gmavenplus-plugin:1.9.0:compile (default) on project: Error occurred while calling a method,1702566193,0,24,0
+java;spring-boot;spring-data-jpa;java-module,77578168,Error &quot;module not found: jakarta.cdi&quot; when using module-info.java in a Spring boot 3 project,1701344541,1,56,0
+java;spring;spring-boot;thymeleaf,53931323,Spring Boot Exception evaluating SpringEL expression,1545822988,3,10005,0
+java;json;elasticsearch,77134708,jakarta.json.stream.JsonParsingException when retrieving data from Elasticsearch,1695127843,0,100,2
+java;exception;servlets;jstl;jsp-tags,3757396,javax.servlet.jsp.JspTagException: &#39;begin&#39; &lt; 0,1285044624,2,10749,2
+java;sql-server;sql-server-2012;windows-firewall,77659206,SQLserver connection error using name instance,1702547663,1,47,0
+java;web-services;wsdl;cxf;travelport-api,35961224,javax.xml.ws.WebServiceException when invoking WSDL service,1457805032,2,25052,1
+java;mysql;hibernate;maven;xampp,76324122,Hibernate: &quot;Reading schema error: Error while reading column meta data for mysql.user,1684935196,1,69,1
+java;flutter,77658545,Can&#39;t build flutter app on android Error while evaluating property &#39;filteredArgumentsMap&#39; of task &#39;:app:compileDebugKotlin&#39;,1702540646,0,64,0
+java,77657411,The case of JAVA classes causes errors,1702518937,1,76,-2
+java;spring-boot;unit-testing;junit,57799040,org.mockito.exceptions.misusing.WrongTypeOfReturnValue:,1567662037,1,12776,1
+java;spring-boot;gradle;lombok;java-17,69184925,Gradle 7.2 Java 17 Build issue java.lang.NullPointerException: Cannot read field &quot;bindingsWhenTrue&quot; because &quot;currentBindings&quot; is null,1631656584,1,15411,22
+java;minecraft-forge,77657089,Cannot resolve symbol &#39;player&#39; error when coding a mc mod,1702510941,0,18,0
+java;r;rstudio;rjava;macos-high-sierra,30738974,rJava load error in RStudio/R after &quot;upgrading&quot; to OSX Yosemite,1433871208,19,81623,125
+java;spring;spring-boot;apache-kafka;spring-kafka,77640665,Test with @EmbeddedKafka fails with a TimeoutException while creating the EmbeddedKafka broker,1702308764,1,38,0
+java;spring-boot;thingsboard;java-12,77656566,"build fail , &quot;&#39;com.sun.tools.javac.tree.JCTree qualid&#39;&quot; error occur",1702502065,0,106,0
+java;web-push,77655720,InvalidKeySpecException in webpush-java when deploying multiple wars,1702490946,0,15,-2
+java;spring-boot;enums,77655973,Spring boot Enum Multiple &#39;as-value&#39; properties defined error,1702493852,0,26,0
+java;spring-boot;rest;jackson;jackson-dataformat-xml,77655898,HttpMessageNotWritableException: Could not write JSON: ToXMLGenerator write Json problem,1702493078,0,13,-1
+java;spring-boot;wildfly,77652422,Failed to define class org.springframework.web.servlet.tags.form.AbstractHtmlElementTag error during migration from WildFly 23 to WildFly 30,1702460075,1,25,0
+java;spring;spring-boot;migration;spring-framework-beans,77655431,ClassNotFoundException: org.springframework.transaction.ConfigurableTransactionManager after Spring Boot migration 2.X to 3.X,1702487710,0,157,1
+java;noclassdeffounderror;apache-commons-text,53459184,java.lang.NoClassDefFoundError: Could not initialize class org.apache.commons.text.StringEscapeUtils,1543069829,1,7574,3
+java,77655375,Exception in thread &quot;main&quot; java.util.NoSuchElementException: No line found - java.util.Scanner.nextLine(Scanner.java:1651),1702487145,0,53,0
+java;sql-server;spring-boot;jpa;sts,77655103,STS Error as Login failed. The login is from an untrusted domain and cannot be used with Windows authentication,1702484566,0,17,0
+java;google-cloud-dataflow;apache-beam;apache-beam-io,77655019,org.apache.beam.sdk.util.UserCodeException: java.lang.IllegalArgumentException: No filesystem found for scheme gs,1702483782,0,47,0
+java;kotlin;gradle,77415212,Gradle init example has the error of &quot;java.lang.ClassNotFoundException: javaslang.λ&quot;,1699000841,1,247,3
+java;elasticsearch;kibana;logback,77654230,"ES log loading error...... (Springboot - elastic,kibana) I&#39;m really going crazy",1702476827,0,32,0
+java;angular;spring;request;response,77653989,POST 406 (Not Acceptable) ERROR when returning List&lt;String&gt; from backend,1702474396,0,25,0
+java;error-handling;microsoft-graph-api;microsoft-graph-sdks,70302361,How to get error using the Microsoft Api Graph using the Java SDK,1639128661,2,204,0
+java;spring;spring-boot;swagger;springfox,62754998,"Whitelabel Error Page Swagger, This application has no explicit mapping for /error, so you are seeing this as a fallback swagger2:3.0.0-SNAPSHOT",1594034658,4,22262,8
+java;tomcat;spring-boot,48564452,Avoid logs full of java.io.IOException: Broken pipe,1517493340,1,9014,12
+java;spring;spring-boot;jpa;spring-data,77651669,Spring Boot: Exception: org.springframework.beans.factory.UnsatisfiedDependencyException,1702451526,1,53,-1
+java;maven;intellij-idea;jackson;yaml,77647345,Jackson YAML Error: TSFBuilder class not found,1702395930,1,18,0
+java;jasper-reports;glassfish-3,12952960,JasperReports: Getting java.lang.IllegalArgumentException: name,1350557521,2,4309,2
+java;spring-boot;url;decoding;x-www-form-urlencoded,77641354,How to handle/suppress Spring Boot DispatcherServlet exceptions related to URLDecoder,1702315913,1,41,0
+java;spring-boot;model-view-controller;thymeleaf,77642038,Getting Internal Server Error during template parsing. What&#39;s happening?,1702323877,1,41,0
+java;android;junit;mockito;android-mvp,47276920,"Mockito Error : However, there was exactly 1 interaction with this mock",1510628033,2,20901,4
+java;spring;hibernate;spring-data-jpa;spring-boot-actuator,75558259,org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name &#39;webMvcMetricsFilter&#39; defined in class,1677251834,2,9378,1
+java;jasper-reports,62080683,Im getting Class net.sf.jasperreports.engine.query.PlSqlQueryExecuterFactory not found exception while trying to generate Jasper Report,1590736759,1,164,1
+java;spring-boot;aws-serverless;aws-batch;aws-lambda-containers,77651625,Getting &quot;ExceptionInInitializerError &quot; while running AWS Lambda using &quot;aws-serverless-java-container&quot; within my Lambda handler,1702450687,0,14,0
+java;mongodb;ssl;keystore,29565136,Mongo SSL with Java Exception sending message,1428679395,3,17186,4
+java;spring;spring-mvc;spring-roo,13649015,Error in Java Import statement &quot;The import javax.validation.constraints.NotNull cannot be resolved&quot;,1354292477,15,138806,54
+javascript;java;camunda;formsflow.ai;formsflow,77625444,Workflows process of sending an email show an error at the the &#39;Task update application status&#39; and the &#39;End event&#39;,1702026136,0,19,-1
+java;web-services;wsdl;jax-ws;wsimport,18761597,Java Web Service error: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog,1378981220,10,96921,19
+java;postgresql;quarkus,72898457,io.quarkus.builder.BuildException: Build failure: Build failed due to errors,1657199532,2,8393,2
+java;vscode-extensions,77648100,Oracle Java Platform Extension for Visual Studio Code : &quot;Oracle Java SE Language Server not enabled!&quot; error message,1702403192,0,27,0
+java;sqlite;database-connection,62028701,sqlite cannot connect to database error: java.lang.UnsatisfiedLinkError: org.sqlite.core.NativeDB._open_utf8([BI)V,1590516874,3,3757,1
+java;smtp;jakarta-mail,22260110,What could be causing SMTPSenderFailedException: 501 5.1.7 Invalid address using java mail?,1394224256,1,20129,0
+java;spring-boot;mongodb-replica-set,77451817,MongoNotPrimaryException: Command failed with error 10107 (NotWritablePrimary): &#39;not primary&#39; - MongoDB Replica Set - Reactive Mongo Repository,1699520971,0,174,0
+java;eclipse;windows-10;64-bit,44477763,Launch error: could not create the Java virtual machine. A fatal exception has occurred,1497126541,2,9616,1
+java;spring;hibernate,33854225,Caused by: java.lang.IllegalStateException: Ambiguous mapping found. Cannot map &#39;appController&#39; bean method,1448191579,9,97185,32
+java;jdbc;ucanaccess,34214108,UCanAccess Initializer Error (compile/run without IDE),1449792791,2,1988,1
+java;spring-boot;junit,75992699,Junit test case causing JsonIOException for java.time.ZonedDateTime#dateTime,1681282531,1,186,0
+java;spring-boot;junit,75992699,Junit test case causing JsonIOException for java.time.ZonedDateTime#dateTime,1681282531,1,186,0
+java;android;android-studio;indexoutofboundsexception,75335792,Android app IndexOutOfBoundsException on PackedIntVector,1675427552,1,273,3
+java;javafx,77648044,Trying to use JavaFX on VScode and it keeps giving me an error,1702402665,0,33,0
+java;android;gradle;package,77640737,After Android Studio and Gradle plugin update error: package android.support.test does not exist,1702309542,1,55,-1
+java;spring-boot,50353774,Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character (&#39;&#39;&#39; (code 39)):,1526397376,0,2347,2
+java;while-loop;console-application;java.util.scanner;nosuchelementexception,77647790,NoSuchElementException when using Java.Util.Scanner in console app,1702400092,0,31,0
+java;exception;upgrade;illegalargumentexception;dom4j,77605009,&quot;java.lang.IllegalArgumentException: Illegal character in name 11474&quot; error after upgrading dom4j to 2.1.3 from 1.5.2,1701767812,1,28,0
+java;java-process-runtime,70609906,process.waitFor() throws IllegalThreadStateException,1641484738,2,825,1
+java;xml;java-8;ssl-certificate;soapui,77645357,java.net.ConnectException: Connection timed out: connect,1702377109,0,79,-1
+java;list;stream,71023262,Getting an error while trying to map a list of objects,1644256971,2,894,0
+java;spring-boot;solr,42576199,solr exception Expected mime type application/octet-stream but got text/html,1488536294,2,9667,4
+java;arrays;arraylist,77639863,"Question about error in solution for Leetcode 217: Contains Duplicate (Java), using ArrayList",1702300582,2,72,-2
+java;database;spring-boot;jpa,77645817,Caused by: java.lang.IllegalArgumentException: Can not set KacopnjtypeCode to Dacopnj.acopnjtype,1702381307,0,11,0
+java;drools;kie,65080871,drools rule compilation error only a type can be imported. resolves to a package,1606768858,1,1156,1
+java;jax-ws;jakarta-migration,77643823,java.lang.NullPointerException: Cannot read field &quot;nsUri&quot; because &quot;this.soapVersion&quot; is null,1702358141,0,26,-2
+java;spring;jobrunr,77641355,JobRunr integration with JonRunnr causing SQLTransientConnectionException and connection refused error,1702315916,0,21,0
+java;spring;spring-boot,77644254,Error creating bean with name &#39;dataSource&#39; when trying to run artifact,1702365100,1,48,-1
+java;spring;spring-boot;docker,77644166,java.lang.IllegalArgumentException: Could not resolve placeholder on Docker container,1702363966,1,75,0
+java;maven;apache-commons,48745665,Dependency missing? java.lang.NoSuchMethodError,1518435656,2,10077,2
+java;hibernate;jpa,77080651,Hibernate 6 migration - error SqmQualifiedJoin predicate referred to SqmRoot other than the join&#39;s root,1694426397,2,223,1
+java;maven;module;version;java-module,77643845,How to solve &quot;error: bad value for --module-version option&quot;,1702358486,0,48,-1
+java;android;android-studio,77643464,Android 34: Unable to decode stream: java.io.FileNotFoundException: /document/image:35: open failed: ENOENT (No such file or directory),1702350203,1,29,0
+java;macos;intellij-idea;opengl;apple-m1,74444169,JOGL Exception- Can&#39;t load library /natives/macosx-universal/gluegen-rt,1668508528,1,296,1
+java;android;gradle;android-gradle-plugin,42787524,Android Studio 2.3 error: &quot;Gradle sync failed: Cause: services.gradle.org&quot;,1489498555,4,28859,4
+java;web-services,18294197,org.springframework.ws.soap.client.SoapFaultClientException: 400200,1376781410,1,9161,0
+java;linux;jar,77643309,jar package close without error log in linux server,1702346947,0,13,0
+java;maven,20218486,Unable to Build using MAVEN with ERROR - Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile,1385472753,9,346985,65
+java;json;jackson,26716020,How to get a JsonProcessingException using Jackson,1415024003,13,110228,62
+java;spring-boot;rest,77641152,&quot;Zip file closed&quot; error on Spring Boot 3.2.0 Rest API call for disabled endpoint,1702313488,0,42,0
+java;spring;rest,42013087,MultipartException: Current request is not a multipart request,1486072681,15,217137,65
+java;sql;eclipse;jar;bbj,77641411,Trouble loading a SQL driver from an external .jar file. ClassNotFoundException,1702316564,0,27,-1
+java;spring;spring-mvc,77641007,Spring MVC &quot;java.lang.IllegalArgumentException: No variable named partyId found!&quot; when creating party,1702312188,0,29,0
+java;jboss,77639391,Jboss SecurityVaultException - Jdk7u191,1702295807,1,28,0
+java;web-services,77638509,IWAB0506E Error in Copying Axis Jar Files to Web Project,1702286051,0,119,0
+java;spring-boot;validation;web-services;upgrade,77545551,Error &quot;IllegalStateException: No target Validator set&quot; after upgrade from Spring Boot 3.1.5 to 3.2.0,1700858028,1,394,-1
+java;hibernate,37896398,Java hibernate throws Exception at boot,1466249173,5,5438,0
+java;apache-poi,77640216,java.lang.NoSuchFieldError:org/openxmlformats/shemas/spreadsheetml/x2006/main/CTWorkbook.Factory,1702304256,0,15,0
+java;nashorn;java-17,71647788,Getting java.lang.NoClassDefFoundError: jdk/dynalink/RelinkableCallSite with org.openjdk.nashorn but only on linux with java 17,1648472045,0,639,1
+java;http;cookies,77639084,Java 11 HttpCookie.parse throws IllegalArgumentException when parsing cookies that contain JSON,1702292433,1,30,1
+java;android;build.gradle;youtube-data-api;android-youtube-api,77640031,how do I fix youtube-api implementation causing error in gradle build?,1702302332,0,32,-3
+java;android,38668689,Attempted to finish an input event but the input event receiver has already been disposed error,1469833765,1,10945,3
+java;ehcache,77639940,Constructor threw exception; nested exception is java.lang.NoSuchMethodError: net.sf.ehcache.config.CacheConfiguration.&lt;init&gt;(Ljava/lang/String;I)V],1702301378,0,10,0
+java;floating-point;double,77625876,Cannot convert from double to float Error,1702030885,3,68,0
+java;spring;spring-boot;java-21,77635974,"Error &quot;Name for argument of type [java.util.UUID] not specified, and parameter name information not found in class file either&quot;with spring 3.2 upgrade",1702233249,2,277,1
+java;web-services;saaj,38442507,Java client using SAAJ error: SEVERE: SAAJ0008: Bad Response; Unauthorized,1468862176,1,8764,1
+java;database,77639641,ERROR 75144 [-nio-443-exec-7] o.s.boot.web.support.ErrorPageFilter,1702298240,0,15,0
+java;spring-boot;maven,77626286,WebSocket Connection to &#39;path&#39; failed Error,1702035395,0,56,-1
+java;maven;intellij-idea,77638902,Enums from imported maven libraries result in a compile error,1702290516,1,46,0
+java;jboss;jbossfuse;jboss-eap-7,77638215,Error: Did not find the &lt;extensions&gt; element Error on Installing FUSE in JBossEAP 7.2,1702282485,1,39,2
+java;maven;coordinate-systems;geotools;maven-shade-plugin,75335483,Geotools: Getting IllegalArgumentException: Argument &quot;ellipsoid&quot; should not be null after &quot;org.opengis.referncing.NoSuchAuthorityCodeException&quot; error,1675425869,1,151,1
+java;spring-boot;jvm,74854570,Java production: java.lang.IndexOutOfBoundsException Unable to build SpringBoot project,1671474583,6,2326,5
+java;exception,77637215,When to use or create Custom runtime exception and custom checked exception in java?,1702262169,0,16,-2
+java;spring-boot;spring-security,73594972,Spring Security - Filter Chain Error - Error creating bean with name &#39;filterChain&#39; defined in class path resource,1662233719,2,8590,4
+java;json;jsonexception,54627857,org.json.JSONException: Missing value at character 1,1549878898,1,9486,2
+java;mysql;jdbc,20070494,com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column &#39;hourId&#39; cannot be null,1384861029,4,24662,2
+java;xml;xslt,77636186,Getting error when adding transformer.setparameter value in xslt and write to csv file,1702237784,0,23,-1
+java;spring;spring-boot;spring-security;nullpointerexception,77635578,Spring Security Configuration Error - Null Pointer Exception for authenticationManager,1702226630,0,42,-1
+java;generics,77630493,How to solve type mismatch error in Java when using generics with subclass mapping?,1702106851,2,95,1
+java;spring;spring-mvc;openid,20487252,Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &#39;(inner bean)#7&#39;: Instantiation of bean failed,1386655105,2,10886,0
+java;eclipse;hibernate;annotations;mapping,16913225,Hibernate Mapping Error: MappingException: An AnnotationConfiguration instance,1370335030,2,12103,0
+java;spring-boot;error-handling,77634865,How to Resolve? Error starting ApplicationContext. To display the condition evaluation report re-run your application with &#39;debug&#39; enabled,1702212842,1,51,0
+java;exception,57002413,How to handle all the java.net exceptions in a single catch block?,1562917640,6,1661,2
+java;mysql;jdbc,77631730,Error :Cannot delete or update a parent row: a foreign key constraint fails,1702134102,0,36,-3
+java;spring;spring-boot;spring-mvc;tomcat,77634698,Tomcat 9 error with spring app: the requested resource [/registration] is not available,1702209662,0,32,0
+java;spring;spring-boot,77633880,getting java.io.IOException: mark/reset not supported while using rest template,1702189854,0,38,0
+java;selenium;jar;selenium-webdriver;dependencies,27437743,How to solve Exception in thread &quot;main&quot; java.lang.NoSuchFieldError: INSTANCE?,1418364049,3,9949,1
+java;maven;selenium;testng;selenium-firefoxdriver,14935807,&quot;java.lang.Error: Unresolved compilation problems&quot; during execution Selenium tests with TestNG using Maven,1361188835,1,3363,1
+java;java-web-start,22449097,AxisFault faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.userException faultSubcode: faultString:,1395042416,1,11599,0
+java;linux;flutter;ubuntu,76882205,Error: LinkageError occurred while loading main class com.android.sdklib.tool.sdkmanager.SdkManagerCli,1691745580,6,23250,18

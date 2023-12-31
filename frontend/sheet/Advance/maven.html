@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about maven</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to add local jar files to a Maven project?</td><td>33</td><td>1466</td><td>1346179</td><td>2015-08-02</td><td><a href="https://stackoverflow.com/questions/4955635/how-to-add-local-jar-files-to-a-maven-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What exactly is a Maven Snapshot and why do we need it?</td><td>14</td><td>1010</td><td>421039</td><td>2012-08-26</td><td><a href="https://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I tell Maven to use the latest version of a dependency?</td><td>12</td><td>864</td><td>654023</td><td>2012-11-25</td><td><a href="https://stackoverflow.com/questions/30571/how-do-i-tell-maven-to-use-the-latest-version-of-a-dependency" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Dealing with &quot;Xerces hell&quot; in Java/Maven?</td><td>11</td><td>786</td><td>145361</td><td>2016-07-08</td><td><a href="https://stackoverflow.com/questions/11677572/dealing-with-xerces-hell-in-java-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IntelliJ inspection gives &quot;Cannot resolve symbol&quot; but still compiles code</td><td>62</td><td>716</td><td>672467</td><td>2014-10-05</td><td><a href="https://stackoverflow.com/questions/5905896/intellij-inspection-gives-cannot-resolve-symbol-but-still-compiles-code" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?</td><td>37</td><td>714</td><td>1524640</td><td>2015-05-31</td><td><a href="https://stackoverflow.com/questions/19655184/no-compiler-is-provided-in-this-environment-perhaps-you-are-running-on-a-jre-ra" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Run a single test method with maven</td><td>14</td><td>639</td><td>406562</td><td>2015-05-03</td><td><a href="https://stackoverflow.com/questions/1873995/run-a-single-test-method-with-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven does not find JUnit tests to run</td><td>33</td><td>501</td><td>377187</td><td>2016-01-06</td><td><a href="https://stackoverflow.com/questions/6178583/maven-does-not-find-junit-tests-to-run" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get source JARs from Maven repository</td><td>20</td><td>467</td><td>232693</td><td>2014-01-26</td><td><a href="https://stackoverflow.com/questions/2059431/get-source-jars-from-maven-repository" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to configure encoding in Maven?</td><td>6</td><td>463</td><td>309402</td><td>2014-04-15</td><td><a href="https://stackoverflow.com/questions/3017695/how-to-configure-encoding-in-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven package/install without test (skip tests)</td><td>21</td><td>457</td><td>382718</td><td>2015-12-27</td><td><a href="https://stackoverflow.com/questions/7456006/maven-package-install-without-test-skip-tests" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The superclass &quot;javax.servlet.http.HttpServlet&quot; was not found on the Java Build Path</td><td>14</td><td>446</td><td>840223</td><td>2018-02-20</td><td><a href="https://stackoverflow.com/questions/22756153/the-superclass-javax-servlet-http-httpservlet-was-not-found-on-the-java-build" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IntelliJ - Convert a Java project/module into a Maven project/module</td><td>11</td><td>434</td><td>239776</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7642456/intellij-convert-a-java-project-module-into-a-maven-project-module" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How are &quot;mvn clean package&quot; and &quot;mvn clean install&quot; different?</td><td>6</td><td>398</td><td>330112</td><td>2014-10-26</td><td><a href="https://stackoverflow.com/questions/16602017/how-are-mvn-clean-package-and-mvn-clean-install-different" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Updating version numbers of modules in a multi-module Maven project</td><td>12</td><td>393</td><td>347692</td><td>2016-10-26</td><td><a href="https://stackoverflow.com/questions/5726291/updating-version-numbers-of-modules-in-a-multi-module-maven-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a Maven artifact?</td><td>10</td><td>382</td><td>229909</td><td>2012-07-27</td><td><a href="https://stackoverflow.com/questions/2487485/what-is-a-maven-artifact" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Cannot change version of project facet Dynamic Web Module to 3.0?</td><td>31</td><td>348</td><td>534685</td><td>2014-06-01</td><td><a href="https://stackoverflow.com/questions/18122336/cannot-change-version-of-project-facet-dynamic-web-module-to-3-0" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is an uber jar?</td><td>7</td><td>342</td><td>123368</td><td>2016-11-21</td><td><a href="https://stackoverflow.com/questions/11947037/what-is-an-uber-jar" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven is not working in Java 8 when Javadoc tags are incomplete</td><td>18</td><td>338</td><td>205661</td><td>2015-05-13</td><td><a href="https://stackoverflow.com/questions/15886209/maven-is-not-working-in-java-8-when-javadoc-tags-are-incomplete" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I load a file from resource folder?</td><td>20</td><td>335</td><td>588291</td><td>2015-07-21</td><td><a href="https://stackoverflow.com/questions/15749192/how-do-i-load-a-file-from-resource-folder" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the maven-shade-plugin used for, and why would you want to relocate Java packages?</td><td>4</td><td>332</td><td>115656</td><td>2017-03-10</td><td><a href="https://stackoverflow.com/questions/13620281/what-is-the-maven-shade-plugin-used-for-and-why-would-you-want-to-relocate-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why use Gradle instead of Ant or Maven?</td><td>9</td><td>324</td><td>355854</td><td>2013-02-09</td><td><a href="https://stackoverflow.com/questions/1163173/why-use-gradle-instead-of-ant-or-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Retrieve version from maven pom.xml in code</td><td>14</td><td>310</td><td>236122</td><td>2016-02-10</td><td><a href="https://stackoverflow.com/questions/3697449/retrieve-version-from-maven-pom-xml-in-code" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven: Failed to read artifact descriptor</td><td>25</td><td>306</td><td>629245</td><td>2013-12-31</td><td><a href="https://stackoverflow.com/questions/6642146/maven-failed-to-read-artifact-descriptor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Find Oracle JDBC driver in Maven repository</td><td>21</td><td>306</td><td>433353</td><td>2013-10-20</td><td><a href="https://stackoverflow.com/questions/1074869/find-oracle-jdbc-driver-in-maven-repository" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when &#39;hibernate.dialect&#39; not set</td><td>36</td><td>303</td><td>559190</td><td>2016-01-05</td><td><a href="https://stackoverflow.com/questions/26548505/org-hibernate-hibernateexception-access-to-dialectresolutioninfo-cannot-be-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is pluginManagement in Maven&#39;s pom.xml?</td><td>5</td><td>300</td><td>188915</td><td>2015-10-13</td><td><a href="https://stackoverflow.com/questions/10483180/what-is-pluginmanagement-in-mavens-pom-xml" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>run main class of Maven project</td><td>2</td><td>289</td><td>331200</td><td>2015-10-26</td><td><a href="https://stackoverflow.com/questions/9846046/run-main-class-of-maven-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I disable the Maven Javadoc plugin from the command line?</td><td>5</td><td>284</td><td>199252</td><td>2016-07-06</td><td><a href="https://stackoverflow.com/questions/7412016/how-can-i-disable-the-maven-javadoc-plugin-from-the-command-line" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I enable index downloads in Eclipse for Maven dependency search?</td><td>2</td><td>282</td><td>156981</td><td>2015-05-10</td><td><a href="https://stackoverflow.com/questions/24252256/how-do-i-enable-index-downloads-in-eclipse-for-maven-dependency-search" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Make Maven to copy dependencies into target/lib</td><td>16</td><td>280</td><td>304947</td><td>2015-01-11</td><td><a href="https://stackoverflow.com/questions/97640/make-maven-to-copy-dependencies-into-target-lib" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you specify the Java compiler version in a pom.xml file?</td><td>5</td><td>263</td><td>321295</td><td>2017-03-05</td><td><a href="https://stackoverflow.com/questions/16723533/how-do-you-specify-the-java-compiler-version-in-a-pom-xml-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven Run Project</td><td>6</td><td>260</td><td>211847</td><td>2011-10-10</td><td><a href="https://stackoverflow.com/questions/1089285/maven-run-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven – Always download sources and javadocs</td><td>15</td><td>259</td><td>198150</td><td>2011-04-25</td><td><a href="https://stackoverflow.com/questions/5780758/maven-always-download-sources-and-javadocs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven plugins can not be found in IntelliJ</td><td>46</td><td>257</td><td>394729</td><td>2017-09-16</td><td><a href="https://stackoverflow.com/questions/20496239/maven-plugins-can-not-be-found-in-intellij" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How is &quot;mvn clean install&quot; different from &quot;mvn install&quot;?</td><td>5</td><td>253</td><td>343020</td><td>2013-10-26</td><td><a href="https://stackoverflow.com/questions/6018701/how-is-mvn-clean-install-different-from-mvn-install" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set specific Java version to Maven?</td><td>25</td><td>251</td><td>420581</td><td>2018-01-29</td><td><a href="https://stackoverflow.com/questions/19654557/how-to-set-specific-java-version-to-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Specifying Java version in maven - differences between properties and compiler plugin</td><td>6</td><td>242</td><td>214121</td><td>2019-03-11</td><td><a href="https://stackoverflow.com/questions/38882080/specifying-java-version-in-maven-differences-between-properties-and-compiler-p" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Import Maven dependencies in IntelliJ IDEA</td><td>38</td><td>228</td><td>579801</td><td>2012-11-03</td><td><a href="https://stackoverflow.com/questions/11454822/import-maven-dependencies-in-intellij-idea" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven surefire could not find ForkedBooter class</td><td>20</td><td>226</td><td>85299</td><td>2018-11-07</td><td><a href="https://stackoverflow.com/questions/53010200/maven-surefire-could-not-find-forkedbooter-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven dependencies are failing with a 501 error</td><td>28</td><td>210</td><td>157078</td><td>2020-04-03</td><td><a href="https://stackoverflow.com/questions/59763531/maven-dependencies-are-failing-with-a-501-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I tell Spring Boot which main class to use for the executable jar?</td><td>10</td><td>202</td><td>204273</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23217002/how-do-i-tell-spring-boot-which-main-class-to-use-for-the-executable-jar" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to refer environment variable in POM.xml?</td><td>6</td><td>202</td><td>209545</td><td>2015-04-06</td><td><a href="https://stackoverflow.com/questions/10463077/how-to-refer-environment-variable-in-pom-xml" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is &quot;pom&quot; packaging in maven?</td><td>10</td><td>202</td><td>161165</td><td>2014-10-23</td><td><a href="https://stackoverflow.com/questions/7692161/what-is-pom-packaging-in-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Fatal error compiling: invalid target release: 1.8 -&gt; [Help 1]</td><td>19</td><td>196</td><td>310414</td><td>2016-03-29</td><td><a href="https://stackoverflow.com/questions/28291691/fatal-error-compiling-invalid-target-release-1-8-help-1" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does mvn install in maven exactly do</td><td>9</td><td>195</td><td>185666</td><td>2013-11-26</td><td><a href="https://stackoverflow.com/questions/10533828/what-does-mvn-install-in-maven-exactly-do" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:2.5 or one of its dependencies could not be resolved</td><td>31</td><td>188</td><td>804261</td><td>2016-09-11</td><td><a href="https://stackoverflow.com/questions/12533885/could-not-calculate-build-plan-plugin-org-apache-maven-pluginsmaven-resources" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&quot;java.lang.OutOfMemoryError: PermGen space&quot; in Maven build</td><td>7</td><td>185</td><td>213330</td><td>2015-05-16</td><td><a href="https://stackoverflow.com/questions/3101128/java-lang-outofmemoryerror-permgen-space-in-maven-build" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is no one using make for Java?</td><td>17</td><td>183</td><td>58388</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2209827/why-is-no-one-using-make-for-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>stop IntelliJ IDEA to switch java language level every time the pom is reloaded (or change the default project language level)</td><td>12</td><td>178</td><td>90485</td><td>2016-03-22</td><td><a href="https://stackoverflow.com/questions/27037657/stop-intellij-idea-to-switch-java-language-level-every-time-the-pom-is-reloaded" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is MOJO in Maven?</td><td>4</td><td>175</td><td>59521</td><td>2013-09-15</td><td><a href="https://stackoverflow.com/questions/8420561/what-is-mojo-in-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven: best way of linking custom external JAR to my project?</td><td>15</td><td>174</td><td>327992</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5692256/maven-best-way-of-linking-custom-external-jar-to-my-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why Maven uses JDK 1.6 but my java -version is 1.7</td><td>9</td><td>167</td><td>142098</td><td>2015-10-28</td><td><a href="https://stackoverflow.com/questions/18813828/why-maven-uses-jdk-1-6-but-my-java-version-is-1-7" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unable to compile simple Java 10 / Java 11 project with Maven</td><td>10</td><td>166</td><td>247743</td><td>2018-08-01</td><td><a href="https://stackoverflow.com/questions/49398894/unable-to-compile-simple-java-10-java-11-project-with-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does Maven do, in theory and in practice? When is it worth to use it?</td><td>3</td><td>165</td><td>106411</td><td>2012-11-11</td><td><a href="https://stackoverflow.com/questions/13335351/what-does-maven-do-in-theory-and-in-practice-when-is-it-worth-to-use-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find/remove unused dependencies in Gradle</td><td>6</td><td>164</td><td>67115</td><td>2016-11-08</td><td><a href="https://stackoverflow.com/questions/19379517/how-to-find-remove-unused-dependencies-in-gradle" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can you display the Maven dependency tree for the *plugins* in your project?</td><td>2</td><td>163</td><td>69401</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7074590/how-can-you-display-the-maven-dependency-tree-for-the-plugins-in-your-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Problems using Maven and SSL behind proxy</td><td>23</td><td>159</td><td>377930</td><td>2017-05-08</td><td><a href="https://stackoverflow.com/questions/25911623/problems-using-maven-and-ssl-behind-proxy" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why so red? IntelliJ seems to think every declaration/method cannot be found/resolved</td><td>35</td><td>158</td><td>163047</td><td>2017-05-17</td><td><a href="https://stackoverflow.com/questions/11632120/why-so-red-intellij-seems-to-think-every-declaration-method-cannot-be-found-res" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Compiling Java 7 code via Maven</td><td>18</td><td>156</td><td>244798</td><td>2014-02-18</td><td><a href="https://stackoverflow.com/questions/14043042/compiling-java-7-code-via-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Sharing src/test classes between modules in a multi-module maven project</td><td>2</td><td>156</td><td>59314</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14722873/sharing-src-test-classes-between-modules-in-a-multi-module-maven-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why am I getting a &quot;401 Unauthorized&quot; error in Maven?</td><td>27</td><td>153</td><td>242575</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/24830610/why-am-i-getting-a-401-unauthorized-error-in-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mvn install or Mvn package</td><td>8</td><td>148</td><td>185483</td><td>2013-03-20</td><td><a href="https://stackoverflow.com/questions/15530886/mvn-install-or-mvn-package" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java version automatically change to java 1.5 after maven update</td><td>14</td><td>147</td><td>117558</td><td>2015-02-13</td><td><a href="https://stackoverflow.com/questions/28509928/java-version-automatically-change-to-java-1-5-after-maven-update" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I add a Maven dependency in Eclipse?</td><td>6</td><td>147</td><td>371142</td><td>2014-12-06</td><td><a href="https://stackoverflow.com/questions/9164893/how-do-i-add-a-maven-dependency-in-eclipse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Re-run Spring Boot Configuration Annotation Processor to update generated metadata</td><td>12</td><td>146</td><td>130632</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/33483697/re-run-spring-boot-configuration-annotation-processor-to-update-generated-metada" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there anyway to exclude artifacts inherited from a parent POM?</td><td>11</td><td>146</td><td>186426</td><td>2015-08-13</td><td><a href="https://stackoverflow.com/questions/2681759/is-there-anyway-to-exclude-artifacts-inherited-from-a-parent-pom" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Surefire is not picking up Junit 5 tests</td><td>18</td><td>145</td><td>77013</td><td>2016-05-01</td><td><a href="https://stackoverflow.com/questions/36970384/surefire-is-not-picking-up-junit-5-tests" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to dockerize maven project? and how many ways to accomplish it?</td><td>6</td><td>143</td><td>194570</td><td>2017-09-13</td><td><a href="https://stackoverflow.com/questions/27767264/how-to-dockerize-maven-project-and-how-many-ways-to-accomplish-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven error: Could not find or load main class org.codehaus.plexus.classworlds.launcher.Launcher</td><td>31</td><td>142</td><td>312772</td><td>2014-12-06</td><td><a href="https://stackoverflow.com/questions/11118237/maven-error-could-not-find-or-load-main-class-org-codehaus-plexus-classworlds-l" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>MapStruct and Lombok not working together</td><td>15</td><td>142</td><td>87850</td><td>2019-08-12</td><td><a href="https://stackoverflow.com/questions/47676369/mapstruct-and-lombok-not-working-together" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize</td><td>8</td><td>142</td><td>393050</td><td>2016-04-05</td><td><a href="https://stackoverflow.com/questions/22634644/java-hotspottm-64-bit-server-vm-warning-ignoring-option-maxpermsize" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between &quot;pom&quot; type dependency with scope &quot;import&quot; and without &quot;import&quot;?</td><td>3</td><td>140</td><td>105707</td><td>2015-10-25</td><td><a href="https://stackoverflow.com/questions/11778276/what-is-the-difference-between-pom-type-dependency-with-scope-import-and-wit" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is Maven downloading the maven-metadata.xml every time?</td><td>6</td><td>139</td><td>164545</td><td>2015-05-12</td><td><a href="https://stackoverflow.com/questions/16421454/why-is-maven-downloading-the-maven-metadata-xml-every-time" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to work around the stricter Java 8 Javadoc when using Maven</td><td>5</td><td>139</td><td>50717</td><td>2015-10-21</td><td><a href="https://stackoverflow.com/questions/22528767/how-to-work-around-the-stricter-java-8-javadoc-when-using-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lombok is not generating getter and setter</td><td>24</td><td>137</td><td>246346</td><td>2016-03-29</td><td><a href="https://stackoverflow.com/questions/11803948/lombok-is-not-generating-getter-and-setter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>If using maven, usually you put log4j.properties under java or resources?</td><td>7</td><td>137</td><td>150970</td><td>2014-06-07</td><td><a href="https://stackoverflow.com/questions/5132389/if-using-maven-usually-you-put-log4j-properties-under-java-or-resources" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to resolve Unable to load authentication plugin &#39;caching_sha2_password&#39; issue</td><td>18</td><td>135</td><td>263589</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/50387952/how-to-resolve-unable-to-load-authentication-plugin-caching-sha2-password-issu" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why am I getting Unknown error in line 1 of pom.xml?</td><td>21</td><td>134</td><td>148580</td><td>2019-05-16</td><td><a href="https://stackoverflow.com/questions/56142369/why-am-i-getting-unknown-error-in-line-1-of-pom-xml" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.lang.OutOfMemoryError: Java heap space in Maven</td><td>8</td><td>134</td><td>194989</td><td>2015-10-02</td><td><a href="https://stackoverflow.com/questions/4066424/java-lang-outofmemoryerror-java-heap-space-in-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference of Maven JAXB plugins</td><td>6</td><td>134</td><td>100286</td><td>2012-11-09</td><td><a href="https://stackoverflow.com/questions/2432859/difference-of-maven-jaxb-plugins" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why maven? What are the benefits?</td><td>9</td><td>134</td><td>171591</td><td>2013-02-26</td><td><a href="https://stackoverflow.com/questions/3589562/why-maven-what-are-the-benefits" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven package works but Intellij&#39;s build fails</td><td>29</td><td>133</td><td>80830</td><td>2016-11-30</td><td><a href="https://stackoverflow.com/questions/18316857/maven-package-works-but-intellijs-build-fails" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to pass JVM args via command line to Maven?</td><td>1</td><td>132</td><td>176489</td><td>2017-01-11</td><td><a href="https://stackoverflow.com/questions/12525288/is-there-a-way-to-pass-jvm-args-via-command-line-to-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Maven warn me about encoding?</td><td>3</td><td>129</td><td>90400</td><td>2015-03-29</td><td><a href="https://stackoverflow.com/questions/24144073/why-does-maven-warn-me-about-encoding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Install parent POM without building Child modules</td><td>2</td><td>129</td><td>51951</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9500480/install-parent-pom-without-building-child-modules" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is package-info.java useful?</td><td>5</td><td>129</td><td>78819</td><td>2014-02-28</td><td><a href="https://stackoverflow.com/questions/22095487/why-is-package-info-java-useful" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>javax.validation.ValidationException: HV000183: Unable to load &#39;javax.el.ExpressionFactory&#39;</td><td>13</td><td>128</td><td>134907</td><td>2015-01-05</td><td><a href="https://stackoverflow.com/questions/24386771/javax-validation-validationexception-hv000183-unable-to-load-javax-el-express" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to specify maven&#39;s distributionManagement organisation wide?</td><td>3</td><td>126</td><td>136540</td><td>2013-08-07</td><td><a href="https://stackoverflow.com/questions/3298135/how-to-specify-mavens-distributionmanagement-organisation-wide" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I configure Maven for offline development?</td><td>14</td><td>124</td><td>182539</td><td>2011-08-29</td><td><a href="https://stackoverflow.com/questions/7233328/how-do-i-configure-maven-for-offline-development" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>invalid target release: 1.7</td><td>5</td><td>121</td><td>118195</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/19891423/invalid-target-release-1-7" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get absolute path to file in /resources folder of your project</td><td>6</td><td>120</td><td>317848</td><td>2016-08-10</td><td><a href="https://stackoverflow.com/questions/17351043/how-to-get-absolute-path-to-file-in-resources-folder-of-your-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>leiningen - how to add dependencies for local jars?</td><td>11</td><td>118</td><td>42515</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2404426/leiningen-how-to-add-dependencies-for-local-jars" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>After Installing Java JDK 7 For Mac OS X - mvn -version still shows java version 1.6.0_31</td><td>9</td><td>118</td><td>97567</td><td>2012-04-28</td><td><a href="https://stackoverflow.com/questions/10339887/after-installing-java-jdk-7-for-mac-os-x-mvn-version-still-shows-java-version" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Running junit tests in parallel in a Maven build?</td><td>10</td><td>117</td><td>84734</td><td>2011-07-18</td><td><a href="https://stackoverflow.com/questions/423627/running-junit-tests-in-parallel-in-a-maven-build" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Environment Variable with Maven</td><td>11</td><td>116</td><td>272076</td><td>2016-06-09</td><td><a href="https://stackoverflow.com/questions/5510690/environment-variable-with-maven" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I put all required JAR files in a library folder inside the final JAR file with Maven?</td><td>8</td><td>115</td><td>249167</td><td>2014-12-27</td><td><a href="https://stackoverflow.com/questions/11758594/how-do-i-put-all-required-jar-files-in-a-library-folder-inside-the-final-jar-fil" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does Maven Update Project do in Eclipse?</td><td>3</td><td>115</td><td>95828</td><td>2014-05-05</td><td><a href="https://stackoverflow.com/questions/20546962/what-does-maven-update-project-do-in-eclipse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven Installation OSX Error Unsupported major.minor version 51.0</td><td>6</td><td>114</td><td>101043</td><td>2016-03-30</td><td><a href="https://stackoverflow.com/questions/29255495/maven-installation-osx-error-unsupported-major-minor-version-51-0" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>maven-site plugins 3.3 java.lang.ClassNotFoundException: org.apache.maven.doxia.siterenderer.DocumentContent</td><td>8</td><td>114</td><td>75577</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/51091539/maven-site-plugins-3-3-java-lang-classnotfoundexception-org-apache-maven-doxia" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

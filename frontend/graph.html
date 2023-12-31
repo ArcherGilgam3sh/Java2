@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body style="height: 100%; margin: 0">
+    <!-- 导航栏开始 -->
+  <nav style="background-color: #333; padding: 10px; text-align: center;">
+    <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">demo1</a>
+    <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">demo2</a>
+    <a href="graph.html" style="color: white; text-decoration: none;">demo3</a>
+  </nav>
+  <!-- 导航栏结束 -->
+
+    <div class="container" style="width: 80vw; margin: 0 auto; ">
+        <div id="featureWithScore1" style="width: 80vw; height: 80vh; margin: 0 auto;"></div>
+        <div id="featureWithScore2" style="width: 80vw; height: 80vh; margin: 0 auto;"></div>
+        <div id="featureWithScore3" style="width: 80vw; height: 80vh; margin: 0 auto;"></div><br>
+        <h3>We're using entropy weights and then reversely standardizing to get the weight parameters as follows.Finally we use the weight to get the score.</h3>
+        <br>
+        <div style="margin: 0 auto;">
+            <table class="hovertable" style="margin: 0 auto;">
+            <tr>
+                <th>Factor</th><th>Weight</th>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+                <td>answer</td><td>21.9</td>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+                <td>vote</td><td>0.433</td>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+                <td>view</td><td>0.000348</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.1/dist/echarts.min.js"></script> -->
+    <script crossorigin="anonymous"
+        integrity="sha512-eL1tSXni6mqOrxcK6fN2Dy4/6T/SXrA9GUCNvbxsoDWsTyyND1GxzwJRS+ENat+7lBk8Jz1KuD73C80273pxpg=="
+        src="https://lib.baomitu.com/echarts/4.9.0-rc.1/echarts-en.common.js"></script>
+    <script src="./data.js"></script>
+    <script src="./echarts-wordcloud.js"></script>
+    <script>
+        {
+    var n=[]
+    var an=[]
+    var vo=[]
+    var vc=[]
+    var sc=[]
+    for(var key2 in feature){
+        n.push(feature[key2]['name']);
+        an.push(Number(feature[key2]['answer']));
+        vo.push(Number(feature[key2]['votes']));
+        vc.push(Number(feature[key2]['views_count']));
+        sc.push(Number(feature[key2]['score']));
+    }
+    var nd=[]
+    var and=[]
+    var vod=[]
+    var vcd=[]
+    var scd=[]
+    for(var key in difficult){
+        nd.push(difficult[key]['name']);
+        and.push(Number(difficult[key]['answer']));
+        vod.push(Number(difficult[key]['votes']));
+        vcd.push(Number(difficult[key]['views_count']));
+        scd.push(Number(difficult[key]['score']));
+    }
+    var chartDom = document.getElementById('featureWithScore1');
+var myChart = echarts.init(chartDom);
+var option;
+const colors = ['#5470C6', '#EE6666'];
+option = {
+    title: {
+    text: 'The total count of answers for all questions',
+    subtext: 'Data from stackoverflow'
+  },
+  color: colors,
+  tooltip: {
+    trigger: 'none',
+    axisPointer: {
+      type: 'cross'
+    }
+  },
+  legend: {},
+  grid: {
+    top: 70,
+    bottom: 50
+  },
+  toolbox:{
+    feature :{
+      saveAsImage:{}
+    }
+  },
+  xAxis: [
+    {
+      type: 'category',
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLine: {
+        onZero: false,
+        lineStyle: {
+          color: colors[1]
+        }
+      },
+      axisPointer: {
+        label: {
+          formatter: function (params) {
+            return (
+              'Precipitation  ' +
+              params.value +
+              (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+            );
+          }
+        }
+      },
+      // prettier-ignore
+      data: nd
+    },
+    {
+      type: 'category',
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLine: {
+        onZero: false,
+        lineStyle: {
+          color: colors[0]
+        }
+      },
+      axisPointer: {
+        label: {
+          formatter: function (params) {
+            return (
+              'Precipitation  ' +
+              params.value +
+              (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+            );
+          }
+        }
+      },
+      // prettier-ignore
+      data: n
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value'
+    }
+  ],
+  series: [
+    {
+      name: 'Primary',
+      type: 'line',
+      xAxisIndex: 1,
+      smooth: true,
+      emphasis: {
+        focus: 'series'
+      },
+      data: an
+    },
+    {
+      name: 'advance',
+      type: 'line',
+      smooth: true,
+      emphasis: {
+        focus: 'series'
+      },
+      data: and
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+}
+{
+    var chartDom = document.getElementById('featureWithScore2');
+var myChart = echarts.init(chartDom);
+var option;
+const colors = ['#5470C6', '#EE6666'];
+option = {
+    title: {
+    text: 'The total count of votes for all questions',
+    subtext: 'Data from stackoverflow'
+  },
+  color: colors,
+  tooltip: {
+    trigger: 'none',
+    axisPointer: {
+      type: 'cross'
+    }
+  },
+  legend: {},
+  grid: {
+    top: 70,
+    bottom: 50
+  },
+  toolbox:{
+    feature :{
+      saveAsImage:{}
+    }
+  },
+  xAxis: [
+    {
+      type: 'category',
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLine: {
+        onZero: false,
+        lineStyle: {
+          color: colors[1]
+        }
+      },
+      axisPointer: {
+        label: {
+          formatter: function (params) {
+            return (
+              'Precipitation  ' +
+              params.value +
+              (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+            );
+          }
+        }
+      },
+      // prettier-ignore
+      data: nd
+    },
+    {
+      type: 'category',
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLine: {
+        onZero: false,
+        lineStyle: {
+          color: colors[0]
+        }
+      },
+      axisPointer: {
+        label: {
+          formatter: function (params) {
+            return (
+              'Precipitation  ' +
+              params.value +
+              (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+            );
+          }
+        }
+      },
+      // prettier-ignore
+      data: n
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value'
+    }
+  ],
+  series: [
+    {
+      name: 'Primary',
+      type: 'line',
+      xAxisIndex: 1,
+      smooth: true,
+      emphasis: {
+        focus: 'series'
+      },
+      data: vo
+    },
+    {
+      name: 'advance',
+      type: 'line',
+      smooth: true,
+      emphasis: {
+        focus: 'series'
+      },
+      data: vod
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+}
+{
+    var chartDom = document.getElementById('featureWithScore3');
+var myChart = echarts.init(chartDom);
+var option;
+const colors = ['#5470C6', '#EE6666'];
+option = {
+    title: {
+    text: 'The total count of views for all questions',
+    subtext: 'Data from stackoverflow'
+  },
+  color: colors,
+  tooltip: {
+    trigger: 'none',
+    axisPointer: {
+      type: 'cross'
+    }
+  },
+  legend: {},
+  grid: {
+    top: 70,
+    bottom: 50
+  },
+  toolbox:{
+    feature :{
+      saveAsImage:{}
+    }
+  },
+  xAxis: [
+    {
+      type: 'category',
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLine: {
+        onZero: false,
+        lineStyle: {
+          color: colors[1]
+        }
+      },
+      axisPointer: {
+        label: {
+          formatter: function (params) {
+            return (
+              'Precipitation  ' +
+              params.value +
+              (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+            );
+          }
+        }
+      },
+      // prettier-ignore
+      data: nd
+    },
+    {
+      type: 'category',
+      axisTick: {
+        alignWithLabel: true
+      },
+      axisLine: {
+        onZero: false,
+        lineStyle: {
+          color: colors[0]
+        }
+      },
+      axisPointer: {
+        label: {
+          formatter: function (params) {
+            return (
+              'Precipitation  ' +
+              params.value +
+              (params.seriesData.length ? '：' + params.seriesData[0].data : '')
+            );
+          }
+        }
+      },
+      // prettier-ignore
+      data: n
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value'
+    }
+  ],
+  series: [
+    {
+      name: 'Primary',
+      type: 'line',
+      xAxisIndex: 1,
+      smooth: true,
+      emphasis: {
+        focus: 'series'
+      },
+      data: vc
+    },
+    {
+      name: 'advance',
+      type: 'line',
+      smooth: true,
+      emphasis: {
+        focus: 'series'
+      },
+      data: vcd
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+}
+
+
+    </script>

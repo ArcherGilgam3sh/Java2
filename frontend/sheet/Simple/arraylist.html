@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about arraylist</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Create ArrayList from array</td><td>40</td><td>3954</td><td>1695072</td><td>2014-06-01</td><td><a href="https://stackoverflow.com/questions/157944/create-arraylist-from-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>When to use LinkedList over ArrayList in Java?</td><td>33</td><td>3454</td><td>1277319</td><td>2015-06-17</td><td><a href="https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Initialization of an ArrayList in one line</td><td>33</td><td>3124</td><td>3411183</td><td>2014-09-03</td><td><a href="https://stackoverflow.com/questions/1005073/initialization-of-an-arraylist-in-one-line" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Converting &#39;ArrayList&lt;String&gt; to &#39;String[]&#39; in Java</td><td>17</td><td>1210</td><td>843489</td><td>2014-09-11</td><td><a href="https://stackoverflow.com/questions/4042434/converting-arrayliststring-to-string-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert ArrayList&lt;String&gt; to String[] array</td><td>6</td><td>1206</td><td>1600482</td><td>2014-11-24</td><td><a href="https://stackoverflow.com/questions/5374311/convert-arrayliststring-to-string-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to get the last value of an ArrayList</td><td>23</td><td>727</td><td>917749</td><td>2015-09-25</td><td><a href="https://stackoverflow.com/questions/687833/how-to-get-the-last-value-of-an-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert list to array in Java</td><td>11</td><td>666</td><td>1051920</td><td>2016-02-09</td><td><a href="https://stackoverflow.com/questions/9572795/convert-list-to-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why do I get an UnsupportedOperationException when trying to remove an element from a List?</td><td>17</td><td>574</td><td>534992</td><td>2013-11-20</td><td><a href="https://stackoverflow.com/questions/2965747/why-do-i-get-an-unsupportedoperationexception-when-trying-to-remove-an-element-f" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I remove repeated elements from ArrayList?</td><td>40</td><td>553</td><td>909441</td><td>2013-10-19</td><td><a href="https://stackoverflow.com/questions/203984/how-do-i-remove-repeated-elements-from-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to sort a List/ArrayList?</td><td>21</td><td>435</td><td>1204031</td><td>2017-09-14</td><td><a href="https://stackoverflow.com/questions/16252269/how-to-sort-a-list-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What are the differences between ArrayList and Vector?</td><td>7</td><td>398</td><td>255797</td><td>2013-11-23</td><td><a href="https://stackoverflow.com/questions/2986296/what-are-the-differences-between-arraylist-and-vector" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to avoid &quot;ConcurrentModificationException&quot; while removing elements from `ArrayList` while iterating it?</td><td>10</td><td>389</td><td>466664</td><td>2015-10-15</td><td><a href="https://stackoverflow.com/questions/18448671/how-to-avoid-concurrentmodificationexception-while-removing-elements-from-arr" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to quickly and conveniently create a one element arraylist</td><td>8</td><td>388</td><td>378618</td><td>2015-04-21</td><td><a href="https://stackoverflow.com/questions/20358883/how-to-quickly-and-conveniently-create-a-one-element-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert an ArrayList containing Integers to primitive int array?</td><td>19</td><td>387</td><td>498988</td><td>2010-06-01</td><td><a href="https://stackoverflow.com/questions/718554/how-to-convert-an-arraylist-containing-integers-to-primitive-int-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is the Simplest Way to Reverse an ArrayList?</td><td>12</td><td>364</td><td>369728</td><td>2015-12-17</td><td><a href="https://stackoverflow.com/questions/10766492/what-is-the-simplest-way-to-reverse-an-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Best way to convert an ArrayList to a string</td><td>27</td><td>353</td><td>1315729</td><td>2012-03-25</td><td><a href="https://stackoverflow.com/questions/599161/best-way-to-convert-an-arraylist-to-a-string" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Initial size for the ArrayList</td><td>17</td><td>316</td><td>557745</td><td>2013-11-09</td><td><a href="https://stackoverflow.com/questions/8896758/initial-size-for-the-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How does a ArrayList&#39;s contains() method evaluate objects?</td><td>10</td><td>316</td><td>578524</td><td>2012-04-19</td><td><a href="https://stackoverflow.com/questions/2642589/how-does-a-arraylists-contains-method-evaluate-objects" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is the difference between ArrayList.clear() and ArrayList.removeAll()?</td><td>9</td><td>303</td><td>429240</td><td>2013-11-18</td><td><a href="https://stackoverflow.com/questions/7032070/what-is-the-difference-between-arraylist-clear-and-arraylist-removeall" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java List.add() UnsupportedOperationException</td><td>8</td><td>294</td><td>199619</td><td>2014-06-27</td><td><a href="https://stackoverflow.com/questions/5755477/java-list-add-unsupportedoperationexception" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayList initialization equivalent to array initialization</td><td>8</td><td>294</td><td>225807</td><td>2011-10-12</td><td><a href="https://stackoverflow.com/questions/2760995/arraylist-initialization-equivalent-to-array-initialization" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to avoid java.util.ConcurrentModificationException when iterating through and removing elements from an ArrayList</td><td>23</td><td>267</td><td>445872</td><td>2014-12-18</td><td><a href="https://stackoverflow.com/questions/8104692/how-to-avoid-java-util-concurrentmodificationexception-when-iterating-through-an" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to randomize two ArrayLists in the same fashion?</td><td>9</td><td>263</td><td>202305</td><td>2014-03-20</td><td><a href="https://stackoverflow.com/questions/4228975/how-to-randomize-two-arraylists-in-the-same-fashion" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java ArrayList copy</td><td>8</td><td>256</td><td>440890</td><td>2014-08-23</td><td><a href="https://stackoverflow.com/questions/6536094/java-arraylist-copy" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Difference between if (a - b &lt; 0) and if (a &lt; b)</td><td>4</td><td>254</td><td>14631</td><td>2015-10-15</td><td><a href="https://stackoverflow.com/questions/33147339/difference-between-if-a-b-0-and-if-a-b" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java ArrayList replace at specific index</td><td>7</td><td>250</td><td>317770</td><td>2011-09-17</td><td><a href="https://stackoverflow.com/questions/7452772/java-arraylist-replace-at-specific-index" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java: how can I split an ArrayList in multiple small ArrayLists?</td><td>21</td><td>239</td><td>461016</td><td>2011-04-24</td><td><a href="https://stackoverflow.com/questions/2895342/java-how-can-i-split-an-arraylist-in-multiple-small-arraylists" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java ArrayList how to add elements at the beginning</td><td>15</td><td>233</td><td>395626</td><td>2016-08-18</td><td><a href="https://stackoverflow.com/questions/12949690/java-arraylist-how-to-add-elements-at-the-beginning" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to declare an ArrayList with values?</td><td>6</td><td>226</td><td>504164</td><td>2015-10-21</td><td><a href="https://stackoverflow.com/questions/21696784/how-to-declare-an-arraylist-with-values" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to sort an ArrayList in Java</td><td>3</td><td>224</td><td>620273</td><td>2015-05-04</td><td><a href="https://stackoverflow.com/questions/18441846/how-to-sort-an-arraylist-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to count the number of occurrences of an element in a List</td><td>25</td><td>223</td><td>432625</td><td>2012-03-18</td><td><a href="https://stackoverflow.com/questions/505928/how-to-count-the-number-of-occurrences-of-an-element-in-a-list" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>make arrayList.toArray() return more specific types</td><td>6</td><td>212</td><td>179517</td><td>2012-07-09</td><td><a href="https://stackoverflow.com/questions/5061640/make-arraylist-toarray-return-more-specific-types" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I create an Array of ArrayLists?</td><td>20</td><td>207</td><td>296154</td><td>2016-08-30</td><td><a href="https://stackoverflow.com/questions/8559092/how-can-i-create-an-array-of-arraylists" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to efficiently remove all null elements from a ArrayList or String Array?</td><td>18</td><td>203</td><td>217593</td><td>2016-07-07</td><td><a href="https://stackoverflow.com/questions/4819635/how-to-efficiently-remove-all-null-elements-from-a-arraylist-or-string-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Check if a value exists in ArrayList</td><td>8</td><td>201</td><td>817819</td><td>2015-04-06</td><td><a href="https://stackoverflow.com/questions/4404084/check-if-a-value-exists-in-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Get specific ArrayList item</td><td>8</td><td>191</td><td>606524</td><td>2012-11-11</td><td><a href="https://stackoverflow.com/questions/3920602/get-specific-arraylist-item" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I clone a generic List in Java?</td><td>14</td><td>171</td><td>268662</td><td>2013-11-04</td><td><a href="https://stackoverflow.com/questions/54909/how-do-i-clone-a-generic-list-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I update the element at a certain position in an ArrayList?</td><td>5</td><td>168</td><td>274647</td><td>2014-11-11</td><td><a href="https://stackoverflow.com/questions/4352885/how-do-i-update-the-element-at-a-certain-position-in-an-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is the difference between List and ArrayList?</td><td>1</td><td>167</td><td>300316</td><td>2013-02-16</td><td><a href="https://stackoverflow.com/questions/14903145/what-is-the-difference-between-list-and-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why start an ArrayList with an initial capacity?</td><td>11</td><td>159</td><td>87945</td><td>2013-03-15</td><td><a href="https://stackoverflow.com/questions/15430247/why-start-an-arraylist-with-an-initial-capacity" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java ArrayList - how can I tell if two lists are equal, order not mattering?</td><td>18</td><td>157</td><td>265996</td><td>2015-12-14</td><td><a href="https://stackoverflow.com/questions/13501142/java-arraylist-how-can-i-tell-if-two-lists-are-equal-order-not-mattering" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to replace existing value of ArrayList element in Java</td><td>4</td><td>156</td><td>350819</td><td>2016-08-10</td><td><a href="https://stackoverflow.com/questions/23981008/how-to-replace-existing-value-of-arraylist-element-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Add object to ArrayList at specified index</td><td>14</td><td>155</td><td>385281</td><td>2017-01-11</td><td><a href="https://stackoverflow.com/questions/7384908/add-object-to-arraylist-at-specified-index" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to find the length of an array list?</td><td>2</td><td>148</td><td>589304</td><td>2014-11-20</td><td><a href="https://stackoverflow.com/questions/9652732/how-to-find-the-length-of-an-array-list" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Which Java Collection should I use?</td><td>6</td><td>140</td><td>57799</td><td>2016-07-11</td><td><a href="https://stackoverflow.com/questions/21974361/which-java-collection-should-i-use" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I convert String[] to ArrayList&lt;String&gt;</td><td>6</td><td>139</td><td>194255</td><td>2015-01-28</td><td><a href="https://stackoverflow.com/questions/10230929/how-can-i-convert-string-to-arrayliststring" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>list.clear() vs list = new ArrayList&lt;Integer&gt;();</td><td>8</td><td>136</td><td>155832</td><td>2012-04-26</td><td><a href="https://stackoverflow.com/questions/6961356/list-clear-vs-list-new-arraylistinteger" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayList - how can I check if an index exists?</td><td>12</td><td>131</td><td>282625</td><td>2015-12-05</td><td><a href="https://stackoverflow.com/questions/2131802/arraylist-how-can-i-check-if-an-index-exists" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Sorting arraylist in alphabetical order (case insensitive)</td><td>10</td><td>129</td><td>270292</td><td>2014-02-28</td><td><a href="https://stackoverflow.com/questions/5815423/sorting-arraylist-in-alphabetical-order-case-insensitive" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert a String into an ArrayList?</td><td>13</td><td>128</td><td>564932</td><td>2014-09-24</td><td><a href="https://stackoverflow.com/questions/7347856/how-to-convert-a-string-into-an-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Sorting an ArrayList of objects using a custom sorting order</td><td>11</td><td>123</td><td>183799</td><td>2013-10-21</td><td><a href="https://stackoverflow.com/questions/1814095/sorting-an-arraylist-of-objects-using-a-custom-sorting-order" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Common elements in two lists</td><td>14</td><td>121</td><td>208104</td><td>2015-03-03</td><td><a href="https://stackoverflow.com/questions/5943330/common-elements-in-two-lists" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Variable length (Dynamic) Arrays in Java</td><td>9</td><td>117</td><td>453588</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2426671/variable-length-dynamic-arrays-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to find an object in an ArrayList by property</td><td>8</td><td>117</td><td>235774</td><td>2016-01-09</td><td><a href="https://stackoverflow.com/questions/17526608/how-to-find-an-object-in-an-arraylist-by-property" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I create an array in Kotlin like in Java by just providing a size?</td><td>5</td><td>117</td><td>83903</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/35253368/how-can-i-create-an-array-in-kotlin-like-in-java-by-just-providing-a-size" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java: Detect duplicates in ArrayList?</td><td>16</td><td>116</td><td>298254</td><td>2009-02-18</td><td><a href="https://stackoverflow.com/questions/562894/java-detect-duplicates-in-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Retrieving a random item from ArrayList</td><td>12</td><td>116</td><td>262280</td><td>2015-08-29</td><td><a href="https://stackoverflow.com/questions/5034370/retrieving-a-random-item-from-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Populating a ListView using an ArrayList?</td><td>6</td><td>113</td><td>345936</td><td>2013-09-20</td><td><a href="https://stackoverflow.com/questions/5070830/populating-a-listview-using-an-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why is Java&#39;s AbstractList&#39;s removeRange() method protected?</td><td>1</td><td>113</td><td>34529</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2289183/why-is-javas-abstractlists-removerange-method-protected" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>From Arraylist to Array</td><td>11</td><td>112</td><td>239558</td><td>2011-11-01</td><td><a href="https://stackoverflow.com/questions/7969023/from-arraylist-to-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I make my ArrayList Thread-Safe? Another approach to problem in Java?</td><td>8</td><td>110</td><td>208232</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2444005/how-do-i-make-my-arraylist-thread-safe-another-approach-to-problem-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I convert ArrayList&lt;Object&gt; to ArrayList&lt;String&gt;?</td><td>11</td><td>106</td><td>211030</td><td>2011-11-10</td><td><a href="https://stackoverflow.com/questions/4581407/how-can-i-convert-arraylistobject-to-arrayliststring" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>java howto ArrayList push, pop, shift, and unshift</td><td>5</td><td>105</td><td>236970</td><td>2015-07-14</td><td><a href="https://stackoverflow.com/questions/8452672/java-howto-arraylist-push-pop-shift-and-unshift" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Remove Item from ArrayList</td><td>11</td><td>105</td><td>499868</td><td>2014-07-23</td><td><a href="https://stackoverflow.com/questions/10714233/remove-item-from-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayIndexOutOfBoundsException when using the ArrayList&#39;s iterator</td><td>8</td><td>102</td><td>393825</td><td>2013-10-31</td><td><a href="https://stackoverflow.com/questions/6700717/arrayindexoutofboundsexception-when-using-the-arraylists-iterator" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Print ArrayList</td><td>24</td><td>102</td><td>803649</td><td>2012-02-13</td><td><a href="https://stackoverflow.com/questions/9265719/print-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>List&lt;String&gt; to ArrayList&lt;String&gt; conversion issue</td><td>8</td><td>101</td><td>249483</td><td>2017-07-31</td><td><a href="https://stackoverflow.com/questions/13134983/liststring-to-arrayliststring-conversion-issue" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>In Java 8, why is the default capacity of ArrayList now zero?</td><td>6</td><td>101</td><td>87316</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/34250207/in-java-8-why-is-the-default-capacity-of-arraylist-now-zero" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert an array into an ArrayList</td><td>4</td><td>98</td><td>126558</td><td>2014-02-27</td><td><a href="https://stackoverflow.com/questions/9811261/convert-an-array-into-an-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Better way to find index of item in ArrayList?</td><td>8</td><td>95</td><td>281768</td><td>2013-08-28</td><td><a href="https://stackoverflow.com/questions/8439037/better-way-to-find-index-of-item-in-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I slice an ArrayList out of an ArrayList in Java?</td><td>5</td><td>92</td><td>139403</td><td>2009-09-27</td><td><a href="https://stackoverflow.com/questions/1480663/how-can-i-slice-an-arraylist-out-of-an-arraylist-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayList: how does the size increase?</td><td>22</td><td>91</td><td>155846</td><td>2016-08-04</td><td><a href="https://stackoverflow.com/questions/4450628/arraylist-how-does-the-size-increase" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>When to use HashMap over LinkedList or ArrayList and vice-versa</td><td>4</td><td>91</td><td>126364</td><td>2011-11-02</td><td><a href="https://stackoverflow.com/questions/7975802/when-to-use-hashmap-over-linkedlist-or-arraylist-and-vice-versa" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What&#39;s the C++ version of Java&#39;s ArrayList</td><td>3</td><td>89</td><td>158217</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3971049/whats-the-c-version-of-javas-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Arraylist swap elements</td><td>4</td><td>88</td><td>158725</td><td>2015-11-23</td><td><a href="https://stackoverflow.com/questions/15963549/arraylist-swap-elements" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Gson TypeToken with dynamic ArrayList item type</td><td>13</td><td>88</td><td>116541</td><td>2014-02-21</td><td><a href="https://stackoverflow.com/questions/20773850/gson-typetoken-with-dynamic-arraylist-item-type" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I find out what type each object is in a ArrayList&lt;Object&gt;?</td><td>12</td><td>87</td><td>268320</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/106336/how-do-i-find-out-what-type-each-object-is-in-a-arraylistobject" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>why HashMap Values are not cast in List?</td><td>10</td><td>87</td><td>89840</td><td>2014-10-30</td><td><a href="https://stackoverflow.com/questions/15522546/why-hashmap-values-are-not-cast-in-list" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why is processing a sorted array *slower* than an unsorted array? (Java&#39;s ArrayList.indexOf)</td><td>3</td><td>86</td><td>4577</td><td>2016-09-24</td><td><a href="https://stackoverflow.com/questions/35018999/why-is-processing-a-sorted-array-slower-than-an-unsorted-array-javas-arrayl" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>java.lang.ClassCastException: java.util.Arrays$ArrayList cannot be cast to java.util.ArrayList</td><td>6</td><td>85</td><td>116887</td><td>2018-03-04</td><td><a href="https://stackoverflow.com/questions/28851652/java-lang-classcastexception-java-util-arraysarraylist-cannot-be-cast-to-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayList replace element if exists at a given index?</td><td>5</td><td>84</td><td>88260</td><td>2014-09-26</td><td><a href="https://stackoverflow.com/questions/5617175/arraylist-replace-element-if-exists-at-a-given-index" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Add an object to an ArrayList and modify it later</td><td>4</td><td>84</td><td>37127</td><td>2011-08-16</td><td><a href="https://stackoverflow.com/questions/7080546/add-an-object-to-an-arraylist-and-modify-it-later" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Moving items around in an ArrayList</td><td>9</td><td>83</td><td>159833</td><td>2015-05-04</td><td><a href="https://stackoverflow.com/questions/4938626/moving-items-around-in-an-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to insert an object in an ArrayList at a specific position</td><td>6</td><td>82</td><td>251445</td><td>2011-08-16</td><td><a href="https://stackoverflow.com/questions/7074402/how-to-insert-an-object-in-an-arraylist-at-a-specific-position" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Add multiple items to already initialized arraylist in java</td><td>8</td><td>82</td><td>184651</td><td>2015-11-06</td><td><a href="https://stackoverflow.com/questions/15213974/add-multiple-items-to-already-initialized-arraylist-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I calculate the difference between two ArrayLists?</td><td>10</td><td>81</td><td>149261</td><td>2014-09-14</td><td><a href="https://stackoverflow.com/questions/919387/how-can-i-calculate-the-difference-between-two-arraylists" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java: How to read a text file</td><td>9</td><td>81</td><td>514453</td><td>2013-03-10</td><td><a href="https://stackoverflow.com/questions/2788080/java-how-to-read-a-text-file" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Option to ignore case with .contains method?</td><td>17</td><td>80</td><td>182724</td><td>2015-10-01</td><td><a href="https://stackoverflow.com/questions/15824733/option-to-ignore-case-with-contains-method" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What does this boolean &quot;(number &amp; 1) == 0&quot; mean?</td><td>9</td><td>80</td><td>19076</td><td>2015-05-12</td><td><a href="https://stackoverflow.com/questions/14905643/what-does-this-boolean-number-1-0-mean" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>java.lang.IndexOutOfBoundsException: Source does not fit in dest</td><td>6</td><td>80</td><td>45972</td><td>2013-05-06</td><td><a href="https://stackoverflow.com/questions/6147650/java-lang-indexoutofboundsexception-source-does-not-fit-in-dest" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to move specific item in array list to the first item</td><td>6</td><td>78</td><td>107409</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/20186681/how-to-move-specific-item-in-array-list-to-the-first-item" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayList or List declaration in Java</td><td>10</td><td>78</td><td>253324</td><td>2013-12-29</td><td><a href="https://stackoverflow.com/questions/12321177/arraylist-or-list-declaration-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayList&lt;String&gt; to CharSequence[]</td><td>2</td><td>77</td><td>63573</td><td>2010-06-13</td><td><a href="https://stackoverflow.com/questions/3032342/arrayliststring-to-charsequence" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>In Java how do you sort one list based on another?</td><td>23</td><td>76</td><td>96345</td><td>2016-05-02</td><td><a href="https://stackoverflow.com/questions/18129807/in-java-how-do-you-sort-one-list-based-on-another" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert List&lt;String&gt; to List&lt;Integer&gt; directly</td><td>14</td><td>76</td><td>158810</td><td>2015-04-24</td><td><a href="https://stackoverflow.com/questions/10706721/convert-liststring-to-listinteger-directly" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Time complexity for java ArrayList</td><td>6</td><td>75</td><td>100982</td><td>2010-02-02</td><td><a href="https://stackoverflow.com/questions/2182597/time-complexity-for-java-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why does Enumeration get converted to ArrayList and not List in java.utils?</td><td>4</td><td>74</td><td>3509</td><td>2016-05-31</td><td><a href="https://stackoverflow.com/questions/32356762/why-does-enumeration-get-converted-to-arraylist-and-not-list-in-java-utils" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>what is the sense of final ArrayList?</td><td>13</td><td>73</td><td>85189</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10750791/what-is-the-sense-of-final-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Scala equivalent of java.util.ArrayList</td><td>3</td><td>73</td><td>58024</td><td>2011-11-27</td><td><a href="https://stackoverflow.com/questions/8287360/scala-equivalent-of-java-util-arraylist" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Trouble with Gson serializing an ArrayList of POJO&#39;s</td><td>1</td><td>72</td><td>86431</td><td>2014-05-31</td><td><a href="https://stackoverflow.com/questions/5813434/trouble-with-gson-serializing-an-arraylist-of-pojos" target="_blank">click</a></td>
+</tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

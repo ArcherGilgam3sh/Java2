@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    .title {
+      margin: 0;
+      text-align: center;
+      color: #ff0000;
+      /* font-style: italic; */
+      font-size: 50px;
+  }
+  .subtitle {
+      margin: 0;
+      text-align: center;
+      color: rgb(160, 160, 160);
+      font-size: 20px;
+  }
+  .bj {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 1000px;
+      z-index: -10;
+      zoom: 1;
+      background-color: #fff;
+      background-image: url(background.jpg) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-position: center 0;
+    }
+    a:link{
+      color: antiquewhite;
+      text-decoration: none;
+    }
+    a:visited{
+      color: aqua;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body style="height: 100%; margin: 0">
+  <!-- 导航栏开始 -->
+  <nav style="background-color: #333; padding: 10px; text-align: center;">
+    <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">demo1</a>
+    <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">demo2</a>
+    <a href="graph.html" style="color: white; text-decoration: none;">demo3</a>
+  </nav>
+  <!-- 导航栏结束 -->
+
+  <div class="bj"></div>
+    <div class="container" style="width: 80vw; margin: 0 auto; ">
+        <h1 class="title" style="margin-top: 50px; ">Welcome to our Java2 final project! </h1>
+        
+        <div id="tag" style="width: 80vw; height: 80vh; margin: 0 auto;opacity: 1;background-color: #fff;"></div>
+        <div id="featureWithScore4" style="width: 80vw; height: 80vh; margin: 0 auto;opacity: 1;background-color: #fff;"></div>
+        <div style="width: 10vw;height:20vh;"></div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script crossorigin="anonymous"
+        integrity="sha512-eL1tSXni6mqOrxcK6fN2Dy4/6T/SXrA9GUCNvbxsoDWsTyyND1GxzwJRS+ENat+7lBk8Jz1KuD73C80273pxpg=="
+        src="https://lib.baomitu.com/echarts/4.9.0-rc.1/echarts-en.common.js"></script>
+    <script src="./data.js"></script>
+    <script src="./echarts-wordcloud.js"></script>
+    <script type="text/javascript">
+{
+    // var tag=[]
+    // var question_num=[]
+    // for(var key in numForTag){
+    //     tag.push(numForTag[key]['name']);
+    //     question_num.push(Number(numForTag[key]['questions_count']));
+    // }
+    {
+    // 使用静态数据替换原有的动态数据生成部分
+    var tag = ["spring-boot", "android", "maven", "hibernate", "gradle", "kotlin", "jpa", "docker", "json", "javafx"];
+    var question_num = [99, 88, 77, 66, 55, 44, 33, 22, 11, 0];
+
+    // fetch('https://example.com/api/data')
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         // 假设后端返回的数据格式是 { tags: [], questions: [] }
+    //         tag = data.tags;
+    //         question_num = data.questions;
+    //     })
+    //     .catch(error => console.error('Error fetching data:', error));
+}
+
+
+}
+{
+    var chartDom = document.getElementById('tag');
+var myChart = echarts.init(chartDom);
+var option;
+
+// prettier-ignore
+let dataAxis = tag;
+// prettier-ignore
+let data = question_num;
+let yMax = 2500000;
+let dataShadow = [];
+for (let i = 0; i < data.length; i++) {
+  dataShadow.push(yMax);
+}
+option = {
+  title: {
+    text: 'Questions count for every tag',
+    subtext: 'Data from stackoverflow'
+  },
+  xAxis: {
+    data: dataAxis,
+    axisLabel: {
+      inside: true,
+      color: '#fff'
+    },
+    axisTick: {
+      show: false
+    },
+    axisLine: {
+      show: false
+    },
+    z: 10
+  },
+  toolbox:{
+    feature :{
+      saveAsImage:{}
+    }
+  },
+  yAxis: {
+    axisLine: {
+      show: false
+    },
+    axisTick: {
+      show: false
+    },
+    axisLabel: {
+      color: '#999'
+    }
+  },
+  dataZoom: [
+    {
+      type: 'inside'
+    }
+  ],
+  series: [
+    {
+      type: 'bar',
+      showBackground: true,
+      itemStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          { offset: 0, color: '#83bff6' },
+          { offset: 0.5, color: '#188df0' },
+          { offset: 1, color: '#188df0' }
+        ])
+      },
+      emphasis: {
+        itemStyle: {
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            { offset: 0, color: '#2378f7' },
+            { offset: 0.7, color: '#2378f7' },
+            { offset: 1, color: '#83bff6' }
+          ])
+        }
+      },
+      data: data
+    }
+  ]
+};
+// Enable data zoom when user click bar.
+const zoomSize = 6;
+myChart.on('click', function (params) {
+  console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
+  myChart.dispatchAction({
+    type: 'dataZoom',
+    startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
+    endValue:
+      dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
+  });
+});
+
+option && myChart.setOption(option);
+
+}
+{
+var chartDom = document.getElementById('featureWithScore4');
+var myChart = echarts.init(chartDom);
+var option;
+const colors = ['#5470C6', '#EE6666'];
+
+var categories = [];
+var avg1Data = [];
+var avg2Data = [];
+var avg3Data = [];
+
+fetch('https://your-backend-url.com/data')
+        .then(response => response.json())
+        .then(data => {
+            // 假设后端返回的数据格式如下：
+            // {
+            //   categories: ['Demo1', 'Demo2', ...],
+            //   avg1: [10, 20, ...],
+            //   avg2: [30, 40, ...],
+            //   avg3: [50, 60, ...]
+            // }
+            categories = data.categories;
+            avg1Data = data.avg1;
+            avg2Data = data.avg2;
+            avg3Data = data.avg3;
+        })
+        .catch(error => {
+            console.error('Error fetching data: ', error);
+            // 可以在这里处理错误
+        });
+
+option = {
+        title: {
+            text: 'The score for all topics of questions',
+            subtext: 'Data from stackoverflow'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: ['avg1', 'avg2', 'avg3']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['Demo1', 'Demo2', 'Demo3', 'Demo4', 'Demo5', 'Demo6', 'Demo7', 'Demo8', 'Demo9', 'Demo10'], // 10个横轴坐标点
+            // data: categories
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: 'avg1',
+                type: 'line',
+                data: [11, 11, 15, 13, 12, 13, 10, 13, 14, 13], // 示例数据
+                // data: avg1Data
+            },
+            {
+                name: 'avg2',
+                type: 'line',
+                data: [1, 12, 2, 14, 9, 23, 21, 24, 6, 16], // 示例数据
+                // data: avg2Data
+            },
+            {
+                name: 'avg3',
+                type: 'line',
+                data: [1, 14, 20, 13, 10, 13, 10, 22, 18, 9], // 示例数据
+                // data: avg3Data
+            }
+        ]
+    };
+
+option && myChart.setOption(option);
+}
+
+    </script>
+</body>

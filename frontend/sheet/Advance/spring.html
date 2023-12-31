@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about spring</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between @Component, @Repository &amp; @Service annotations in Spring?</td><td>30</td><td>2404</td><td>1050067</td><td>2015-11-06</td><td><a href="https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to configure port for a Spring Boot application</td><td>60</td><td>968</td><td>930908</td><td>2016-08-16</td><td><a href="https://stackoverflow.com/questions/21083170/how-to-configure-port-for-a-spring-boot-application" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is difference between CrudRepository and JpaRepository interfaces in Spring Data JPA?</td><td>7</td><td>953</td><td>385970</td><td>2016-09-06</td><td><a href="https://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepository-and-jparepository-interfaces-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between @Inject and @Autowired in Spring Framework? Which one to use under what condition?</td><td>11</td><td>760</td><td>341429</td><td>2015-01-20</td><td><a href="https://stackoverflow.com/questions/7142622/what-is-the-difference-between-inject-and-autowired-in-spring-framework-which" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between &lt;context:annotation-config&gt; and &lt;context:component-scan&gt;</td><td>15</td><td>718</td><td>346090</td><td>2015-10-03</td><td><a href="https://stackoverflow.com/questions/7414794/difference-between-contextannotation-config-and-contextcomponent-scan" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is my Spring @Autowired field null?</td><td>21</td><td>709</td><td>622705</td><td>2015-07-17</td><td><a href="https://stackoverflow.com/questions/19896870/why-is-my-spring-autowired-field-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What exactly is Spring Framework for?</td><td>17</td><td>647</td><td>283714</td><td>2015-06-03</td><td><a href="https://stackoverflow.com/questions/1061717/what-exactly-is-spring-framework-for" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring: @Component versus @Bean</td><td>15</td><td>627</td><td>381748</td><td>2013-01-08</td><td><a href="https://stackoverflow.com/questions/10604298/spring-component-versus-bean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does autowiring work in Spring?</td><td>11</td><td>567</td><td>395662</td><td>2014-07-01</td><td><a href="https://stackoverflow.com/questions/3153546/how-does-autowiring-work-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Where does the @Transactional annotation belong?</td><td>19</td><td>565</td><td>264777</td><td>2012-09-20</td><td><a href="https://stackoverflow.com/questions/1079114/where-does-the-transactional-annotation-belong" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring @Transactional - isolation, propagation</td><td>10</td><td>516</td><td>351956</td><td>2015-08-07</td><td><a href="https://stackoverflow.com/questions/8490852/spring-transactional-isolation-propagation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to log SQL statements in Spring Boot?</td><td>21</td><td>463</td><td>481055</td><td>2017-03-02</td><td><a href="https://stackoverflow.com/questions/30118683/how-to-log-sql-statements-in-spring-boot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JsonMappingException: No suitable constructor found for type [simple type, class ]: can not instantiate from JSON object</td><td>14</td><td>462</td><td>462086</td><td>2014-04-13</td><td><a href="https://stackoverflow.com/questions/7625783/jsonmappingexception-no-suitable-constructor-found-for-type-simple-type-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What in the world are Spring beans?</td><td>12</td><td>461</td><td>190065</td><td>2013-06-19</td><td><a href="https://stackoverflow.com/questions/17193365/what-in-the-world-are-spring-beans" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to respond with HTTP 400 error in a Spring MVC @ResponseBody method returning String?</td><td>14</td><td>443</td><td>469066</td><td>2014-11-30</td><td><a href="https://stackoverflow.com/questions/16232833/how-to-respond-with-http-400-error-in-a-spring-mvc-responsebody-method-returnin" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to solve the “failed to lazily initialize a collection of role” Hibernate exception</td><td>32</td><td>441</td><td>650839</td><td>2015-07-15</td><td><a href="https://stackoverflow.com/questions/11746499/how-to-solve-the-failed-to-lazily-initialize-a-collection-of-role-hibernate-ex" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Downloading a file from spring controllers</td><td>15</td><td>430</td><td>538310</td><td>2013-10-29</td><td><a href="https://stackoverflow.com/questions/5673260/downloading-a-file-from-spring-controllers" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>@Resource vs @Autowired</td><td>11</td><td>424</td><td>268495</td><td>2014-08-29</td><td><a href="https://stackoverflow.com/questions/4093504/resource-vs-autowired" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring - @Transactional - What happens in background?</td><td>6</td><td>410</td><td>233878</td><td>2013-07-16</td><td><a href="https://stackoverflow.com/questions/1099025/spring-transactional-what-happens-in-background" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Only using @JsonIgnore during serialization, but not deserialization</td><td>9</td><td>408</td><td>410216</td><td>2016-10-16</td><td><a href="https://stackoverflow.com/questions/12505141/only-using-jsonignore-during-serialization-but-not-deserialization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between spring @Controller and @RestController annotation</td><td>15</td><td>404</td><td>232067</td><td>2015-04-02</td><td><a href="https://stackoverflow.com/questions/25242321/difference-between-spring-controller-and-restcontroller-annotation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>@RequestParam vs @PathVariable</td><td>8</td><td>397</td><td>499945</td><td>2015-11-14</td><td><a href="https://stackoverflow.com/questions/13715811/requestparam-vs-pathvariable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between applicationContext.xml and spring-servlet.xml in Spring Framework</td><td>6</td><td>383</td><td>178643</td><td>2013-06-01</td><td><a href="https://stackoverflow.com/questions/3652090/difference-between-applicationcontext-xml-and-spring-servlet-xml-in-spring-frame" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring RestTemplate GET with parameters</td><td>14</td><td>355</td><td>618312</td><td>2015-05-22</td><td><a href="https://stackoverflow.com/questions/8297215/spring-resttemplate-get-with-parameters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Understanding Spring @Autowired usage</td><td>3</td><td>340</td><td>452789</td><td>2016-01-04</td><td><a href="https://stackoverflow.com/questions/19414734/understanding-spring-autowired-usage" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between putting a property on application.yml or bootstrap.yml in spring boot?</td><td>9</td><td>335</td><td>138437</td><td>2017-06-04</td><td><a href="https://stackoverflow.com/questions/32997352/what-is-the-difference-between-putting-a-property-on-application-yml-or-bootstra" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check String in response body with mockMvc</td><td>13</td><td>331</td><td>416445</td><td>2016-10-20</td><td><a href="https://stackoverflow.com/questions/18336277/how-to-check-string-in-response-body-with-mockmvc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Populating Spring @Value during Unit Test</td><td>11</td><td>331</td><td>346118</td><td>2016-10-05</td><td><a href="https://stackoverflow.com/questions/17353327/populating-spring-value-during-unit-test" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Running code after Spring Boot starts</td><td>17</td><td>326</td><td>348398</td><td>2015-08-30</td><td><a href="https://stackoverflow.com/questions/27405713/running-code-after-spring-boot-starts" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring Boot - How to log all requests and responses with exceptions in single place?</td><td>27</td><td>324</td><td>505209</td><td>2018-04-27</td><td><a href="https://stackoverflow.com/questions/33744875/spring-boot-how-to-log-all-requests-and-responses-with-exceptions-in-single-pl" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using env variable in Spring Boot&#39;s application.properties</td><td>9</td><td>318</td><td>575546</td><td>2018-07-28</td><td><a href="https://stackoverflow.com/questions/35531661/using-env-variable-in-spring-boots-application-properties" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Type safety: Unchecked cast</td><td>10</td><td>309</td><td>448985</td><td>2015-03-17</td><td><a href="https://stackoverflow.com/questions/262367/type-safety-unchecked-cast" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I inject a property value into a Spring Bean which was configured using annotations?</td><td>18</td><td>304</td><td>741865</td><td>2010-12-26</td><td><a href="https://stackoverflow.com/questions/317687/how-can-i-inject-a-property-value-into-a-spring-bean-which-was-configured-using" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When using Spring Security, what is the proper way to obtain current username (i.e. SecurityContext) information in a bean?</td><td>17</td><td>302</td><td>180646</td><td>2012-05-03</td><td><a href="https://stackoverflow.com/questions/248562/when-using-spring-security-what-is-the-proper-way-to-obtain-current-username-i" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reading a List from properties file and load with spring annotation @Value</td><td>17</td><td>300</td><td>394467</td><td>2016-01-06</td><td><a href="https://stackoverflow.com/questions/12576156/reading-a-list-from-properties-file-and-load-with-spring-annotation-value" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is Spring&#39;s ApplicationContext.getBean considered bad?</td><td>14</td><td>300</td><td>383544</td><td>2013-05-12</td><td><a href="https://stackoverflow.com/questions/812415/why-is-springs-applicationcontext-getbean-considered-bad" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between Role and GrantedAuthority in Spring Security</td><td>4</td><td>296</td><td>144387</td><td>2016-10-12</td><td><a href="https://stackoverflow.com/questions/19525380/difference-between-role-and-grantedauthority-in-spring-security" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring Boot Configure and Use Two DataSources</td><td>10</td><td>293</td><td>412771</td><td>2017-11-07</td><td><a href="https://stackoverflow.com/questions/30337582/spring-boot-configure-and-use-two-datasources" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between Hibernate and Spring Data JPA</td><td>6</td><td>292</td><td>139924</td><td>2016-03-04</td><td><a href="https://stackoverflow.com/questions/23862994/what-is-the-difference-between-hibernate-and-spring-data-jpa" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use multiple @RequestMapping annotations in spring?</td><td>7</td><td>281</td><td>191590</td><td>2015-03-24</td><td><a href="https://stackoverflow.com/questions/2513031/how-to-use-multiple-requestmapping-annotations-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring cron expression for every day 1:01:am</td><td>6</td><td>271</td><td>465916</td><td>2015-05-07</td><td><a href="https://stackoverflow.com/questions/26147044/spring-cron-expression-for-every-day-101am" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>RESTful Authentication via Spring</td><td>4</td><td>268</td><td>126929</td><td>2016-01-31</td><td><a href="https://stackoverflow.com/questions/10826293/restful-authentication-via-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Setting active profile and config location from command line in spring boot</td><td>15</td><td>262</td><td>435882</td><td>2015-06-24</td><td><a href="https://stackoverflow.com/questions/31038250/setting-active-profile-and-config-location-from-command-line-in-spring-boot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mockito: Inject real objects into private @Autowired fields</td><td>5</td><td>247</td><td>150962</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/20270391/mockito-inject-real-objects-into-private-autowired-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Spring @Transactional attribute work on a private method?</td><td>8</td><td>245</td><td>146568</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4396284/does-spring-transactional-attribute-work-on-a-private-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring CrudRepository findByInventoryIds(List&lt;Long&gt; inventoryIdList) - equivalent to IN clause</td><td>3</td><td>238</td><td>277828</td><td>2014-09-13</td><td><a href="https://stackoverflow.com/questions/18987292/spring-crudrepository-findbyinventoryidslistlong-inventoryidlist-equivalen" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting Spring Application Context</td><td>17</td><td>233</td><td>386334</td><td>2015-07-08</td><td><a href="https://stackoverflow.com/questions/129207/getting-spring-application-context" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get list of JSON objects with Spring RestTemplate</td><td>15</td><td>232</td><td>476026</td><td>2016-02-03</td><td><a href="https://stackoverflow.com/questions/23674046/get-list-of-json-objects-with-spring-resttemplate" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring - No EntityManager with actual transaction available for current thread - cannot reliably process &#39;persist&#39; call</td><td>23</td><td>228</td><td>278104</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/32269192/spring-no-entitymanager-with-actual-transaction-available-for-current-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unable to find a @SpringBootConfiguration when doing a JpaTest</td><td>15</td><td>223</td><td>241277</td><td>2018-02-13</td><td><a href="https://stackoverflow.com/questions/39084491/unable-to-find-a-springbootconfiguration-when-doing-a-jpatest" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring @Autowired usage</td><td>9</td><td>222</td><td>72721</td><td>2012-09-05</td><td><a href="https://stackoverflow.com/questions/633158/spring-autowired-usage" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is this spring.jpa.open-in-view=true property in Spring Boot?</td><td>3</td><td>219</td><td>177480</td><td>2017-09-22</td><td><a href="https://stackoverflow.com/questions/30549489/what-is-this-spring-jpa-open-in-view-true-property-in-spring-boot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you get current active/default Environment profile programmatically in Spring?</td><td>8</td><td>219</td><td>216516</td><td>2016-07-19</td><td><a href="https://stackoverflow.com/questions/9267799/how-do-you-get-current-active-default-environment-profile-programmatically-in-sp" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Trigger 404 in Spring-MVC controller?</td><td>14</td><td>218</td><td>170102</td><td>2012-05-26</td><td><a href="https://stackoverflow.com/questions/2066946/trigger-404-in-spring-mvc-controller" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does my Spring Boot App always shutdown immediately after starting?</td><td>20</td><td>218</td><td>227056</td><td>2016-03-06</td><td><a href="https://stackoverflow.com/questions/22380119/why-does-my-spring-boot-app-always-shutdown-immediately-after-starting" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Add context path to Spring Boot application</td><td>20</td><td>218</td><td>412621</td><td>2015-07-19</td><td><a href="https://stackoverflow.com/questions/20405474/add-context-path-to-spring-boot-application" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between @Mock, @MockBean and Mockito.mock()</td><td>2</td><td>218</td><td>113191</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/44200720/difference-between-mock-mockbean-and-mockito-mock" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to POST form data with Spring RestTemplate?</td><td>4</td><td>215</td><td>409846</td><td>2017-08-21</td><td><a href="https://stackoverflow.com/questions/38372422/how-to-post-form-data-with-spring-resttemplate" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is Dispatcher Servlet in Spring?</td><td>8</td><td>215</td><td>227274</td><td>2015-05-12</td><td><a href="https://stackoverflow.com/questions/2769467/what-is-dispatcher-servlet-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Map enum in JPA with fixed values?</td><td>8</td><td>215</td><td>167870</td><td>2011-11-28</td><td><a href="https://stackoverflow.com/questions/2751733/map-enum-in-jpa-with-fixed-values" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>@RequestParam in Spring MVC handling optional parameters</td><td>4</td><td>213</td><td>360859</td><td>2016-08-29</td><td><a href="https://stackoverflow.com/questions/22373696/requestparam-in-spring-mvc-handling-optional-parameters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to define a List bean in Spring?</td><td>13</td><td>212</td><td>380014</td><td>2011-09-07</td><td><a href="https://stackoverflow.com/questions/2416056/how-to-define-a-list-bean-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>intellij incorrectly saying no beans of type found for autowired repository</td><td>43</td><td>211</td><td>353368</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/26889970/intellij-incorrectly-saying-no-beans-of-type-found-for-autowired-repository" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring MVC - How to get all request params in a map in Spring controller?</td><td>10</td><td>209</td><td>270588</td><td>2014-10-21</td><td><a href="https://stackoverflow.com/questions/7312436/spring-mvc-how-to-get-all-request-params-in-a-map-in-spring-controller" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the proper way to re-attach detached objects in Hibernate?</td><td>17</td><td>206</td><td>196353</td><td>2010-05-01</td><td><a href="https://stackoverflow.com/questions/912659/what-is-the-proper-way-to-re-attach-detached-objects-in-hibernate" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I tell Spring Boot which main class to use for the executable jar?</td><td>10</td><td>202</td><td>204273</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23217002/how-do-i-tell-spring-boot-which-main-class-to-use-for-the-executable-jar" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>REST API - DTOs or not?</td><td>4</td><td>200</td><td>108909</td><td>2016-03-23</td><td><a href="https://stackoverflow.com/questions/36174516/rest-api-dtos-or-not" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>javax.transaction.Transactional vs org.springframework.transaction.annotation.Transactional</td><td>4</td><td>199</td><td>74400</td><td>2015-04-20</td><td><a href="https://stackoverflow.com/questions/26387399/javax-transaction-transactional-vs-org-springframework-transaction-annotation-tr" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring Boot REST service exception handling</td><td>10</td><td>196</td><td>320135</td><td>2016-08-28</td><td><a href="https://stackoverflow.com/questions/28902374/spring-boot-rest-service-exception-handling" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between the annotations @GetMapping and @RequestMapping(method = RequestMethod.GET)</td><td>6</td><td>195</td><td>188756</td><td>2016-08-22</td><td><a href="https://stackoverflow.com/questions/39077787/difference-between-the-annotations-getmapping-and-requestmappingmethod-requ" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>multiple packages in context:component-scan, spring config</td><td>8</td><td>194</td><td>260001</td><td>2013-10-27</td><td><a href="https://stackoverflow.com/questions/5269450/multiple-packages-in-contextcomponent-scan-spring-config" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Execute method on startup in Spring</td><td>13</td><td>191</td><td>256383</td><td>2014-05-01</td><td><a href="https://stackoverflow.com/questions/2401489/execute-method-on-startup-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unsure if I understand TransactionAwarePersistenceManagerFactoryProxy</td><td>1</td><td>191</td><td>28122</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14636178/unsure-if-i-understand-transactionawarepersistencemanagerfactoryproxy" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to execute IN() SQL queries with Spring&#39;s JDBCTemplate effectively?</td><td>5</td><td>188</td><td>204772</td><td>2015-05-26</td><td><a href="https://stackoverflow.com/questions/1327074/how-to-execute-in-sql-queries-with-springs-jdbctemplate-effectively" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring AOP vs AspectJ</td><td>8</td><td>186</td><td>84149</td><td>2013-04-26</td><td><a href="https://stackoverflow.com/questions/1606559/spring-aop-vs-aspectj" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can you use @Autowired with static fields?</td><td>12</td><td>183</td><td>191115</td><td>2014-12-19</td><td><a href="https://stackoverflow.com/questions/1018797/can-you-use-autowired-with-static-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring Boot: Unable to start EmbeddedWebApplicationContext due to missing EmbeddedServletContainerFactory bean</td><td>28</td><td>183</td><td>409416</td><td>2016-06-17</td><td><a href="https://stackoverflow.com/questions/21783391/spring-boot-unable-to-start-embeddedwebapplicationcontext-due-to-missing-embedd" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring 3.0 - Unable to locate Spring NamespaceHandler for XML schema namespace [http://www.springframework.org/schema/security]</td><td>15</td><td>181</td><td>164156</td><td>2010-02-19</td><td><a href="https://stackoverflow.com/questions/2161050/spring-3-0-unable-to-locate-spring-namespacehandler-for-xml-schema-namespace" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Role/Purpose of ContextLoaderListener in Spring?</td><td>15</td><td>179</td><td>148837</td><td>2014-09-29</td><td><a href="https://stackoverflow.com/questions/11815339/role-purpose-of-contextloaderlistener-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is username and password when starting Spring Boot with Tomcat?</td><td>10</td><td>177</td><td>254905</td><td>2016-11-15</td><td><a href="https://stackoverflow.com/questions/37285016/what-is-username-and-password-when-starting-spring-boot-with-tomcat" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get active user&#39;s UserDetails</td><td>9</td><td>174</td><td>130891</td><td>2015-11-20</td><td><a href="https://stackoverflow.com/questions/8764545/how-to-get-active-users-userdetails" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring: Why do we autowire the interface and not the implemented class?</td><td>3</td><td>173</td><td>213044</td><td>2012-10-15</td><td><a href="https://stackoverflow.com/questions/12899372/spring-why-do-we-autowire-the-interface-and-not-the-implemented-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring Java Config: how do you create a prototype-scoped @Bean with runtime arguments?</td><td>8</td><td>168</td><td>110938</td><td>2016-07-24</td><td><a href="https://stackoverflow.com/questions/22155832/spring-java-config-how-do-you-create-a-prototype-scoped-bean-with-runtime-argu" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Spring Data JPA have any way to count entites using method name resolving?</td><td>13</td><td>167</td><td>294118</td><td>2014-11-08</td><td><a href="https://stackoverflow.com/questions/10696490/does-spring-data-jpa-have-any-way-to-count-entites-using-method-name-resolving" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to manage exceptions thrown in filters in Spring?</td><td>15</td><td>167</td><td>155860</td><td>2016-10-23</td><td><a href="https://stackoverflow.com/questions/34595605/how-to-manage-exceptions-thrown-in-filters-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set base url for rest in spring boot?</td><td>20</td><td>166</td><td>265461</td><td>2018-06-15</td><td><a href="https://stackoverflow.com/questions/32927937/how-to-set-base-url-for-rest-in-spring-boot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unit testing with Spring Security</td><td>11</td><td>166</td><td>135560</td><td>2009-02-16</td><td><a href="https://stackoverflow.com/questions/360520/unit-testing-with-spring-security" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Spring Boot: How to map my app root (“/”) to index.html?</td><td>10</td><td>166</td><td>229565</td><td>2015-03-24</td><td><a href="https://stackoverflow.com/questions/27381781/java-spring-boot-how-to-map-my-app-root-to-index-html" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring MVC - How to return simple String as JSON in Rest Controller</td><td>10</td><td>165</td><td>454124</td><td>2016-06-04</td><td><a href="https://stackoverflow.com/questions/30895286/spring-mvc-how-to-return-simple-string-as-json-in-rest-controller" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to fetch FetchType.LAZY associations with JPA and Hibernate in a Spring Controller</td><td>7</td><td>165</td><td>219400</td><td>2016-10-11</td><td><a href="https://stackoverflow.com/questions/15359306/how-to-fetch-fetchtype-lazy-associations-with-jpa-and-hibernate-in-a-spring-cont" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does application.yml support environment variables?</td><td>3</td><td>163</td><td>141372</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23027315/does-application-yml-support-environment-variables" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can not deserialize instance of java.util.ArrayList out of START_OBJECT token</td><td>14</td><td>163</td><td>520424</td><td>2014-12-05</td><td><a href="https://stackoverflow.com/questions/20837856/can-not-deserialize-instance-of-java-util-arraylist-out-of-start-object-token" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring @Transaction method call by the method within the same class, does not work?</td><td>9</td><td>163</td><td>96207</td><td>2015-06-25</td><td><a href="https://stackoverflow.com/questions/3423972/spring-transaction-method-call-by-the-method-within-the-same-class-does-not-wo" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use JNDI DataSource provided by Tomcat in Spring?</td><td>8</td><td>161</td><td>274616</td><td>2015-07-26</td><td><a href="https://stackoverflow.com/questions/9183321/how-to-use-jndi-datasource-provided-by-tomcat-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to fix Hibernate LazyInitializationException: failed to lazily initialize a collection of roles, could not initialize proxy - no Session</td><td>15</td><td>161</td><td>307344</td><td>2017-01-04</td><td><a href="https://stackoverflow.com/questions/22821695/how-to-fix-hibernate-lazyinitializationexception-failed-to-lazily-initialize-a" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring Boot and multiple external configuration files</td><td>13</td><td>160</td><td>555278</td><td>2018-07-13</td><td><a href="https://stackoverflow.com/questions/25855795/spring-boot-and-multiple-external-configuration-files" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to return a custom object from a Spring Data JPA GROUP BY query</td><td>10</td><td>159</td><td>243626</td><td>2016-06-19</td><td><a href="https://stackoverflow.com/questions/36328063/how-to-return-a-custom-object-from-a-spring-data-jpa-group-by-query" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Binding a list in @RequestParam</td><td>7</td><td>157</td><td>273741</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4596351/binding-a-list-in-requestparam" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Redirect to an external URL from controller action in Spring MVC</td><td>10</td><td>156</td><td>437903</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17955777/redirect-to-an-external-url-from-controller-action-in-spring-mvc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>@RequestBody and @ResponseBody annotations in Spring</td><td>4</td><td>156</td><td>379915</td><td>2014-06-10</td><td><a href="https://stackoverflow.com/questions/11291933/requestbody-and-responsebody-annotations-in-spring" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

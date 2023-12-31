@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about inheritance</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Disadvantage of OOP?</td><td>18</td><td>39</td><td>17706</td><td>2011-06-12</td><td><a href="https://stackoverflow.com/questions/2853316/disadvantage-of-oop" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is List&lt;Dog&gt; a subclass of List&lt;Animal&gt;? Why are Java generics not implicitly polymorphic?</td><td>20</td><td>854</td><td>128394</td><td>2014-08-10</td><td><a href="https://stackoverflow.com/questions/2745265/is-listdog-a-subclass-of-listanimal-why-are-java-generics-not-implicitly-po" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implements vs extends: When to use? What&#39;s the difference?</td><td>19</td><td>788</td><td>1242898</td><td>2015-01-17</td><td><a href="https://stackoverflow.com/questions/10839131/implements-vs-extends-when-to-use-whats-the-difference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to determine an object&#39;s class?</td><td>12</td><td>581</td><td>746151</td><td>2013-08-03</td><td><a href="https://stackoverflow.com/questions/541749/how-to-determine-an-objects-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How should I have explained the difference between an Interface and an Abstract class?</td><td>31</td><td>526</td><td>467199</td><td>2015-03-20</td><td><a href="https://stackoverflow.com/questions/18777989/how-should-i-have-explained-the-difference-between-an-interface-and-an-abstract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s wrong with overridable method calls in constructors?</td><td>8</td><td>396</td><td>135813</td><td>2013-11-27</td><td><a href="https://stackoverflow.com/questions/3404301/whats-wrong-with-overridable-method-calls-in-constructors" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JSP tricks to make templating easier?</td><td>7</td><td>318</td><td>128531</td><td>2013-07-06</td><td><a href="https://stackoverflow.com/questions/1296235/jsp-tricks-to-make-templating-easier" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Explicitly calling a default method in Java</td><td>6</td><td>318</td><td>83428</td><td>2016-09-28</td><td><a href="https://stackoverflow.com/questions/19976487/explicitly-calling-a-default-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to define custom exception class in Java, the easiest way?</td><td>8</td><td>288</td><td>408044</td><td>2013-11-16</td><td><a href="https://stackoverflow.com/questions/3776327/how-to-define-custom-exception-class-in-java-the-easiest-way" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do subclasses inherit private fields?</td><td>20</td><td>280</td><td>252873</td><td>2012-12-20</td><td><a href="https://stackoverflow.com/questions/4716040/do-subclasses-inherit-private-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do I really have a car in my garage?</td><td>13</td><td>258</td><td>27548</td><td>2014-07-23</td><td><a href="https://stackoverflow.com/questions/24883075/do-i-really-have-a-car-in-my-garage" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between Inheritance and Composition</td><td>17</td><td>240</td><td>247587</td><td>2010-05-03</td><td><a href="https://stackoverflow.com/questions/2399544/difference-between-inheritance-and-composition" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is it not possible to extend annotations in Java?</td><td>8</td><td>240</td><td>96568</td><td>2013-09-19</td><td><a href="https://stackoverflow.com/questions/1624084/why-is-it-not-possible-to-extend-annotations-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Constructor Inheritance</td><td>10</td><td>201</td><td>145955</td><td>2011-07-10</td><td><a href="https://stackoverflow.com/questions/1644317/java-constructor-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the main difference between Inheritance and Polymorphism?</td><td>18</td><td>197</td><td>291582</td><td>2013-04-25</td><td><a href="https://stackoverflow.com/questions/6308178/what-is-the-main-difference-between-inheritance-and-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Good reasons to prohibit inheritance in Java?</td><td>11</td><td>194</td><td>66184</td><td>2008-10-20</td><td><a href="https://stackoverflow.com/questions/218744/good-reasons-to-prohibit-inheritance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no multiple inheritance in Java, but implementing multiple interfaces is allowed?</td><td>20</td><td>181</td><td>198186</td><td>2013-06-23</td><td><a href="https://stackoverflow.com/questions/2515477/why-is-there-no-multiple-inheritance-in-java-but-implementing-multiple-interfac" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to override class variables in Java?</td><td>17</td><td>175</td><td>219939</td><td>2010-10-01</td><td><a href="https://stackoverflow.com/questions/685300/is-there-a-way-to-override-class-variables-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do interfaces inherit from Object class in java</td><td>9</td><td>168</td><td>31959</td><td>2012-03-12</td><td><a href="https://stackoverflow.com/questions/6056124/do-interfaces-inherit-from-object-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are static methods inherited in Java?</td><td>15</td><td>167</td><td>169572</td><td>2013-08-15</td><td><a href="https://stackoverflow.com/questions/10291949/are-static-methods-inherited-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>At runtime, find all classes in a Java application that extend a base class</td><td>14</td><td>160</td><td>163419</td><td>2014-01-27</td><td><a href="https://stackoverflow.com/questions/205573/at-runtime-find-all-classes-in-a-java-application-that-extend-a-base-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can an interface extend multiple interfaces in Java?</td><td>7</td><td>151</td><td>141392</td><td>2016-03-23</td><td><a href="https://stackoverflow.com/questions/19546357/can-an-interface-extend-multiple-interfaces-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Most efficient way to cast List&lt;SubClass&gt; to List&lt;BaseClass&gt;</td><td>10</td><td>150</td><td>84092</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5082044/most-efficient-way-to-cast-listsubclass-to-listbaseclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java, how do I call a base class&#39;s method from the overriding method in a derived class?</td><td>12</td><td>147</td><td>275850</td><td>2013-05-29</td><td><a href="https://stackoverflow.com/questions/268929/in-java-how-do-i-call-a-base-classs-method-from-the-overriding-method-in-a-der" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there something like Annotation Inheritance in java?</td><td>4</td><td>139</td><td>112768</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7761513/is-there-something-like-annotation-inheritance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why we should not use protected static in java</td><td>8</td><td>135</td><td>70813</td><td>2015-12-05</td><td><a href="https://stackoverflow.com/questions/24289070/why-we-should-not-use-protected-static-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>List&lt;Map&lt;String, String&gt;&gt; vs List&lt;? extends Map&lt;String, String&gt;&gt;</td><td>5</td><td>129</td><td>130504</td><td>2012-05-02</td><td><a href="https://stackoverflow.com/questions/9810445/listmapstring-string-vs-list-extends-mapstring-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Defining an abstract class without any abstract methods</td><td>12</td><td>127</td><td>125503</td><td>2013-02-07</td><td><a href="https://stackoverflow.com/questions/4811678/defining-an-abstract-class-without-any-abstract-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Access to private inherited fields via reflection in Java</td><td>7</td><td>117</td><td>99312</td><td>2013-02-26</td><td><a href="https://stackoverflow.com/questions/3567372/access-to-private-inherited-fields-via-reflection-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why java classes do not inherit annotations from implemented interfaces?</td><td>2</td><td>116</td><td>66096</td><td>2016-04-08</td><td><a href="https://stackoverflow.com/questions/4745798/why-java-classes-do-not-inherit-annotations-from-implemented-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why an interface can not implement another interface?</td><td>7</td><td>107</td><td>111314</td><td>2013-06-04</td><td><a href="https://stackoverflow.com/questions/3921412/why-an-interface-can-not-implement-another-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do we assign a parent reference to the child object in Java?</td><td>11</td><td>106</td><td>158382</td><td>2016-09-04</td><td><a href="https://stackoverflow.com/questions/12159601/why-do-we-assign-a-parent-reference-to-the-child-object-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Calling a super method which calls an overridden method</td><td>13</td><td>105</td><td>115249</td><td>2011-01-04</td><td><a href="https://stackoverflow.com/questions/4595512/java-calling-a-super-method-which-calls-an-overridden-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In what order do static blocks and initialization blocks execute when using inheritance?</td><td>11</td><td>97</td><td>92182</td><td>2015-03-23</td><td><a href="https://stackoverflow.com/questions/19561332/in-what-order-do-static-blocks-and-initialization-blocks-execute-when-using-inhe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding vs Hiding Java - Confused</td><td>17</td><td>97</td><td>51676</td><td>2016-02-24</td><td><a href="https://stackoverflow.com/questions/10594052/overriding-vs-hiding-java-confused" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java error: Implicit super constructor is undefined for default constructor</td><td>12</td><td>96</td><td>232317</td><td>2010-12-05</td><td><a href="https://stackoverflow.com/questions/1197634/java-error-implicit-super-constructor-is-undefined-for-default-constructor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When do I have to use interfaces instead of abstract classes?</td><td>18</td><td>90</td><td>171616</td><td>2015-07-02</td><td><a href="https://stackoverflow.com/questions/16781329/when-do-i-have-to-use-interfaces-instead-of-abstract-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java dynamic binding and method overriding</td><td>12</td><td>90</td><td>44428</td><td>2012-08-17</td><td><a href="https://stackoverflow.com/questions/321864/java-dynamic-binding-and-method-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The &#39;instanceof&#39; operator behaves differently for interfaces and classes</td><td>2</td><td>90</td><td>4197</td><td>2015-08-07</td><td><a href="https://stackoverflow.com/questions/31398444/the-instanceof-operator-behaves-differently-for-interfaces-and-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>what is the Class object (java.lang.Class)?</td><td>7</td><td>88</td><td>80797</td><td>2013-04-20</td><td><a href="https://stackoverflow.com/questions/4453349/what-is-the-class-object-java-lang-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inheritance and recursion</td><td>6</td><td>86</td><td>5580</td><td>2015-12-30</td><td><a href="https://stackoverflow.com/questions/34531180/inheritance-and-recursion" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When do I use super()?</td><td>11</td><td>85</td><td>180982</td><td>2013-08-08</td><td><a href="https://stackoverflow.com/questions/4090834/when-do-i-use-super" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When overriding a method, why can I increase access but not decrease it?</td><td>8</td><td>79</td><td>52210</td><td>2015-05-10</td><td><a href="https://stackoverflow.com/questions/6851612/when-overriding-a-method-why-can-i-increase-access-but-not-decrease-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why to use Interfaces, Multiple Inheritance vs Interfaces, Benefits of Interfaces?</td><td>12</td><td>79</td><td>74821</td><td>2016-03-18</td><td><a href="https://stackoverflow.com/questions/8531292/why-to-use-interfaces-multiple-inheritance-vs-interfaces-benefits-of-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Builder Pattern and Inheritance</td><td>8</td><td>78</td><td>50698</td><td>2015-09-18</td><td><a href="https://stackoverflow.com/questions/21086417/builder-pattern-and-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a real life example of generic &lt;? super T&gt;?</td><td>9</td><td>76</td><td>6454</td><td>2018-09-05</td><td><a href="https://stackoverflow.com/questions/52185915/what-is-a-real-life-example-of-generic-super-t" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do Java method annotations work in conjunction with method overriding?</td><td>4</td><td>75</td><td>38167</td><td>2016-06-26</td><td><a href="https://stackoverflow.com/questions/10082619/how-do-java-method-annotations-work-in-conjunction-with-method-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Any good examples of inheriting from a concrete class?</td><td>18</td><td>73</td><td>11628</td><td>2014-07-22</td><td><a href="https://stackoverflow.com/questions/7496010/any-good-examples-of-inheriting-from-a-concrete-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Logging With Abstract Classes</td><td>5</td><td>72</td><td>42685</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/12160540/java-logging-with-abstract-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding equals() &amp; hashCode() in sub classes ... considering super fields</td><td>10</td><td>71</td><td>64535</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2066917/overriding-equals-hashcode-in-sub-classes-considering-super-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JPA: Implementing Model Hierarchy - @MappedSuperclass vs. @Inheritance</td><td>2</td><td>70</td><td>37897</td><td>2015-01-28</td><td><a href="https://stackoverflow.com/questions/9667703/jpa-implementing-model-hierarchy-mappedsuperclass-vs-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Inheritance - calling superclass method</td><td>7</td><td>70</td><td>179742</td><td>2014-12-03</td><td><a href="https://stackoverflow.com/questions/6896504/java-inheritance-calling-superclass-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why we can&#39;t do List&lt;Parent&gt; mylist = ArrayList&lt;child&gt;();</td><td>3</td><td>68</td><td>26840</td><td>2011-04-23</td><td><a href="https://stackoverflow.com/questions/5763750/why-we-cant-do-listparent-mylist-arraylistchild" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are class static methods inherited but not interface static methods?</td><td>5</td><td>67</td><td>14864</td><td>2016-12-29</td><td><a href="https://stackoverflow.com/questions/25169175/why-are-class-static-methods-inherited-but-not-interface-static-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Default method returns true for a while, and then returns false? (Possible JVM bug)</td><td>1</td><td>67</td><td>3251</td><td>2014-03-01</td><td><a href="https://stackoverflow.com/questions/22096052/default-method-returns-true-for-a-while-and-then-returns-false-possible-jvm-b" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are arrays Objects, but can not be used as a base class?</td><td>4</td><td>66</td><td>3185</td><td>2016-03-04</td><td><a href="https://stackoverflow.com/questions/27504925/why-are-arrays-objects-but-can-not-be-used-as-a-base-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use @inherited annotation in Java?</td><td>1</td><td>65</td><td>43609</td><td>2014-11-22</td><td><a href="https://stackoverflow.com/questions/23973107/how-to-use-inherited-annotation-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why use inheritance at all?</td><td>13</td><td>65</td><td>47863</td><td>2013-12-24</td><td><a href="https://stackoverflow.com/questions/3351666/why-use-inheritance-at-all" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Java bind variables at compile time?</td><td>4</td><td>65</td><td>4814</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/32422923/why-does-java-bind-variables-at-compile-time" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is polymorphism possible without inheritance?</td><td>6</td><td>64</td><td>24144</td><td>2013-07-10</td><td><a href="https://stackoverflow.com/questions/11732422/is-polymorphism-possible-without-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Parcelable and inheritance in Android</td><td>3</td><td>63</td><td>23096</td><td>2010-10-29</td><td><a href="https://stackoverflow.com/questions/4049627/parcelable-and-inheritance-in-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding private methods in Java</td><td>10</td><td>62</td><td>84220</td><td>2010-01-05</td><td><a href="https://stackoverflow.com/questions/2000137/overriding-private-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Default constructors in Java</td><td>7</td><td>62</td><td>68658</td><td>2013-06-12</td><td><a href="https://stackoverflow.com/questions/17068389/default-constructors-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Favor composition over inheritance</td><td>7</td><td>60</td><td>36026</td><td>2013-01-18</td><td><a href="https://stackoverflow.com/questions/11343840/favor-composition-over-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to make a method which is not abstract but must be overridden?</td><td>13</td><td>57</td><td>12209</td><td>2011-10-20</td><td><a href="https://stackoverflow.com/questions/7832444/is-there-a-way-to-make-a-method-which-is-not-abstract-but-must-be-overridden" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which Overloaded Method is Called in Java</td><td>5</td><td>56</td><td>5398</td><td>2018-04-25</td><td><a href="https://stackoverflow.com/questions/50014088/which-overloaded-method-is-called-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does instanceof return true if instance of a parent?</td><td>4</td><td>56</td><td>60420</td><td>2014-04-17</td><td><a href="https://stackoverflow.com/questions/6304056/does-instanceof-return-true-if-instance-of-a-parent" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can interfaces replace the need for multiple inheritance when have existing classes</td><td>10</td><td>55</td><td>33899</td><td>2012-04-22</td><td><a href="https://stackoverflow.com/questions/5003285/how-can-interfaces-replace-the-need-for-multiple-inheritance-when-have-existing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to call the overridden method of a superclass?</td><td>12</td><td>54</td><td>98267</td><td>2015-10-28</td><td><a href="https://stackoverflow.com/questions/15668032/how-to-call-the-overridden-method-of-a-superclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to enable enum inheritance</td><td>5</td><td>54</td><td>75098</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/35650045/how-to-enable-enum-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the size cost of Java inheritance?</td><td>5</td><td>52</td><td>4772</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23948009/whats-the-size-cost-of-java-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Default constructors and inheritance in Java</td><td>11</td><td>51</td><td>95525</td><td>2012-06-28</td><td><a href="https://stackoverflow.com/questions/525548/default-constructors-and-inheritance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Java not allow multiple inheritance but does allow conforming to multiple interfaces with default implementations</td><td>7</td><td>51</td><td>8446</td><td>2018-10-03</td><td><a href="https://stackoverflow.com/questions/52620936/why-does-java-not-allow-multiple-inheritance-but-does-allow-conforming-to-multip" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the rules dictating the inheritance of static variables in Java?</td><td>3</td><td>50</td><td>37823</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9898097/what-are-the-rules-dictating-the-inheritance-of-static-variables-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java why interface extends interface</td><td>8</td><td>49</td><td>50984</td><td>2015-08-27</td><td><a href="https://stackoverflow.com/questions/13437131/java-why-interface-extends-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generic method inheritance and override rules</td><td>6</td><td>48</td><td>53060</td><td>2011-03-18</td><td><a href="https://stackoverflow.com/questions/5346847/java-generic-method-inheritance-and-override-rules" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Anonymous vs named inner classes? - best practices?</td><td>15</td><td>47</td><td>34019</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/714602/anonymous-vs-named-inner-classes-best-practices" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are constructors not inherited in java?</td><td>12</td><td>47</td><td>64698</td><td>2017-02-02</td><td><a href="https://stackoverflow.com/questions/18147768/why-are-constructors-not-inherited-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does the &quot;protected&quot; modifier in Java allow access to other classes in same package?</td><td>6</td><td>47</td><td>8149</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/902922/why-does-the-protected-modifier-in-java-allow-access-to-other-classes-in-same" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does inheritance of instance fields work in this particular code?</td><td>10</td><td>45</td><td>3587</td><td>2015-01-06</td><td><a href="https://stackoverflow.com/questions/21377859/how-does-inheritance-of-instance-fields-work-in-this-particular-code" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do we have to call super in Android sometimes?</td><td>6</td><td>45</td><td>47031</td><td>2012-06-01</td><td><a href="https://stackoverflow.com/questions/10843383/why-do-we-have-to-call-super-in-android-sometimes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding a method with Generic Parameters in Java?</td><td>2</td><td>44</td><td>40250</td><td>2010-12-06</td><td><a href="https://stackoverflow.com/questions/239645/overriding-a-method-with-generic-parameters-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get child class name from parent</td><td>6</td><td>43</td><td>60645</td><td>2011-08-17</td><td><a href="https://stackoverflow.com/questions/5176294/get-child-class-name-from-parent" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Calling super super class method</td><td>12</td><td>43</td><td>39185</td><td>2012-12-22</td><td><a href="https://stackoverflow.com/questions/3456177/calling-super-super-class-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Creating a subclass object from a parent object</td><td>11</td><td>43</td><td>55037</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/638171/java-creating-a-subclass-object-from-a-parent-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does PHP have an answer to Java style class generics?</td><td>8</td><td>43</td><td>40700</td><td>2012-03-10</td><td><a href="https://stackoverflow.com/questions/9646397/does-php-have-an-answer-to-java-style-class-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to inherit Constructor from super class to sub class</td><td>6</td><td>42</td><td>119426</td><td>2011-06-14</td><td><a href="https://stackoverflow.com/questions/2319817/how-to-inherit-constructor-from-super-class-to-sub-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>can&#39;t cast to implemented interface</td><td>2</td><td>42</td><td>26270</td><td>2011-11-07</td><td><a href="https://stackoverflow.com/questions/8035877/cant-cast-to-implemented-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is List&lt;?&gt; the common parent of List&lt;Integer&gt; and List&lt;Number&gt;?</td><td>5</td><td>42</td><td>3060</td><td>2016-06-24</td><td><a href="https://stackoverflow.com/questions/38009060/is-list-the-common-parent-of-listinteger-and-listnumber" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Initialize field before super constructor runs?</td><td>7</td><td>41</td><td>35074</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/15682457/initialize-field-before-super-constructor-runs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is an interface in Java?</td><td>13</td><td>41</td><td>41372</td><td>2013-07-08</td><td><a href="https://stackoverflow.com/questions/1321122/what-is-an-interface-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method chaining + inheritance don’t play well together?</td><td>5</td><td>40</td><td>7654</td><td>2013-06-12</td><td><a href="https://stackoverflow.com/questions/1069528/method-chaining-inheritance-don-t-play-well-together" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t this() and super() both be used together in a constructor?</td><td>11</td><td>40</td><td>61462</td><td>2015-10-03</td><td><a href="https://stackoverflow.com/questions/10381244/why-cant-this-and-super-both-be-used-together-in-a-constructor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t java.util.List implement Serializable?</td><td>9</td><td>40</td><td>35220</td><td>2011-07-23</td><td><a href="https://stackoverflow.com/questions/4927227/why-doesnt-java-util-list-implement-serializable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to reduce code by using a superclass?</td><td>10</td><td>39</td><td>2437</td><td>2018-10-01</td><td><a href="https://stackoverflow.com/questions/52513557/how-to-reduce-code-by-using-a-superclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does every object in Java implicitly extend java.lang.Object class?</td><td>11</td><td>39</td><td>19216</td><td>2014-05-05</td><td><a href="https://stackoverflow.com/questions/19114997/why-does-every-object-in-java-implicitly-extend-java-lang-object-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&quot;Cannot subclass the final class&quot; error, but the class is not final</td><td>4</td><td>38</td><td>6247</td><td>2018-12-14</td><td><a href="https://stackoverflow.com/questions/53779769/cannot-subclass-the-final-class-error-but-the-class-is-not-final" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Extend java.lang.String</td><td>6</td><td>37</td><td>53660</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9418729/extend-java-lang-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does &quot;contract&quot; of a class mean</td><td>8</td><td>37</td><td>35526</td><td>2011-12-16</td><td><a href="https://stackoverflow.com/questions/8537018/what-does-contract-of-a-class-mean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java : If A extends B and B extends Object, is that multiple inheritance</td><td>11</td><td>36</td><td>22818</td><td>2014-10-14</td><td><a href="https://stackoverflow.com/questions/24378375/java-if-a-extends-b-and-b-extends-object-is-that-multiple-inheritance" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

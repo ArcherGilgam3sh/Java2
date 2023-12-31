@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about reference</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between SoftReference and WeakReference in Java?</td><td>12</td><td>879</td><td>232408</td><td>2015-05-05</td><td><a href="https://stackoverflow.com/questions/299659/whats-the-difference-between-softreference-and-weakreference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: difference between strong/soft/weak/phantom reference</td><td>7</td><td>199</td><td>96074</td><td>2016-11-24</td><td><a href="https://stackoverflow.com/questions/9809074/java-difference-between-strong-soft-weak-phantom-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I pass parameters by reference in Java?</td><td>8</td><td>154</td><td>147242</td><td>2009-07-01</td><td><a href="https://stackoverflow.com/questions/1068760/can-i-pass-parameters-by-reference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In laymans terms, what does &#39;static&#39; mean in Java?</td><td>6</td><td>125</td><td>238969</td><td>2015-07-17</td><td><a href="https://stackoverflow.com/questions/2649213/in-laymans-terms-what-does-static-mean-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Have you ever used PhantomReference in any project?</td><td>11</td><td>95</td><td>24916</td><td>2013-09-23</td><td><a href="https://stackoverflow.com/questions/1599069/have-you-ever-used-phantomreference-in-any-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I copy the contents of one ArrayList into another?</td><td>13</td><td>91</td><td>276365</td><td>2013-04-18</td><td><a href="https://stackoverflow.com/questions/8441664/how-do-i-copy-the-contents-of-one-arraylist-into-another" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is this not throwing a NullPointerException?</td><td>7</td><td>89</td><td>4270</td><td>2014-11-18</td><td><a href="https://stackoverflow.com/questions/18636561/why-is-this-not-throwing-a-nullpointerexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Understanding Java&#39;s Reference classes: SoftReference, WeakReference, and PhantomReference</td><td>4</td><td>82</td><td>21747</td><td>2010-07-25</td><td><a href="https://stackoverflow.com/questions/3329691/understanding-javas-reference-classes-softreference-weakreference-and-phanto" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between a variable, object, and reference?</td><td>5</td><td>77</td><td>44000</td><td>2015-08-20</td><td><a href="https://stackoverflow.com/questions/32010172/what-is-the-difference-between-a-variable-object-and-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between primitive and reference types?</td><td>8</td><td>76</td><td>193746</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/8790809/whats-the-difference-between-primitive-and-reference-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Duplicating objects in Java</td><td>17</td><td>76</td><td>66208</td><td>2012-08-22</td><td><a href="https://stackoverflow.com/questions/12072727/duplicating-objects-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What exactly is an instance in Java?</td><td>11</td><td>54</td><td>298261</td><td>2011-02-26</td><td><a href="https://stackoverflow.com/questions/5126082/what-exactly-is-an-instance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are classes, references, and objects?</td><td>12</td><td>53</td><td>72569</td><td>2017-03-18</td><td><a href="https://stackoverflow.com/questions/9224517/what-are-classes-references-and-objects" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Would a Java HashSet&lt;String&gt;&#39;s contains() method test equality of the strings or object identity?</td><td>6</td><td>53</td><td>62288</td><td>2012-01-23</td><td><a href="https://stackoverflow.com/questions/8967382/would-a-java-hashsetstrings-contains-method-test-equality-of-the-strings-or" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is writing a reference atomic on 64bit VMs</td><td>1</td><td>50</td><td>6119</td><td>2012-06-16</td><td><a href="https://stackoverflow.com/questions/2576513/is-writing-a-reference-atomic-on-64bit-vms" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a variable that can be set only once but isn&#39;t final in Java</td><td>12</td><td>49</td><td>50455</td><td>2015-06-18</td><td><a href="https://stackoverflow.com/questions/14146182/how-to-create-a-variable-that-can-be-set-only-once-but-isnt-final-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to reference a bean of another xml file in spring</td><td>6</td><td>41</td><td>88356</td><td>2013-10-02</td><td><a href="https://stackoverflow.com/questions/7711750/how-to-reference-a-bean-of-another-xml-file-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Passing ArrayList as value only and not reference</td><td>8</td><td>40</td><td>61907</td><td>2014-07-28</td><td><a href="https://stackoverflow.com/questions/15778645/passing-arraylist-as-value-only-and-not-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generic tree implementation in Java</td><td>10</td><td>38</td><td>74773</td><td>2009-08-31</td><td><a href="https://stackoverflow.com/questions/1356401/generic-tree-implementation-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to get the object reference count?</td><td>3</td><td>37</td><td>26770</td><td>2016-05-23</td><td><a href="https://stackoverflow.com/questions/5334137/is-it-possible-to-get-the-object-reference-count" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Increment an Integer within a HashMap</td><td>13</td><td>34</td><td>54315</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4277388/increment-an-integer-within-a-hashmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to reference a different Java project in Eclipse</td><td>2</td><td>32</td><td>51541</td><td>2012-04-10</td><td><a href="https://stackoverflow.com/questions/10090829/how-to-reference-a-different-java-project-in-eclipse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How are Kotlin Array&#39;s toList and asList different?</td><td>2</td><td>31</td><td>6872</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/48411392/how-are-kotlin-arrays-tolist-and-aslist-different" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can someone explain the difference between Strong, Soft, Weak and Phantom references and the usage of it?</td><td>3</td><td>30</td><td>4980</td><td>2010-06-23</td><td><a href="https://stackoverflow.com/questions/2012790/can-someone-explain-the-difference-between-strong-soft-weak-and-phantom-refere" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to search for Java API methods by type signature?</td><td>3</td><td>28</td><td>7078</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4188919/how-to-search-for-java-api-methods-by-type-signature" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should Java method arguments be used to return multiple values?</td><td>9</td><td>26</td><td>22035</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/724199/should-java-method-arguments-be-used-to-return-multiple-values" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Multiple overloaded methods: Does null equal NullPointerException?</td><td>2</td><td>25</td><td>1448</td><td>2015-02-12</td><td><a href="https://stackoverflow.com/questions/28470540/multiple-overloaded-methods-does-null-equal-nullpointerexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Understanding the Reference Handler thread</td><td>3</td><td>25</td><td>12970</td><td>2013-07-30</td><td><a href="https://stackoverflow.com/questions/7658670/understanding-the-reference-handler-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible see all the references to an object in execution time?</td><td>4</td><td>24</td><td>16466</td><td>2013-08-09</td><td><a href="https://stackoverflow.com/questions/6155464/is-it-possible-see-all-the-references-to-an-object-in-execution-time" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>what is meant by obsolete reference in java?</td><td>5</td><td>24</td><td>5155</td><td>2011-07-27</td><td><a href="https://stackoverflow.com/questions/6843102/what-is-meant-by-obsolete-reference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to make an object &quot;Read Only&quot; to a method</td><td>11</td><td>23</td><td>18790</td><td>2012-05-10</td><td><a href="https://stackoverflow.com/questions/10533687/is-it-possible-to-make-an-object-read-only-to-a-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is assignment to &#39;this&#39; not allowed in java?</td><td>7</td><td>23</td><td>12993</td><td>2011-11-02</td><td><a href="https://stackoverflow.com/questions/7979623/why-is-assignment-to-this-not-allowed-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Uninitialized int vs Integer</td><td>9</td><td>22</td><td>45784</td><td>2011-10-02</td><td><a href="https://stackoverflow.com/questions/3893563/uninitialized-int-vs-integer" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How big is an object reference?</td><td>2</td><td>22</td><td>17609</td><td>2016-03-13</td><td><a href="https://stackoverflow.com/questions/5839434/how-big-is-an-object-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is difference between references and objects in java?</td><td>8</td><td>21</td><td>42605</td><td>2014-04-26</td><td><a href="https://stackoverflow.com/questions/9247886/what-is-difference-between-references-and-objects-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Java return by reference or by value</td><td>4</td><td>20</td><td>29281</td><td>2016-03-11</td><td><a href="https://stackoverflow.com/questions/7297937/does-java-return-by-reference-or-by-value" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Pass array by reference in Java</td><td>5</td><td>19</td><td>61957</td><td>2016-11-21</td><td><a href="https://stackoverflow.com/questions/14062118/pass-array-by-reference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no StrongReference object?</td><td>3</td><td>19</td><td>2352</td><td>2015-07-03</td><td><a href="https://stackoverflow.com/questions/15651896/why-is-there-no-strongreference-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>the get() function for java hashmaps</td><td>3</td><td>18</td><td>17319</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/764837/the-get-function-for-java-hashmaps" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use phantom references in Java?</td><td>1</td><td>18</td><td>9923</td><td>2016-01-11</td><td><a href="https://stackoverflow.com/questions/9826741/when-to-use-phantom-references-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java String variable setting - reference or value?</td><td>9</td><td>17</td><td>80483</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5835386/java-string-variable-setting-reference-or-value" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Acquire full prefix for a component clientId inside naming containers with JSF 2.0</td><td>2</td><td>16</td><td>10821</td><td>2010-08-17</td><td><a href="https://stackoverflow.com/questions/3501022/acquire-full-prefix-for-a-component-clientid-inside-naming-containers-with-jsf-2" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>If == compares references in Java, why does it evaluate to true with these Strings?</td><td>5</td><td>14</td><td>1146</td><td>2011-04-05</td><td><a href="https://stackoverflow.com/questions/4033625/if-compares-references-in-java-why-does-it-evaluate-to-true-with-these-strin" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What exactly is a reference in Java?</td><td>4</td><td>14</td><td>4081</td><td>2014-03-15</td><td><a href="https://stackoverflow.com/questions/12565037/what-exactly-is-a-reference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Symbolic references in Java</td><td>1</td><td>14</td><td>9568</td><td>2014-11-04</td><td><a href="https://stackoverflow.com/questions/17406159/symbolic-references-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find type specific references to equals() in the workspace in Eclipse?</td><td>4</td><td>14</td><td>1832</td><td>2010-10-28</td><td><a href="https://stackoverflow.com/questions/4042126/how-to-find-type-specific-references-to-equals-in-the-workspace-in-eclipse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does int.class mean</td><td>3</td><td>14</td><td>3217</td><td>2014-05-19</td><td><a href="https://stackoverflow.com/questions/18271999/what-does-int-class-mean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to refer to the outer class in another instance of a non-static inner class?</td><td>3</td><td>14</td><td>4515</td><td>2008-11-21</td><td><a href="https://stackoverflow.com/questions/309737/how-to-refer-to-the-outer-class-in-another-instance-of-a-non-static-inner-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>All elements of An ArrayList change when a new one is added?</td><td>2</td><td>13</td><td>20753</td><td>2011-04-10</td><td><a href="https://stackoverflow.com/questions/5608828/all-elements-of-an-arraylist-change-when-a-new-one-is-added" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Cast to unimplemented interface compiles</td><td>4</td><td>13</td><td>805</td><td>2015-01-13</td><td><a href="https://stackoverflow.com/questions/27649395/cast-to-unimplemented-interface-compiles" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Origin of term &quot;reference&quot; as in &quot;pass-by-reference&quot;</td><td>9</td><td>13</td><td>1317</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1856680/origin-of-term-reference-as-in-pass-by-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In java , can we pass superclass Object to subclass reference?</td><td>3</td><td>13</td><td>21736</td><td>2014-06-24</td><td><a href="https://stackoverflow.com/questions/24384547/in-java-can-we-pass-superclass-object-to-subclass-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java for loop by value or by reference</td><td>6</td><td>13</td><td>12035</td><td>2015-11-04</td><td><a href="https://stackoverflow.com/questions/17969515/java-for-loop-by-value-or-by-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Common Java memory/reference leak patterns?</td><td>3</td><td>13</td><td>4916</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/670791/common-java-memory-reference-leak-patterns" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it true that Java implicitly defines references to the objects used in classes?</td><td>3</td><td>13</td><td>1090</td><td>2011-10-25</td><td><a href="https://stackoverflow.com/questions/7884810/is-it-true-that-java-implicitly-defines-references-to-the-objects-used-in-classe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Pass Object reference within Intent without implementing Serializable or Parcelable</td><td>2</td><td>13</td><td>12188</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14917029/pass-object-reference-within-intent-without-implementing-serializable-or-parcela" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Object of the class as instance variable inside the class</td><td>6</td><td>12</td><td>7233</td><td>2015-02-25</td><td><a href="https://stackoverflow.com/questions/13607757/object-of-the-class-as-instance-variable-inside-the-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lazy loading reference implementation</td><td>3</td><td>12</td><td>6108</td><td>2014-07-23</td><td><a href="https://stackoverflow.com/questions/7524423/lazy-loading-reference-implementation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Legal Forward Referencing</td><td>2</td><td>12</td><td>1455</td><td>2012-04-05</td><td><a href="https://stackoverflow.com/questions/10035890/java-legal-forward-referencing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to FORCE weak and/or soft referenced objects to be GC&#39;d in Java?</td><td>1</td><td>12</td><td>2887</td><td>2011-08-06</td><td><a href="https://stackoverflow.com/questions/6968141/is-there-a-way-to-force-weak-and-or-soft-referenced-objects-to-be-gcd-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Where does java reference variable stored?</td><td>6</td><td>11</td><td>11585</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/19623563/where-does-java-reference-variable-stored" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Return copies of private data rather than references</td><td>4</td><td>11</td><td>3467</td><td>2014-09-06</td><td><a href="https://stackoverflow.com/questions/25704325/return-copies-of-private-data-rather-than-references" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use references in Java?</td><td>4</td><td>11</td><td>59636</td><td>2011-01-17</td><td><a href="https://stackoverflow.com/questions/4712798/how-to-use-references-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When does WeakReference#get() start returning null?</td><td>4</td><td>11</td><td>7586</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/16721497/when-does-weakreferenceget-start-returning-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is setting a HashMap thread safe?</td><td>4</td><td>11</td><td>5740</td><td>2016-03-07</td><td><a href="https://stackoverflow.com/questions/17220036/is-setting-a-hashmap-thread-safe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Enum of Enum is NULL</td><td>3</td><td>11</td><td>3816</td><td>2013-06-06</td><td><a href="https://stackoverflow.com/questions/16971656/enum-of-enum-is-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can Java assignment be made to point to an object instead of making a copy?</td><td>5</td><td>10</td><td>17611</td><td>2010-05-05</td><td><a href="https://stackoverflow.com/questions/2776145/how-can-java-assignment-be-made-to-point-to-an-object-instead-of-making-a-copy" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Could I change the reference inside one method with this reference as argument in Java?</td><td>10</td><td>10</td><td>7437</td><td>2009-12-22</td><td><a href="https://stackoverflow.com/questions/1946589/could-i-change-the-reference-inside-one-method-with-this-reference-as-argument-i" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>xor operation between java references</td><td>4</td><td>10</td><td>1968</td><td>2013-08-20</td><td><a href="https://stackoverflow.com/questions/4826626/xor-operation-between-java-references" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I find out how many references an object has?</td><td>4</td><td>10</td><td>5769</td><td>2014-01-28</td><td><a href="https://stackoverflow.com/questions/21397149/how-do-i-find-out-how-many-references-an-object-has" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to reference a system property within a user-defined .properties file?</td><td>3</td><td>10</td><td>6683</td><td>2011-12-09</td><td><a href="https://stackoverflow.com/questions/3737107/how-to-reference-a-system-property-within-a-user-defined-properties-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reference Type and Object Type Changing Java</td><td>4</td><td>10</td><td>3483</td><td>2016-01-30</td><td><a href="https://stackoverflow.com/questions/13973887/reference-type-and-object-type-changing-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Enforcing doubly linked objects</td><td>5</td><td>10</td><td>326</td><td>2011-09-20</td><td><a href="https://stackoverflow.com/questions/7481909/java-enforcing-doubly-linked-objects" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the purpose of these Java files in scala.runtime?</td><td>1</td><td>10</td><td>235</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7381499/whats-the-purpose-of-these-java-files-in-scala-runtime" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to load external resources using a reference URI in Java XML</td><td>2</td><td>10</td><td>1402</td><td>2011-11-10</td><td><a href="https://stackoverflow.com/questions/8008925/how-to-load-external-resources-using-a-reference-uri-in-java-xml" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does setting variable to null clear just the reference?</td><td>7</td><td>9</td><td>9413</td><td>2015-10-30</td><td><a href="https://stackoverflow.com/questions/33441652/does-setting-variable-to-null-clear-just-the-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>passing object of class to another class</td><td>2</td><td>9</td><td>59796</td><td>2015-03-21</td><td><a href="https://stackoverflow.com/questions/4717953/passing-object-of-class-to-another-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to detect when an object is no longer referenced</td><td>7</td><td>9</td><td>3437</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/208562/how-to-detect-when-an-object-is-no-longer-referenced" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>HashMap Object reference confusion</td><td>4</td><td>9</td><td>15555</td><td>2015-10-07</td><td><a href="https://stackoverflow.com/questions/24486318/hashmap-object-reference-confusion" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Equivalent of AtomicReference but without the volatile synchronization cost</td><td>10</td><td>9</td><td>2958</td><td>2011-12-01</td><td><a href="https://stackoverflow.com/questions/8344509/equivalent-of-atomicreference-but-without-the-volatile-synchronization-cost" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does calling a method not require an import of the class?</td><td>1</td><td>9</td><td>136</td><td>2018-08-28</td><td><a href="https://stackoverflow.com/questions/52056341/why-does-calling-a-method-not-require-an-import-of-the-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can you help me gather a Java Best Practices online material collection?</td><td>4</td><td>9</td><td>764</td><td>2013-02-13</td><td><a href="https://stackoverflow.com/questions/265147/can-you-help-me-gather-a-java-best-practices-online-material-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>why the reference don&#39;t put into reference queue when finalize method overrided</td><td>2</td><td>9</td><td>125</td><td>2018-01-10</td><td><a href="https://stackoverflow.com/questions/48167735/why-the-reference-dont-put-into-reference-queue-when-finalize-method-overrided" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java is there a performance difference between referencing a field through getter versus through a variable?</td><td>9</td><td>8</td><td>3009</td><td>2009-07-28</td><td><a href="https://stackoverflow.com/questions/1195849/in-java-is-there-a-performance-difference-between-referencing-a-field-through-ge" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Nested Objects Best Practice</td><td>11</td><td>8</td><td>17549</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5248691/nested-objects-best-practice" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How is String a reference type in Java?</td><td>5</td><td>8</td><td>3945</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/51466358/how-is-string-a-reference-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When I remove 1 object from ArrayList in Java. What happen next?</td><td>4</td><td>8</td><td>8433</td><td>2017-06-16</td><td><a href="https://stackoverflow.com/questions/42453913/when-i-remove-1-object-from-arraylist-in-java-what-happen-next" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to test how many bytes an object reference use in Java?</td><td>4</td><td>8</td><td>6484</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5520731/how-to-test-how-many-bytes-an-object-reference-use-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to add/reference .jar files in your project when you don&#39;t have an IDE</td><td>2</td><td>8</td><td>25525</td><td>2014-03-22</td><td><a href="https://stackoverflow.com/questions/4732892/how-to-add-reference-jar-files-in-your-project-when-you-dont-have-an-ide" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Checking For Equal Instances of 2 Different (Included Example)</td><td>6</td><td>8</td><td>682</td><td>2010-09-07</td><td><a href="https://stackoverflow.com/questions/3655663/checking-for-equal-instances-of-2-different-included-example" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Set all references of object to null</td><td>3</td><td>8</td><td>4521</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/33595957/set-all-references-of-object-to-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Java 8 Streaming Filter &amp; Collect return references to same objects in the list?</td><td>2</td><td>8</td><td>4443</td><td>2019-10-11</td><td><a href="https://stackoverflow.com/questions/45827962/does-java-8-streaming-filter-collect-return-references-to-same-objects-in-the" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Setting equal in Java: by value or reference?</td><td>4</td><td>8</td><td>7008</td><td>2014-03-05</td><td><a href="https://stackoverflow.com/questions/22188690/setting-equal-in-java-by-value-or-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I use an equivalent to C++ reference parameters in Java?</td><td>11</td><td>7</td><td>13859</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/430479/how-do-i-use-an-equivalent-to-c-reference-parameters-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Scala, Java and equality</td><td>4</td><td>7</td><td>2633</td><td>2010-08-06</td><td><a href="https://stackoverflow.com/questions/3422669/scala-java-and-equality" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does the garbage collector work on static variables or methods in java?</td><td>4</td><td>7</td><td>16446</td><td>2012-10-29</td><td><a href="https://stackoverflow.com/questions/13126833/does-the-garbage-collector-work-on-static-variables-or-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s inside a reference variable in Java?</td><td>4</td><td>7</td><td>2074</td><td>2011-10-22</td><td><a href="https://stackoverflow.com/questions/3447878/whats-inside-a-reference-variable-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>AtomicReference vs AtomicReferenceFieldUpdater, what&#39;s a purpose of AtomicReferenceFieldUpdater?</td><td>1</td><td>7</td><td>1252</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/52687051/atomicreference-vs-atomicreferencefieldupdater-whats-a-purpose-of-atomicrefere" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java window builder: runtime error</td><td>3</td><td>7</td><td>10058</td><td>2016-06-21</td><td><a href="https://stackoverflow.com/questions/37940141/java-window-builder-runtime-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does the Java for each loop return a reference, or a reference copy?</td><td>3</td><td>7</td><td>5647</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5858970/does-the-java-for-each-loop-return-a-reference-or-a-reference-copy" target="_blank">click</a></td>
+        </tr>     
+        </table>
+    </div>
+</div>
+</body>
+</html>

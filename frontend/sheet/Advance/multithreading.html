@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about multithreading</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Singleton and Synchronization</td><td>8</td><td>130</td><td>121666</td><td>2014-08-07</td><td><a href="https://stackoverflow.com/questions/11165852/java-singleton-and-synchronization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&quot;implements Runnable&quot; vs &quot;extends Thread&quot; in Java</td><td>43</td><td>2293</td><td>738895</td><td>2015-05-16</td><td><a href="https://stackoverflow.com/questions/541487/implements-runnable-vs-extends-thread-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between wait() and sleep()</td><td>33</td><td>1307</td><td>955544</td><td>2013-07-10</td><td><a href="https://stackoverflow.com/questions/1036754/difference-between-wait-and-sleep" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do servlets work? Instantiation, sessions, shared variables and multithreading</td><td>8</td><td>1223</td><td>315407</td><td>2015-05-22</td><td><a href="https://stackoverflow.com/questions/3106452/how-do-servlets-work-instantiation-sessions-shared-variables-and-multithreadi" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does &#39;synchronized&#39; mean?</td><td>17</td><td>1092</td><td>528328</td><td>2012-10-16</td><td><a href="https://stackoverflow.com/questions/1085709/what-does-synchronized-mean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When and how should I use a ThreadLocal variable?</td><td>26</td><td>951</td><td>357320</td><td>2014-05-06</td><td><a href="https://stackoverflow.com/questions/817856/when-and-how-should-i-use-a-threadlocal-variable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a daemon thread in Java?</td><td>25</td><td>872</td><td>512140</td><td>2015-11-01</td><td><a href="https://stackoverflow.com/questions/2213340/what-is-a-daemon-thread-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the volatile keyword useful for?</td><td>24</td><td>756</td><td>303433</td><td>2015-01-06</td><td><a href="https://stackoverflow.com/questions/106591/what-is-the-volatile-keyword-useful-for" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The difference between the Runnable and Callable interfaces in Java</td><td>15</td><td>544</td><td>350287</td><td>2013-09-23</td><td><a href="https://stackoverflow.com/questions/141284/the-difference-between-the-runnable-and-callable-interfaces-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if current thread is not main thread</td><td>12</td><td>444</td><td>150849</td><td>2014-06-20</td><td><a href="https://stackoverflow.com/questions/11411022/how-to-check-if-current-thread-is-not-main-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to wait for all threads to finish, using ExecutorService?</td><td>27</td><td>432</td><td>391784</td><td>2010-10-02</td><td><a href="https://stackoverflow.com/questions/1250643/how-to-wait-for-all-threads-to-finish-using-executorservice" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there an advantage to use a Synchronized Method instead of a Synchronized Block?</td><td>23</td><td>418</td><td>294340</td><td>2013-10-30</td><td><a href="https://stackoverflow.com/questions/574240/is-there-an-advantage-to-use-a-synchronized-method-instead-of-a-synchronized-blo" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: notify() vs. notifyAll() all over again</td><td>26</td><td>412</td><td>227800</td><td>2010-05-01</td><td><a href="https://stackoverflow.com/questions/37026/java-notify-vs-notifyall-all-over-again" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you kill a Thread in Java?</td><td>17</td><td>407</td><td>577858</td><td>2015-02-15</td><td><a href="https://stackoverflow.com/questions/671049/how-do-you-kill-a-thread-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Handling InterruptedException in Java</td><td>7</td><td>404</td><td>225684</td><td>2013-02-07</td><td><a href="https://stackoverflow.com/questions/3976344/handling-interruptedexception-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Avoid synchronized(this) in Java?</td><td>23</td><td>395</td><td>149951</td><td>2013-03-19</td><td><a href="https://stackoverflow.com/questions/442564/avoid-synchronizedthis-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use AtomicReference in Java?</td><td>8</td><td>394</td><td>214734</td><td>2016-01-30</td><td><a href="https://stackoverflow.com/questions/3964211/when-to-use-atomicreference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Running code in main thread from another thread</td><td>17</td><td>371</td><td>331197</td><td>2016-08-14</td><td><a href="https://stackoverflow.com/questions/11123621/running-code-in-main-thread-from-another-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why use a ReentrantLock if one can use synchronized(this)?</td><td>8</td><td>358</td><td>174645</td><td>2015-12-02</td><td><a href="https://stackoverflow.com/questions/11821801/why-use-a-reentrantlock-if-one-can-use-synchronizedthis" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>C# version of java&#39;s synchronized keyword?</td><td>5</td><td>341</td><td>203164</td><td>2012-06-15</td><td><a href="https://stackoverflow.com/questions/541194/c-version-of-javas-synchronized-keyword" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between atomic / volatile / synchronized?</td><td>7</td><td>336</td><td>155035</td><td>2015-01-13</td><td><a href="https://stackoverflow.com/questions/9749746/what-is-the-difference-between-atomic-volatile-synchronized" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I pass a parameter to a Java Thread?</td><td>19</td><td>328</td><td>416211</td><td>2010-10-01</td><td><a href="https://stackoverflow.com/questions/877096/how-can-i-pass-a-parameter-to-a-java-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to properly stop the Thread in Java?</td><td>8</td><td>307</td><td>638818</td><td>2014-02-11</td><td><a href="https://stackoverflow.com/questions/10961714/how-to-properly-stop-the-thread-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why must wait() always be in synchronized block</td><td>10</td><td>298</td><td>159509</td><td>2011-11-15</td><td><a href="https://stackoverflow.com/questions/2779484/why-must-wait-always-be-in-synchronized-block" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between volatile and synchronized in Java</td><td>4</td><td>288</td><td>120206</td><td>2014-05-19</td><td><a href="https://stackoverflow.com/questions/3519664/difference-between-volatile-and-synchronized-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Volatile vs Static in Java</td><td>8</td><td>282</td><td>164746</td><td>2014-06-25</td><td><a href="https://stackoverflow.com/questions/2423622/volatile-vs-static-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between thread&#39;s context class loader and normal classloader</td><td>4</td><td>282</td><td>121995</td><td>2014-07-20</td><td><a href="https://stackoverflow.com/questions/1771679/difference-between-threads-context-class-loader-and-normal-classloader" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to timeout a thread</td><td>17</td><td>275</td><td>277639</td><td>2010-02-21</td><td><a href="https://stackoverflow.com/questions/2275443/how-to-timeout-a-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get a list of all threads currently running in Java</td><td>13</td><td>257</td><td>246865</td><td>2014-06-27</td><td><a href="https://stackoverflow.com/questions/1323408/get-a-list-of-all-threads-currently-running-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Use cases for RxJava schedulers</td><td>3</td><td>256</td><td>28046</td><td>2017-07-31</td><td><a href="https://stackoverflow.com/questions/31276164/use-cases-for-rxjava-schedulers" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does java.lang.Thread.interrupt() do?</td><td>9</td><td>254</td><td>162551</td><td>2011-12-04</td><td><a href="https://stackoverflow.com/questions/3590000/what-does-java-lang-thread-interrupt-do" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between CompletableFuture, Future and RxJava&#39;s Observable</td><td>5</td><td>248</td><td>92020</td><td>2017-04-11</td><td><a href="https://stackoverflow.com/questions/35329845/difference-between-completablefuture-future-and-rxjavas-observable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How many threads can a Java VM support?</td><td>13</td><td>246</td><td>224392</td><td>2010-12-12</td><td><a href="https://stackoverflow.com/questions/763579/how-many-threads-can-a-java-vm-support" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between Thread start() and Runnable run()</td><td>14</td><td>244</td><td>200901</td><td>2014-04-30</td><td><a href="https://stackoverflow.com/questions/8579657/whats-the-difference-between-thread-start-and-runnable-run" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>ExecutorService, how to wait for all tasks to finish</td><td>16</td><td>231</td><td>231319</td><td>2013-11-01</td><td><a href="https://stackoverflow.com/questions/3269445/executorservice-how-to-wait-for-all-tasks-to-finish" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Handling exceptions from Java ExecutorService tasks</td><td>12</td><td>230</td><td>205688</td><td>2013-10-16</td><td><a href="https://stackoverflow.com/questions/2248131/handling-exceptions-from-java-executorservice-tasks" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: How to test methods that call System.exit()?</td><td>19</td><td>228</td><td>111076</td><td>2008-11-21</td><td><a href="https://stackoverflow.com/questions/309396/java-how-to-test-methods-that-call-system-exit" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java synchronized method lock on object, or method?</td><td>11</td><td>220</td><td>205423</td><td>2012-01-13</td><td><a href="https://stackoverflow.com/questions/3047564/java-synchronized-method-lock-on-object-or-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do spurious wakeups in Java actually happen?</td><td>7</td><td>214</td><td>39517</td><td>2013-11-13</td><td><a href="https://stackoverflow.com/questions/1050592/do-spurious-wakeups-in-java-actually-happen" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How is CountDownLatch used in Java Multithreading?</td><td>13</td><td>205</td><td>134891</td><td>2015-08-16</td><td><a href="https://stackoverflow.com/questions/17827022/how-is-countdownlatch-used-in-java-multithreading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Choose between ExecutorService&#39;s submit and ExecutorService&#39;s execute</td><td>7</td><td>205</td><td>103850</td><td>2014-04-14</td><td><a href="https://stackoverflow.com/questions/3929342/choose-between-executorservices-submit-and-executorservices-execute" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Synchronization vs Lock</td><td>10</td><td>201</td><td>175236</td><td>2013-06-18</td><td><a href="https://stackoverflow.com/questions/4201713/synchronization-vs-lock" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Waiting on a list of Future</td><td>11</td><td>196</td><td>218604</td><td>2013-10-13</td><td><a href="https://stackoverflow.com/questions/19348248/waiting-on-a-list-of-future" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to catch an Exception from a thread</td><td>17</td><td>195</td><td>221477</td><td>2013-05-08</td><td><a href="https://stackoverflow.com/questions/6546193/how-to-catch-an-exception-from-a-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>If I synchronized two methods on the same class, can they run simultaneously?</td><td>12</td><td>194</td><td>86569</td><td>2017-02-02</td><td><a href="https://stackoverflow.com/questions/15438727/if-i-synchronized-two-methods-on-the-same-class-can-they-run-simultaneously" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is creating a Thread said to be expensive?</td><td>6</td><td>194</td><td>50825</td><td>2012-09-05</td><td><a href="https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the most frequent concurrency issue you&#39;ve encountered in Java?</td><td>49</td><td>193</td><td>76063</td><td>2010-10-29</td><td><a href="https://stackoverflow.com/questions/461896/what-is-the-most-frequent-concurrency-issue-youve-encountered-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Executors.newCachedThreadPool() versus Executors.newFixedThreadPool()</td><td>8</td><td>187</td><td>120738</td><td>2013-06-30</td><td><a href="https://stackoverflow.com/questions/949355/executors-newcachedthreadpool-versus-executors-newfixedthreadpool" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why invoke Thread.currentThread.interrupt() in a catch InterruptException block?</td><td>5</td><td>187</td><td>64950</td><td>2016-01-23</td><td><a href="https://stackoverflow.com/questions/4906799/why-invoke-thread-currentthread-interrupt-in-a-catch-interruptexception-block" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no GIL in the Java Virtual Machine? Why does Python need one so bad?</td><td>5</td><td>186</td><td>19173</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/991904/why-is-there-no-gil-in-the-java-virtual-machine-why-does-python-need-one-so-bad" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do synchronized static methods work in Java and can I use it for loading Hibernate entities?</td><td>8</td><td>185</td><td>201820</td><td>2014-09-10</td><td><a href="https://stackoverflow.com/questions/578904/how-do-synchronized-static-methods-work-in-java-and-can-i-use-it-for-loading-hib" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IllegalMonitorStateException on wait() call</td><td>11</td><td>168</td><td>279686</td><td>2009-10-08</td><td><a href="https://stackoverflow.com/questions/1537116/illegalmonitorstateexception-on-wait-call" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does this thread join code mean?</td><td>11</td><td>167</td><td>171143</td><td>2014-11-23</td><td><a href="https://stackoverflow.com/questions/15956231/what-does-this-thread-join-code-mean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is iterating ConcurrentHashMap values thread safe?</td><td>5</td><td>167</td><td>110913</td><td>2010-12-04</td><td><a href="https://stackoverflow.com/questions/3768554/is-iterating-concurrenthashmap-values-thread-safe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does “while(true)” without “Thread.sleep” cause 100% CPU usage on Linux but not on Windows?</td><td>1</td><td>161</td><td>7937</td><td>2013-02-01</td><td><a href="https://stackoverflow.com/questions/14579124/why-does-whiletrue-without-thread-sleep-cause-100-cpu-usage-on-linux-but" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it safe to get values from a java.util.HashMap from multiple threads (no modification)?</td><td>12</td><td>160</td><td>77704</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/104184/is-it-safe-to-get-values-from-a-java-util-hashmap-from-multiple-threads-no-modi" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&quot;Java DateFormat is not threadsafe&quot; what does this leads to?</td><td>11</td><td>153</td><td>63808</td><td>2011-02-26</td><td><a href="https://stackoverflow.com/questions/4021151/java-dateformat-is-not-threadsafe-what-does-this-leads-to" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to call a method with a separate thread in Java?</td><td>7</td><td>152</td><td>330487</td><td>2010-08-16</td><td><a href="https://stackoverflow.com/questions/3489543/how-to-call-a-method-with-a-separate-thread-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s a monitor in Java?</td><td>8</td><td>150</td><td>103900</td><td>2013-04-07</td><td><a href="https://stackoverflow.com/questions/3362303/whats-a-monitor-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are non-synchronised static methods thread safe if they don&#39;t modify static class variables?</td><td>6</td><td>146</td><td>63541</td><td>2014-06-07</td><td><a href="https://stackoverflow.com/questions/5173399/are-non-synchronised-static-methods-thread-safe-if-they-dont-modify-static-clas" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which concurrent Queue implementation should I use in Java?</td><td>6</td><td>146</td><td>123566</td><td>2014-03-30</td><td><a href="https://stackoverflow.com/questions/1301691/which-concurrent-queue-implementation-should-i-use-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get thread id from a thread pool?</td><td>6</td><td>145</td><td>214118</td><td>2013-06-04</td><td><a href="https://stackoverflow.com/questions/3294293/how-to-get-thread-id-from-a-thread-pool" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is the != check thread safe?</td><td>8</td><td>141</td><td>10789</td><td>2013-08-29</td><td><a href="https://stackoverflow.com/questions/18460580/is-the-check-thread-safe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android - Prevent white screen at startup</td><td>19</td><td>140</td><td>101010</td><td>2016-11-23</td><td><a href="https://stackoverflow.com/questions/37437037/android-prevent-white-screen-at-startup" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are Java static initializers thread safe?</td><td>6</td><td>140</td><td>50161</td><td>2012-03-02</td><td><a href="https://stackoverflow.com/questions/878577/are-java-static-initializers-thread-safe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Impossible to make a cached thread pool with a size limit?</td><td>14</td><td>138</td><td>57399</td><td>2015-12-21</td><td><a href="https://stackoverflow.com/questions/1800317/impossible-to-make-a-cached-thread-pool-with-a-size-limit" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to know if other threads have finished?</td><td>12</td><td>137</td><td>222961</td><td>2012-10-14</td><td><a href="https://stackoverflow.com/questions/702415/how-to-know-if-other-threads-have-finished" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to make a Java thread wait for another thread&#39;s output?</td><td>13</td><td>133</td><td>293089</td><td>2012-08-12</td><td><a href="https://stackoverflow.com/questions/289434/how-to-make-a-java-thread-wait-for-another-threads-output" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use wait and notify in Java without IllegalMonitorStateException?</td><td>12</td><td>132</td><td>237973</td><td>2013-11-29</td><td><a href="https://stackoverflow.com/questions/886722/how-to-use-wait-and-notify-in-java-without-illegalmonitorstateexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between WAIT and BLOCKED thread states</td><td>6</td><td>132</td><td>88426</td><td>2017-10-23</td><td><a href="https://stackoverflow.com/questions/15680422/difference-between-wait-and-blocked-thread-states" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>kill -3 to get java thread dump</td><td>9</td><td>127</td><td>193633</td><td>2013-06-29</td><td><a href="https://stackoverflow.com/questions/4876274/kill-3-to-get-java-thread-dump" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java thread executing remainder operation in a loop blocks all other threads</td><td>4</td><td>126</td><td>8641</td><td>2016-09-05</td><td><a href="https://stackoverflow.com/questions/39298474/java-thread-executing-remainder-operation-in-a-loop-blocks-all-other-threads" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When does Java&#39;s Thread.sleep throw InterruptedException?</td><td>8</td><td>126</td><td>127402</td><td>2012-10-10</td><td><a href="https://stackoverflow.com/questions/1087475/when-does-javas-thread-sleep-throw-interruptedexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is Random class thread safe?</td><td>8</td><td>124</td><td>44948</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5819638/is-random-class-thread-safe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is spawning threads in Java EE container discouraged?</td><td>9</td><td>123</td><td>54705</td><td>2012-03-15</td><td><a href="https://stackoverflow.com/questions/533783/why-is-spawning-threads-in-java-ee-container-discouraged" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to synchronize a static variable among threads running different instances of a class in Java?</td><td>5</td><td>122</td><td>170757</td><td>2014-03-10</td><td><a href="https://stackoverflow.com/questions/2120248/how-to-synchronize-a-static-variable-among-threads-running-different-instances-o" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>LinkedBlockingQueue vs ConcurrentLinkedQueue</td><td>5</td><td>121</td><td>64349</td><td>2013-07-19</td><td><a href="https://stackoverflow.com/questions/1426754/linkedblockingqueue-vs-concurrentlinkedqueue" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to wait for a number of threads to complete?</td><td>14</td><td>119</td><td>178778</td><td>2013-06-05</td><td><a href="https://stackoverflow.com/questions/1252190/how-to-wait-for-a-number-of-threads-to-complete" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Static method behavior in multi-threaded environment in java</td><td>2</td><td>118</td><td>59051</td><td>2017-11-23</td><td><a href="https://stackoverflow.com/questions/17343157/static-method-behavior-in-multi-threaded-environment-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is mutex and semaphore in Java ? What is the main difference?</td><td>11</td><td>117</td><td>105838</td><td>2011-01-14</td><td><a href="https://stackoverflow.com/questions/771347/what-is-mutex-and-semaphore-in-java-what-is-the-main-difference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>wait until all threads finish their work in java</td><td>17</td><td>115</td><td>202815</td><td>2011-10-29</td><td><a href="https://stackoverflow.com/questions/7939257/wait-until-all-threads-finish-their-work-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Returning value from Thread</td><td>9</td><td>114</td><td>257231</td><td>2012-02-05</td><td><a href="https://stackoverflow.com/questions/9148899/returning-value-from-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is Java Regex Thread Safe?</td><td>5</td><td>113</td><td>54734</td><td>2013-12-30</td><td><a href="https://stackoverflow.com/questions/1360113/is-java-regex-thread-safe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Synchronized Block for .class</td><td>4</td><td>112</td><td>46936</td><td>2014-01-29</td><td><a href="https://stackoverflow.com/questions/2056243/java-synchronized-block-for-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why should Java ThreadLocal variables be static</td><td>7</td><td>112</td><td>37042</td><td>2015-05-17</td><td><a href="https://stackoverflow.com/questions/2784009/why-should-java-threadlocal-variables-be-static" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the ThreadPoolExecutor to increase threads to max before queueing?</td><td>10</td><td>112</td><td>35962</td><td>2016-04-26</td><td><a href="https://stackoverflow.com/questions/19528304/how-to-get-the-threadpoolexecutor-to-increase-threads-to-max-before-queueing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to scale threads according to CPU cores?</td><td>6</td><td>111</td><td>86045</td><td>2015-01-12</td><td><a href="https://stackoverflow.com/questions/1980832/how-to-scale-threads-according-to-cpu-cores" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When would you call java&#39;s thread.run() instead of thread.start()?</td><td>14</td><td>110</td><td>74509</td><td>2013-05-15</td><td><a href="https://stackoverflow.com/questions/262816/when-would-you-call-javas-thread-run-instead-of-thread-start" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I make my ArrayList Thread-Safe? Another approach to problem in Java?</td><td>8</td><td>110</td><td>208232</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2444005/how-do-i-make-my-arraylist-thread-safe-another-approach-to-problem-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the main uses of yield(), and how does it differ from join() and interrupt()?</td><td>10</td><td>110</td><td>102720</td><td>2016-05-11</td><td><a href="https://stackoverflow.com/questions/6979796/what-are-the-main-uses-of-yield-and-how-does-it-differ-from-join-and-interr" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>CountDownLatch vs. Semaphore</td><td>7</td><td>109</td><td>59668</td><td>2012-09-13</td><td><a href="https://stackoverflow.com/questions/184147/countdownlatch-vs-semaphore" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>ExecutorService that interrupts tasks after a timeout</td><td>11</td><td>109</td><td>118125</td><td>2010-05-03</td><td><a href="https://stackoverflow.com/questions/2758612/executorservice-that-interrupts-tasks-after-a-timeout" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>FixedThreadPool vs CachedThreadPool: the lesser of two evils</td><td>3</td><td>107</td><td>81476</td><td>2016-07-13</td><td><a href="https://stackoverflow.com/questions/17957382/fixedthreadpool-vs-cachedthreadpool-the-lesser-of-two-evils" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is i++ not atomic?</td><td>10</td><td>106</td><td>27982</td><td>2014-09-21</td><td><a href="https://stackoverflow.com/questions/25168062/why-is-i-not-atomic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Synchronization of non-final field</td><td>8</td><td>105</td><td>66022</td><td>2015-08-04</td><td><a href="https://stackoverflow.com/questions/6910807/synchronization-of-non-final-field" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to start two threads at &quot;exactly&quot; the same time</td><td>4</td><td>105</td><td>82504</td><td>2013-03-12</td><td><a href="https://stackoverflow.com/questions/3376586/how-to-start-two-threads-at-exactly-the-same-time" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.lang.OutOfMemoryError: Java heap space</td><td>12</td><td>105</td><td>319164</td><td>2012-12-18</td><td><a href="https://stackoverflow.com/questions/1596009/java-lang-outofmemoryerror-java-heap-space" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to analyze a java thread dump?</td><td>2</td><td>105</td><td>77994</td><td>2012-10-18</td><td><a href="https://stackoverflow.com/questions/7599608/how-to-analyze-a-java-thread-dump" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How many threads are spawned in parallelStream in Java 8?</td><td>2</td><td>102</td><td>51165</td><td>2015-06-12</td><td><a href="https://stackoverflow.com/questions/30802463/how-many-threads-are-spawned-in-parallelstream-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Understanding java.lang.Thread.State: WAITING (parking)</td><td>5</td><td>101</td><td>87376</td><td>2016-02-04</td><td><a href="https://stackoverflow.com/questions/7497793/understanding-java-lang-thread-state-waiting-parking" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

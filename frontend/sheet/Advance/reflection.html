@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about reflection</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is reflection and why is it useful?</td><td>23</td><td>2421</td><td>977619</td><td>2015-02-23</td><td><a href="https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a generic array in Java?</td><td>31</td><td>1197</td><td>931526</td><td>2013-02-14</td><td><a href="https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I invoke a Java method when given the method name as a string?</td><td>23</td><td>742</td><td>1005251</td><td>2010-11-28</td><td><a href="https://stackoverflow.com/questions/160970/how-do-i-invoke-a-java-method-when-given-the-method-name-as-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can you find all classes in a package using reflection?</td><td>30</td><td>608</td><td>476089</td><td>2012-04-18</td><td><a href="https://stackoverflow.com/questions/520328/can-you-find-all-classes-in-a-package-using-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get generic type of class at runtime</td><td>29</td><td>601</td><td>736133</td><td>2013-04-15</td><td><a href="https://stackoverflow.com/questions/3403909/get-generic-type-of-class-at-runtime" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to read the value of a private field from a different class in Java?</td><td>14</td><td>541</td><td>343327</td><td>2013-10-26</td><td><a href="https://stackoverflow.com/questions/1196192/how-to-read-the-value-of-a-private-field-from-a-different-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Change private static final field using Java reflection</td><td>14</td><td>535</td><td>307766</td><td>2014-11-19</td><td><a href="https://stackoverflow.com/questions/3301635/change-private-static-final-field-using-java-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting the name of the currently executing method</td><td>23</td><td>513</td><td>434038</td><td>2013-04-23</td><td><a href="https://stackoverflow.com/questions/442747/getting-the-name-of-the-currently-executing-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between instanceof and Class.isAssignableFrom(...)?</td><td>14</td><td>491</td><td>274169</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/496928/what-is-the-difference-between-instanceof-and-class-isassignablefrom" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is a Java string really immutable?</td><td>16</td><td>407</td><td>57148</td><td>2014-01-14</td><td><a href="https://stackoverflow.com/questions/20945049/is-a-java-string-really-immutable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Creating an instance using the class name and calling constructor</td><td>10</td><td>356</td><td>519029</td><td>2013-06-22</td><td><a href="https://stackoverflow.com/questions/6094575/creating-an-instance-using-the-class-name-and-calling-constructor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What could cause java.lang.reflect.InvocationTargetException?</td><td>15</td><td>351</td><td>1190719</td><td>2014-12-21</td><td><a href="https://stackoverflow.com/questions/6020719/what-could-cause-java-lang-reflect-invocationtargetexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Check if a Class Object is subclass of another Class Object in Java</td><td>8</td><td>238</td><td>186720</td><td>2015-01-23</td><td><a href="https://stackoverflow.com/questions/4584541/check-if-a-class-object-is-subclass-of-another-class-object-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Invoking a static method using reflection</td><td>4</td><td>231</td><td>173132</td><td>2014-05-07</td><td><a href="https://stackoverflow.com/questions/2467544/invoking-a-static-method-using-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between getFields and getDeclaredFields in Java reflection</td><td>4</td><td>224</td><td>113554</td><td>2014-07-13</td><td><a href="https://stackoverflow.com/questions/16966629/what-is-the-difference-between-getfields-and-getdeclaredfields-in-java-reflectio" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Reflection Performance</td><td>14</td><td>195</td><td>124574</td><td>2012-08-30</td><td><a href="https://stackoverflow.com/questions/435553/java-reflection-performance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java array reflection: isArray vs. instanceof</td><td>8</td><td>186</td><td>141676</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/219881/java-array-reflection-isarray-vs-instanceof" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Retrieve only static fields declared in Java class</td><td>4</td><td>182</td><td>96683</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3422390/retrieve-only-static-fields-declared-in-java-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between JDK dynamic proxy and CGLib?</td><td>4</td><td>181</td><td>76737</td><td>2013-04-02</td><td><a href="https://stackoverflow.com/questions/10664182/what-is-the-difference-between-jdk-dynamic-proxy-and-cglib" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s invokedynamic and how do I use it?</td><td>4</td><td>174</td><td>54916</td><td>2015-11-22</td><td><a href="https://stackoverflow.com/questions/6638735/whats-invokedynamic-and-how-do-i-use-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reflection generic get field value</td><td>8</td><td>168</td><td>430020</td><td>2017-01-12</td><td><a href="https://stackoverflow.com/questions/13400075/reflection-generic-get-field-value" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Any way to Invoke a private method?</td><td>6</td><td>167</td><td>161748</td><td>2011-04-17</td><td><a href="https://stackoverflow.com/questions/880365/any-way-to-invoke-a-private-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get type of a generic parameter in Java with reflection</td><td>18</td><td>163</td><td>214828</td><td>2012-11-04</td><td><a href="https://stackoverflow.com/questions/1901164/get-type-of-a-generic-parameter-in-java-with-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>At runtime, find all classes in a Java application that extend a base class</td><td>14</td><td>160</td><td>163419</td><td>2014-01-27</td><td><a href="https://stackoverflow.com/questions/205573/at-runtime-find-all-classes-in-a-java-application-that-extend-a-base-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Reflection: How to get the name of a variable?</td><td>8</td><td>155</td><td>293030</td><td>2013-05-03</td><td><a href="https://stackoverflow.com/questions/744226/java-reflection-how-to-get-the-name-of-a-variable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Retrieving the inherited attribute names/values using Java Reflection</td><td>15</td><td>154</td><td>91395</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1042798/retrieving-the-inherited-attribute-names-values-using-java-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to solve InaccessibleObjectException (&quot;Unable to make {member} accessible: module {A} does not &#39;opens {package}&#39; to {B}&quot;) on Java 9?</td><td>17</td><td>147</td><td>161232</td><td>2019-03-05</td><td><a href="https://stackoverflow.com/questions/41265266/how-to-solve-inaccessibleobjectexception-unable-to-make-member-accessible-m" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best way of invoking getter by reflection</td><td>4</td><td>145</td><td>140381</td><td>2010-04-14</td><td><a href="https://stackoverflow.com/questions/2638590/best-way-of-invoking-getter-by-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I obtain method parameter name using Java reflection?</td><td>15</td><td>140</td><td>150585</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2237803/can-i-obtain-method-parameter-name-using-java-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What to use instead of Class.newInstance()?</td><td>2</td><td>132</td><td>71945</td><td>2017-09-24</td><td><a href="https://stackoverflow.com/questions/46393863/what-to-use-instead-of-class-newinstance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting Integer to Long</td><td>17</td><td>129</td><td>437285</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6690745/converting-integer-to-long" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Determining if an Object is of primitive type</td><td>18</td><td>127</td><td>132295</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/709961/determining-if-an-object-is-of-primitive-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java reflection - impact of setAccessible(true)</td><td>4</td><td>126</td><td>83349</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10638826/java-reflection-impact-of-setaccessibletrue" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>String replacement in java, similar to a velocity template</td><td>10</td><td>123</td><td>148966</td><td>2011-03-19</td><td><a href="https://stackoverflow.com/questions/3655424/string-replacement-in-java-similar-to-a-velocity-template" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Access to private inherited fields via reflection in Java</td><td>7</td><td>117</td><td>99312</td><td>2013-02-26</td><td><a href="https://stackoverflow.com/questions/3567372/access-to-private-inherited-fields-via-reflection-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting value of public static final field/property of a class in Java via reflection</td><td>3</td><td>116</td><td>105870</td><td>2014-10-05</td><td><a href="https://stackoverflow.com/questions/2685345/getting-value-of-public-static-final-field-property-of-a-class-in-java-via-refle" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it bad practice to use Reflection in Unit testing?</td><td>7</td><td>114</td><td>48759</td><td>2010-05-11</td><td><a href="https://stackoverflow.com/questions/2811141/is-it-bad-practice-to-use-reflection-in-unit-testing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between a.getClass() and A.class in Java?</td><td>7</td><td>110</td><td>45705</td><td>2014-05-30</td><td><a href="https://stackoverflow.com/questions/10947768/what-is-the-difference-between-a-getclass-and-a-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible in Java to access private fields via reflection</td><td>3</td><td>108</td><td>141643</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1555658/is-it-possible-in-java-to-access-private-fields-via-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I check if a method is static using reflection?</td><td>3</td><td>108</td><td>51947</td><td>2012-07-25</td><td><a href="https://stackoverflow.com/questions/287645/how-can-i-check-if-a-method-is-static-using-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Avoiding instanceof in Java</td><td>10</td><td>108</td><td>78923</td><td>2013-03-14</td><td><a href="https://stackoverflow.com/questions/2790144/avoiding-instanceof-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Instantiating object of type parameter</td><td>7</td><td>107</td><td>79464</td><td>2008-11-18</td><td><a href="https://stackoverflow.com/questions/299998/instantiating-object-of-type-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I read all classes from a Java package in the classpath?</td><td>15</td><td>105</td><td>130148</td><td>2012-05-06</td><td><a href="https://stackoverflow.com/questions/1456930/how-do-i-read-all-classes-from-a-java-package-in-the-classpath" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Determine if a Class implements a interface in Java</td><td>5</td><td>104</td><td>76232</td><td>2014-12-12</td><td><a href="https://stackoverflow.com/questions/12145185/determine-if-a-class-implements-a-interface-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get all variable names in a class</td><td>4</td><td>103</td><td>156257</td><td>2015-08-29</td><td><a href="https://stackoverflow.com/questions/2126714/get-all-variable-names-in-a-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Set private field value with reflection</td><td>5</td><td>102</td><td>123625</td><td>2015-09-22</td><td><a href="https://stackoverflow.com/questions/32716952/set-private-field-value-with-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to limit setAccessible to only &quot;legitimate&quot; uses?</td><td>3</td><td>101</td><td>19250</td><td>2014-07-16</td><td><a href="https://stackoverflow.com/questions/2481862/how-to-limit-setaccessible-to-only-legitimate-uses" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert a Java object (bean) to key-value pairs (and vice versa)?</td><td>23</td><td>97</td><td>209544</td><td>2013-02-07</td><td><a href="https://stackoverflow.com/questions/739689/how-to-convert-a-java-object-bean-to-key-value-pairs-and-vice-versa" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting Class type from String</td><td>6</td><td>96</td><td>146174</td><td>2013-11-30</td><td><a href="https://stackoverflow.com/questions/2408789/getting-class-type-from-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there something like instanceOf(Class&lt;?&gt; c) in Java?</td><td>8</td><td>95</td><td>94934</td><td>2012-12-19</td><td><a href="https://stackoverflow.com/questions/949352/is-there-something-like-instanceofclass-c-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are private methods really safe?</td><td>7</td><td>92</td><td>5941</td><td>2015-01-11</td><td><a href="https://stackoverflow.com/questions/19856630/are-private-methods-really-safe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the MethodInfo of a Java 8 method reference?</td><td>10</td><td>90</td><td>33249</td><td>2013-11-07</td><td><a href="https://stackoverflow.com/questions/19845213/how-to-get-the-methodinfo-of-a-java-8-method-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Instantiate a class object with constructor that accepts a string parameter?</td><td>4</td><td>89</td><td>96872</td><td>2013-05-20</td><td><a href="https://stackoverflow.com/questions/3574065/instantiate-a-class-object-with-constructor-that-accepts-a-string-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Gson TypeToken with dynamic ArrayList item type</td><td>13</td><td>88</td><td>116541</td><td>2014-02-21</td><td><a href="https://stackoverflow.com/questions/20773850/gson-typetoken-with-dynamic-arraylist-item-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I find out what type each object is in a ArrayList&lt;Object&gt;?</td><td>12</td><td>87</td><td>268320</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/106336/how-do-i-find-out-what-type-each-object-is-in-a-arraylistobject" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Copy all values from fields in one class to another through reflection</td><td>19</td><td>87</td><td>182277</td><td>2010-11-09</td><td><a href="https://stackoverflow.com/questions/1667854/copy-all-values-from-fields-in-one-class-to-another-through-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does this Java code snippet work? (String pool and reflection)</td><td>7</td><td>86</td><td>4220</td><td>2015-09-17</td><td><a href="https://stackoverflow.com/questions/32623834/how-does-this-java-code-snippet-work-string-pool-and-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java - Get a list of all Classes loaded in the JVM</td><td>11</td><td>82</td><td>116055</td><td>2013-02-17</td><td><a href="https://stackoverflow.com/questions/2548384/java-get-a-list-of-all-classes-loaded-in-the-jvm" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java reflection get all private fields</td><td>6</td><td>82</td><td>79865</td><td>2015-02-05</td><td><a href="https://stackoverflow.com/questions/15315368/java-reflection-get-all-private-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: accessing private constructor with type parameters</td><td>7</td><td>82</td><td>60302</td><td>2014-05-02</td><td><a href="https://stackoverflow.com/questions/5629706/java-accessing-private-constructor-with-type-parameters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>NoSuchFieldException when field exists</td><td>7</td><td>81</td><td>80161</td><td>2014-01-30</td><td><a href="https://stackoverflow.com/questions/15420968/nosuchfieldexception-when-field-exists" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Reflection: How can I get the all getter methods of a java class and invoke them</td><td>7</td><td>79</td><td>108282</td><td>2015-08-05</td><td><a href="https://stackoverflow.com/questions/8524011/java-reflection-how-can-i-get-the-all-getter-methods-of-a-java-class-and-invoke" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Printing all variables value from a class</td><td>9</td><td>78</td><td>168052</td><td>2013-07-30</td><td><a href="https://stackoverflow.com/questions/1526826/printing-all-variables-value-from-a-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to determine by reflection if a Method returns &#39;void&#39;</td><td>5</td><td>78</td><td>37707</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1924253/how-to-determine-by-reflection-if-a-method-returns-void" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to have Java method return generic list of any type?</td><td>8</td><td>77</td><td>216442</td><td>2017-01-16</td><td><a href="https://stackoverflow.com/questions/17840483/how-to-have-java-method-return-generic-list-of-any-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Reflection: Create an implementing class</td><td>4</td><td>77</td><td>37342</td><td>2009-07-04</td><td><a href="https://stackoverflow.com/questions/1082850/java-reflection-create-an-implementing-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get list of fields with annotation, by using reflection</td><td>2</td><td>75</td><td>70244</td><td>2014-11-13</td><td><a href="https://stackoverflow.com/questions/16585451/get-list-of-fields-with-annotation-by-using-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get all fields (even private and inherited) from class</td><td>9</td><td>74</td><td>105649</td><td>2016-03-24</td><td><a href="https://stackoverflow.com/questions/16295949/get-all-fields-even-private-and-inherited-from-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I programmatically compile and instantiate a Java class?</td><td>3</td><td>73</td><td>62114</td><td>2010-10-12</td><td><a href="https://stackoverflow.com/questions/2946338/how-do-i-programmatically-compile-and-instantiate-a-java-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to load Classes at runtime from a folder or JAR?</td><td>4</td><td>73</td><td>109094</td><td>2012-06-13</td><td><a href="https://stackoverflow.com/questions/11016092/how-to-load-classes-at-runtime-from-a-folder-or-jar" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the fields in an Object via reflection?</td><td>3</td><td>71</td><td>131718</td><td>2010-06-07</td><td><a href="https://stackoverflow.com/questions/2989560/how-to-get-the-fields-in-an-object-via-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create an instance of an annotation</td><td>10</td><td>69</td><td>40263</td><td>2013-05-01</td><td><a href="https://stackoverflow.com/questions/16299717/how-to-create-an-instance-of-an-annotation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Dumping a java object&#39;s properties</td><td>10</td><td>69</td><td>77548</td><td>2012-06-25</td><td><a href="https://stackoverflow.com/questions/603013/dumping-a-java-objects-properties" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between getDeclaredConstructors and getConstructors in the Class API?</td><td>4</td><td>69</td><td>17583</td><td>2013-05-18</td><td><a href="https://stackoverflow.com/questions/8249173/what-is-the-difference-between-getdeclaredconstructors-and-getconstructors-in-th" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to instantiate an inner class with reflection in Java?</td><td>2</td><td>68</td><td>38809</td><td>2016-04-13</td><td><a href="https://stackoverflow.com/questions/17485297/how-to-instantiate-an-inner-class-with-reflection-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use getMethod() with primitive types?</td><td>2</td><td>68</td><td>17768</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5032833/how-to-use-getmethod-with-primitive-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java how to call method by reflection with primitive types as arguments</td><td>2</td><td>67</td><td>39652</td><td>2012-11-16</td><td><a href="https://stackoverflow.com/questions/13411426/java-how-to-call-method-by-reflection-with-primitive-types-as-arguments" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get annotations of a member variable?</td><td>8</td><td>66</td><td>142842</td><td>2013-07-30</td><td><a href="https://stackoverflow.com/questions/4453159/how-to-get-annotations-of-a-member-variable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I invoke a private static method using reflection (Java)?</td><td>5</td><td>65</td><td>56282</td><td>2011-01-22</td><td><a href="https://stackoverflow.com/questions/4770425/how-do-i-invoke-a-private-static-method-using-reflection-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Faster alternatives to Java&#39;s reflection</td><td>3</td><td>64</td><td>52609</td><td>2015-07-23</td><td><a href="https://stackoverflow.com/questions/19557829/faster-alternatives-to-javas-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find out if a field is instanceof a type via reflection?</td><td>4</td><td>64</td><td>76705</td><td>2015-05-01</td><td><a href="https://stackoverflow.com/questions/2262322/how-to-find-out-if-a-field-is-instanceof-a-type-via-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java introspection and reflection</td><td>1</td><td>64</td><td>61980</td><td>2010-01-11</td><td><a href="https://stackoverflow.com/questions/2044446/java-introspection-and-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can a Java class add a method to itself at runtime?</td><td>11</td><td>63</td><td>61378</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6680674/can-a-java-class-add-a-method-to-itself-at-runtime" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>ClassCastException when casting to the same class</td><td>11</td><td>63</td><td>90622</td><td>2013-06-26</td><td><a href="https://stackoverflow.com/questions/826319/classcastexception-when-casting-to-the-same-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Modify a class definition&#39;s annotation string parameter at runtime</td><td>7</td><td>63</td><td>84858</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14268981/modify-a-class-definitions-annotation-string-parameter-at-runtime" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can Java class files use reserved keywords as names?</td><td>4</td><td>61</td><td>5534</td><td>2015-05-27</td><td><a href="https://stackoverflow.com/questions/30491035/can-java-class-files-use-reserved-keywords-as-names" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Accessing non-visible classes with reflection</td><td>5</td><td>61</td><td>49541</td><td>2013-02-22</td><td><a href="https://stackoverflow.com/questions/15015675/accessing-non-visible-classes-with-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java toString() using reflection?</td><td>7</td><td>58</td><td>34683</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/443730/java-tostring-using-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting default value for primitive types</td><td>9</td><td>56</td><td>42117</td><td>2014-09-19</td><td><a href="https://stackoverflow.com/questions/2891970/getting-default-value-for-primitive-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Check type of primitive field</td><td>4</td><td>55</td><td>72217</td><td>2013-01-01</td><td><a href="https://stackoverflow.com/questions/1891595/check-type-of-primitive-field" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to invoke private attributes or methods via reflection</td><td>3</td><td>55</td><td>41207</td><td>2013-12-21</td><td><a href="https://stackoverflow.com/questions/6911427/is-it-possible-to-invoke-private-attributes-or-methods-via-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Reflection: Why is it so slow?</td><td>6</td><td>55</td><td>31277</td><td>2010-10-07</td><td><a href="https://stackoverflow.com/questions/1392351/java-reflection-why-is-it-so-slow" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Invoking setter method using java reflection</td><td>7</td><td>54</td><td>91354</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10009052/invoking-setter-method-using-java-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Modifying final fields in Java</td><td>5</td><td>54</td><td>12572</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1615163/modifying-final-fields-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Reflection calling constructor with primitive types</td><td>6</td><td>53</td><td>36597</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3925587/java-reflection-calling-constructor-with-primitive-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Dynamically find the class that represents a primitive Java type</td><td>8</td><td>53</td><td>60288</td><td>2008-10-08</td><td><a href="https://stackoverflow.com/questions/180097/dynamically-find-the-class-that-represents-a-primitive-java-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Run piece of code contained in a String</td><td>9</td><td>53</td><td>56841</td><td>2010-12-08</td><td><a href="https://stackoverflow.com/questions/4389232/run-piece-of-code-contained-in-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: instantiating an enum using reflection</td><td>5</td><td>52</td><td>58862</td><td>2011-07-20</td><td><a href="https://stackoverflow.com/questions/3735927/java-instantiating-an-enum-using-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java reflection: Is the order of class fields and methods standardized?</td><td>3</td><td>52</td><td>33095</td><td>2009-07-08</td><td><a href="https://stackoverflow.com/questions/1097807/java-reflection-is-the-order-of-class-fields-and-methods-standardized" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Changing private final fields via reflection</td><td>4</td><td>52</td><td>53785</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4516381/changing-private-final-fields-via-reflection" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

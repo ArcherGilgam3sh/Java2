@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about polymorphism</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is List&amp;lt;Dog&amp;gt; a subclass of List&amp;lt;Animal&amp;gt;? Why are Java generics not implicitly polymorphic?</td><td>20</td><td>854</td><td>128394</td><td>2014-08-10</td><td><a href="https://stackoverflow.com/questions/2745265/is-listltdoggt-a-subclass-of-listltanimalgt-why-are-java-generics-not-i" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism vs Overriding vs Overloading</td><td>21</td><td>370</td><td>295224</td><td>2012-10-15</td><td><a href="https://stackoverflow.com/questions/154577/polymorphism-vs-overriding-vs-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the main difference between Inheritance and Polymorphism?</td><td>18</td><td>197</td><td>291582</td><td>2013-04-25</td><td><a href="https://stackoverflow.com/questions/6308178/what-is-the-main-difference-between-inheritance-and-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism: Why use &quot;List list = new ArrayList&quot; instead of &quot;ArrayList list = new ArrayList&quot;?</td><td>8</td><td>157</td><td>124931</td><td>2014-10-23</td><td><a href="https://stackoverflow.com/questions/9852831/polymorphism-why-use-list-list-new-arraylist-instead-of-arraylist-list-n" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java, how do I call a base class&#39;s method from the overriding method in a derived class?</td><td>12</td><td>147</td><td>275850</td><td>2013-05-29</td><td><a href="https://stackoverflow.com/questions/268929/in-java-how-do-i-call-a-base-classs-method-from-the-overriding-method-in-a-der" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between dynamic and static polymorphism in Java?</td><td>14</td><td>137</td><td>251836</td><td>2014-08-04</td><td><a href="https://stackoverflow.com/questions/20783266/what-is-the-difference-between-dynamic-and-static-polymorphism-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; vs List&amp;lt;? extends Map&amp;lt;String, String&amp;gt;&amp;gt;</td><td>5</td><td>129</td><td>130504</td><td>2012-05-02</td><td><a href="https://stackoverflow.com/questions/9810445/listltmapltstring-stringgtgt-vs-listlt-extends-mapltstring-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism with gson</td><td>9</td><td>109</td><td>62001</td><td>2012-09-03</td><td><a href="https://stackoverflow.com/questions/5800433/polymorphism-with-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Avoiding instanceof in Java</td><td>10</td><td>108</td><td>78923</td><td>2013-03-14</td><td><a href="https://stackoverflow.com/questions/2790144/avoiding-instanceof-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error</td><td>7</td><td>105</td><td>154283</td><td>2015-05-21</td><td><a href="https://stackoverflow.com/questions/30362446/deserialize-json-with-jackson-into-polymorphic-types-a-complete-example-is-giv" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Check if an object belongs to a class in Java</td><td>6</td><td>87</td><td>189924</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4294844/check-if-an-object-belongs-to-a-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Benefit of Polymorphism</td><td>9</td><td>71</td><td>24735</td><td>2014-12-05</td><td><a href="https://stackoverflow.com/questions/11082640/benefit-of-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Parametric polymorphism vs Ad-hoc polymorphism</td><td>3</td><td>69</td><td>24040</td><td>2014-10-29</td><td><a href="https://stackoverflow.com/questions/6730126/parametric-polymorphism-vs-ad-hoc-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is polymorphism possible without inheritance?</td><td>6</td><td>64</td><td>24144</td><td>2013-07-10</td><td><a href="https://stackoverflow.com/questions/11732422/is-polymorphism-possible-without-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism vs Strategy pattern</td><td>10</td><td>58</td><td>14984</td><td>2015-07-26</td><td><a href="https://stackoverflow.com/questions/31608902/polymorphism-vs-strategy-pattern" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism in jackson annotations: @JsonTypeInfo usage</td><td>2</td><td>57</td><td>65193</td><td>2015-02-22</td><td><a href="https://stackoverflow.com/questions/11798394/polymorphism-in-jackson-annotations-jsontypeinfo-usage" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does instanceof return true if instance of a parent?</td><td>4</td><td>56</td><td>60420</td><td>2014-04-17</td><td><a href="https://stackoverflow.com/questions/6304056/does-instanceof-return-true-if-instance-of-a-parent" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java- The meaning of &lt;T extends Comparable&lt;T&gt;&gt;?</td><td>7</td><td>55</td><td>109634</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/8537500/java-the-meaning-of-t-extends-comparablet" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I pass a Class as parameter and return a generic collection in Java?</td><td>7</td><td>46</td><td>108178</td><td>2010-08-03</td><td><a href="https://stackoverflow.com/questions/3397160/how-can-i-pass-a-class-as-parameter-and-return-a-generic-collection-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does Java Object casting work behind the scene?</td><td>5</td><td>45</td><td>21545</td><td>2015-02-18</td><td><a href="https://stackoverflow.com/questions/13405377/how-does-java-object-casting-work-behind-the-scene" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t you reduce the visibility of a method in a Java subclass?</td><td>3</td><td>42</td><td>12576</td><td>2011-11-15</td><td><a href="https://stackoverflow.com/questions/1600667/why-cant-you-reduce-the-visibility-of-a-method-in-a-java-subclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is List&amp;lt;?&amp;gt; the common parent of List&amp;lt;Integer&amp;gt; and List&amp;lt;Number&amp;gt;?</td><td>5</td><td>42</td><td>3060</td><td>2016-06-24</td><td><a href="https://stackoverflow.com/questions/38009060/is-listltgt-the-common-parent-of-listltintegergt-and-listltnumbergt" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do subclasses inherit interfaces?</td><td>2</td><td>40</td><td>47868</td><td>2013-12-12</td><td><a href="https://stackoverflow.com/questions/20534726/do-subclasses-inherit-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson Polymorphic Deserialization based on Enum</td><td>2</td><td>40</td><td>16781</td><td>2016-11-14</td><td><a href="https://stackoverflow.com/questions/15945404/jackson-polymorphic-deserialization-based-on-enum" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to achieve dynamic polymorphism without extending a class</td><td>3</td><td>38</td><td>3898</td><td>2012-09-11</td><td><a href="https://stackoverflow.com/questions/12347007/how-to-achieve-dynamic-polymorphism-without-extending-a-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method accepting two different types as parameter</td><td>8</td><td>38</td><td>69345</td><td>2012-10-22</td><td><a href="https://stackoverflow.com/questions/10777384/method-accepting-two-different-types-as-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why to use Polymorphism?</td><td>13</td><td>37</td><td>87790</td><td>2012-06-17</td><td><a href="https://stackoverflow.com/questions/11064409/why-to-use-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can Jackson polymorphic deserialization be used to serialize to a subtype if a specific field is present?</td><td>6</td><td>37</td><td>8688</td><td>2017-03-28</td><td><a href="https://stackoverflow.com/questions/16488951/can-jackson-polymorphic-deserialization-be-used-to-serialize-to-a-subtype-if-a-s" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Higher-kinded generics in Java</td><td>6</td><td>35</td><td>5780</td><td>2009-09-16</td><td><a href="https://stackoverflow.com/questions/876948/higher-kinded-generics-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inject spring bean dynamically</td><td>8</td><td>34</td><td>50846</td><td>2016-10-26</td><td><a href="https://stackoverflow.com/questions/40105044/inject-spring-bean-dynamically" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Whats the use of saying &lt;? extends SomeObject&gt; instead of &lt;SomeObject&gt;</td><td>5</td><td>33</td><td>5691</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17834145/whats-the-use-of-saying-extends-someobject-instead-of-someobject" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Static Binding and Dynamic Binding</td><td>6</td><td>32</td><td>29048</td><td>2015-05-02</td><td><a href="https://stackoverflow.com/questions/16647590/static-binding-and-dynamic-binding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Force base method call</td><td>14</td><td>32</td><td>22020</td><td>2010-10-20</td><td><a href="https://stackoverflow.com/questions/3982673/force-base-method-call" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Default implementation or abstract method?</td><td>5</td><td>32</td><td>36931</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3595731/default-implementation-or-abstract-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Accessing private instance variables of parent from child class?</td><td>10</td><td>30</td><td>83493</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/822648/accessing-private-instance-variables-of-parent-from-child-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloading in Java and multiple dispatch</td><td>6</td><td>29</td><td>14402</td><td>2014-10-20</td><td><a href="https://stackoverflow.com/questions/9759141/overloading-in-java-and-multiple-dispatch" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson custom deserializer for one field with polymorphic types</td><td>1</td><td>29</td><td>39507</td><td>2014-12-08</td><td><a href="https://stackoverflow.com/questions/27351698/jackson-custom-deserializer-for-one-field-with-polymorphic-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does the &quot;this&quot; keyword in Java inheritance work?</td><td>7</td><td>28</td><td>6605</td><td>2014-04-14</td><td><a href="https://stackoverflow.com/questions/23055354/how-does-the-this-keyword-in-java-inheritance-work" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why cast after an instanceOf?</td><td>12</td><td>27</td><td>34516</td><td>2015-12-23</td><td><a href="https://stackoverflow.com/questions/4186320/why-cast-after-an-instanceof" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Superclass method being called even though object is of subclass</td><td>6</td><td>27</td><td>2969</td><td>2016-08-25</td><td><a href="https://stackoverflow.com/questions/39072275/superclass-method-being-called-even-though-object-is-of-subclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism and method overloading</td><td>5</td><td>27</td><td>5842</td><td>2011-02-10</td><td><a href="https://stackoverflow.com/questions/4960891/polymorphism-and-method-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Replace conditional with polymorphism</td><td>4</td><td>26</td><td>13461</td><td>2018-02-09</td><td><a href="https://stackoverflow.com/questions/48377525/replace-conditional-with-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why would you declare an Interface and then instantiate an object with it in Java?</td><td>11</td><td>25</td><td>13113</td><td>2012-10-18</td><td><a href="https://stackoverflow.com/questions/7716435/why-would-you-declare-an-interface-and-then-instantiate-an-object-with-it-in-jav" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Compiler error : reference to call ambiguous</td><td>6</td><td>25</td><td>19523</td><td>2014-03-26</td><td><a href="https://stackoverflow.com/questions/14053596/compiler-error-reference-to-call-ambiguous" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloading is compile-time polymorphism. Really?</td><td>5</td><td>24</td><td>22880</td><td>2013-03-11</td><td><a href="https://stackoverflow.com/questions/8355912/overloading-is-compile-time-polymorphism-really" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Calling an overridden method from a parent class ctor</td><td>2</td><td>24</td><td>8201</td><td>2010-12-26</td><td><a href="https://stackoverflow.com/questions/2898422/calling-an-overridden-method-from-a-parent-class-ctor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Jackson polymorphic JSON deserialization of an object with an interface property?</td><td>1</td><td>24</td><td>18825</td><td>2014-02-02</td><td><a href="https://stackoverflow.com/questions/21485923/java-jackson-polymorphic-json-deserialization-of-an-object-with-an-interface-pr" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Private class as return type from public method</td><td>8</td><td>24</td><td>5150</td><td>2013-12-16</td><td><a href="https://stackoverflow.com/questions/20611001/private-class-as-return-type-from-public-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism vs Inheritance</td><td>6</td><td>21</td><td>21118</td><td>2013-08-08</td><td><a href="https://stackoverflow.com/questions/15838978/polymorphism-vs-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What @JsonTypeInfo.ID to choose for property = &quot;type.id&quot; for deserialization, JsonTypeInfo.Id.CUSTOM?</td><td>2</td><td>21</td><td>20141</td><td>2018-06-14</td><td><a href="https://stackoverflow.com/questions/25671806/what-jsontypeinfo-id-to-choose-for-property-type-id-for-deserialization-js" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How should I cast for Java generic with multiple bounds?</td><td>5</td><td>20</td><td>12246</td><td>2008-11-26</td><td><a href="https://stackoverflow.com/questions/318208/how-should-i-cast-for-java-generic-with-multiple-bounds" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Typecasting an object from parent class to child</td><td>5</td><td>20</td><td>43092</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/25193029/typecasting-an-object-from-parent-class-to-child" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Beginner Array of Objects Confusion</td><td>3</td><td>20</td><td>581</td><td>2018-02-17</td><td><a href="https://stackoverflow.com/questions/48840017/beginner-array-of-objects-confusion" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Advanced polymorphism in Java</td><td>3</td><td>20</td><td>3176</td><td>2013-03-12</td><td><a href="https://stackoverflow.com/questions/15361844/advanced-polymorphism-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inheritance , method signature , method overriding and throws clause</td><td>4</td><td>19</td><td>11262</td><td>2012-10-29</td><td><a href="https://stackoverflow.com/questions/9036016/inheritance-method-signature-method-overriding-and-throws-clause" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism and Constructors</td><td>2</td><td>19</td><td>11857</td><td>2012-05-01</td><td><a href="https://stackoverflow.com/questions/10404879/polymorphism-and-constructors" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference Between Object Type and Reference Type</td><td>2</td><td>18</td><td>21523</td><td>2013-05-24</td><td><a href="https://stackoverflow.com/questions/16730109/difference-between-object-type-and-reference-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>why polymorphism doesn&#39;t treat generic collections and plain arrays the same way?</td><td>7</td><td>18</td><td>5514</td><td>2012-05-27</td><td><a href="https://stackoverflow.com/questions/10770585/why-polymorphism-doesnt-treat-generic-collections-and-plain-arrays-the-same-way" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java code snippet output explanation required</td><td>4</td><td>17</td><td>5979</td><td>2012-08-15</td><td><a href="https://stackoverflow.com/questions/11974428/java-code-snippet-output-explanation-required" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there any reason that Java uses late/static binding for overloaded methods in the same class?</td><td>9</td><td>17</td><td>3627</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3883414/is-there-any-reason-that-java-uses-late-static-binding-for-overloaded-methods-in" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is parametric polymorphism in Java (with example)?</td><td>3</td><td>17</td><td>26706</td><td>2012-04-16</td><td><a href="https://stackoverflow.com/questions/10179449/what-is-parametric-polymorphism-in-java-with-example" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphically convert Java enum values into a list of strings</td><td>10</td><td>17</td><td>32106</td><td>2009-08-11</td><td><a href="https://stackoverflow.com/questions/1261233/polymorphically-convert-java-enum-values-into-a-list-of-strings" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Unchecked Overriding Return Type</td><td>1</td><td>17</td><td>11874</td><td>2017-06-01</td><td><a href="https://stackoverflow.com/questions/23645753/java-unchecked-overriding-return-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism doesn&#39;t work in method arguments in Java</td><td>4</td><td>17</td><td>4913</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/36722057/polymorphism-doesnt-work-in-method-arguments-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does this generic code produce a NoSuchMethodError?</td><td>3</td><td>17</td><td>1397</td><td>2013-01-13</td><td><a href="https://stackoverflow.com/questions/14308275/why-does-this-generic-code-produce-a-nosuchmethoderror" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to define 2 constructors with 2 different type of HashMaps?</td><td>6</td><td>16</td><td>1903</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/19032515/how-to-define-2-constructors-with-2-different-type-of-hashmaps" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does polymorphism apply on class attributes in Java?</td><td>8</td><td>16</td><td>5157</td><td>2015-08-29</td><td><a href="https://stackoverflow.com/questions/32288342/does-polymorphism-apply-on-class-attributes-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Passing Derived Class to a method which needs to override expecting a base class</td><td>3</td><td>16</td><td>5200</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9421247/passing-derived-class-to-a-method-which-needs-to-override-expecting-a-base-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Function overriding in Java vs C++</td><td>2</td><td>16</td><td>3334</td><td>2015-06-17</td><td><a href="https://stackoverflow.com/questions/30883519/function-overriding-in-java-vs-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can&#39;t seem to understand complex polymorphism</td><td>5</td><td>16</td><td>2174</td><td>2018-02-21</td><td><a href="https://stackoverflow.com/questions/48881903/cant-seem-to-understand-complex-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generics parameter bounding to any of a range of types</td><td>5</td><td>16</td><td>6130</td><td>2011-07-06</td><td><a href="https://stackoverflow.com/questions/6592832/java-generics-parameter-bounding-to-any-of-a-range-of-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does a child object lose its unique properties after casting back and forth between a parent class</td><td>2</td><td>15</td><td>6307</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/16224277/does-a-child-object-lose-its-unique-properties-after-casting-back-and-forth-betw" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: using polymorphism to avoid if-statements?</td><td>9</td><td>15</td><td>9850</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3806822/java-using-polymorphism-to-avoid-if-statements" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Hiding Fields in Java Inheritance</td><td>2</td><td>15</td><td>7600</td><td>2016-01-08</td><td><a href="https://stackoverflow.com/questions/12244670/hiding-fields-in-java-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does one use polymorphism instead of instanceof? (And why?)</td><td>7</td><td>15</td><td>10059</td><td>2014-01-15</td><td><a href="https://stackoverflow.com/questions/4192837/how-does-one-use-polymorphism-instead-of-instanceof-and-why" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why super keyword in generics is not allowed at class level</td><td>2</td><td>15</td><td>4405</td><td>2017-01-22</td><td><a href="https://stackoverflow.com/questions/37411256/why-super-keyword-in-generics-is-not-allowed-at-class-level" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I override a private method in Java?</td><td>10</td><td>14</td><td>38863</td><td>2012-05-22</td><td><a href="https://stackoverflow.com/questions/10623913/can-i-override-a-private-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism and Static Methods</td><td>2</td><td>14</td><td>9989</td><td>2015-04-21</td><td><a href="https://stackoverflow.com/questions/13695999/polymorphism-and-static-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is &quot;inherited&quot; the correct term to explain static method of superclass can be accessed by subclass?</td><td>4</td><td>14</td><td>1967</td><td>2014-06-26</td><td><a href="https://stackoverflow.com/questions/7081742/is-inherited-the-correct-term-to-explain-static-method-of-superclass-can-be-ac" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What design pattern does Collections.sort use?</td><td>3</td><td>14</td><td>12583</td><td>2019-08-23</td><td><a href="https://stackoverflow.com/questions/42442013/what-design-pattern-does-collections-sort-use" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can abstract classes have references but not objects?</td><td>2</td><td>14</td><td>11169</td><td>2013-10-28</td><td><a href="https://stackoverflow.com/questions/19626517/how-can-abstract-classes-have-references-but-not-objects" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does Java inheritance work when inner classes are involved</td><td>3</td><td>14</td><td>17094</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/13040650/how-does-java-inheritance-work-when-inner-classes-are-involved" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is the output like this?</td><td>4</td><td>13</td><td>376</td><td>2011-09-30</td><td><a href="https://stackoverflow.com/questions/3037300/why-is-the-output-like-this" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In java , can we pass superclass Object to subclass reference?</td><td>3</td><td>13</td><td>21736</td><td>2014-06-24</td><td><a href="https://stackoverflow.com/questions/24384547/in-java-can-we-pass-superclass-object-to-subclass-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Subtype polymorphism and arrays</td><td>3</td><td>13</td><td>14400</td><td>2012-10-14</td><td><a href="https://stackoverflow.com/questions/12878879/subtype-polymorphism-and-arrays" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I force a polymorphic call to the super method?</td><td>7</td><td>13</td><td>7401</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6142460/how-do-i-force-a-polymorphic-call-to-the-super-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Initialization in polymorphism of variables</td><td>3</td><td>13</td><td>1257</td><td>2016-09-26</td><td><a href="https://stackoverflow.com/questions/39693922/initialization-in-polymorphism-of-variables" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Hibernate polymorphism</td><td>2</td><td>13</td><td>16352</td><td>2012-09-29</td><td><a href="https://stackoverflow.com/questions/979200/hibernate-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>C# vs Java - why virtual keyword is necessary?</td><td>1</td><td>13</td><td>3116</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/21784200/c-vs-java-why-virtual-keyword-is-necessary" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java automatic return type covariance with generic subclassing</td><td>2</td><td>13</td><td>729</td><td>2016-07-07</td><td><a href="https://stackoverflow.com/questions/38251176/java-automatic-return-type-covariance-with-generic-subclassing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Polymorphism How to call to super class method for subclass object</td><td>3</td><td>12</td><td>54527</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14907424/java-polymorphism-how-to-call-to-super-class-method-for-subclass-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Replace switch-case with polymorphism</td><td>4</td><td>12</td><td>16965</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/48839793/replace-switch-case-with-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphic method in Constructor (Java)</td><td>4</td><td>12</td><td>4575</td><td>2012-02-03</td><td><a href="https://stackoverflow.com/questions/9122785/polymorphic-method-in-constructor-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Add SubType information at runtime using Jackson for polymorphism</td><td>2</td><td>12</td><td>8295</td><td>2016-08-28</td><td><a href="https://stackoverflow.com/questions/34079050/add-subtype-information-at-runtime-using-jackson-for-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism on member variables. I know it is not possible, I don&#39;t understand this specific case</td><td>4</td><td>11</td><td>2905</td><td>2012-08-21</td><td><a href="https://stackoverflow.com/questions/12045744/polymorphism-on-member-variables-i-know-it-is-not-possible-i-dont-understand" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does Java distinguish these multiple methods with the same name/signature?</td><td>3</td><td>11</td><td>489</td><td>2013-08-01</td><td><a href="https://stackoverflow.com/questions/17662815/how-does-java-distinguish-these-multiple-methods-with-the-same-name-signature" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphic factory / getInstance() in Java</td><td>7</td><td>11</td><td>16349</td><td>2008-11-26</td><td><a href="https://stackoverflow.com/questions/317869/polymorphic-factory-getinstance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is it not possible use primitive types with polymorphic return types?</td><td>3</td><td>11</td><td>1378</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/32418456/why-is-it-not-possible-use-primitive-types-with-polymorphic-return-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Question about Java polymorphism and casting</td><td>9</td><td>10</td><td>18735</td><td>2009-07-04</td><td><a href="https://stackoverflow.com/questions/1082453/question-about-java-polymorphism-and-casting" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inheritance in Java - &quot;Cannot find symbol constructor&quot;</td><td>5</td><td>10</td><td>33214</td><td>2011-02-06</td><td><a href="https://stackoverflow.com/questions/510784/inheritance-in-java-cannot-find-symbol-constructor" target="_blank">click</a></td>
+        </tr> 
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about array</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Create ArrayList from array</td><td>40</td><td>3954</td><td>1695072</td><td>2014-06-01</td><td><a href="https://stackoverflow.com/questions/157944/create-arraylist-from-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I determine whether an array contains a particular value in Java?</td><td>29</td><td>2557</td><td>2408133</td><td>2014-04-10</td><td><a href="https://stackoverflow.com/questions/1128723/how-do-i-determine-whether-an-array-contains-a-particular-value-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I declare and initialize an array in Java?</td><td>29</td><td>2375</td><td>5281384</td><td>2014-09-25</td><td><a href="https://stackoverflow.com/questions/1200621/how-do-i-declare-and-initialize-an-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What&#39;s the simplest way to print a Java array?</td><td>35</td><td>2254</td><td>2875805</td><td>2014-04-06</td><td><a href="https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I concatenate two arrays in Java?</td><td>66</td><td>1523</td><td>1267217</td><td>2015-06-25</td><td><a href="https://stackoverflow.com/questions/80476/how-can-i-concatenate-two-arrays-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Converting &#39;ArrayList&lt;String&gt; to &#39;String[]&#39; in Java</td><td>17</td><td>1210</td><td>843489</td><td>2014-09-11</td><td><a href="https://stackoverflow.com/questions/4042434/converting-arrayliststring-to-string-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert ArrayList&lt;String&gt; to String[] array</td><td>6</td><td>1206</td><td>1600482</td><td>2014-11-24</td><td><a href="https://stackoverflow.com/questions/5374311/convert-arrayliststring-to-string-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to create a generic array in Java?</td><td>31</td><td>1197</td><td>931526</td><td>2013-02-14</td><td><a href="https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Converting array to list in Java</td><td>22</td><td>1188</td><td>1669792</td><td>2016-04-24</td><td><a href="https://stackoverflow.com/questions/2607289/converting-array-to-list-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert a Java 8 Stream to an Array?</td><td>10</td><td>961</td><td>558181</td><td>2017-01-06</td><td><a href="https://stackoverflow.com/questions/23079003/how-to-convert-a-java-8-stream-to-an-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert InputStream to byte array in Java</td><td>33</td><td>949</td><td>1097709</td><td>2012-02-25</td><td><a href="https://stackoverflow.com/questions/1264709/convert-inputstream-to-byte-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert an Array to a Set in Java</td><td>19</td><td>793</td><td>708902</td><td>2013-05-15</td><td><a href="https://stackoverflow.com/questions/3064423/how-to-convert-an-array-to-a-set-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert a byte array to a hex string in Java?</td><td>33</td><td>756</td><td>900188</td><td>2013-10-06</td><td><a href="https://stackoverflow.com/questions/9655181/how-to-convert-a-byte-array-to-a-hex-string-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I convert List&lt;Integer&gt; to int[] in Java?</td><td>16</td><td>709</td><td>672424</td><td>2015-10-23</td><td><a href="https://stackoverflow.com/questions/960431/how-can-i-convert-listinteger-to-int-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Any way to declare an array in-line?</td><td>8</td><td>687</td><td>401796</td><td>2011-10-28</td><td><a href="https://stackoverflow.com/questions/1154008/any-way-to-declare-an-array-in-line" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert list to array in Java</td><td>11</td><td>666</td><td>1051920</td><td>2016-02-09</td><td><a href="https://stackoverflow.com/questions/9572795/convert-list-to-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert Java String into byte[]?</td><td>8</td><td>574</td><td>1111182</td><td>2015-05-02</td><td><a href="https://stackoverflow.com/questions/18571223/how-to-convert-java-string-into-byte" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>A quick and easy way to join array elements with a separator (the opposite of split) in Java</td><td>15</td><td>544</td><td>606311</td><td>2013-09-10</td><td><a href="https://stackoverflow.com/questions/1978933/a-quick-and-easy-way-to-join-array-elements-with-a-separator-the-opposite-of-sp" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert jsonString to JSONObject in Java</td><td>20</td><td>509</td><td>1816680</td><td>2016-02-10</td><td><a href="https://stackoverflow.com/questions/5245840/how-to-convert-jsonstring-to-jsonobject-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert int[] into List&lt;Integer&gt; in Java?</td><td>20</td><td>504</td><td>611755</td><td>2011-10-04</td><td><a href="https://stackoverflow.com/questions/1073919/how-to-convert-int-into-listinteger-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to initialize an array in Java?</td><td>10</td><td>472</td><td>1701423</td><td>2014-11-21</td><td><a href="https://stackoverflow.com/questions/1938101/how-to-initialize-an-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert a char array back to a string?</td><td>14</td><td>437</td><td>772880</td><td>2013-07-08</td><td><a href="https://stackoverflow.com/questions/7655127/how-to-convert-a-char-array-back-to-a-string" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to split a String by space</td><td>17</td><td>411</td><td>1009161</td><td>2015-04-07</td><td><a href="https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert an ArrayList containing Integers to primitive int array?</td><td>19</td><td>387</td><td>498988</td><td>2010-06-01</td><td><a href="https://stackoverflow.com/questions/718554/how-to-convert-an-arraylist-containing-integers-to-primitive-int-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Make copy of an array</td><td>11</td><td>384</td><td>775629</td><td>2016-06-08</td><td><a href="https://stackoverflow.com/questions/5785745/make-copy-of-an-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>byte[] to file in Java</td><td>12</td><td>383</td><td>715796</td><td>2014-11-23</td><td><a href="https://stackoverflow.com/questions/4350084/byte-to-file-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Array or List in Java. Which is faster?</td><td>32</td><td>383</td><td>314517</td><td>2014-07-25</td><td><a href="https://stackoverflow.com/questions/716597/array-or-list-in-java-which-is-faster" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What causes a java.lang.ArrayIndexOutOfBoundsException and how do I prevent it?</td><td>26</td><td>345</td><td>842700</td><td>2016-10-20</td><td><a href="https://stackoverflow.com/questions/5554734/what-causes-a-java-lang-arrayindexoutofboundsexception-and-how-do-i-prevent-it" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java Array Sort descending?</td><td>25</td><td>342</td><td>612302</td><td>2011-12-02</td><td><a href="https://stackoverflow.com/questions/1694751/java-array-sort-descending" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Get only part of an Array in Java?</td><td>9</td><td>337</td><td>473318</td><td>2016-01-19</td><td><a href="https://stackoverflow.com/questions/11001720/get-only-part-of-an-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to create a sub array from another array in Java?</td><td>8</td><td>337</td><td>455337</td><td>2013-06-12</td><td><a href="https://stackoverflow.com/questions/4439595/how-to-create-a-sub-array-from-another-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to add new elements to an array?</td><td>19</td><td>329</td><td>1498414</td><td>2011-09-30</td><td><a href="https://stackoverflow.com/questions/2843366/how-to-add-new-elements-to-an-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Can I pass an array as arguments to a method with variable arguments in Java?</td><td>5</td><td>329</td><td>260289</td><td>2010-05-28</td><td><a href="https://stackoverflow.com/questions/2925153/can-i-pass-an-array-as-arguments-to-a-method-with-variable-arguments-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert array of strings into a string in Java</td><td>14</td><td>294</td><td>680787</td><td>2011-03-25</td><td><a href="https://stackoverflow.com/questions/5283444/convert-array-of-strings-into-a-string-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>ArrayList initialization equivalent to array initialization</td><td>8</td><td>294</td><td>225807</td><td>2011-10-12</td><td><a href="https://stackoverflow.com/questions/2760995/arraylist-initialization-equivalent-to-array-initialization" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Easy way to concatenate two byte arrays</td><td>13</td><td>288</td><td>303481</td><td>2014-10-19</td><td><a href="https://stackoverflow.com/questions/5513152/easy-way-to-concatenate-two-byte-arrays" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I reverse an int array in Java?</td><td>47</td><td>277</td><td>628343</td><td>2014-03-18</td><td><a href="https://stackoverflow.com/questions/2137755/how-do-i-reverse-an-int-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Random shuffling of an array</td><td>31</td><td>271</td><td>510195</td><td>2015-02-09</td><td><a href="https://stackoverflow.com/questions/1519736/random-shuffling-of-an-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert object array to string array in Java</td><td>11</td><td>270</td><td>480602</td><td>2010-11-20</td><td><a href="https://stackoverflow.com/questions/1018750/how-to-convert-object-array-to-string-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Where is array&#39;s length property defined?</td><td>7</td><td>269</td><td>747777</td><td>2014-03-20</td><td><a href="https://stackoverflow.com/questions/9297899/where-is-arrays-length-property-defined" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java function for arrays like PHP&#39;s join()?</td><td>23</td><td>265</td><td>128222</td><td>2015-11-18</td><td><a href="https://stackoverflow.com/questions/1515437/java-function-for-arrays-like-phps-join" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Difference between int[] array and int array[]</td><td>26</td><td>256</td><td>95023</td><td>2012-01-06</td><td><a href="https://stackoverflow.com/questions/129178/difference-between-int-array-and-int-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Do Java arrays have a maximum size?</td><td>10</td><td>244</td><td>213519</td><td>2011-03-24</td><td><a href="https://stackoverflow.com/questions/3038392/do-java-arrays-have-a-maximum-size" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java ArrayList how to add elements at the beginning</td><td>15</td><td>233</td><td>395626</td><td>2016-08-18</td><td><a href="https://stackoverflow.com/questions/12949690/java-arraylist-how-to-add-elements-at-the-beginning" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Where is Java&#39;s Array indexOf?</td><td>13</td><td>229</td><td>327250</td><td>2013-02-17</td><td><a href="https://stackoverflow.com/questions/4962361/where-is-javas-array-indexof" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Are arrays passed by value or passed by reference in Java?</td><td>7</td><td>227</td><td>255975</td><td>2016-11-10</td><td><a href="https://stackoverflow.com/questions/12757841/are-arrays-passed-by-value-or-passed-by-reference-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>equals vs Arrays.equals in Java</td><td>8</td><td>227</td><td>196319</td><td>2016-01-09</td><td><a href="https://stackoverflow.com/questions/8777257/equals-vs-arrays-equals-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Finding the max/min value in an array of primitives using Java</td><td>16</td><td>225</td><td>731163</td><td>2012-06-20</td><td><a href="https://stackoverflow.com/questions/1484347/finding-the-max-min-value-in-an-array-of-primitives-using-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java integer to byte array</td><td>13</td><td>219</td><td>416501</td><td>2012-07-10</td><td><a href="https://stackoverflow.com/questions/2183240/java-integer-to-byte-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Creating an array of objects in Java</td><td>9</td><td>214</td><td>805501</td><td>2015-09-23</td><td><a href="https://stackoverflow.com/questions/5364278/creating-an-array-of-objects-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>make arrayList.toArray() return more specific types</td><td>6</td><td>212</td><td>179517</td><td>2012-07-09</td><td><a href="https://stackoverflow.com/questions/5061640/make-arraylist-toarray-return-more-specific-types" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I create an Array of ArrayLists?</td><td>20</td><td>207</td><td>296154</td><td>2016-08-30</td><td><a href="https://stackoverflow.com/questions/8559092/how-can-i-create-an-array-of-arraylists" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java 8 Stream and operation on arrays</td><td>4</td><td>207</td><td>198943</td><td>2016-10-29</td><td><a href="https://stackoverflow.com/questions/24390463/java-8-stream-and-operation-on-arrays" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I convert int[] to Integer[] in Java?</td><td>12</td><td>202</td><td>235796</td><td>2015-10-13</td><td><a href="https://stackoverflow.com/questions/880581/how-can-i-convert-int-to-integer-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Comparing arrays in JUnit assertions, concise built-in way?</td><td>8</td><td>197</td><td>158706</td><td>2010-11-19</td><td><a href="https://stackoverflow.com/questions/4228161/comparing-arrays-in-junit-assertions-concise-built-in-way" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Sort an array in Java</td><td>19</td><td>189</td><td>855143</td><td>2014-10-26</td><td><a href="https://stackoverflow.com/questions/8938235/sort-an-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why are arrays covariant but generics are invariant?</td><td>9</td><td>189</td><td>41159</td><td>2015-07-16</td><td><a href="https://stackoverflow.com/questions/18666710/why-are-arrays-covariant-but-generics-are-invariant" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java array reflection: isArray vs. instanceof</td><td>8</td><td>186</td><td>141676</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/219881/java-array-reflection-isarray-vs-instanceof" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Grab a segment of an array in Java without creating a new array on heap</td><td>15</td><td>184</td><td>221229</td><td>2012-05-13</td><td><a href="https://stackoverflow.com/questions/1100371/grab-a-segment-of-an-array-in-java-without-creating-a-new-array-on-heap" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do you find the sum of all the numbers in an array in Java?</td><td>29</td><td>175</td><td>782391</td><td>2013-07-27</td><td><a href="https://stackoverflow.com/questions/4550662/how-do-you-find-the-sum-of-all-the-numbers-in-an-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I convert a byte array to Base64 in Java?</td><td>4</td><td>175</td><td>300186</td><td>2013-09-01</td><td><a href="https://stackoverflow.com/questions/2418485/how-do-i-convert-a-byte-array-to-base64-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I initialize a byte array in Java?</td><td>11</td><td>175</td><td>794240</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11208479/how-do-i-initialize-a-byte-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert Java Array to Iterable</td><td>10</td><td>171</td><td>194595</td><td>2014-11-09</td><td><a href="https://stackoverflow.com/questions/10335662/convert-java-array-to-iterable" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to supply value to an annotation from a Constant java</td><td>6</td><td>171</td><td>214883</td><td>2013-05-28</td><td><a href="https://stackoverflow.com/questions/2065937/how-to-supply-value-to-an-annotation-from-a-constant-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Immutable array in Java</td><td>15</td><td>170</td><td>119059</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3700971/immutable-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I prevent the modification of a private field in a class?</td><td>11</td><td>168</td><td>14967</td><td>2013-02-12</td><td><a href="https://stackoverflow.com/questions/14809293/how-do-i-prevent-the-modification-of-a-private-field-in-a-class" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java String array: is there a size of method?</td><td>11</td><td>166</td><td>900745</td><td>2011-05-06</td><td><a href="https://stackoverflow.com/questions/921384/java-string-array-is-there-a-size-of-method" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Removing an element from an Array (Java)</td><td>15</td><td>164</td><td>962848</td><td>2009-03-13</td><td><a href="https://stackoverflow.com/questions/642897/removing-an-element-from-an-array-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is the default initialization of an array in Java?</td><td>8</td><td>164</td><td>327124</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3426843/what-is-the-default-initialization-of-an-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I check whether an array is null / empty?</td><td>14</td><td>163</td><td>843903</td><td>2015-01-16</td><td><a href="https://stackoverflow.com/questions/2369967/how-can-i-check-whether-an-array-is-null-empty" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Getting the array length of a 2D array in Java</td><td>12</td><td>162</td><td>671835</td><td>2010-10-22</td><td><a href="https://stackoverflow.com/questions/4000169/getting-the-array-length-of-a-2d-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to convert an int array to String with toString method in Java</td><td>8</td><td>161</td><td>578049</td><td>2013-12-29</td><td><a href="https://stackoverflow.com/questions/10904911/how-to-convert-an-int-array-to-string-with-tostring-method-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I generate a list or array of sequential integers in Java?</td><td>9</td><td>160</td><td>156642</td><td>2015-03-16</td><td><a href="https://stackoverflow.com/questions/10242380/how-can-i-generate-a-list-or-array-of-sequential-integers-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>JSON Array iteration in Android/Java</td><td>8</td><td>154</td><td>223321</td><td>2012-06-03</td><td><a href="https://stackoverflow.com/questions/3408985/json-array-iteration-in-android-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to create an array of 20 random bytes?</td><td>6</td><td>152</td><td>116393</td><td>2013-01-28</td><td><a href="https://stackoverflow.com/questions/5683206/how-to-create-an-array-of-20-random-bytes" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Issue with parsing the content from JSON file with Jackson &amp; message- JsonMappingException -Cannot deserialize as out of START_ARRAY token</td><td>5</td><td>149</td><td>427720</td><td>2017-07-07</td><td><a href="https://stackoverflow.com/questions/19333106/issue-with-parsing-the-content-from-json-file-with-jackson-message-jsonmappin" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java ByteBuffer to String</td><td>11</td><td>148</td><td>240261</td><td>2015-06-10</td><td><a href="https://stackoverflow.com/questions/17354891/java-bytebuffer-to-string" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert integer into byte array (Java)</td><td>11</td><td>146</td><td>273127</td><td>2014-01-22</td><td><a href="https://stackoverflow.com/questions/1936857/convert-integer-into-byte-array-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I initialize a String array with length 0 in Java?</td><td>7</td><td>146</td><td>347894</td><td>2009-11-03</td><td><a href="https://stackoverflow.com/questions/1665834/how-can-i-initialize-a-string-array-with-length-0-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Array initialization syntax when not in a declaration</td><td>4</td><td>146</td><td>261349</td><td>2013-05-16</td><td><a href="https://stackoverflow.com/questions/5387643/array-initialization-syntax-when-not-in-a-declaration" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert an array of primitive longs into a List of Longs</td><td>17</td><td>145</td><td>102278</td><td>2012-06-23</td><td><a href="https://stackoverflow.com/questions/754294/convert-an-array-of-primitive-longs-into-a-list-of-longs" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Jackson how to transform JsonNode to ArrayNode without casting?</td><td>5</td><td>143</td><td>258330</td><td>2016-10-13</td><td><a href="https://stackoverflow.com/questions/16788213/jackson-how-to-transform-jsonnode-to-arraynode-without-casting" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to make an array of arrays in Java</td><td>4</td><td>140</td><td>405489</td><td>2014-04-24</td><td><a href="https://stackoverflow.com/questions/4781100/how-to-make-an-array-of-arrays-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to return an array from JNI to Java?</td><td>4</td><td>140</td><td>100208</td><td>2010-08-09</td><td><a href="https://stackoverflow.com/questions/1610045/how-to-return-an-array-from-jni-to-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>The easiest way to transform collection to array?</td><td>10</td><td>139</td><td>192529</td><td>2010-07-20</td><td><a href="https://stackoverflow.com/questions/3293946/the-easiest-way-to-transform-collection-to-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>string to string array conversion in java</td><td>15</td><td>138</td><td>917784</td><td>2015-07-06</td><td><a href="https://stackoverflow.com/questions/3413586/string-to-string-array-conversion-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to create correct JSONArray in Java using JSONObject</td><td>4</td><td>138</td><td>549366</td><td>2016-03-04</td><td><a href="https://stackoverflow.com/questions/18983185/how-to-create-correct-jsonarray-in-java-using-jsonobject" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I create a stream from an array?</td><td>6</td><td>138</td><td>67150</td><td>2015-01-12</td><td><a href="https://stackoverflow.com/questions/27888429/how-can-i-create-a-stream-from-an-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Converting String array to java.util.List</td><td>7</td><td>137</td><td>223112</td><td>2014-03-20</td><td><a href="https://stackoverflow.com/questions/6026813/converting-string-array-to-java-util-list" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Byte[] to InputStream or OutputStream</td><td>7</td><td>134</td><td>301239</td><td>2010-11-10</td><td><a href="https://stackoverflow.com/questions/2091454/byte-to-inputstream-or-outputstream" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java: how to convert HashMap&lt;String, Object&gt; to array</td><td>14</td><td>133</td><td>331656</td><td>2009-07-07</td><td><a href="https://stackoverflow.com/questions/1090556/java-how-to-convert-hashmapstring-object-to-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Converting String to &quot;Character&quot; array in Java</td><td>14</td><td>131</td><td>548348</td><td>2014-09-17</td><td><a href="https://stackoverflow.com/questions/10006165/converting-string-to-character-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Accessing members of items in a JSONArray with Java</td><td>6</td><td>130</td><td>407488</td><td>2011-08-28</td><td><a href="https://stackoverflow.com/questions/1568762/accessing-members-of-items-in-a-jsonarray-with-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java: int array initializes with nonzero elements</td><td>2</td><td>130</td><td>7183</td><td>2012-09-09</td><td><a href="https://stackoverflow.com/questions/12317668/java-int-array-initializes-with-nonzero-elements" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to initialize all the elements of an array to any specific value in java</td><td>11</td><td>127</td><td>269915</td><td>2015-02-08</td><td><a href="https://stackoverflow.com/questions/10078867/how-to-initialize-all-the-elements-of-an-array-to-any-specific-value-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Send an Array with an HTTP Get</td><td>2</td><td>125</td><td>175134</td><td>2010-06-17</td><td><a href="https://stackoverflow.com/questions/3061273/send-an-array-with-an-http-get" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Weird &quot;[]&quot; after Java method signature</td><td>4</td><td>124</td><td>7578</td><td>2011-01-15</td><td><a href="https://stackoverflow.com/questions/4699309/weird-after-java-method-signature" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to get String Array from arrays.xml file</td><td>4</td><td>121</td><td>231684</td><td>2014-04-10</td><td><a href="https://stackoverflow.com/questions/2453989/how-to-get-string-array-from-arrays-xml-file" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Difference between JSONObject and JSONArray</td><td>8</td><td>120</td><td>168389</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/12289844/difference-between-jsonobject-and-jsonarray" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is this: [Ljava.lang.Object;?</td><td>2</td><td>117</td><td>129578</td><td>2014-11-01</td><td><a href="https://stackoverflow.com/questions/3442090/what-is-this-ljava-lang-object" target="_blank">click</a></td>
+</tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

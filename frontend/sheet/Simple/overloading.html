@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about overloading</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Java support default parameter values?</td><td>26</td><td>1963</td><td>1673537</td><td>2014-05-27</td><td><a href="https://stackoverflow.com/questions/997482/does-java-support-default-parameter-values" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism vs Overriding vs Overloading</td><td>21</td><td>370</td><td>295224</td><td>2012-10-15</td><td><a href="https://stackoverflow.com/questions/154577/polymorphism-vs-overriding-vs-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Accessing constructor of an anonymous class</td><td>10</td><td>230</td><td>126289</td><td>2009-03-22</td><td><a href="https://stackoverflow.com/questions/362424/accessing-constructor-of-an-anonymous-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Properly removing an Integer from a List&lt;Integer&gt;</td><td>8</td><td>213</td><td>88163</td><td>2014-03-10</td><td><a href="https://stackoverflow.com/questions/4534146/properly-removing-an-integer-from-a-listinteger" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method Overloading for null argument</td><td>7</td><td>150</td><td>90800</td><td>2013-07-26</td><td><a href="https://stackoverflow.com/questions/5229809/method-overloading-for-null-argument" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between dynamic and static polymorphism in Java?</td><td>14</td><td>137</td><td>251836</td><td>2014-08-04</td><td><a href="https://stackoverflow.com/questions/20783266/what-is-the-difference-between-dynamic-and-static-polymorphism-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does String.valueOf(null) throw a NullPointerException?</td><td>4</td><td>134</td><td>98871</td><td>2010-06-28</td><td><a href="https://stackoverflow.com/questions/3131865/why-does-string-valueofnull-throw-a-nullpointerexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overload with different return type in Java?</td><td>10</td><td>130</td><td>103546</td><td>2013-09-24</td><td><a href="https://stackoverflow.com/questions/2439782/overload-with-different-return-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Constructor overloading in Java - best practice</td><td>5</td><td>114</td><td>179975</td><td>2009-07-25</td><td><a href="https://stackoverflow.com/questions/1182153/constructor-overloading-in-java-best-practice" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How is an overloaded method chosen when a parameter is the literal null value?</td><td>8</td><td>98</td><td>13581</td><td>2014-03-08</td><td><a href="https://stackoverflow.com/questions/13033037/how-is-an-overloaded-method-chosen-when-a-parameter-is-the-literal-null-value" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I override and overload static methods in Java?</td><td>19</td><td>97</td><td>275300</td><td>2010-12-03</td><td><a href="https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I create a Java method that accepts a variable number of arguments?</td><td>7</td><td>72</td><td>194025</td><td>2015-10-30</td><td><a href="https://stackoverflow.com/questions/7607353/how-can-i-create-a-java-method-that-accepts-a-variable-number-of-arguments" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Varargs Java Ambiguous Call</td><td>2</td><td>69</td><td>1943</td><td>2015-07-25</td><td><a href="https://stackoverflow.com/questions/31627236/varargs-java-ambiguous-call" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does the compiler prefer an int overload to a varargs char overload for a char?</td><td>4</td><td>63</td><td>3880</td><td>2015-09-09</td><td><a href="https://stackoverflow.com/questions/32471499/why-does-the-compiler-prefer-an-int-overload-to-a-varargs-char-overload-for-a-ch" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which Overloaded Method is Called in Java</td><td>5</td><td>56</td><td>5398</td><td>2018-04-25</td><td><a href="https://stackoverflow.com/questions/50014088/which-overloaded-method-is-called-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambda expression and method overloading doubts</td><td>3</td><td>49</td><td>10851</td><td>2017-05-26</td><td><a href="https://stackoverflow.com/questions/23430854/lambda-expression-and-method-overloading-doubts" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between method overloading and overriding?</td><td>2</td><td>47</td><td>224080</td><td>2014-04-21</td><td><a href="https://stackoverflow.com/questions/12374399/what-is-the-difference-between-method-overloading-and-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java - why no return type based method overloading?</td><td>9</td><td>46</td><td>21865</td><td>2011-04-25</td><td><a href="https://stackoverflow.com/questions/2744511/java-why-no-return-type-based-method-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to choose between two method of the same name in Java</td><td>2</td><td>43</td><td>2070</td><td>2012-05-03</td><td><a href="https://stackoverflow.com/questions/10438734/how-to-choose-between-two-method-of-the-same-name-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Guava&#39;s ImmutableList have so many overloaded of() methods?</td><td>3</td><td>41</td><td>2392</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3737882/why-does-guavas-immutablelist-have-so-many-overloaded-of-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method Overloading. Can you overuse it?</td><td>16</td><td>40</td><td>5195</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/248222/method-overloading-can-you-overuse-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Calling base class overridden function from base class method</td><td>4</td><td>40</td><td>38408</td><td>2012-07-04</td><td><a href="https://stackoverflow.com/questions/4836708/calling-base-class-overridden-function-from-base-class-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why should I ever overload methods?</td><td>6</td><td>38</td><td>6001</td><td>2016-12-01</td><td><a href="https://stackoverflow.com/questions/38537340/why-should-i-ever-overload-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method accepting two different types as parameter</td><td>8</td><td>38</td><td>69345</td><td>2012-10-22</td><td><a href="https://stackoverflow.com/questions/10777384/method-accepting-two-different-types-as-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reference is ambiguous with generics</td><td>3</td><td>37</td><td>13811</td><td>2013-04-25</td><td><a href="https://stackoverflow.com/questions/5361513/reference-is-ambiguous-with-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does autoboxing make some calls ambiguous in Java?</td><td>6</td><td>35</td><td>6462</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/501412/why-does-autoboxing-make-some-calls-ambiguous-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Covariance and Overloading in Java</td><td>4</td><td>34</td><td>1457</td><td>2012-07-24</td><td><a href="https://stackoverflow.com/questions/11625049/covariance-and-overloading-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading and inheritance rules</td><td>3</td><td>34</td><td>15918</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11110631/java-overloading-and-inheritance-rules" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Generic method overloading ambiguity</td><td>4</td><td>34</td><td>5682</td><td>2013-08-27</td><td><a href="https://stackoverflow.com/questions/18460239/java-generic-method-overloading-ambiguity" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does java promote long parameter to float/double when there&#39;s no method which accepts long?</td><td>4</td><td>31</td><td>3163</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14549916/why-does-java-promote-long-parameter-to-float-double-when-theres-no-method-whic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloading in Java and multiple dispatch</td><td>6</td><td>29</td><td>14402</td><td>2014-10-20</td><td><a href="https://stackoverflow.com/questions/9759141/overloading-in-java-and-multiple-dispatch" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Consumer/Function Lambda Ambiguity</td><td>1</td><td>29</td><td>5382</td><td>2016-05-27</td><td><a href="https://stackoverflow.com/questions/30584887/java-8-consumer-function-lambda-ambiguity" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is overloading equals worthwhile</td><td>8</td><td>28</td><td>17160</td><td>2015-11-24</td><td><a href="https://stackoverflow.com/questions/2910520/is-overloading-equals-worthwhile" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism and method overloading</td><td>5</td><td>27</td><td>5842</td><td>2011-02-10</td><td><a href="https://stackoverflow.com/questions/4960891/polymorphism-and-method-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method overloading and choosing the most specific type</td><td>9</td><td>26</td><td>9067</td><td>2012-11-10</td><td><a href="https://stackoverflow.com/questions/9361639/method-overloading-and-choosing-the-most-specific-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java static imports</td><td>4</td><td>26</td><td>4009</td><td>2012-01-23</td><td><a href="https://stackoverflow.com/questions/8972179/java-static-imports" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Multiple overloaded methods: Does null equal NullPointerException?</td><td>2</td><td>25</td><td>1448</td><td>2015-02-12</td><td><a href="https://stackoverflow.com/questions/28470540/multiple-overloaded-methods-does-null-equal-nullpointerexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method overload ambiguity with Java 8 ternary conditional and unboxed primitives</td><td>2</td><td>25</td><td>1419</td><td>2015-05-09</td><td><a href="https://stackoverflow.com/questions/30130720/method-overload-ambiguity-with-java-8-ternary-conditional-and-unboxed-primitives" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloading is compile-time polymorphism. Really?</td><td>5</td><td>24</td><td>22880</td><td>2013-03-11</td><td><a href="https://stackoverflow.com/questions/8355912/overloading-is-compile-time-polymorphism-really" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How does Java know which overloaded method to call with lambda expressions? (Supplier, Consumer, Callable, ...)</td><td>3</td><td>24</td><td>1548</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/71494924/how-does-java-know-which-overloaded-method-to-call-with-lambda-expressions-sup" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Varargs in method overloading in Java</td><td>4</td><td>23</td><td>7695</td><td>2014-07-01</td><td><a href="https://stackoverflow.com/questions/12879910/varargs-in-method-overloading-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is this method overloading ambiguous?</td><td>1</td><td>23</td><td>1526</td><td>2014-04-11</td><td><a href="https://stackoverflow.com/questions/23020493/why-is-this-method-overloading-ambiguous" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading and overriding</td><td>9</td><td>22</td><td>14426</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2469767/java-overloading-and-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which method is called? (Integer... a) vs. (int a, int b)</td><td>5</td><td>22</td><td>4361</td><td>2012-08-03</td><td><a href="https://stackoverflow.com/questions/11803553/which-method-is-called-integer-a-vs-int-a-int-b" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is this a well known design pattern? What is its name?</td><td>8</td><td>21</td><td>3030</td><td>2010-05-02</td><td><a href="https://stackoverflow.com/questions/2637268/is-this-a-well-known-design-pattern-what-is-its-name" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloaded constructor calling other constructor, but not as first statement</td><td>9</td><td>21</td><td>20123</td><td>2011-08-21</td><td><a href="https://stackoverflow.com/questions/3386136/overloaded-constructor-calling-other-constructor-but-not-as-first-statement" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to write Java function that returns values of multiple data types?</td><td>12</td><td>21</td><td>78211</td><td>2011-02-10</td><td><a href="https://stackoverflow.com/questions/4952856/how-to-write-java-function-that-returns-values-of-multiple-data-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the reasoning behind not allowing supertypes on Java method overrides?</td><td>7</td><td>21</td><td>2613</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17485666/what-is-the-reasoning-behind-not-allowing-supertypes-on-java-method-overrides" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>bug with varargs and overloading?</td><td>3</td><td>21</td><td>4085</td><td>2010-03-26</td><td><a href="https://stackoverflow.com/questions/2521293/bug-with-varargs-and-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overriding a method with different return types in java?</td><td>7</td><td>20</td><td>34898</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14519797/overriding-a-method-with-different-return-types-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java erasure with generic overloading (not overriding)</td><td>2</td><td>20</td><td>12830</td><td>2011-08-26</td><td><a href="https://stackoverflow.com/questions/7201231/java-erasure-with-generic-overloading-not-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method overload resolution in java</td><td>6</td><td>19</td><td>9523</td><td>2017-02-13</td><td><a href="https://stackoverflow.com/questions/30109231/method-overload-resolution-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading - long and float</td><td>4</td><td>19</td><td>2864</td><td>2017-05-14</td><td><a href="https://stackoverflow.com/questions/43796767/java-overloading-long-and-float" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How generics in java works for the following program?</td><td>2</td><td>19</td><td>1196</td><td>2017-05-16</td><td><a href="https://stackoverflow.com/questions/43887401/how-generics-in-java-works-for-the-following-program" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t autoboxing overrule varargs when using method overloading in Java 7?</td><td>3</td><td>19</td><td>2637</td><td>2011-10-07</td><td><a href="https://stackoverflow.com/questions/7689386/why-doesnt-autoboxing-overrule-varargs-when-using-method-overloading-in-java-7" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to deal with 2 almost identical constructors</td><td>4</td><td>18</td><td>3482</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/18191903/how-to-deal-with-2-almost-identical-constructors" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Question about Java overloading &amp; dynamic binding</td><td>6</td><td>18</td><td>7509</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5658553/question-about-java-overloading-dynamic-binding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading with variable length arguments</td><td>3</td><td>18</td><td>815</td><td>2015-08-10</td><td><a href="https://stackoverflow.com/questions/27483410/java-overloading-with-variable-length-arguments" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Type Erasure and Overloading in Java: Why does this work?</td><td>4</td><td>18</td><td>2388</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5527235/type-erasure-and-overloading-in-java-why-does-this-work" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Calling overloaded inherited methods using super class reference</td><td>10</td><td>17</td><td>3852</td><td>2015-04-26</td><td><a href="https://stackoverflow.com/questions/29869116/calling-overloaded-inherited-methods-using-super-class-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading vs overriding</td><td>3</td><td>17</td><td>78894</td><td>2013-11-16</td><td><a href="https://stackoverflow.com/questions/837864/java-overloading-vs-overriding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java method overloading + double dispatch</td><td>2</td><td>17</td><td>4943</td><td>2012-10-29</td><td><a href="https://stackoverflow.com/questions/2794195/java-method-overloading-double-dispatch" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading method selection</td><td>2</td><td>17</td><td>5018</td><td>2015-03-30</td><td><a href="https://stackoverflow.com/questions/14676395/java-overloading-method-selection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloading method calls with parameter null</td><td>5</td><td>16</td><td>3179</td><td>2014-12-23</td><td><a href="https://stackoverflow.com/questions/11635528/overloading-method-calls-with-parameter-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I call overloaded Java methods in Clojure</td><td>3</td><td>16</td><td>2951</td><td>2010-04-27</td><td><a href="https://stackoverflow.com/questions/2722856/how-do-i-call-overloaded-java-methods-in-clojure" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method overloading not working with different parameters</td><td>2</td><td>16</td><td>2773</td><td>2013-04-04</td><td><a href="https://stackoverflow.com/questions/15806615/method-overloading-not-working-with-different-parameters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Warning: [overloads] method m1 is potentially ambiguous with method m2</td><td>1</td><td>16</td><td>1077</td><td>2015-03-19</td><td><a href="https://stackoverflow.com/questions/29136053/warning-overloads-method-m1-is-potentially-ambiguous-with-method-m2" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method overloading with primitives and their wrappers</td><td>2</td><td>16</td><td>3386</td><td>2015-01-17</td><td><a href="https://stackoverflow.com/questions/27940321/method-overloading-with-primitives-and-their-wrappers" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find an overloaded method in Java?</td><td>2</td><td>16</td><td>4839</td><td>2013-06-09</td><td><a href="https://stackoverflow.com/questions/11765627/how-to-find-an-overloaded-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In java, Can we override a method by passing subclass of the parameter used in super class method?</td><td>7</td><td>15</td><td>20703</td><td>2016-05-22</td><td><a href="https://stackoverflow.com/questions/31820828/in-java-can-we-override-a-method-by-passing-subclass-of-the-parameter-used-in-s" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method overloading with variable arguments (varargs)</td><td>4</td><td>15</td><td>3024</td><td>2015-09-07</td><td><a href="https://stackoverflow.com/questions/32293476/method-overloading-with-variable-arguments-varargs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is this Java method call considered ambiguous?</td><td>2</td><td>15</td><td>2164</td><td>2019-07-21</td><td><a href="https://stackoverflow.com/questions/57118216/why-is-this-java-method-call-considered-ambiguous" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Strange Java null behavior in Method Overloading</td><td>4</td><td>14</td><td>805</td><td>2013-02-13</td><td><a href="https://stackoverflow.com/questions/14789478/strange-java-null-behavior-in-method-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overload and hide methods in Java</td><td>4</td><td>14</td><td>18206</td><td>2014-10-24</td><td><a href="https://stackoverflow.com/questions/2589146/overload-and-hide-methods-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How JVM finds method (parameter with the closest matching) to call in case of function overloading</td><td>6</td><td>14</td><td>3097</td><td>2013-08-03</td><td><a href="https://stackoverflow.com/questions/17999480/how-jvm-finds-method-parameter-with-the-closest-matching-to-call-in-case-of-fu" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Overloading: Number,Number ; int,Double</td><td>3</td><td>14</td><td>4077</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11053564/java-overloading-number-number-int-double" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generics in overridden methods</td><td>3</td><td>14</td><td>160</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/15957618/generics-in-overridden-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I pass a primitive type by reference in Java?</td><td>9</td><td>13</td><td>44751</td><td>2011-06-19</td><td><a href="https://stackoverflow.com/questions/3662288/can-i-pass-a-primitive-type-by-reference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Function Call with Overload</td><td>3</td><td>13</td><td>1062</td><td>2018-10-19</td><td><a href="https://stackoverflow.com/questions/52888360/java-function-call-with-overload" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloading varargs arrays, choosing method</td><td>2</td><td>13</td><td>439</td><td>2015-11-01</td><td><a href="https://stackoverflow.com/questions/33467077/overloading-varargs-arrays-choosing-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can changes in the order of the method parameters be called method overloading?</td><td>1</td><td>12</td><td>6612</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/18598325/can-changes-in-the-order-of-the-method-parameters-be-called-method-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java overloading: reference to call ambiguous</td><td>2</td><td>12</td><td>519</td><td>2016-11-20</td><td><a href="https://stackoverflow.com/questions/37333102/java-overloading-reference-to-call-ambiguous" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do raw types in one place cause generic callsites somewhere else to be treated as raw?</td><td>2</td><td>12</td><td>287</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6100332/why-do-raw-types-in-one-place-cause-generic-callsites-somewhere-else-to-be-treat" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>final casting concept doesn&#39;t apply for overloading</td><td>4</td><td>12</td><td>87</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/30368618/final-casting-concept-doesnt-apply-for-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to detect ambiguous method calls that would cause a ClassCastException in Java 8?</td><td>2</td><td>12</td><td>486</td><td>2016-05-25</td><td><a href="https://stackoverflow.com/questions/30517768/how-to-detect-ambiguous-method-calls-that-would-cause-a-classcastexception-in-ja" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 chooses different overloaded method than Java 7 did when generics are involved</td><td>1</td><td>12</td><td>208</td><td>2018-02-22</td><td><a href="https://stackoverflow.com/questions/48926878/java-8-chooses-different-overloaded-method-than-java-7-did-when-generics-are-inv" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When overriding equals in Java, why does it not work to use a parameter other than Object?</td><td>7</td><td>11</td><td>14140</td><td>2008-11-21</td><td><a href="https://stackoverflow.com/questions/309892/when-overriding-equals-in-java-why-does-it-not-work-to-use-a-parameter-other-th" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to prevent a method from overloading in Java?</td><td>8</td><td>11</td><td>8991</td><td>2010-06-07</td><td><a href="https://stackoverflow.com/questions/2987732/how-to-prevent-a-method-from-overloading-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why won&#39;t Java call the (List&lt;Object&gt;) method, if I have an (Object...) one?</td><td>5</td><td>11</td><td>1963</td><td>2011-08-15</td><td><a href="https://stackoverflow.com/questions/7064984/why-wont-java-call-the-listobject-method-if-i-have-an-object-one" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Formatting using DecimalFormat throws exception - &quot;Cannot format given Object as a Number&quot;</td><td>3</td><td>11</td><td>43276</td><td>2018-10-04</td><td><a href="https://stackoverflow.com/questions/45274167/formatting-using-decimalformat-throws-exception-cannot-format-given-object-as" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloaded and overridden in Java</td><td>4</td><td>11</td><td>10613</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10568772/overloaded-and-overridden-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does this function call itself or call the overload?</td><td>3</td><td>11</td><td>1128</td><td>2017-04-19</td><td><a href="https://stackoverflow.com/questions/43500108/does-this-function-call-itself-or-call-the-overload" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are default parameter values supported by Java?</td><td>2</td><td>11</td><td>26541</td><td>2016-01-20</td><td><a href="https://stackoverflow.com/questions/13864692/are-default-parameter-values-supported-by-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Kotlin method overloading</td><td>3</td><td>11</td><td>10933</td><td>2018-08-25</td><td><a href="https://stackoverflow.com/questions/52020619/kotlin-method-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Compile Error: Method reference in combination with overloading</td><td>3</td><td>11</td><td>635</td><td>2018-08-06</td><td><a href="https://stackoverflow.com/questions/51710250/java-compile-error-method-reference-in-combination-with-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Function override-overload in Java</td><td>6</td><td>10</td><td>10786</td><td>2010-01-13</td><td><a href="https://stackoverflow.com/questions/2047793/function-override-overload-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can a method in sub class overloading a method in super class?</td><td>12</td><td>10</td><td>36553</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/24884151/can-a-method-in-sub-class-overloading-a-method-in-super-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method ambiguous when overloading with variable argument</td><td>3</td><td>10</td><td>453</td><td>2015-12-15</td><td><a href="https://stackoverflow.com/questions/33806017/method-ambiguous-when-overloading-with-variable-argument" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java : How to force a given protected method to be overloaded by children classes?</td><td>3</td><td>10</td><td>699</td><td>2012-12-20</td><td><a href="https://stackoverflow.com/questions/13979318/java-how-to-force-a-given-protected-method-to-be-overloaded-by-children-classe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which constructor is called first while passing null in the class having overloaded constructor?</td><td>2</td><td>10</td><td>2277</td><td>2013-09-14</td><td><a href="https://stackoverflow.com/questions/18803056/which-constructor-is-called-first-while-passing-null-in-the-class-having-overloa" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

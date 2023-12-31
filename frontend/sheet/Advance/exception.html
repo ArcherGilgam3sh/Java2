@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about exception</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you assert that a certain exception is thrown in JUnit 4 tests?</td><td>34</td><td>2191</td><td>1622594</td><td>2011-04-25</td><td><a href="https://stackoverflow.com/questions/156503/how-do-you-assert-that-a-certain-exception-is-thrown-in-junit-4-tests" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I catch multiple Java exceptions in the same catch clause?</td><td>10</td><td>802</td><td>583614</td><td>2014-09-24</td><td><a href="https://stackoverflow.com/questions/3495926/can-i-catch-multiple-java-exceptions-in-the-same-catch-clause" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Understanding checked vs unchecked exceptions in Java</td><td>21</td><td>748</td><td>335050</td><td>2015-07-31</td><td><a href="https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Uncatchable ChuckNorrisException</td><td>17</td><td>600</td><td>31355</td><td>2012-12-23</td><td><a href="https://stackoverflow.com/questions/13883166/uncatchable-chucknorrisexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there anything like .NET&#39;s NotImplementedException in Java?</td><td>5</td><td>589</td><td>176292</td><td>2011-09-16</td><td><a href="https://stackoverflow.com/questions/2329358/is-there-anything-like-nets-notimplementedexception-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do I get an UnsupportedOperationException when trying to remove an element from a List?</td><td>17</td><td>574</td><td>534992</td><td>2013-11-20</td><td><a href="https://stackoverflow.com/questions/2965747/why-do-i-get-an-unsupportedoperationexception-when-trying-to-remove-an-element-f" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IllegalArgumentException or NullPointerException for a null parameter?</td><td>26</td><td>565</td><td>181737</td><td>2011-04-28</td><td><a href="https://stackoverflow.com/questions/3881/illegalargumentexception-or-nullpointerexception-for-a-null-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the effects of exceptions on performance in Java?</td><td>18</td><td>538</td><td>98190</td><td>2014-05-28</td><td><a href="https://stackoverflow.com/questions/299068/what-are-the-effects-of-exceptions-on-performance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should a retrieval method return &#39;null&#39; or throw an exception when it can&#39;t produce the return value?</td><td>36</td><td>535</td><td>175024</td><td>2014-08-22</td><td><a href="https://stackoverflow.com/questions/175532/should-a-retrieval-method-return-null-or-throw-an-exception-when-it-cant-prod" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mockito test a void method throws an exception</td><td>3</td><td>524</td><td>387196</td><td>2014-05-29</td><td><a href="https://stackoverflow.com/questions/15156857/mockito-test-a-void-method-throws-an-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The case against checked exceptions</td><td>32</td><td>508</td><td>74158</td><td>2014-10-28</td><td><a href="https://stackoverflow.com/questions/613954/the-case-against-checked-exceptions" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a StackOverflowError?</td><td>15</td><td>508</td><td>765635</td><td>2015-03-17</td><td><a href="https://stackoverflow.com/questions/214741/what-is-a-stackoverflowerror" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Rethrowing exceptions in Java without losing the stack trace</td><td>9</td><td>465</td><td>309816</td><td>2012-05-13</td><td><a href="https://stackoverflow.com/questions/1097527/rethrowing-exceptions-in-java-without-losing-the-stack-trace" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Handling InterruptedException in Java</td><td>7</td><td>404</td><td>225684</td><td>2013-02-07</td><td><a href="https://stackoverflow.com/questions/3976344/handling-interruptedexception-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between using Throwable and Exception in a try catch</td><td>6</td><td>402</td><td>242885</td><td>2015-02-26</td><td><a href="https://stackoverflow.com/questions/2274102/difference-between-using-throwable-and-exception-in-a-try-catch" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to test that no exception is thrown?</td><td>19</td><td>358</td><td>410567</td><td>2017-04-20</td><td><a href="https://stackoverflow.com/questions/17731234/how-to-test-that-no-exception-is-thrown" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What could cause java.lang.reflect.InvocationTargetException?</td><td>15</td><td>351</td><td>1190719</td><td>2014-12-21</td><td><a href="https://stackoverflow.com/questions/6020719/what-could-cause-java-lang-reflect-invocationtargetexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What causes a java.lang.ArrayIndexOutOfBoundsException and how do I prevent it?</td><td>26</td><td>345</td><td>842700</td><td>2016-10-20</td><td><a href="https://stackoverflow.com/questions/5554734/what-causes-a-java-lang-arrayindexoutofboundsexception-and-how-do-i-prevent-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can I throw null in Java?</td><td>7</td><td>317</td><td>33327</td><td>2013-07-12</td><td><a href="https://stackoverflow.com/questions/17576922/why-can-i-throw-null-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to log formatted message, object array, exception?</td><td>3</td><td>306</td><td>236237</td><td>2016-10-10</td><td><a href="https://stackoverflow.com/questions/6371638/how-to-log-formatted-message-object-array-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Connection Java - MySQL : Public Key Retrieval is not allowed</td><td>21</td><td>298</td><td>372751</td><td>2020-01-18</td><td><a href="https://stackoverflow.com/questions/50379839/connection-java-mysql-public-key-retrieval-is-not-allowed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java List.add() UnsupportedOperationException</td><td>8</td><td>294</td><td>199619</td><td>2014-06-27</td><td><a href="https://stackoverflow.com/questions/5755477/java-list-add-unsupportedoperationexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to define custom exception class in Java, the easiest way?</td><td>8</td><td>288</td><td>408044</td><td>2013-11-16</td><td><a href="https://stackoverflow.com/questions/3776327/how-to-define-custom-exception-class-in-java-the-easiest-way" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which part of throwing an Exception is expensive?</td><td>6</td><td>268</td><td>21201</td><td>2016-03-31</td><td><a href="https://stackoverflow.com/questions/36343209/which-part-of-throwing-an-exception-is-expensive" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I solve &quot;java.lang.NoClassDefFoundError&quot;?</td><td>33</td><td>266</td><td>1407313</td><td>2017-06-28</td><td><a href="https://stackoverflow.com/questions/17973970/how-can-i-solve-java-lang-noclassdeffounderror" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between java.lang.RuntimeException and java.lang.Exception</td><td>12</td><td>264</td><td>276061</td><td>2013-12-10</td><td><a href="https://stackoverflow.com/questions/2190161/difference-between-java-lang-runtimeexception-and-java-lang-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to choose checked and unchecked exceptions</td><td>18</td><td>255</td><td>64034</td><td>2009-09-17</td><td><a href="https://stackoverflow.com/questions/27578/when-to-choose-checked-and-unchecked-exceptions" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you implement a re-try-catch?</td><td>29</td><td>248</td><td>260518</td><td>2013-04-28</td><td><a href="https://stackoverflow.com/questions/13239972/how-do-you-implement-a-re-try-catch" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>e.printStackTrace equivalent in python</td><td>4</td><td>248</td><td>147774</td><td>2014-07-26</td><td><a href="https://stackoverflow.com/questions/9555133/e-printstacktrace-equivalent-in-python" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can constructors throw exceptions in Java?</td><td>6</td><td>232</td><td>151558</td><td>2010-11-25</td><td><a href="https://stackoverflow.com/questions/1371369/can-constructors-throw-exceptions-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Handling exceptions from Java ExecutorService tasks</td><td>12</td><td>230</td><td>205688</td><td>2013-10-16</td><td><a href="https://stackoverflow.com/questions/2248131/handling-exceptions-from-java-executorservice-tasks" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Exception thrown inside catch block - will it be caught again?</td><td>9</td><td>228</td><td>246469</td><td>2010-09-02</td><td><a href="https://stackoverflow.com/questions/143622/exception-thrown-inside-catch-block-will-it-be-caught-again" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Causes of getting a java.lang.VerifyError</td><td>25</td><td>204</td><td>315043</td><td>2012-09-20</td><td><a href="https://stackoverflow.com/questions/100107/causes-of-getting-a-java-lang-verifyerror" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.net.MalformedURLException: no protocol</td><td>2</td><td>200</td><td>251425</td><td>2010-11-15</td><td><a href="https://stackoverflow.com/questions/1706493/java-net-malformedurlexception-no-protocol" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Differences between Exception and Error</td><td>11</td><td>200</td><td>99193</td><td>2012-09-23</td><td><a href="https://stackoverflow.com/questions/912334/differences-between-exception-and-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it good practice to make the constructor throw an exception?</td><td>8</td><td>198</td><td>182601</td><td>2012-12-07</td><td><a href="https://stackoverflow.com/questions/6086334/is-it-good-practice-to-make-the-constructor-throw-an-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8: Lambda-Streams, Filter by Method with Exception</td><td>15</td><td>196</td><td>184433</td><td>2015-05-11</td><td><a href="https://stackoverflow.com/questions/19757300/java-8-lambda-streams-filter-by-method-with-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring Boot REST service exception handling</td><td>10</td><td>196</td><td>320135</td><td>2016-08-28</td><td><a href="https://stackoverflow.com/questions/28902374/spring-boot-rest-service-exception-handling" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to dump a stack trace without throwing an exception in java?</td><td>10</td><td>190</td><td>87070</td><td>2012-06-06</td><td><a href="https://stackoverflow.com/questions/944991/is-there-a-way-to-dump-a-stack-trace-without-throwing-an-exception-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is difference between Errors and Exceptions?</td><td>4</td><td>190</td><td>312413</td><td>2014-05-10</td><td><a href="https://stackoverflow.com/questions/5813614/what-is-difference-between-errors-and-exceptions" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Returning from a finally block in Java</td><td>6</td><td>186</td><td>66749</td><td>2014-05-07</td><td><a href="https://stackoverflow.com/questions/48088/returning-from-a-finally-block-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Exception thrown in catch and finally clause</td><td>12</td><td>180</td><td>170147</td><td>2015-07-24</td><td><a href="https://stackoverflow.com/questions/3779285/exception-thrown-in-catch-and-finally-clause" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to fix java.net.SocketException: Broken pipe?</td><td>10</td><td>174</td><td>573323</td><td>2013-06-03</td><td><a href="https://stackoverflow.com/questions/2309561/how-to-fix-java-net-socketexception-broken-pipe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a custom exception type in Java?</td><td>9</td><td>173</td><td>370889</td><td>2016-01-05</td><td><a href="https://stackoverflow.com/questions/8423700/how-to-create-a-custom-exception-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does a finally block run even if you throw a new Exception?</td><td>6</td><td>172</td><td>85611</td><td>2012-04-10</td><td><a href="https://stackoverflow.com/questions/4264874/does-a-finally-block-run-even-if-you-throw-a-new-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java exception not caught?</td><td>6</td><td>170</td><td>18618</td><td>2013-08-07</td><td><a href="https://stackoverflow.com/questions/18097496/java-exception-not-caught" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t Java allow generic subclasses of Throwable?</td><td>6</td><td>170</td><td>36451</td><td>2012-08-02</td><td><a href="https://stackoverflow.com/questions/501277/why-doesnt-java-allow-generic-subclasses-of-throwable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Official reasons for &quot;Software caused connection abort: socket write error&quot;</td><td>14</td><td>166</td><td>373064</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2126607/official-reasons-for-software-caused-connection-abort-socket-write-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mockito How to mock and assert a thrown exception?</td><td>12</td><td>161</td><td>484653</td><td>2013-07-11</td><td><a href="https://stackoverflow.com/questions/16243580/mockito-how-to-mock-and-assert-a-thrown-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why aren&#39;t variables declared in &quot;try&quot; in scope in &quot;catch&quot; or &quot;finally&quot;?</td><td>28</td><td>159</td><td>90244</td><td>2008-09-22</td><td><a href="https://stackoverflow.com/questions/94977/why-arent-variables-declared-in-try-in-scope-in-catch-or-finally" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is a ConcurrentModificationException thrown and how to debug it</td><td>8</td><td>157</td><td>188122</td><td>2014-06-09</td><td><a href="https://stackoverflow.com/questions/602636/why-is-a-concurrentmodificationexception-thrown-and-how-to-debug-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create custom exceptions in Java?</td><td>3</td><td>153</td><td>269695</td><td>2013-04-15</td><td><a href="https://stackoverflow.com/questions/1754315/how-to-create-custom-exceptions-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t Java allow to throw a checked exception from static initialization block?</td><td>8</td><td>141</td><td>93368</td><td>2013-01-16</td><td><a href="https://stackoverflow.com/questions/2070293/why-doesnt-java-allow-to-throw-a-checked-exception-from-static-initialization-b" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does it make sense to do &quot;try-finally&quot; without &quot;catch&quot;?</td><td>6</td><td>140</td><td>82991</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2614473/does-it-make-sense-to-do-try-finally-without-catch" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is exception.printStackTrace() considered bad practice?</td><td>9</td><td>139</td><td>137144</td><td>2016-03-20</td><td><a href="https://stackoverflow.com/questions/7469316/why-is-exception-printstacktrace-considered-bad-practice" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java / Android - How to print out a full stack trace?</td><td>8</td><td>136</td><td>100743</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7841232/java-android-how-to-print-out-a-full-stack-trace" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Given final block not properly padded</td><td>5</td><td>136</td><td>374267</td><td>2015-12-04</td><td><a href="https://stackoverflow.com/questions/8049872/given-final-block-not-properly-padded" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use wait and notify in Java without IllegalMonitorStateException?</td><td>12</td><td>132</td><td>237973</td><td>2013-11-29</td><td><a href="https://stackoverflow.com/questions/886722/how-to-use-wait-and-notify-in-java-without-illegalmonitorstateexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use an assertion and when to use an exception</td><td>11</td><td>131</td><td>51209</td><td>2014-05-16</td><td><a href="https://stackoverflow.com/questions/1957645/when-to-use-an-assertion-and-when-to-use-an-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I read a text file in Android?</td><td>7</td><td>130</td><td>362497</td><td>2016-04-26</td><td><a href="https://stackoverflow.com/questions/12421814/how-can-i-read-a-text-file-in-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does writeObject throw java.io.NotSerializableException and how do I fix it?</td><td>4</td><td>128</td><td>322109</td><td>2016-09-15</td><td><a href="https://stackoverflow.com/questions/13895867/why-does-writeobject-throw-java-io-notserializableexception-and-how-do-i-fix-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>try/catch versus throws Exception</td><td>10</td><td>128</td><td>98191</td><td>2014-12-21</td><td><a href="https://stackoverflow.com/questions/3241571/try-catch-versus-throws-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I catch all the exceptions that will be thrown through reading and writing a file?</td><td>7</td><td>122</td><td>248257</td><td>2009-07-02</td><td><a href="https://stackoverflow.com/questions/1075895/how-can-i-catch-all-the-exceptions-that-will-be-thrown-through-reading-and-writi" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is &quot;throws Exception&quot; necessary when calling a function?</td><td>8</td><td>122</td><td>219527</td><td>2013-08-11</td><td><a href="https://stackoverflow.com/questions/11589302/why-is-throws-exception-necessary-when-calling-a-function" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Null check chain vs catching NullPointerException</td><td>19</td><td>122</td><td>18358</td><td>2016-07-07</td><td><a href="https://stackoverflow.com/questions/37960674/null-check-chain-vs-catching-nullpointerexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to catch java.lang.Error?</td><td>16</td><td>120</td><td>156662</td><td>2012-08-17</td><td><a href="https://stackoverflow.com/questions/352780/when-to-catch-java-lang-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best practices for exception management in Java or C#</td><td>15</td><td>118</td><td>32808</td><td>2013-03-14</td><td><a href="https://stackoverflow.com/questions/409563/best-practices-for-exception-management-in-java-or-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible in Java to catch two exceptions in the same catch block?</td><td>6</td><td>117</td><td>153601</td><td>2012-06-26</td><td><a href="https://stackoverflow.com/questions/11211286/is-it-possible-in-java-to-catch-two-exceptions-in-the-same-catch-block" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it a bad practice to catch Throwable?</td><td>14</td><td>115</td><td>97101</td><td>2013-06-03</td><td><a href="https://stackoverflow.com/questions/6083248/is-it-a-bad-practice-to-catch-throwable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When should an IllegalArgumentException be thrown?</td><td>6</td><td>113</td><td>228760</td><td>2014-01-02</td><td><a href="https://stackoverflow.com/questions/15208544/when-should-an-illegalargumentexception-be-thrown" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use Java-style throws keyword in C#?</td><td>10</td><td>112</td><td>71545</td><td>2011-10-21</td><td><a href="https://stackoverflow.com/questions/3465465/how-to-use-java-style-throws-keyword-in-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the use of printStackTrace() method in Java?</td><td>9</td><td>105</td><td>453859</td><td>2012-10-31</td><td><a href="https://stackoverflow.com/questions/2560368/what-is-the-use-of-printstacktrace-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Good way to encapsulate Integer.parseInt()</td><td>26</td><td>102</td><td>230512</td><td>2013-09-01</td><td><a href="https://stackoverflow.com/questions/1486077/good-way-to-encapsulate-integer-parseint" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between e.getMessage() and e.getLocalizedMessage()</td><td>7</td><td>102</td><td>96887</td><td>2018-04-30</td><td><a href="https://stackoverflow.com/questions/24988491/difference-between-e-getmessage-and-e-getlocalizedmessage" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>throws Exception in finally blocks</td><td>15</td><td>101</td><td>60701</td><td>2010-12-25</td><td><a href="https://stackoverflow.com/questions/481446/throws-exception-in-finally-blocks" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Eclipse - java.lang.ClassNotFoundException</td><td>42</td><td>100</td><td>371594</td><td>2011-05-19</td><td><a href="https://stackoverflow.com/questions/1052978/eclipse-java-lang-classnotfoundexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I increase the number of displayed lines of a Java stack trace dump?</td><td>3</td><td>99</td><td>38583</td><td>2011-06-19</td><td><a href="https://stackoverflow.com/questions/1167888/how-do-i-increase-the-number-of-displayed-lines-of-a-java-stack-trace-dump" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java, when should I create a checked exception, and when should it be a runtime exception?</td><td>14</td><td>98</td><td>28347</td><td>2013-03-28</td><td><a href="https://stackoverflow.com/questions/499437/in-java-when-should-i-create-a-checked-exception-and-when-should-it-be-a-runti" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should methods that throw RuntimeException indicate it in method signature?</td><td>7</td><td>97</td><td>39901</td><td>2009-05-05</td><td><a href="https://stackoverflow.com/questions/824217/should-methods-that-throw-runtimeexception-indicate-it-in-method-signature" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a throws keyword in C# like in Java?</td><td>3</td><td>95</td><td>71614</td><td>2014-05-06</td><td><a href="https://stackoverflow.com/questions/5726680/is-there-a-throws-keyword-in-c-like-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a standard java exception class that means &quot;The object was not found&quot;?</td><td>4</td><td>95</td><td>98801</td><td>2015-08-15</td><td><a href="https://stackoverflow.com/questions/24760314/is-there-a-standard-java-exception-class-that-means-the-object-was-not-found" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do Double.parseDouble(null) and Integer.parseInt(null) throw different exceptions?</td><td>2</td><td>94</td><td>48700</td><td>2013-05-05</td><td><a href="https://stackoverflow.com/questions/16324831/why-do-double-parsedoublenull-and-integer-parseintnull-throw-different-excep" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.lang.IllegalStateException in .NET?</td><td>1</td><td>94</td><td>23324</td><td>2013-03-03</td><td><a href="https://stackoverflow.com/questions/2108544/java-lang-illegalstateexception-in-net" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>UnsupportedOperationException at java.util.AbstractList.add</td><td>7</td><td>93</td><td>88643</td><td>2012-02-16</td><td><a href="https://stackoverflow.com/questions/9320409/unsupportedoperationexception-at-java-util-abstractlist-add" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Print the stack trace of an exception</td><td>9</td><td>93</td><td>206482</td><td>2011-07-25</td><td><a href="https://stackoverflow.com/questions/6822968/print-the-stack-trace-of-an-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Exception NoClassDefFoundError for CacheProvider</td><td>4</td><td>93</td><td>78103</td><td>2014-09-25</td><td><a href="https://stackoverflow.com/questions/7528862/exception-noclassdeffounderror-for-cacheprovider" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to throw an exception without adding the throws declaration?</td><td>12</td><td>90</td><td>68451</td><td>2016-02-07</td><td><a href="https://stackoverflow.com/questions/4519557/is-there-a-way-to-throw-an-exception-without-adding-the-throws-declaration" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Who is calling the Java Thread interrupt() method if I&#39;m not?</td><td>8</td><td>90</td><td>25046</td><td>2012-03-23</td><td><a href="https://stackoverflow.com/questions/2126997/who-is-calling-the-java-thread-interrupt-method-if-im-not" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: a (Unsupported major.minor version 51.0)</td><td>5</td><td>89</td><td>313209</td><td>2014-07-11</td><td><a href="https://stackoverflow.com/questions/7237536/exception-in-thread-main-java-lang-unsupportedclassversionerror-a-unsupporte" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use throws in a Java method declaration?</td><td>7</td><td>87</td><td>127215</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4392446/when-to-use-throws-in-a-java-method-declaration" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a suppressed exception?</td><td>8</td><td>86</td><td>64279</td><td>2014-08-07</td><td><a href="https://stackoverflow.com/questions/7849416/what-is-a-suppressed-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.lang.IllegalAccessError: tried to access method</td><td>11</td><td>85</td><td>216930</td><td>2012-07-07</td><td><a href="https://stackoverflow.com/questions/7076414/java-lang-illegalaccesserror-tried-to-access-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are Python exceptions named &quot;Error&quot;?</td><td>6</td><td>85</td><td>17732</td><td>2012-12-14</td><td><a href="https://stackoverflow.com/questions/2903827/why-are-python-exceptions-named-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java when does a URL connection close?</td><td>3</td><td>85</td><td>74241</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/272910/in-java-when-does-a-url-connection-close" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

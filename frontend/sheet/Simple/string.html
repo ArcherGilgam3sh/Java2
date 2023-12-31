@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about string</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I read / convert an InputStream into a String in Java?</td><td>63</td><td>4512</td><td>2439321</td><td>2013-12-14</td><td><a href="https://stackoverflow.com/questions/309424/how-do-i-read-convert-an-inputstream-into-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is char[] preferred over String for passwords?</td><td>18</td><td>3709</td><td>471643</td><td>2014-07-16</td><td><a href="https://stackoverflow.com/questions/8881291/why-is-char-preferred-over-string-for-passwords" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I convert a String to an int in Java?</td><td>47</td><td>3359</td><td>6541991</td><td>2016-10-01</td><td><a href="https://stackoverflow.com/questions/5585779/how-do-i-convert-a-string-to-an-int-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to generate a random alpha-numeric string</td><td>44</td><td>1899</td><td>1573385</td><td>2014-10-08</td><td><a href="https://stackoverflow.com/questions/41107/how-to-generate-a-random-alpha-numeric-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does this code using random strings print &quot;hello world&quot;?</td><td>15</td><td>1865</td><td>214087</td><td>2014-05-31</td><td><a href="https://stackoverflow.com/questions/15182496/why-does-this-code-using-random-strings-print-hello-world" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to split a string in Java</td><td>37</td><td>1842</td><td>4483013</td><td>2015-05-23</td><td><a href="https://stackoverflow.com/questions/3481828/how-to-split-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I create a Java string from the contents of a file?</td><td>33</td><td>1692</td><td>1581384</td><td>2013-10-21</td><td><a href="https://stackoverflow.com/questions/326390/how-do-i-create-a-java-string-from-the-contents-of-a-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting &#39;ArrayList&lt;String&gt; to &#39;String[]&#39; in Java</td><td>17</td><td>1210</td><td>843489</td><td>2014-09-11</td><td><a href="https://stackoverflow.com/questions/4042434/converting-arrayliststring-to-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>StringBuilder vs String concatenation in toString() in Java</td><td>20</td><td>1056</td><td>443051</td><td>2013-03-25</td><td><a href="https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t I use switch statement on a String?</td><td>14</td><td>1040</td><td>766488</td><td>2013-09-21</td><td><a href="https://stackoverflow.com/questions/338206/why-cant-i-use-switch-statement-on-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if a String is numeric in Java</td><td>40</td><td>997</td><td>1733052</td><td>2012-09-18</td><td><a href="https://stackoverflow.com/questions/1102891/how-to-check-if-a-string-is-numeric-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java string to date conversion</td><td>17</td><td>976</td><td>2250021</td><td>2014-09-06</td><td><a href="https://stackoverflow.com/questions/4216745/java-string-to-date-conversion" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I convert a String to an InputStream in Java?</td><td>5</td><td>961</td><td>733144</td><td>2012-06-10</td><td><a href="https://stackoverflow.com/questions/782178/how-do-i-convert-a-string-to-an-inputstream-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert a char to a String?</td><td>12</td><td>914</td><td>1204401</td><td>2014-07-09</td><td><a href="https://stackoverflow.com/questions/8172420/how-to-convert-a-char-to-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I convert from int to String?</td><td>20</td><td>767</td><td>2275561</td><td>2015-07-29</td><td><a href="https://stackoverflow.com/questions/4105331/how-do-i-convert-from-int-to-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Simple way to repeat a string</td><td>32</td><td>729</td><td>702372</td><td>2015-03-22</td><td><a href="https://stackoverflow.com/questions/1235179/simple-way-to-repeat-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I compare strings in Java?</td><td>23</td><td>723</td><td>4335487</td><td>2011-01-30</td><td><a href="https://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: convert List&lt;String&gt; to a join()d String</td><td>23</td><td>687</td><td>527501</td><td>2015-10-06</td><td><a href="https://stackoverflow.com/questions/1751844/java-convert-liststring-to-a-joind-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get an OutputStream into a String</td><td>5</td><td>640</td><td>680021</td><td>2009-02-12</td><td><a href="https://stackoverflow.com/questions/216894/get-an-outputstream-into-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert comma-separated String to List?</td><td>27</td><td>621</td><td>1120578</td><td>2016-02-17</td><td><a href="https://stackoverflow.com/questions/7488643/how-to-convert-comma-separated-string-to-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I count the number of occurrences of a char in a String?</td><td>48</td><td>601</td><td>955871</td><td>2013-10-06</td><td><a href="https://stackoverflow.com/questions/275944/how-do-i-count-the-number-of-occurrences-of-a-char-in-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Java have support for multiline strings?</td><td>43</td><td>582</td><td>686456</td><td>2015-07-08</td><td><a href="https://stackoverflow.com/questions/878573/does-java-have-support-for-multiline-strings" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to nicely format floating numbers to string without unnecessary decimal 0&#39;s</td><td>28</td><td>575</td><td>762468</td><td>2015-02-03</td><td><a href="https://stackoverflow.com/questions/703396/how-to-nicely-format-floating-numbers-to-string-without-unnecessary-decimal-0s" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to split a string with any whitespace chars as delimiters</td><td>13</td><td>574</td><td>723728</td><td>2014-06-19</td><td><a href="https://stackoverflow.com/questions/225337/how-to-split-a-string-with-any-whitespace-chars-as-delimiters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert Java String into byte[]?</td><td>8</td><td>574</td><td>1111182</td><td>2015-05-02</td><td><a href="https://stackoverflow.com/questions/18571223/how-to-convert-java-string-into-byte" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to remove the last character from a string?</td><td>38</td><td>567</td><td>1247284</td><td>2013-09-02</td><td><a href="https://stackoverflow.com/questions/7438612/how-to-remove-the-last-character-from-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>String.equals versus ==</td><td>20</td><td>564</td><td>901615</td><td>2013-12-27</td><td><a href="https://stackoverflow.com/questions/767372/string-equals-versus" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java, how do I check if a string contains a substring (ignoring case)?</td><td>6</td><td>556</td><td>1297749</td><td>2012-12-23</td><td><a href="https://stackoverflow.com/questions/2275004/in-java-how-do-i-check-if-a-string-contains-a-substring-ignoring-case" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>String concatenation: concat() vs &quot;+&quot; operator</td><td>12</td><td>554</td><td>1037648</td><td>2013-01-20</td><td><a href="https://stackoverflow.com/questions/47605/string-concatenation-concat-vs-operator" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reverse a string in Java</td><td>50</td><td>553</td><td>1248561</td><td>2014-09-19</td><td><a href="https://stackoverflow.com/questions/7569335/reverse-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>A quick and easy way to join array elements with a separator (the opposite of split) in Java</td><td>15</td><td>544</td><td>606311</td><td>2013-09-10</td><td><a href="https://stackoverflow.com/questions/1978933/a-quick-and-easy-way-to-join-array-elements-with-a-separator-the-opposite-of-sp" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Java&#39;s hashCode() in String use 31 as a multiplier?</td><td>13</td><td>541</td><td>165349</td><td>2013-12-11</td><td><a href="https://stackoverflow.com/questions/299304/why-does-javas-hashcode-in-string-use-31-as-a-multiplier" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Check whether a string is not null and not empty</td><td>33</td><td>539</td><td>1070770</td><td>2014-03-07</td><td><a href="https://stackoverflow.com/questions/3598770/check-whether-a-string-is-not-null-and-not-empty" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to escape % in String.Format?</td><td>3</td><td>531</td><td>185132</td><td>2014-11-16</td><td><a href="https://stackoverflow.com/questions/5011932/how-to-escape-in-string-format" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Change date format in a Java string</td><td>22</td><td>496</td><td>1516794</td><td>2014-10-29</td><td><a href="https://stackoverflow.com/questions/4772425/change-date-format-in-a-java-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java - Convert integer to string</td><td>6</td><td>494</td><td>1745998</td><td>2012-05-05</td><td><a href="https://stackoverflow.com/questions/5071040/java-convert-integer-to-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I pad a String in Java?</td><td>30</td><td>478</td><td>667775</td><td>2010-05-08</td><td><a href="https://stackoverflow.com/questions/388461/how-can-i-pad-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using Enum values as String literals</td><td>19</td><td>467</td><td>821833</td><td>2014-12-02</td><td><a href="https://stackoverflow.com/questions/6667243/using-enum-values-as-string-literals" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to extract a substring using regex</td><td>14</td><td>466</td><td>880847</td><td>2012-09-30</td><td><a href="https://stackoverflow.com/questions/4662215/how-to-extract-a-substring-using-regex" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to capitalize the first character of each word in a string</td><td>51</td><td>455</td><td>496148</td><td>2013-12-06</td><td><a href="https://stackoverflow.com/questions/1892765/how-to-capitalize-the-first-character-of-each-word-in-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert String to long in Java?</td><td>10</td><td>452</td><td>1023079</td><td>2014-12-28</td><td><a href="https://stackoverflow.com/questions/7693324/how-to-convert-string-to-long-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>CharSequence VS String in Java?</td><td>9</td><td>452</td><td>136703</td><td>2014-02-11</td><td><a href="https://stackoverflow.com/questions/1049228/charsequence-vs-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java string split with &quot;.&quot; (dot)</td><td>4</td><td>451</td><td>552907</td><td>2016-05-05</td><td><a href="https://stackoverflow.com/questions/14833008/java-string-split-with-dot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: splitting a comma-separated string but ignoring commas in quotes</td><td>12</td><td>277</td><td>237353</td><td>2015-10-24</td><td><a href="https://stackoverflow.com/questions/1757065/java-splitting-a-comma-separated-string-but-ignoring-commas-in-quotes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if a String contains another String in a case insensitive manner in Java?</td><td>19</td><td>444</td><td>472036</td><td>2012-09-10</td><td><a href="https://stackoverflow.com/questions/86780/how-to-check-if-a-string-contains-another-string-in-a-case-insensitive-manner-in" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Replace a character at a specific index in a string?</td><td>9</td><td>441</td><td>1056598</td><td>2013-05-11</td><td><a href="https://stackoverflow.com/questions/6952363/replace-a-character-at-a-specific-index-in-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java int to String - Integer.toString(i) vs new Integer(i).toString()</td><td>11</td><td>440</td><td>1202175</td><td>2014-07-25</td><td><a href="https://stackoverflow.com/questions/3930210/java-int-to-string-integer-tostringi-vs-new-integeri-tostring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to capitalize the first letter of a String in Java?</td><td>59</td><td>439</td><td>819922</td><td>2016-07-11</td><td><a href="https://stackoverflow.com/questions/3904579/how-to-capitalize-the-first-letter-of-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert a char array back to a string?</td><td>14</td><td>437</td><td>772880</td><td>2013-07-08</td><td><a href="https://stackoverflow.com/questions/7655127/how-to-convert-a-char-array-back-to-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the easiest/best/most correct way to iterate through the characters of a string in Java?</td><td>16</td><td>433</td><td>618853</td><td>2015-04-16</td><td><a href="https://stackoverflow.com/questions/196830/what-is-the-easiest-best-most-correct-way-to-iterate-through-the-characters-of-a" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is meant by immutable?</td><td>17</td><td>419</td><td>185630</td><td>2014-02-13</td><td><a href="https://stackoverflow.com/questions/279507/what-is-meant-by-immutable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to split a String by space</td><td>17</td><td>411</td><td>1009161</td><td>2015-04-07</td><td><a href="https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is a Java string really immutable?</td><td>16</td><td>407</td><td>57148</td><td>2014-01-14</td><td><a href="https://stackoverflow.com/questions/20945049/is-a-java-string-really-immutable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use StringBuilder in Java</td><td>9</td><td>386</td><td>298825</td><td>2014-03-24</td><td><a href="https://stackoverflow.com/questions/4645020/when-to-use-stringbuilder-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I print my Java object without getting &quot;SomeType@2f92e0f4&quot;?</td><td>13</td><td>380</td><td>464961</td><td>2016-07-17</td><td><a href="https://stackoverflow.com/questions/29140402/how-do-i-print-my-java-object-without-getting-sometype2f92e0f4" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to evaluate a math expression given in string form?</td><td>25</td><td>372</td><td>553848</td><td>2015-09-01</td><td><a href="https://stackoverflow.com/questions/3422673/how-to-evaluate-a-math-expression-given-in-string-form" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java String split removed empty values</td><td>5</td><td>354</td><td>202671</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14602062/java-string-split-removed-empty-values" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best way to convert an ArrayList to a string</td><td>27</td><td>353</td><td>1315729</td><td>2012-03-25</td><td><a href="https://stackoverflow.com/questions/599161/best-way-to-convert-an-arraylist-to-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert String object to Boolean Object?</td><td>15</td><td>353</td><td>617121</td><td>2011-10-02</td><td><a href="https://stackoverflow.com/questions/1538755/how-to-convert-string-object-to-boolean-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the best way to build a string of delimited items in Java?</td><td>36</td><td>352</td><td>321236</td><td>2014-07-04</td><td><a href="https://stackoverflow.com/questions/63150/whats-the-best-way-to-build-a-string-of-delimited-items-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Remove all occurrences of char from string</td><td>13</td><td>342</td><td>800642</td><td>2013-08-22</td><td><a href="https://stackoverflow.com/questions/4576352/remove-all-occurrences-of-char-from-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Determine if a String is an Integer in Java</td><td>9</td><td>334</td><td>857538</td><td>2015-09-14</td><td><a href="https://stackoverflow.com/questions/5439529/determine-if-a-string-is-an-integer-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to add new elements to an array?</td><td>19</td><td>329</td><td>1498414</td><td>2011-09-30</td><td><a href="https://stackoverflow.com/questions/2843366/how-to-add-new-elements-to-an-array" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use java.String.format in Scala?</td><td>11</td><td>327</td><td>708399</td><td>2012-08-18</td><td><a href="https://stackoverflow.com/questions/3695230/how-to-use-java-string-format-in-scala" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java how to replace 2 or more spaces with single space in string and delete leading and trailing spaces</td><td>32</td><td>319</td><td>432269</td><td>2014-01-15</td><td><a href="https://stackoverflow.com/questions/2932392/java-how-to-replace-2-or-more-spaces-with-single-space-in-string-and-delete-lead" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert String to double in Java</td><td>14</td><td>318</td><td>1393178</td><td>2014-08-27</td><td><a href="https://stackoverflow.com/questions/5769669/convert-string-to-double-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it better practice to use String.format over string Concatenation in Java?</td><td>15</td><td>318</td><td>211693</td><td>2014-05-08</td><td><a href="https://stackoverflow.com/questions/925423/is-it-better-practice-to-use-string-format-over-string-concatenation-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert / cast long to String?</td><td>8</td><td>315</td><td>857067</td><td>2013-05-21</td><td><a href="https://stackoverflow.com/questions/1854924/how-to-convert-cast-long-to-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert a String to CharSequence?</td><td>6</td><td>310</td><td>395973</td><td>2013-08-03</td><td><a href="https://stackoverflow.com/questions/1391970/how-to-convert-a-string-to-charsequence" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>getString Outside of a Context or Activity</td><td>13</td><td>309</td><td>206125</td><td>2012-07-11</td><td><a href="https://stackoverflow.com/questions/4253328/getstring-outside-of-a-context-or-activity" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to get rid of accents and convert a whole string to regular letters?</td><td>14</td><td>301</td><td>197775</td><td>2012-09-01</td><td><a href="https://stackoverflow.com/questions/3322152/is-there-a-way-to-get-rid-of-accents-and-convert-a-whole-string-to-regular-lette" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Sprintf equivalent in Java</td><td>5</td><td>299</td><td>211037</td><td>2009-01-20</td><td><a href="https://stackoverflow.com/questions/47045/sprintf-equivalent-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no String.Empty in Java?</td><td>13</td><td>298</td><td>419842</td><td>2015-03-17</td><td><a href="https://stackoverflow.com/questions/3450604/why-is-there-no-string-empty-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>StringUtils.isBlank() vs String.isEmpty()</td><td>12</td><td>295</td><td>578158</td><td>2015-01-26</td><td><a href="https://stackoverflow.com/questions/23419087/stringutils-isblank-vs-string-isempty" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert array of strings into a string in Java</td><td>14</td><td>294</td><td>680787</td><td>2011-03-25</td><td><a href="https://stackoverflow.com/questions/5283444/convert-array-of-strings-into-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to remove line breaks from a file in Java?</td><td>17</td><td>290</td><td>634134</td><td>2010-11-04</td><td><a href="https://stackoverflow.com/questions/2163045/how-to-remove-line-breaks-from-a-file-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Strip Leading and Trailing Spaces From Java String</td><td>8</td><td>290</td><td>435062</td><td>2015-08-17</td><td><a href="https://stackoverflow.com/questions/6652687/strip-leading-and-trailing-spaces-from-java-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I turn a String into a InputStreamReader in java?</td><td>6</td><td>290</td><td>176202</td><td>2012-11-21</td><td><a href="https://stackoverflow.com/questions/247161/how-do-i-turn-a-string-into-a-inputstreamreader-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to remove leading zeros from alphanumeric text?</td><td>20</td><td>285</td><td>371454</td><td>2011-05-16</td><td><a href="https://stackoverflow.com/questions/2800739/how-to-remove-leading-zeros-from-alphanumeric-text" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java String remove all non numeric characters but keep the decimal separator</td><td>10</td><td>284</td><td>368324</td><td>2016-10-31</td><td><a href="https://stackoverflow.com/questions/10372862/java-string-remove-all-non-numeric-characters-but-keep-the-decimal-separator" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between String replace() and replaceAll()</td><td>13</td><td>284</td><td>279372</td><td>2014-01-24</td><td><a href="https://stackoverflow.com/questions/10827872/difference-between-string-replace-and-replaceall" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert Strings to and from UTF8 byte arrays in Java</td><td>13</td><td>282</td><td>738507</td><td>2010-11-14</td><td><a href="https://stackoverflow.com/questions/88838/how-to-convert-strings-to-and-from-utf8-byte-arrays-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Left padding a String with Zeros</td><td>20</td><td>274</td><td>489718</td><td>2014-03-05</td><td><a href="https://stackoverflow.com/questions/4469717/left-padding-a-string-with-zeros" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java - removing first character of a string</td><td>14</td><td>272</td><td>565162</td><td>2014-04-14</td><td><a href="https://stackoverflow.com/questions/4503656/java-removing-first-character-of-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert object array to string array in Java</td><td>11</td><td>270</td><td>480602</td><td>2010-11-20</td><td><a href="https://stackoverflow.com/questions/1018750/how-to-convert-object-array-to-string-array-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is Java String interning?</td><td>8</td><td>270</td><td>130476</td><td>2015-10-15</td><td><a href="https://stackoverflow.com/questions/10578984/what-is-java-string-interning" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get string character by index</td><td>12</td><td>268</td><td>1052535</td><td>2017-04-11</td><td><a href="https://stackoverflow.com/questions/11229986/get-string-character-by-index" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java, how do I parse XML as a String instead of a file?</td><td>6</td><td>266</td><td>285429</td><td>2010-03-03</td><td><a href="https://stackoverflow.com/questions/562160/in-java-how-do-i-parse-xml-as-a-string-instead-of-a-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Utils to read resource text file to String (Java)</td><td>24</td><td>263</td><td>273747</td><td>2014-08-11</td><td><a href="https://stackoverflow.com/questions/6068197/utils-to-read-resource-text-file-to-string-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I check if a single character appears in a string?</td><td>15</td><td>260</td><td>1125817</td><td>2010-09-20</td><td><a href="https://stackoverflow.com/questions/506105/how-can-i-check-if-a-single-character-appears-in-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Read/Write String from/to a File in Android</td><td>11</td><td>254</td><td>598020</td><td>2016-09-07</td><td><a href="https://stackoverflow.com/questions/14376807/read-write-string-from-to-a-file-in-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between string object and string literal</td><td>13</td><td>253</td><td>297154</td><td>2011-10-08</td><td><a href="https://stackoverflow.com/questions/3297867/difference-between-string-object-and-string-literal" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: how to initialize String[]?</td><td>11</td><td>252</td><td>919581</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2564298/java-how-to-initialize-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I remove a substring from a given String?</td><td>14</td><td>246</td><td>699547</td><td>2015-07-03</td><td><a href="https://stackoverflow.com/questions/7775364/how-can-i-remove-a-substring-from-a-given-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to format strings in Java</td><td>10</td><td>246</td><td>289344</td><td>2014-01-24</td><td><a href="https://stackoverflow.com/questions/6431933/how-to-format-strings-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the best way to check if a String represents an integer in Java?</td><td>40</td><td>245</td><td>228934</td><td>2013-04-27</td><td><a href="https://stackoverflow.com/questions/237159/whats-the-best-way-to-check-if-a-string-represents-an-integer-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android Split string</td><td>6</td><td>244</td><td>482546</td><td>2012-07-12</td><td><a href="https://stackoverflow.com/questions/3732790/android-split-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Getting a substring from a string starting after a particular character</td><td>10</td><td>238</td><td>506654</td><td>2015-04-18</td><td><a href="https://stackoverflow.com/questions/14316487/java-getting-a-substring-from-a-string-starting-after-a-particular-character" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert CharSequence to String?</td><td>6</td><td>237</td><td>166007</td><td>2015-08-21</td><td><a href="https://stackoverflow.com/questions/7707556/how-to-convert-charsequence-to-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should I use Java&#39;s String.format() if performance is important?</td><td>13</td><td>237</td><td>169797</td><td>2014-03-05</td><td><a href="https://stackoverflow.com/questions/513600/should-i-use-javas-string-format-if-performance-is-important" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

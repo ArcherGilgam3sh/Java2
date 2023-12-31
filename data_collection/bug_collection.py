@@ -5,9 +5,6 @@ import csv
 # 设置 API Key
 api_key = "3KuCjhqiJIDILRsikOerKQ(("
 
-# 设置搜索关键字
-search_keywords = "error OR exception"
-
 # 初始化数据列表
 data_list = []
 
@@ -15,9 +12,9 @@ data_list = []
 page = 1
 
 while len(data_list) < 600:  # 收集至少600个问题
-    api_url = "https://api.stackexchange.com/2.2/search"
+    api_url = "https://api.stackexchange.com/2.2/questions"
     params = {
-        "intitle": search_keywords,  # 标题中包含指定关键字
+        "tagged": "java",
         "site": "stackoverflow",
         "key": api_key,
         "pagesize": 100,  # 每页的问题数量
@@ -32,17 +29,21 @@ while len(data_list) < 600:  # 收集至少600个问题
     # 解析 JSON 数据
     data = response.json()
 
-    # 处理每个搜索结果
+    # 处理每个问题
     for item in data["items"]:
-        data_list.append({
-            "Tag": ";".join(item["tags"]),
-            "Question ID": item["question_id"],
-            "Title": item["title"],
-            "Creation Date": item["creation_date"],
-            "Answer Count": item["answer_count"],
-            "View Count": item["view_count"],
-            "Score": item["score"]
-        })
+        # 检查标题是否包含特定错误或异常关键字
+        title = item["title"].lower()
+        if "error" in title or "exception" in title:
+            data_list.append({
+                "Tag": ";".join(item["tags"]),
+                "Question ID": item["question_id"],
+                "Title": item["title"],
+                "Creation Date": item["creation_date"],
+                "Answer Count": item["answer_count"],
+                "View Count": item["view_count"],
+                "Score": item["score"]
+            })
+            print(11111111111)
 
     # 判断是否还有更多页面的数据
     if not data["has_more"]:

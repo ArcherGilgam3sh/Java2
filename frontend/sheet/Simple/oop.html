@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about oop</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java `final` method: what does it promise?</td><td>5</td><td>152</td><td>101105</td><td>2012-12-12</td><td><a href="https://stackoverflow.com/questions/5547663/java-final-method-what-does-it-promise" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why use getters and setters/accessors?</td><td>41</td><td>1745</td><td>473444</td><td>2013-11-10</td><td><a href="https://stackoverflow.com/questions/1568091/why-use-getters-and-setters-accessors" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Examples of GoF Design Patterns in Java&#39;s core libraries</td><td>7</td><td>672</td><td>541322</td><td>2012-07-23</td><td><a href="https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can we instantiate an abstract class?</td><td>16</td><td>618</td><td>302201</td><td>2016-03-05</td><td><a href="https://stackoverflow.com/questions/13670991/can-we-instantiate-an-abstract-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How should I have explained the difference between an Interface and an Abstract class?</td><td>31</td><td>526</td><td>467199</td><td>2015-03-20</td><td><a href="https://stackoverflow.com/questions/18777989/how-should-i-have-explained-the-difference-between-an-interface-and-an-abstract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should we @Override an interface&#39;s method implementation?</td><td>15</td><td>466</td><td>201114</td><td>2013-02-03</td><td><a href="https://stackoverflow.com/questions/212614/should-we-override-an-interfaces-method-implementation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does the &#39;static&#39; keyword do in a class?</td><td>22</td><td>458</td><td>833534</td><td>2012-02-27</td><td><a href="https://stackoverflow.com/questions/413898/what-does-the-static-keyword-do-in-a-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s wrong with overridable method calls in constructors?</td><td>8</td><td>396</td><td>135813</td><td>2013-11-27</td><td><a href="https://stackoverflow.com/questions/3404301/whats-wrong-with-overridable-method-calls-in-constructors" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism vs Overriding vs Overloading</td><td>21</td><td>370</td><td>295224</td><td>2012-10-15</td><td><a href="https://stackoverflow.com/questions/154577/polymorphism-vs-overriding-vs-overloading" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When should I use &quot;this&quot; in a class?</td><td>17</td><td>330</td><td>255012</td><td>2010-04-03</td><td><a href="https://stackoverflow.com/questions/2411270/when-should-i-use-this-in-a-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to compare objects by multiple fields</td><td>23</td><td>295</td><td>491496</td><td>2013-11-24</td><td><a href="https://stackoverflow.com/questions/369512/how-to-compare-objects-by-multiple-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Abstract class in Java</td><td>14</td><td>289</td><td>205436</td><td>2012-11-26</td><td><a href="https://stackoverflow.com/questions/1320745/abstract-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does it mean to hydrate an object?</td><td>5</td><td>283</td><td>114860</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6991135/what-does-it-mean-to-hydrate-an-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do subclasses inherit private fields?</td><td>20</td><td>280</td><td>252873</td><td>2012-12-20</td><td><a href="https://stackoverflow.com/questions/4716040/do-subclasses-inherit-private-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it bad practice to make a setter return &quot;this&quot;?</td><td>27</td><td>270</td><td>73430</td><td>2015-05-01</td><td><a href="https://stackoverflow.com/questions/1345001/is-it-bad-practice-to-make-a-setter-return-this" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between Inheritance and Composition</td><td>17</td><td>240</td><td>247587</td><td>2010-05-03</td><td><a href="https://stackoverflow.com/questions/2399544/difference-between-inheritance-and-composition" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are getters and setters poor design? Contradictory advice seen</td><td>16</td><td>232</td><td>81716</td><td>2013-12-15</td><td><a href="https://stackoverflow.com/questions/565095/are-getters-and-setters-poor-design-contradictory-advice-seen" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>String, StringBuffer, and StringBuilder</td><td>11</td><td>223</td><td>178881</td><td>2014-07-16</td><td><a href="https://stackoverflow.com/questions/2971315/string-stringbuffer-and-stringbuilder" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>C++ equivalent of java&#39;s instanceof</td><td>5</td><td>220</td><td>184200</td><td>2014-08-14</td><td><a href="https://stackoverflow.com/questions/500493/c-equivalent-of-javas-instanceof" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is Serialization?</td><td>15</td><td>209</td><td>115601</td><td>2014-11-13</td><td><a href="https://stackoverflow.com/questions/633402/what-is-serialization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using the &quot;final&quot; modifier whenever applicable in Java</td><td>25</td><td>207</td><td>69244</td><td>2013-05-09</td><td><a href="https://stackoverflow.com/questions/137868/using-the-final-modifier-whenever-applicable-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Struct like objects in Java</td><td>20</td><td>198</td><td>354742</td><td>2013-10-01</td><td><a href="https://stackoverflow.com/questions/36701/struct-like-objects-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the main difference between Inheritance and Polymorphism?</td><td>18</td><td>197</td><td>291582</td><td>2013-04-25</td><td><a href="https://stackoverflow.com/questions/6308178/what-is-the-main-difference-between-inheritance-and-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Missing return statement in a non-void method compiles</td><td>13</td><td>191</td><td>11638</td><td>2016-02-14</td><td><a href="https://stackoverflow.com/questions/16789832/missing-return-statement-in-a-non-void-method-compiles" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Class with single method -- best approach?</td><td>15</td><td>183</td><td>92305</td><td>2011-12-27</td><td><a href="https://stackoverflow.com/questions/205689/class-with-single-method-best-approach" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no multiple inheritance in Java, but implementing multiple interfaces is allowed?</td><td>20</td><td>181</td><td>198186</td><td>2013-06-23</td><td><a href="https://stackoverflow.com/questions/2515477/why-is-there-no-multiple-inheritance-in-java-but-implementing-multiple-interfac" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Multiple Inheritance</td><td>17</td><td>171</td><td>144240</td><td>2015-01-09</td><td><a href="https://stackoverflow.com/questions/21824402/java-multiple-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I prevent the modification of a private field in a class?</td><td>11</td><td>168</td><td>14967</td><td>2013-02-12</td><td><a href="https://stackoverflow.com/questions/14809293/how-do-i-prevent-the-modification-of-a-private-field-in-a-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Singleton with Arguments in Java</td><td>21</td><td>160</td><td>144751</td><td>2009-06-26</td><td><a href="https://stackoverflow.com/questions/1050991/singleton-with-arguments-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there more to an interface than having the correct methods</td><td>17</td><td>159</td><td>168075</td><td>2012-10-12</td><td><a href="https://stackoverflow.com/questions/504904/is-there-more-to-an-interface-than-having-the-correct-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t Java Map extend Collection?</td><td>9</td><td>158</td><td>46182</td><td>2014-11-24</td><td><a href="https://stackoverflow.com/questions/2651819/why-doesnt-java-map-extend-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method Overloading for null argument</td><td>7</td><td>150</td><td>90800</td><td>2013-07-26</td><td><a href="https://stackoverflow.com/questions/5229809/method-overloading-for-null-argument" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Default constructor vs. inline field initialization</td><td>5</td><td>148</td><td>54917</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4916735/default-constructor-vs-inline-field-initialization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Encapsulation vs Abstraction?</td><td>13</td><td>145</td><td>164062</td><td>2014-09-22</td><td><a href="https://stackoverflow.com/questions/8960918/encapsulation-vs-abstraction" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if an object implements an interface?</td><td>4</td><td>144</td><td>147015</td><td>2013-06-25</td><td><a href="https://stackoverflow.com/questions/10165887/how-to-check-if-an-object-implements-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between dynamic and static polymorphism in Java?</td><td>14</td><td>137</td><td>251836</td><td>2014-08-04</td><td><a href="https://stackoverflow.com/questions/20783266/what-is-the-difference-between-dynamic-and-static-polymorphism-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why we should not use protected static in java</td><td>8</td><td>135</td><td>70813</td><td>2015-12-05</td><td><a href="https://stackoverflow.com/questions/24289070/why-we-should-not-use-protected-static-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Static Class?</td><td>8</td><td>134</td><td>114067</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1844355/java-static-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why java.lang.Object is not abstract?</td><td>14</td><td>134</td><td>15082</td><td>2013-09-22</td><td><a href="https://stackoverflow.com/questions/2117689/why-java-lang-object-is-not-abstract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Overloaded method selection based on the parameter&#39;s real type</td><td>7</td><td>126</td><td>55661</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1572322/overloaded-method-selection-based-on-the-parameters-real-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is the clone() method protected in java.lang.Object?</td><td>11</td><td>118</td><td>55354</td><td>2011-05-18</td><td><a href="https://stackoverflow.com/questions/1138769/why-is-the-clone-method-protected-in-java-lang-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a covariant return type?</td><td>9</td><td>117</td><td>82919</td><td>2013-03-26</td><td><a href="https://stackoverflow.com/questions/1882584/what-is-a-covariant-return-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why not abstract fields?</td><td>5</td><td>116</td><td>76131</td><td>2016-02-09</td><td><a href="https://stackoverflow.com/questions/2211002/why-not-abstract-fields" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the purpose of Serialization in Java?</td><td>8</td><td>113</td><td>106432</td><td>2013-03-16</td><td><a href="https://stackoverflow.com/questions/2232759/what-is-the-purpose-of-serialization-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inner class within Interface</td><td>13</td><td>111</td><td>89128</td><td>2015-01-20</td><td><a href="https://stackoverflow.com/questions/2400828/inner-class-within-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why an interface can not implement another interface?</td><td>7</td><td>107</td><td>111314</td><td>2013-06-04</td><td><a href="https://stackoverflow.com/questions/3921412/why-an-interface-can-not-implement-another-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do we assign a parent reference to the child object in Java?</td><td>11</td><td>106</td><td>158382</td><td>2016-09-04</td><td><a href="https://stackoverflow.com/questions/12159601/why-do-we-assign-a-parent-reference-to-the-child-object-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How would you access Object properties from within an object method?</td><td>18</td><td>104</td><td>21150</td><td>2009-04-27</td><td><a href="https://stackoverflow.com/questions/126/how-would-you-access-object-properties-from-within-an-object-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Access private field of another object in same class</td><td>9</td><td>104</td><td>45550</td><td>2013-10-25</td><td><a href="https://stackoverflow.com/questions/17027139/access-private-field-of-another-object-in-same-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should methods that throw RuntimeException indicate it in method signature?</td><td>7</td><td>97</td><td>39901</td><td>2009-05-05</td><td><a href="https://stackoverflow.com/questions/824217/should-methods-that-throw-runtimeexception-indicate-it-in-method-signature" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Aggregation versus Composition</td><td>12</td><td>96</td><td>84425</td><td>2010-09-26</td><td><a href="https://stackoverflow.com/questions/734891/aggregation-versus-composition" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Building big, immutable objects without using constructors having long parameter lists</td><td>9</td><td>96</td><td>12614</td><td>2014-12-16</td><td><a href="https://stackoverflow.com/questions/2848938/building-big-immutable-objects-without-using-constructors-having-long-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When do I have to use interfaces instead of abstract classes?</td><td>18</td><td>90</td><td>171616</td><td>2015-07-02</td><td><a href="https://stackoverflow.com/questions/16781329/when-do-i-have-to-use-interfaces-instead-of-abstract-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Abstraction vs Encapsulation in Java</td><td>3</td><td>89</td><td>251183</td><td>2015-10-14</td><td><a href="https://stackoverflow.com/questions/11965929/abstraction-vs-encapsulation-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to ensure thread safety of utility static method?</td><td>7</td><td>84</td><td>73613</td><td>2012-12-17</td><td><a href="https://stackoverflow.com/questions/13910976/how-to-ensure-thread-safety-of-utility-static-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I access a private constructor of a class?</td><td>21</td><td>83</td><td>95246</td><td>2013-01-17</td><td><a href="https://stackoverflow.com/questions/2599440/how-can-i-access-a-private-constructor-of-a-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How should one unit test the hashCode-equals contract?</td><td>8</td><td>80</td><td>54763</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/188311/how-should-one-unit-test-the-hashcode-equals-contract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Replacing if else statement with pattern</td><td>5</td><td>79</td><td>98247</td><td>2015-01-20</td><td><a href="https://stackoverflow.com/questions/28049094/replacing-if-else-statement-with-pattern" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why to use Interfaces, Multiple Inheritance vs Interfaces, Benefits of Interfaces?</td><td>12</td><td>79</td><td>74821</td><td>2016-03-18</td><td><a href="https://stackoverflow.com/questions/8531292/why-to-use-interfaces-multiple-inheritance-vs-interfaces-benefits-of-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Fields in interfaces</td><td>4</td><td>77</td><td>107955</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9446893/fields-in-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is method hiding in Java? Even the JavaDoc explanation is confusing</td><td>8</td><td>73</td><td>89438</td><td>2014-09-23</td><td><a href="https://stackoverflow.com/questions/16313649/what-is-method-hiding-in-java-even-the-javadoc-explanation-is-confusing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should I recommend sealing classes by default?</td><td>13</td><td>73</td><td>7080</td><td>2015-11-25</td><td><a href="https://stackoverflow.com/questions/6389417/should-i-recommend-sealing-classes-by-default" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Any good examples of inheriting from a concrete class?</td><td>18</td><td>73</td><td>11628</td><td>2014-07-22</td><td><a href="https://stackoverflow.com/questions/7496010/any-good-examples-of-inheriting-from-a-concrete-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can you organize the code for a game to fit the MVC pattern?</td><td>6</td><td>72</td><td>20065</td><td>2014-07-24</td><td><a href="https://stackoverflow.com/questions/555283/how-can-you-organize-the-code-for-a-game-to-fit-the-mvc-pattern" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Benefit of Polymorphism</td><td>9</td><td>71</td><td>24735</td><td>2014-12-05</td><td><a href="https://stackoverflow.com/questions/11082640/benefit-of-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>calling setters from a constructor</td><td>9</td><td>70</td><td>40605</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4893558/calling-setters-from-a-constructor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What exception to throw when an important parameter/dependency is missing?</td><td>6</td><td>70</td><td>56325</td><td>2010-03-25</td><td><a href="https://stackoverflow.com/questions/2517965/what-exception-to-throw-when-an-important-parameter-dependency-is-missing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>interface as a method parameter in Java</td><td>8</td><td>67</td><td>96852</td><td>2013-12-30</td><td><a href="https://stackoverflow.com/questions/2575429/interface-as-a-method-parameter-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How exactly do static fields work internally?</td><td>11</td><td>66</td><td>19530</td><td>2013-02-19</td><td><a href="https://stackoverflow.com/questions/14781993/how-exactly-do-static-fields-work-internally" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should Java methods be static by default?</td><td>23</td><td>66</td><td>7353</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3346764/should-java-methods-be-static-by-default" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why use inheritance at all?</td><td>13</td><td>65</td><td>47863</td><td>2013-12-24</td><td><a href="https://stackoverflow.com/questions/3351666/why-use-inheritance-at-all" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is polymorphism possible without inheritance?</td><td>6</td><td>64</td><td>24144</td><td>2013-07-10</td><td><a href="https://stackoverflow.com/questions/11732422/is-polymorphism-possible-without-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can a class have a member of its own type, isn&#39;t this infinite recursion?</td><td>7</td><td>64</td><td>31409</td><td>2016-04-01</td><td><a href="https://stackoverflow.com/questions/9780742/how-can-a-class-have-a-member-of-its-own-type-isnt-this-infinite-recursion" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Avoiding &#39;instanceof&#39; in Java</td><td>8</td><td>64</td><td>10231</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6157835/avoiding-instanceof-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Distinguishing between delegation, composition and aggregation (Java OO Design)</td><td>5</td><td>62</td><td>43279</td><td>2014-01-03</td><td><a href="https://stackoverflow.com/questions/1384426/distinguishing-between-delegation-composition-and-aggregation-java-oo-design" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Design Issue: Enforce method call sequence</td><td>12</td><td>60</td><td>7454</td><td>2015-06-17</td><td><a href="https://stackoverflow.com/questions/30888581/java-design-issue-enforce-method-call-sequence" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Encapsulation vs Data Hiding - Java</td><td>19</td><td>60</td><td>77451</td><td>2014-11-04</td><td><a href="https://stackoverflow.com/questions/12013448/encapsulation-vs-data-hiding-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do constructors always have to be public?</td><td>11</td><td>58</td><td>51602</td><td>2016-12-06</td><td><a href="https://stackoverflow.com/questions/30995942/do-constructors-always-have-to-be-public" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>mocking a singleton class</td><td>6</td><td>58</td><td>78734</td><td>2010-02-20</td><td><a href="https://stackoverflow.com/questions/2302179/mocking-a-singleton-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the purposes of inner classes</td><td>12</td><td>58</td><td>38420</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11398122/what-are-the-purposes-of-inner-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Kotlin calling non final function in constructor works</td><td>3</td><td>57</td><td>25089</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/50222139/kotlin-calling-non-final-function-in-constructor-works" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does instanceof return true if instance of a parent?</td><td>4</td><td>56</td><td>60420</td><td>2014-04-17</td><td><a href="https://stackoverflow.com/questions/6304056/does-instanceof-return-true-if-instance-of-a-parent" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does classname.class return?</td><td>6</td><td>56</td><td>35270</td><td>2012-05-07</td><td><a href="https://stackoverflow.com/questions/10477375/what-does-classname-class-return" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Whats the difference between objects and data structures?</td><td>8</td><td>56</td><td>27188</td><td>2015-11-21</td><td><a href="https://stackoverflow.com/questions/23406307/whats-the-difference-between-objects-and-data-structures" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What exactly is an instance in Java?</td><td>11</td><td>54</td><td>298261</td><td>2011-02-26</td><td><a href="https://stackoverflow.com/questions/5126082/what-exactly-is-an-instance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are classes, references, and objects?</td><td>12</td><td>53</td><td>72569</td><td>2017-03-18</td><td><a href="https://stackoverflow.com/questions/9224517/what-are-classes-references-and-objects" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Factory classes</td><td>7</td><td>53</td><td>46871</td><td>2013-01-29</td><td><a href="https://stackoverflow.com/questions/14575457/factory-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I require a method argument in Java to implement multiple interfaces?</td><td>1</td><td>53</td><td>10314</td><td>2013-08-12</td><td><a href="https://stackoverflow.com/questions/1500827/how-can-i-require-a-method-argument-in-java-to-implement-multiple-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Passing whole object vs passing object&#39;s property</td><td>4</td><td>53</td><td>16094</td><td>2017-08-30</td><td><a href="https://stackoverflow.com/questions/21136227/passing-whole-object-vs-passing-objects-property" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between a fluent interface and the Builder pattern?</td><td>2</td><td>52</td><td>40641</td><td>2015-05-05</td><td><a href="https://stackoverflow.com/questions/17937755/what-is-the-difference-between-a-fluent-interface-and-the-builder-pattern" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Abstract class with final uninitialized field</td><td>4</td><td>52</td><td>14820</td><td>2010-02-24</td><td><a href="https://stackoverflow.com/questions/2327509/abstract-class-with-final-uninitialized-field" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the size cost of Java inheritance?</td><td>5</td><td>52</td><td>4772</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23948009/whats-the-size-cost-of-java-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why aren&#39;t static methods considered good OO practice?</td><td>7</td><td>51</td><td>35689</td><td>2014-11-12</td><td><a href="https://stackoverflow.com/questions/4002201/why-arent-static-methods-considered-good-oo-practice" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you get a reference to the enclosing class from an anonymous inner class in Java?</td><td>3</td><td>51</td><td>16019</td><td>2008-09-09</td><td><a href="https://stackoverflow.com/questions/31201/how-do-you-get-a-reference-to-the-enclosing-class-from-an-anonymous-inner-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why declare an interface as abstract?</td><td>11</td><td>51</td><td>34270</td><td>2010-12-19</td><td><a href="https://stackoverflow.com/questions/2134200/why-declare-an-interface-as-abstract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why private method can not be final as well?</td><td>3</td><td>51</td><td>13739</td><td>2016-09-15</td><td><a href="https://stackoverflow.com/questions/23161362/why-private-method-can-not-be-final-as-well" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are Generics in Java?</td><td>3</td><td>49</td><td>39533</td><td>2013-05-25</td><td><a href="https://stackoverflow.com/questions/7815528/what-are-generics-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Anonymous vs named inner classes? - best practices?</td><td>15</td><td>47</td><td>34019</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/714602/anonymous-vs-named-inner-classes-best-practices" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are constructors not inherited in java?</td><td>12</td><td>47</td><td>64698</td><td>2017-02-02</td><td><a href="https://stackoverflow.com/questions/18147768/why-are-constructors-not-inherited-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java programming test for interview</td><td>9</td><td>47</td><td>12030</td><td>2012-10-30</td><td><a href="https://stackoverflow.com/questions/12057460/java-programming-test-for-interview" target="_blank">click</a></td>
+        </tr>      
+        </table>
+    </div>
+</div>
+</body>
+</html>
