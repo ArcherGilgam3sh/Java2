@@ -18,8 +18,8 @@ try:
     # 创建游标对象
     cursor = connection.cursor()
 
-    # 创建名为 top_tags_question 的表格
-    create_table_query = '''CREATE TABLE IF NOT EXISTS top_tags_question (
+    # 创建名为 error_exception_question 的表格
+    create_table_query = '''CREATE TABLE IF NOT EXISTS error_exception_question (
                                 id SERIAL PRIMARY KEY,
                                 Tag TEXT,
                                 QuestionID BIGINT,
@@ -34,7 +34,7 @@ try:
 
     # 插入数据到数据库表格中
     for item in data:
-        insert_query = '''INSERT INTO top_tags_question (Tag, QuestionID, Title, CreationDate, AnswerCount, ViewCount, Score)
+        insert_query = '''INSERT INTO error_exception_question (Tag, QuestionID, Title, CreationDate, AnswerCount, ViewCount, Score)
                           VALUES (%s, %s, %s, %s, %s, %s, %s);'''
         cursor.execute(insert_query, (
             item['Tag'],
