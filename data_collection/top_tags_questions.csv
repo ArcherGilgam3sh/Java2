@@ -1,625 +1,601 @@
-Tag,Question ID,Title,Creation Date,Answer Count,View Count,Score
-docker,77735728,Flask + Docker =&gt; No connection,1703934844,2,31,0
-android,56727980,How to get list of local videos and display them in grid format in React Native?,1561326517,2,710,2
-spring,77735903,OAuth 2.0 Access Token Response: 401 with spring boot 3 and azure ad,1703939358,0,5,0
-spring-boot,77735903,OAuth 2.0 Access Token Response: 401 with spring boot 3 and azure ad,1703939358,0,5,0
-spring,59078288,Using ANTLR with java and maven to parse expressions and convert them to SpEL,1574888083,1,218,2
-docker,77735705,Unable to connect to Docker Host network,1703934572,0,21,0
-android,77735379,Firebase vulnerability in Realtime Database with access token from files,1703926719,0,12,0
-docker,77735841,Connect multiple macvlan networks to one container,1703937495,0,8,0
-android,77733588,Qt 6.6.1 Android Build Error: use of undeclared identifier &#39;GL_DRAW_FRAMEBUFFER&#39;,1703876313,0,45,-1
-android,77730518,App already has local storage (sharedPrefrences) on fresh install flutter,1703830702,0,45,2
-spring-boot,77735290,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (Java),1703924412,0,22,-1
-android,22631011,download failed because resources could not be found in some of android devices,1395741568,1,10144,0
-docker,49628505,postgres container doesn&#39;t take password from environment variable,1522753539,1,1373,0
-spring-boot,77620023,How can a Spring Cloud Gateway expose its (dynamic) routes through a Swagger UI?,1701952300,1,60,0
-spring,77735648,Sending data over a socket in Java at the zeroth nanosecond of a specific hour,1703933298,1,40,1
-android,77714573,"Flutter, How do I default an RxBool variable to a value from Firebase",1703527319,0,35,0
-docker,50133244,File Upload by docker container,1525259454,1,16290,4
-spring-boot,50133244,File Upload by docker container,1525259454,1,16290,4
-android,77735245,"Android SDK 34 AppCompatActivity.requestPermissions does not display permission dialog, but does with Android SDK 29",1703923414,2,24,0
-android,77735775,Flutter Autofill not working with Android biometric verification,1703935956,0,4,0
-kotlin,77155917,Update a pinned device owner managed android app silently (in kiosk mode),1695370702,1,86,0
-docker,75820814,Is it possible to run a local Snowflake instance using Docker?,1679561057,1,2923,6
-kotlin,76988533,java.lang.NoClassDefFoundError: io/mockk/proxy/jvm/advice/jvm/JvmMockKProxyInterceptor ERROR while mocking org.w3c.dom.Node using mockk,1693162969,1,127,1
-gradle,76988533,java.lang.NoClassDefFoundError: io/mockk/proxy/jvm/advice/jvm/JvmMockKProxyInterceptor ERROR while mocking org.w3c.dom.Node using mockk,1693162969,1,127,1
-android,77735223,Push Notification doesn&#39;t appear like Heads-up in Flutter,1703922688,2,21,0
-docker,66146088,Docker gets error &quot;failed to compute cache key: not found&quot; - runs fine in Visual Studio,1612996365,24,385940,266
-docker,77721173,Docker Angular+Nginx error code 403 or 500,1703670547,1,33,0
-gradle,77735703,Could not write XML test results when running parallel tests for different browsers in different workspaces,1703934553,0,7,-2
-android,76669481,"Ionic 7 (Angular), Capacitor, Error saving image to Firebase Storage",1689156832,2,106,0
-maven,77511739,Suppressing Javadoc 21 DocLint warnings specifically for &quot;no main description&quot;,1700414466,1,126,3
-android,54762296,How to implement Branch SDK in my Flutter app,1550566792,4,3444,11
-android,70998910,Augmented reality app : convert a drawing into a animated 3D model,1644071142,0,67,0
-spring,36143287,How to configure log4j in a Spring Mvc application configured with Java Annotations and using a log4j.properties file,1458601531,2,11656,1
-android,77733165,Any scrolling calendar that can start with the current date?,1703869894,0,36,1
-android,77735513,How can i add a delete button in this app?,1703930221,2,35,0
-spring-boot,77648069,Swagger UI put my every endpoint in the &quot;default&quot; group. Why is it doing it?,1702402856,1,31,-2
-spring-boot,72485521,The provided definition does not specify a valid version field when render openapi,1654237766,2,7962,5
-android,77735621,"Friends, I am making an Instagram clone and I am having problems following users, can you help me?",1703932873,0,15,0
-kotlin,77735621,"Friends, I am making an Instagram clone and I am having problems following users, can you help me?",1703932873,0,15,0
-android,77434647,My Cordova Splash Screen not working on Android,1699311222,1,117,0
-spring-boot,77735585,Refreshing expired JWT token automatically in Spring,1703931883,1,17,0
-hibernate,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0,13,0
-jpa,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0,13,0
-spring-data-jpa,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0,13,0
-android,77735593,How to organize a peer group call?,1703931993,0,8,0
-android,77735584,Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++,1703931878,0,8,0
-android,77720509,react-navigation optimizations in low-performance Android,1703660895,1,34,0
-android,72864680,Implement CollapsingToolbar using Jetpack compose,1657001347,1,870,1
-android,77735291,How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?,1703924416,1,22,0
-kotlin,77735291,How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?,1703924416,1,22,0
-spring-boot,77735542,I want to connect to react login page when spring security is being added in the gradle project,1703930953,0,7,-1
-android,77721311,Unable to start existing react native project. Facing gradle issue,1703672371,1,59,0
-gradle,77721311,Unable to start existing react native project. Facing gradle issue,1703672371,1,59,0
-android,77733253,"Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",1703871134,0,39,0
-android,70992083,Android Error: Cannot resolve symbol &#39;PackageList&#39;,1644004023,4,11161,2
-android,77735480,Capacitor startActivityForResult() trigger callnack function on second activity start,1703929521,0,11,0
-spring-boot,77717771,How does Spring distinguish which controller method to execute?,1703601539,0,48,-4
-android,77732069,How do we code/edit react native mobile apps on android studio. (Not talking about the emulator or env setup but writing code in Android studio),1703854029,1,28,0
-spring-boot,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0,22,0
-gradle,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0,22,0
-android,77735092,Issue on Android 13 : Android — Repeat notification daily on specific time,1703919089,1,29,1
-spring,77735125,SpringBoot @ConfigurationProperties,1703919796,0,38,0
-spring-boot,77735125,SpringBoot @ConfigurationProperties,1703919796,0,38,0
-spring-boot,77734852,How to fix &#39;package org.springframework.jdbc.core does not exist&#39;,1703910155,2,23,0
-android,77732157,How to set a custom icon to an Android / IOS push notification in expo react native app?,1703855564,1,24,0
-android,77735382,Fragment is transparent and shows Activity below(changing to dark mode or light mode),1703926837,1,16,0
-kotlin,77735382,Fragment is transparent and shows Activity below(changing to dark mode or light mode),1703926837,1,16,0
-jpa,77735065,Calling a sql function from java gives error,1703918260,0,36,0
-android,26902555,How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT,1415859570,1,14014,2
-docker,77685959,ERROR: for nginx: Bind for 0.0.0.0:443 failed: port is already allocated while running Coolify &amp; BTCPayServer,1702996520,1,77,1
-docker,77734617,Dockerizing Golang with Apache-Kafka,1703900690,0,24,-1
-spring,77732459,Spring Boot 3.2 JDBC,1703859876,0,34,-3
-spring-boot,77732459,Spring Boot 3.2 JDBC,1703859876,0,34,-3
-android,77735288,How does &quot;Android CI&quot; GitHub Action work without setting up Android tools?,1703924382,0,16,0
-spring,77735323,Cannot connect to postgreSQL using Docker,1703925421,0,19,-1
-docker,77735323,Cannot connect to postgreSQL using Docker,1703925421,0,19,-1
-android,63426705,How to create HTTP server app in flutter?,1597499062,2,10943,5
-spring-boot,77733087,Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working,1703868766,1,24,0
-spring-data-jpa,77733087,Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working,1703868766,1,24,0
-spring,75825235,Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE,1679586789,2,4352,1
-spring-boot,75825235,Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE,1679586789,2,4352,1
-android,77715897,Implementing Complex Motion and Choreography in Android Animation,1703571263,0,29,0
-kotlin,77715897,Implementing Complex Motion and Choreography in Android Animation,1703571263,0,29,0
-android,76016637,java language options not show in android studio,1681485598,6,12910,8
-android,77735237,Access TextField value from another composable function in by click FloatingActionButt,1703923147,0,6,0
-kotlin,77735237,Access TextField value from another composable function in by click FloatingActionButt,1703923147,0,6,0
-spring-boot,77734973,SpringBoot API Authentication with AuthenticationManager,1703914710,1,23,0
-spring,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0,10,0
-docker,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0,10,0
-gradle,77734574,How can JavaDocs be configured to be generated in a specified project root directory?,1703899112,1,23,1
-android,57937350,Cannot save snapshot AVD,1568478506,1,1027,9
-docker,77732714,AppEngine Flex instance using custom python and virtualenv failed to deploy,1703863409,0,14,0
-spring-boot,66328022,Captcha Implementation in Angular and Spring Based web application,1614061053,2,2333,0
-spring,77735107,best practice for implementing pagination in spring reactive data mongodb,1703919457,0,7,0
-spring-boot,77735107,best practice for implementing pagination in spring reactive data mongodb,1703919457,0,7,0
-docker,75521775,Buildx Docker Image Claims to be a Manifest List,1676989209,2,1373,3
-spring-boot,77733266,GitHub Action failing on mvn clean install,1703871324,0,31,-1
-maven,77733266,GitHub Action failing on mvn clean install,1703871324,0,31,-1
-android,77721006,Usage of remembering a lambda function in rememberUpdatedState(),1703668499,1,39,1
-kotlin,77721006,Usage of remembering a lambda function in rememberUpdatedState(),1703668499,1,39,1
-spring-boot,77731857,onstatus catches exception but mono error is ignored and client gets http status code 200,1703851159,0,21,0
-android,70604161,Failed to resolve: org.jitsi.react:jitsi-meet-sdk:3.+,1641456604,6,3919,3
-spring-boot,69402824,Java 17 with Maven Wrapper results in Unrecognized VM option &#39;MaxPermSize=512m&#39;,1633076985,3,30477,18
-maven,69402824,Java 17 with Maven Wrapper results in Unrecognized VM option &#39;MaxPermSize=512m&#39;,1633076985,3,30477,18
-android,77734441,Querying audio files from external storage on Android in Kotlin not working,1703895086,1,20,0
-kotlin,77734441,Querying audio files from external storage on Android in Kotlin not working,1703895086,1,20,0
-android,77734056,raise the Android Files app in the Download folder and let the user manipulate files,1703884764,0,17,0
-android,77701903,Android Studio: The device may not have sufficient computing power for encoding display contents,1703224292,1,32,1
-android,77734927,Adding a page title and back button to fragments in Android Studio,1703913085,1,29,1
-docker,77734999,not able create recursine build in pnpm repo while building up docker image,1703915747,0,6,0
-android,77734982,Problem on Android Studio (Kotlin). RecyclerView in Fragment not showing anythig,1703915082,0,17,0
-android,77734942,java.lang.ClassNotFoundException - Didn&#39;t find class &quot;dgnc&quot; on path: DexPathList[[zip file &quot;/system/framework/com.android.media.remotedisplay.jar&quot;,1703913743,0,12,0
-kotlin,77734935,Problems with Java/Kotlin Build Application using IDEA,1703913488,0,14,0
-android,77731499,Android build fails because of missing import,1703846814,1,21,0
-android,66722104,New Google Sign-In API - refresh token,1616246558,2,1178,3
-android,34810794,Google sign in API token expiration,1452859815,2,2600,4
-android,63674765,How to get valid Google ID token after it expires in 1 hour,1598891910,2,866,0
-kotlin,63674765,How to get valid Google ID token after it expires in 1 hour,1598891910,2,866,0
-android,17255565,Memory dump an app in android,1371937065,1,10005,5
-android,38737021,How to refresh ID token after it expires when integrating Google sign-in on Android?,1470209102,2,6617,17
-android,36431152,"google sign-in for android, token expires, Authenticate with a backend server",1459871163,2,785,5
-android,77734882,APK built by Unity won&#39;t install - INSTALL_PARSE_FAILED_NO_CERTIFICATES - APK Signature Scheme v2: SHA-256 digest of contents did not verify,1703911732,0,9,0
-spring,77734492,More than 1 Component for injection,1703896557,1,31,0
-android,4258623,Show soft keyboard for dialog,1290531363,6,44394,85
-kotlin,4258623,Show soft keyboard for dialog,1290531363,6,44394,85
-maven,77733648,NoClassDefFoundError: com/fasterxml/jackson/databind/AnnotationIntrospector$XmlExtensions,1703877456,0,31,-3
-android,18572014,Enabling zoom on scroll view,1378120831,2,9111,7
-android,77734816,Is there any way to better my APN for T-Mobile network,1703908626,0,19,-3
-android,77734457,SDL2 Android image not rendering,1703895607,0,14,-3
-android,41089042,How do I install a previous version of build tools in addition to the sdk?,1481477861,3,10822,20
-android,7200535,How to convert Views to bitmaps?,1314338197,7,50558,36
-hibernate,77709560,Oracle Connnection issue in Hibernate Reactive,1703386096,1,22,0
-kotlin,77675150,Error when tring to fetch data from MongoDb,1702830329,1,106,2
-android,77731063,Is it possible to trigger Android app updates programmatically without user interaction using Google Play Core Library?,1703840764,1,44,1
-spring,77614433,Using Hibernate-Reactive and together R2DBC in one project,1701876981,3,106,0
-spring-boot,77734752,resttemplate does not retrieve the full data of a file from server,1703906237,0,11,0
-spring-boot,55494154,How to fix org.apache.spark.SparkException: Job aborted due to stage failure Task &amp; com.datastax.spark.connector.rdd.partitioner.CassandraPartition,1554291170,1,13010,2
-android,77732453,change tint and saturation of live camera in flutter using camera package,1703859748,1,13,0
-docker,77732961,Django-based Docker project will connect to local postgres DB on windows machines but not on a Mac or Linux machine,1703867070,1,23,0
-android,77734688,Android Layout Inspector too smart,1703903295,0,13,0
-docker,68647737,Ignoring specific files in Dockerfile.dockerignore does not work,1628064976,3,1611,1
-spring-boot,77734674,Searching between two dates greater and less than just works with new ISODate within the @query expression declared in java with mongorepository jpa,1703902861,0,10,0
-jpa,77734674,Searching between two dates greater and less than just works with new ISODate within the @query expression declared in java with mongorepository jpa,1703902861,0,10,0
-hibernate,40561414,Getting a nullpointerexception for my EntityManager,1478942658,2,12247,5
-gradle,77734633,Deploying a Java Lambda function with container images,1703901429,0,19,0
-android,77734629,"Data is reapting and mutitype views are overlapping in recyclerview, i am using delegate adapter pattern - android",1703901340,0,7,0
-gradle,77734619,Gradle signing failing because &quot;because it has no configured signatory&quot; when using useInMemoryPgpKeys,1703900783,0,5,0
-android,52867948,Illegal character in opaque part at index 2 flutter,1539843016,10,39956,23
-android,11930054,Receiving Cell Broadcast for showing current location (Channel 50) in android,1344843847,1,12403,9
-docker,74325956,docker: Error response from daemon: network mongo-network not found,1667633727,1,1574,0
-android,77734353,Save images in a certain folder when taking picture mkdirs() android/java,1703892338,0,20,0
-spring,62254314,Spring JPA - Hibernate: Batch insert execute too much select nextval (‘sequence’),1591585013,3,4234,5
-hibernate,62254314,Spring JPA - Hibernate: Batch insert execute too much select nextval (‘sequence’),1591585013,3,4234,5
-spring-data-jpa,62254314,Spring JPA - Hibernate: Batch insert execute too much select nextval (‘sequence’),1591585013,3,4234,5
-android,77734579,Flutter - Font not rendering properly,1703899245,0,19,0
-spring-boot,77725066,Access to XMLHttpRequest at &#39;http:/vm_address:8080/api/v1/contacts/&#39; from origin &#39;http://vm_address:5173&#39; has been blocked by CORS policy: Response,1703739065,0,50,-2
-android,54050657,pass OnActivityResult data back to hybrid app from capacitor,1546680177,2,3666,2
-docker,77734564,Jib Maven Plugin Error: &quot;Missing target image parameter&quot; When Building Docker Image,1703898916,0,17,0
-maven,77734564,Jib Maven Plugin Error: &quot;Missing target image parameter&quot; When Building Docker Image,1703898916,0,17,0
-kotlin,77734561,How can I access the clipboard without a window?,1703898868,0,7,0
-docker,76771312,Java Docker API CPU Calculation,1690374447,2,39,0
-docker,47660841,How do I check if an image:tag exists in gitlab container registry,1512500474,5,17840,15
-spring-boot,77734518,The thymeleaf template does not display the date from the database,1703897612,0,12,0
-docker,77734516,COPY two folders in docker (failed to compute cache key: failed to calculate checksum of ref),1703897572,0,6,0
-kotlin,77734505,Kotlin KAPT to KSP can&#39;t find bean,1703897220,0,8,0
-gradle,77734505,Kotlin KAPT to KSP can&#39;t find bean,1703897220,0,8,0
-spring,77734293,[Spring][JPA] Automatic save when ManyToMany,1703890386,1,18,0
-hibernate,77734293,[Spring][JPA] Automatic save when ManyToMany,1703890386,1,18,0
-spring-data-jpa,77734293,[Spring][JPA] Automatic save when ManyToMany,1703890386,1,18,0
-gradle,77734436,IntelliJ IDEA&#39;s &quot;External Libraries&quot; shows every class shows twice after adding dependency,1703894857,0,14,0
-spring-boot,76987080,CORS in Spring Security (Spring Boot 3),1693138749,4,896,1
-gradle,77734449,Gradle Kotlin DSL use jniLibs,1703895455,0,6,0
-android,77734058,Images from Firebase Storage won&#39;t load,1703884827,1,60,0
-spring,77734036,Spring Boot with Kubernetes Java Client API - Edit Namespace,1703884404,0,28,0
-spring-boot,77734036,Spring Boot with Kubernetes Java Client API - Edit Namespace,1703884404,0,28,0
-docker,77734442,Azure Function on AKS with KEDA always stops,1703895088,0,9,0
-spring-boot,64507704,Java swagger-ui doesn&#39;t render allowableValues for parameter,1603489772,1,9691,2
-maven,64507704,Java swagger-ui doesn&#39;t render allowableValues for parameter,1603489772,1,9691,2
-spring,52123521,Maven Clean Issue - Non-resolvable import POM - Could not transfer artifact from NEXUS,1535757048,4,8698,1
-maven,52123521,Maven Clean Issue - Non-resolvable import POM - Could not transfer artifact from NEXUS,1535757048,4,8698,1
-kotlin,77734434,Mutiny how to interupt chain operation,1703894810,0,23,0
-android,55315107,Flutter Webview change webpage is not available,1553353485,3,14329,4
-android,77734414,How to connect Android Java App to MongoDB,1703894049,0,17,0
-docker,77734380,How to create a .devcontainer for a git repository that holds two different node apps with two different package.json files?,1703892965,0,8,0
-android,77730734,ViewModel Structure not maintaining variable values when called in seperate Jetpack Compose Composables,1703834792,2,34,0
-kotlin,77730734,ViewModel Structure not maintaining variable values when called in seperate Jetpack Compose Composables,1703834792,2,34,0
-android,77734267,Android : Spinner : set ArrayAdapter in code want no call onItemSelected and only call when user click on spinner,1703889677,0,33,1
-kotlin,77734267,Android : Spinner : set ArrayAdapter in code want no call onItemSelected and only call when user click on spinner,1703889677,0,33,1
-kotlin,77733246,Kotlin dataclass function is getting called during serialization,1703870909,0,30,0
-android,21903934,How to debug webview remotely?,1392889552,7,68024,50
-android,60807411,Remove Augmented Image and add a new one when new image is detected,1584932249,0,128,2
-kotlin,60807411,Remove Augmented Image and add a new one when new image is detected,1584932249,0,128,2
-docker,77734249,Trouble Accessing Selenium Grid on Google Cloud Run from Remote Client,1703889309,0,11,0
-spring-boot,77732906,Implement Springboot Webclient with PKCS12 configuration,1703866208,0,18,0
-docker,77734255,Docker pull starts fast then becomes extremely slow,1703889413,0,12,0
-android,77734246,Preload android application on tablet,1703889164,0,14,0
-kotlin,77713414,KMP: Failing to add &#39;cafe.adriel.voyager&#39; dependency,1703501734,1,65,1
-gradle,77713414,KMP: Failing to add &#39;cafe.adriel.voyager&#39; dependency,1703501734,1,65,1
-hibernate,77734213,@ManyToOne is generating as &quot;not null&quot; and should be nullable,1703888299,0,16,0
-jpa,77734213,@ManyToOne is generating as &quot;not null&quot; and should be nullable,1703888299,0,16,0
-spring-data-jpa,77734213,@ManyToOne is generating as &quot;not null&quot; and should be nullable,1703888299,0,16,0
-hibernate,77734228,JPA and Hibernate - Select same object twice and get two instances,1703888694,0,9,0
-jpa,77734228,JPA and Hibernate - Select same object twice and get two instances,1703888694,0,9,0
-android,67455823,No Activity found to handle intent OPEN_DOCUMENT_TREE on some Samsung Android devices,1620549851,3,1841,2
-kotlin,77733410,Create object with list of another object,1703873677,1,32,0
-android,77734187,Updating RecyclerView to display downloaded PDF bitmaps using DownloadManager in Android,1703887599,0,15,0
-spring-boot,77734189,Docker discovery server and client API Java Spring boot,1703887621,0,12,0
-docker,77734189,Docker discovery server and client API Java Spring boot,1703887621,0,12,0
-spring-boot,77734159,Spring Boot 3.2 REST API Call with Generic Response: Type Mismatch Issue,1703887110,0,18,0
-android,77724836,how to custom intent to ask for permisson in mediaProjection in android?,1703732228,1,35,0
-android,77734122,Why the published app android don&#39;t login with Google?,1703886334,1,12,0
-android,60790653,How to fix INSTALL_FAILED_INVALID_APK error in Android Studio?,1584810035,11,22445,12
-gradle,60790653,How to fix INSTALL_FAILED_INVALID_APK error in Android Studio?,1584810035,11,22445,12
-android,25274296,ADB Install Fails With INSTALL_FAILED_TEST_ONLY,1407878674,28,187918,277
-android,77734051,Android for Cars - access MainActivity to variables from MediaBrowserServiceCompat service,1703884684,0,20,0
-gradle,77734101,مشكلة تبعيات الغرادل والتوافق مع المحاكي emulator vs gradle,1703885871,0,10,-1
-android,77733301,&#39;libsample.so&#39; Not Found error when trying two use more than one cpp in android JNI?,1703871888,0,16,0
-kotlin,77734067,File search in kotlin,1703884961,0,25,0
-docker,42510002,Docker: How to clear the logs properly for a Docker container?,1488288328,25,705044,531
-spring-boot,77732637,Error when setting fields and putting data in a database (H2) from the website using Thymeleaf and Spring boot,1703862030,0,22,0
-android,77734053,using two observes to update one EditText,1703884696,0,18,0
-android,77729895,how to bypass your account is not verified on google dev,1703814110,0,12,-1
-android,77733567,error: [Dagger/MissingBinding]. Cannot be provided without an @Provides-annotated method,1703875927,1,52,-1
-kotlin,77733567,error: [Dagger/MissingBinding]. Cannot be provided without an @Provides-annotated method,1703875927,1,52,-1
-spring,71329742,timescaledb with spring data jpa,1646258873,3,2321,3
-spring-data-jpa,71329742,timescaledb with spring data jpa,1646258873,3,2321,3
-maven,77733933,How to prevent MVN from changing file dates as it packages a WAR file?,1703882222,1,23,0
-android,25538752,How to mute the beep sound for SpeechRecognizer?,1409183922,4,21166,10
-docker,77724807,How to switch between Docker Containers using the same service name?,1703731384,1,27,1
-spring-boot,57231039,Choose the format of Date of an attribute in The Entity Class,1564221687,3,24787,3
-spring-data-jpa,57231039,Choose the format of Date of an attribute in The Entity Class,1564221687,3,24787,3
-android,63865126,Why would google maps not show up in flutter?,1599946574,2,2296,2
-android,77733708,Trying to use an EditText inside an infoWindow in android studio (Java),1703878534,1,25,1
-android,77733930,Advice on learning about Android GPS Tethering via USB,1703882199,0,25,-2
-android,43731872,how to get video id from clicking YouTube search page link in a webview,1493708120,2,1048,0
-android,42174931,Android 5+ how to change preferred network,1486809867,0,294,2
-spring-boot,77726297,How can I invoke lambda handler in custom runtime environment?,1703759127,2,57,0
-hibernate,24386771,javax.validation.ValidationException: HV000183: Unable to load &#39;javax.el.ExpressionFactory&#39;,1403613247,16,165489,137
-maven,24386771,javax.validation.ValidationException: HV000183: Unable to load &#39;javax.el.ExpressionFactory&#39;,1403613247,16,165489,137
-docker,76443422,Unable to connect to Postgres Docker container with DBeaver,1686342031,2,1068,-1
-docker,68247187,Connect to PostgreSQL Database in Docker Container from DBeaver,1625419310,2,3740,2
-android,77725693,Android Kotlin: NFC Tag not reading by the app,1703750910,1,27,0
-kotlin,77725693,Android Kotlin: NFC Tag not reading by the app,1703750910,1,27,0
-android,77733775,My app in android studio is crashing due to ContactViewModell class . It is an list of contacts app with CRUD operations,1703879479,0,9,0
-android,77733350,Error in CredentialManager.createCredential method without much information,1703872478,0,10,0
-spring,77733687,StepScope bean duplication when using XML based bean definition,1703878028,0,14,0
-spring-boot,77733687,StepScope bean duplication when using XML based bean definition,1703878028,0,14,0
-kotlin,77733183,Check if there is specific object in kotlin,1703870058,1,27,0
-docker,77733286,Best way to initialize named volume from Docker image/container,1703871619,1,33,-1
-docker,64682749,Running Redis rq worker on Docker,1604502848,1,2413,1
-android,70043592,How to sign apk programmatically with &quot;apksig library&quot; in Android studio,1637387772,0,224,0
-spring,62269466,Java MapStruct always convert boolean to false,1591643090,1,473,1
-kotlin,77592215,How do I get a good form layout in Compose?,1701551829,1,38,0
-docker,77733463,Docker DNS (127.0.0.11) cannot resolve anything,1703874421,1,36,0
-android,77733627,My build keeps failing - execution failed for task &#39;:location:parseReleaseLocalResources&#39;,1703877109,0,12,0
-gradle,77733627,My build keeps failing - execution failed for task &#39;:location:parseReleaseLocalResources&#39;,1703877109,0,12,0
-android,77733459,"How to take a picture and set it as my ImageButton, without using the deprecated method startActivityForResult()?",1703874396,1,16,0
-spring,77727026,"Is it possible to use Spring Boot SSL bundles internally, while keeping legacy configuration (e.g. javax.net.ssl.*) in application.properties?",1703768354,1,35,1
-spring-boot,77727026,"Is it possible to use Spring Boot SSL bundles internally, while keeping legacy configuration (e.g. javax.net.ssl.*) in application.properties?",1703768354,1,35,1
-spring-boot,77721233,Database PostgreSql: column String or JSON?,1703671378,1,38,0
-android,77682600,How to fix &quot;android.support.v4.content.LocalBroadcastManager&quot; import error jetpack compose and MqttService.java,1702951621,0,100,-1
-gradle,77733553,Implementing Different Build Configurations in Compose Multiplatform for Android and iOS,1703875730,0,10,0
-android,72382777,How to benefit on &quot;warm start&quot; from the saved instance state bundle passed into onCreate() or onRestoreInstanceState(),1653504446,1,81,0
-docker,77733475,Unable to run a streamlit app using docker and supervisor,1703874620,0,26,-1
-spring,77729835,How do I configure Spring to retrieve the OIDC user?,1703811913,1,29,0
-spring,47593537,Disable Spring Security config class for @WebMvcTest in Spring Boot,1512131730,12,53323,43
-spring-boot,47593537,Disable Spring Security config class for @WebMvcTest in Spring Boot,1512131730,12,53323,43
-spring-boot,77733482,CircuitBreaker fallback method getting call for every case,1703874770,0,10,0
-spring,11648706,Spring RestTemplate Client - connection refused exception,1343215739,2,108078,13
-android,68164883,How do I create a Jetpack Compose Column where a middle child is scrollable but all of the other children are always visible?,1624889493,3,66150,59
-android,70939513,When to initialize resources to be used inside Compose Canvas?,1643713447,2,997,0
-gradle,76745981,Can&#39;t downgrade to a specific version of &quot;android gradle plugin version&quot;,1690064339,1,421,0
-android,77732725,Should I use main-safety code to run callbacks in Android (Kotlin)?,1703863565,0,15,0
-kotlin,77732725,Should I use main-safety code to run callbacks in Android (Kotlin)?,1703863565,0,15,0
-android,77733409,flutter_html_to_pdf - The Android Gradle plugin supports only Kotlin Gradle plugin version 1.5.20 and higher,1703873634,0,28,0
-kotlin,77733409,flutter_html_to_pdf - The Android Gradle plugin supports only Kotlin Gradle plugin version 1.5.20 and higher,1703873634,0,28,0
-android,77733400,Flutter - Execution failed for task &#39;:app:processDebugMainManifest&#39;,1703873447,0,19,0
-gradle,77733400,Flutter - Execution failed for task &#39;:app:processDebugMainManifest&#39;,1703873447,0,19,0
-android,77733391,ionic capacitor in app purchase requires to open app to confirm subscription,1703873222,0,7,0
-android,77733360,how to implement predictive text functionality inside the text field or text view In Android java so the next word will populate as placeword,1703872666,0,19,0
-android,74731898,Why tailwind css is not applying as style in react-native?,1670510081,3,781,0
-spring-boot,77733139,How to implement Zipkin in Spring Boot 3?,1703869539,1,37,0
-android,77733275,"Beanshell syntax parsing error (lambdas, returns...)",1703871497,0,7,-1
-android,66212513,Whats is benefits or difrrencess between Viewpager vs ViewPager2,1613409513,2,8586,8
-android,77733261,Why do threads keep uploading in my app and how can I control them?,1703871253,0,10,0
-spring-boot,77733259,Cacheable principle of REST Architecture Implementation on Spring Boot,1703871217,0,8,0
-android,77729624,VMWare not recognizing my android phone (the device was unable to connect to its ideal host controller),1703806041,1,18,0
-spring-boot,77733186,Can Spring Boot JSP limitation be solved?,1703870094,0,18,-1
-android,69426486,Android Databinding Cannot find a setter for * that accepts parameter type *,1633276588,5,6582,2
-kotlin,69426486,Android Databinding Cannot find a setter for * that accepts parameter type *,1633276588,5,6582,2
-spring-boot,77733237,JdbcSQLSyntaxErrorException while executing flyway migration script in h2 on spring-boot startup,1703870805,0,14,0
-hibernate,77733237,JdbcSQLSyntaxErrorException while executing flyway migration script in h2 on spring-boot startup,1703870805,0,14,0
-spring-data-jpa,77733237,JdbcSQLSyntaxErrorException while executing flyway migration script in h2 on spring-boot startup,1703870805,0,14,0
-maven,48732435,Spring Boot Serving .jsp &lt;jar&gt;,1518358555,3,829,0
-spring-boot,48732435,Spring Boot Serving .jsp &lt;jar&gt;,1518358555,3,829,0
-spring-boot,77303677,Virtual Threads and Spring WebFlux,1697474942,1,1482,2
-spring,77733158,Which Spring Boot version is compatibe with Tomcat 10.0.27?,1703869814,0,19,-2
-spring-boot,77733158,Which Spring Boot version is compatibe with Tomcat 10.0.27?,1703869814,0,19,-2
-android,77635384,How to use a viewpager inside another fragment and not get any lifecycle issues?,1702222960,1,50,0
-kotlin,77635384,How to use a viewpager inside another fragment and not get any lifecycle issues?,1702222960,1,50,0
-spring-boot,77733214,Springboot metric &quot;disk_free&quot; shows unit in &quot;Tri&quot; instead of MB/GB in grafana,1703870406,0,11,-1
-spring-boot,77732873,How to use @Query annotation for mongodb queries along with the repository methods like findTop,1703865829,1,24,-1
-docker,26757264,npm package.json and docker (mounting it...),1415190622,5,5401,8
-docker,77733167,Mounting a volume on host in a docker container,1703869921,0,15,0
-android,77733071,Unable to update using Retrofit from the ID i declared into it,1703868564,1,21,1
-kotlin,77733071,Unable to update using Retrofit from the ID i declared into it,1703868564,1,21,1
-android,77725174,How to manually get a light version of a color?,1703741662,1,27,0
-android,43738389,VideoView Uri redirection,1493729525,0,125,0
-spring-boot,77733114,Springboot metric &quot;process_files_open&quot; shows large numbers for both &quot;open&quot; and &quot;max&quot;,1703869208,0,9,-2
-docker,31255934,How come my kubernetes&#39; service can&#39;t find an endpoint?,1436218021,6,46301,18
-android,77733085,Activate Button is disabled in Device Admin Screen in android,1703868730,0,22,0
-android,77720202,Detect onclick of any element in a list (android studio),1703655269,1,25,-1
-kotlin,77720202,Detect onclick of any element in a list (android studio),1703655269,1,25,-1
-spring-boot,77733046,"metric &quot;application_started_time&quot; for springboot shows 01/01/1970, 08:00:00 AM in grafana",1703868160,0,18,-2
-docker,77548936,Minikube on Docker shows high CPU utilization every 10 seconds,1700934084,0,65,1
-android,77733042,MAUI How to emulate screen width of android being 1080?,1703868064,0,9,0
-android,54684814,react native secureTextEntry not working on android,1550127789,7,14937,3
-spring,77731193,Why does Spring boot ignore spring.datasource.url in application.properties for my h2 database?,1703842443,1,86,0
-spring-boot,77731193,Why does Spring boot ignore spring.datasource.url in application.properties for my h2 database?,1703842443,1,86,0
-spring,77732986,Does getReference() method don&#39;t work in Kotlin?,1703867372,0,10,-1
-kotlin,77732986,Does getReference() method don&#39;t work in Kotlin?,1703867372,0,10,-1
-android,77717346,androidx.credentials.exceptions.GetCredentialCancellationException: activity is cancelled by the user,1703595033,1,40,2
-kotlin,77717346,androidx.credentials.exceptions.GetCredentialCancellationException: activity is cancelled by the user,1703595033,1,40,2
-kotlin,77730256,Is class can declared as type for a variable in Kotlyn,1703824165,0,22,0
-spring,77732979,ERROR: No primary or single unique constructor found for class [Ldsawmain.entity.vo.TagVO;,1703867247,0,26,0
-spring-boot,77732979,ERROR: No primary or single unique constructor found for class [Ldsawmain.entity.vo.TagVO;,1703867247,0,26,0
-spring-boot,77732962,Thymeleaf template th:include strange behaviour,1703867072,0,13,0
-android,77732969,Net Maui Navigation Back button,1703867127,0,8,0
-docker,76160943,Docker Desktop - An unexpected error was encountered while executing a WSL command,1683094843,19,70562,15
-android,77731381,Cannot use Guava library in iOS by Kotlin Multiplatform,1703845133,1,23,0
-android,11523797,How to add a MOOV atom in a mp4 video file,1342532562,7,134821,54
-android,77732825,Laggy keyboard after first keystroke in TextField Jetpack Compose,1703865151,1,38,0
-docker,77732318,CASA APK Scan - NoCredentialsError: Unable to locate credentials,1703857719,1,17,0
-android,77732572,How to get white color when on dark theme and dark color when on light theme?,1703861269,2,30,0
-android,77728809,I was trying to identify the two face are similar are not using face recognition with opencv,1703791780,0,23,-3
-kotlin,77728809,I was trying to identify the two face are similar are not using face recognition with opencv,1703791780,0,23,-3
-docker,63437878,Creating a mongodb user from env variables,1597586911,2,1648,0
-docker,77732829,What to use instead of ${CI_REGISTRY_PASSWORD} from Gitlab CI for Docker Login?,1703865186,0,10,0
-android,77732781,AppCenter Build: Project {project-name} at : is either no Android app project or build version has not been set to override. Skipping,1703864477,0,7,0
-spring-boot,77732752,How to implement logic that processes conditions after a specific time has passed following an API call?,1703864038,0,18,0
-spring-boot,77082912,Springboot keycloak SAML Failed to resolve any signing credential,1694445858,0,117,0
-android,77732757,Android application with baselineprofile macro benchmark is failing with profileinstaller library issue,1703864112,0,5,0
-android,77732746,Build apk from Android-Studio works not from command line,1703863963,0,9,0
-spring,74753391,Migration to SpringBoot 3: trunc a date with oracle driver no longer works (hibernate),1670679412,5,4959,9
-spring-boot,74753391,Migration to SpringBoot 3: trunc a date with oracle driver no longer works (hibernate),1670679412,5,4959,9
-hibernate,74753391,Migration to SpringBoot 3: trunc a date with oracle driver no longer works (hibernate),1670679412,5,4959,9
-maven,66972941,What are the best practices for creating a quarkus multi-module project?,1617727532,2,9186,3
-docker,77732696,Blazor Webassembly and ASP.NET API: &quot;TypeError: Failed to fetch&quot; error when API is dockerized,1703863040,0,25,0
-android,77731511,Android unusual Image Buttons,1703846983,1,36,0
-android,72184143,Caused by: java.util.zip.ZipException: zip END header not found,1652176187,1,16053,0
-gradle,72184143,Caused by: java.util.zip.ZipException: zip END header not found,1652176187,1,16053,0
-android,15652825,How can I access a method from another fragment class?,1364364445,1,8661,1
-kotlin,37977320,How to mock a Kotlin singleton object?,1466626057,7,60823,60
-android,77732098,Detecting if the app is running on the Virtual Android Environment apps like clone app or multi app space,1703854455,1,24,0
-kotlin,77732098,Detecting if the app is running on the Virtual Android Environment apps like clone app or multi app space,1703854455,1,24,0
-android,77732630,How to push critical/emergency alerts/notifications on Android with Expo,1703862014,0,13,0
-android,70719971,Is it possible to use an Android SDK on Raspberry Pi 4?,1642235936,1,572,0
-spring-boot,77732621,how to load css and font locally for jHipster 7,1703861873,0,11,0
-spring-data-jpa,77731785,Hibernate multitenancy fails after upgrade to 6.2,1703850145,1,9,0
-android,77732593,Why might my app suddenly be running much slower after a system update?,1703861495,0,25,-1
-kotlin,77732593,Why might my app suddenly be running much slower after a system update?,1703861495,0,25,-1
-spring-boot,77732584,JBWEB000124: The requested resource is not available,1703861443,0,20,2
-spring-boot,77732582,How to request a file and a json list on an endpoint?,1703861416,0,19,0
-spring-boot,77716036,how to load JPA Entities and Repositories in sprint boot app from external folder/jar,1703573953,2,38,0
-jpa,77716036,how to load JPA Entities and Repositories in sprint boot app from external folder/jar,1703573953,2,38,0
-android,77696969,How to trim video in jectpack compose with custom slider to select start and the end point in the video,1703151320,0,25,0
-maven,72837802,Eclipse maven exception java.lang.ExceptionInInitializerError: Cannot access defaults field of Properties [in thread &quot;Worker-27: Building&quot;],1656752503,2,6342,1
-spring,77732517,Spring boot dont record multipart data from curl,1703860702,0,14,-1
-spring-boot,77732517,Spring boot dont record multipart data from curl,1703860702,0,14,-1
-android,57883438,SigningConfig &quot;release&quot; is missing required property &quot;keyPassword&quot;,1568184020,10,37004,26
-android,77731931,How can i change keyboard language while changing the text field in flutter?,1703852025,1,26,0
-android,77732202,Even though I didn&#39;t send any data via intent I get this error: FAILED BINDER TRANSACTION,1703856059,0,25,0
-android,77732467,How to implement a search function in my Application that have a sqlite database?,1703860005,0,19,0
-android,77732462,Create of a Jetpack Compose project problem with gradle-plugin:1.9.0,1703859932,0,9,0
-kotlin,77732462,Create of a Jetpack Compose project problem with gradle-plugin:1.9.0,1703859932,0,9,0
-maven,77732452,Maven WildFly Deployment Failure with Conflicting JNDI Bindings and Missing Dependencies,1703859742,0,7,0
-jpa,77732452,Maven WildFly Deployment Failure with Conflicting JNDI Bindings and Missing Dependencies,1703859742,0,7,0
-hibernate,77732410,Unsatisfied dependency for type org.hibernate.search.mapper.orm.session.SearchSession using programmatic mapping in Quarkus Hibernate Search,1703859193,0,9,0
-android,75787244,Show self in freeform window,1679294651,0,127,1
-spring,55269036,Spring MockMvc: match a collection of JSON objects in any order,1553111138,4,32994,24
-docker,77730216,azure app service can&#39;t find my endpoints added after first deploy,1703823087,1,56,0
-docker,77729982,List all IP addresses of Docker containers from different machines connected to an overlay network,1703816607,1,22,-1
-android,53332435,How can I get a enum member by the ordinal value in kotlin?,1542349024,4,9419,12
-kotlin,53332435,How can I get a enum member by the ordinal value in kotlin?,1542349024,4,9419,12
-android,77732379,How to pick an image from imageslide show as wallpaper | Android Studio |Kotlin,1703858699,0,8,0
-kotlin,77732379,How to pick an image from imageslide show as wallpaper | Android Studio |Kotlin,1703858699,0,8,0
-spring-boot,77731274,Error while trying to return a list of objects from a rest api,1703843560,1,41,0
-maven,77731274,Error while trying to return a list of objects from a rest api,1703843560,1,41,0
-kotlin,77730911,ConcurrentModificationException on a object wrapped with lock,1703837840,2,62,0
-maven,21252800,How to tell Maven to disregard SSL errors (and trusting all certs)?,1390292900,9,359058,178
-android,77732336,Problem with recording and saving video with CAMERA MAUI,1703858031,0,23,0
-spring-boot,77730455,How to use @PostMapping to create/delete/delete API,1703829357,2,46,-2
-docker,77728685,PyCharm on Ubuntu - Debugging Docker Application Connection Refused,1703790018,0,25,0
-android,56789748,Is there a widget that supports rowspan and colspan in flutter?,1561633821,4,20015,16
-android,77729953,java.lang.NullPointerException: Attempt to invoke virtual method &#39;boolean java.lang.Class.isInterface()&#39; on a null object reference in build release,1703815980,0,22,-2
-spring-boot,77732270,WebProgramming - SpringBoot ( IntelliJ),1703856984,0,22,-3
-docker,77732259,how can i assign perticular user to EFS mount container folder,1703856765,0,8,0
-docker,77730491,How to install Java 11 in TeamCity?,1703830099,1,33,-1
-android,77732240,BlueCove library is not supported for Android,1703856517,0,21,0
-docker,77717747,Use ExternalPythonOperator in Apache Airflow with a Windows venv on a Docker for Desktop setup,1703601166,0,36,0
-kotlin,47067302,What is difference between &quot;as&quot; and &quot;is&quot; operator in Kotlin?,1509594642,10,30142,27
-spring-boot,77732150,Spring Boot Test Controller with Security Parameter in Method Signature,1703855385,0,32,-1
-android,77732139,Android studio has a different preview on emulator and activity_main.xml,1703855150,0,14,0
-android,77732141,Why BLE scanning not working for me on Android 13?,1703855193,0,18,0
-kotlin,77732141,Why BLE scanning not working for me on Android 13?,1703855193,0,18,0
-maven,77732140,"Getting SIGSEGV (0xb) at pc=0x00007fe2deb92bb0, pid=4611, tid=140613335000832 when running my java jar (flink)",1703855169,0,19,0
-hibernate,20822976,"The client to invoke an error is as follows:org.xml.sax.SAXException: SimpleDeserializer encountered a child element, which is NOT expected",1388301265,1,9387,0
-android,75027717,Confirm Subscription plan from play Store Flutter,1672986900,1,262,0
-spring-data-jpa,77732112,I am working on spring MVCORM practice i got this error,1703854656,0,10,-3
-docker,77725359,Sail npm run dev,1703745586,0,19,0
-android,77731876,"I am not able to build the apk file of the project, whenever I try to build I get thi error. dexBuilderDebug FAILED",1703851368,1,24,0
-gradle,77731876,"I am not able to build the apk file of the project, whenever I try to build I get thi error. dexBuilderDebug FAILED",1703851368,1,24,0
-android,77731420,Regarding Casting on all SMART TVs,1703845812,0,14,-2
-spring,39209450,i have this error java.lang.NoSuchMethodError,1472483089,3,8310,0
-docker,77732013,Why run multiple containers of the same docker image in single EC2 instance,1703853060,0,15,0
-gradle,77732007,LWJGL not working with Gradle - Linux ARM64 - Java 17,1703853001,0,7,0
-spring,77731994,"The customer sent the project in the format.war and unpacked .war(META-INF etc, where instead of files .java is only there .class and a lot of groovy)",1703852816,0,24,0
-android,77731970,como a&#241;adir google wallet en ionic,1703852448,0,12,0
-spring,77571107,Spring Boot neo4j,1701260419,1,53,0
-docker,65565717,Istio 1.8 upstream connect error or disconnect/reset before headers. reset reason: connection failure,1609775907,0,1956,1
-android,7021578,Resize Drawable in Android,1313043366,8,96576,42
-spring-boot,77725624,Getting error while integrating docker-java api,1703749890,0,25,-1
-docker,77725624,Getting error while integrating docker-java api,1703749890,0,25,-1
-android,46435582,How to import org.apache.httpcomponents using Gradle,1506458954,1,17743,0
-gradle,46435582,How to import org.apache.httpcomponents using Gradle,1506458954,1,17743,0
-docker,44450265,What is a docker-compose.yml file?,1496987799,3,41002,23
-kotlin,52522282,Using kotlinx.coroutines in IntelliJ IDEA project,1537979063,3,25540,37
-android,68656889,Jetpack compose: How to detect what is causing a Composable to recompose,1628104456,5,3925,21
-kotlin,77731866,Problem translating retrofit multipart call to ktor,1703851256,0,7,0
-spring-boot,77731863,LinkageError after adding javax.ws.rs-api to Gradle build in Spring Boot 3.2 Kotlin project,1703851242,0,9,0
-android,77721223,problem with displaying grid layout while app has different theme than system,1703671283,1,34,0
-kotlin,77721223,problem with displaying grid layout while app has different theme than system,1703671283,1,34,0
-docker,77731292,How can i run keycloak on docker container?,1703843784,1,45,0
-android,77731114,How to get phone number from an incoming call from Android 12?,1703841364,1,51,4
-kotlin,77731114,How to get phone number from an incoming call from Android 12?,1703841364,1,51,4
-android,77710470,Travel through Parents components (containers) from last element to first,1703417322,0,87,0
-docker,77731823,Dotnet Runtime 8.0.0 not found in Ubuntu 23.10 arm64,1703850714,0,24,0
-android,77731551,io.ktor.utils.io.charsets.MalformedInputException: Input length = 1 error,1703847566,0,13,0
-spring,77727503,Disable semicolon path paramaters in Tomcat to prevent access to secured folders (security vulnerabilty),1703774226,0,34,0
-maven,77731780,Webpack process exited with non-zero exit code,1703850093,0,11,0
-spring-boot,77727519,Actuator endpoints masking the values post Spring boot v3.2.1 migration,1703774397,1,33,0
-android,77724140,How to make RecyclerView items &quot;pop&quot; in place?,1703713745,1,22,0
-docker,77731755,Running SQL Server and MySQL in Docker engine on Ubuntu vs. Local Machine Ubuntu. Which is best option for excellent performance?,1703849722,0,28,-2
-android,68395975,java.lang.IllegalStateException: ViewTreeLifecycleOwner not found from androidx.constraintlayout.widget.ConstraintLayout,1626360278,5,8113,12
-android,77731699,Sharing files and data between apps on android - intents +,1703849008,0,21,1
-android,77731678,Unable to Register TelephonyManager for Signal Strength Changes due to SecurityException,1703848672,0,6,0
-spring,14122756,Spring Security using both username or email,1357132529,8,14771,11
-android,77727914,Admob LoadAdError &#39;message: No fill&#39; on Test Devices - Flutter,1703779326,1,15,0
-docker,77726749,How to get the image name and version from manifest.json,1703764802,2,46,0
-docker,77574031,puppeteer Error : Navigating frame was detached on page.goto,1701286263,0,197,0
-spring-boot,77724963,Is there any dev documentation for Apache Druid maven repositories?,1703735926,0,19,0
-spring-boot,77731574,Spring boot running on Azure container restarted with the error. Has anyone come across this before?,1703847769,0,16,0
-gradle,57216444,How to solve Error: Invalid or corrupt jarfile,1564131095,1,20458,2
-spring-boot,77731553,"Video Streaming Using Spring Boot, Web Flux and Amazon S3 Not working Reactively from Backend to S3",1703847575,0,21,0
-android,77731547,ESCPOS-ThermalPrinter-Android (3.4.0) got extra large size text,1703847493,0,11,0
-android,28296237,Set ANDROID_HOME environment variable in mac,1422958183,18,275351,125
-android,77731537,Image picker / file picker packages don&#39;t behave as expected on Android 14,1703847331,0,36,0
-android,58607203,Failed resolution of: Ljavax/imageio/stream/FileImageInputStream when using Java library,1572350978,1,320,0
-spring,77731518,Send file by Feign - No serializer found,1703847135,0,13,-1
-spring-boot,77731342,POST requests sent by https to Tomcat via an Apache reverse proxy return status 403 in https,1703844536,1,25,-1
-docker,77731509,Keycloak admin client always gives 401 Unauthorized exception,1703846971,0,25,0
-android,57606462,A failure occurred while executing com.android.build.gradle.internal.tasks,1566467002,54,876181,285
-gradle,57606462,A failure occurred while executing com.android.build.gradle.internal.tasks,1566467002,54,876181,285
-android,77725020,Upload video to S3 with React-Native,1703737936,1,27,0
-spring-boot,77731462,Set-up the same TransactionManager on Batch repository and Task repository with Spring Boot auto-config,1703846307,0,11,0
-spring-boot,77731456,How to sync springboot entity changes,1703846225,0,20,-1
-hibernate,77731456,How to sync springboot entity changes,1703846225,0,20,-1
-spring-data-jpa,77731456,How to sync springboot entity changes,1703846225,0,20,-1
-docker,75393206,issues running multiple build jobs in parallel usin DIND,1675904510,2,395,2
-android,77731425,How to handle Badge on app icon properly for Xiaomi phone?,1703845842,0,11,0
-kotlin,77731425,How to handle Badge on app icon properly for Xiaomi phone?,1703845842,0,11,0
-spring-boot,77731372,(SpringBoot) can&#39;t read resources - already changed the file route - java.lang.NullPointerException,1703845027,0,24,0
-hibernate,77731403,Hibernate Custom ID Type with @GeneratedValue,1703845568,0,10,0
-jpa,77731403,Hibernate Custom ID Type with @GeneratedValue,1703845568,0,10,0
-android,77726321,Why does it not work by changing anything in the code on the expo go app but on the physical Android device it doesn&#39;t work?,1703759363,0,24,0
-spring-boot,75133577,How to read Azure web site app settings values in Spring boot java class,1673868445,3,454,0
-spring-boot,76863262,Different Trace Id between applications on spring boot 2 and spring boot 3,1691529502,1,586,0
-android,69649929,React native Scrollview not scrolling at all,1634747999,2,4044,1
-spring-boot,77731341,Should we set the max virtual thread number with tomcat?,1703844481,0,24,-1
-spring-boot,75460831,Spring Boot 3 security cannot access H2 console - 403,1676469142,2,1191,0
-android,48929228,"External library and JNI with Android: dlopen failed: library &quot;libcrypto.so.1.1&quot; not found, even with SONAME set correctly",1519307827,2,1999,4
-android,70735719,Unable to load class &#39;org.jetbrains.kotlin.config.LanguageVersion&#39;,1642384240,4,9364,3
-kotlin,70735719,Unable to load class &#39;org.jetbrains.kotlin.config.LanguageVersion&#39;,1642384240,4,9364,3
-gradle,70735719,Unable to load class &#39;org.jetbrains.kotlin.config.LanguageVersion&#39;,1642384240,4,9364,3
-android,56305791,Unresolved reference: viewModelScope - Kotlin Android,1558794976,14,38983,55
-kotlin,56305791,Unresolved reference: viewModelScope - Kotlin Android,1558794976,14,38983,55
-hibernate,77725301,Hibernate 3.1.3 to Hibernate 5.6.15.Final,1703744399,0,47,-1
-gradle,62147493,Minimum supported Gradle version is 6.1.1. Current version is 5.6.4,1591085107,18,203930,83
-docker,59139453,Repository is not signed in docker build,1575291655,15,134971,206
-maven,6081617,Missing maven .m2 folder,1305979808,9,367651,86
-spring-boot,77704880,MariaDB Sequence,1703263900,0,60,1
-jpa,77704880,MariaDB Sequence,1703263900,0,60,1
-spring,77730887,What is the right order of Spring profiles?,1703837357,1,37,0
-spring-boot,77730887,What is the right order of Spring profiles?,1703837357,1,37,0
-android,77729910,React Native android bundle overrides,1703814582,1,42,0
-android,77730882,How to use Retrofit with general response in Android,1703837288,1,36,0
-kotlin,77730882,How to use Retrofit with general response in Android,1703837288,1,36,0
-spring,77677605,jakarta.servlet.ServletException: At least one resource class should be specified at org.apache.cxf.jaxrs.servlet.CXFNonSpringJaxrsServlet,1702885212,1,56,0
-hibernate,77731147,Jpa @CollectionTable very slow query,1703841722,0,24,0
-jpa,77731147,Jpa @CollectionTable very slow query,1703841722,0,24,0
-spring-boot,70374885,Lombok not generating getter and setter?,1639637048,6,6253,1
-maven,70374885,Lombok not generating getter and setter?,1639637048,6,6253,1
-spring-boot,77731117,How to reduce initial OSM file loading time with GraphHopper in a Spring Boot project?,1703841389,0,11,1
-android,77730690,Record Video from react-native-image-crop-picker not working in android 13,1703834043,2,31,3
-android,77730545,I encountered error trying to run a Android Build using React-native (error Failed to build the app: No package name found),1703831089,1,33,0
-spring,77731162,Why Spring need remove earlySingletonObjects?,1703842082,0,17,-1
-spring,37999762,Efficient way to have Jackson serialize Java 8 Instant as epoch milliseconds?,1466708485,6,24323,20
-android,77716873,Unable to download pdf from link in Android Using downloadManager,1703587733,2,51,0
-kotlin,77716873,Unable to download pdf from link in Android Using downloadManager,1703587733,2,51,0
-spring-boot,77731084,"Spring boot 403 forbidden without cors, csrf",1703841005,0,28,-2
-docker,72020904,Minio console not accessible behind nginx reverse proxy,1651009771,4,9634,7
-android,77731118,The soft keyboard that pops up from the input box will squeeze the Flutter page,1703841389,0,25,1
-android,25873132,Android - How to redirect my app to default messaging application?,1410882272,3,1533,0
-android,20117760,How to create customized menu inside a layout in android?,1385028156,3,13721,4
-spring,77696611,jakarta.xml.bind.PropertyException: name: com.sun.xml.bind.namespacePrefixMapper value - com.abc$NamespacePrefixMapperImpl@65c3d713,1703146994,2,40,0
-gradle,77727328,Execution failed for task &#39;:wsdl2java&#39; Failed to notify dependency resolution listener,1703772178,0,11,0
-docker,77730740,Getting default apache page,1703835056,0,16,-1
-docker,76499688,What&#39;s the right way to configure Nginx for MinIO server running as a docker service,1687077431,1,361,0
-docker,39364466,How to dockerized java microservices efficiently,1473235607,2,1173,3
-android,77731004,"flutter: Google sign-in error: PlatformException(google_sign_in, No active configuration. Make sure GIDClientID is set in Info.plist",1703839575,0,28,0
-android,77731010,Problems with the application react native working in real time after the phone wakes up,1703839667,0,26,1
-android,77730999,Create background activity on Samsung smartphone that will run for hours,1703839459,0,22,0
-kotlin,77730999,Create background activity on Samsung smartphone that will run for hours,1703839459,0,22,0
-android,16312792,How to check color brightness in android?,1367382917,3,5978,3
-spring-boot,70305343,Spring Security OAuth2 token refreshed by WebClient but stored as &quot;anonymousUser&quot;,1639143308,1,726,0
-android,61879607,Fill Color in Specific Part of Image but with Touch only and not with FloodFill,1589838767,2,136,2
-android,11627892,onOptionsItemSelected not called when using actionLayout (SherlockActionBar),1343121962,7,30355,53
-spring-boot,77730960,How to troubleshoot SpringBoot 4 QueryDLS 5 app missing QClasses missing?,1703838705,0,9,0
-jpa,77730960,How to troubleshoot SpringBoot 4 QueryDLS 5 app missing QClasses missing?,1703838705,0,9,0
-android,70013553,kotlin.Any not found when enabling Proguard,1637199336,1,351,0
-kotlin,70013553,kotlin.Any not found when enabling Proguard,1637199336,1,351,0
-kotlin,77667022,Ignoring Compose function naming error in Spotless(ktlint),1702651386,1,77,3
-hibernate,77730817,Java: PostgreSQL Hibernate ERROR: INSERT has more expressions than target columns,1703836266,1,48,-1
-android,77730918,Disabling Ripple Effect in Modifier.clickable Using CompositionLocalProvide,1703837984,0,24,0
-spring,77730826,java.lang.NoSuchMethodError: &#39;boolean io.swagger.v3.oas.models.media.Schema.getExampleSetFlag()&#39;,1703836480,0,19,-1
-maven,77730826,java.lang.NoSuchMethodError: &#39;boolean io.swagger.v3.oas.models.media.Schema.getExampleSetFlag()&#39;,1703836480,0,19,-1
-docker,77729240,"Cannot connect to SQL Server using sqlcmd in Docker image, Gitlab CI",1703798724,1,25,0
-android,38447545,How to mock location without enabling setting,1468885770,2,20734,1
-spring-boot,51963312,Mocking an extension function with Mockito,1534928635,3,5470,0
-kotlin,51963312,Mocking an extension function with Mockito,1534928635,3,5470,0
-android,72271130,Jetpack Compose: nested LazyColumn / LazyRow,1652778191,6,21031,45
-kotlin,72271130,Jetpack Compose: nested LazyColumn / LazyRow,1652778191,6,21031,45
-android,37963947,Fix “Ignoring InnerClasses attribute” warning,1466587816,1,4392,8
-gradle,37963947,Fix “Ignoring InnerClasses attribute” warning,1466587816,1,4392,8
-android,69960884,indexoutofboundexception while implementing Recyclerview filter,1636872496,1,297,1
-kotlin,69960884,indexoutofboundexception while implementing Recyclerview filter,1636872496,1,297,1
-maven,77725614,Unable to resolve import from (src/test/java) Test classes packages from one subproject to another subproject (src/test/java) test classes,1703749763,1,25,1
-kotlin,77723247,How to fix Coroutine Timeout in Unit Test,1703698105,1,24,0
-spring,77730745,use three-level url in spring controller - kotlin,1703835122,0,22,0
-spring-boot,77730745,use three-level url in spring controller - kotlin,1703835122,0,22,0
-kotlin,77730745,use three-level url in spring controller - kotlin,1703835122,0,22,0
-android,77460175,Upgrade from Google VR to Google Cardboard XR Plugin…limiting reticle distance and using event triggers component in editor,1699620921,1,36,0
-docker,77729549,Can&#39;t add Playwright to a Dockerized Java app,1703804485,0,40,1
-kotlin,77702335,MavenCentral :image-preview:publishReleasePublicationToImagePreviewRepository FAILED,1703231401,1,85,1
-android,77730684,Bionic header is inconsistent with the kernel header,1703833912,0,4,0
-android,77720392,Handling ExoPlayer Audio Focus Loss When Resuming Video in Android App,1703658676,0,23,0
-spring,77730675,"PF4j loading interface and plugin with difference classload, how to solve?",1703833726,0,6,-1
-docker,72383490,SQL Server Docker container immediately exiting,1653508598,4,5737,3
-gradle,77692766,BIRT Report Engine API createFactoryObject returns null,1703086437,0,74,0
-docker,34390220,How to mount external volume for mongoDB using docker-compose and docker-machine,1450680378,7,54860,31
-spring,25821579,TransactionRequiredException Executing an update/delete query,1410598989,27,365258,134
-hibernate,25821579,TransactionRequiredException Executing an update/delete query,1410598989,27,365258,134
-jpa,25821579,TransactionRequiredException Executing an update/delete query,1410598989,27,365258,134
-spring,45872591,Spring Bean Factory Using Class Name,1503619366,1,8790,0
-android,77730648,How to disable the talkback green point when use ExploreByTouchHelper,1703833129,0,12,0
-docker,69020535,How to prevent docker build from redownloading copied Go vendor,1630530220,2,6258,8
-android,77729571,java.lang.NullPointerException:Parameter specified as non null is null: method WeatherEntityMapper.mapWeatherEntityToWeatherData,1703804905,0,28,0
-kotlin,77729571,java.lang.NullPointerException:Parameter specified as non null is null: method WeatherEntityMapper.mapWeatherEntityToWeatherData,1703804905,0,28,0
-android,11860475,"How to get Contact ID, Email, Phone number in one SQLite query ? Contacts Android Optimization",1344414141,2,18774,22
-android,77730626,Error: Untracked working tree file &#39;lib&#39; would be overwritten by merge,1703832478,0,26,-1
-android,77730624,Application crashes in release mode due to a missing no-argument constructor for the s1.d class during deserialization but not in debug mode,1703832405,0,26,-1
-android,76704424,"Prevent scrolling to the top of list when item is selected/unselected in pagingAdapter, paging 3 library",1689596623,1,36,2
-kotlin,76704424,"Prevent scrolling to the top of list when item is selected/unselected in pagingAdapter, paging 3 library",1689596623,1,36,2
-android,7778746,handleMessage not called,1318692551,1,4500,2
-spring,46151540,"Added Springfox Swagger-UI and it&#39;s not working, what am I missing?",1505119536,25,108214,55
-spring-boot,46151540,"Added Springfox Swagger-UI and it&#39;s not working, what am I missing?",1505119536,25,108214,55
-spring,77730147,Sa-Token and Spring Gateway Conflict,1703821638,0,20,-1
-android,69299878,Required by: project :app &gt; com.google.android.libraries.places:places:2.4.0,1632399565,2,1183,0
-gradle,77730516,How to include generated sources with Gradle&#39;s javadoc task?,1703830681,0,8,0
-android,77730514,java.lang.RuntimeException - Parcel android.os.Parcel@a8d79e2: Unmarshalling unknown type code,1703830675,0,8,-1
-kotlin,77730514,java.lang.RuntimeException - Parcel android.os.Parcel@a8d79e2: Unmarshalling unknown type code,1703830675,0,8,-1
-spring,77661101,Spring Boot 3 migration spring-cloud-starter-contract-verifier and MessageVerifierReceiver,1702566200,1,85,0
-spring-boot,77661101,Spring Boot 3 migration spring-cloud-starter-contract-verifier and MessageVerifierReceiver,1702566200,1,85,0
-android,77729881,Android kotlin dialog transparent background blur not working,1703813590,0,31,0
-android,77730471,Multiple transformation Animation Jetpack Compose,1703829585,0,13,0
-android,77730462,Redmi Note 9 Pro / Joyeuse restarting when i answer a call (or whenever i use receiver / earpiece),1703829463,0,7,-1
-docker,63103546,Docker file postgres initial schemas not executed,1595785039,3,3840,1
-android,77728386,I need a command that redoes filter-repo,1703785509,1,33,0
-android,77730413,Is there any alternative IoT app Platform to Blynk?,1703828311,0,12,-2
-docker,77579451,Gunicorn Timeout - How to increase timeout?,1701356107,1,28,0
-docker,77729821,Docker Compose up causes &quot;Conflict. The container name is already in use by container&quot;?,1703811447,0,27,0
-spring-boot,77728784,Whitelabel Error Page containing the HTTP status code and an error message if no mappings for the /error endpoint are found,1703791439,0,16,0
-docker,61859247,Cannot connect with SSMS to SQL Server on Docker,1589751951,10,21699,17
-android,5050005,What is the difference between an Android Activity and Service,1298107998,2,30588,16
-spring-boot,77730359,Error creating bean with name cacheManager defined in class path resource org/springframework/boot/autoconfigure/cache/JCacheCacheConfiguration.class,1703827057,0,10,0
-spring-data-jpa,77730359,Error creating bean with name cacheManager defined in class path resource org/springframework/boot/autoconfigure/cache/JCacheCacheConfiguration.class,1703827057,0,10,0
-android,77238731,(KotlinSourceSet with name &#39;iosMain&#39; not found.) How can I add android as a build target to a Kotlin Multiplatform project,1696521162,2,473,0
-android,15461077,onListItemClick on Activity extends ListActivity,1363525792,3,8624,0
-spring,77728383,How to add vm_args for a java web application to run on tomcat added using community server connector in vscode,1703785497,0,17,0
-spring,77364109,Spring Modulith Events,1698294235,1,86,0
-spring-boot,77364109,Spring Modulith Events,1698294235,1,86,0
-android,77723387,Is there an alternative way of driver.startActivity() Function?,1703700330,0,13,0
-docker,77730284,How to solve the pen-test Possible Cross-Site Scripting via postMessage?,1703824926,0,20,-3
-docker,56002338,How to use Kaniko on the local kubernetes,1557134787,2,1230,1
-spring,77730269,Spring and Hibernate Upgrade from 4.x to 5.x,1703824613,0,27,0
-hibernate,77730269,Spring and Hibernate Upgrade from 4.x to 5.x,1703824613,0,27,0
-docker,77730268,Issue with DNS resolution from docker container,1703824590,0,20,-2
-docker,66236859,Container Optimized OS Docker Shutdown Behavior,1613543921,3,1231,2
-android,15097004,XAPK File Validation Failed - APK Expansion Files,1361904705,2,29060,5
-kotlin,77730167,Put object request in AWS S3 Kotlin SDK fails for big files because of timeout,1703822059,0,15,0
-docker,74683876,How Sentry is cleaned up correctly,1670219417,2,908,0
-android,53408940,Retrieving data from firebase takes too much time,1542792661,4,1922,0
-android,77651220,Media projection permission dialog popup again &amp; again in (Samsung Android 14 One UI 6) &amp;&amp; Pixel 6 (Android14),1702444048,2,71,0
-android,77729213,Why page transitions are so slow with NavController,1703798393,1,41,0
-kotlin,77729213,Why page transitions are so slow with NavController,1703798393,1,41,0
-android,2681499,Android: How to auto-restart an application after it has been &quot;force closed&quot;?,1271840495,8,99827,90
-android,10265350,NotePad sample in Android sdk: Where is a note stored?,1335070591,2,9988,2
-android,76269655,Emulator: WARNING | Please update the emulator to one that supports the feature(s): Vulkan,1684309474,1,2180,2
-kotlin,77730049,how to initialize baresip in MainActivity in Android kotlin,1703818688,0,16,0
-android,68569259,How to perform an action on MaterialDatePicker in an Espresso test?,1627525118,2,526,5
-spring,64639836,Plugin &#39;org.springframework.boot:spring-boot-maven-plugin:&#39; not found,1604291786,27,298222,142
-spring-boot,64639836,Plugin &#39;org.springframework.boot:spring-boot-maven-plugin:&#39; not found,1604291786,27,298222,142
-maven,64639836,Plugin &#39;org.springframework.boot:spring-boot-maven-plugin:&#39; not found,1604291786,27,298222,142
-android,77730000,How to get my APK signing certificate recognized by Android without uploading APK to PlayStore?,1703816996,0,52,0
+Tags,Tag,Question ID,Title,Creation Date,Answer Count,View Count,Score
+json,json,77737106,Flutter EqualUnmodifiableListView error when i try to add json array inside the variable,1703963019,1,35,0
+docker,docker,77738459,Doctorize Nextjs React Application,1704006003,0,2,0
+docker,docker,55751353,Docker - Failed to Connect to MySQL instance. How to solve it?,1555609893,1,10709,3
+spring-boot,spring-boot,56537692,CORS settings in Spring boot does not work,1560234314,8,4234,2
+android,android,76975250,project-chip/connectedhomeip (CHIP) Android sample app setup,1692949540,2,210,0
+android,android,12338445,How to Automatically add thousand separators as number is input in EditText,1347187871,16,98237,75
+maven,maven,19871437,&quot;The import org.springframework cannot be resolved.&quot;,1383961511,22,346997,47
+android,android,77738427,Hello Everyone Plz Help me with This issue,1704004990,0,3,0
+"android,kotlin",android,77722080,Trying to understand ViewModels and Navigation with Jetpack Compose,1703682574,1,59,0
+"android,kotlin",android,77738423,how to create an UI component that support stylus pen that overlay a non editable text?,1704004821,0,5,0
+android,android,77738415,How to know if fullscreen is pressed in youtube_player_flutter?,1704004520,0,6,0
+"spring-boot,hibernate",spring-boot,77738385,Java prerequisite for spring and spring boot,1704003809,0,12,0
+android,android,77738382,Coudn&#39;t Move from page to page - Navigator.push - Flutter,1704003697,0,7,0
+"android,kotlin",android,77738376,Create a gallary Transition effect in JetPackCompose Kotlin,1704003576,0,6,0
+"android,kotlin",android,77738370,What do I have to do to make the app connect to HC-06 successfully?,1704003383,0,3,0
+"spring-boot,hibernate,kotlin,jpa",spring-boot,77738260,Enable bytecode enhancement in kotlin using gradle,1703999481,1,12,0
+"android,kotlin",android,77738363,How to perform some click operations after opening another app using kotlin android?,1704003185,0,10,1
+kotlin,kotlin,77738359,Dealing with endianess in Kotlin,1704003010,0,22,0
+gradle,gradle,77468892,Error: &#39;AuthProvider&#39; is imported from both,1699791728,2,443,4
+docker,docker,77738214,Handling S3 File downloads without resource exhaustion,1703996766,1,17,0
+android,android,73125909,I need help starting Apache server with PHP on Android with Termux,1658848546,0,1334,0
+android,android,77738280,Unable to start service from BroadcastReceiver in the background,1704000004,0,7,0
+spring-boot,spring-boot,77738225,@Transactional doesn&#39;t work with @Async in Websphere,1703997390,0,16,0
+android,android,77738248,using fragment in android causing problems,1703998816,0,8,0
+spring-boot,spring-boot,77735903,invalid_token_response An error occurred while attempting to retrieve the OAuth 2.0 Access Token Response: 401 Unauthorized,1703939358,0,25,-3
+docker,docker,37515686,Stop a running Docker container by sending SIGTERM,1464562123,3,23132,16
+android,android,77738222,Android: Constraintlayout.widget.ConstraintLayout cannot be cast to android.widget.TextView,1703997300,0,17,-1
+"android,kotlin",android,77738190,Server Error on connection using Socket IO,1703995721,1,14,0
+gradle,gradle,77738202,Support of multiple gradle catalog definitions by Github Dependabot,1703996180,0,7,0
+docker,docker,77737640,Docker VPS work with HTTP but not with HTTPS,1703976672,1,23,-1
+json,json,46445796,MongoError: &quot;doc parameter must be an array of documents&quot;,1506508903,1,14201,9
+android,android,38593738,Is Google Play Store supported in avd emulators?,1469546055,10,234532,226
+android,android,77725713,how to write a surface only to get data on android?,1703751175,0,9,0
+android,android,77738154,how to redesign the permission dialog window for caapturing the screen?,1703994129,0,11,0
+android,android,71036988,App Published under Closed Testing Track but not able to update from Play Store,1644336076,3,949,4
+spring-boot,spring-boot,77738117,How to push config changes using spring-cloud-bus for local resource served via native profile?,1703992740,0,10,0
+"hibernate,jpa",hibernate,77731147,Jpa @CollectionTable very slow query,1703841722,1,49,1
+docker,docker,77701652,How to authenticate into mongoDB?,1703218118,0,50,-2
+docker,docker,73260016,Start rasa x service needed EC2 instance using docker container which uses docker image,1659791469,0,148,0
+"android,kotlin",android,77738043,How to select the day and change the background color on the calendar (kizitonwose),1703989552,0,9,0
+"android,kotlin",android,77737676,How to use object animator for background color of items in RecyclerView?,1703977367,2,19,0
+spring-boot,spring-boot,77738013,Entity design for user groups and contacts,1703988364,0,12,0
+android,android,75681051,Fcm notification shown by both Firebase_messaging sdk and flutter local notifications package in flutter,1678342900,1,759,2
+android,android,24924629,Force the app to stay in portrait mode despite another app&#39;s hack,1406172358,0,552,0
+android,android,77738003,Unable to show a floating window in Android app during call state changes,1703987949,0,17,0
+spring-boot,spring-boot,77737995,Intellij community Spring boot Java - Unable to obtain connection from database: Falha de logon do usuario &#39;sa&#39;,1703987665,0,12,-1
+android,android,77737927,Android Studio on Windows does not have JDK path,1703985246,1,12,1
+json,json,77737970,Editing multiple base64 strings in python,1703986668,0,29,0
+docker,docker,77734617,Dockerizing Golang with Apache-Kafka,1703900690,0,34,-1
+kotlin,kotlin,77737943,Android : Unable to instantiate application &quot;packageName&quot; : ClassNotFoundException,1703985850,0,14,0
+android,android,77737735,Android studio Log.i() unable to log all lines inside a for loop,1703979370,1,16,0
+"spring-boot,hibernate",spring-boot,77737918,org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column &quot;STOCK&quot; Error,1703984995,0,13,0
+spring-boot,spring-boot,77737928,How to send custom alert email from Spring boot application using Azure services?,1703985285,0,14,-1
+kotlin,kotlin,77737863,Kotlin - Inflated another xml is not working,1703982974,1,20,0
+android,android,68153978,memu emulator error &quot;The core process of emulator has ended &quot;,1624817100,2,8251,0
+android,android,69481399,Android Studio - Required for building and installing your app on Android,1633610609,3,11736,6
+kotlin,kotlin,77721895,How to import external fonts to the app at runtime in kotlin?,1703680346,0,15,0
+spring-boot,spring-boot,77737876,Spring Boot 3.2.1 multiple .properties files per profile,1703983434,0,11,0
+spring-boot,spring-boot,77737867,Springboot JPA Repository,1703983237,0,12,0
+android,android,77734414,How to connect Android Java App to MongoDB,1703894049,0,21,0
+docker,docker,74192677,Strange behaviour when try to extract a zip file in docker container with laravel,1666693919,1,617,1
+"spring-boot,hibernate,jpa",spring-boot,73128829,Hibernate soft delete queries return deleted grandchildren,1658863892,3,749,0
+json,json,73591663,Count Api return undefinded response,1662202508,2,785,2
+android,android,31956117,How to create multiple connection at same time in Android bluetooth low energy (BLE)?,1439354143,2,9899,6
+android,android,77737798,Loading xml file programmatically into View in Android App Studio,1703981010,0,21,0
+spring-boot,spring-boot,77737770,"When retrieving an entity with a ManyToMany relationship, the data is not being displayed",1703980298,0,5,0
+docker,docker,61592088,Why is Docker filling up /var/lib/docker/overlay2?,1588594736,7,44919,46
+android,android,77737126,Android rebind to foreground service after configuration change,1703963477,0,9,0
+hibernate,hibernate,77734293,[Spring][JPA] Automatic save when ManyToMany,1703890386,1,26,0
+json,json,77727693,Sagemaker JSON decoding time - Tensorflow to Pytorch,1703776543,0,13,0
+"android,kotlin",android,77737720,ViewCompat&#39;s inset listener returns wrong values for older APIs,1703978737,0,9,0
+spring-boot,spring-boot,55022750,@Autowired object is always null,1551873947,3,121,-3
+android,android,77737506,Problem with Mocking Behaviour of Toast in Android,1703972915,1,27,0
+docker,docker,77737707,init-db.js does not execute and the Mongo container which I run crashes on the first run but is running normally if restarted. &quot;Connection Closed&quot;,1703978360,0,7,0
+json,json,77737704,Retrieving data from nested fields in Tkinter UI,1703978310,0,8,0
+docker,docker,77736889,Docker: ModuleNotFoundError: No module named &#39;tabulate&#39;,1703958664,0,22,0
+spring-boot,spring-boot,77737678,CORS &#39; Access-Control-Allow-Origin header&#39; not found. React front-end/Spring boot Java Backend,1703977488,0,25,0
+spring-boot,spring-boot,77737533,How to authenticate my own users in spring security,1703973497,0,34,-2
+spring-boot,spring-boot,77737667,Custom annotation in rest controller,1703977207,0,20,-3
+spring-boot,spring-boot,77737660,Accessing Private Repositories After GitHub OAuth 2.0 Authorization in a Project,1703976978,0,8,0
+json,json,62196211,"Insert Statement Node-Red, MySQL, JSON",1591278263,2,1788,1
+json,json,77737429,"Python Pandas: why are some data missing from my dict when I get data from JSON-formatted text via dict(line.strip().split(None, 1)?",1703970992,1,33,0
+android,android,70146596,How do I ask the user to enable the MANAGE_EXTERNAL_STORAGE permission in React Native?,1638126446,2,3218,4
+android,android,77735584,Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider when using Admob with C++,1703931878,1,28,0
+android,android,77734051,Android for Cars - access MainActivity variables from MediaBrowserServiceCompat service,1703884684,0,30,0
+spring-boot,spring-boot,77733114,Springboot metric &quot;process_files_open&quot; shows large numbers for both &quot;open&quot; and &quot;max&quot;,1703869208,1,18,-3
+spring-boot,spring-boot,74632141,Spring boot 3 upgrade: java.lang.NoClassDefFoundError: org/springframework/util/SocketUtils,1669830802,1,8264,6
+"android,kotlin",android,77737539,How do I implement WebView tabs in Android Jetpack compose?,1703973665,0,18,0
+android,android,77737076,How to save a file inside React Native project and access and edit it?,1703962486,1,17,0
+docker,docker,75801495,Can&#39;t make deploy of .net api with railway,1679403145,1,294,1
+android,android,77737487,how to restrict websites with an app in flutter,1703972525,0,13,0
+docker,docker,77736659,How to fix the &quot;Role &quot;john&quot; does not exist&quot; when deploying PostgreSQL using Docker?,1703954413,1,69,1
+android,android,77737482,error: Multiple arb files with the same &#39;en&#39; locale detected,1703972302,0,12,0
+json,json,77728888,Return arguments from function calling with OpenAI API when streaming?,1703793064,0,33,0
+"docker,maven",docker,77734564,Jib Maven Plugin Error: &quot;Missing target image parameter&quot; When Building Docker Image,1703898916,0,20,0
+"maven,jpa",maven,77732452,Maven WildFly Deployment Failure with Conflicting JNDI Bindings and Missing Dependencies,1703859742,0,11,0
+android,android,77737460,Update a value in a variable,1703971792,0,20,0
+android,android,77737439,Whatsapp Database file (.crypt14 file) got accidentally deleted. Is there any other way to recover the deleted whatsapp database files?,1703971379,0,13,-2
+android,android,77737434,"I am trying to set Active SIM for calls, sms and data programatically",1703971162,0,13,0
+docker,docker,77737428,Problem with Google Cloud Run connecting to my cloudbuild file,1703970939,0,15,0
+maven,maven,39616344,How to disable Javadoc warnings in Maven Javadoc Plugin?,1474460232,7,25480,34
+android,android,24187249,Android Activity Dialog freezes the screen once exited until back is pressed,1402584042,2,1483,2
+android,android,77737296,No View Found Error While Adding a DialogFragment Inside RecyclerView.ViewHolder,1703967925,0,24,0
+javafx,javafx,77736437,GUI Overlapping Issue: SceneBuilder Design Compiled in NetBeans,1703950472,0,18,-1
+android,android,77737346,Is it okay to reload interstitial ad onAdDismissedFullScreenContent()?,1703969076,0,9,0
+kotlin,kotlin,77736520,Jetpack Compose forgets a remembered value when switching tabs,1703951882,1,21,0
+android,android,77737337,How to develop an app whith a 3d part on it?,1703968884,0,20,0
+android,android,77737333,java.util.stream.Collector com.google.common.collect.ImmutableMap.toImmutableMap,1703968816,0,8,0
+json,json,77737263,JSON serialize with item name from JSON-data,1703967085,0,27,0
+android,android,77706022,On my Wear watch I have a whitespace on top of a Custom action sheet in Xamarin forms Android,1703283361,0,17,1
+"android,gradle",android,76182805,gradle error linked to namespace on build.gradle file,1683293817,2,4729,5
+docker,docker,77736611,Cannot access Flask Rest api with docker anywhere on internet via VPS,1703953584,1,41,-1
+kotlin,kotlin,77723247,How to fix Coroutine Timeout in Unit Test,1703698105,1,32,0
+docker,docker,54546269,Is there a way to pass debug secrets to a docker container from a asp.net console application using generic host?,1549424135,2,1556,1
+docker,docker,77737055,Docker logs exception on docer desktop. Exception in thread &quot;main&quot; java.util.NoSuchElementException,1703962023,1,29,-3
+docker,docker,77723173,How to pull multiple .Net repos inside a devcontainer volume using SSH key,1703697120,1,28,1
+android,android,77729939,Touch response delay in Unity game on mobile devices,1703815518,1,19,0
+android,android,77737244,"How do I update my list View when my button is clicked, in Android",1703966673,0,16,0
+android,android,77736316,How to build huawei app store application?,1703948245,0,14,0
+json,json,6672656,How can I beautify JSON programmatically?,1310515166,5,49199,45
+docker,docker,77737226,Docker and Postgresql: Role &quot;username: does not exist,1703965919,0,18,0
+docker,docker,64212147,Cannot connect to mariadb on kubernetes when using secret,1601913519,2,1035,0
+android,android,75278812,Atribute FileProvider is presented at two libraries,1675031034,1,188,0
+docker,docker,39508018,docker: driver failed programming external connectivity on endpoint webserver,1473932967,20,443642,183
+docker,docker,77737145,How can i fix problem with Docker inside AWS Codebuild?,1703963871,0,17,0
+spring-boot,spring-boot,77735585,Refreshing expired JWT token automatically in Spring,1703931883,2,33,0
+docker,docker,77737136,What is the advantage/disadvantage of using database on system and containerized database,1703963718,0,21,-3
+docker,docker,77736331,How do I add Environmental Variables to a React App&#39;s Docker image deployed with Cloud Run?,1703948433,1,14,0
+json,json,77688887,JSON Pickle serialize object list,1703038039,5,234,3
+android,android,77737130,Xamarin MaterialDesignControlsPlugin MaterialSliderControl not rendering correctly on Android,1703963567,0,18,1
+docker,docker,77736789,Compiling error with LOG field from @Slf4j Lombok when compiling inside docker,1703956549,0,43,-3
+spring-boot,spring-boot,64278851,Spring Cloud Gateway - Unable to find GatewayFilterFactory with name [Filter_Name],1602241751,5,8982,4
+android,android,77736297,How to update notification power efficiently every minute to display time in hour and minute in Android?,1703947815,1,40,0
+android,android,77737066,Popup markers in MapBox SDK 10.10.1 for Android,1703962306,1,9,0
+docker,docker,61576908,GitHub Actions - Running DotNetCore Tests with Neo4j service dependency,1588519402,1,170,1
+android,android,44798378,Google Play App Signing - KeyHash Mismatch,1498641400,6,21479,40
+json,json,49987387,How to send an array of JSON string to API in c#,1524506816,2,454,1
+json,json,37795797,Adding Attachment using API for Visual Studio Team Services (was Visual Studio Online),1465838903,2,3966,4
+spring-boot,spring-boot,77736372,Why does getFile() in org.springframework.core.io.AbstractResource throw an exception?,1703949311,2,44,0
+android,android,77737006,Selecting Optimal Color Space for SkSurface,1703960946,0,6,0
+"android,kotlin",android,77209561,How can I make purchase with RevenueCat by Kotlin?,1696144624,0,76,0
+spring-boot,spring-boot,77721687,Postgres database in Ubuntu Terminal different from that in Sql Shell and pgAdmin,1703677590,0,28,0
+json,json,77728769,How to get a bundle from the Steam API,1703791225,0,26,0
+android,android,77736927,shows error 31008 while doing client to client call in Twilio,1703959457,0,22,0
+android,android,19998050,Android Error: Binary XML file line #11: Error inflating class fragment when using map fragment,1384508802,7,11799,2
+json,json,72909727,Not able to fetch json data from a &quot;SINGLE-TYPE&quot; content-type in strapi,1657274378,1,2232,3
+spring-boot,spring-boot,77721066,SpringBoot Application : reading URL going into a waiting state and stuck my project,1703669378,1,62,0
+spring-boot,spring-boot,77736883,How can I run a deep learning model in java spring boot?,1703958517,0,31,-5
+"spring-boot,maven",spring-boot,77736859,"In localhost execution of the project, I&#39;m encountering an &#39;Invalid bound statement (not found)&#39; error",1703958009,0,13,0
+android,android,77736512,Xamarin.Forms net project,1703951770,0,30,0
+javafx,javafx,77733007,How to save an image snapshot of a Pane as a BMP?,1703867641,1,51,2
+kotlin,kotlin,76080286,How can i add month header to my calendar (kizitonwose),1682175521,1,436,1
+docker,docker,46711990,Error: pg_config executable not found when installing psycopg2 on Alpine in Docker,1507817873,6,101321,118
+"android,kotlin",android,77135652,Download the file by touching the lazy column items at the same time in Jetpack Compose,1695135103,1,132,2
+maven,maven,77279512,How to make a Spring lib project dynamically enable classes according to user dependencies,1697104108,2,51,0
+android,android,77736614,API response taking too long from real device,1703953590,1,20,0
+spring-boot,spring-boot,77451750,Spring boot : @Async is not working properly,1699520446,3,83,-1
+android,android,77652568,"Android app(java) crashes on real device, but perfectly works on emulator",1702461393,0,45,-2
+"kotlin,gradle",kotlin,76988533,java.lang.NoClassDefFoundError: io/mockk/proxy/jvm/advice/jvm/JvmMockKProxyInterceptor ERROR while mocking org.w3c.dom.Node using mockk,1693162969,2,137,1
+spring-boot,spring-boot,77736746,"The method addAttribute(String, String) is undefined for the type Model",1703955934,0,10,-1
+"android,kotlin",android,77736738,How I can run mp3 file from Downloads,1703955835,0,21,-1
+android,android,77703509,"How do I make an Android PWA open external links in the actual browser, not a Web view?",1703246306,1,44,0
+docker,docker,77155254,Jenkins Docker Compose: Volumes not mounting correctly in a docker compose executed from inside a jenkins container,1695363482,1,102,0
+json,json,77736321,Recovering the original JSON from SwaggerParseResult,1703948331,1,17,0
+android,android,77736674,"Hello. How can I get goldensetra dataset for three datasets c#, java and android with labels T, C and no-shaped",1703954684,0,11,-3
+android,android,71054138,Jetpack Compose inner shadow,1644427922,3,15599,7
+kotlin,kotlin,77734434,Mutiny how to interupt chain operation,1703894810,0,25,0
+docker,docker,77736486,Communation between two Azure Container App return 502 Bad Gateway. How to fix it?,1703951321,1,43,-3
+hibernate,hibernate,61637545,How to solve the N+1 problem in Spring Data JPA?,1588774736,1,2279,4
+docker,docker,77736438,Tensorboard does not reload when using S3 compatible storage,1703950478,0,13,0
+json,json,69282808,Can I get the result in a Array instead of JSON array from sqlite3 database in node?,1632308067,2,365,0
+kotlin,kotlin,77736594,"Why AlertDialog with material3 won&#39;t let me use title, text and button?",1703953173,0,11,0
+"android,kotlin",android,77736590,Notification controls not working on OnePlus device in Kotlin music player app,1703953144,0,9,0
+android,android,77622403,Android : Failed to attach: unable to connect to remote frida-server: closed,1701974388,0,107,0
+android,android,77731499,Android build fails because of missing import,1703846814,1,25,0
+docker,docker,77732318,CASA APK Scan - NoCredentialsError: Unable to locate credentials,1703857719,2,25,0
+android,android,77710880,Crashhandler_die: fatal: Internal error at android studio,1703427090,0,40,-1
+spring-boot,spring-boot,35277727,How to use RequestBodyAdvice,1454959795,2,8445,3
+json,json,11083280,fbexternal-a.akamaihd.net/safe_image.php returns a 1x1 image,1340023856,1,22491,5
+spring-boot,spring-boot,77736533,Springboot 3.2 with Jakarta Faces 4.0 Example Project,1703952051,0,28,-3
+spring-boot,spring-boot,57244537,Springboot: need to be informed/notified when Web-Server is Up,1564344198,2,118,0
+docker,docker,77736519,docker: &#39;compose&#39; is not a docker command,1703951876,0,23,-1
+docker,docker,77733286,Best way to initialize named volume from Docker image/container,1703871619,1,37,-2
+android,android,77736470,"Fluttter android (OS Error: Permission denied, errno = 13) write to Downloads folder",1703950972,0,12,0
+kotlin,kotlin,77736442,Creating a wave-like text animation in jetpack compose: sequence disruption issue,1703950515,0,24,0
+"android,json",android,76290794,BeeWare Android App development: How can I access and save data on a phone with my app,1684512622,3,508,1
+android,android,2701078,How to use Git on Android?,1272047629,15,122752,88
+gradle,gradle,77736458,androidStudio - my country code picker doesnt works,1703950769,0,8,-1
+docker,docker,54197988,docker installation issue file not found after installation,1547551921,3,15070,6
+docker,docker,77736447,Binary file not getting env if executed as entrypoint in Dockerfile,1703950613,0,15,0
+android,android,77736424,Flutter Health plugin fetch workouts in android,1703950346,0,11,0
+jpa,jpa,25385348,"Mapping MySql views to JPA Entitites, which unique id to use?",1408456675,2,562,5
+json,json,77736403,How to Create Multiple JSON File from a Join Query on SQL DB,1703950031,0,16,0
+"spring-boot,kotlin",spring-boot,66018084,How to enable spring security kotlin DSL?,1612302365,5,4794,23
+"android,kotlin",android,77736234,UI not reflecting changes,1703946655,0,32,0
+maven,maven,77736371,Force Maven to use original versions on dependencies,1703949307,0,16,0
+json,json,77736218,"Getting ERROR: Please install mysql2 package manually, even though installed",1703946398,0,27,0
+maven,maven,59194387,Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M4:test (default-test),1575546160,2,8686,0
+json,json,77734365,"why keeps the value of Map&lt;String, dynamic&gt; empty (Flutter application)?",1703892549,1,40,-1
+gradle,gradle,77736336,How to fix groovy and gradle issue in Android studio with flutter,1703948547,0,12,0
+docker,docker,77736033,"Docker compose, Postgres/PGAdmin setup",1703942082,1,26,0
+json,json,31749434,nodejs app crashes after inactivity on database connection,1438355042,2,1915,2
+docker,docker,59683862,Flink Job Cluster vs Session Cluster - deploying and configuration,1578667169,1,2190,2
+hibernate,hibernate,77732410,Unsatisfied dependency for type org.hibernate.search.mapper.orm.session.SearchSession using programmatic mapping in Quarkus Hibernate Search,1703859193,0,10,0
+json,json,58377892,C# httpclient authorize header not working for me?,1571059755,1,347,2
+android,android,77736281,React native Expo touches not registering with EAS,1703947570,0,13,0
+hibernate,hibernate,77736272,Passwords for registration and login of BCryptPasswordEncoder in Spring Security 6 do not match,1703947371,0,34,0
+javafx,javafx,77736101,remove redudant Singleton on Java,1703943675,0,49,-3
+android,android,77315862,how to keep device enrolled in android management API after factory reset?,1697628341,1,69,0
+android,android,77736249,Is it a good practice to reload interstitial ad onAdDismissedFullScreenContent() and starting a new activity?,1703946954,0,8,-1
+android,android,76932921,Expo push token not working on standalone app,1692399146,2,102,-1
+"kotlin,gradle",kotlin,77736225,Can&#39;t link external config file to FatJar in Ktor,1703946474,0,18,0
+docker,docker,65398641,Docker connect SQL Server container non-zero code: 1,1608577967,7,16986,31
+android,android,77726539,Unable to connect to local server facing Network error IOException: connect failed: ETIMEDOUT (Connection timed out),1703762162,0,45,-1
+android,android,77736023,An error occurred while opening the emulator,1703941761,1,20,0
+android,android,10901023,Why does Android ignore OnPreferenceClickListener() that returns true?,1338913299,4,1520,1
+kotlin,kotlin,77736078,kotlin compiles my code with errors. seems like i&#39;m not doing something right,1703943095,1,21,-3
+android,android,77732202,Even though I didn&#39;t send any data via intent I get this error: FAILED BINDER TRANSACTION,1703856059,1,28,0
+"spring-boot,hibernate",spring-boot,77661692,How does where clause in One to many relation work in java,1702571586,1,55,1
+json,json,57001861,Problem in the utf-8 encoding of an API response,1562915466,1,15656,0
+android,android,67791021,Flutter local notification with action buttons and image,1622558687,2,11828,11
+spring-boot,spring-boot,77732582,How can I send a multipart request with a file and a JSON payload?,1703861416,0,24,0
+android,android,76965717,I need to allocate physical swapspace on termux on android to use dotnet,1692839904,1,161,0
+docker,docker,56062960,How to update wordpress translations via wp-cli,1557416033,3,3277,7
+android,android,34810794,Google sign in API token expiration,1452859815,2,2605,4
+android,android,77416931,Cross-device passkeys are not working on Android,1699017126,2,355,0
+json,json,77718867,API implementation in Excel,1703619392,1,47,1
+kotlin,kotlin,77072676,FATAL EXCEPTION: main java.lang.IllegalArgumentException: CreationExtras must have a value by `SAVED_STATE_REGISTRY_OWNER_KEY`,1694269729,1,133,0
+android,android,77736039,What are the advantages of using a Store and a Reducer in Composable Architecture?,1703942180,0,19,0
+android,android,77735990,Execution failed for task &#39;:app:kaptDebugKotlin&#39; while implementing Hilt with Android Studio Hedgehodge 2023.1.1,1703941234,0,17,0
+kotlin,kotlin,77736020,Database MySQL or firebase,1703941722,0,32,-3
+spring-boot,spring-boot,77713556,@Transactional(propagation = Propagation.REQUIRES_NEW) doesn&#39;t create a new connection on JBoss EAP,1703505212,1,70,0
+android,android,77735080,How to change the color of systemNavigationBar to match the color of the NavigationBar in Flutter when the app theme uses a dynamic color scheme?,1703918726,0,25,0
+spring-boot,spring-boot,27170772,Where to put static files such as CSS in a spring-boot project?,1417091088,13,128966,87
+gradle,gradle,76123807,my project&#39;s Gradle version is incompatible with the Java version that Flutter is using for Gradle,1682622015,3,15916,1
+"android,kotlin",android,67294776,registerForActivityResult not working when second activity orientation changes,1619591081,3,9724,6
+json,json,19132097,Compare JSON structure in ruby,1380699634,3,12856,1
+android,android,77704685,doesn&#39;t read the QR codes on my smartphones. how can I do?,1703261327,1,27,0
+android,android,75043114,Android build produces error &quot;Attempt to create a global synthetic for &#39;Record desugaring&#39; without a global-synthetics consumer.&quot;,1673118879,3,1832,3
+docker,docker,76960322,Setting $BASH_ENV to a script outputs entire contents of script to Jenkins console,1692785168,1,76,2
+"android,kotlin",android,63971569,android:autoSizeTextType in Jetpack Compose,1600536698,17,33791,55
+"android,kotlin",android,77735935,How to interpret &quot;merged manifest&quot; content in Android studio to fix the error &#39;Manifest merger failed with multiple errors&#39; in Android studio?,1703939897,1,24,0
+json,json,60504954,Getting data from API in C#,1583230641,2,593,0
+docker,docker,77735728,Flask + Docker =&gt; No connection,1703934844,2,54,0
+android,android,56727980,How to get list of local videos and display them in grid format in React Native?,1561326517,2,713,2
+docker,docker,77735705,Unable to connect to Docker Host network,1703934572,0,28,-1
+android,android,77735379,Firebase vulnerability in Realtime Database with access token from files,1703926719,0,15,0
+json,json,77733297,Download API JSON file in R and convert to dataframe,1703871816,0,49,0
+android,android,77733588,Qt 6.6.1 Android Build Error: use of undeclared identifier &#39;GL_DRAW_FRAMEBUFFER&#39;,1703876313,0,47,-1
+android,android,77730518,App already has local storage (sharedPrefrences) on fresh install flutter,1703830702,0,46,2
+spring-boot,spring-boot,77735290,Error: connect ECONNREFUSED 127.0.0.1:8080 in postman with springboot (Java),1703924412,0,33,-1
+android,android,22631011,download failed because resources could not be found in some of android devices,1395741568,1,10144,0
+docker,docker,49628505,postgres container doesn&#39;t take password from environment variable,1522753539,1,1373,0
+spring-boot,spring-boot,77620023,How can a Spring Cloud Gateway expose its (dynamic) routes through a Swagger UI?,1701952300,1,62,0
+android,android,77714573,"Flutter, How do I default an RxBool variable to a value from Firebase",1703527319,0,35,0
+"docker,spring-boot",docker,50133244,File Upload by docker container,1525259454,1,16290,4
+android,android,77735245,"Android SDK 34 AppCompatActivity.requestPermissions does not display permission dialog, but does with Android SDK 29",1703923414,2,33,0
+json,json,77731550,In postman should json API response to be stored in a constant or variable like const jsonData (or)var jsonData in test scripts,1703847560,0,23,-1
+android,android,77735775,Flutter Autofill not working with Android biometric verification,1703935956,0,12,0
+kotlin,kotlin,77155917,Update a pinned device owner managed android app silently (in kiosk mode),1695370702,1,87,0
+docker,docker,75820814,Is it possible to run a local Snowflake instance using Docker?,1679561057,1,2927,6
+android,android,77735223,Push Notification doesn&#39;t appear like Heads-up in Flutter,1703922688,2,26,0
+docker,docker,66146088,Docker gets error &quot;failed to compute cache key: not found&quot; - runs fine in Visual Studio,1612996365,24,386066,266
+docker,docker,77721173,Docker Angular+Nginx error code 403 or 500,1703670547,1,34,0
+android,android,76669481,"Ionic 7 (Angular), Capacitor, Error saving image to Firebase Storage",1689156832,2,107,0
+maven,maven,77511739,Suppressing Javadoc 21 DocLint warnings specifically for &quot;no main description&quot;,1700414466,1,128,3
+android,android,54762296,How to implement Branch SDK in my Flutter app,1550566792,4,3446,11
+android,android,70998910,Augmented reality app : convert a drawing into a animated 3D model,1644071142,0,67,0
+android,android,77733165,Any scrolling calendar that can start with the current date?,1703869894,0,36,1
+android,android,77735513,How can i add a delete button in this app?,1703930221,2,53,0
+spring-boot,spring-boot,77648069,Swagger UI put my every endpoint in the &quot;default&quot; group. Why is it doing it?,1702402856,1,31,-2
+spring-boot,spring-boot,72485521,The provided definition does not specify a valid version field when render openapi,1654237766,2,7964,5
+"android,kotlin",android,77735621,"Friends, I am making an Instagram clone and I am having problems following users, can you help me?",1703932873,0,31,0
+android,android,77434647,My Cordova Splash Screen not working on Android,1699311222,1,121,0
+"hibernate,jpa",hibernate,77735602,"In jpa, in which table should the associated key be saved?",1703932256,0,25,0
+android,android,77720509,react-navigation optimizations in low-performance Android,1703660895,1,34,0
+android,android,72864680,Implement CollapsingToolbar using Jetpack compose,1657001347,1,871,1
+"android,kotlin",android,77735291,How to implement a collapsing header in Android with Motion Layout using Jetpack Compose?,1703924416,1,35,0
+spring-boot,spring-boot,77735542,I want to connect to react login page when spring security is being added in the gradle project,1703930953,0,12,-1
+"android,gradle",android,77721311,Unable to start existing react native project. Facing gradle issue,1703672371,1,60,0
+android,android,77733253,"Flutter, How to conditionally display an icon if user and product boolean value match in the firestore?",1703871134,0,44,0
+android,android,70992083,Android Error: Cannot resolve symbol &#39;PackageList&#39;,1644004023,4,11165,2
+json,json,77735493,XML error. CLient cant get a simple response. Axios React node json,1703929680,0,22,0
+android,android,77735480,Capacitor startActivityForResult() trigger callnack function on second activity start,1703929521,0,12,0
+spring-boot,spring-boot,77717771,How does Spring distinguish which controller method to execute?,1703601539,0,49,-4
+android,android,77732069,How do we code/edit react native mobile apps on android studio. (Not talking about the emulator or env setup but writing code in Android studio),1703854029,1,28,0
+"spring-boot,gradle",spring-boot,77722354,&#39;Failed to determine a suitable driver class&#39; by running fat jar file,1703686148,0,22,0
+android,android,77735092,Issue on Android 13 : Android — Repeat notification daily on specific time,1703919089,1,37,1
+spring-boot,spring-boot,77735125,SpringBoot @ConfigurationProperties,1703919796,0,56,0
+spring-boot,spring-boot,77734852,How to fix &#39;package org.springframework.jdbc.core does not exist&#39;,1703910155,2,24,0
+android,android,77732157,How to set a custom icon to an Android / IOS push notification in expo react native app?,1703855564,1,24,0
+"android,kotlin",android,77735382,Fragment is transparent and shows Activity below(changing to dark mode or light mode),1703926837,1,21,0
+jpa,jpa,77735065,Calling a sql function from java gives error,1703918260,0,44,0
+android,android,26902555,How to create GeoTagging image / location tagging application for android with google maps using eclipse with ADT,1415859570,1,14015,2
+docker,docker,77685959,ERROR: for nginx: Bind for 0.0.0.0:443 failed: port is already allocated while running Coolify &amp; BTCPayServer,1702996520,1,81,1
+json,json,77735366,How to extend syntax highlighting for a language (markdown) in VS code,1703926608,0,12,-1
+json,json,77735039,How to delete element from JSON array of objects by ID,1703917294,2,67,-2
+spring-boot,spring-boot,77732459,Spring Boot 3.2 JDBC,1703859876,0,37,-3
+android,android,77735288,How does &quot;Android CI&quot; GitHub Action work without setting up Android tools?,1703924382,0,19,0
+android,android,63426705,How to create HTTP server app in flutter?,1597499062,2,10948,5
+"json,spring-boot",json,77733087,Applying @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) on field not working,1703868766,1,37,0
+spring-boot,spring-boot,75825235,Spring Boot 3.0.4 webflux having 415 UNSUPPORTED_MEDIA_TYPE,1679586789,2,4354,1
+"android,kotlin",android,77715897,Implementing Complex Motion and Choreography in Android Animation,1703571263,0,31,0
+android,android,76016637,java language options not show in android studio,1681485598,6,12940,8
+"android,kotlin",android,77735237,Access TextField value from another composable function in by click FloatingActionButt,1703923147,0,8,0
+spring-boot,spring-boot,77734973,SpringBoot API Authentication with AuthenticationManager,1703914710,1,30,0
+docker,docker,77735216,Consul all service checks failing with service with server ssl enabled true,1703922399,0,29,0
+gradle,gradle,77734574,How can JavaDocs be configured to be generated in a specified project root directory?,1703899112,1,27,1
+json,json,77730407,How to parse a json requestbody in post request,1703828211,0,35,0
+android,android,57937350,Cannot save snapshot AVD,1568478506,1,1027,9
+javafx,javafx,77721359,How can I change the app name and icon from the default &quot;Java&quot; to something else with JavaFX on MacOS 14?,1703673025,1,38,0
+docker,docker,77732714,AppEngine Flex instance using custom python and virtualenv failed to deploy,1703863409,0,15,0
+spring-boot,spring-boot,66328022,Captcha Implementation in Angular and Spring Based web application,1614061053,2,2337,0
+spring-boot,spring-boot,77735107,best practice for implementing pagination in spring reactive data mongodb,1703919457,0,11,0
+docker,docker,75521775,Buildx Docker Image Claims to be a Manifest List,1676989209,2,1374,3
+"spring-boot,maven",spring-boot,77733266,GitHub Action failing on mvn clean install,1703871324,0,32,-1
+"android,kotlin",android,77721006,Usage of remembering a lambda function in rememberUpdatedState(),1703668499,1,42,1
+spring-boot,spring-boot,77731857,onstatus catches exception but mono error is ignored and client gets http status code 200,1703851159,0,23,0
+android,android,70604161,Failed to resolve: org.jitsi.react:jitsi-meet-sdk:3.+,1641456604,6,3920,3
+"spring-boot,maven",spring-boot,69402824,Java 17 with Maven Wrapper results in Unrecognized VM option &#39;MaxPermSize=512m&#39;,1633076985,3,30481,18
+"android,kotlin",android,77734441,Querying audio files from external storage on Android in Kotlin not working,1703895086,1,27,0
+android,android,77734056,raise the Android Files app in the Download folder and let the user manipulate files,1703884764,0,17,0
+android,android,77701903,Android Studio: The device may not have sufficient computing power for encoding display contents,1703224292,1,36,1
+android,android,77734927,Adding a page title and back button to fragments in Android Studio,1703913085,1,31,1
+docker,docker,77734999,not able create recursine build in pnpm repo while building up docker image,1703915747,0,8,0
+android,android,77734982,Problem on Android Studio (Kotlin). RecyclerView in Fragment not showing anythig,1703915082,0,19,0
+android,android,77734942,java.lang.ClassNotFoundException - Didn&#39;t find class &quot;dgnc&quot; on path: DexPathList[[zip file &quot;/system/framework/com.android.media.remotedisplay.jar&quot;,1703913743,0,12,0
+kotlin,kotlin,77734935,Problems with Java/Kotlin Build Application using IDEA,1703913488,0,17,0
+android,android,66722104,New Google Sign-In API - refresh token,1616246558,2,1178,3
+"android,kotlin",android,63674765,How to get valid Google ID token after it expires in 1 hour,1598891910,2,866,0
+android,android,17255565,Memory dump an app in android,1371937065,1,10005,5
+android,android,38737021,How to refresh ID token after it expires when integrating Google sign-in on Android?,1470209102,2,6619,17
+android,android,36431152,"google sign-in for android, token expires, Authenticate with a backend server",1459871163,2,785,5
+javafx,javafx,53695304,AutoCompletionBinding cannot access class com.sun.javafx.event.EventHandlerManager,1544379535,2,6210,6
+android,android,77734882,APK built by Unity won&#39;t install - INSTALL_PARSE_FAILED_NO_CERTIFICATES - APK Signature Scheme v2: SHA-256 digest of contents did not verify,1703911732,0,10,0
+"android,kotlin",android,4258623,Show soft keyboard for dialog,1290531363,6,44395,85
+maven,maven,77733648,NoClassDefFoundError: com/fasterxml/jackson/databind/AnnotationIntrospector$XmlExtensions,1703877456,0,35,-3
+android,android,18572014,Enabling zoom on scroll view,1378120831,2,9111,7
+android,android,77734816,Is there any way to better my APN for T-Mobile network,1703908626,0,22,-3
+json,json,77734785,Need chrome extension to display the popup alert without having to hit extension icon each time to scan webpage for the word &quot;Taxi&quot; any suggestions?,1703907285,0,22,-2
+android,android,77734457,SDL2 Android image not rendering,1703895607,0,16,-3
+android,android,41089042,How do I install a previous version of build tools in addition to the sdk?,1481477861,3,10824,20
+android,android,7200535,How to convert Views to bitmaps?,1314338197,7,50558,36
+hibernate,hibernate,77709560,Oracle Connnection issue in Hibernate Reactive,1703386096,1,22,0
+kotlin,kotlin,77675150,Error when tring to fetch data from MongoDb,1702830329,1,109,2
+android,android,77731063,Is it possible to trigger Android app updates programmatically without user interaction using Google Play Core Library?,1703840764,1,47,1
+spring-boot,spring-boot,77734752,resttemplate does not retrieve the full data of a file from server,1703906237,0,14,0
+spring-boot,spring-boot,55494154,How to fix org.apache.spark.SparkException: Job aborted due to stage failure Task &amp; com.datastax.spark.connector.rdd.partitioner.CassandraPartition,1554291170,1,13010,2
+android,android,77732453,change tint and saturation of live camera in flutter using camera package,1703859748,1,13,0
+docker,docker,77732961,Django-based Docker project will connect to local postgres DB on windows machines but not on a Mac or Linux machine,1703867070,1,25,0
+android,android,77734688,Android Layout Inspector too smart,1703903295,0,13,0
+docker,docker,68647737,Ignoring specific files in Dockerfile.dockerignore does not work,1628064976,3,1611,1
+"spring-boot,jpa",spring-boot,77734674,Searching between two dates greater and less than just works with new ISODate within the @query expression declared in java with mongorepository jpa,1703902861,0,13,0
+hibernate,hibernate,40561414,Getting a nullpointerexception for my EntityManager,1478942658,2,12247,5
+android,android,77734629,"Data is reapting and mutitype views are overlapping in recyclerview, i am using delegate adapter pattern - android",1703901340,0,8,0
+android,android,52867948,Illegal character in opaque part at index 2 flutter,1539843016,10,39965,23
+json,json,77705072,Getting back slashes in the json/request body in Lua script,1703266654,0,42,0
+android,android,11930054,Receiving Cell Broadcast for showing current location (Channel 50) in android,1344843847,1,12403,9
+docker,docker,74325956,docker: Error response from daemon: network mongo-network not found,1667633727,1,1576,0
+android,android,77734353,Save images in a certain folder when taking picture mkdirs() android/java,1703892338,0,20,0
+hibernate,hibernate,62254314,Spring JPA - Hibernate: Batch insert execute too much select nextval (‘sequence’),1591585013,3,4234,5
+android,android,77734579,Flutter - Font not rendering properly,1703899245,0,24,0
+spring-boot,spring-boot,77725066,Access to XMLHttpRequest at &#39;http:/vm_address:8080/api/v1/contacts/&#39; from origin &#39;http://vm_address:5173&#39; has been blocked by CORS policy: Response,1703739065,0,50,-2
+android,android,54050657,pass OnActivityResult data back to hybrid app from capacitor,1546680177,2,3666,2
+kotlin,kotlin,77734561,How can I access the clipboard without a window?,1703898868,0,7,0
+docker,docker,76771312,Java Docker API CPU Calculation,1690374447,2,40,0
+docker,docker,47660841,How do I check if an image:tag exists in gitlab container registry,1512500474,5,17843,15
+spring-boot,spring-boot,77734518,The thymeleaf template does not display the date from the database,1703897612,0,13,0
+docker,docker,77734516,COPY two folders in docker (failed to compute cache key: failed to calculate checksum of ref),1703897572,0,10,0
+"kotlin,gradle",kotlin,77734505,Kotlin KAPT to KSP can&#39;t find bean,1703897220,0,11,0
+gradle,gradle,77734436,IntelliJ IDEA&#39;s &quot;External Libraries&quot; shows every class shows twice after adding dependency,1703894857,0,18,0
+spring-boot,spring-boot,76987080,CORS in Spring Security (Spring Boot 3),1693138749,4,904,1
+gradle,gradle,77734449,Gradle Kotlin DSL use jniLibs,1703895455,0,9,0
+android,android,77734058,Images from Firebase Storage won&#39;t load,1703884827,1,69,0
+spring-boot,spring-boot,77734036,Spring Boot with Kubernetes Java Client API - Edit Namespace,1703884404,0,43,0
+docker,docker,77734442,Azure Function on AKS with KEDA always stops,1703895088,0,11,0
+"spring-boot,maven",spring-boot,64507704,Java swagger-ui doesn&#39;t render allowableValues for parameter,1603489772,1,9691,2
+maven,maven,52123521,Maven Clean Issue - Non-resolvable import POM - Could not transfer artifact from NEXUS,1535757048,4,8699,1
+android,android,55315107,Flutter Webview change webpage is not available,1553353485,3,14332,4
+docker,docker,77734380,How to create a .devcontainer for a git repository that holds two different node apps with two different package.json files?,1703892965,0,9,0
+json,json,77734340,"HTML injected class through vanilla Javascript for my static site, object fetched from JSON not updating",1703891918,1,21,-1
+javafx,javafx,77730183,How can I make a node rotate around a circle using the path transition method?,1703822341,1,54,4
+json,json,27807266,SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data,1420578812,5,130181,21
+"android,kotlin",android,77730734,ViewModel Structure not maintaining variable values when called in seperate Jetpack Compose Composables,1703834792,2,36,0
+"android,kotlin",android,77734267,Android : Spinner : set ArrayAdapter in code want no call onItemSelected and only call when user click on spinner,1703889677,0,33,1
+json,json,77734282,"Extract and extend bbox from image, and create a new bbox labelling where the desired object is new image",1703890089,0,13,0
+kotlin,kotlin,77733246,Kotlin dataclass function is getting called during serialization,1703870909,0,36,0
+android,android,21903934,How to debug webview remotely?,1392889552,7,68027,50
+"android,kotlin",android,60807411,Remove Augmented Image and add a new one when new image is detected,1584932249,0,129,2
+docker,docker,77734249,Trouble Accessing Selenium Grid on Google Cloud Run from Remote Client,1703889309,0,11,0
+spring-boot,spring-boot,77732906,Implement Springboot Webclient with PKCS12 configuration,1703866208,0,19,0
+docker,docker,77734255,Docker pull starts fast then becomes extremely slow,1703889413,0,13,0
+android,android,77734246,Preload android application on tablet,1703889164,0,16,0
+"kotlin,gradle",kotlin,77713414,KMP: Failing to add &#39;cafe.adriel.voyager&#39; dependency,1703501734,1,69,1
+"hibernate,jpa",hibernate,77734213,@ManyToOne is generating as &quot;not null&quot; and should be nullable,1703888299,0,19,0
+"hibernate,jpa",hibernate,77734228,JPA and Hibernate - Select same object twice and get two instances,1703888694,0,11,0
+android,android,67455823,No Activity found to handle intent OPEN_DOCUMENT_TREE on some Samsung Android devices,1620549851,3,1842,2
+kotlin,kotlin,77733410,Create object with list of another object,1703873677,1,35,0
+"spring-boot,docker",spring-boot,77734189,Docker discovery server and client API Java Spring boot,1703887621,0,17,0
+spring-boot,spring-boot,77734159,Spring Boot 3.2 REST API Call with Generic Response: Type Mismatch Issue,1703887110,0,21,0
+android,android,77724836,how to custom intent to ask for permisson in mediaProjection in android?,1703732228,1,39,0
+android,android,77734122,Why the published app android don&#39;t login with Google?,1703886334,1,16,0
+"android,gradle",android,60790653,How to fix INSTALL_FAILED_INVALID_APK error in Android Studio?,1584810035,11,22451,12
+android,android,25274296,ADB Install Fails With INSTALL_FAILED_TEST_ONLY,1407878674,28,187920,277
+gradle,gradle,77734101,مشكلة تبعيات الغرادل والتوافق مع المحاكي emulator vs gradle,1703885871,0,12,-1
+android,android,77733301,&#39;libsample.so&#39; Not Found error when trying two use more than one cpp in android JNI?,1703871888,0,17,0
+kotlin,kotlin,77734067,File search in kotlin,1703884961,0,26,0
+docker,docker,42510002,Docker: How to clear the logs properly for a Docker container?,1488288328,25,705173,531
+spring-boot,spring-boot,77732637,Error when setting fields and putting data in a database (H2) from the website using Thymeleaf and Spring boot,1703862030,0,24,0
+android,android,77734053,using two observes to update one EditText,1703884696,0,19,0
+android,android,77729895,how to bypass your account is not verified on google dev,1703814110,0,12,-1
+"android,kotlin",android,77733567,error: [Dagger/MissingBinding]. Cannot be provided without an @Provides-annotated method,1703875927,1,55,-1
+json,json,25770093,Display JSON or XML data on Freeboard(Web Dashboard),1410365067,1,8614,0
+maven,maven,77733933,How to prevent MVN from changing file dates as it packages a WAR file?,1703882222,1,26,0
+android,android,25538752,How to mute the beep sound for SpeechRecognizer?,1409183922,4,21167,10
+docker,docker,77724807,How to switch between Docker Containers using the same service name?,1703731384,1,27,1
+spring-boot,spring-boot,57231039,Choose the format of Date of an attribute in The Entity Class,1564221687,3,24792,3
+android,android,63865126,Why would google maps not show up in flutter?,1599946574,2,2298,2
+android,android,77733708,Trying to use an EditText inside an infoWindow in android studio (Java),1703878534,1,28,1
+javafx,javafx,77733964,File not found issue JAVAFX,1703882737,0,23,0
+android,android,77733930,Advice on learning about Android GPS Tethering via USB,1703882199,0,28,-2
+android,android,43731872,how to get video id from clicking YouTube search page link in a webview,1493708120,2,1049,0
+android,android,42174931,Android 5+ how to change preferred network,1486809867,0,294,2
+spring-boot,spring-boot,77726297,How can I invoke lambda handler in custom runtime environment?,1703759127,2,63,1
+"hibernate,maven",hibernate,24386771,javax.validation.ValidationException: HV000183: Unable to load &#39;javax.el.ExpressionFactory&#39;,1403613247,16,165500,137
+docker,docker,76443422,Unable to connect to Postgres Docker container with DBeaver,1686342031,2,1071,-1
+json,json,77733474,How to use Cheerio to get JSON data within a script tag,1703874611,1,28,0
+docker,docker,68247187,Connect to PostgreSQL Database in Docker Container from DBeaver,1625419310,2,3740,2
+"android,kotlin",android,77725693,Android Kotlin: NFC Tag not reading by the app,1703750910,1,27,0
+android,android,77733775,My app in android studio is crashing due to ContactViewModell class . It is an list of contacts app with CRUD operations,1703879479,0,9,0
+android,android,77733350,Error in CredentialManager.createCredential method without much information,1703872478,0,10,0
+spring-boot,spring-boot,77733687,StepScope bean duplication when using XML based bean definition,1703878028,0,14,0
+kotlin,kotlin,77733183,Check if there is specific object in kotlin,1703870058,1,27,0
+docker,docker,64682749,Running Redis rq worker on Docker,1604502848,1,2414,1
+android,android,70043592,How to sign apk programmatically with &quot;apksig library&quot; in Android studio,1637387772,0,224,0
+kotlin,kotlin,77592215,How do I get a good form layout in Compose?,1701551829,1,38,0
+docker,docker,77733463,Docker DNS (127.0.0.11) cannot resolve anything,1703874421,1,51,0
+"android,gradle",android,77733627,My build keeps failing - execution failed for task &#39;:location:parseReleaseLocalResources&#39;,1703877109,0,12,0
+android,android,77733459,"How to take a picture and set it as my ImageButton, without using the deprecated method startActivityForResult()?",1703874396,1,17,0
+spring-boot,spring-boot,77727026,"Is it possible to use Spring Boot SSL bundles internally, while keeping legacy configuration (e.g. javax.net.ssl.*) in application.properties?",1703768354,1,37,1
+"json,spring-boot",json,77721233,Database PostgreSql: column String or JSON?,1703671378,1,39,1
+android,android,77682600,How to fix &quot;android.support.v4.content.LocalBroadcastManager&quot; import error jetpack compose and MqttService.java,1702951621,0,106,-1
+json,json,77731098,How to convert a text file stream to a json file stream,1703841145,1,31,2
+gradle,gradle,77733553,Implementing Different Build Configurations in Compose Multiplatform for Android and iOS,1703875730,0,12,0
+android,android,72382777,How to benefit on &quot;warm start&quot; from the saved instance state bundle passed into onCreate() or onRestoreInstanceState(),1653504446,1,81,0
+json,json,77731768,JSON Schema oneOf insdide of allOf,1703849878,2,33,0
+docker,docker,77733475,Unable to run a streamlit app using docker and supervisor,1703874620,0,29,-1
+spring-boot,spring-boot,47593537,Disable Spring Security config class for @WebMvcTest in Spring Boot,1512131730,12,53331,43
+spring-boot,spring-boot,77733482,CircuitBreaker fallback method getting call for every case,1703874770,0,10,0
+android,android,68164883,How do I create a Jetpack Compose Column where a middle child is scrollable but all of the other children are always visible?,1624889493,3,66192,59
+android,android,70939513,When to initialize resources to be used inside Compose Canvas?,1643713447,2,997,0
+gradle,gradle,76745981,Can&#39;t downgrade to a specific version of &quot;android gradle plugin version&quot;,1690064339,1,426,0
+json,json,77733205,Jolt Transform Dynamic attribute to Key/Value,1703870337,1,18,0
+"android,kotlin",android,77732725,Should I use main-safety code to run callbacks in Android (Kotlin)?,1703863565,0,17,0
+"android,kotlin",android,77733409,flutter_html_to_pdf - The Android Gradle plugin supports only Kotlin Gradle plugin version 1.5.20 and higher,1703873634,0,31,0
+"android,gradle",android,77733400,Flutter - Execution failed for task &#39;:app:processDebugMainManifest&#39;,1703873447,0,25,0
+android,android,77733391,ionic capacitor in app purchase requires to open app to confirm subscription,1703873222,0,7,0
+json,json,77706142,Json value is returned with value noneType causing the code to fail. How does one make it more robust,1703286023,2,58,0
+json,json,44205435,How to deserialize a JSON file which contains null values using Serde?,1495813283,4,24384,32
+android,android,77733360,how to implement predictive text functionality inside the text field or text view In Android java so the next word will populate as placeword,1703872666,0,21,0
+json,json,77733296,R-Script create additionial array prefixes. How avoid?,1703871799,0,34,0
+android,android,74731898,Why tailwind css is not applying as style in react-native?,1670510081,3,783,0
+spring-boot,spring-boot,77733139,How to implement Zipkin in Spring Boot 3?,1703869539,1,39,0
+android,android,77733275,"Beanshell syntax parsing error (lambdas, returns...)",1703871497,0,8,-1
+android,android,66212513,Whats is benefits or difrrencess between Viewpager vs ViewPager2,1613409513,2,8587,8
+json,json,62705086,Signup user to ASP.NET Identity from Xamarin Forms,1593724261,0,47,0
+android,android,77733261,Why do threads keep uploading in my app and how can I control them?,1703871253,0,12,0
+spring-boot,spring-boot,77733259,Cacheable principle of REST Architecture Implementation on Spring Boot,1703871217,0,9,1
+json,json,51854891,"Error: List&lt;dynamic&gt; is not a subtype of type Map&lt;String, dynamic&gt;",1534319620,10,212224,78
+android,android,77729624,VMWare not recognizing my android phone (the device was unable to connect to its ideal host controller),1703806041,1,19,0
+spring-boot,spring-boot,77733186,Can Spring Boot JSP limitation be solved?,1703870094,0,21,-1
+"android,kotlin",android,69426486,Android Databinding Cannot find a setter for * that accepts parameter type *,1633276588,5,6582,2
+"spring-boot,hibernate",spring-boot,77733237,JdbcSQLSyntaxErrorException while executing flyway migration script in h2 on spring-boot startup,1703870805,0,24,0
+json,json,77724639,Minecraft 1.18.2 spigot economy plugin coding,1703726442,0,20,0
+"maven,spring-boot",maven,48732435,Spring Boot Serving .jsp &lt;jar&gt;,1518358555,3,829,0
+spring-boot,spring-boot,77303677,Virtual Threads and Spring WebFlux,1697474942,1,1488,2
+spring-boot,spring-boot,77733158,Which Spring Boot version is compatibe with Tomcat 10.0.27?,1703869814,0,21,-2
+"android,kotlin",android,77635384,How to use a viewpager inside another fragment and not get any lifecycle issues?,1702222960,1,50,0
+spring-boot,spring-boot,77733214,Springboot metric &quot;disk_free&quot; shows unit in &quot;Tri&quot; instead of MB/GB in grafana,1703870406,0,11,-1
+spring-boot,spring-boot,77732873,How to use @Query annotation for mongodb queries along with the repository methods like findTop,1703865829,1,26,-1
+docker,docker,26757264,npm package.json and docker (mounting it...),1415190622,5,5401,8
+docker,docker,77733167,Mounting a volume on host in a docker container,1703869921,0,16,0
+"android,kotlin",android,77733071,Unable to update using Retrofit from the ID i declared into it,1703868564,1,24,1
+android,android,77725174,How to manually get a light version of a color?,1703741662,1,28,0
+android,android,43738389,VideoView Uri redirection,1493729525,0,125,0
+json,json,77728248,GroupingBy in Java 8 Streams with more than 3 levels of grouping,1703783610,2,80,-2
+json,json,64483151,i can&#39;t deserializing into JSON in C#. Is it something wrong with my classes?,1603372709,1,59,0
+docker,docker,31255934,How come my kubernetes&#39; service can&#39;t find an endpoint?,1436218021,6,46316,18
+android,android,77733085,Activate Button is disabled in Device Admin Screen in android,1703868730,0,22,0
+"android,kotlin",android,77720202,Detect onclick of any element in a list (android studio),1703655269,1,25,-1
+json,json,29171854,Wordpress API JSON return limit,1426870373,10,43512,19
+spring-boot,spring-boot,77733046,"metric &quot;application_started_time&quot; for springboot shows 01/01/1970, 08:00:00 AM in grafana",1703868160,0,18,-2
+docker,docker,77548936,Minikube on Docker shows high CPU utilization every 10 seconds,1700934084,0,68,1
+android,android,77733042,MAUI How to emulate screen width of android being 1080?,1703868064,0,11,0
+json,json,14865233,Sending anonymous functions through socket.io?,1360798232,3,5155,6
+android,android,54684814,react native secureTextEntry not working on android,1550127789,7,14942,3
+spring-boot,spring-boot,77731193,Why does Spring boot ignore spring.datasource.url in application.properties for my h2 database?,1703842443,1,89,0
+kotlin,kotlin,77732986,Does getReference() method don&#39;t work in Kotlin?,1703867372,0,15,-1
+"android,kotlin",android,77717346,androidx.credentials.exceptions.GetCredentialCancellationException: activity is cancelled by the user,1703595033,1,40,2
+kotlin,kotlin,77730256,Is class can declared as type for a variable in Kotlyn,1703824165,0,23,0
+spring-boot,spring-boot,77732979,ERROR: No primary or single unique constructor found for class [Ldsawmain.entity.vo.TagVO;,1703867247,0,31,0
+spring-boot,spring-boot,77732962,Thymeleaf template th:include strange behaviour,1703867072,0,14,0
+android,android,77732969,Net Maui Navigation Back button,1703867127,0,10,0
+json,json,77698485,Receiving empty brackets array of Sharepoint REST API request?,1703167504,1,23,0
+docker,docker,76160943,Docker Desktop - An unexpected error was encountered while executing a WSL command,1683094843,19,70698,15
+json,json,77731957,Receive message on MassTransit with empty body from Azure Service Bus,1703852336,1,23,0
+android,android,77731381,Cannot use Guava library in iOS by Kotlin Multiplatform,1703845133,1,30,0
+android,android,11523797,How to add a MOOV atom in a mp4 video file,1342532562,7,134851,54
+json,json,50316653,JSON into Tabulator table- Javascript,1526218224,2,535,1
+android,android,77732825,Laggy keyboard after first keystroke in TextField Jetpack Compose,1703865151,1,39,0
+android,android,77732572,How to get white color when on dark theme and dark color when on light theme?,1703861269,2,33,0
+"android,kotlin",android,77728809,I was trying to identify the two face are similar are not using face recognition with opencv,1703791780,0,24,-3
+docker,docker,63437878,Creating a mongodb user from env variables,1597586911,2,1649,0
+docker,docker,77732829,What to use instead of ${CI_REGISTRY_PASSWORD} from Gitlab CI for Docker Login?,1703865186,0,13,0
+android,android,77732781,AppCenter Build: Project {project-name} at : is either no Android app project or build version has not been set to override. Skipping,1703864477,0,9,0
+spring-boot,spring-boot,77732752,How to implement logic that processes conditions after a specific time has passed following an API call?,1703864038,0,18,0
+spring-boot,spring-boot,77082912,Springboot keycloak SAML Failed to resolve any signing credential,1694445858,0,117,0
+android,android,77732757,Android application with baselineprofile macro benchmark is failing with profileinstaller library issue,1703864112,0,5,0
+"spring-boot,hibernate",spring-boot,74753391,Migration to SpringBoot 3: trunc a date with oracle driver no longer works (hibernate),1670679412,5,4962,9
+json,json,77732739,My data from axios doesn&#39;t save in my global variable,1703863782,0,16,0
+maven,maven,66972941,What are the best practices for creating a quarkus multi-module project?,1617727532,2,9189,3
+docker,docker,77732696,Blazor Webassembly and ASP.NET API: &quot;TypeError: Failed to fetch&quot; error when API is dockerized,1703863040,0,30,0
+android,android,77731511,Android unusual Image Buttons,1703846983,1,37,0
+json,json,77732399,How to JSON stringify a javascript New Date,1703858990,4,90,-1
+"android,gradle",android,72184143,Caused by: java.util.zip.ZipException: zip END header not found,1652176187,1,16059,0
+android,android,15652825,How can I access a method from another fragment class?,1364364445,1,8661,1
+kotlin,kotlin,37977320,How to mock a Kotlin singleton object?,1466626057,7,60827,60
+"android,kotlin",android,77732098,Detecting if the app is running on the Virtual Android Environment apps like clone app or multi app space,1703854455,1,25,0
+android,android,77732630,How to push critical/emergency alerts/notifications on Android with Expo,1703862014,0,13,0
+android,android,70719971,Is it possible to use an Android SDK on Raspberry Pi 4?,1642235936,1,573,0
+spring-boot,spring-boot,77732621,how to load css and font locally for jHipster 7,1703861873,0,12,0
+spring-boot,spring-boot,77732584,JBWEB000124: The requested resource is not available,1703861443,0,21,2
+"spring-boot,jpa",spring-boot,77716036,how to load JPA Entities and Repositories in sprint boot app from external folder/jar,1703573953,2,38,0
+android,android,77696969,How to trim video in jectpack compose with custom slider to select start and the end point in the video,1703151320,0,25,0
+json,json,41315878,Correct JSON API Request Godaddy Domain Purchase,1482604032,2,1322,1
+maven,maven,72837802,Eclipse maven exception java.lang.ExceptionInInitializerError: Cannot access defaults field of Properties [in thread &quot;Worker-27: Building&quot;],1656752503,2,6346,1
+spring-boot,spring-boot,77732517,Spring boot dont record multipart data from curl,1703860702,0,14,-1
+android,android,57883438,SigningConfig &quot;release&quot; is missing required property &quot;keyPassword&quot;,1568184020,10,37015,26
+android,android,77731931,How can i change keyboard language while changing the text field in flutter?,1703852025,1,27,0
+android,android,77732467,How to implement a search function in my Application that have a sqlite database?,1703860005,0,21,0
+"android,kotlin",android,77732462,Create of a Jetpack Compose project problem with gradle-plugin:1.9.0,1703859932,0,10,-1
+json,json,77732445,Generate C# source code for declaring anonymous object from json,1703859652,0,28,-5
+android,android,75787244,Show self in freeform window,1679294651,0,127,1
+docker,docker,77730216,azure app service can&#39;t find my endpoints added after first deploy,1703823087,1,57,0
+docker,docker,77729982,List all IP addresses of Docker containers from different machines connected to an overlay network,1703816607,1,22,-1
+"android,kotlin",android,53332435,How can I get a enum member by the ordinal value in kotlin?,1542349024,4,9419,12
+"android,kotlin",android,77732379,How to pick an image from imageslide show as wallpaper | Android Studio |Kotlin,1703858699,0,12,0
+"spring-boot,maven",spring-boot,77731274,Error while trying to return a list of objects from a rest api,1703843560,1,43,1
+kotlin,kotlin,77730911,ConcurrentModificationException on a object wrapped with lock,1703837840,2,64,0
+maven,maven,21252800,How to tell Maven to disregard SSL errors (and trusting all certs)?,1390292900,9,359068,178
+android,android,77732336,Problem with recording and saving video with CAMERA MAUI,1703858031,0,23,0
+spring-boot,spring-boot,77730455,How to use @PostMapping to create/delete/delete API,1703829357,2,47,-2
+docker,docker,77728685,PyCharm on Ubuntu - Debugging Docker Application Connection Refused,1703790018,0,26,0
+android,android,56789748,Is there a widget that supports rowspan and colspan in flutter?,1561633821,4,20028,16
+android,android,77729953,java.lang.NullPointerException: Attempt to invoke virtual method &#39;boolean java.lang.Class.isInterface()&#39; on a null object reference in build release,1703815980,0,24,-2
+spring-boot,spring-boot,77732270,WebProgramming - SpringBoot ( IntelliJ),1703856984,0,25,-3
+docker,docker,77732259,how can i assign perticular user to EFS mount container folder,1703856765,0,8,0
+docker,docker,77730491,How to install Java 11 in TeamCity?,1703830099,1,38,-1
+android,android,77732240,BlueCove library is not supported for Android,1703856517,0,22,0
+docker,docker,77717747,Use ExternalPythonOperator in Apache Airflow with a Windows venv on a Docker for Desktop setup,1703601166,0,39,0
+json,json,77732027,API-POST error: &#39; Syntax Error: Cannot parse the unexpected character \&quot;\\\\\&quot;.&quot;,1703853302,0,19,0
+json,json,77727427,How to determine if the json result has an array object named data and get all of its parent object names,1703773380,2,32,0
+kotlin,kotlin,47067302,What is difference between &quot;as&quot; and &quot;is&quot; operator in Kotlin?,1509594642,10,30143,27
+spring-boot,spring-boot,77732150,Spring Boot Test Controller with Security Parameter in Method Signature,1703855385,0,36,-1
+android,android,77732139,Android studio has a different preview on emulator and activity_main.xml,1703855150,0,14,0
+"android,kotlin",android,77732141,Why BLE scanning not working for me on Android 13?,1703855193,0,20,0
+maven,maven,77732140,"Getting SIGSEGV (0xb) at pc=0x00007fe2deb92bb0, pid=4611, tid=140613335000832 when running my java jar (flink)",1703855169,0,22,0
+javafx,javafx,32026419,JavaFX pane.getChildren().remove(child) throws IllegalArgumentException,1439653698,1,11490,0
+hibernate,hibernate,20822976,"The client to invoke an error is as follows:org.xml.sax.SAXException: SimpleDeserializer encountered a child element, which is NOT expected",1388301265,1,9387,0
+android,android,75027717,Confirm Subscription plan from play Store Flutter,1672986900,1,262,0
+json,json,76776065,Cypress: Is there any way we can substitute fixture fields with data generated in test case in order to generate dynamic payload (Tried existing sol),1690423087,2,240,-2
+docker,docker,77725359,Sail npm run dev,1703745586,0,19,0
+"android,gradle",android,77731876,"I am not able to build the apk file of the project, whenever I try to build I get thi error. dexBuilderDebug FAILED",1703851368,1,30,0
+android,android,77731420,Regarding Casting on all SMART TVs,1703845812,0,14,-2
+javafx,javafx,77731879,How to add minimise button in jxbrowser,1703851408,1,24,-1
+docker,docker,77732013,Why run multiple containers of the same docker image in single EC2 instance,1703853060,0,15,0
+gradle,gradle,77732007,LWJGL not working with Gradle - Linux ARM64 - Java 17,1703853001,0,7,0
+android,android,77731970,como a&#241;adir google wallet en ionic,1703852448,0,12,0
+docker,docker,65565717,Istio 1.8 upstream connect error or disconnect/reset before headers. reset reason: connection failure,1609775907,0,1956,1
+android,android,7021578,Resize Drawable in Android,1313043366,8,96579,42
+"spring-boot,docker",spring-boot,77725624,Getting error while integrating docker-java api,1703749890,0,25,-1
+"android,gradle",android,46435582,How to import org.apache.httpcomponents using Gradle,1506458954,1,17744,0
+docker,docker,44450265,What is a docker-compose.yml file?,1496987799,3,41007,23
+kotlin,kotlin,52522282,Using kotlinx.coroutines in IntelliJ IDEA project,1537979063,3,25548,37
+android,android,68656889,Jetpack compose: How to detect what is causing a Composable to recompose,1628104456,5,3928,21
+json,json,34209960,How can I group objects with the same name using Javascript?,1449775078,5,6672,2
+kotlin,kotlin,77731866,Problem translating retrofit multipart call to ktor,1703851256,0,8,0
+spring-boot,spring-boot,77731863,LinkageError after adding javax.ws.rs-api to Gradle build in Spring Boot 3.2 Kotlin project,1703851242,0,11,0
+json,json,15387154,Correct usage of Poco C++ JSON for parsing data,1363182399,3,36420,24
+"android,kotlin",android,77721223,problem with displaying grid layout while app has different theme than system,1703671283,1,35,0
+docker,docker,77731292,How can i run keycloak on docker container?,1703843784,1,47,0
+"android,kotlin",android,77731114,How to get phone number from an incoming call from Android 12?,1703841364,1,52,4
+android,android,77710470,Travel through Parents components (containers) from last element to first,1703417322,0,88,0
+docker,docker,77731823,Dotnet Runtime 8.0.0 not found in Ubuntu 23.10 arm64,1703850714,0,24,0
+android,android,77731551,io.ktor.utils.io.charsets.MalformedInputException: Input length = 1 error,1703847566,0,13,0
+json,json,77715125,Migrating neo4j database content / apoc.import.json not working,1703544108,1,15,0
+maven,maven,77731780,Webpack process exited with non-zero exit code,1703850093,0,11,0
+spring-boot,spring-boot,77727519,Actuator endpoints masking the values post Spring boot v3.2.1 migration,1703774397,1,33,0
+android,android,77724140,How to make RecyclerView items &quot;pop&quot; in place?,1703713745,1,23,0
+docker,docker,77731755,Running SQL Server and MySQL in Docker engine on Ubuntu vs. Local Machine Ubuntu. Which is best option for excellent performance?,1703849722,0,30,-2

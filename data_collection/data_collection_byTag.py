@@ -1,13 +1,12 @@
 import requests
 import json
 import csv
-import collections
 
 # 设置 API Key
 api_key = "3KuCjhqiJIDILRsikOerKQ(("
 
 # 定义要搜索的标签列表
-tags_to_search = ["spring-boot", "android", "spring", "maven", "hibernate", "gradle", "kotlin", "jpa", "docker", "spring-data-jpa"]
+tags_to_search = ["spring-boot", "android", "maven", "hibernate", "gradle", "kotlin", "jpa", "docker", "json", "javafx"]
 
 # 初始化数据列表
 data_list = []
@@ -36,20 +35,30 @@ while total_collected < 600:
 
     # 处理每个搜索结果
     for item in data["items"]:
-        # 检查标签是否属于指定的10个标签之一
+        # 获取问题的所有标签
         question_tags = item["tags"]
-        for tag in question_tags:
-            if tag in tags_to_search:
-                data_list.append({
-                    "Tag": tag,
-                    "Question ID": item["question_id"],
-                    "Title": item["title"],
-                    "Creation Date": item["creation_date"],
-                    "Answer Count": item["answer_count"],
-                    "View Count": item["view_count"],
-                    "Score": item["score"]
-                })
-                total_collected += 1
+
+        # 检查是否有标签在 tags_to_search 中
+        relevant_tags = [tag for tag in question_tags if tag in tags_to_search]
+
+        # 如果没有符合条件的标签，跳过这个问题
+        if not relevant_tags:
+            continue
+
+        # 选取第一个符合条件的标签作为主要标签
+        main_tag = relevant_tags[0]
+
+        data_list.append({
+            "Tags": relevant_tags,  # 存储问题的符合条件的标签列表
+            "Tag": main_tag,
+            "Question ID": item["question_id"],
+            "Title": item["title"],
+            "Creation Date": item["creation_date"],
+            "Answer Count": item["answer_count"],
+            "View Count": item["view_count"],
+            "Score": item["score"]
+        })
+        total_collected += 1
 
         # 判断是否还有更多页面的数据
         if not data["has_more"]:
@@ -73,9 +82,9 @@ with open("top_tags_questions.csv", "w", newline="", encoding="utf-8") as csv_fi
     csv_writer = csv.writer(csv_file)
 
     # 写入 CSV 头部
-    csv_writer.writerow(["Tag", "Question ID", "Title", "Creation Date", "Answer Count", "View Count", "Score"])
+    csv_writer.writerow(["Tags", "Tag", "Question ID", "Title", "Creation Date", "Answer Count", "View Count", "Score"])
 
     # 写入每个问题的数据
     for question in data_list:
-        csv_writer.writerow([question["Tag"], question["Question ID"], question["Title"], question["Creation Date"],
-                             question["Answer Count"], question["View Count"], question["Score"]])
+        csv_writer.writerow([",".join(question["Tags"]), question["Tag"], question["Question ID"], question["Title"],
+                             question["Creation Date"], question["Answer Count"], question["View Count"], question["Score"]])

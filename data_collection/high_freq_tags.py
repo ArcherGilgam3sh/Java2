@@ -17,7 +17,7 @@ for question in data_list:
 del tag_counts["java"]
 
 # 找出出现频率最高的10个标签
-top_tags = tag_counts.most_common(10)
+top_tags = tag_counts.most_common(20)
 
 print("Top 10 Tags (excluding 'java'):")
 for tag, count in top_tags:
