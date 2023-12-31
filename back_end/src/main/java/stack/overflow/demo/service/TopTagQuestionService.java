@@ -22,7 +22,10 @@ public class TopTagQuestionService {
     }
 
     public List<TopTagQuestion> getTopTags() {
-        List<TopTagQuestion> topTagQuestions = topTagQuestionRepository.findAll();
-        return topTagQuestions;
+        return topTagQuestionRepository.findAll();
+    }
+
+    public List<Object[]> getTagsStats() {
+        return topTagQuestionRepository.findAverageStatsPerTag();
     }
 }
