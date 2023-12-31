@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Boot Demo</title>
+</head>
+<body>
+<h1>TopTagsQuestion List</h1>
+<table>
+    <tr th:each="topTagsQuestion: ${topTagsQuestions}">
+        <td th:text="${topTagsQuestion.questionId}">ID</td>
+        <td th:text="${topTagsQuestion.tag}">Tag</td>
+        <td th:text="${topTagsQuestion.title}">Title</td>
+        <td th:text="${topTagsQuestion.creationDate}">CreationDate</td>
+        <td th:text="${topTagsQuestion.answerCount}">AnswerCount</td>
+        <td th:text="${topTagsQuestion.viewCount}">ViewCount</td>
+        <td th:text="${topTagsQuestion.score}">Score</td>
+    </tr>
+</table>
+</body>
+</html>
