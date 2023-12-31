@@ -22,11 +22,11 @@ try:
     create_table_query = '''CREATE TABLE IF NOT EXISTS top_tags_question (
                                 Tags TEXT,
                                 Tag TEXT,
-                                Question_ID BIGINT,
+                                QuestionID BIGINT,
                                 Title TEXT,
-                                Creation_Date BIGINT,
-                                Answer_Count INT,
-                                View_Count INT,
+                                CreationDate BIGINT,
+                                AnswerCount INT,
+                                ViewCount INT,
                                 Score INT
                             );'''
     cursor.execute(create_table_query)
@@ -34,7 +34,7 @@ try:
 
     # 插入数据到数据库表格中
     for item in data:
-        insert_query = '''INSERT INTO top_tags_question (Tags, Tag, Question_ID, Title, Creation_Date, Answer_Count, View_Count, Score)
+        insert_query = '''INSERT INTO top_tags_question (Tags, Tag, QuestionID, Title, CreationDate, AnswerCount, ViewCount, Score)
                           VALUES (%s, %s, %s, %s, %s, %s, %s, %s);'''
         cursor.execute(insert_query, (
             ','.join(item['Tags']),
