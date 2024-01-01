@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about socket</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>SSL Socket connection</td><td>1</td><td>20</td><td>56831</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/18787419/ssl-socket-connection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting the IP address of the current machine using Java</td><td>18</td><td>329</td><td>622832</td><td>2014-09-19</td><td><a href="https://stackoverflow.com/questions/9481865/getting-the-ip-address-of-the-current-machine-using-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between connection and read timeout for sockets?</td><td>2</td><td>216</td><td>198867</td><td>2012-01-18</td><td><a href="https://stackoverflow.com/questions/3069382/what-is-the-difference-between-connection-and-read-timeout-for-sockets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find an available port?</td><td>18</td><td>215</td><td>207129</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2675362/how-to-find-an-available-port" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to fix java.net.SocketException: Broken pipe?</td><td>10</td><td>174</td><td>573323</td><td>2013-06-03</td><td><a href="https://stackoverflow.com/questions/2309561/how-to-fix-java-net-socketexception-broken-pipe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Official reasons for &quot;Software caused connection abort: socket write error&quot;</td><td>14</td><td>166</td><td>373064</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2126607/official-reasons-for-software-caused-connection-abort-socket-write-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.net.SocketException: Connection reset</td><td>13</td><td>158</td><td>969919</td><td>2010-10-11</td><td><a href="https://stackoverflow.com/questions/62929/java-net-socketexception-connection-reset" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s causing my java.net.SocketException: Connection reset?</td><td>14</td><td>150</td><td>986372</td><td>2014-02-09</td><td><a href="https://stackoverflow.com/questions/585599/whats-causing-my-java-net-socketexception-connection-reset" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Sockets: Discover port availability using Java</td><td>10</td><td>136</td><td>162438</td><td>2011-02-08</td><td><a href="https://stackoverflow.com/questions/434718/sockets-discover-port-availability-using-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java socket API: How to tell if a connection has been closed?</td><td>9</td><td>107</td><td>127593</td><td>2014-01-10</td><td><a href="https://stackoverflow.com/questions/10240694/java-socket-api-how-to-tell-if-a-connection-has-been-closed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does a TCP socket connection have a &quot;keep alive&quot;?</td><td>8</td><td>98</td><td>181209</td><td>2012-10-25</td><td><a href="https://stackoverflow.com/questions/1480236/does-a-tcp-socket-connection-have-a-keep-alive" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is it impossible, without attempting I/O, to detect that TCP socket was gracefully closed by peer?</td><td>12</td><td>95</td><td>35495</td><td>2013-01-26</td><td><a href="https://stackoverflow.com/questions/155243/why-is-it-impossible-without-attempting-i-o-to-detect-that-tcp-socket-was-grac" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Setting a timeout for socket operations</td><td>6</td><td>89</td><td>196510</td><td>2014-09-25</td><td><a href="https://stackoverflow.com/questions/4969760/setting-a-timeout-for-socket-operations" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to detect a remote side socket close?</td><td>4</td><td>88</td><td>150074</td><td>2011-07-31</td><td><a href="https://stackoverflow.com/questions/151590/how-to-detect-a-remote-side-socket-close" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.net.SocketException: Software caused connection abort: recv failed</td><td>10</td><td>88</td><td>328995</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/135919/java-net-socketexception-software-caused-connection-abort-recv-failed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.net.SocketTimeoutException: Read timed out under Tomcat</td><td>7</td><td>80</td><td>463775</td><td>2017-01-27</td><td><a href="https://stackoverflow.com/questions/17079273/java-net-sockettimeoutexception-read-timed-out-under-tomcat" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to terminate a thread blocking on socket IO operation instantly?</td><td>2</td><td>78</td><td>33075</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4425350/how-to-terminate-a-thread-blocking-on-socket-io-operation-instantly" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Socket vs SocketChannel</td><td>3</td><td>76</td><td>45566</td><td>2013-01-09</td><td><a href="https://stackoverflow.com/questions/14225957/socket-vs-socketchannel" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Close multiple resources with AutoCloseable (try-with-resources)</td><td>4</td><td>71</td><td>57151</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/30553139/close-multiple-resources-with-autocloseable-try-with-resources" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>socket programming multiple client to one server</td><td>5</td><td>70</td><td>251997</td><td>2012-04-13</td><td><a href="https://stackoverflow.com/questions/10131377/socket-programming-multiple-client-to-one-server" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java sending and receiving file (byte[]) over sockets</td><td>6</td><td>67</td><td>272555</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9520911/java-sending-and-receiving-file-byte-over-sockets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to prevent hangs on SocketInputStream.socketRead0 in Java?</td><td>9</td><td>63</td><td>48077</td><td>2015-07-06</td><td><a href="https://stackoverflow.com/questions/28785085/how-to-prevent-hangs-on-socketinputstream-socketread0-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to avoid a NoRouteToHostException?</td><td>6</td><td>61</td><td>92789</td><td>2009-10-15</td><td><a href="https://stackoverflow.com/questions/1572215/how-to-avoid-a-noroutetohostexception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Asynchronous IO in Java?</td><td>6</td><td>60</td><td>73413</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/592303/asynchronous-io-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Cannot assign requested address using ServerSocket.socketBind</td><td>15</td><td>58</td><td>237280</td><td>2015-12-05</td><td><a href="https://stackoverflow.com/questions/8965155/cannot-assign-requested-address-using-serversocket-socketbind" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do Java sockets support full duplex?</td><td>2</td><td>56</td><td>14794</td><td>2011-06-07</td><td><a href="https://stackoverflow.com/questions/6265731/do-java-sockets-support-full-duplex" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Send HTTP request manually via socket</td><td>4</td><td>52</td><td>99961</td><td>2016-02-23</td><td><a href="https://stackoverflow.com/questions/10673684/send-http-request-manually-via-socket" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java simple code: java.net.SocketException: Unexpected end of file from server</td><td>8</td><td>49</td><td>204695</td><td>2013-11-06</td><td><a href="https://stackoverflow.com/questions/19824339/java-simple-code-java-net-socketexception-unexpected-end-of-file-from-server" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between Socket and ServerSocket?</td><td>9</td><td>47</td><td>68411</td><td>2013-04-11</td><td><a href="https://stackoverflow.com/questions/2004531/what-is-the-difference-between-socket-and-serversocket" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java socket IOException - permission denied</td><td>2</td><td>43</td><td>62749</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4074808/java-socket-ioexception-permission-denied" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set timeout on client socket connection?</td><td>3</td><td>41</td><td>93727</td><td>2012-03-21</td><td><a href="https://stackoverflow.com/questions/5632279/how-to-set-timeout-on-client-socket-connection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reading inputStream using BufferedReader.readLine() is too slow</td><td>2</td><td>41</td><td>177062</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5594725/reading-inputstream-using-bufferedreader-readline-is-too-slow" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to identify end of InputStream in java</td><td>8</td><td>40</td><td>71206</td><td>2014-02-18</td><td><a href="https://stackoverflow.com/questions/5562370/how-to-identify-end-of-inputstream-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java socket / output stream writes : do they block?</td><td>2</td><td>40</td><td>32028</td><td>2012-06-22</td><td><a href="https://stackoverflow.com/questions/1338885/java-socket-output-stream-writes-do-they-block" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create Java socket that is localhost only?</td><td>4</td><td>37</td><td>81523</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2205073/how-to-create-java-socket-that-is-localhost-only" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to achieve transfer file between client and server using java socket</td><td>1</td><td>35</td><td>109237</td><td>2011-01-14</td><td><a href="https://stackoverflow.com/questions/4687615/how-to-achieve-transfer-file-between-client-and-server-using-java-socket" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Common way to validate and convert &quot;host:port&quot; to InetSocketAddress?</td><td>8</td><td>34</td><td>34164</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2345063/java-common-way-to-validate-and-convert-hostport-to-inetsocketaddress" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using Sockets to send and receive data</td><td>3</td><td>34</td><td>168314</td><td>2011-11-03</td><td><a href="https://stackoverflow.com/questions/5680259/using-sockets-to-send-and-receive-data" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Testing Java Sockets</td><td>4</td><td>34</td><td>74306</td><td>2011-10-28</td><td><a href="https://stackoverflow.com/questions/5577274/testing-java-sockets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find the IP Address of Client connected to Server?</td><td>4</td><td>33</td><td>99602</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1840420/how-to-find-the-ip-address-of-client-connected-to-server" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to add heartbeat messaging on top of this Java code( for KnockKnockClient/Server)?</td><td>8</td><td>33</td><td>26453</td><td>2013-04-01</td><td><a href="https://stackoverflow.com/questions/15604015/how-to-add-heartbeat-messaging-on-top-of-this-java-code-for-knockknockclient-se" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Fastest way to scan ports with Java</td><td>7</td><td>32</td><td>62406</td><td>2016-01-23</td><td><a href="https://stackoverflow.com/questions/11547082/fastest-way-to-scan-ports-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Creating a socket server which allows multiple connections via threads and Java</td><td>2</td><td>32</td><td>82412</td><td>2011-02-24</td><td><a href="https://stackoverflow.com/questions/5109654/creating-a-socket-server-which-allows-multiple-connections-via-threads-and-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Creating JSON objects directly from model classes in Java</td><td>5</td><td>32</td><td>101690</td><td>2016-01-28</td><td><a href="https://stackoverflow.com/questions/10930624/creating-json-objects-directly-from-model-classes-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.net.BindException: Permission denied when creating a ServerSocket on Mac OSX</td><td>7</td><td>31</td><td>47065</td><td>2016-11-16</td><td><a href="https://stackoverflow.com/questions/25544849/java-net-bindexception-permission-denied-when-creating-a-serversocket-on-mac-os" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the best way to pass information between threads?</td><td>3</td><td>31</td><td>50303</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14148422/what-is-the-best-way-to-pass-information-between-threads" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does closing the inputstream of a socket also close the socket connection?</td><td>1</td><td>31</td><td>23079</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3956163/does-closing-the-inputstream-of-a-socket-also-close-the-socket-connection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&quot;java.net.BindException: Address already in use&quot; when trying to do rapid Socket creation and destruction for load testing</td><td>3</td><td>31</td><td>69334</td><td>2011-08-04</td><td><a href="https://stackoverflow.com/questions/4708649/java-net-bindexception-address-already-in-use-when-trying-to-do-rapid-socket" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can a socket be both connected and closed?</td><td>1</td><td>30</td><td>16785</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3701073/how-can-a-socket-be-both-connected-and-closed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>A Simple Http Server with Java/Socket?</td><td>5</td><td>29</td><td>80413</td><td>2014-09-23</td><td><a href="https://stackoverflow.com/questions/10788125/a-simple-http-server-with-java-socket" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Socket send and receive byte array</td><td>4</td><td>28</td><td>152839</td><td>2013-09-29</td><td><a href="https://stackoverflow.com/questions/1176135/socket-send-and-receive-byte-array" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Troubleshooting connections stuck in CLOSE_WAIT status</td><td>6</td><td>28</td><td>95860</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5636316/troubleshooting-connections-stuck-in-close-wait-status" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to send and receive serialized object in socket channel</td><td>1</td><td>28</td><td>50800</td><td>2009-09-21</td><td><a href="https://stackoverflow.com/questions/1453028/how-to-send-and-receive-serialized-object-in-socket-channel" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Listen to port via a Java socket</td><td>3</td><td>27</td><td>109259</td><td>2013-04-29</td><td><a href="https://stackoverflow.com/questions/6298479/listen-to-port-via-a-java-socket" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I check if a Socket is currently connected in Java?</td><td>2</td><td>27</td><td>141072</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1390024/how-do-i-check-if-a-socket-is-currently-connected-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Access to WebView from another function in MainActivity class</td><td>2</td><td>27</td><td>1410</td><td>2015-12-18</td><td><a href="https://stackoverflow.com/questions/34257151/access-to-webview-from-another-function-in-mainactivity-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get MAC address on local machine with Java</td><td>9</td><td>26</td><td>79546</td><td>2011-05-28</td><td><a href="https://stackoverflow.com/questions/6164167/get-mac-address-on-local-machine-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to send an array of bytes over a TCP connection (java programming)</td><td>9</td><td>26</td><td>95185</td><td>2010-05-21</td><td><a href="https://stackoverflow.com/questions/2878867/how-to-send-an-array-of-bytes-over-a-tcp-connection-java-programming" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Communication between local JVMs</td><td>11</td><td>26</td><td>16005</td><td>2011-02-19</td><td><a href="https://stackoverflow.com/questions/5052102/communication-between-local-jvms" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a basic Java Server?</td><td>6</td><td>26</td><td>92842</td><td>2011-11-10</td><td><a href="https://stackoverflow.com/questions/2187626/how-to-create-a-basic-java-server" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Send and receive data on UDP Socket java android</td><td>2</td><td>25</td><td>90198</td><td>2016-02-24</td><td><a href="https://stackoverflow.com/questions/19540715/send-and-receive-data-on-udp-socket-java-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using Socket.IO on android Always Returns XHR Poll Error</td><td>8</td><td>25</td><td>36079</td><td>2016-05-07</td><td><a href="https://stackoverflow.com/questions/37093221/using-socket-io-on-android-always-returns-xhr-poll-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best way to implement Socket.io in android</td><td>4</td><td>25</td><td>8675</td><td>2018-01-19</td><td><a href="https://stackoverflow.com/questions/32102332/best-way-to-implement-socket-io-in-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Send text through Bluetooth from Java Server to Android Client</td><td>1</td><td>25</td><td>25817</td><td>2012-06-07</td><td><a href="https://stackoverflow.com/questions/10929767/send-text-through-bluetooth-from-java-server-to-android-client" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Behavior of Java sockets when closing output stream</td><td>2</td><td>24</td><td>17495</td><td>2012-01-17</td><td><a href="https://stackoverflow.com/questions/8890303/behavior-of-java-sockets-when-closing-output-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Finding out what network sockets are open in the current Java VM</td><td>2</td><td>24</td><td>14911</td><td>2012-07-26</td><td><a href="https://stackoverflow.com/questions/11669554/finding-out-what-network-sockets-are-open-in-the-current-java-vm" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between DataOutputStream and ObjectOutputStream?</td><td>4</td><td>23</td><td>24207</td><td>2012-07-17</td><td><a href="https://stackoverflow.com/questions/11521027/whats-the-difference-between-dataoutputstream-and-objectoutputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Adding timeout to DatagramSocket - receive()</td><td>2</td><td>23</td><td>36177</td><td>2012-09-11</td><td><a href="https://stackoverflow.com/questions/12363078/adding-timeout-to-datagramsocket-receive" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Background process in linux</td><td>7</td><td>23</td><td>47626</td><td>2013-12-13</td><td><a href="https://stackoverflow.com/questions/9430559/background-process-in-linux" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Interrupt a thread in DatagramSocket.receive</td><td>3</td><td>23</td><td>12124</td><td>2013-08-25</td><td><a href="https://stackoverflow.com/questions/4670664/interrupt-a-thread-in-datagramsocket-receive" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Socket using in a swing applet</td><td>2</td><td>23</td><td>21928</td><td>2011-04-25</td><td><a href="https://stackoverflow.com/questions/3244400/socket-using-in-a-swing-applet" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to timeout a read on Java Socket?</td><td>3</td><td>22</td><td>49531</td><td>2010-08-25</td><td><a href="https://stackoverflow.com/questions/3570762/how-to-timeout-a-read-on-java-socket" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Creating a new ObjectInputStream Blocks</td><td>3</td><td>21</td><td>12200</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5658089/java-creating-a-new-objectinputstream-blocks" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Checking if server is online from Java code</td><td>4</td><td>21</td><td>60294</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17147352/checking-if-server-is-online-from-java-code" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does &#39;end of stream&#39; mean when working with sockets</td><td>4</td><td>21</td><td>28208</td><td>2013-04-19</td><td><a href="https://stackoverflow.com/questions/649320/what-does-end-of-stream-mean-when-working-with-sockets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between closing Input/OutputStream and closing Socket directly?</td><td>3</td><td>21</td><td>17101</td><td>2011-11-21</td><td><a href="https://stackoverflow.com/questions/3428127/what-is-the-difference-between-closing-input-outputstream-and-closing-socket-dir" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Received fatal alert: bad_certificate</td><td>3</td><td>21</td><td>82637</td><td>2012-08-03</td><td><a href="https://stackoverflow.com/questions/11799733/received-fatal-alert-bad-certificate" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android: Streaming audio over TCP Sockets</td><td>3</td><td>21</td><td>18015</td><td>2010-05-01</td><td><a href="https://stackoverflow.com/questions/2749236/android-streaming-audio-over-tcp-sockets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Address family not supported by protocol family - SocketException on a specific computer</td><td>6</td><td>20</td><td>80003</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/16373906/address-family-not-supported-by-protocol-family-socketexception-on-a-specific" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java client/server application with sockets?</td><td>6</td><td>20</td><td>78031</td><td>2009-11-21</td><td><a href="https://stackoverflow.com/questions/1776457/java-client-server-application-with-sockets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Record Mic to Byte Array and Play sound</td><td>1</td><td>20</td><td>27778</td><td>2016-01-17</td><td><a href="https://stackoverflow.com/questions/25798200/java-record-mic-to-byte-array-and-play-sound" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Socket, BufferedReader hangs at readLine()</td><td>4</td><td>20</td><td>30164</td><td>2011-10-09</td><td><a href="https://stackoverflow.com/questions/5987970/socket-bufferedreader-hangs-at-readline" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I close the socket in a proper way?</td><td>5</td><td>20</td><td>104955</td><td>2012-07-08</td><td><a href="https://stackoverflow.com/questions/8051863/how-can-i-close-the-socket-in-a-proper-way" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java sockets: multiple client threads on same port on same machine?</td><td>6</td><td>20</td><td>44650</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2821658/java-sockets-multiple-client-threads-on-same-port-on-same-machine" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reading an inputStream all at once</td><td>3</td><td>20</td><td>15538</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5751510/reading-an-inputstream-all-at-once" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Simple Java Client/Server Program</td><td>9</td><td>20</td><td>121513</td><td>2010-01-29</td><td><a href="https://stackoverflow.com/questions/2165006/simple-java-client-server-program" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can&#39;t read socket InputStream on Jelly Bean</td><td>7</td><td>20</td><td>2339</td><td>2013-06-30</td><td><a href="https://stackoverflow.com/questions/15154113/cant-read-socket-inputstream-on-jelly-bean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a TCP window update?</td><td>7</td><td>19</td><td>60698</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1466307/what-is-a-tcp-window-update" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java -- How to read an unknown number of bytes from an inputStream (socket/socketServer)?</td><td>11</td><td>19</td><td>90761</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5690954/java-how-to-read-an-unknown-number-of-bytes-from-an-inputstream-socket-socke" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the best way to pass information from java to c++?</td><td>8</td><td>19</td><td>6186</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/463240/what-is-the-best-way-to-pass-information-from-java-to-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to run a socket server and socket client on the same machine?</td><td>4</td><td>19</td><td>42478</td><td>2012-12-28</td><td><a href="https://stackoverflow.com/questions/10069059/is-it-possible-to-run-a-socket-server-and-socket-client-on-the-same-machine" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are ports in networking?</td><td>1</td><td>19</td><td>16805</td><td>2011-03-21</td><td><a href="https://stackoverflow.com/questions/5378406/what-are-ports-in-networking" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>DatagramPacket - will getData always return the same buffer which is passed?</td><td>1</td><td>19</td><td>925</td><td>2018-10-05</td><td><a href="https://stackoverflow.com/questions/37560008/datagrampacket-will-getdata-always-return-the-same-buffer-which-is-passed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to connect a Socket server via HTTP proxy</td><td>9</td><td>19</td><td>47160</td><td>2012-09-21</td><td><a href="https://stackoverflow.com/questions/7225873/how-to-connect-a-socket-server-via-http-proxy" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Bittorrent implementation in java &amp;&amp; need some info on swarm behaviour</td><td>1</td><td>19</td><td>2118</td><td>2015-10-28</td><td><a href="https://stackoverflow.com/questions/15527712/bittorrent-implementation-in-java-need-some-info-on-swarm-behaviour" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>UNIX Domain Socket in Java</td><td>4</td><td>18</td><td>32382</td><td>2014-02-12</td><td><a href="https://stackoverflow.com/questions/4099432/unix-domain-socket-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android HTTP Connection</td><td>2</td><td>18</td><td>19949</td><td>2010-10-06</td><td><a href="https://stackoverflow.com/questions/442496/android-http-connection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Tweaking performance of Java&#39;s sockets</td><td>5</td><td>18</td><td>33286</td><td>2012-05-18</td><td><a href="https://stackoverflow.com/questions/10614962/tweaking-performance-of-javas-sockets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How is Non-Blocking IO implemented?</td><td>1</td><td>18</td><td>7105</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10538708/how-is-non-blocking-io-implemented" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Forefront TMG vs java and php (ftp)</td><td>2</td><td>18</td><td>830</td><td>2017-01-21</td><td><a href="https://stackoverflow.com/questions/20607943/forefront-tmg-vs-java-and-php-ftp" target="_blank">click</a></td>
+        </tr> 
+        </table>
+    </div>
+</div>
+</body>
+</html>

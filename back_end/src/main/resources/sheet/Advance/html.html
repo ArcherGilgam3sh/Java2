@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about html</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Multiple line code example in Javadoc comment</td><td>18</td><td>584</td><td>238677</td><td>2009-02-12</td><td><a href="https://stackoverflow.com/questions/541920/multiple-line-code-example-in-javadoc-comment" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Remove HTML tags from a String</td><td>35</td><td>466</td><td>530298</td><td>2015-07-08</td><td><a href="https://stackoverflow.com/questions/240546/remove-html-tags-from-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to send HTTP request in java?</td><td>9</td><td>430</td><td>1072071</td><td>2012-02-19</td><td><a href="https://stackoverflow.com/questions/1359689/how-to-send-http-request-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the recommended way to escape HTML symbols in plain Java?</td><td>12</td><td>288</td><td>399188</td><td>2015-05-24</td><td><a href="https://stackoverflow.com/questions/1265282/what-is-the-recommended-way-to-escape-html-symbols-in-plain-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I efficiently parse HTML with Java?</td><td>3</td><td>202</td><td>197879</td><td>2016-01-04</td><td><a href="https://stackoverflow.com/questions/2168610/how-can-i-efficiently-parse-html-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the pros and cons of the leading Java HTML parsers?</td><td>6</td><td>178</td><td>58123</td><td>2010-09-20</td><td><a href="https://stackoverflow.com/questions/3152138/what-are-the-pros-and-cons-of-the-leading-java-html-parsers" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to unescape HTML character entities in Java?</td><td>12</td><td>168</td><td>288981</td><td>2014-08-16</td><td><a href="https://stackoverflow.com/questions/994331/how-to-unescape-html-character-entities-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting HTML files to PDF</td><td>8</td><td>135</td><td>237779</td><td>2014-10-10</td><td><a href="https://stackoverflow.com/questions/633780/converting-html-files-to-pdf" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Thymeleaf: how to use conditionals to dynamically add/remove a CSS class</td><td>10</td><td>107</td><td>132995</td><td>2017-04-20</td><td><a href="https://stackoverflow.com/questions/25133807/thymeleaf-how-to-use-conditionals-to-dynamically-add-remove-a-css-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Thymeleaf: Concatenation - Could not parse as expression</td><td>4</td><td>95</td><td>126813</td><td>2015-08-28</td><td><a href="https://stackoverflow.com/questions/16119421/thymeleaf-concatenation-could-not-parse-as-expression" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Regular expression to validate username</td><td>11</td><td>94</td><td>135682</td><td>2016-03-04</td><td><a href="https://stackoverflow.com/questions/12018245/regular-expression-to-validate-username" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Selecting elements whose attribute begins with something in XPath</td><td>2</td><td>90</td><td>52034</td><td>2013-05-28</td><td><a href="https://stackoverflow.com/questions/3301898/selecting-elements-whose-attribute-begins-with-something-in-xpath" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Instantiate a class object with constructor that accepts a string parameter?</td><td>4</td><td>89</td><td>96872</td><td>2013-05-20</td><td><a href="https://stackoverflow.com/questions/3574065/instantiate-a-class-object-with-constructor-that-accepts-a-string-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java unsupported major minor version 52.0</td><td>4</td><td>81</td><td>260741</td><td>2015-12-16</td><td><a href="https://stackoverflow.com/questions/23249331/java-unsupported-major-minor-version-52-0" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to download image from any web page in java</td><td>6</td><td>69</td><td>196714</td><td>2015-02-09</td><td><a href="https://stackoverflow.com/questions/5882005/how-to-download-image-from-any-web-page-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Parse JSON from HttpURLConnection object</td><td>5</td><td>65</td><td>175897</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10500775/parse-json-from-httpurlconnection-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to &quot;scan&quot; a website (or page) for info, and bring it into my program?</td><td>10</td><td>58</td><td>108762</td><td>2011-08-21</td><td><a href="https://stackoverflow.com/questions/2835505/how-to-scan-a-website-or-page-for-info-and-bring-it-into-my-program" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set up a multi-language project in IntelliJ IDEA</td><td>2</td><td>56</td><td>17625</td><td>2016-05-07</td><td><a href="https://stackoverflow.com/questions/14936709/how-to-set-up-a-multi-language-project-in-intellij-idea" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>setting up a value for a variable name in thymeleaf</td><td>3</td><td>55</td><td>109747</td><td>2016-12-06</td><td><a href="https://stackoverflow.com/questions/20728660/setting-up-a-value-for-a-variable-name-in-thymeleaf" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to have multiple condition in an th:if tag using thymeleaf</td><td>4</td><td>54</td><td>95827</td><td>2013-05-21</td><td><a href="https://stackoverflow.com/questions/16018577/how-to-have-multiple-condition-in-an-thif-tag-using-thymeleaf" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java HTML Parsing</td><td>11</td><td>52</td><td>109923</td><td>2011-03-29</td><td><a href="https://stackoverflow.com/questions/238036/java-html-parsing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Write HTML file using Java</td><td>11</td><td>49</td><td>209881</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5936003/write-html-file-using-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>jsoup - strip all formatting and link tags, keep text only</td><td>3</td><td>48</td><td>44417</td><td>2012-10-17</td><td><a href="https://stackoverflow.com/questions/12943734/jsoup-strip-all-formatting-and-link-tags-keep-text-only" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Parse Web Site HTML with JAVA</td><td>3</td><td>46</td><td>94657</td><td>2014-06-08</td><td><a href="https://stackoverflow.com/questions/9071568/parse-web-site-html-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>scrollIntoView vs moveToElement</td><td>1</td><td>46</td><td>51228</td><td>2016-01-18</td><td><a href="https://stackoverflow.com/questions/34562095/scrollintoview-vs-movetoelement" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Stripping HTML tags in Java</td><td>13</td><td>44</td><td>62656</td><td>2013-05-15</td><td><a href="https://stackoverflow.com/questions/832620/stripping-html-tags-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to format the currency in HTML5 with thymeleaf</td><td>4</td><td>44</td><td>72502</td><td>2016-01-01</td><td><a href="https://stackoverflow.com/questions/14160304/how-to-format-the-currency-in-html5-with-thymeleaf" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I escape special HTML characters in JSP?</td><td>1</td><td>44</td><td>82855</td><td>2010-09-07</td><td><a href="https://stackoverflow.com/questions/475839/how-can-i-escape-special-html-characters-in-jsp" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to return a html page from a restful controller in spring boot?</td><td>20</td><td>43</td><td>166692</td><td>2017-09-08</td><td><a href="https://stackoverflow.com/questions/38700790/how-to-return-a-html-page-from-a-restful-controller-in-spring-boot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Page content is loaded with JavaScript and Jsoup doesn&#39;t see it</td><td>9</td><td>43</td><td>61004</td><td>2015-04-29</td><td><a href="https://stackoverflow.com/questions/7488872/page-content-is-loaded-with-javascript-and-jsoup-doesnt-see-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert HTML Character Back to Text Using Java Standard Library</td><td>8</td><td>42</td><td>121414</td><td>2009-03-01</td><td><a href="https://stackoverflow.com/questions/599634/convert-html-character-back-to-text-using-java-standard-library" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert byte[] to Base64 string for data URI</td><td>5</td><td>38</td><td>85673</td><td>2011-01-30</td><td><a href="https://stackoverflow.com/questions/4838464/convert-byte-to-base64-string-for-data-uri" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to parse HTML table using jsoup?</td><td>3</td><td>38</td><td>75543</td><td>2014-07-16</td><td><a href="https://stackoverflow.com/questions/24772828/how-to-parse-html-table-using-jsoup" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to change the position of My Location Button in Google Maps using android studio</td><td>13</td><td>37</td><td>61373</td><td>2016-04-22</td><td><a href="https://stackoverflow.com/questions/36785542/how-to-change-the-position-of-my-location-button-in-google-maps-using-android-st" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java escape HTML</td><td>6</td><td>37</td><td>68879</td><td>2011-02-02</td><td><a href="https://stackoverflow.com/questions/4874626/java-escape-html" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Pure Java HTML viewer/renderer for use in a Scrollable pane</td><td>7</td><td>37</td><td>59371</td><td>2013-08-18</td><td><a href="https://stackoverflow.com/questions/2438201/pure-java-html-viewer-renderer-for-use-in-a-scrollable-pane" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to sanitize HTML code in Java to prevent XSS attacks?</td><td>5</td><td>36</td><td>64095</td><td>2010-08-05</td><td><a href="https://stackoverflow.com/questions/3413297/how-to-sanitize-html-code-in-java-to-prevent-xss-attacks" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using for loop inside of a JSP</td><td>2</td><td>35</td><td>184798</td><td>2014-05-03</td><td><a href="https://stackoverflow.com/questions/15839335/using-for-loop-inside-of-a-jsp" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to convert HTML text to plain text?</td><td>10</td><td>35</td><td>86162</td><td>2013-09-25</td><td><a href="https://stackoverflow.com/questions/3607965/how-to-convert-html-text-to-plain-text" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I parse RFC 3339 datetimes with Java?</td><td>9</td><td>35</td><td>40583</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6038136/how-do-i-parse-rfc-3339-datetimes-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting java gui to open a webpage in web browser</td><td>4</td><td>34</td><td>55460</td><td>2009-03-03</td><td><a href="https://stackoverflow.com/questions/602032/getting-java-gui-to-open-a-webpage-in-web-browser" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to fetch HTML in Java</td><td>5</td><td>33</td><td>68355</td><td>2008-08-28</td><td><a href="https://stackoverflow.com/questions/31462/how-to-fetch-html-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Text wrap in JOptionPane?</td><td>3</td><td>32</td><td>14672</td><td>2012-12-23</td><td><a href="https://stackoverflow.com/questions/14011492/text-wrap-in-joptionpane" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a JDK class to do HTML encoding (but not URL encoding)?</td><td>7</td><td>32</td><td>52529</td><td>2010-09-15</td><td><a href="https://stackoverflow.com/questions/655746/is-there-a-jdk-class-to-do-html-encoding-but-not-url-encoding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java HTML Builder (anti-template) library?</td><td>3</td><td>32</td><td>17988</td><td>2010-09-11</td><td><a href="https://stackoverflow.com/questions/3583846/java-html-builder-anti-template-library" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>HTML/XML Parser for Java</td><td>7</td><td>32</td><td>26061</td><td>2010-04-09</td><td><a href="https://stackoverflow.com/questions/2129375/html-xml-parser-for-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&lt;tt&gt; vs &lt;code&gt; elements when writing Java docs</td><td>4</td><td>30</td><td>11708</td><td>2013-01-26</td><td><a href="https://stackoverflow.com/questions/14537311/tt-vs-code-elements-when-writing-java-docs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Simplest way to correctly load html from web page into a string in Java</td><td>3</td><td>30</td><td>42244</td><td>2009-12-11</td><td><a href="https://stackoverflow.com/questions/1381617/simplest-way-to-correctly-load-html-from-web-page-into-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Looking for a question that combines the understanding of few web technologies</td><td>10</td><td>29</td><td>976</td><td>2010-08-12</td><td><a href="https://stackoverflow.com/questions/3429511/looking-for-a-question-that-combines-the-understanding-of-few-web-technologies" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring MVC Multiple ModelAttribute On the Same Form</td><td>3</td><td>29</td><td>83165</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/13242394/spring-mvc-multiple-modelattribute-on-the-same-form" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best regex to catch XSS (Cross-site Scripting) attack (in Java)?</td><td>9</td><td>28</td><td>85641</td><td>2014-07-23</td><td><a href="https://stackoverflow.com/questions/24723/best-regex-to-catch-xss-cross-site-scripting-attack-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Javadoc have an equivalent to &lt;![CDATA[ ... ]]&gt;?</td><td>4</td><td>28</td><td>7093</td><td>2010-12-10</td><td><a href="https://stackoverflow.com/questions/1782040/does-javadoc-have-an-equivalent-to-cdata" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I populate a drop down with a list using thymeleaf and spring</td><td>5</td><td>28</td><td>73862</td><td>2017-06-30</td><td><a href="https://stackoverflow.com/questions/37715276/how-do-i-populate-a-drop-down-with-a-list-using-thymeleaf-and-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jsoup.clean without adding html entities</td><td>7</td><td>28</td><td>30747</td><td>2011-12-30</td><td><a href="https://stackoverflow.com/questions/8683018/jsoup-clean-without-adding-html-entities" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Use embedded web browser (e.g. Chrome) as GUI toolkit for Java desktop applications?</td><td>5</td><td>28</td><td>23020</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9235079/use-embedded-web-browser-e-g-chrome-as-gui-toolkit-for-java-desktop-applicati" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I return a video with Spring MVC so that it can be navigated using the html5 &lt;video&gt; tag?</td><td>5</td><td>27</td><td>30902</td><td>2015-02-15</td><td><a href="https://stackoverflow.com/questions/20634603/how-do-i-return-a-video-with-spring-mvc-so-that-it-can-be-navigated-using-the-ht" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Request Parameter Losing Plus Sign</td><td>3</td><td>26</td><td>33462</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7842547/request-parameter-losing-plus-sign" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to convert HTML into XHTML with Jsoup 1.8.1?</td><td>3</td><td>26</td><td>12070</td><td>2015-03-16</td><td><a href="https://stackoverflow.com/questions/29087077/is-it-possible-to-convert-html-into-xhtml-with-jsoup-1-8-1" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use HTML and CSS as a Java application GUI?</td><td>6</td><td>26</td><td>74670</td><td>2011-08-24</td><td><a href="https://stackoverflow.com/questions/7176981/how-to-use-html-and-css-as-a-java-application-gui" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Freemarker and hashmap. How do I get key-value</td><td>4</td><td>25</td><td>76168</td><td>2013-08-26</td><td><a href="https://stackoverflow.com/questions/14821329/freemarker-and-hashmap-how-do-i-get-key-value" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Html.fromHtml(String) + Linebreak Problem</td><td>4</td><td>25</td><td>11736</td><td>2010-07-26</td><td><a href="https://stackoverflow.com/questions/3337948/html-fromhtmlstring-linebreak-problem" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Page Encoding in JSP</td><td>3</td><td>25</td><td>21573</td><td>2014-11-14</td><td><a href="https://stackoverflow.com/questions/3596213/page-encoding-in-jsp" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use the browser&#39;s (chrome/firefox) HTML/CSS/JS rendering engine to produce PDF?</td><td>2</td><td>25</td><td>14489</td><td>2016-07-16</td><td><a href="https://stackoverflow.com/questions/25574082/how-to-use-the-browsers-chrome-firefox-html-css-js-rendering-engine-to-produc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find if String contains html data?</td><td>7</td><td>24</td><td>31785</td><td>2013-01-23</td><td><a href="https://stackoverflow.com/questions/3052052/how-to-find-if-string-contains-html-data" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Simple/Direct/Heredoc way of constructing a HTML string in Java</td><td>6</td><td>24</td><td>5415</td><td>2010-04-21</td><td><a href="https://stackoverflow.com/questions/2678483/simple-direct-heredoc-way-of-constructing-a-html-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert Word doc to HTML programmatically in Java</td><td>11</td><td>24</td><td>75028</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/227236/convert-word-doc-to-html-programmatically-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between &amp;#32; and &amp;nbsp;</td><td>5</td><td>23</td><td>25919</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11984029/difference-between-32-and-nbsp" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to avoid surrounding html head tags in Jsoup parse</td><td>4</td><td>23</td><td>9298</td><td>2014-10-03</td><td><a href="https://stackoverflow.com/questions/26173769/how-to-avoid-surrounding-html-head-tags-in-jsoup-parse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I minify dynamic HTML responses in Spring?</td><td>1</td><td>23</td><td>2938</td><td>2018-08-28</td><td><a href="https://stackoverflow.com/questions/46423560/how-do-i-minify-dynamic-html-responses-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Disable HTML Warnings in Eclipse for Java EE developers edition</td><td>5</td><td>22</td><td>33556</td><td>2014-06-11</td><td><a href="https://stackoverflow.com/questions/1918020/disable-html-warnings-in-eclipse-for-java-ee-developers-edition" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Set HTML dropdown selected option using JSTL</td><td>3</td><td>22</td><td>129881</td><td>2010-04-21</td><td><a href="https://stackoverflow.com/questions/2682018/set-html-dropdown-selected-option-using-jstl" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to click on hidden element in Selenium WebDriver?</td><td>7</td><td>22</td><td>121446</td><td>2014-11-30</td><td><a href="https://stackoverflow.com/questions/22110282/how-to-click-on-hidden-element-in-selenium-webdriver" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I extract only the main textual content from an HTML page?</td><td>9</td><td>22</td><td>20805</td><td>2014-07-02</td><td><a href="https://stackoverflow.com/questions/7021260/how-can-i-extract-only-the-main-textual-content-from-an-html-page" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to detect low-spec mobile devices meaningfully?</td><td>3</td><td>22</td><td>3264</td><td>2015-03-08</td><td><a href="https://stackoverflow.com/questions/15921481/how-to-detect-low-spec-mobile-devices-meaningfully" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to pass two objects to use in a form using thymeleaf?</td><td>2</td><td>21</td><td>55350</td><td>2017-02-13</td><td><a href="https://stackoverflow.com/questions/16122257/how-to-pass-two-objects-to-use-in-a-form-using-thymeleaf" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JSP - What is wrong with scriptlets, and what to use instead</td><td>3</td><td>21</td><td>6800</td><td>2018-07-02</td><td><a href="https://stackoverflow.com/questions/38340291/jsp-what-is-wrong-with-scriptlets-and-what-to-use-instead" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Open source java library for HTML to text conversion</td><td>5</td><td>21</td><td>19592</td><td>2009-10-05</td><td><a href="https://stackoverflow.com/questions/1518675/open-source-java-library-for-html-to-text-conversion" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How make the form password data hidden in Chrome developer tools network pannel when login.do submit?</td><td>1</td><td>21</td><td>21398</td><td>2015-01-15</td><td><a href="https://stackoverflow.com/questions/27952182/how-make-the-form-password-data-hidden-in-chrome-developer-tools-network-pannel" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Compare two HTML sources and display visual differences</td><td>6</td><td>21</td><td>35844</td><td>2013-09-23</td><td><a href="https://stackoverflow.com/questions/18955417/compare-two-html-sources-and-display-visual-differences" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to URL encode a URL in JSP / JSTL?</td><td>3</td><td>20</td><td>50058</td><td>2016-04-26</td><td><a href="https://stackoverflow.com/questions/15923062/how-to-url-encode-a-url-in-jsp-jstl" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find out which HTML button was pushed in my servlet?</td><td>4</td><td>20</td><td>63756</td><td>2009-06-28</td><td><a href="https://stackoverflow.com/questions/1054543/how-to-find-out-which-html-button-was-pushed-in-my-servlet" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to send post form with java?</td><td>4</td><td>20</td><td>84406</td><td>2013-10-10</td><td><a href="https://stackoverflow.com/questions/7581550/how-to-send-post-form-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to pass Object using jsp:include param tag into another jsp</td><td>3</td><td>20</td><td>28855</td><td>2017-05-24</td><td><a href="https://stackoverflow.com/questions/29367559/how-to-pass-object-using-jspinclude-param-tag-into-another-jsp" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to abbreviate HTML with Java?</td><td>4</td><td>20</td><td>1605</td><td>2016-03-06</td><td><a href="https://stackoverflow.com/questions/7697118/how-to-abbreviate-html-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert HTML to PDF using iText</td><td>2</td><td>19</td><td>173369</td><td>2013-07-24</td><td><a href="https://stackoverflow.com/questions/17825782/how-to-convert-html-to-pdf-using-itext" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>best way to externalize HTML in GWT apps?</td><td>14</td><td>19</td><td>30274</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/744137/best-way-to-externalize-html-in-gwt-apps" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Text Extraction from HTML Java</td><td>8</td><td>19</td><td>50443</td><td>2011-06-10</td><td><a href="https://stackoverflow.com/questions/1386107/text-extraction-from-html-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Including JavaScript variable inside thymeleaf</td><td>4</td><td>19</td><td>30412</td><td>2014-03-22</td><td><a href="https://stackoverflow.com/questions/22575136/including-javascript-variable-inside-thymeleaf" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>variable from .jsp to the html page</td><td>6</td><td>19</td><td>64644</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10488367/variable-from-jsp-to-the-html-page" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting HTML to PDF using iText</td><td>3</td><td>19</td><td>52227</td><td>2019-10-26</td><td><a href="https://stackoverflow.com/questions/47895935/converting-html-to-pdf-using-itext" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert HTML File to PDF Using Java</td><td>3</td><td>19</td><td>57559</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/38924048/convert-html-file-to-pdf-using-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unicode issue with an HTML Title, question mark? 65533;</td><td>1</td><td>18</td><td>42884</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3526965/unicode-issue-with-an-html-title-question-mark-65533" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why, in general, are nested block comments NOT allowed?</td><td>3</td><td>18</td><td>3803</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17328276/why-in-general-are-nested-block-comments-not-allowed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to return actual html file using JAX-RS</td><td>4</td><td>17</td><td>28196</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11489929/how-to-return-actual-html-file-using-jax-rs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Loading images from jars for Swing HTML</td><td>4</td><td>17</td><td>9347</td><td>2014-06-04</td><td><a href="https://stackoverflow.com/questions/6373621/loading-images-from-jars-for-swing-html" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Selenium - Find all elements of a web page</td><td>2</td><td>17</td><td>45975</td><td>2013-10-30</td><td><a href="https://stackoverflow.com/questions/19683016/selenium-find-all-elements-of-a-web-page" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Parsing the html meta tag with jsoup library</td><td>4</td><td>17</td><td>13468</td><td>2016-06-02</td><td><a href="https://stackoverflow.com/questions/37591685/parsing-the-html-meta-tag-with-jsoup-library" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I put a placeholder in a struts textfield tag?</td><td>5</td><td>17</td><td>18293</td><td>2013-11-26</td><td><a href="https://stackoverflow.com/questions/20209487/how-can-i-put-a-placeholder-in-a-struts-textfield-tag" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How configure eclipse for jsp formatting?</td><td>5</td><td>17</td><td>33730</td><td>2013-09-03</td><td><a href="https://stackoverflow.com/questions/18592682/how-configure-eclipse-for-jsp-formatting" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which HTML tags are supported in Swing components?</td><td>4</td><td>17</td><td>5576</td><td>2013-09-17</td><td><a href="https://stackoverflow.com/questions/872871/which-html-tags-are-supported-in-swing-components" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

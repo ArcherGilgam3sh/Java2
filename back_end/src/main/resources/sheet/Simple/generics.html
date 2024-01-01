@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about generics</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a generic array in Java?</td><td>31</td><td>1197</td><td>931526</td><td>2013-02-14</td><td><a href="https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between &lt;? super T&gt; and &lt;? extends T&gt; in Java</td><td>14</td><td>968</td><td>305235</td><td>2014-04-24</td><td><a href="https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is List&lt;Dog&gt; a subclass of List&lt;Animal&gt;? Why are Java generics not implicitly polymorphic?</td><td>20</td><td>854</td><td>128394</td><td>2014-08-10</td><td><a href="https://stackoverflow.com/questions/2745265/is-listdog-a-subclass-of-listanimal-why-are-java-generics-not-implicitly-po" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is PECS (Producer Extends Consumer Super)?</td><td>16</td><td>846</td><td>141034</td><td>2013-04-16</td><td><a href="https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I get a class instance of generic type T?</td><td>23</td><td>816</td><td>869489</td><td>2015-05-29</td><td><a href="https://stackoverflow.com/questions/3437897/how-do-i-get-a-class-instance-of-generic-type-t" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a raw type and why shouldn&#39;t we use it?</td><td>15</td><td>765</td><td>302698</td><td>2013-10-12</td><td><a href="https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I address unchecked cast warnings?</td><td>23</td><td>671</td><td>504418</td><td>2013-03-02</td><td><a href="https://stackoverflow.com/questions/509076/how-do-i-address-unchecked-cast-warnings" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I make the method return type generic?</td><td>19</td><td>667</td><td>825420</td><td>2012-09-16</td><td><a href="https://stackoverflow.com/questions/450807/how-do-i-make-the-method-return-type-generic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Create instance of generic type in Java?</td><td>29</td><td>631</td><td>542392</td><td>2010-06-27</td><td><a href="https://stackoverflow.com/questions/75175/create-instance-of-generic-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get generic type of class at runtime</td><td>29</td><td>601</td><td>736133</td><td>2013-04-15</td><td><a href="https://stackoverflow.com/questions/3403909/get-generic-type-of-class-at-runtime" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Possible heap pollution via varargs parameter</td><td>6</td><td>511</td><td>131779</td><td>2016-01-29</td><td><a href="https://stackoverflow.com/questions/12462079/possible-heap-pollution-via-varargs-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Deserialize a List&lt;T&gt; object with Gson?</td><td>15</td><td>500</td><td>384350</td><td>2016-08-11</td><td><a href="https://stackoverflow.com/questions/5554217/deserialize-a-listt-object-with-gson" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the point of the diamond operator (&lt;&gt;) in Java?</td><td>7</td><td>481</td><td>163346</td><td>2016-03-14</td><td><a href="https://stackoverflow.com/questions/4166966/what-is-the-point-of-the-diamond-operator-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is SuppressWarnings (&quot;unchecked&quot;) in Java?</td><td>11</td><td>481</td><td>468125</td><td>2009-07-15</td><td><a href="https://stackoverflow.com/questions/1129795/what-is-suppresswarnings-unchecked-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the reasons why Map.get(Object key) is not (fully) generic</td><td>11</td><td>437</td><td>60419</td><td>2011-09-07</td><td><a href="https://stackoverflow.com/questions/857420/what-are-the-reasons-why-map-getobject-key-is-not-fully-generic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Generics With a Class &amp; an Interface - Together</td><td>3</td><td>421</td><td>172209</td><td>2015-02-25</td><td><a href="https://stackoverflow.com/questions/745756/java-generics-with-a-class-an-interface-together" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Method has the same erasure as another method in type</td><td>7</td><td>413</td><td>206880</td><td>2015-01-02</td><td><a href="https://stackoverflow.com/questions/1998544/method-has-the-same-erasure-as-another-method-in-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using Mockito to mock classes with generic parameters</td><td>10</td><td>354</td><td>232080</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1652692/using-mockito-to-mock-classes-with-generic-parameters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is &quot;extends T&quot; allowed but not &quot;implements T&quot;?</td><td>9</td><td>338</td><td>208199</td><td>2015-11-08</td><td><a href="https://stackoverflow.com/questions/976441/why-is-extends-t-allowed-but-not-implements-t" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What causes javac to issue the &quot;uses unchecked or unsafe operations&quot; warning</td><td>12</td><td>332</td><td>476974</td><td>2013-12-25</td><td><a href="https://stackoverflow.com/questions/197986/what-causes-javac-to-issue-the-uses-unchecked-or-unsafe-operations-warning" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between &#39;E&#39;, &#39;T&#39;, and &#39;?&#39; for Java generics?</td><td>6</td><td>312</td><td>181531</td><td>2015-04-17</td><td><a href="https://stackoverflow.com/questions/6008241/what-is-the-difference-between-e-t-and-for-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the reason I can&#39;t create generic array types in Java?</td><td>17</td><td>301</td><td>203950</td><td>2014-10-19</td><td><a href="https://stackoverflow.com/questions/2927391/whats-the-reason-i-cant-create-generic-array-types-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get generic type of java.util.List</td><td>15</td><td>299</td><td>358923</td><td>2009-12-21</td><td><a href="https://stackoverflow.com/questions/1942644/get-generic-type-of-java-util-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you cast a List of supertypes to a List of subtypes?</td><td>18</td><td>294</td><td>314873</td><td>2012-01-28</td><td><a href="https://stackoverflow.com/questions/933447/how-do-you-cast-a-list-of-supertypes-to-a-list-of-subtypes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Collections.emptyList() returns a List&lt;Object&gt;?</td><td>4</td><td>282</td><td>219241</td><td>2014-10-30</td><td><a href="https://stackoverflow.com/questions/306713/collections-emptylist-returns-a-listobject" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use Class&lt;T&gt; in Java?</td><td>11</td><td>280</td><td>654048</td><td>2013-03-23</td><td><a href="https://stackoverflow.com/questions/462297/how-to-use-classt-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why don&#39;t Java Generics support primitive types?</td><td>5</td><td>269</td><td>93346</td><td>2014-02-21</td><td><a href="https://stackoverflow.com/questions/2721546/why-dont-java-generics-support-primitive-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generics type erasure: when and what happens?</td><td>7</td><td>267</td><td>103118</td><td>2013-09-11</td><td><a href="https://stackoverflow.com/questions/339699/java-generics-type-erasure-when-and-what-happens" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does the question mark in Java generics&#39; type parameter mean?</td><td>6</td><td>250</td><td>128818</td><td>2011-01-09</td><td><a href="https://stackoverflow.com/questions/3009745/what-does-the-question-mark-in-java-generics-type-parameter-mean" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When do Java generics require &lt;? extends T&gt; instead of &lt;T&gt; and is there any downside of switching?</td><td>7</td><td>238</td><td>375614</td><td>2012-11-30</td><td><a href="https://stackoverflow.com/questions/897935/when-do-java-generics-require-extends-t-instead-of-t-and-is-there-any-down" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: how do I get a class literal from a generic type?</td><td>8</td><td>237</td><td>208407</td><td>2014-03-04</td><td><a href="https://stackoverflow.com/questions/2390662/java-how-do-i-get-a-class-literal-from-a-generic-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mockito.any() pass Interface with Generics</td><td>8</td><td>228</td><td>110723</td><td>2011-10-27</td><td><a href="https://stackoverflow.com/questions/7917635/mockito-any-pass-interface-with-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Static method in a generic class?</td><td>12</td><td>213</td><td>189724</td><td>2014-11-02</td><td><a href="https://stackoverflow.com/questions/936377/static-method-in-a-generic-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson - Deserialize using generic class</td><td>10</td><td>210</td><td>237260</td><td>2015-05-07</td><td><a href="https://stackoverflow.com/questions/11664894/jackson-deserialize-using-generic-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the differences between Generics in C# and Java... and Templates in C++?</td><td>13</td><td>203</td><td>56851</td><td>2008-12-19</td><td><a href="https://stackoverflow.com/questions/31693/what-are-the-differences-between-generics-in-c-and-java-and-templates-in-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I convert int[] to Integer[] in Java?</td><td>12</td><td>202</td><td>235796</td><td>2015-10-13</td><td><a href="https://stackoverflow.com/questions/880581/how-can-i-convert-int-to-integer-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to make a Java Generic method static?</td><td>5</td><td>201</td><td>195641</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4409100/how-to-make-a-java-generic-method-static" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between List, List&lt;?&gt;, List&lt;T&gt;, List&lt;E&gt;, and List&lt;Object&gt;</td><td>10</td><td>201</td><td>168723</td><td>2015-08-16</td><td><a href="https://stackoverflow.com/questions/6231973/difference-between-list-list-listt-liste-and-listobject" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mockito: List Matchers with generics</td><td>4</td><td>189</td><td>168481</td><td>2013-09-14</td><td><a href="https://stackoverflow.com/questions/10512374/mockito-list-matchers-with-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are arrays covariant but generics are invariant?</td><td>9</td><td>189</td><td>41159</td><td>2015-07-16</td><td><a href="https://stackoverflow.com/questions/18666710/why-are-arrays-covariant-but-generics-are-invariant" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a difference between &lt;? super E&gt; and &lt;? extends E&gt;?</td><td>10</td><td>178</td><td>64037</td><td>2011-03-11</td><td><a href="https://stackoverflow.com/questions/1368166/what-is-a-difference-between-super-e-and-extends-e" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I add to List&lt;? extends Number&gt; data structures?</td><td>7</td><td>177</td><td>83181</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2776975/how-can-i-add-to-list-extends-number-data-structures" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to make a Java class that implements one interface with two generic types?</td><td>9</td><td>175</td><td>63521</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1297972/how-to-make-a-java-class-that-implements-one-interface-with-two-generic-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generic return type upper bound - interface vs. class - surprisingly valid code</td><td>2</td><td>173</td><td>29100</td><td>2016-04-04</td><td><a href="https://stackoverflow.com/questions/36402646/generic-return-type-upper-bound-interface-vs-class-surprisingly-valid-code" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Enum definition</td><td>7</td><td>173</td><td>24088</td><td>2010-09-24</td><td><a href="https://stackoverflow.com/questions/211143/java-enum-definition" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I clone a generic List in Java?</td><td>14</td><td>171</td><td>268662</td><td>2013-11-04</td><td><a href="https://stackoverflow.com/questions/54909/how-do-i-clone-a-generic-list-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t Java allow generic subclasses of Throwable?</td><td>6</td><td>170</td><td>36451</td><td>2012-08-02</td><td><a href="https://stackoverflow.com/questions/501277/why-doesnt-java-allow-generic-subclasses-of-throwable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the differences between &quot;generic&quot; types in C++ and Java?</td><td>13</td><td>167</td><td>106444</td><td>2011-06-18</td><td><a href="https://stackoverflow.com/questions/36347/what-are-the-differences-between-generic-types-in-c-and-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Cast Object to Generic Type for returning</td><td>3</td><td>165</td><td>252474</td><td>2013-01-25</td><td><a href="https://stackoverflow.com/questions/14524751/cast-object-to-generic-type-for-returning" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why shouldn&#39;t Java enum literals be able to have generic type parameters?</td><td>8</td><td>165</td><td>32717</td><td>2014-01-20</td><td><a href="https://stackoverflow.com/questions/4290878/why-shouldnt-java-enum-literals-be-able-to-have-generic-type-parameters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get type of a generic parameter in Java with reflection</td><td>18</td><td>163</td><td>214828</td><td>2012-11-04</td><td><a href="https://stackoverflow.com/questions/1901164/get-type-of-a-generic-parameter-in-java-with-reflection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Instantiating a generic class in Java</td><td>10</td><td>161</td><td>206190</td><td>2011-07-27</td><td><a href="https://stackoverflow.com/questions/1090458/instantiating-a-generic-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does &lt;T&gt; (angle brackets) mean in Java?</td><td>6</td><td>158</td><td>168967</td><td>2015-12-02</td><td><a href="https://stackoverflow.com/questions/6607550/what-does-t-angle-brackets-mean-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to solve the &quot;A generic array of T is created for a varargs parameter&quot; compiler warning?</td><td>8</td><td>158</td><td>59409</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1445233/is-it-possible-to-solve-the-a-generic-array-of-t-is-created-for-a-varargs-param" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Map equivalent in C#</td><td>3</td><td>157</td><td>174171</td><td>2011-02-16</td><td><a href="https://stackoverflow.com/questions/687942/java-map-equivalent-in-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Instanceof and Generics</td><td>9</td><td>157</td><td>205102</td><td>2011-07-15</td><td><a href="https://stackoverflow.com/questions/1570073/java-instanceof-and-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generics T vs Object</td><td>8</td><td>157</td><td>89964</td><td>2012-10-29</td><td><a href="https://stackoverflow.com/questions/5207115/java-generics-t-vs-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between ? and Object in Java generics?</td><td>6</td><td>154</td><td>38598</td><td>2009-04-11</td><td><a href="https://stackoverflow.com/questions/678822/what-is-the-difference-between-and-object-in-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the concept of erasure in generics in Java?</td><td>7</td><td>153</td><td>44945</td><td>2012-04-26</td><td><a href="https://stackoverflow.com/questions/313584/what-is-the-concept-of-erasure-in-generics-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why aren&#39;t Java Collections remove methods generic?</td><td>10</td><td>150</td><td>19123</td><td>2015-05-22</td><td><a href="https://stackoverflow.com/questions/104799/why-arent-java-collections-remove-methods-generic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mockito: Stubbing Methods That Return Type With Bounded Wild-Cards</td><td>5</td><td>148</td><td>106415</td><td>2013-01-14</td><td><a href="https://stackoverflow.com/questions/7366237/mockito-stubbing-methods-that-return-type-with-bounded-wild-cards" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use generic methods and when to use wild-card?</td><td>9</td><td>147</td><td>68095</td><td>2014-10-15</td><td><a href="https://stackoverflow.com/questions/18176594/when-to-use-generic-methods-and-when-to-use-wild-card" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generic type parameter naming convention for Java (with multiple chars)?</td><td>5</td><td>145</td><td>70350</td><td>2014-03-28</td><td><a href="https://stackoverflow.com/questions/2900881/generic-type-parameter-naming-convention-for-java-with-multiple-chars" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson and generic type reference</td><td>3</td><td>142</td><td>193207</td><td>2016-06-19</td><td><a href="https://stackoverflow.com/questions/6846244/jackson-and-generic-type-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does a tilde in angle brackets mean when creating a Java generic class?</td><td>4</td><td>140</td><td>35445</td><td>2015-02-05</td><td><a href="https://stackoverflow.com/questions/4887876/what-does-a-tilde-in-angle-brackets-mean-when-creating-a-java-generic-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java: HashMap&lt;String, int&gt; not working</td><td>5</td><td>139</td><td>277728</td><td>2009-11-22</td><td><a href="https://stackoverflow.com/questions/1780385/java-hashmapstring-int-not-working" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java unchecked: unchecked generic array creation for varargs parameter</td><td>2</td><td>132</td><td>73462</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/21132692/java-unchecked-unchecked-generic-array-creation-for-varargs-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What do constructor type arguments mean when placed *before* the type?</td><td>2</td><td>132</td><td>6878</td><td>2019-04-05</td><td><a href="https://stackoverflow.com/questions/55330697/what-do-constructor-type-arguments-mean-when-placed-before-the-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>C# vs Java generics</td><td>3</td><td>131</td><td>54058</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/355060/c-vs-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>returning a Void object</td><td>6</td><td>130</td><td>130067</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2408626/returning-a-void-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>List&lt;Map&lt;String, String&gt;&gt; vs List&lt;? extends Map&lt;String, String&gt;&gt;</td><td>5</td><td>129</td><td>130504</td><td>2012-05-02</td><td><a href="https://stackoverflow.com/questions/9810445/listmapstring-string-vs-list-extends-mapstring-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do some claim that Java&#39;s implementation of generics is bad?</td><td>14</td><td>127</td><td>22720</td><td>2013-03-31</td><td><a href="https://stackoverflow.com/questions/520527/why-do-some-claim-that-javas-implementation-of-generics-is-bad" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to cast List&lt;Object&gt; to List&lt;MyClass&gt;</td><td>17</td><td>126</td><td>250603</td><td>2009-12-17</td><td><a href="https://stackoverflow.com/questions/1917844/how-to-cast-listobject-to-listmyclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Create a List of primitive int?</td><td>10</td><td>124</td><td>293011</td><td>2015-03-06</td><td><a href="https://stackoverflow.com/questions/18021218/create-a-list-of-primitive-int" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Generics: Cannot cast List&lt;SubClass&gt; to List&lt;SuperClass&gt;?</td><td>10</td><td>122</td><td>70527</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3246137/java-generics-cannot-cast-listsubclass-to-listsuperclass" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Calling static generic methods</td><td>1</td><td>121</td><td>80264</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5297978/calling-static-generic-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Generics (Wildcards)</td><td>7</td><td>119</td><td>74751</td><td>2012-01-27</td><td><a href="https://stackoverflow.com/questions/252055/java-generics-wildcards" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Class.cast() vs. cast operator</td><td>8</td><td>119</td><td>182139</td><td>2013-05-17</td><td><a href="https://stackoverflow.com/questions/1555326/java-class-cast-vs-cast-operator" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What do I return if the return type of a method is Void? (Not void!)</td><td>6</td><td>119</td><td>67369</td><td>2014-03-15</td><td><a href="https://stackoverflow.com/questions/676663/what-do-i-return-if-the-return-type-of-a-method-is-void-not-void" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambda Expression and generic defined only in method</td><td>5</td><td>117</td><td>83900</td><td>2018-01-19</td><td><a href="https://stackoverflow.com/questions/22588518/lambda-expression-and-generic-defined-only-in-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between &#39;&amp;&#39; and &#39;,&#39; in Java generics?</td><td>1</td><td>110</td><td>3271</td><td>2013-08-22</td><td><a href="https://stackoverflow.com/questions/18381936/what-is-the-difference-between-and-in-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to avoid type safety warnings with Hibernate HQL results?</td><td>15</td><td>108</td><td>71464</td><td>2014-02-04</td><td><a href="https://stackoverflow.com/questions/115692/how-to-avoid-type-safety-warnings-with-hibernate-hql-results" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Instantiating object of type parameter</td><td>7</td><td>107</td><td>79464</td><td>2008-11-18</td><td><a href="https://stackoverflow.com/questions/299998/instantiating-object-of-type-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between &lt;?&gt; and &lt;? extends Object&gt; in Java Generics?</td><td>3</td><td>106</td><td>50665</td><td>2013-08-18</td><td><a href="https://stackoverflow.com/questions/8055389/whats-the-difference-between-and-extends-object-in-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why should I care that Java doesn&#39;t have reified generics?</td><td>13</td><td>103</td><td>11959</td><td>2009-12-18</td><td><a href="https://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Cannot create an array of LinkedLists in Java...?</td><td>9</td><td>103</td><td>74584</td><td>2012-01-13</td><td><a href="https://stackoverflow.com/questions/217065/cannot-create-an-array-of-linkedlists-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to instanceof List&lt;MyType&gt;?</td><td>9</td><td>101</td><td>127828</td><td>2012-04-11</td><td><a href="https://stackoverflow.com/questions/10108122/how-to-instanceof-listmytype" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Test if object is instanceof a parameter type</td><td>6</td><td>97</td><td>86675</td><td>2014-09-11</td><td><a href="https://stackoverflow.com/questions/5734720/test-if-object-is-instanceof-a-parameter-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generics - get class?</td><td>5</td><td>95</td><td>183063</td><td>2014-03-27</td><td><a href="https://stackoverflow.com/questions/4837190/java-generics-get-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to Autowire Bean of generic type &lt;T&gt; in Spring?</td><td>6</td><td>94</td><td>87147</td><td>2014-03-26</td><td><a href="https://stackoverflow.com/questions/22603291/how-to-autowire-bean-of-generic-type-t-in-spring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Iterate enum values using java generics</td><td>10</td><td>94</td><td>50128</td><td>2010-02-05</td><td><a href="https://stackoverflow.com/questions/2205891/iterate-enum-values-using-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: bounded wildcards or bounded type parameter?</td><td>5</td><td>94</td><td>42864</td><td>2012-12-07</td><td><a href="https://stackoverflow.com/questions/3486689/java-bounded-wildcards-or-bounded-type-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the &quot;proper&quot; way to cast Hibernate Query.list() to List&lt;Type&gt;?</td><td>12</td><td>91</td><td>142427</td><td>2015-05-02</td><td><a href="https://stackoverflow.com/questions/15913150/what-is-the-proper-way-to-cast-hibernate-query-list-to-listtype" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the point of Guava&#39;s Optional class</td><td>4</td><td>90</td><td>25901</td><td>2016-11-25</td><td><a href="https://stackoverflow.com/questions/9561295/whats-the-point-of-guavas-optional-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java-syntax for explicitly specifying generic arguments in method calls</td><td>3</td><td>90</td><td>26923</td><td>2014-04-05</td><td><a href="https://stackoverflow.com/questions/3012781/java-syntax-for-explicitly-specifying-generic-arguments-in-method-calls" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>A peculiar feature of exception type inference in Java 8</td><td>3</td><td>88</td><td>6297</td><td>2015-07-12</td><td><a href="https://stackoverflow.com/questions/31316581/a-peculiar-feature-of-exception-type-inference-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between &#39;super&#39; and &#39;extends&#39; in Java Generics</td><td>6</td><td>87</td><td>42392</td><td>2015-05-09</td><td><a href="https://stackoverflow.com/questions/1910892/what-is-the-difference-between-super-and-extends-in-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I find out what type each object is in a ArrayList&lt;Object&gt;?</td><td>12</td><td>87</td><td>268320</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/106336/how-do-i-find-out-what-type-each-object-is-in-a-arraylistobject" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a generic array?</td><td>4</td><td>87</td><td>115820</td><td>2013-11-20</td><td><a href="https://stackoverflow.com/questions/18581002/how-to-create-a-generic-array" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Explanation of the get-put principle</td><td>1</td><td>87</td><td>31202</td><td>2012-09-13</td><td><a href="https://stackoverflow.com/questions/1292109/explanation-of-the-get-put-principle" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about javafx</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Swing vs JavaFx for desktop applications</td><td>6</td><td>206</td><td>239255</td><td>2014-11-30</td><td><a href="https://stackoverflow.com/questions/16694948/swing-vs-javafx-for-desktop-applications" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX Application Icon</td><td>17</td><td>197</td><td>173263</td><td>2013-11-10</td><td><a href="https://stackoverflow.com/questions/10121991/javafx-application-icon" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX and OpenJDK</td><td>7</td><td>128</td><td>148639</td><td>2015-07-12</td><td><a href="https://stackoverflow.com/questions/18547362/javafx-and-openjdk" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to run JavaFX applications on iOS, Android or Windows Phone 8?</td><td>5</td><td>115</td><td>114838</td><td>2015-05-07</td><td><a href="https://stackoverflow.com/questions/20860931/is-it-possible-to-run-javafx-applications-on-ios-android-or-windows-phone-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX FXML controller - constructor vs initialize method</td><td>3</td><td>104</td><td>162495</td><td>2016-03-14</td><td><a href="https://stackoverflow.com/questions/34785417/javafx-fxml-controller-constructor-vs-initialize-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Error: JavaFX runtime components are missing, and are required to run this application with JDK 11</td><td>1</td><td>102</td><td>330564</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/51478675/error-javafx-runtime-components-are-missing-and-are-required-to-run-this-appli" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Platform.runLater and Task in JavaFX</td><td>4</td><td>96</td><td>178079</td><td>2014-07-02</td><td><a href="https://stackoverflow.com/questions/13784333/platform-runlater-and-task-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX - setVisible hides the element but doesn&#39;t rearrange adjacent nodes</td><td>5</td><td>95</td><td>78708</td><td>2017-11-25</td><td><a href="https://stackoverflow.com/questions/28558165/javafx-setvisible-hides-the-element-but-doesnt-rearrange-adjacent-nodes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IntelliJ can&#39;t recognize JavaFX 11 with OpenJDK 11</td><td>7</td><td>94</td><td>141707</td><td>2018-11-14</td><td><a href="https://stackoverflow.com/questions/52467561/intellij-cant-recognize-javafx-11-with-openjdk-11" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>javac: invalid target release: 1.8</td><td>16</td><td>91</td><td>171314</td><td>2015-09-09</td><td><a href="https://stackoverflow.com/questions/24766591/javac-invalid-target-release-1-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>cannot resolve symbol javafx.application in IntelliJ Idea IDE</td><td>12</td><td>90</td><td>176009</td><td>2015-04-05</td><td><a href="https://stackoverflow.com/questions/27178895/cannot-resolve-symbol-javafx-application-in-intellij-idea-ide" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using JavaFX in JRE 8, “Access restriction” error</td><td>11</td><td>89</td><td>101651</td><td>2016-06-13</td><td><a href="https://stackoverflow.com/questions/22812488/using-javafx-in-jre-8-access-restriction-error" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to close a JavaFX application on window close?</td><td>13</td><td>84</td><td>180156</td><td>2015-02-21</td><td><a href="https://stackoverflow.com/questions/12153622/how-to-close-a-javafx-application-on-window-close" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is JavaFX is not included in OpenJDK 8 on Ubuntu Wily (15.10)?</td><td>2</td><td>84</td><td>126365</td><td>2017-07-28</td><td><a href="https://stackoverflow.com/questions/34243982/why-is-javafx-is-not-included-in-openjdk-8-on-ubuntu-wily-15-10" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find an element with an ID in JavaFX?</td><td>1</td><td>73</td><td>69650</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/12201712/how-to-find-an-element-with-an-id-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is javafx mangling my semi-transparent cursors?</td><td>1</td><td>73</td><td>1536</td><td>2018-08-21</td><td><a href="https://stackoverflow.com/questions/46426283/why-is-javafx-mangling-my-semi-transparent-cursors" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>All my JavaFX TextFields have lines in them</td><td>2</td><td>72</td><td>2163</td><td>2015-10-11</td><td><a href="https://stackoverflow.com/questions/30698297/all-my-javafx-textfields-have-lines-in-them" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX 2.1 TableView refresh items</td><td>26</td><td>67</td><td>156817</td><td>2013-08-19</td><td><a href="https://stackoverflow.com/questions/11065140/javafx-2-1-tableview-refresh-items" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>close fxml window by code, javafx</td><td>9</td><td>66</td><td>194323</td><td>2015-06-09</td><td><a href="https://stackoverflow.com/questions/13567019/close-fxml-window-by-code-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven Shade JavaFX runtime components are missing</td><td>1</td><td>65</td><td>29862</td><td>2018-10-04</td><td><a href="https://stackoverflow.com/questions/52653836/maven-shade-javafx-runtime-components-are-missing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Label and Text differences in JavaFX</td><td>3</td><td>63</td><td>32768</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/24374867/label-and-text-differences-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX Location is not set error message</td><td>21</td><td>62</td><td>128971</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17228487/javafx-location-is-not-set-error-message" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Javafx 2 click and double click</td><td>11</td><td>61</td><td>70685</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10949461/javafx-2-click-and-double-click" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Disabling a Button in JavaFX</td><td>2</td><td>59</td><td>115569</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17871329/disabling-a-button-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX: Stage close handler</td><td>4</td><td>58</td><td>119095</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/26619566/javafx-stage-close-handler" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Remove the default &#39;no content in table&#39; text for empty javafx table</td><td>2</td><td>57</td><td>23846</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/24765549/remove-the-default-no-content-in-table-text-for-empty-javafx-table" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How perform task on JavaFX TextField at onfocus and outfocus?</td><td>4</td><td>57</td><td>67240</td><td>2016-05-18</td><td><a href="https://stackoverflow.com/questions/16549296/how-perform-task-on-javafx-textfield-at-onfocus-and-outfocus" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I resize an imageview image in javafx?</td><td>1</td><td>57</td><td>106811</td><td>2015-04-21</td><td><a href="https://stackoverflow.com/questions/27894945/how-do-i-resize-an-imageview-image-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the location of the JavaFX runtime JAR file, jfxrt.jar, on Linux?</td><td>4</td><td>57</td><td>111417</td><td>2014-03-19</td><td><a href="https://stackoverflow.com/questions/22514310/whats-the-location-of-the-javafx-runtime-jar-file-jfxrt-jar-on-linux" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX TableView text alignment</td><td>6</td><td>51</td><td>85685</td><td>2012-11-19</td><td><a href="https://stackoverflow.com/questions/13455326/javafx-tableview-text-alignment" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Packaging jar is invalid Aggregator project need pom as packaging</td><td>2</td><td>50</td><td>47018</td><td>2016-04-09</td><td><a href="https://stackoverflow.com/questions/18733729/packaging-jar-is-invalid-aggregator-project-need-pom-as-packaging" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Graph Visualisation (like yFiles) in JavaFX</td><td>4</td><td>49</td><td>27849</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/30679025/graph-visualisation-like-yfiles-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Applying MVC With JavaFx</td><td>2</td><td>49</td><td>72121</td><td>2016-09-19</td><td><a href="https://stackoverflow.com/questions/32342864/applying-mvc-with-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Maven project with JavaFX (with jar file in `lib`)</td><td>1</td><td>49</td><td>53707</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/15278215/maven-project-with-javafx-with-jar-file-in-lib" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Trying to style SwingNodes in JavaFX with GTKLookAndFeel freezes application</td><td>1</td><td>48</td><td>995</td><td>2017-08-30</td><td><a href="https://stackoverflow.com/questions/43787113/trying-to-style-swingnodes-in-javafx-with-gtklookandfeel-freezes-application" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Value Change Listener for JavaFX&#39;s TextField</td><td>1</td><td>47</td><td>95220</td><td>2017-11-29</td><td><a href="https://stackoverflow.com/questions/30160899/value-change-listener-for-javafxs-textfield" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to right align a button in Java FX toolbar</td><td>5</td><td>47</td><td>26823</td><td>2015-11-28</td><td><a href="https://stackoverflow.com/questions/24896498/how-to-right-align-a-button-in-java-fx-toolbar" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to reference javafx fxml files in resource folder?</td><td>3</td><td>46</td><td>89104</td><td>2013-10-26</td><td><a href="https://stackoverflow.com/questions/19602727/how-to-reference-javafx-fxml-files-in-resource-folder" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between fx:id and id: in JavaFX?</td><td>4</td><td>46</td><td>36326</td><td>2015-11-24</td><td><a href="https://stackoverflow.com/questions/23686325/whats-the-difference-between-fxid-and-id-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>ListView with custom CellFactory trims invisible nodes</td><td>2</td><td>45</td><td>1244</td><td>2017-03-30</td><td><a href="https://stackoverflow.com/questions/43016854/listview-with-custom-cellfactory-trims-invisible-nodes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX on Linux is showing a &quot;Graphics Device initialization failed for : es2, sw&quot;</td><td>16</td><td>44</td><td>65103</td><td>2014-01-17</td><td><a href="https://stackoverflow.com/questions/21185156/javafx-on-linux-is-showing-a-graphics-device-initialization-failed-for-es2-s" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to deploy a JavaFX 11 Desktop application with a JRE</td><td>3</td><td>43</td><td>19180</td><td>2018-11-24</td><td><a href="https://stackoverflow.com/questions/53453212/how-to-deploy-a-javafx-11-desktop-application-with-a-jre" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX, Casting ArrayList to ObservableList</td><td>2</td><td>42</td><td>82123</td><td>2016-01-01</td><td><a href="https://stackoverflow.com/questions/22191954/javafx-casting-arraylist-to-observablelist" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the version number of JavaFX?</td><td>3</td><td>42</td><td>36103</td><td>2012-06-29</td><td><a href="https://stackoverflow.com/questions/11266997/how-to-get-the-version-number-of-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX and maven: NullPointerException: Location is required</td><td>7</td><td>41</td><td>63202</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/22000423/javafx-and-maven-nullpointerexception-location-is-required" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX Alerts and their size</td><td>5</td><td>40</td><td>37599</td><td>2015-03-09</td><td><a href="https://stackoverflow.com/questions/28937392/javafx-alerts-and-their-size" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX FXML API version warning</td><td>8</td><td>40</td><td>91604</td><td>2016-02-04</td><td><a href="https://stackoverflow.com/questions/35210120/javafx-fxml-api-version-warning" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I Populate a ListView in JavaFX using Custom Objects?</td><td>2</td><td>40</td><td>36964</td><td>2018-01-13</td><td><a href="https://stackoverflow.com/questions/36657299/how-can-i-populate-a-listview-in-javafx-using-custom-objects" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IntelliJ IDEA - getClass().getResource(&quot;...&quot;) return null</td><td>15</td><td>39</td><td>35344</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/26328040/intellij-idea-getclass-getresource-return-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Creating an Observable List/Collection</td><td>1</td><td>39</td><td>80220</td><td>2016-06-28</td><td><a href="https://stackoverflow.com/questions/26195243/creating-an-observable-list-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Building a JavaFX application using Gradle</td><td>5</td><td>38</td><td>64642</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/31392551/building-a-javafx-application-using-gradle" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set padding between columns of a JavaFX GridPane?</td><td>2</td><td>37</td><td>107382</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/20454021/how-to-set-padding-between-columns-of-a-javafx-gridpane" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I open the JavaFX FileChooser from a controller class?</td><td>4</td><td>37</td><td>49518</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/25491732/how-do-i-open-the-javafx-filechooser-from-a-controller-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting selected item from a JavaFX TableView</td><td>7</td><td>36</td><td>109339</td><td>2014-11-15</td><td><a href="https://stackoverflow.com/questions/17388866/getting-selected-item-from-a-javafx-tableview" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Performance of WebView in JavaFX</td><td>5</td><td>36</td><td>25367</td><td>2014-11-23</td><td><a href="https://stackoverflow.com/questions/10762979/performance-of-webview-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX 8 Memory leak when Hiding Stage</td><td>2</td><td>36</td><td>2855</td><td>2015-06-13</td><td><a href="https://stackoverflow.com/questions/24390918/javafx-8-memory-leak-when-hiding-stage" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>BufferedImage to JavaFX image</td><td>2</td><td>35</td><td>38941</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/30970005/bufferedimage-to-javafx-image" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the purpose of @NamedArg annotation in javaFX 8?</td><td>1</td><td>35</td><td>6385</td><td>2017-08-18</td><td><a href="https://stackoverflow.com/questions/26823157/what-is-the-purpose-of-namedarg-annotation-in-javafx-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to add button in JavaFX table view</td><td>2</td><td>34</td><td>45812</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/29489366/how-to-add-button-in-javafx-table-view" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to calculate the pixel width of a String in JavaFX?</td><td>4</td><td>34</td><td>39361</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/13015698/how-to-calculate-the-pixel-width-of-a-string-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: javafx/application/Application</td><td>12</td><td>34</td><td>123949</td><td>2013-07-02</td><td><a href="https://stackoverflow.com/questions/16868446/javafx-exception-in-thread-main-java-lang-noclassdeffounderror-javafx-applica" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I pick up the Enter Key being pressed in JavaFX2?</td><td>6</td><td>33</td><td>92411</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/13880638/how-do-i-pick-up-the-enter-key-being-pressed-in-javafx2" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set placeholder in JavaFX?</td><td>2</td><td>32</td><td>29697</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23363222/how-to-set-placeholder-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Differences between ComboBox and ChoiceBox in JavaFX</td><td>5</td><td>32</td><td>37343</td><td>2015-11-08</td><td><a href="https://stackoverflow.com/questions/33599322/differences-between-combobox-and-choicebox-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX: Get Node by row and column</td><td>2</td><td>32</td><td>55433</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/20825935/javafx-get-node-by-row-and-column" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Integrating JavaFX 2.0 WebView into a Swing Java SE 6 Application</td><td>1</td><td>32</td><td>25210</td><td>2011-12-05</td><td><a href="https://stackoverflow.com/questions/8374365/integrating-javafx-2-0-webview-into-a-swing-java-se-6-application" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to emit and handle custom events?</td><td>2</td><td>31</td><td>29060</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/27416758/how-to-emit-and-handle-custom-events" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX: Undecorated Window</td><td>1</td><td>31</td><td>47192</td><td>2011-11-14</td><td><a href="https://stackoverflow.com/questions/8129207/javafx-undecorated-window" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Manually typing in text in JavaFX Spinner is not updating the value (unless user presses ENTER)</td><td>7</td><td>30</td><td>13859</td><td>2015-09-02</td><td><a href="https://stackoverflow.com/questions/32340476/manually-typing-in-text-in-javafx-spinner-is-not-updating-the-value-unless-user" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Handle mouse event anywhere with JavaFX</td><td>1</td><td>30</td><td>82872</td><td>2015-02-20</td><td><a href="https://stackoverflow.com/questions/18597939/handle-mouse-event-anywhere-with-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Embedding Gecko/WebKit in Java</td><td>3</td><td>30</td><td>41943</td><td>2013-12-28</td><td><a href="https://stackoverflow.com/questions/2653949/embedding-gecko-webkit-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Mute a WebView in JavaFX, is it possible?</td><td>3</td><td>30</td><td>1600</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/49261248/mute-a-webview-in-javafx-is-it-possible" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to switch scenes in JavaFX</td><td>7</td><td>29</td><td>100226</td><td>2016-06-02</td><td><a href="https://stackoverflow.com/questions/37200845/how-to-switch-scenes-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create multiple javafx controllers with different fxml files?</td><td>4</td><td>29</td><td>60197</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/19342259/how-to-create-multiple-javafx-controllers-with-different-fxml-files" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using javafx.beans properties in model classes</td><td>3</td><td>29</td><td>13098</td><td>2015-09-16</td><td><a href="https://stackoverflow.com/questions/23187989/using-javafx-beans-properties-in-model-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Error opening scene builder</td><td>11</td><td>28</td><td>69691</td><td>2014-06-07</td><td><a href="https://stackoverflow.com/questions/24096331/error-opening-scene-builder" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using threads to make database requests</td><td>3</td><td>28</td><td>16170</td><td>2015-05-15</td><td><a href="https://stackoverflow.com/questions/30249493/using-threads-to-make-database-requests" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX: How to change the focus traversal policy?</td><td>11</td><td>28</td><td>30110</td><td>2014-04-06</td><td><a href="https://stackoverflow.com/questions/15238928/javafx-how-to-change-the-focus-traversal-policy" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX Hide ScrollPane gray border</td><td>5</td><td>28</td><td>17503</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/12899788/javafx-hide-scrollpane-gray-border" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Html/Javascript debugging in JavaFX WebView</td><td>4</td><td>28</td><td>20280</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9398879/html-javascript-debugging-in-javafx-webview" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX primaryStage remove windows borders?</td><td>1</td><td>28</td><td>66006</td><td>2012-03-27</td><td><a href="https://stackoverflow.com/questions/9861178/javafx-primarystage-remove-windows-borders" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFx Drag and Drop a file INTO a program</td><td>3</td><td>28</td><td>16906</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/32534113/javafx-drag-and-drop-a-file-into-a-program" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Styling a TableView in CSS (JavaFX)</td><td>6</td><td>28</td><td>67550</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/33938811/styling-a-tableview-in-css-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to initialize JavaFX controllers with the same model object?</td><td>3</td><td>28</td><td>28207</td><td>2015-08-29</td><td><a href="https://stackoverflow.com/questions/20389567/how-to-initialize-javafx-controllers-with-the-same-model-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to change the text of yes/no buttons in JavaFX 8 Alert dialogs</td><td>2</td><td>27</td><td>27379</td><td>2018-03-13</td><td><a href="https://stackoverflow.com/questions/36309385/how-to-change-the-text-of-yes-no-buttons-in-javafx-8-alert-dialogs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IDE hangs in debug mode on break point in java fx application</td><td>2</td><td>27</td><td>5346</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/27863245/ide-hangs-in-debug-mode-on-break-point-in-java-fx-application" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Switch between panes in JavaFX</td><td>3</td><td>27</td><td>42460</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/16176701/switch-between-panes-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>correct way to move a node by dragging in javafx 2?</td><td>9</td><td>27</td><td>37219</td><td>2012-07-04</td><td><a href="https://stackoverflow.com/questions/10682107/correct-way-to-move-a-node-by-dragging-in-javafx-2" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX effect on background</td><td>4</td><td>27</td><td>23852</td><td>2015-10-24</td><td><a href="https://stackoverflow.com/questions/22663681/javafx-effect-on-background" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX 11: IllegalAccessError when creating Label</td><td>4</td><td>26</td><td>34628</td><td>2019-01-21</td><td><a href="https://stackoverflow.com/questions/54291958/javafx-11-illegalaccesserror-when-creating-label" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set default value in comboBox javafx?</td><td>3</td><td>25</td><td>54683</td><td>2017-01-26</td><td><a href="https://stackoverflow.com/questions/34949422/how-to-set-default-value-in-combobox-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can we develop very good looking UI in swing and if not what are alternatives</td><td>6</td><td>25</td><td>17829</td><td>2011-03-16</td><td><a href="https://stackoverflow.com/questions/2927037/can-we-develop-very-good-looking-ui-in-swing-and-if-not-what-are-alternatives" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a JavaFX Maven project in IntelliJ IDEA?</td><td>6</td><td>24</td><td>43320</td><td>2015-05-27</td><td><a href="https://stackoverflow.com/questions/30488223/how-to-create-a-javafx-maven-project-in-intellij-idea" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Stop threads before close my JavaFX program</td><td>5</td><td>24</td><td>29929</td><td>2015-10-30</td><td><a href="https://stackoverflow.com/questions/14897194/stop-threads-before-close-my-javafx-program" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Populating JavaFX ComboBox or ChoiceBox from enum</td><td>2</td><td>24</td><td>26287</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/27801119/populating-javafx-combobox-or-choicebox-from-enum" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>MVC with javaFX</td><td>2</td><td>24</td><td>21284</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23187932/mvc-with-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to close a java window with a button click - JavaFX Project</td><td>6</td><td>23</td><td>91660</td><td>2015-08-10</td><td><a href="https://stackoverflow.com/questions/25037724/how-to-close-a-java-window-with-a-button-click-javafx-project" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX Freeze on Desktop.open(file), Desktop.browse(uri)</td><td>5</td><td>23</td><td>5848</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23176624/javafx-freeze-on-desktop-openfile-desktop-browseuri" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the best way to display millions of images in Java?</td><td>2</td><td>23</td><td>9463</td><td>2014-06-12</td><td><a href="https://stackoverflow.com/questions/14467719/what-is-the-best-way-to-display-millions-of-images-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create Splash screen with transparent background in JavaFX</td><td>2</td><td>23</td><td>32421</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14972199/how-to-create-splash-screen-with-transparent-background-in-javafx" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

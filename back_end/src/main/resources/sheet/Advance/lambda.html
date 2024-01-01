@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>0
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about lambda</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Java SE 8 have Pairs or Tuples?</td><td>10</td><td>211</td><td>258173</td><td>2015-12-06</td><td><a href="https://stackoverflow.com/questions/24328679/does-java-se-8-have-pairs-or-tuples" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 List&lt;V&gt; into Map&lt;K, V&gt;</td><td>22</td><td>1018</td><td>707624</td><td>2016-03-02</td><td><a href="https://stackoverflow.com/questions/20363719/java-8-listv-into-mapk-v" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Lambda function that throws exception?</td><td>26</td><td>581</td><td>425333</td><td>2016-01-22</td><td><a href="https://stackoverflow.com/questions/18198176/java-8-lambda-function-that-throws-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Retrieving a List from a java.util.stream.Stream in Java 8</td><td>15</td><td>482</td><td>396994</td><td>2017-01-24</td><td><a href="https://stackoverflow.com/questions/14830313/retrieving-a-list-from-a-java-util-stream-stream-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I define a method which takes a lambda as a parameter in Java 8?</td><td>15</td><td>440</td><td>309927</td><td>2015-06-22</td><td><a href="https://stackoverflow.com/questions/13604703/how-do-i-define-a-method-which-takes-a-lambda-as-a-parameter-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Break or return from Java 8 stream forEach?</td><td>14</td><td>386</td><td>398047</td><td>2015-08-05</td><td><a href="https://stackoverflow.com/questions/23308193/break-or-return-from-java-8-stream-foreach" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between final and effectively final</td><td>14</td><td>376</td><td>191172</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/20938095/difference-between-final-and-effectively-final" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I throw CHECKED exceptions from inside Java 8 streams?</td><td>18</td><td>345</td><td>140924</td><td>2016-11-16</td><td><a href="https://stackoverflow.com/questions/27644361/how-can-i-throw-checked-exceptions-from-inside-java-8-streams" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 lambdas, Function.identity() or t-&gt;t</td><td>3</td><td>321</td><td>180005</td><td>2017-09-03</td><td><a href="https://stackoverflow.com/questions/28032827/java-8-lambdas-function-identity-or-t-t" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Streams: multiple filters vs. complex condition</td><td>4</td><td>304</td><td>264024</td><td>2015-05-23</td><td><a href="https://stackoverflow.com/questions/24054773/java-8-streams-multiple-filters-vs-complex-condition" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Filter Java Stream to 1 and only 1 element</td><td>24</td><td>290</td><td>294818</td><td>2016-04-25</td><td><a href="https://stackoverflow.com/questions/22694884/filter-java-stream-to-1-and-only-1-element" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Using Java 8&#39;s Optional with Stream::flatMap</td><td>12</td><td>286</td><td>207702</td><td>2018-04-22</td><td><a href="https://stackoverflow.com/questions/22725537/using-java-8s-optional-with-streamflatmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 lambda Void argument</td><td>9</td><td>279</td><td>229454</td><td>2016-07-03</td><td><a href="https://stackoverflow.com/questions/29945627/java-8-lambda-void-argument" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use a Java8 lambda to sort a stream in reverse order?</td><td>13</td><td>241</td><td>390663</td><td>2016-04-06</td><td><a href="https://stackoverflow.com/questions/28607191/how-to-use-a-java8-lambda-to-sort-a-stream-in-reverse-order" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java &quot;lambda expressions not supported at this language level&quot;</td><td>24</td><td>226</td><td>197385</td><td>2016-10-26</td><td><a href="https://stackoverflow.com/questions/22703412/java-lambda-expressions-not-supported-at-this-language-level" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Filter values only if not null using lambda in Java8</td><td>6</td><td>222</td><td>330646</td><td>2015-10-01</td><td><a href="https://stackoverflow.com/questions/32884195/filter-values-only-if-not-null-using-lambda-in-java8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does a lambda expression create an object on the heap every time it&#39;s executed?</td><td>3</td><td>208</td><td>39261</td><td>2015-08-20</td><td><a href="https://stackoverflow.com/questions/27524445/does-a-lambda-expression-create-an-object-on-the-heap-every-time-its-executed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Variable used in lambda expression should be final or effectively final</td><td>8</td><td>197</td><td>292243</td><td>2017-10-24</td><td><a href="https://stackoverflow.com/questions/34865383/variable-used-in-lambda-expression-should-be-final-or-effectively-final" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8: Lambda-Streams, Filter by Method with Exception</td><td>15</td><td>196</td><td>184433</td><td>2015-05-11</td><td><a href="https://stackoverflow.com/questions/19757300/java-8-lambda-streams-filter-by-method-with-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can a java lambda have more than 1 parameter?</td><td>7</td><td>189</td><td>158346</td><td>2016-11-25</td><td><a href="https://stackoverflow.com/questions/27872387/can-a-java-lambda-have-more-than-1-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java 8 how do I transform a Map&lt;K,V&gt; to another Map&lt;K,V&gt; using a lambda?</td><td>7</td><td>178</td><td>165756</td><td>2014-05-29</td><td><a href="https://stackoverflow.com/questions/22742974/in-java-8-how-do-i-transform-a-mapk-v-to-another-mapk-v-using-a-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are functional interfaces used for in Java 8?</td><td>11</td><td>178</td><td>139378</td><td>2018-09-16</td><td><a href="https://stackoverflow.com/questions/36881826/what-are-functional-interfaces-used-for-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Modifying local variable from inside lambda</td><td>10</td><td>171</td><td>178187</td><td>2015-05-04</td><td><a href="https://stackoverflow.com/questions/30026824/modifying-local-variable-from-inside-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to serialize a lambda?</td><td>5</td><td>170</td><td>50046</td><td>2014-04-04</td><td><a href="https://stackoverflow.com/questions/22807912/how-to-serialize-a-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Built-in Java 8 predicate that always returns true?</td><td>2</td><td>156</td><td>66851</td><td>2015-01-23</td><td><a href="https://stackoverflow.com/questions/26549659/built-in-java-8-predicate-that-always-returns-true" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambda expression vs method reference</td><td>4</td><td>155</td><td>38699</td><td>2018-04-26</td><td><a href="https://stackoverflow.com/questions/24487805/lambda-expression-vs-method-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Copy a stream to avoid &quot;stream has already been operated upon or closed&quot;</td><td>10</td><td>154</td><td>85051</td><td>2016-04-02</td><td><a href="https://stackoverflow.com/questions/23860533/copy-a-stream-to-avoid-stream-has-already-been-operated-upon-or-closed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a &#39;SAM type&#39; in Java?</td><td>1</td><td>154</td><td>41102</td><td>2017-04-26</td><td><a href="https://stackoverflow.com/questions/17913409/what-is-a-sam-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I use the new computeIfAbsent function?</td><td>5</td><td>149</td><td>177398</td><td>2015-08-10</td><td><a href="https://stackoverflow.com/questions/19278443/how-do-i-use-the-new-computeifabsent-function" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8: Where is TriFunction (and kin) in java.util.function? Or what is the alternative?</td><td>10</td><td>149</td><td>111868</td><td>2013-08-23</td><td><a href="https://stackoverflow.com/questions/18400210/java-8-where-is-trifunction-and-kin-in-java-util-function-or-what-is-the-alt" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Understanding Spliterator, Collector and Stream in Java 8</td><td>4</td><td>149</td><td>72108</td><td>2016-12-05</td><td><a href="https://stackoverflow.com/questions/19235606/understanding-spliterator-collector-and-stream-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Optional orElse Optional in Java</td><td>6</td><td>149</td><td>78590</td><td>2016-08-11</td><td><a href="https://stackoverflow.com/questions/28818506/optional-orelse-optional-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if element exists using a lambda expression?</td><td>3</td><td>137</td><td>162928</td><td>2014-04-18</td><td><a href="https://stackoverflow.com/questions/23004921/how-to-check-if-element-exists-using-a-lambda-expression" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Comparator.reversed() does not compile using lambda</td><td>4</td><td>137</td><td>31891</td><td>2017-09-23</td><td><a href="https://stackoverflow.com/questions/25172595/comparator-reversed-does-not-compile-using-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to debug stream().map(...) with lambda expressions?</td><td>6</td><td>135</td><td>91193</td><td>2014-07-03</td><td><a href="https://stackoverflow.com/questions/24541786/how-to-debug-stream-map-with-lambda-expressions" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Proper usage of Optional.ifPresent()</td><td>5</td><td>134</td><td>294228</td><td>2015-04-09</td><td><a href="https://stackoverflow.com/questions/24228279/proper-usage-of-optional-ifpresent" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create an instance of anonymous interface in Kotlin?</td><td>5</td><td>124</td><td>68501</td><td>2016-06-07</td><td><a href="https://stackoverflow.com/questions/37672023/how-to-create-an-instance-of-anonymous-interface-in-kotlin" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do lambda expressions have any use other than saving lines of code?</td><td>11</td><td>123</td><td>25046</td><td>2017-11-21</td><td><a href="https://stackoverflow.com/questions/47407180/do-lambda-expressions-have-any-use-other-than-saving-lines-of-code" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java8 Lambdas vs Anonymous classes</td><td>9</td><td>121</td><td>73911</td><td>2014-03-25</td><td><a href="https://stackoverflow.com/questions/22637900/java8-lambdas-vs-anonymous-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does lambda with 2 arrows mean in Java 8?</td><td>6</td><td>121</td><td>15494</td><td>2016-07-25</td><td><a href="https://stackoverflow.com/questions/32820722/what-does-lambda-with-2-arrows-mean-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Return from lambda forEach() in java</td><td>5</td><td>118</td><td>179983</td><td>2017-05-06</td><td><a href="https://stackoverflow.com/questions/23407014/return-from-lambda-foreach-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambda Expression and generic defined only in method</td><td>5</td><td>117</td><td>83900</td><td>2018-01-19</td><td><a href="https://stackoverflow.com/questions/22588518/lambda-expression-and-generic-defined-only-in-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 lambda get and remove element from list</td><td>13</td><td>115</td><td>224035</td><td>2016-02-29</td><td><a href="https://stackoverflow.com/questions/35701337/java-8-lambda-get-and-remove-element-from-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambda expression to convert array/List of String to array/List of Integers</td><td>10</td><td>114</td><td>203385</td><td>2014-10-19</td><td><a href="https://stackoverflow.com/questions/23057549/lambda-expression-to-convert-array-list-of-string-to-array-list-of-integers" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8, Streams to find the duplicate elements</td><td>15</td><td>108</td><td>199559</td><td>2015-04-21</td><td><a href="https://stackoverflow.com/questions/27677256/java-8-streams-to-find-the-duplicate-elements" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8: preferred way to count iterations of a lambda?</td><td>12</td><td>105</td><td>98435</td><td>2018-02-01</td><td><a href="https://stackoverflow.com/questions/28790784/java-8-preferred-way-to-count-iterations-of-a-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Multiple null checks in Java 8</td><td>10</td><td>104</td><td>14526</td><td>2019-06-13</td><td><a href="https://stackoverflow.com/questions/54800817/multiple-null-checks-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>_ (underscore) is a reserved keyword</td><td>3</td><td>103</td><td>27178</td><td>2015-08-02</td><td><a href="https://stackoverflow.com/questions/23523946/underscore-is-a-reserved-keyword" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Stream.allMatch() return true for an empty stream?</td><td>6</td><td>100</td><td>38856</td><td>2015-05-14</td><td><a href="https://stackoverflow.com/questions/30223079/why-does-stream-allmatch-return-true-for-an-empty-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to map values in a map in Java 8?</td><td>2</td><td>98</td><td>103513</td><td>2014-04-22</td><td><a href="https://stackoverflow.com/questions/23213891/how-to-map-values-in-a-map-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Very confused by Java 8 Comparator type inference</td><td>4</td><td>98</td><td>34988</td><td>2014-06-29</td><td><a href="https://stackoverflow.com/questions/24436871/very-confused-by-java-8-comparator-type-inference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Supplier with arguments in the constructor</td><td>8</td><td>96</td><td>116089</td><td>2016-07-06</td><td><a href="https://stackoverflow.com/questions/31251629/java-8-supplier-with-arguments-in-the-constructor" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Lambda Expressions - what about multiple methods in nested class</td><td>6</td><td>93</td><td>69568</td><td>2015-12-31</td><td><a href="https://stackoverflow.com/questions/21833537/java-8-lambda-expressions-what-about-multiple-methods-in-nested-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>forEach loop Java 8 for Map entry set</td><td>7</td><td>90</td><td>230059</td><td>2015-08-28</td><td><a href="https://stackoverflow.com/questions/32264773/foreach-loop-java-8-for-map-entry-set" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the MethodInfo of a Java 8 method reference?</td><td>10</td><td>90</td><td>33249</td><td>2013-11-07</td><td><a href="https://stackoverflow.com/questions/19845213/how-to-get-the-methodinfo-of-a-java-8-method-reference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8: Formatting lambda with newlines and indentation</td><td>8</td><td>87</td><td>57229</td><td>2014-07-15</td><td><a href="https://stackoverflow.com/questions/24649971/java-8-formatting-lambda-with-newlines-and-indentation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does this Java 8 lambda fail to compile?</td><td>4</td><td>86</td><td>29594</td><td>2015-03-25</td><td><a href="https://stackoverflow.com/questions/29262002/why-does-this-java-8-lambda-fail-to-compile" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Filter Array Using Lambda</td><td>2</td><td>86</td><td>140354</td><td>2015-10-02</td><td><a href="https://stackoverflow.com/questions/24112715/java-8-filter-array-using-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to compare lambdas?</td><td>3</td><td>86</td><td>16386</td><td>2014-10-17</td><td><a href="https://stackoverflow.com/questions/24095875/is-there-a-way-to-compare-lambdas" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Collectors.toMap() keyMapper -- more succinct expression?</td><td>3</td><td>85</td><td>219844</td><td>2016-02-27</td><td><a href="https://stackoverflow.com/questions/19254884/collectors-tomap-keymapper-more-succinct-expression" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Chaining Optionals in Java 8</td><td>9</td><td>85</td><td>60724</td><td>2016-01-25</td><td><a href="https://stackoverflow.com/questions/28514704/chaining-optionals-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get a range of items from stream using Java 8 lambda?</td><td>2</td><td>85</td><td>111851</td><td>2015-10-30</td><td><a href="https://stackoverflow.com/questions/22917270/how-to-get-a-range-of-items-from-stream-using-java-8-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a method reference for a no-op (NOP) that can be used for anything lambda?</td><td>6</td><td>84</td><td>55734</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/29851525/is-there-a-method-reference-for-a-no-op-nop-that-can-be-used-for-anything-lamb" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Collectors.toMap SortedMap</td><td>5</td><td>80</td><td>45663</td><td>2015-06-24</td><td><a href="https://stackoverflow.com/questions/31004899/java-8-collectors-tomap-sortedmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambdas: local variables need final, instance variables don&#39;t</td><td>10</td><td>79</td><td>85193</td><td>2014-07-31</td><td><a href="https://stackoverflow.com/questions/25055392/lambdas-local-variables-need-final-instance-variables-dont" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What kind of List&lt;E&gt; does Collectors.toList() return?</td><td>3</td><td>79</td><td>69521</td><td>2014-02-20</td><td><a href="https://stackoverflow.com/questions/21912314/what-kind-of-liste-does-collectors-tolist-return" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 method reference unhandled exception</td><td>6</td><td>79</td><td>50860</td><td>2014-09-13</td><td><a href="https://stackoverflow.com/questions/25643348/java-8-method-reference-unhandled-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why filter() after flatMap() is &quot;not completely&quot; lazy in Java streams?</td><td>8</td><td>79</td><td>9180</td><td>2016-04-16</td><td><a href="https://stackoverflow.com/questions/29229373/why-filter-after-flatmap-is-not-completely-lazy-in-java-streams" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Iterate an Enumeration in Java 8</td><td>7</td><td>78</td><td>57643</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23261803/iterate-an-enumeration-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Precise definition of &quot;functional interface&quot; in Java 8</td><td>8</td><td>78</td><td>9109</td><td>2016-12-20</td><td><a href="https://stackoverflow.com/questions/14655913/precise-definition-of-functional-interface-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java8 Lambdas and Exceptions</td><td>5</td><td>77</td><td>29433</td><td>2015-11-25</td><td><a href="https://stackoverflow.com/questions/25523375/java8-lambdas-and-exceptions" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 stream map on entry set</td><td>6</td><td>76</td><td>159392</td><td>2018-02-09</td><td><a href="https://stackoverflow.com/questions/27228961/java-8-stream-map-on-entry-set" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambda this reference in java</td><td>2</td><td>76</td><td>29036</td><td>2018-04-02</td><td><a href="https://stackoverflow.com/questions/24202236/lambda-this-reference-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Statement lambda can be replaced with expression lambda</td><td>3</td><td>75</td><td>45611</td><td>2018-09-10</td><td><a href="https://stackoverflow.com/questions/46238702/statement-lambda-can-be-replaced-with-expression-lambda" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>takeWhile() working differently with flatmap</td><td>4</td><td>75</td><td>4440</td><td>2017-12-20</td><td><a href="https://stackoverflow.com/questions/47888814/takewhile-working-differently-with-flatmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does the -&gt; &lt;- operator do?</td><td>1</td><td>75</td><td>3295</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/24938333/what-does-the-operator-do" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t the var keyword in Java be assigned a lambda expression?</td><td>7</td><td>74</td><td>6349</td><td>2018-04-01</td><td><a href="https://stackoverflow.com/questions/49578553/why-cant-the-var-keyword-in-java-be-assigned-a-lambda-expression" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Stream.peek() method in Java 8 vs Java 9</td><td>2</td><td>74</td><td>7579</td><td>2018-01-23</td><td><a href="https://stackoverflow.com/questions/48221783/stream-peek-method-in-java-8-vs-java-9" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 pass method as parameter</td><td>2</td><td>73</td><td>91661</td><td>2015-04-23</td><td><a href="https://stackoverflow.com/questions/25186216/java-8-pass-method-as-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 optional: ifPresent return object orElseThrow exception</td><td>5</td><td>72</td><td>169943</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/41485751/java-8-optional-ifpresent-return-object-orelsethrow-exception" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Lambda Stream Distinct() on arbitrary key?</td><td>9</td><td>71</td><td>78601</td><td>2016-03-17</td><td><a href="https://stackoverflow.com/questions/27870136/java-lambda-stream-distinct-on-arbitrary-key" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Lambda that does absolutely nothing</td><td>3</td><td>71</td><td>28471</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/30108450/lambda-that-does-absolutely-nothing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are Java 8 lambdas invoked using invokedynamic?</td><td>3</td><td>71</td><td>17809</td><td>2016-10-13</td><td><a href="https://stackoverflow.com/questions/30002380/why-are-java-8-lambdas-invoked-using-invokedynamic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8: Mandatory checked exceptions handling in lambda expressions. Why mandatory, not optional?</td><td>9</td><td>69</td><td>47231</td><td>2015-07-16</td><td><a href="https://stackoverflow.com/questions/14039995/java-8-mandatory-checked-exceptions-handling-in-lambda-expressions-why-mandato" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implement recursive lambda function using Java 8</td><td>25</td><td>68</td><td>37574</td><td>2014-12-25</td><td><a href="https://stackoverflow.com/questions/19429667/implement-recursive-lambda-function-using-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 stream map to list of keys sorted by values</td><td>6</td><td>67</td><td>130460</td><td>2015-05-24</td><td><a href="https://stackoverflow.com/questions/30425836/java-8-stream-map-to-list-of-keys-sorted-by-values" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.util.stream with ResultSet</td><td>7</td><td>67</td><td>62924</td><td>2015-08-25</td><td><a href="https://stackoverflow.com/questions/32209248/java-util-stream-with-resultset" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Kotlin: Use a lambda in place of a functional interface?</td><td>2</td><td>66</td><td>44172</td><td>2015-11-18</td><td><a href="https://stackoverflow.com/questions/33590646/kotlin-use-a-lambda-in-place-of-a-functional-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I replace an anonymous class with a lambda in Java?</td><td>5</td><td>63</td><td>66640</td><td>2018-11-03</td><td><a href="https://stackoverflow.com/questions/37695456/how-do-i-replace-an-anonymous-class-with-a-lambda-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do Consumers accept lambdas with statement bodies but not expression bodies?</td><td>3</td><td>62</td><td>6283</td><td>2017-08-02</td><td><a href="https://stackoverflow.com/questions/45460896/why-do-consumers-accept-lambdas-with-statement-bodies-but-not-expression-bodies" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Sorting by property in Java 8 stream</td><td>2</td><td>62</td><td>46703</td><td>2015-08-06</td><td><a href="https://stackoverflow.com/questions/26568555/sorting-by-property-in-java-8-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Thread.sleep inside infinite while loop in lambda doesn&#39;t require &#39;catch (InterruptedException)&#39; - why not?</td><td>2</td><td>61</td><td>2842</td><td>2019-07-12</td><td><a href="https://stackoverflow.com/questions/56149752/thread-sleep-inside-infinite-while-loop-in-lambda-doesnt-require-catch-interr" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t we call Thread#sleep() directly inside a Lambda function?</td><td>8</td><td>60</td><td>10008</td><td>2018-10-02</td><td><a href="https://stackoverflow.com/questions/52602990/why-cant-we-call-threadsleep-directly-inside-a-lambda-function" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Annotating the functional interface of a Lambda Expression</td><td>2</td><td>59</td><td>20518</td><td>2015-12-31</td><td><a href="https://stackoverflow.com/questions/22375891/annotating-the-functional-interface-of-a-lambda-expression" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Stream of boolean values, is any true?</td><td>3</td><td>58</td><td>66083</td><td>2014-10-10</td><td><a href="https://stackoverflow.com/questions/26304858/stream-of-boolean-values-is-any-true" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Lambda Stream forEach with multiple statements</td><td>5</td><td>58</td><td>143896</td><td>2015-06-30</td><td><a href="https://stackoverflow.com/questions/31130457/java-8-lambda-stream-foreach-with-multiple-statements" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How will Java lambda functions be compiled?</td><td>2</td><td>58</td><td>15916</td><td>2013-05-30</td><td><a href="https://stackoverflow.com/questions/16827262/how-will-java-lambda-functions-be-compiled" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to apply multiple predicates to a java.util.Stream?</td><td>4</td><td>57</td><td>64035</td><td>2015-09-02</td><td><a href="https://stackoverflow.com/questions/24553761/how-to-apply-multiple-predicates-to-a-java-util-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to change Runnable to lambda expression in Java with IntelliJ shortcut</td><td>2</td><td>57</td><td>31573</td><td>2017-12-01</td><td><a href="https://stackoverflow.com/questions/34048468/how-to-change-runnable-to-lambda-expression-in-java-with-intellij-shortcut" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Lambda expressions</td><td>1</td><td>57</td><td>28088</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/16859992/java-lambda-expressions" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

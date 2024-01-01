@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about interface</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implements vs extends: When to use? What&#39;s the difference?</td><td>19</td><td>788</td><td>1242898</td><td>2015-01-17</td><td><a href="https://stackoverflow.com/questions/10839131/implements-vs-extends-when-to-use-whats-the-difference" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use: Java 8+ interface default method, vs. abstract method</td><td>16</td><td>612</td><td>150739</td><td>2017-02-12</td><td><a href="https://stackoverflow.com/questions/19998454/when-to-use-java-8-interface-default-method-vs-abstract-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Type List vs type ArrayList in Java</td><td>15</td><td>611</td><td>449099</td><td>2013-08-25</td><td><a href="https://stackoverflow.com/questions/2279030/type-list-vs-type-arraylist-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t I define a static method in a Java interface?</td><td>24</td><td>545</td><td>397223</td><td>2014-03-29</td><td><a href="https://stackoverflow.com/questions/512877/why-cant-i-define-a-static-method-in-a-java-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The difference between the Runnable and Callable interfaces in Java</td><td>15</td><td>544</td><td>350287</td><td>2013-09-23</td><td><a href="https://stackoverflow.com/questions/141284/the-difference-between-the-runnable-and-callable-interfaces-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How should I have explained the difference between an Interface and an Abstract class?</td><td>31</td><td>526</td><td>467199</td><td>2015-03-20</td><td><a href="https://stackoverflow.com/questions/18777989/how-should-i-have-explained-the-difference-between-an-interface-and-an-abstract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should we @Override an interface&#39;s method implementation?</td><td>15</td><td>466</td><td>201114</td><td>2013-02-03</td><td><a href="https://stackoverflow.com/questions/212614/should-we-override-an-interfaces-method-implementation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between interface and @interface in java?</td><td>5</td><td>372</td><td>125756</td><td>2011-10-09</td><td><a href="https://stackoverflow.com/questions/918393/whats-the-difference-between-interface-and-interface-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Pass Method as Parameter</td><td>17</td><td>362</td><td>464092</td><td>2015-12-20</td><td><a href="https://stackoverflow.com/questions/2186931/java-pass-method-as-parameter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Interface naming in Java</td><td>11</td><td>352</td><td>231321</td><td>2011-08-17</td><td><a href="https://stackoverflow.com/questions/541912/interface-naming-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Explicitly calling a default method in Java</td><td>6</td><td>318</td><td>83428</td><td>2016-09-28</td><td><a href="https://stackoverflow.com/questions/19976487/explicitly-calling-a-default-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are interface variables static and final by default?</td><td>15</td><td>317</td><td>437320</td><td>2010-06-10</td><td><a href="https://stackoverflow.com/questions/2430756/why-are-interface-variables-static-and-final-by-default" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should methods in a Java interface be declared with or without a public access modifier?</td><td>12</td><td>317</td><td>120230</td><td>2011-04-15</td><td><a href="https://stackoverflow.com/questions/161633/should-methods-in-a-java-interface-be-declared-with-or-without-a-public-access-m" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Abstract class in Java</td><td>14</td><td>289</td><td>205436</td><td>2012-11-26</td><td><a href="https://stackoverflow.com/questions/1320745/abstract-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implementing two interfaces in a class with same method. Which interface method is overridden?</td><td>8</td><td>279</td><td>216143</td><td>2012-04-10</td><td><a href="https://stackoverflow.com/questions/2801878/implementing-two-interfaces-in-a-class-with-same-method-which-interface-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why would a static nested interface be used in Java?</td><td>11</td><td>240</td><td>80966</td><td>2012-11-13</td><td><a href="https://stackoverflow.com/questions/71625/why-would-a-static-nested-interface-be-used-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you find all subclasses of a given class in Java?</td><td>18</td><td>222</td><td>152576</td><td>2009-06-01</td><td><a href="https://stackoverflow.com/questions/492184/how-do-you-find-all-subclasses-of-a-given-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java abstract interface</td><td>9</td><td>214</td><td>120941</td><td>2013-01-31</td><td><a href="https://stackoverflow.com/questions/7202616/java-abstract-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Final arguments in interface methods - what&#39;s the point?</td><td>5</td><td>205</td><td>34175</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5380177/final-arguments-in-interface-methods-whats-the-point" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>IntelliJ IDEA jump from interface to implementing class in Java</td><td>7</td><td>187</td><td>110739</td><td>2013-10-15</td><td><a href="https://stackoverflow.com/questions/5051766/intellij-idea-jump-from-interface-to-implementing-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no multiple inheritance in Java, but implementing multiple interfaces is allowed?</td><td>20</td><td>181</td><td>198186</td><td>2013-06-23</td><td><a href="https://stackoverflow.com/questions/2515477/why-is-there-no-multiple-inheritance-in-java-but-implementing-multiple-interfac" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to make a Java class that implements one interface with two generic types?</td><td>9</td><td>175</td><td>63521</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1297972/how-to-make-a-java-class-that-implements-one-interface-with-two-generic-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Custom fonts and XML layouts (Android)</td><td>18</td><td>174</td><td>170707</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2376250/custom-fonts-and-xml-layouts-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do interfaces inherit from Object class in java</td><td>9</td><td>168</td><td>31959</td><td>2012-03-12</td><td><a href="https://stackoverflow.com/questions/6056124/do-interfaces-inherit-from-object-class-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there more to an interface than having the correct methods</td><td>17</td><td>159</td><td>168075</td><td>2012-10-12</td><td><a href="https://stackoverflow.com/questions/504904/is-there-more-to-an-interface-than-having-the-correct-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Constructor in an Interface?</td><td>11</td><td>159</td><td>210759</td><td>2012-03-26</td><td><a href="https://stackoverflow.com/questions/2804041/constructor-in-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Polymorphism: Why use &quot;List list = new ArrayList&quot; instead of &quot;ArrayList list = new ArrayList&quot;?</td><td>8</td><td>157</td><td>124931</td><td>2014-10-23</td><td><a href="https://stackoverflow.com/questions/9852831/polymorphism-why-use-list-list-new-arraylist-instead-of-arraylist-list-n" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java8: Why is it forbidden to define a default method for a method from java.lang.Object</td><td>5</td><td>153</td><td>22096</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/24016962/java8-why-is-it-forbidden-to-define-a-default-method-for-a-method-from-java-lan" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t I declare static methods in an interface?</td><td>14</td><td>153</td><td>105849</td><td>2009-10-17</td><td><a href="https://stackoverflow.com/questions/21817/why-cant-i-declare-static-methods-in-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the use of interface constants?</td><td>12</td><td>148</td><td>119226</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2659593/what-is-the-use-of-interface-constants" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why would one declare a Java interface method as abstract?</td><td>4</td><td>147</td><td>53334</td><td>2011-02-11</td><td><a href="https://stackoverflow.com/questions/641536/why-would-one-declare-a-java-interface-method-as-abstract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Comment the interface, implementation or both?</td><td>9</td><td>145</td><td>42792</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/759703/comment-the-interface-implementation-or-both" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if an object implements an interface?</td><td>4</td><td>144</td><td>147015</td><td>2013-06-25</td><td><a href="https://stackoverflow.com/questions/10165887/how-to-check-if-an-object-implements-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Protected in Interfaces</td><td>15</td><td>141</td><td>64059</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5376970/protected-in-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Eclipse complain about @Override on interface methods?</td><td>10</td><td>138</td><td>104636</td><td>2012-02-11</td><td><a href="https://stackoverflow.com/questions/987973/why-does-eclipse-complain-about-override-on-interface-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the purpose of the default keyword in Java?</td><td>8</td><td>138</td><td>80590</td><td>2015-07-23</td><td><a href="https://stackoverflow.com/questions/31578427/what-is-the-purpose-of-the-default-keyword-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Find Java classes implementing an interface</td><td>9</td><td>135</td><td>202492</td><td>2010-02-20</td><td><a href="https://stackoverflow.com/questions/435890/find-java-classes-implementing-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why an abstract class implementing an interface can miss the declaration/implementation of one of the interface&#39;s methods?</td><td>7</td><td>135</td><td>140713</td><td>2010-07-22</td><td><a href="https://stackoverflow.com/questions/197893/why-an-abstract-class-implementing-an-interface-can-miss-the-declaration-impleme" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Optional Methods in Java Interface</td><td>13</td><td>132</td><td>98439</td><td>2013-10-01</td><td><a href="https://stackoverflow.com/questions/10572643/optional-methods-in-java-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between static and default methods in a Java interface?</td><td>11</td><td>129</td><td>73606</td><td>2018-06-24</td><td><a href="https://stackoverflow.com/questions/27833168/what-is-the-difference-between-static-and-default-methods-in-a-java-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java&#39;s Interface and Haskell&#39;s type class: differences and similarities?</td><td>10</td><td>127</td><td>20123</td><td>2011-08-05</td><td><a href="https://stackoverflow.com/questions/6948166/javas-interface-and-haskells-type-class-differences-and-similarities" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why java classes do not inherit annotations from implemented interfaces?</td><td>2</td><td>116</td><td>66096</td><td>2016-04-08</td><td><a href="https://stackoverflow.com/questions/4745798/why-java-classes-do-not-inherit-annotations-from-implemented-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should Javadoc comments be added to the implementation?</td><td>7</td><td>114</td><td>69394</td><td>2014-02-25</td><td><a href="https://stackoverflow.com/questions/3061387/should-javadoc-comments-be-added-to-the-implementation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Inner class within Interface</td><td>13</td><td>111</td><td>89128</td><td>2015-01-20</td><td><a href="https://stackoverflow.com/questions/2400828/inner-class-within-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Abstract class vs Interface in Java</td><td>15</td><td>107</td><td>100988</td><td>2014-08-18</td><td><a href="https://stackoverflow.com/questions/10040069/abstract-class-vs-interface-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why an interface can not implement another interface?</td><td>7</td><td>107</td><td>111314</td><td>2013-06-04</td><td><a href="https://stackoverflow.com/questions/3921412/why-an-interface-can-not-implement-another-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are all fields in an interface implicitly static and final?</td><td>7</td><td>102</td><td>98464</td><td>2012-11-01</td><td><a href="https://stackoverflow.com/questions/1513520/why-are-all-fields-in-an-interface-implicitly-static-and-final" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the &quot;default&quot; implementation of method defined in an Interface?</td><td>3</td><td>98</td><td>53361</td><td>2013-11-20</td><td><a href="https://stackoverflow.com/questions/18286235/what-is-the-default-implementation-of-method-defined-in-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between HashSet and Set?</td><td>8</td><td>96</td><td>105442</td><td>2013-10-14</td><td><a href="https://stackoverflow.com/questions/5139724/whats-the-difference-between-hashset-and-set" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I get a list of all the implementations of an interface programmatically in Java?</td><td>11</td><td>96</td><td>79611</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/347248/how-can-i-get-a-list-of-all-the-implementations-of-an-interface-programmatically" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When is an interface with a default method initialized?</td><td>4</td><td>96</td><td>8668</td><td>2017-08-12</td><td><a href="https://stackoverflow.com/questions/23096084/when-is-an-interface-with-a-default-method-initialized" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why no static methods in Interfaces, but static fields and inner classes OK? [pre-Java8]</td><td>15</td><td>92</td><td>55995</td><td>2012-02-10</td><td><a href="https://stackoverflow.com/questions/129267/why-no-static-methods-in-interfaces-but-static-fields-and-inner-classes-ok-pr" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java - Method name collision in interface implementation</td><td>7</td><td>91</td><td>41231</td><td>2013-10-02</td><td><a href="https://stackoverflow.com/questions/2598009/java-method-name-collision-in-interface-implementation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When do I have to use interfaces instead of abstract classes?</td><td>18</td><td>90</td><td>171616</td><td>2015-07-02</td><td><a href="https://stackoverflow.com/questions/16781329/when-do-i-have-to-use-interfaces-instead-of-abstract-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The &#39;instanceof&#39; operator behaves differently for interfaces and classes</td><td>2</td><td>90</td><td>4197</td><td>2015-08-07</td><td><a href="https://stackoverflow.com/questions/31398444/the-instanceof-operator-behaves-differently-for-interfaces-and-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to find which classes implement a particular interface in Eclipse?</td><td>7</td><td>89</td><td>69240</td><td>2013-03-15</td><td><a href="https://stackoverflow.com/questions/7385459/how-to-find-which-classes-implement-a-particular-interface-in-eclipse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should interfaces be placed in a separate package?</td><td>14</td><td>89</td><td>62451</td><td>2012-08-07</td><td><a href="https://stackoverflow.com/questions/1004980/should-interfaces-be-placed-in-a-separate-package" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are defaults in JDK 8 a form of multiple inheritance in Java?</td><td>8</td><td>86</td><td>20246</td><td>2014-07-31</td><td><a href="https://stackoverflow.com/questions/7857832/are-defaults-in-jdk-8-a-form-of-multiple-inheritance-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Attributes / member variables in interfaces?</td><td>9</td><td>85</td><td>209406</td><td>2011-09-06</td><td><a href="https://stackoverflow.com/questions/7311274/attributes-member-variables-in-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to write junit tests for interfaces?</td><td>6</td><td>84</td><td>93573</td><td>2011-07-17</td><td><a href="https://stackoverflow.com/questions/6724401/how-to-write-junit-tests-for-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can we create an instance of an interface in Java?</td><td>7</td><td>83</td><td>214445</td><td>2015-11-02</td><td><a href="https://stackoverflow.com/questions/4587392/can-we-create-an-instance-of-an-interface-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>A difference in style: IDictionary vs Dictionary</td><td>14</td><td>83</td><td>72180</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1595498/a-difference-in-style-idictionary-vs-dictionary" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can an interface method have a body?</td><td>3</td><td>83</td><td>102665</td><td>2014-03-28</td><td><a href="https://stackoverflow.com/questions/22713652/can-an-interface-method-have-a-body" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>not implementing all of the methods of interface. is it possible?</td><td>11</td><td>82</td><td>107381</td><td>2016-08-30</td><td><a href="https://stackoverflow.com/questions/11437097/not-implementing-all-of-the-methods-of-interface-is-it-possible" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why should the interface for a Java class be preferred?</td><td>10</td><td>80</td><td>29267</td><td>2012-12-31</td><td><a href="https://stackoverflow.com/questions/147468/why-should-the-interface-for-a-java-class-be-preferred" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java casting in interfaces</td><td>4</td><td>79</td><td>32154</td><td>2017-03-06</td><td><a href="https://stackoverflow.com/questions/16186474/java-casting-in-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why to use Interfaces, Multiple Inheritance vs Interfaces, Benefits of Interfaces?</td><td>12</td><td>79</td><td>74821</td><td>2016-03-18</td><td><a href="https://stackoverflow.com/questions/8531292/why-to-use-interfaces-multiple-inheritance-vs-interfaces-benefits-of-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Reflection: Create an implementing class</td><td>4</td><td>77</td><td>37342</td><td>2009-07-04</td><td><a href="https://stackoverflow.com/questions/1082850/java-reflection-create-an-implementing-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Fields in interfaces</td><td>4</td><td>77</td><td>107955</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9446893/fields-in-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do Java Interfaces simulate multiple inheritance?</td><td>22</td><td>76</td><td>96850</td><td>2011-07-04</td><td><a href="https://stackoverflow.com/questions/3556652/how-do-java-interfaces-simulate-multiple-inheritance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Passing function as a parameter in java</td><td>6</td><td>74</td><td>95987</td><td>2015-05-26</td><td><a href="https://stackoverflow.com/questions/16800711/passing-function-as-a-parameter-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to implement enum with generics?</td><td>4</td><td>73</td><td>91020</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11490485/how-to-implement-enum-with-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can a normal Class implement multiple interfaces?</td><td>8</td><td>72</td><td>238575</td><td>2017-01-21</td><td><a href="https://stackoverflow.com/questions/21263607/can-a-normal-class-implement-multiple-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Interface with new keyword how is that possible?</td><td>9</td><td>69</td><td>26806</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9157784/java-interface-with-new-keyword-how-is-that-possible" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>interface as a method parameter in Java</td><td>8</td><td>67</td><td>96852</td><td>2013-12-30</td><td><a href="https://stackoverflow.com/questions/2575429/interface-as-a-method-parameter-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the differences between abstract classes and interfaces in Java 8?</td><td>5</td><td>67</td><td>19547</td><td>2015-10-23</td><td><a href="https://stackoverflow.com/questions/22591499/what-are-the-differences-between-abstract-classes-and-interfaces-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why are class static methods inherited but not interface static methods?</td><td>5</td><td>67</td><td>14864</td><td>2016-12-29</td><td><a href="https://stackoverflow.com/questions/25169175/why-are-class-static-methods-inherited-but-not-interface-static-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Default method returns true for a while, and then returns false? (Possible JVM bug)</td><td>1</td><td>67</td><td>3251</td><td>2014-03-01</td><td><a href="https://stackoverflow.com/questions/22096052/default-method-returns-true-for-a-while-and-then-returns-false-possible-jvm-b" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implementing multiple interfaces with Java - is there a way to delegate?</td><td>4</td><td>66</td><td>256409</td><td>2012-07-24</td><td><a href="https://stackoverflow.com/questions/4546807/implementing-multiple-interfaces-with-java-is-there-a-way-to-delegate" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Java let you cast to a collection?</td><td>3</td><td>65</td><td>6608</td><td>2018-10-09</td><td><a href="https://stackoverflow.com/questions/52698154/why-does-java-let-you-cast-to-a-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do we need interfaces in Java?</td><td>6</td><td>65</td><td>94462</td><td>2012-02-07</td><td><a href="https://stackoverflow.com/questions/3528420/why-do-we-need-interfaces-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Implementing two interfaces with two default methods of the same signature in Java 8</td><td>7</td><td>64</td><td>33349</td><td>2014-03-27</td><td><a href="https://stackoverflow.com/questions/22685930/implementing-two-interfaces-with-two-default-methods-of-the-same-signature-in-ja" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Cyclic inheritance when implementing inner interface in enum</td><td>3</td><td>64</td><td>38441</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23811904/cyclic-inheritance-when-implementing-inner-interface-in-enum" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create interface between Fragment and adapter?</td><td>6</td><td>63</td><td>83262</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/15444375/how-to-create-interface-between-fragment-and-adapter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When should I use an interface in java?</td><td>12</td><td>63</td><td>73658</td><td>2013-09-06</td><td><a href="https://stackoverflow.com/questions/2586389/when-should-i-use-an-interface-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Explaining Interfaces to Students</td><td>26</td><td>63</td><td>21116</td><td>2012-02-11</td><td><a href="https://stackoverflow.com/questions/3355408/explaining-interfaces-to-students" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java interface throws an exception but interface implementation does not throw an exception?</td><td>3</td><td>62</td><td>83548</td><td>2014-07-25</td><td><a href="https://stackoverflow.com/questions/15607060/java-interface-throws-an-exception-but-interface-implementation-does-not-throw-a" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>toString(), equals(), and hashCode() in an interface</td><td>12</td><td>60</td><td>54788</td><td>2012-08-18</td><td><a href="https://stackoverflow.com/questions/1718112/tostring-equals-and-hashcode-in-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there an interface similar to Callable but with arguments?</td><td>8</td><td>60</td><td>44435</td><td>2012-06-18</td><td><a href="https://stackoverflow.com/questions/11083868/is-there-an-interface-similar-to-callable-but-with-arguments" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How instanceof will work on an interface</td><td>8</td><td>59</td><td>75531</td><td>2015-01-04</td><td><a href="https://stackoverflow.com/questions/13487765/how-instanceof-will-work-on-an-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Where to put @Transactional? In interface specification or implementation?</td><td>4</td><td>59</td><td>21239</td><td>2014-03-09</td><td><a href="https://stackoverflow.com/questions/5551541/where-to-put-transactional-in-interface-specification-or-implementation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can interfaces replace the need for multiple inheritance when have existing classes</td><td>10</td><td>55</td><td>33899</td><td>2012-04-22</td><td><a href="https://stackoverflow.com/questions/5003285/how-can-interfaces-replace-the-need-for-multiple-inheritance-when-have-existing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Force a class to override the .equals method</td><td>12</td><td>55</td><td>18166</td><td>2009-10-23</td><td><a href="https://stackoverflow.com/questions/1612273/force-a-class-to-override-the-equals-method" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generic Interface</td><td>5</td><td>54</td><td>244237</td><td>2014-05-20</td><td><a href="https://stackoverflow.com/questions/1623480/generic-interface" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generics - Make Generic to extends 2 interfaces</td><td>2</td><td>52</td><td>60533</td><td>2012-10-31</td><td><a href="https://stackoverflow.com/questions/13101991/java-generics-make-generic-to-extends-2-interfaces" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Interface extends another interface but implements its methods</td><td>3</td><td>52</td><td>129180</td><td>2014-11-08</td><td><a href="https://stackoverflow.com/questions/10227410/interface-extends-another-interface-but-implements-its-methods" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can we use static method in an abstract class?</td><td>5</td><td>52</td><td>108669</td><td>2014-05-22</td><td><a href="https://stackoverflow.com/questions/17407203/can-we-use-static-method-in-an-abstract-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why declare an interface as abstract?</td><td>11</td><td>51</td><td>34270</td><td>2010-12-19</td><td><a href="https://stackoverflow.com/questions/2134200/why-declare-an-interface-as-abstract" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Java not allow multiple inheritance but does allow conforming to multiple interfaces with default implementations</td><td>7</td><td>51</td><td>8446</td><td>2018-10-03</td><td><a href="https://stackoverflow.com/questions/52620936/why-does-java-not-allow-multiple-inheritance-but-does-allow-conforming-to-multip" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is &quot;public static final&quot; redundant for a constant in a Java interface?</td><td>6</td><td>51</td><td>33204</td><td>2016-05-05</td><td><a href="https://stackoverflow.com/questions/17592872/is-public-static-final-redundant-for-a-constant-in-a-java-interface" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

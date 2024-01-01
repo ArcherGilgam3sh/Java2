@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about io</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Netty slower than Tomcat</td><td>1</td><td>26</td><td>15599</td><td>2012-10-10</td><td><a href="https://stackoverflow.com/questions/12806678/netty-slower-than-tomcat" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I check if a file exists in Java?</td><td>17</td><td>935</td><td>1312763</td><td>2015-02-07</td><td><a href="https://stackoverflow.com/questions/1816673/how-do-i-check-if-a-file-exists-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>FileInputStream vs FileReader</td><td>6</td><td>49</td><td>54385</td><td>2014-11-05</td><td><a href="https://stackoverflow.com/questions/5155226/fileinputstream-vs-filereader" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I read / convert an InputStream into a String in Java?</td><td>63</td><td>4512</td><td>2439321</td><td>2013-12-14</td><td><a href="https://stackoverflow.com/questions/309424/how-do-i-read-convert-an-inputstream-into-a-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I create a Java string from the contents of a file?</td><td>33</td><td>1692</td><td>1581384</td><td>2013-10-21</td><td><a href="https://stackoverflow.com/questions/326390/how-do-i-create-a-java-string-from-the-contents-of-a-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I read a large text file line by line using Java?</td><td>22</td><td>964</td><td>1385679</td><td>2015-10-21</td><td><a href="https://stackoverflow.com/questions/5868369/how-can-i-read-a-large-text-file-line-by-line-using-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Scanner is skipping nextLine() after using next() or nextFoo()?</td><td>23</td><td>879</td><td>721003</td><td>2015-07-17</td><td><a href="https://stackoverflow.com/questions/13102045/scanner-is-skipping-nextline-after-using-next-or-nextfoo" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to read all files in a folder from Java?</td><td>33</td><td>761</td><td>1295948</td><td>2016-01-17</td><td><a href="https://stackoverflow.com/questions/1844688/how-to-read-all-files-in-a-folder-from-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to append text to an existing file in Java?</td><td>31</td><td>744</td><td>1143465</td><td>2015-03-21</td><td><a href="https://stackoverflow.com/questions/1625234/how-to-append-text-to-an-existing-file-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get an OutputStream into a String</td><td>5</td><td>640</td><td>680021</td><td>2009-02-12</td><td><a href="https://stackoverflow.com/questions/216894/get-an-outputstream-into-a-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I get the file extension of a file in Java?</td><td>32</td><td>555</td><td>783715</td><td>2012-01-07</td><td><a href="https://stackoverflow.com/questions/3571223/how-do-i-get-the-file-extension-of-a-file-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Easy way to write contents of a Java InputStream to an OutputStream</td><td>24</td><td>486</td><td>472849</td><td>2011-02-27</td><td><a href="https://stackoverflow.com/questions/43157/easy-way-to-write-contents-of-a-java-inputstream-to-an-outputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>byte[] to file in Java</td><td>12</td><td>383</td><td>715796</td><td>2014-11-23</td><td><a href="https://stackoverflow.com/questions/4350084/byte-to-file-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is InputStream &amp; Output Stream? Why and when do we use them?</td><td>10</td><td>313</td><td>269738</td><td>2013-08-11</td><td><a href="https://stackoverflow.com/questions/1830698/what-is-inputstream-output-stream-why-and-when-do-we-use-them" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do I need to close() both FileReader and BufferedReader?</td><td>10</td><td>210</td><td>184875</td><td>2010-08-09</td><td><a href="https://stackoverflow.com/questions/1388602/do-i-need-to-close-both-filereader-and-bufferedreader" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to create a File object from InputStream</td><td>7</td><td>163</td><td>230268</td><td>2013-08-17</td><td><a href="https://stackoverflow.com/questions/11501418/is-it-possible-to-create-a-file-object-from-inputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Write string to output stream</td><td>6</td><td>155</td><td>382513</td><td>2016-01-08</td><td><a href="https://stackoverflow.com/questions/4069028/write-string-to-output-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>console.writeline and System.out.println</td><td>5</td><td>131</td><td>468475</td><td>2012-02-10</td><td><a href="https://stackoverflow.com/questions/4005378/console-writeline-and-system-out-println" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Difference between PrintStream and PrintWriter</td><td>6</td><td>130</td><td>66023</td><td>2011-08-02</td><td><a href="https://stackoverflow.com/questions/2822005/java-difference-between-printstream-and-printwriter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to read integer value from the standard input in Java</td><td>7</td><td>124</td><td>580550</td><td>2010-04-12</td><td><a href="https://stackoverflow.com/questions/2506077/how-to-read-integer-value-from-the-standard-input-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>read complete file without using loop in java</td><td>5</td><td>122</td><td>202831</td><td>2015-03-15</td><td><a href="https://stackoverflow.com/questions/14169661/read-complete-file-without-using-loop-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Guava equivalent for IOUtils.toString(InputStream)</td><td>9</td><td>110</td><td>69001</td><td>2012-06-01</td><td><a href="https://stackoverflow.com/questions/4185665/guava-equivalent-for-ioutils-tostringinputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>hadoop No FileSystem for scheme: file</td><td>20</td><td>107</td><td>124263</td><td>2013-06-24</td><td><a href="https://stackoverflow.com/questions/17265002/hadoop-no-filesystem-for-scheme-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get resources directory path programmatically</td><td>4</td><td>102</td><td>247228</td><td>2013-10-16</td><td><a href="https://stackoverflow.com/questions/19414453/how-to-get-resources-directory-path-programmatically" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Listing files in a directory matching a pattern in Java</td><td>6</td><td>95</td><td>130704</td><td>2010-01-20</td><td><a href="https://stackoverflow.com/questions/2102952/listing-files-in-a-directory-matching-a-pattern-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java&#39;s createNewFile() - will it also create directories?</td><td>6</td><td>95</td><td>95004</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6666303/javas-createnewfile-will-it-also-create-directories" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to read from standard input line by line?</td><td>6</td><td>93</td><td>77480</td><td>2013-01-13</td><td><a href="https://stackoverflow.com/questions/4585655/how-to-read-from-standard-input-line-by-line" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: what exactly is the difference between NIO and NIO.2?</td><td>3</td><td>92</td><td>37672</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/25537675/java-what-exactly-is-the-difference-between-nio-and-nio-2" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Most efficient way to create InputStream from OutputStream</td><td>5</td><td>91</td><td>105808</td><td>2012-12-30</td><td><a href="https://stackoverflow.com/questions/1225909/most-efficient-way-to-create-inputstream-from-outputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Create a file from a ByteArrayOutputStream</td><td>2</td><td>90</td><td>170312</td><td>2013-07-05</td><td><a href="https://stackoverflow.com/questions/17488534/create-a-file-from-a-bytearrayoutputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>File exists and IS directory, but listFiles() returns null</td><td>12</td><td>88</td><td>66190</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/20714058/file-exists-and-is-directory-but-listfiles-returns-null" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to copy file from one location to another location?</td><td>8</td><td>83</td><td>254164</td><td>2016-04-22</td><td><a href="https://stackoverflow.com/questions/16433915/how-to-copy-file-from-one-location-to-another-location" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting &quot;java.nio.file.AccessDeniedException&quot; when trying to write to a folder</td><td>6</td><td>74</td><td>205662</td><td>2016-08-27</td><td><a href="https://stackoverflow.com/questions/28670576/getting-java-nio-file-accessdeniedexception-when-trying-to-write-to-a-folder" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Design pattern for &quot;retrying&quot; logic that failed?</td><td>12</td><td>69</td><td>62578</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11692595/design-pattern-for-retrying-logic-that-failed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Quickly read the last line of a text file?</td><td>9</td><td>68</td><td>101978</td><td>2011-07-16</td><td><a href="https://stackoverflow.com/questions/686231/quickly-read-the-last-line-of-a-text-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to chain multiple different InputStreams into one InputStream</td><td>5</td><td>65</td><td>41961</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14295099/how-to-chain-multiple-different-inputstreams-into-one-inputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Use Cases and Examples of GoF Decorator Pattern for IO</td><td>8</td><td>62</td><td>48929</td><td>2014-09-19</td><td><a href="https://stackoverflow.com/questions/6366385/use-cases-and-examples-of-gof-decorator-pattern-for-io" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>InputStream vs InputStreamReader</td><td>6</td><td>62</td><td>72205</td><td>2013-07-20</td><td><a href="https://stackoverflow.com/questions/3194918/inputstream-vs-inputstreamreader" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Preferred way to use Java ZipOutputStream and BufferedOutputStream</td><td>2</td><td>61</td><td>84063</td><td>2013-10-07</td><td><a href="https://stackoverflow.com/questions/14462371/preferred-way-to-use-java-zipoutputstream-and-bufferedoutputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to overwrite file via java nio writer?</td><td>2</td><td>57</td><td>45851</td><td>2013-11-05</td><td><a href="https://stackoverflow.com/questions/19794101/how-to-overwrite-file-via-java-nio-writer" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>InputStream from relative path</td><td>4</td><td>56</td><td>116319</td><td>2016-09-12</td><td><a href="https://stackoverflow.com/questions/7692298/inputstream-from-relative-path" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>difference between flush and close function in case of filewriter in java</td><td>5</td><td>56</td><td>80960</td><td>2013-07-08</td><td><a href="https://stackoverflow.com/questions/9272585/difference-between-flush-and-close-function-in-case-of-filewriter-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What throws an IOException in Java?</td><td>3</td><td>52</td><td>183260</td><td>2016-10-03</td><td><a href="https://stackoverflow.com/questions/13216148/what-throws-an-ioexception-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to flush a BufferedWriter</td><td>3</td><td>51</td><td>78484</td><td>2013-10-02</td><td><a href="https://stackoverflow.com/questions/908168/when-to-flush-a-bufferedwriter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Resetting Standard output Stream</td><td>2</td><td>50</td><td>36584</td><td>2011-03-17</td><td><a href="https://stackoverflow.com/questions/5339499/resetting-standard-output-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Create a new line in Java&#39;s FileWriter</td><td>10</td><td>49</td><td>206226</td><td>2016-06-12</td><td><a href="https://stackoverflow.com/questions/18549704/create-a-new-line-in-javas-filewriter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>At what point does wrapping a FileOutputStream with a BufferedOutputStream make sense, in terms of performance?</td><td>2</td><td>49</td><td>24048</td><td>2014-02-21</td><td><a href="https://stackoverflow.com/questions/8712957/at-what-point-does-wrapping-a-fileoutputstream-with-a-bufferedoutputstream-make" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Get file name from FileOutputStream</td><td>5</td><td>46</td><td>52612</td><td>2011-02-08</td><td><a href="https://stackoverflow.com/questions/4930111/get-file-name-from-fileoutputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use readline() method in Java?</td><td>5</td><td>45</td><td>376543</td><td>2015-02-17</td><td><a href="https://stackoverflow.com/questions/8560395/how-to-use-readline-method-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Read Large Text File With 70million line of text</td><td>7</td><td>45</td><td>122515</td><td>2017-04-08</td><td><a href="https://stackoverflow.com/questions/14037404/java-read-large-text-file-with-70million-line-of-text" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I clear the Scanner buffer in Java?</td><td>6</td><td>44</td><td>239101</td><td>2012-05-15</td><td><a href="https://stackoverflow.com/questions/10604125/how-can-i-clear-the-scanner-buffer-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to load a classpath resource to an array of byte?</td><td>6</td><td>43</td><td>59983</td><td>2012-05-30</td><td><a href="https://stackoverflow.com/questions/10812559/how-to-load-a-classpath-resource-to-an-array-of-byte" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you &quot;empty&quot; a StringWriter in Java?</td><td>2</td><td>43</td><td>13366</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3738095/how-do-you-empty-a-stringwriter-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to write data to two java.io.OutputStream objects at once?</td><td>5</td><td>41</td><td>26532</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7987395/how-to-write-data-to-two-java-io-outputstream-objects-at-once" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Reading inputStream using BufferedReader.readLine() is too slow</td><td>2</td><td>41</td><td>177062</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5594725/reading-inputstream-using-bufferedreader-readline-is-too-slow" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to simulate keyboard presses in java?</td><td>1</td><td>40</td><td>85197</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7745959/how-to-simulate-keyboard-presses-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Test if a file is an image file</td><td>8</td><td>39</td><td>70910</td><td>2015-02-12</td><td><a href="https://stackoverflow.com/questions/9643228/test-if-a-file-is-an-image-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Read and Write Text in ANSI format</td><td>1</td><td>37</td><td>103075</td><td>2016-03-02</td><td><a href="https://stackoverflow.com/questions/18556104/read-and-write-text-in-ansi-format" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.io.File vs java.nio.Files which is the preferred in new code?</td><td>3</td><td>37</td><td>16207</td><td>2017-08-23</td><td><a href="https://stackoverflow.com/questions/32143633/java-io-file-vs-java-nio-files-which-is-the-preferred-in-new-code" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Writing to console with System.out and PrintWriter</td><td>6</td><td>37</td><td>76570</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9494327/writing-to-console-with-system-out-and-printwriter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you decide what byte[] size to use for InputStream.read()?</td><td>5</td><td>37</td><td>15165</td><td>2012-01-05</td><td><a href="https://stackoverflow.com/questions/8748960/how-do-you-decide-what-byte-size-to-use-for-inputstream-read" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java file input with rewind()/reset() capability</td><td>9</td><td>36</td><td>47580</td><td>2011-08-27</td><td><a href="https://stackoverflow.com/questions/1094703/java-file-input-with-rewind-reset-capability" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert InputStream into Stream&lt;String&gt; given a Charset</td><td>1</td><td>36</td><td>17492</td><td>2015-05-24</td><td><a href="https://stackoverflow.com/questions/30336257/convert-inputstream-into-streamstring-given-a-charset" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Do I need to close the input stream manually after using IOUtils.toString(input) of commons-io?</td><td>1</td><td>36</td><td>12804</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/20443179/do-i-need-to-close-the-input-stream-manually-after-using-ioutils-tostringinput" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert Writer to String</td><td>3</td><td>34</td><td>34630</td><td>2014-08-06</td><td><a href="https://stackoverflow.com/questions/19181206/how-to-convert-writer-to-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>new File(&quot;&quot;) vs. new File(&quot;.&quot;): Feature or Bug?</td><td>3</td><td>34</td><td>7137</td><td>2011-05-04</td><td><a href="https://stackoverflow.com/questions/5883808/new-file-vs-new-file-feature-or-bug" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the most used pattern in java.io?</td><td>5</td><td>33</td><td>23722</td><td>2013-06-10</td><td><a href="https://stackoverflow.com/questions/3068912/what-is-the-most-used-pattern-in-java-io" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java, Junit - Capture the standard input / Output for use in a unit test</td><td>3</td><td>33</td><td>33340</td><td>2010-01-30</td><td><a href="https://stackoverflow.com/questions/2169330/java-junit-capture-the-standard-input-output-for-use-in-a-unit-test" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What to import to use IOUtils.toString()?</td><td>5</td><td>32</td><td>79062</td><td>2015-01-29</td><td><a href="https://stackoverflow.com/questions/16535032/what-to-import-to-use-ioutils-tostring" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you merge two input streams in Java?</td><td>5</td><td>31</td><td>35819</td><td>2010-10-29</td><td><a href="https://stackoverflow.com/questions/760228/how-do-you-merge-two-input-streams-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why Java OutputStream.write() Takes Integer but Writes Bytes</td><td>5</td><td>31</td><td>17422</td><td>2009-09-11</td><td><a href="https://stackoverflow.com/questions/1407893/why-java-outputstream-write-takes-integer-but-writes-bytes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Scanner doesn&#39;t wait for user input</td><td>1</td><td>30</td><td>83955</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23450524/java-scanner-doesnt-wait-for-user-input" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The difference between InputStream and InputStreamReader when reading multi-byte characters</td><td>2</td><td>30</td><td>22495</td><td>2012-04-16</td><td><a href="https://stackoverflow.com/questions/5764065/the-difference-between-inputstream-and-inputstreamreader-when-reading-multi-byte" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between BufferedReader and BufferedInputStream</td><td>2</td><td>30</td><td>21946</td><td>2014-10-13</td><td><a href="https://stackoverflow.com/questions/10434736/difference-between-bufferedreader-and-bufferedinputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android FileInputStream read() txt file to String</td><td>3</td><td>29</td><td>96663</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9095610/android-fileinputstream-read-txt-file-to-string" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: print contents of text file to screen</td><td>5</td><td>29</td><td>162820</td><td>2016-11-08</td><td><a href="https://stackoverflow.com/questions/15695984/java-print-contents-of-text-file-to-screen" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Exception: Unexpected end of ZLIB input stream</td><td>1</td><td>29</td><td>126038</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/24531089/exception-unexpected-end-of-zlib-input-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>difference between bytebuffer.flip() and bytebuffer.rewind()</td><td>6</td><td>29</td><td>19317</td><td>2017-02-08</td><td><a href="https://stackoverflow.com/questions/16461284/difference-between-bytebuffer-flip-and-bytebuffer-rewind" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>PostgreSQL Exception: &quot;An I/O error occured while sending to the backend&quot;</td><td>6</td><td>28</td><td>111348</td><td>2013-06-25</td><td><a href="https://stackoverflow.com/questions/17285340/postgresql-exception-an-i-o-error-occured-while-sending-to-the-backend" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>CharBuffer vs. char[]</td><td>7</td><td>28</td><td>45378</td><td>2009-12-14</td><td><a href="https://stackoverflow.com/questions/294382/charbuffer-vs-char" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Concurrent reading of a File (java preferred)</td><td>4</td><td>28</td><td>22781</td><td>2015-07-24</td><td><a href="https://stackoverflow.com/questions/11867348/concurrent-reading-of-a-file-java-preferred" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Starting a process with inherited stdin/stdout/stderr in Java 6</td><td>3</td><td>28</td><td>13219</td><td>2008-09-13</td><td><a href="https://stackoverflow.com/questions/60302/starting-a-process-with-inherited-stdin-stdout-stderr-in-java-6" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java in 2011: threaded sockets VS NIO: what to choose on 64bit OS and latest Java version?</td><td>5</td><td>27</td><td>3751</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5437722/java-in-2011-threaded-sockets-vs-nio-what-to-choose-on-64bit-os-and-latest-jav" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>FileOutputStream: Does the &quot;close&quot; method calls also &quot;flush&quot;?</td><td>2</td><td>26</td><td>18369</td><td>2015-07-16</td><td><a href="https://stackoverflow.com/questions/31456660/fileoutputstream-does-the-close-method-calls-also-flush" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a better way to write the full contents of a file to an OutputStream?</td><td>3</td><td>25</td><td>37513</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4741419/is-there-a-better-way-to-write-the-full-contents-of-a-file-to-an-outputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Checking if file is completely written</td><td>6</td><td>25</td><td>49730</td><td>2013-11-04</td><td><a href="https://stackoverflow.com/questions/11239495/checking-if-file-is-completely-written" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java.nio.charset.MalformedInputException: Input length = 1</td><td>1</td><td>25</td><td>56112</td><td>2015-06-03</td><td><a href="https://stackoverflow.com/questions/30609062/java-nio-charset-malformedinputexception-input-length-1" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java I/O streams; what are the differences?</td><td>7</td><td>24</td><td>18775</td><td>2009-09-30</td><td><a href="https://stackoverflow.com/questions/1160050/java-i-o-streams-what-are-the-differences" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Use of Serializable other than Writing&amp; Reading object to/from File</td><td>7</td><td>24</td><td>1727</td><td>2015-11-02</td><td><a href="https://stackoverflow.com/questions/31524162/use-of-serializable-other-than-writing-reading-object-to-from-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to use the InputSupplier or OutputSupplier api of Guava?</td><td>2</td><td>24</td><td>5966</td><td>2011-03-09</td><td><a href="https://stackoverflow.com/questions/5253324/how-to-use-the-inputsupplier-or-outputsupplier-api-of-guava" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Read and Write to Java file via Resource</td><td>3</td><td>24</td><td>48387</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/13000937/read-and-write-to-java-file-via-resource" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to read String Builder line by line</td><td>7</td><td>23</td><td>67664</td><td>2011-08-25</td><td><a href="https://stackoverflow.com/questions/7190208/how-to-read-string-builder-line-by-line" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Sending the same but modifed object over ObjectOutputStream</td><td>2</td><td>23</td><td>5112</td><td>2008-12-13</td><td><a href="https://stackoverflow.com/questions/142317/sending-the-same-but-modifed-object-over-objectoutputstream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java, what is the default location for newly created files?</td><td>2</td><td>23</td><td>55359</td><td>2011-03-01</td><td><a href="https://stackoverflow.com/questions/5154529/in-java-what-is-the-default-location-for-newly-created-files" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Replace string in file</td><td>2</td><td>23</td><td>23174</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3147615/replace-string-in-file" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Advantages of Java NIO in blocking mode versus traditional I/O?</td><td>3</td><td>23</td><td>8192</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5223175/advantages-of-java-nio-in-blocking-mode-versus-traditional-i-o" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Limiting file access in Java</td><td>1</td><td>22</td><td>9646</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5526008/limiting-file-access-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>System.out closed? Can I reopen it?</td><td>7</td><td>21</td><td>14847</td><td>2012-01-20</td><td><a href="https://stackoverflow.com/questions/8941298/system-out-closed-can-i-reopen-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the fastest way to read a large number of small files into memory?</td><td>6</td><td>21</td><td>10771</td><td>2009-04-09</td><td><a href="https://stackoverflow.com/questions/625420/what-is-the-fastest-way-to-read-a-large-number-of-small-files-into-memory" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>PipedInputStream - How to avoid &quot;java.io.IOException: Pipe broken&quot;</td><td>4</td><td>21</td><td>24362</td><td>2009-12-08</td><td><a href="https://stackoverflow.com/questions/1866255/pipedinputstream-how-to-avoid-java-io-ioexception-pipe-broken" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about gui</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create RecyclerView with multiple view types</td><td>23</td><td>1010</td><td>545836</td><td>2018-02-21</td><td><a href="https://stackoverflow.com/questions/26245139/how-to-create-recyclerview-with-multiple-view-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The Use of Multiple JFrames: Good or Bad Practice?</td><td>9</td><td>548</td><td>138710</td><td>2014-11-12</td><td><a href="https://stackoverflow.com/questions/9554636/the-use-of-multiple-jframes-good-or-bad-practice" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java GUI frameworks. What to choose? Swing, SWT, AWT, SwingX, JGoodies, JavaFX, Apache Pivot?</td><td>9</td><td>228</td><td>706544</td><td>2012-09-24</td><td><a href="https://stackoverflow.com/questions/7358775/java-gui-frameworks-what-to-choose-swing-swt-awt-swingx-jgoodies-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to change color of the back arrow in the new material theme?</td><td>25</td><td>210</td><td>181579</td><td>2016-05-23</td><td><a href="https://stackoverflow.com/questions/26788464/how-to-change-color-of-the-back-arrow-in-the-new-material-theme" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Swing vs JavaFx for desktop applications</td><td>6</td><td>206</td><td>239255</td><td>2014-11-30</td><td><a href="https://stackoverflow.com/questions/16694948/swing-vs-javafx-for-desktop-applications" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Custom fonts and XML layouts (Android)</td><td>18</td><td>174</td><td>170707</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2376250/custom-fonts-and-xml-layouts-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>DTO and DAO concepts and MVC</td><td>1</td><td>165</td><td>179060</td><td>2016-02-08</td><td><a href="https://stackoverflow.com/questions/14366001/dto-and-dao-concepts-and-mvc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android RecyclerView addition &amp; removal of items</td><td>18</td><td>164</td><td>306272</td><td>2016-04-23</td><td><a href="https://stackoverflow.com/questions/26076965/android-recyclerview-addition-removal-of-items" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the best way to do GUIs in Clojure?</td><td>17</td><td>153</td><td>47436</td><td>2009-06-13</td><td><a href="https://stackoverflow.com/questions/233171/what-is-the-best-way-to-do-guis-in-clojure" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to best position Swing GUIs?</td><td>2</td><td>130</td><td>26083</td><td>2014-07-07</td><td><a href="https://stackoverflow.com/questions/7143287/how-to-best-position-swing-guis" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>GUI not working after rewriting to MVC</td><td>2</td><td>130</td><td>45491</td><td>2011-07-04</td><td><a href="https://stackoverflow.com/questions/3066590/gui-not-working-after-rewriting-to-mvc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to center a Window in Java?</td><td>18</td><td>127</td><td>220099</td><td>2011-06-21</td><td><a href="https://stackoverflow.com/questions/144892/how-to-center-a-window-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What GUI libraries are the JetBrains using?</td><td>1</td><td>127</td><td>46867</td><td>2016-08-01</td><td><a href="https://stackoverflow.com/questions/12309569/what-gui-libraries-are-the-jetbrains-using" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between validate(), revalidate() and invalidate() in Swing GUI</td><td>2</td><td>119</td><td>63959</td><td>2014-02-09</td><td><a href="https://stackoverflow.com/questions/9510125/difference-between-validate-revalidate-and-invalidate-in-swing-gui" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Newline in JLabel</td><td>6</td><td>118</td><td>175349</td><td>2012-09-24</td><td><a href="https://stackoverflow.com/questions/1090098/newline-in-jlabel" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I reduce the inner padding around the text within an Android button object?</td><td>6</td><td>107</td><td>68907</td><td>2013-05-06</td><td><a href="https://stackoverflow.com/questions/16394252/how-do-i-reduce-the-inner-padding-around-the-text-within-an-android-button-objec" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Line-breaking widget layout for Android</td><td>13</td><td>100</td><td>48639</td><td>2014-01-20</td><td><a href="https://stackoverflow.com/questions/549451/line-breaking-widget-layout-for-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Platform.runLater and Task in JavaFX</td><td>4</td><td>96</td><td>178079</td><td>2014-07-02</td><td><a href="https://stackoverflow.com/questions/13784333/platform-runlater-and-task-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>&quot;Always on Top&quot; Windows with Java</td><td>3</td><td>92</td><td>89464</td><td>2008-11-28</td><td><a href="https://stackoverflow.com/questions/297938/always-on-top-windows-with-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to change color of hamburger icon in material design navigation drawer</td><td>12</td><td>91</td><td>67681</td><td>2016-10-06</td><td><a href="https://stackoverflow.com/questions/31870132/how-to-change-color-of-hamburger-icon-in-material-design-navigation-drawer" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>make a JLabel wrap it&#39;s text by setting a max width</td><td>10</td><td>84</td><td>100573</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2420742/make-a-jlabel-wrap-its-text-by-setting-a-max-width" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Suitable GUI framework for Scala?</td><td>5</td><td>72</td><td>39680</td><td>2014-04-05</td><td><a href="https://stackoverflow.com/questions/10497118/suitable-gui-framework-for-scala" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set AUTO-SCROLLING of JTextArea in Java GUI?</td><td>8</td><td>67</td><td>101951</td><td>2010-10-17</td><td><a href="https://stackoverflow.com/questions/1627028/how-to-set-auto-scrolling-of-jtextarea-in-java-gui" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>close fxml window by code, javafx</td><td>9</td><td>66</td><td>194323</td><td>2015-06-09</td><td><a href="https://stackoverflow.com/questions/13567019/close-fxml-window-by-code-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Swing: how do I close a dialog when the ESC key is pressed?</td><td>5</td><td>62</td><td>41626</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/642925/swing-how-do-i-close-a-dialog-when-the-esc-key-is-pressed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Disabling a Button in JavaFX</td><td>2</td><td>59</td><td>115569</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/17871329/disabling-a-button-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>suggestions for declarative GUI programming in Java</td><td>14</td><td>55</td><td>9168</td><td>2010-08-15</td><td><a href="https://stackoverflow.com/questions/761237/suggestions-for-declarative-gui-programming-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I create a &quot;modern looking&quot; Java desktop application?</td><td>10</td><td>55</td><td>67868</td><td>2012-04-13</td><td><a href="https://stackoverflow.com/questions/10134516/how-can-i-create-a-modern-looking-java-desktop-application" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JOptionPane to get password</td><td>7</td><td>54</td><td>67320</td><td>2012-08-06</td><td><a href="https://stackoverflow.com/questions/8881213/joptionpane-to-get-password" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>GetView Vs. BindView in a custom CursorAdapter?</td><td>3</td><td>53</td><td>26294</td><td>2015-11-08</td><td><a href="https://stackoverflow.com/questions/3535074/getview-vs-bindview-in-a-custom-cursoradapter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to organize a Swing GUI application?</td><td>4</td><td>53</td><td>16853</td><td>2011-06-10</td><td><a href="https://stackoverflow.com/questions/6269851/how-to-organize-a-swing-gui-application" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I add a space in between two buttons in a boxLayout?</td><td>1</td><td>51</td><td>87253</td><td>2014-02-12</td><td><a href="https://stackoverflow.com/questions/8335997/how-can-i-add-a-space-in-between-two-buttons-in-a-boxlayout" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Applying MVC With JavaFx</td><td>2</td><td>49</td><td>72121</td><td>2016-09-19</td><td><a href="https://stackoverflow.com/questions/32342864/applying-mvc-with-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to center the text in a JLabel?</td><td>3</td><td>47</td><td>173549</td><td>2013-07-04</td><td><a href="https://stackoverflow.com/questions/6810581/how-to-center-the-text-in-a-jlabel" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Create Java console inside a GUI panel</td><td>5</td><td>45</td><td>78455</td><td>2011-11-09</td><td><a href="https://stackoverflow.com/questions/342990/create-java-console-inside-a-gui-panel" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the windows native look in Java GUI programming?</td><td>3</td><td>45</td><td>67470</td><td>2012-07-11</td><td><a href="https://stackoverflow.com/questions/11425103/how-to-get-the-windows-native-look-in-java-gui-programming" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Android: what to choose for requestcode values?</td><td>1</td><td>44</td><td>26264</td><td>2015-10-25</td><td><a href="https://stackoverflow.com/questions/33331073/android-what-to-choose-for-requestcode-values" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Resizing image in Java</td><td>6</td><td>42</td><td>160759</td><td>2015-05-13</td><td><a href="https://stackoverflow.com/questions/5895829/resizing-image-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Creating a custom button in Java with JButton</td><td>4</td><td>42</td><td>64170</td><td>2011-09-12</td><td><a href="https://stackoverflow.com/questions/5751311/creating-a-custom-button-in-java-with-jbutton" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Updating UI from different threads in JavaFX</td><td>2</td><td>40</td><td>82026</td><td>2015-10-27</td><td><a href="https://stackoverflow.com/questions/22772379/updating-ui-from-different-threads-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is Swing Still in Use Today?</td><td>3</td><td>39</td><td>37546</td><td>2018-06-08</td><td><a href="https://stackoverflow.com/questions/24442672/is-swing-still-in-use-today" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to center elements in the BoxLayout using center of the element?</td><td>2</td><td>39</td><td>57057</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2560784/how-to-center-elements-in-the-boxlayout-using-center-of-the-element" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Has anybody used SIKULI for testing their GUI-based apps?</td><td>12</td><td>39</td><td>17020</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2125839/has-anybody-used-sikuli-for-testing-their-gui-based-apps" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are your best Swing design patterns and tips?</td><td>16</td><td>37</td><td>23973</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/496233/what-are-your-best-swing-design-patterns-and-tips" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX FileChooser: how to set file filters?</td><td>3</td><td>37</td><td>53975</td><td>2015-08-26</td><td><a href="https://stackoverflow.com/questions/13634576/javafx-filechooser-how-to-set-file-filters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you add an ActionListener onto a JButton in Java</td><td>4</td><td>37</td><td>204932</td><td>2013-03-21</td><td><a href="https://stackoverflow.com/questions/284899/how-do-you-add-an-actionlistener-onto-a-jbutton-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Listen to JFrame resize events as the user drags their mouse?</td><td>4</td><td>37</td><td>82277</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2106367/listen-to-jframe-resize-events-as-the-user-drags-their-mouse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>ContentProvider insert() always runs on UI thread?</td><td>4</td><td>37</td><td>9594</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/11604914/contentprovider-insert-always-runs-on-ui-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to select all text in a JFormattedTextField when it gets focus?</td><td>5</td><td>36</td><td>37784</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1178312/how-to-select-all-text-in-a-jformattedtextfield-when-it-gets-focus" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set specific window (frame) size in java swing?</td><td>3</td><td>36</td><td>191213</td><td>2014-07-21</td><td><a href="https://stackoverflow.com/questions/8193801/how-to-set-specific-window-frame-size-in-java-swing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the relation between ContentPane and JPanel?</td><td>6</td><td>36</td><td>76306</td><td>2012-04-03</td><td><a href="https://stackoverflow.com/questions/2432839/what-is-the-relation-between-contentpane-and-jpanel" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Center JDialog over parent</td><td>5</td><td>35</td><td>49207</td><td>2012-10-20</td><td><a href="https://stackoverflow.com/questions/10030947/center-jdialog-over-parent" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unable to run Java GUI programs with Ubuntu</td><td>9</td><td>35</td><td>114653</td><td>2014-08-30</td><td><a href="https://stackoverflow.com/questions/5362512/unable-to-run-java-gui-programs-with-ubuntu" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use GUI form created in IntelliJ IDEA</td><td>3</td><td>34</td><td>41032</td><td>2015-09-03</td><td><a href="https://stackoverflow.com/questions/3899525/how-to-use-gui-form-created-in-intellij-idea" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting java gui to open a webpage in web browser</td><td>4</td><td>34</td><td>55460</td><td>2009-03-03</td><td><a href="https://stackoverflow.com/questions/602032/getting-java-gui-to-open-a-webpage-in-web-browser" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to implement draggable tab using Java Swing?</td><td>5</td><td>34</td><td>17914</td><td>2008-09-13</td><td><a href="https://stackoverflow.com/questions/60269/how-to-implement-draggable-tab-using-java-swing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it safe to construct Swing/AWT widgets NOT on the Event Dispatch Thread?</td><td>2</td><td>34</td><td>6056</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/491323/is-it-safe-to-construct-swing-awt-widgets-not-on-the-event-dispatch-thread" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I pick up the Enter Key being pressed in JavaFX2?</td><td>6</td><td>33</td><td>92411</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/13880638/how-do-i-pick-up-the-enter-key-being-pressed-in-javafx2" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is Java Swing still in use?</td><td>10</td><td>33</td><td>13420</td><td>2010-06-08</td><td><a href="https://stackoverflow.com/questions/2994304/is-java-swing-still-in-use" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I set size of a button?</td><td>4</td><td>33</td><td>397666</td><td>2010-03-29</td><td><a href="https://stackoverflow.com/questions/2536873/how-can-i-set-size-of-a-button" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Please recommend pretty Java Swing components library</td><td>2</td><td>32</td><td>42114</td><td>2016-10-31</td><td><a href="https://stackoverflow.com/questions/12322296/please-recommend-pretty-java-swing-components-library" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to set placeholder in JavaFX?</td><td>2</td><td>32</td><td>29697</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/23363222/how-to-set-placeholder-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Differences between ComboBox and ChoiceBox in JavaFX</td><td>5</td><td>32</td><td>37343</td><td>2015-11-08</td><td><a href="https://stackoverflow.com/questions/33599322/differences-between-combobox-and-choicebox-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JTable Right Align Header</td><td>13</td><td>31</td><td>45026</td><td>2012-06-08</td><td><a href="https://stackoverflow.com/questions/7493369/jtable-right-align-header" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Setting minimum size limit for a window in java swing</td><td>2</td><td>31</td><td>66130</td><td>2013-09-22</td><td><a href="https://stackoverflow.com/questions/2781939/setting-minimum-size-limit-for-a-window-in-java-swing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is Java the best language to develop cross-platform GUI applications?</td><td>11</td><td>31</td><td>27256</td><td>2008-12-23</td><td><a href="https://stackoverflow.com/questions/389051/is-java-the-best-language-to-develop-cross-platform-gui-applications" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to create a helpful tooltip in Android</td><td>5</td><td>31</td><td>32628</td><td>2013-08-18</td><td><a href="https://stackoverflow.com/questions/5542694/how-to-create-a-helpful-tooltip-in-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 poor GUI performance compared to Java 6</td><td>2</td><td>31</td><td>3059</td><td>2015-01-20</td><td><a href="https://stackoverflow.com/questions/28046809/java-8-poor-gui-performance-compared-to-java-6" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to make canvas with Swing?</td><td>4</td><td>29</td><td>62815</td><td>2012-11-23</td><td><a href="https://stackoverflow.com/questions/776180/how-to-make-canvas-with-swing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can I add a component to a specific grid cell when a GridLayout is used?</td><td>2</td><td>29</td><td>85060</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2510159/can-i-add-a-component-to-a-specific-grid-cell-when-a-gridlayout-is-used" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Set the Tooltip Delay Time for a Particular Component in Java Swing</td><td>4</td><td>29</td><td>30025</td><td>2012-10-21</td><td><a href="https://stackoverflow.com/questions/1190290/set-the-tooltip-delay-time-for-a-particular-component-in-java-swing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JUnit Tests for GUI in Java</td><td>6</td><td>29</td><td>45173</td><td>2013-05-07</td><td><a href="https://stackoverflow.com/questions/16411823/junit-tests-for-gui-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java, GUI builder or hand coding?</td><td>16</td><td>28</td><td>21986</td><td>2011-07-23</td><td><a href="https://stackoverflow.com/questions/468328/java-gui-builder-or-hand-coding" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX primaryStage remove windows borders?</td><td>1</td><td>28</td><td>66006</td><td>2012-03-27</td><td><a href="https://stackoverflow.com/questions/9861178/javafx-primarystage-remove-windows-borders" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Use embedded web browser (e.g. Chrome) as GUI toolkit for Java desktop applications?</td><td>5</td><td>28</td><td>23020</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9235079/use-embedded-web-browser-e-g-chrome-as-gui-toolkit-for-java-desktop-applicati" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Linebreaks in JLabels?</td><td>8</td><td>27</td><td>54161</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1842223/java-linebreaks-in-jlabels" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I add padding to a jtextfield</td><td>6</td><td>27</td><td>24113</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/8792651/how-can-i-add-padding-to-a-jtextfield" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to disable javax.swing.JButton in java?</td><td>3</td><td>27</td><td>150082</td><td>2009-10-26</td><td><a href="https://stackoverflow.com/questions/1625855/how-to-disable-javax-swing-jbutton-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaFX effect on background</td><td>4</td><td>27</td><td>23852</td><td>2015-10-24</td><td><a href="https://stackoverflow.com/questions/22663681/javafx-effect-on-background" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are good Java date-chooser Swing GUI widgets?</td><td>5</td><td>27</td><td>80234</td><td>2012-11-25</td><td><a href="https://stackoverflow.com/questions/1339354/what-are-good-java-date-chooser-swing-gui-widgets" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Making a robust, resizable Swing Chess GUI</td><td>2</td><td>27</td><td>35633</td><td>2014-06-07</td><td><a href="https://stackoverflow.com/questions/21142686/making-a-robust-resizable-swing-chess-gui" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Create GUI using Eclipse (Java)</td><td>4</td><td>26</td><td>173417</td><td>2014-06-11</td><td><a href="https://stackoverflow.com/questions/6533243/create-gui-using-eclipse-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Make a JPanel not draw its background (Transparent)</td><td>5</td><td>26</td><td>47257</td><td>2009-09-03</td><td><a href="https://stackoverflow.com/questions/54926/make-a-jpanel-not-draw-its-background-transparent" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use HTML and CSS as a Java application GUI?</td><td>6</td><td>26</td><td>74670</td><td>2011-08-24</td><td><a href="https://stackoverflow.com/questions/7176981/how-to-use-html-and-css-as-a-java-application-gui" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to hide the status bar in eclipse</td><td>3</td><td>26</td><td>15490</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/5645495/how-to-hide-the-status-bar-in-eclipse" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Swing UI Testing Library Comparisons: FEST, WindowTester Pro, etc</td><td>5</td><td>26</td><td>6639</td><td>2014-05-16</td><td><a href="https://stackoverflow.com/questions/5939749/swing-ui-testing-library-comparisons-fest-windowtester-pro-etc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java vs. C++ for building a GUI which has a C++ backend</td><td>11</td><td>25</td><td>20021</td><td>2010-07-08</td><td><a href="https://stackoverflow.com/questions/3207155/java-vs-c-for-building-a-gui-which-has-a-c-backend" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best GUI Builder for Java/Swing</td><td>4</td><td>25</td><td>62285</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6297268/best-gui-builder-for-java-swing" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Disable automatic layout change on Android</td><td>4</td><td>25</td><td>13758</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/26450489/disable-automatic-layout-change-on-android" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java - How would I dynamically add swing component to gui on click?</td><td>5</td><td>25</td><td>85724</td><td>2011-12-08</td><td><a href="https://stackoverflow.com/questions/4279435/java-how-would-i-dynamically-add-swing-component-to-gui-on-click" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java GUI alternatives</td><td>8</td><td>25</td><td>10797</td><td>2009-09-08</td><td><a href="https://stackoverflow.com/questions/1391590/java-gui-alternatives" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I set the position of the mouse in Java?</td><td>5</td><td>24</td><td>36241</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2941324/how-do-i-set-the-position-of-the-mouse-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>table column won&#39;t take full size of the table view in javaFX</td><td>3</td><td>24</td><td>42621</td><td>2014-12-05</td><td><a href="https://stackoverflow.com/questions/11484960/table-column-wont-take-full-size-of-the-table-view-in-javafx" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>refresh JFrame after adding new Components</td><td>3</td><td>24</td><td>99597</td><td>2011-11-19</td><td><a href="https://stackoverflow.com/questions/3718435/refresh-jframe-after-adding-new-components" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to detect if a graphical interface is supported?</td><td>5</td><td>24</td><td>8638</td><td>2013-01-07</td><td><a href="https://stackoverflow.com/questions/4245198/how-to-detect-if-a-graphical-interface-is-supported" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>the getSource() and getActionCommand()</td><td>4</td><td>24</td><td>173583</td><td>2011-11-22</td><td><a href="https://stackoverflow.com/questions/8214958/the-getsource-and-getactioncommand" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are there any good tools for finding usage statistics of GUI, broken down panes and components?</td><td>4</td><td>24</td><td>1235</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/2057767/are-there-any-good-tools-for-finding-usage-statistics-of-gui-broken-down-panes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>logcat error : E/ExtMediaPlayer-JNI: env-&gt;IsInstanceOf fails</td><td>1</td><td>24</td><td>6076</td><td>2017-07-08</td><td><a href="https://stackoverflow.com/questions/44913292/logcat-error-e-extmediaplayer-jni-env-isinstanceof-fails" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why will BoxLayout not allow me to change the width of a JButton but let me change the height?</td><td>6</td><td>23</td><td>34468</td><td>2013-11-25</td><td><a href="https://stackoverflow.com/questions/3692987/why-will-boxlayout-not-allow-me-to-change-the-width-of-a-jbutton-but-let-me-chan" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java/Swing GUI best practices (from a code standpoint)</td><td>2</td><td>23</td><td>33244</td><td>2014-04-26</td><td><a href="https://stackoverflow.com/questions/5473828/java-swing-gui-best-practices-from-a-code-standpoint" target="_blank">click</a></td>
+        </tr>  
+        </table>
+    </div>
+</div>
+</body>
+</html>

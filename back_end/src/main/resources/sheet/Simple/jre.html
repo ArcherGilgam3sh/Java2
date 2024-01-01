@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about jre</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why is processing a sorted array faster than processing an unsorted array?</td><td>27</td><td>26409</td><td>1714896</td><td>2017-02-22</td><td><a href="https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Is Java &quot;pass-by-reference&quot; or &quot;pass-by-value&quot;?</td><td>93</td><td>7419</td><td>2428668</td><td>2015-03-06</td><td><a href="https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why is subtracting these two times (in 1927) giving a strange result?</td><td>11</td><td>7351</td><td>760705</td><td>2016-06-23</td><td><a href="https://stackoverflow.com/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I read / convert an InputStream into a String in Java?</td><td>63</td><td>4512</td><td>2439321</td><td>2013-12-14</td><td><a href="https://stackoverflow.com/questions/309424/how-do-i-read-convert-an-inputstream-into-a-string-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Avoiding NullPointerException in Java</td><td>66</td><td>4292</td><td>1380955</td><td>2014-11-22</td><td><a href="https://stackoverflow.com/questions/271526/avoiding-nullpointerexception-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What are the differences between a HashMap and a Hashtable in Java?</td><td>35</td><td>4145</td><td>1669587</td><td>2014-08-18</td><td><a href="https://stackoverflow.com/questions/40471/what-are-the-differences-between-a-hashmap-and-a-hashtable-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Create ArrayList from array</td><td>40</td><td>3954</td><td>1695072</td><td>2014-06-01</td><td><a href="https://stackoverflow.com/questions/157944/create-arraylist-from-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I generate random integers within a specific range in Java?</td><td>70</td><td>3911</td><td>4765071</td><td>2014-12-19</td><td><a href="https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Proper use cases for Android UserManager.isUserAGoat()?</td><td>12</td><td>3897</td><td>345292</td><td>2015-10-11</td><td><a href="https://stackoverflow.com/questions/13375357/proper-use-cases-for-android-usermanager-isuseragoat" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why don&#39;t Java&#39;s +=, -=, *=, /= compound assignment operators require casting?</td><td>11</td><td>3786</td><td>311027</td><td>2015-05-08</td><td><a href="https://stackoverflow.com/questions/8710619/why-dont-javas-compound-assignment-operators-require-casting" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I efficiently iterate over each entry in a Java Map?</td><td>46</td><td>3766</td><td>2991323</td><td>2014-06-07</td><td><a href="https://stackoverflow.com/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why is char[] preferred over String for passwords?</td><td>18</td><td>3709</td><td>471643</td><td>2014-07-16</td><td><a href="https://stackoverflow.com/questions/8881291/why-is-char-preferred-over-string-for-passwords" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Iterate through a HashMap</td><td>7</td><td>3663</td><td>4228283</td><td>2014-08-30</td><td><a href="https://stackoverflow.com/questions/1066589/iterate-through-a-hashmap" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I create a memory leak in Java?</td><td>60</td><td>3581</td><td>712448</td><td>2016-07-17</td><td><a href="https://stackoverflow.com/questions/6470651/how-can-i-create-a-memory-leak-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is the difference between public, protected, package-private and private in Java?</td><td>29</td><td>3496</td><td>2398596</td><td>2013-09-30</td><td><a href="https://stackoverflow.com/questions/215497/what-is-the-difference-between-public-protected-package-private-and-private-in" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>When to use LinkedList over ArrayList in Java?</td><td>33</td><td>3454</td><td>1277319</td><td>2015-06-17</td><td><a href="https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I convert a String to an int in Java?</td><td>47</td><td>3359</td><td>6541991</td><td>2016-10-01</td><td><a href="https://stackoverflow.com/questions/5585779/how-do-i-convert-a-string-to-an-int-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is a serialVersionUID and why should I use it?</td><td>26</td><td>3290</td><td>1063431</td><td>2012-01-14</td><td><a href="https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Initialization of an ArrayList in one line</td><td>33</td><td>3124</td><td>3411183</td><td>2014-09-03</td><td><a href="https://stackoverflow.com/questions/1005073/initialization-of-an-arraylist-in-one-line" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I test a class that has private methods, fields or inner classes?</td><td>58</td><td>3065</td><td>1109967</td><td>2015-03-26</td><td><a href="https://stackoverflow.com/questions/34571/how-do-i-test-a-class-that-has-private-methods-fields-or-inner-classes" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why is printing &quot;B&quot; dramatically slower than printing &quot;#&quot;?</td><td>3</td><td>2918</td><td>249472</td><td>2016-03-15</td><td><a href="https://stackoverflow.com/questions/21947452/why-is-printing-b-dramatically-slower-than-printing" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I create an executable JAR with dependencies using Maven?</td><td>32</td><td>2741</td><td>1678824</td><td>2013-10-11</td><td><a href="https://stackoverflow.com/questions/574594/how-can-i-create-an-executable-jar-with-dependencies-using-maven" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I fix &#39;android.os.NetworkOnMainThreadException&#39;?</td><td>66</td><td>2627</td><td>1393541</td><td>2016-07-02</td><td><a href="https://stackoverflow.com/questions/6343166/how-can-i-fix-android-os-networkonmainthreadexception" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Does a finally block always get executed in Java?</td><td>51</td><td>2598</td><td>569518</td><td>2014-07-22</td><td><a href="https://stackoverflow.com/questions/65035/does-a-finally-block-always-get-executed-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I determine whether an array contains a particular value in Java?</td><td>29</td><td>2557</td><td>2408133</td><td>2014-04-10</td><td><a href="https://stackoverflow.com/questions/1128723/how-do-i-determine-whether-an-array-contains-a-particular-value-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I call one constructor from another in Java?</td><td>23</td><td>2535</td><td>1039347</td><td>2008-11-12</td><td><a href="https://stackoverflow.com/questions/285177/how-do-i-call-one-constructor-from-another-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is reflection and why is it useful?</td><td>23</td><td>2421</td><td>977619</td><td>2015-02-23</td><td><a href="https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What&#39;s the difference between @Component, @Repository &amp; @Service annotations in Spring?</td><td>30</td><td>2404</td><td>1050067</td><td>2015-11-06</td><td><a href="https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I declare and initialize an array in Java?</td><td>29</td><td>2375</td><td>5281384</td><td>2014-09-25</td><td><a href="https://stackoverflow.com/questions/1200621/how-do-i-declare-and-initialize-an-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>&quot;implements Runnable&quot; vs &quot;extends Thread&quot; in Java</td><td>43</td><td>2293</td><td>738895</td><td>2015-05-16</td><td><a href="https://stackoverflow.com/questions/541487/implements-runnable-vs-extends-thread-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to get an enum value from a string value in Java</td><td>31</td><td>2256</td><td>1432413</td><td>2015-05-22</td><td><a href="https://stackoverflow.com/questions/604424/how-to-get-an-enum-value-from-a-string-value-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What&#39;s the simplest way to print a Java array?</td><td>35</td><td>2254</td><td>2875805</td><td>2014-04-06</td><td><a href="https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do you assert that a certain exception is thrown in JUnit 4 tests?</td><td>34</td><td>2191</td><td>1622594</td><td>2011-04-25</td><td><a href="https://stackoverflow.com/questions/156503/how-do-you-assert-that-a-certain-exception-is-thrown-in-junit-4-tests" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is a JavaBean exactly?</td><td>24</td><td>2165</td><td>699248</td><td>2016-03-01</td><td><a href="https://stackoverflow.com/questions/3295496/what-is-a-javabean-exactly" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to use java.net.URLConnection to fire and handle HTTP requests</td><td>12</td><td>2070</td><td>1144239</td><td>2015-12-24</td><td><a href="https://stackoverflow.com/questions/2793150/how-to-use-java-net-urlconnection-to-fire-and-handle-http-requests" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Comparing Java enum members: == or equals()?</td><td>15</td><td>2004</td><td>878752</td><td>2014-11-13</td><td><a href="https://stackoverflow.com/questions/1750435/comparing-java-enum-members-or-equals" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I break out of nested loops in Java?</td><td>36</td><td>1989</td><td>1308299</td><td>2015-08-28</td><td><a href="https://stackoverflow.com/questions/886955/how-do-i-break-out-of-nested-loops-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java inner class and static nested class</td><td>28</td><td>1979</td><td>861155</td><td>2013-11-12</td><td><a href="https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Does Java support default parameter values?</td><td>26</td><td>1963</td><td>1673537</td><td>2014-05-27</td><td><a href="https://stackoverflow.com/questions/997482/does-java-support-default-parameter-values" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to generate a random alpha-numeric string</td><td>44</td><td>1899</td><td>1573385</td><td>2014-10-08</td><td><a href="https://stackoverflow.com/questions/41107/how-to-generate-a-random-alpha-numeric-string" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why does this code using random strings print &quot;hello world&quot;?</td><td>15</td><td>1865</td><td>214087</td><td>2014-05-31</td><td><a href="https://stackoverflow.com/questions/15182496/why-does-this-code-using-random-strings-print-hello-world" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to split a string in Java</td><td>37</td><td>1842</td><td>4483013</td><td>2015-05-23</td><td><a href="https://stackoverflow.com/questions/3481828/how-to-split-a-string-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Sort a Map&lt;Key, Value&gt; by values</td><td>62</td><td>1814</td><td>1617591</td><td>2013-06-08</td><td><a href="https://stackoverflow.com/questions/109383/sort-a-mapkey-value-by-values" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why use getters and setters/accessors?</td><td>41</td><td>1745</td><td>473444</td><td>2013-11-10</td><td><a href="https://stackoverflow.com/questions/1568091/why-use-getters-and-setters-accessors" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I avoid Java code in JSP files, using JSP 2?</td><td>31</td><td>1741</td><td>307451</td><td>2015-07-31</td><td><a href="https://stackoverflow.com/questions/3177733/how-can-i-avoid-java-code-in-jsp-files-using-jsp-2" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What does &quot;Could not find or load main class&quot; mean?</td><td>59</td><td>1723</td><td>3764831</td><td>2015-10-23</td><td><a href="https://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Difference between StringBuilder and StringBuffer</td><td>33</td><td>1694</td><td>860986</td><td>2012-08-25</td><td><a href="https://stackoverflow.com/questions/355089/difference-between-stringbuilder-and-stringbuffer" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I create a Java string from the contents of a file?</td><td>33</td><td>1692</td><td>1581384</td><td>2013-10-21</td><td><a href="https://stackoverflow.com/questions/326390/how-do-i-create-a-java-string-from-the-contents-of-a-file" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to fix java.lang.UnsupportedClassVersionError: Unsupported major.minor version</td><td>50</td><td>1674</td><td>2080614</td><td>2015-10-11</td><td><a href="https://stackoverflow.com/questions/10382929/how-to-fix-java-lang-unsupportedclassversionerror-unsupported-major-minor-versi" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How does the Java &#39;for each&#39; loop work?</td><td>29</td><td>1649</td><td>2812537</td><td>2013-06-06</td><td><a href="https://stackoverflow.com/questions/85190/how-does-the-java-for-each-loop-work" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I convert a stack trace to a string?</td><td>31</td><td>1643</td><td>692654</td><td>2012-11-14</td><td><a href="https://stackoverflow.com/questions/1149703/how-can-i-convert-a-stack-trace-to-a-string" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why does Java have transient fields?</td><td>15</td><td>1604</td><td>755926</td><td>2012-11-15</td><td><a href="https://stackoverflow.com/questions/910374/why-does-java-have-transient-fields" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Fastest way to determine if an integer&#39;s square root is an integer</td><td>36</td><td>1569</td><td>311517</td><td>2014-05-09</td><td><a href="https://stackoverflow.com/questions/295579/fastest-way-to-determine-if-an-integers-square-root-is-an-integer" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What exactly is Apache Camel?</td><td>22</td><td>1529</td><td>621728</td><td>2014-01-20</td><td><a href="https://stackoverflow.com/questions/8845186/what-exactly-is-apache-camel" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I concatenate two arrays in Java?</td><td>66</td><td>1523</td><td>1267217</td><td>2015-06-25</td><td><a href="https://stackoverflow.com/questions/80476/how-can-i-concatenate-two-arrays-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Is null check needed before calling instanceof?</td><td>8</td><td>1508</td><td>300004</td><td>2014-03-03</td><td><a href="https://stackoverflow.com/questions/2950319/is-null-check-needed-before-calling-instanceof" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do I create a file and write to it?</td><td>35</td><td>1482</td><td>3044313</td><td>2015-09-24</td><td><a href="https://stackoverflow.com/questions/2885173/how-do-i-create-a-file-and-write-to-it" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to add local jar files to a Maven project?</td><td>33</td><td>1466</td><td>1346179</td><td>2015-08-02</td><td><a href="https://stackoverflow.com/questions/4955635/how-to-add-local-jar-files-to-a-maven-project" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to directly initialize a HashMap (in a literal way)?</td><td>23</td><td>1439</td><td>1597122</td><td>2014-11-27</td><td><a href="https://stackoverflow.com/questions/6802483/how-to-directly-initialize-a-hashmap-in-a-literal-way" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to round a number to n decimal places in Java</td><td>37</td><td>1409</td><td>1941092</td><td>2014-04-22</td><td><a href="https://stackoverflow.com/questions/153724/how-to-round-a-number-to-n-decimal-places-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why is executing Java code in comments with certain Unicode characters allowed?</td><td>8</td><td>1399</td><td>81693</td><td>2015-06-25</td><td><a href="https://stackoverflow.com/questions/30727515/why-is-executing-java-code-in-comments-with-certain-unicode-characters-allowed" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What are the -Xms and -Xmx parameters when starting JVM?</td><td>5</td><td>1309</td><td>2379868</td><td>2017-04-22</td><td><a href="https://stackoverflow.com/questions/14763079/what-are-the-xms-and-xmx-parameters-when-starting-jvm" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Difference between wait() and sleep()</td><td>33</td><td>1307</td><td>955544</td><td>2013-07-10</td><td><a href="https://stackoverflow.com/questions/1036754/difference-between-wait-and-sleep" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>&#39;Must Override a Superclass Method&#39; Errors after importing a project into Eclipse</td><td>13</td><td>1292</td><td>263331</td><td>2015-01-27</td><td><a href="https://stackoverflow.com/questions/1678122/must-override-a-superclass-method-errors-after-importing-a-project-into-eclips" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Iterating through a Collection, avoiding ConcurrentModificationException when removing objects in a loop</td><td>30</td><td>1275</td><td>507359</td><td>2014-04-21</td><td><a href="https://stackoverflow.com/questions/223918/iterating-through-a-collection-avoiding-concurrentmodificationexception-when-re" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to get the current working directory in Java?</td><td>25</td><td>1266</td><td>1678455</td><td>2016-04-19</td><td><a href="https://stackoverflow.com/questions/4871051/how-to-get-the-current-working-directory-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to parse JSON in Java</td><td>36</td><td>1251</td><td>2149956</td><td>2015-08-12</td><td><a href="https://stackoverflow.com/questions/2591098/how-to-parse-json-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Sort ArrayList of custom Objects by property</td><td>29</td><td>1244</td><td>1253062</td><td>2013-03-17</td><td><a href="https://stackoverflow.com/questions/2784514/sort-arraylist-of-custom-objects-by-property" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Can&#39;t execute jar- file: &quot;no main manifest attribute&quot;</td><td>43</td><td>1243</td><td>1980624</td><td>2015-04-01</td><td><a href="https://stackoverflow.com/questions/9689793/cant-execute-jar-file-no-main-manifest-attribute" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to install Java 8 on Mac</td><td>33</td><td>1232</td><td>1182572</td><td>2017-10-25</td><td><a href="https://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Android SDK installation doesn&#39;t find JDK</td><td>45</td><td>1228</td><td>445895</td><td>2015-08-14</td><td><a href="https://stackoverflow.com/questions/4382178/android-sdk-installation-doesnt-find-jdk" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How do servlets work? Instantiation, sessions, shared variables and multithreading</td><td>8</td><td>1223</td><td>315407</td><td>2015-05-22</td><td><a href="https://stackoverflow.com/questions/3106452/how-do-servlets-work-instantiation-sessions-shared-variables-and-multithreadi" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Converting &#39;ArrayList&lt;String&gt; to &#39;String[]&#39; in Java</td><td>17</td><td>1210</td><td>843489</td><td>2014-09-11</td><td><a href="https://stackoverflow.com/questions/4042434/converting-arrayliststring-to-string-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Which @NotNull Java annotation should I use?</td><td>25</td><td>1207</td><td>357493</td><td>2016-04-20</td><td><a href="https://stackoverflow.com/questions/4963300/which-notnull-java-annotation-should-i-use" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Convert ArrayList&lt;String&gt; to String[] array</td><td>6</td><td>1206</td><td>1600482</td><td>2014-11-24</td><td><a href="https://stackoverflow.com/questions/5374311/convert-arrayliststring-to-string-array" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I initialise a static Map?</td><td>43</td><td>1203</td><td>959881</td><td>2014-08-27</td><td><a href="https://stackoverflow.com/questions/507602/how-can-i-initialise-a-static-map" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What are the possible values of the Hibernate hbm2ddl.auto configuration and what do they do</td><td>14</td><td>1198</td><td>1195206</td><td>2014-02-28</td><td><a href="https://stackoverflow.com/questions/438146/what-are-the-possible-values-of-the-hibernate-hbm2ddl-auto-configuration-and-wha" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to create a generic array in Java?</td><td>31</td><td>1197</td><td>931526</td><td>2013-02-14</td><td><a href="https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Converting array to list in Java</td><td>22</td><td>1188</td><td>1669792</td><td>2016-04-24</td><td><a href="https://stackoverflow.com/questions/2607289/converting-array-to-list-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to set or change the default Java (JDK) version on macOS?</td><td>33</td><td>1161</td><td>1117593</td><td>2017-09-12</td><td><a href="https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-macos" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I pad an integer with zeros on the left?</td><td>18</td><td>1158</td><td>740706</td><td>2013-10-09</td><td><a href="https://stackoverflow.com/questions/473282/how-can-i-pad-an-integer-with-zeros-on-the-left" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to resolve java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException</td><td>41</td><td>1129</td><td>1056250</td><td>2019-03-28</td><td><a href="https://stackoverflow.com/questions/43574426/how-to-resolve-java-lang-noclassdeffounderror-javax-xml-bind-jaxbexception" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Including all the jars in a directory within the Java classpath</td><td>25</td><td>1126</td><td>1188243</td><td>2013-02-13</td><td><a href="https://stackoverflow.com/questions/219585/including-all-the-jars-in-a-directory-within-the-java-classpath" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How to mock void methods with Mockito</td><td>11</td><td>1112</td><td>1025995</td><td>2014-12-19</td><td><a href="https://stackoverflow.com/questions/2276271/how-to-mock-void-methods-with-mockito" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Download a file with Android, and showing the progress in a ProgressDialog</td><td>16</td><td>1109</td><td>603586</td><td>2012-09-03</td><td><a href="https://stackoverflow.com/questions/3028306/download-a-file-with-android-and-showing-the-progress-in-a-progressdialog" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is the difference between canonical name, simple name and class name in Java Class?</td><td>8</td><td>1109</td><td>291838</td><td>2015-10-30</td><td><a href="https://stackoverflow.com/questions/15202997/what-is-the-difference-between-canonical-name-simple-name-and-class-name-in-jav" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Static Classes In Java</td><td>14</td><td>1093</td><td>1009448</td><td>2014-04-07</td><td><a href="https://stackoverflow.com/questions/7486012/static-classes-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What does &#39;synchronized&#39; mean?</td><td>17</td><td>1092</td><td>528328</td><td>2012-10-16</td><td><a href="https://stackoverflow.com/questions/1085709/what-does-synchronized-mean" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>:: (double colon) operator in Java 8</td><td>17</td><td>1084</td><td>430987</td><td>2018-02-09</td><td><a href="https://stackoverflow.com/questions/20001427/double-colon-operator-in-java-8" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I generate an MD5 hash in Java?</td><td>34</td><td>1073</td><td>1102193</td><td>2015-05-16</td><td><a href="https://stackoverflow.com/questions/415953/how-can-i-generate-an-md5-hash-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>How can I get the current stack trace in Java?</td><td>22</td><td>1065</td><td>604697</td><td>2014-09-08</td><td><a href="https://stackoverflow.com/questions/1069066/how-can-i-get-the-current-stack-trace-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>StringBuilder vs String concatenation in toString() in Java</td><td>20</td><td>1056</td><td>443051</td><td>2013-03-25</td><td><a href="https://stackoverflow.com/questions/1532461/stringbuilder-vs-string-concatenation-in-tostring-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Difference between HashMap, LinkedHashMap and TreeMap</td><td>17</td><td>1041</td><td>645573</td><td>2012-06-10</td><td><a href="https://stackoverflow.com/questions/2889777/difference-between-hashmap-linkedhashmap-and-treemap" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why can&#39;t I use switch statement on a String?</td><td>14</td><td>1040</td><td>766488</td><td>2013-09-21</td><td><a href="https://stackoverflow.com/questions/338206/why-cant-i-use-switch-statement-on-a-string" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>When to use static methods</td><td>23</td><td>1033</td><td>1235623</td><td>2015-07-29</td><td><a href="https://stackoverflow.com/questions/2671496/when-to-use-static-methods" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>What is the difference between JDK and JRE?</td><td>20</td><td>1032</td><td>778064</td><td>2014-11-01</td><td><a href="https://stackoverflow.com/questions/1906445/what-is-the-difference-between-jdk-and-jre" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Why doesn&#39;t RecyclerView have onItemClickListener()?</td><td>31</td><td>1031</td><td>427532</td><td>2017-04-01</td><td><a href="https://stackoverflow.com/questions/24885223/why-doesnt-recyclerview-have-onitemclicklistener" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Can&#39;t start Eclipse - Java was started but returned exit code=13</td><td>44</td><td>1025</td><td>1672467</td><td>2015-10-08</td><td><a href="https://stackoverflow.com/questions/11461607/cant-start-eclipse-java-was-started-but-returned-exit-code-13" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Reading a plain text file in Java</td><td>28</td><td>1023</td><td>2537768</td><td>2013-07-17</td><td><a href="https://stackoverflow.com/questions/4716503/reading-a-plain-text-file-in-java" target="_blank">click</a></td>
+</tr>
+<tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+   <td>Java 8 List&lt;V&gt; into Map&lt;K, V&gt;</td><td>22</td><td>1018</td><td>707624</td><td>2016-03-02</td><td><a href="https://stackoverflow.com/questions/20363719/java-8-listv-into-mapk-v" target="_blank">click</a></td>
+</tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

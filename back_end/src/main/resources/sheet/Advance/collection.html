@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about collection</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the differences between a HashMap and a Hashtable in Java?</td><td>35</td><td>4145</td><td>1669587</td><td>2014-08-18</td><td><a href="https://stackoverflow.com/questions/40471/what-are-the-differences-between-a-hashmap-and-a-hashtable-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I efficiently iterate over each entry in a Java Map?</td><td>46</td><td>3766</td><td>2991323</td><td>2014-06-07</td><td><a href="https://stackoverflow.com/questions/46898/how-do-i-efficiently-iterate-over-each-entry-in-a-java-map" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use LinkedList over ArrayList in Java?</td><td>33</td><td>3454</td><td>1277319</td><td>2015-06-17</td><td><a href="https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Initialization of an ArrayList in one line</td><td>33</td><td>3124</td><td>3411183</td><td>2014-09-03</td><td><a href="https://stackoverflow.com/questions/1005073/initialization-of-an-arraylist-in-one-line" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Sort a Map&lt;Key, Value&gt; by values</td><td>62</td><td>1814</td><td>1617591</td><td>2013-06-08</td><td><a href="https://stackoverflow.com/questions/109383/sort-a-mapkey-value-by-values" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to directly initialize a HashMap (in a literal way)?</td><td>23</td><td>1439</td><td>1597122</td><td>2014-11-27</td><td><a href="https://stackoverflow.com/questions/6802483/how-to-directly-initialize-a-hashmap-in-a-literal-way" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Iterating through a Collection, avoiding ConcurrentModificationException when removing objects in a loop</td><td>30</td><td>1275</td><td>507359</td><td>2014-04-21</td><td><a href="https://stackoverflow.com/questions/223918/iterating-through-a-collection-avoiding-concurrentmodificationexception-when-re" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting &#39;ArrayList&lt;String&gt; to &#39;String[]&#39; in Java</td><td>17</td><td>1210</td><td>843489</td><td>2014-09-11</td><td><a href="https://stackoverflow.com/questions/4042434/converting-arrayliststring-to-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I initialise a static Map?</td><td>43</td><td>1203</td><td>959881</td><td>2014-08-27</td><td><a href="https://stackoverflow.com/questions/507602/how-can-i-initialise-a-static-map" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between &lt;? super T&gt; and &lt;? extends T&gt; in Java</td><td>14</td><td>968</td><td>305235</td><td>2014-04-24</td><td><a href="https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Efficiency of Java &quot;Double Brace Initialization&quot;?</td><td>15</td><td>883</td><td>142268</td><td>2013-09-04</td><td><a href="https://stackoverflow.com/questions/924285/efficiency-of-java-double-brace-initialization" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to make a new List in Java</td><td>25</td><td>869</td><td>2356152</td><td>2014-07-25</td><td><a href="https://stackoverflow.com/questions/858572/how-to-make-a-new-list-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to initialize HashSet values by construction?</td><td>24</td><td>861</td><td>969108</td><td>2014-06-08</td><td><a href="https://stackoverflow.com/questions/2041778/how-to-initialize-hashset-values-by-construction" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert an Array to a Set in Java</td><td>19</td><td>793</td><td>708902</td><td>2013-05-15</td><td><a href="https://stackoverflow.com/questions/3064423/how-to-convert-an-array-to-a-set-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert a Map to List in Java?</td><td>14</td><td>768</td><td>888014</td><td>2010-08-27</td><td><a href="https://stackoverflow.com/questions/1026723/how-to-convert-a-map-to-list-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I turn a List of Lists into a List in Java 8?</td><td>11</td><td>737</td><td>499817</td><td>2016-05-18</td><td><a href="https://stackoverflow.com/questions/25147094/how-can-i-turn-a-list-of-lists-into-a-list-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to filter a Java Collection (based on predicate)?</td><td>29</td><td>736</td><td>756909</td><td>2015-03-11</td><td><a href="https://stackoverflow.com/questions/122105/how-to-filter-a-java-collection-based-on-predicate" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Easiest way to convert a List to a Set in Java</td><td>17</td><td>715</td><td>627130</td><td>2013-01-20</td><td><a href="https://stackoverflow.com/questions/1429860/easiest-way-to-convert-a-list-to-a-set-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I convert List&lt;Integer&gt; to int[] in Java?</td><td>16</td><td>709</td><td>672424</td><td>2015-10-23</td><td><a href="https://stackoverflow.com/questions/960431/how-can-i-convert-listinteger-to-int-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Ways to iterate over a list in Java</td><td>13</td><td>666</td><td>1110150</td><td>2015-11-24</td><td><a href="https://stackoverflow.com/questions/18410035/ways-to-iterate-over-a-list-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why there is no ConcurrentHashSet against ConcurrentHashMap</td><td>9</td><td>651</td><td>286388</td><td>2012-10-02</td><td><a href="https://stackoverflow.com/questions/6992608/why-there-is-no-concurrenthashset-against-concurrenthashmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert comma-separated String to List?</td><td>27</td><td>621</td><td>1120578</td><td>2016-02-17</td><td><a href="https://stackoverflow.com/questions/7488643/how-to-convert-comma-separated-string-to-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8 Distinct by property</td><td>34</td><td>591</td><td>448562</td><td>2017-08-13</td><td><a href="https://stackoverflow.com/questions/23699371/java-8-distinct-by-property" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is there no SortedList in Java?</td><td>12</td><td>590</td><td>582844</td><td>2016-02-26</td><td><a href="https://stackoverflow.com/questions/8725387/why-is-there-no-sortedlist-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I remove repeated elements from ArrayList?</td><td>40</td><td>553</td><td>909441</td><td>2013-10-19</td><td><a href="https://stackoverflow.com/questions/203984/how-do-i-remove-repeated-elements-from-arraylist" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert int[] into List&lt;Integer&gt; in Java?</td><td>20</td><td>504</td><td>611755</td><td>2011-10-04</td><td><a href="https://stackoverflow.com/questions/1073919/how-to-convert-int-into-listinteger-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Retrieving a List from a java.util.stream.Stream in Java 8</td><td>15</td><td>482</td><td>396994</td><td>2017-01-24</td><td><a href="https://stackoverflow.com/questions/14830313/retrieving-a-list-from-a-java-util-stream-stream-in-java-8" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Most efficient way to increment a Map value in Java</td><td>28</td><td>473</td><td>344185</td><td>2008-09-18</td><td><a href="https://stackoverflow.com/questions/81346/most-efficient-way-to-increment-a-map-value-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Easy way to convert Iterable to Collection</td><td>22</td><td>468</td><td>376749</td><td>2016-05-28</td><td><a href="https://stackoverflow.com/questions/6416706/easy-way-to-convert-iterable-to-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are the reasons why Map.get(Object key) is not (fully) generic</td><td>11</td><td>437</td><td>60419</td><td>2011-09-07</td><td><a href="https://stackoverflow.com/questions/857420/what-are-the-reasons-why-map-getobject-key-is-not-fully-generic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to sort a List/ArrayList?</td><td>21</td><td>435</td><td>1204031</td><td>2017-09-14</td><td><a href="https://stackoverflow.com/questions/16252269/how-to-sort-a-list-arraylist" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Getting an element from a Set</td><td>22</td><td>404</td><td>826914</td><td>2014-05-30</td><td><a href="https://stackoverflow.com/questions/7283338/getting-an-element-from-a-set" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to quickly and conveniently create a one element arraylist</td><td>8</td><td>388</td><td>378618</td><td>2015-04-21</td><td><a href="https://stackoverflow.com/questions/20358883/how-to-quickly-and-conveniently-create-a-one-element-arraylist" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the first element of the List or Set?</td><td>9</td><td>378</td><td>852751</td><td>2014-02-12</td><td><a href="https://stackoverflow.com/questions/8882295/how-to-get-the-first-element-of-the-list-or-set" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Ordered Map</td><td>10</td><td>368</td><td>381635</td><td>2012-08-11</td><td><a href="https://stackoverflow.com/questions/663374/java-ordered-map" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the Simplest Way to Reverse an ArrayList?</td><td>12</td><td>364</td><td>369728</td><td>2015-12-17</td><td><a href="https://stackoverflow.com/questions/10766492/what-is-the-simplest-way-to-reverse-an-arraylist" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java - How to create new Entry (key, value)</td><td>11</td><td>357</td><td>419397</td><td>2013-02-08</td><td><a href="https://stackoverflow.com/questions/3110547/java-how-to-create-new-entry-key-value" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Get first item from a collection</td><td>14</td><td>336</td><td>446280</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/1671378/java-get-first-item-from-a-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to convert a Collection to List?</td><td>11</td><td>333</td><td>583291</td><td>2013-06-23</td><td><a href="https://stackoverflow.com/questions/580160/how-to-convert-a-collection-to-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is difference between Collection.stream().forEach() and Collection.forEach()?</td><td>4</td><td>318</td><td>87680</td><td>2015-04-17</td><td><a href="https://stackoverflow.com/questions/23218874/what-is-difference-between-collection-stream-foreach-and-collection-foreach" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Simple way to find if two different lists contain exactly the same elements?</td><td>20</td><td>303</td><td>493506</td><td>2014-05-14</td><td><a href="https://stackoverflow.com/questions/1075656/simple-way-to-find-if-two-different-lists-contain-exactly-the-same-elements" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to clone ArrayList and also clone its contents?</td><td>21</td><td>301</td><td>469923</td><td>2012-12-13</td><td><a href="https://stackoverflow.com/questions/715650/how-to-clone-arraylist-and-also-clone-its-contents" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you cast a List of supertypes to a List of subtypes?</td><td>18</td><td>294</td><td>314873</td><td>2012-01-28</td><td><a href="https://stackoverflow.com/questions/933447/how-do-you-cast-a-list-of-supertypes-to-a-list-of-subtypes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Remove elements from collection while iterating</td><td>9</td><td>294</td><td>353175</td><td>2012-05-03</td><td><a href="https://stackoverflow.com/questions/10431981/remove-elements-from-collection-while-iterating" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best practice to validate null and empty collection in Java</td><td>9</td><td>284</td><td>443964</td><td>2015-04-25</td><td><a href="https://stackoverflow.com/questions/12721076/best-practice-to-validate-null-and-empty-collection-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Collections.emptyList() vs. new instance</td><td>7</td><td>269</td><td>213877</td><td>2013-05-04</td><td><a href="https://stackoverflow.com/questions/5552258/collections-emptylist-vs-new-instance" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to randomize two ArrayLists in the same fashion?</td><td>9</td><td>263</td><td>202305</td><td>2014-03-20</td><td><a href="https://stackoverflow.com/questions/4228975/how-to-randomize-two-arraylists-in-the-same-fashion" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Iterating through a list in reverse order in java</td><td>16</td><td>263</td><td>253700</td><td>2013-02-18</td><td><a href="https://stackoverflow.com/questions/2102499/iterating-through-a-list-in-reverse-order-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t java.util.Set have get(int index)?</td><td>19</td><td>243</td><td>205733</td><td>2012-04-01</td><td><a href="https://stackoverflow.com/questions/769731/why-doesnt-java-util-set-have-getint-index" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get a reversed list view on a list in Java?</td><td>11</td><td>237</td><td>293888</td><td>2014-10-05</td><td><a href="https://stackoverflow.com/questions/3962766/how-to-get-a-reversed-list-view-on-a-list-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert JSON to Map</td><td>18</td><td>226</td><td>610014</td><td>2013-06-22</td><td><a href="https://stackoverflow.com/questions/443499/convert-json-to-map" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to sort an ArrayList in Java</td><td>3</td><td>224</td><td>620273</td><td>2015-05-04</td><td><a href="https://stackoverflow.com/questions/18441846/how-to-sort-an-arraylist-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to count the number of occurrences of an element in a List</td><td>25</td><td>223</td><td>432625</td><td>2012-03-18</td><td><a href="https://stackoverflow.com/questions/505928/how-to-count-the-number-of-occurrences-of-an-element-in-a-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Google Guava vs. Apache Commons</td><td>5</td><td>217</td><td>68526</td><td>2014-03-15</td><td><a href="https://stackoverflow.com/questions/1444437/google-guava-vs-apache-commons" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Size-limited queue that holds last N elements in Java</td><td>9</td><td>216</td><td>142599</td><td>2012-06-10</td><td><a href="https://stackoverflow.com/questions/5498865/size-limited-queue-that-holds-last-n-elements-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I sort a List alphabetically?</td><td>15</td><td>215</td><td>507837</td><td>2012-03-15</td><td><a href="https://stackoverflow.com/questions/708698/how-can-i-sort-a-list-alphabetically" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which is more efficient, a for-each loop, or an iterator?</td><td>7</td><td>215</td><td>198859</td><td>2013-09-22</td><td><a href="https://stackoverflow.com/questions/2113216/which-is-more-efficient-a-for-each-loop-or-an-iterator" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Properly removing an Integer from a List&lt;Integer&gt;</td><td>8</td><td>213</td><td>88163</td><td>2014-03-10</td><td><a href="https://stackoverflow.com/questions/4534146/properly-removing-an-integer-from-a-listinteger" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Most concise way to convert a Set&lt;T&gt; to a List&lt;T&gt;</td><td>6</td><td>209</td><td>220745</td><td>2015-02-03</td><td><a href="https://stackoverflow.com/questions/2319538/most-concise-way-to-convert-a-sett-to-a-listt" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a common Java utility to break a list into batches?</td><td>20</td><td>206</td><td>167650</td><td>2015-10-03</td><td><a href="https://stackoverflow.com/questions/12026885/is-there-a-common-java-utility-to-break-a-list-into-batches" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert Enumeration to a Set/List</td><td>7</td><td>206</td><td>125641</td><td>2016-08-28</td><td><a href="https://stackoverflow.com/questions/5610822/convert-enumeration-to-a-set-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What Java 8 Stream.collect equivalents are available in the standard Kotlin library?</td><td>4</td><td>206</td><td>50427</td><td>2017-08-06</td><td><a href="https://stackoverflow.com/questions/34642254/what-java-8-stream-collect-equivalents-are-available-in-the-standard-kotlin-libr" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I convert int[] to Integer[] in Java?</td><td>12</td><td>202</td><td>235796</td><td>2015-10-13</td><td><a href="https://stackoverflow.com/questions/880581/how-can-i-convert-int-to-integer-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Immutable vs Unmodifiable collection</td><td>11</td><td>199</td><td>84539</td><td>2014-12-31</td><td><a href="https://stackoverflow.com/questions/8892350/immutable-vs-unmodifiable-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I initialize an ArrayList with all zeroes in Java?</td><td>5</td><td>194</td><td>185133</td><td>2015-10-26</td><td><a href="https://stackoverflow.com/questions/5600668/how-can-i-initialize-an-arraylist-with-all-zeroes-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Assert equals between 2 Lists in Junit</td><td>13</td><td>193</td><td>269929</td><td>2015-03-24</td><td><a href="https://stackoverflow.com/questions/3236880/assert-equals-between-2-lists-in-junit" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between HashSet and HashMap?</td><td>20</td><td>191</td><td>273242</td><td>2014-08-04</td><td><a href="https://stackoverflow.com/questions/2773824/difference-between-hashset-and-hashmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between Collection and List in Java?</td><td>7</td><td>187</td><td>128907</td><td>2014-05-26</td><td><a href="https://stackoverflow.com/questions/3317381/what-is-the-difference-between-collection-and-list-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>how to get the one entry from hashmap without iterating</td><td>16</td><td>185</td><td>298743</td><td>2009-10-02</td><td><a href="https://stackoverflow.com/questions/1509391/how-to-get-the-one-entry-from-hashmap-without-iterating" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Big-O summary for Java Collections Framework implementations?</td><td>4</td><td>181</td><td>221811</td><td>2009-02-19</td><td><a href="https://stackoverflow.com/questions/559839/big-o-summary-for-java-collections-framework-implementations" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should I return a Collection or a Stream?</td><td>9</td><td>181</td><td>49844</td><td>2017-09-30</td><td><a href="https://stackoverflow.com/questions/24676877/should-i-return-a-collection-or-a-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I sort a Set to a List in Java?</td><td>10</td><td>175</td><td>328255</td><td>2014-08-30</td><td><a href="https://stackoverflow.com/questions/740299/how-do-i-sort-a-set-to-a-list-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I get a List from some class properties with Java 8 Stream?</td><td>1</td><td>172</td><td>235836</td><td>2017-09-07</td><td><a href="https://stackoverflow.com/questions/30611870/how-can-i-get-a-list-from-some-class-properties-with-java-8-stream" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best way to convert list to comma separated string in java</td><td>3</td><td>168</td><td>354469</td><td>2013-04-04</td><td><a href="https://stackoverflow.com/questions/15815587/best-way-to-convert-list-to-comma-separated-string-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to iterate over a TreeMap?</td><td>4</td><td>168</td><td>325705</td><td>2013-07-08</td><td><a href="https://stackoverflow.com/questions/1318980/how-to-iterate-over-a-treemap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Change priorityQueue to max priorityqueue</td><td>18</td><td>166</td><td>281893</td><td>2014-07-16</td><td><a href="https://stackoverflow.com/questions/11003155/change-priorityqueue-to-max-priorityqueue" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Printing HashMap In Java</td><td>17</td><td>166</td><td>616194</td><td>2015-05-24</td><td><a href="https://stackoverflow.com/questions/5920135/printing-hashmap-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Sorted collection in Java</td><td>21</td><td>166</td><td>208291</td><td>2012-03-11</td><td><a href="https://stackoverflow.com/questions/416266/sorted-collection-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Arrays.asList() vs Collections.singletonList()</td><td>3</td><td>166</td><td>97510</td><td>2014-09-24</td><td><a href="https://stackoverflow.com/questions/26027396/arrays-aslist-vs-collections-singletonlist" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to copy a java.util.List into another java.util.List</td><td>14</td><td>162</td><td>295503</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/14319732/how-to-copy-a-java-util-list-into-another-java-util-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 8: performance of Streams vs Collections</td><td>5</td><td>162</td><td>109741</td><td>2016-11-09</td><td><a href="https://stackoverflow.com/questions/22658322/java-8-performance-of-streams-vs-collections" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I generate a list or array of sequential integers in Java?</td><td>9</td><td>160</td><td>156642</td><td>2015-03-16</td><td><a href="https://stackoverflow.com/questions/10242380/how-can-i-generate-a-list-or-array-of-sequential-integers-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t Java Map extend Collection?</td><td>9</td><td>158</td><td>46182</td><td>2014-11-24</td><td><a href="https://stackoverflow.com/questions/2651819/why-doesnt-java-map-extend-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is a ConcurrentModificationException thrown and how to debug it</td><td>8</td><td>157</td><td>188122</td><td>2014-06-09</td><td><a href="https://stackoverflow.com/questions/602636/why-is-a-concurrentmodificationexception-thrown-and-how-to-debug-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Binding a list in @RequestParam</td><td>7</td><td>157</td><td>273741</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4596351/binding-a-list-in-requestparam" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Map equivalent in C#</td><td>3</td><td>157</td><td>174171</td><td>2011-02-16</td><td><a href="https://stackoverflow.com/questions/687942/java-map-equivalent-in-c" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Collections.emptyMap() vs new HashMap()</td><td>9</td><td>155</td><td>57871</td><td>2013-02-13</td><td><a href="https://stackoverflow.com/questions/14846920/collections-emptymap-vs-new-hashmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Checking that a List is not empty in Hamcrest</td><td>5</td><td>154</td><td>131209</td><td>2011-05-12</td><td><a href="https://stackoverflow.com/questions/3631110/checking-that-a-list-is-not-empty-in-hamcrest" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is a WeakHashMap and when to use it?</td><td>8</td><td>153</td><td>102565</td><td>2014-12-26</td><td><a href="https://stackoverflow.com/questions/5511279/what-is-a-weakhashmap-and-when-to-use-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why aren&#39;t Java Collections remove methods generic?</td><td>10</td><td>150</td><td>19123</td><td>2015-05-22</td><td><a href="https://stackoverflow.com/questions/104799/why-arent-java-collections-remove-methods-generic" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to copy Java Collections list</td><td>18</td><td>149</td><td>267047</td><td>2013-11-24</td><td><a href="https://stackoverflow.com/questions/689370/how-to-copy-java-collections-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between an ordered and a sorted collection?</td><td>8</td><td>149</td><td>92575</td><td>2009-09-10</td><td><a href="https://stackoverflow.com/questions/1084146/what-is-the-difference-between-an-ordered-and-a-sorted-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert an array of primitive longs into a List of Longs</td><td>17</td><td>145</td><td>102278</td><td>2012-06-23</td><td><a href="https://stackoverflow.com/questions/754294/convert-an-array-of-primitive-longs-into-a-list-of-longs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Identify duplicates in a List</td><td>32</td><td>143</td><td>269489</td><td>2011-09-14</td><td><a href="https://stackoverflow.com/questions/7414667/identify-duplicates-in-a-list" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Best way to create an empty map in Java</td><td>7</td><td>143</td><td>193092</td><td>2013-12-29</td><td><a href="https://stackoverflow.com/questions/636126/best-way-to-create-an-empty-map-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which Java Collection should I use?</td><td>6</td><td>140</td><td>57799</td><td>2016-07-11</td><td><a href="https://stackoverflow.com/questions/21974361/which-java-collection-should-i-use" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>The easiest way to transform collection to array?</td><td>10</td><td>139</td><td>192529</td><td>2010-07-20</td><td><a href="https://stackoverflow.com/questions/3293946/the-easiest-way-to-transform-collection-to-array" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can Java Collections not directly store Primitives types?</td><td>7</td><td>139</td><td>62085</td><td>2011-08-23</td><td><a href="https://stackoverflow.com/questions/2504959/why-can-java-collections-not-directly-store-primitives-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the most efficient Java Collections library?</td><td>12</td><td>138</td><td>71802</td><td>2013-04-16</td><td><a href="https://stackoverflow.com/questions/629804/what-is-the-most-efficient-java-collections-library" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting String array to java.util.List</td><td>7</td><td>137</td><td>223112</td><td>2014-03-20</td><td><a href="https://stackoverflow.com/questions/6026813/converting-string-array-to-java-util-list" target="_blank">click</a></td>
+        </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

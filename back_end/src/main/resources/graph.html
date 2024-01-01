@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .search-box {
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: border 0.3s;
+        }
+
+        .search-box:focus {
+            border-color: #4CAF50;
+        }
+
+        .search-button {
+            padding: 10px;
+            margin-left: 8px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏开始 -->
+    <nav style="background-color: #333; padding: 10px; text-align: center;">
+        <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">demo1</a>
+        <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">demo2</a>
+        <a href="graph.html" style="color: white; text-decoration: none;">demo3</a>
+    </nav>
+    <!-- 导航栏结束 -->
+
+    <div class="search-container">
+        <input type="text" class="search-box" id="search-box" placeholder="Search...">
+        <button class="search-button" id="search-button">Search</button>
+    </div>
+
+    <div style="width: 80%; margin: 20px auto;">
+        <canvas id="resultChart"></canvas>
+    </div>
+
+    <script>
+        document.getElementById('search-button').onclick = function () {
+            var query = document.getElementById('search-box').value.trim().split(' ')[0]; // 取第一个词
+            fetch('http://localhost:8080/rel/get?tag=' + encodeURIComponent(query), {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Original data:', data);
+                    // 剔除"java"和用户输入的tag
+                    delete data.java;
+                    delete data[query];
+
+                    // 数据标准化
+                    const normalizedData = normalizeAndTopTen(data);
+                    console.log('Normalized data:', normalizedData);
+
+                    drawChart(normalizedData); // 使用标准化后的数据绘制图表
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        };
+
+        // 数据标准化函数
+        function normalizeAndTopTen(data) {
+            const maxVal = Math.max(...Object.values(data));
+            let normalized = {};
+
+            // 标准化数据
+            for (const key in data) {
+                normalized[key] = (data[key] / maxVal) * 100;
+            }
+
+            // 转换为数组并排序
+            let items = Object.keys(normalized).map(key => {
+                return { key: key, value: normalized[key] };
+            });
+
+            // 降序排序并选择前十个元素
+            items.sort((a, b) => b.value - a.value);
+            items = items.slice(0, 10);
+
+            // 转换回对象
+            let topTen = {};
+            items.forEach(item => {
+                topTen[item.key] = item.value;
+            });
+
+            return topTen;
+        } normalized;
+    </script>
+
+
+    <script>
+        let myChart = null;
+        // 绘制柱状图的函数
+        function drawChart(data) {
+            const ctx = document.getElementById('resultChart').getContext('2d');
+
+            // 销毁旧的图表实例（如果存在）
+            if (myChart) {
+                myChart.destroy();
+            }
+
+            // 创建新的图表实例，并将其赋值给 myChart
+            myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        label: 'Count',
+                        data: Object.values(data),
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', // 横向柱状图
+                    scales: {
+                        x: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

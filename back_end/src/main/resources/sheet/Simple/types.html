@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table.hovertable {
+            font-family: 'Courier New', Courier, monospace,'微软雅黑';
+            font-size:15px;
+            color:#101010;
+            border-width: 1px;
+            border-color: #999999;
+            border-collapse: collapse;
+        }
+        table.hovertable th {
+            background-color:#ee7a2269;
+            border-width: 1px;
+            padding: 20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+        table.hovertable tr {
+            background-color:#84e1ee;
+        }
+        table.hovertable td {
+            border-width: 1px;
+            padding:20px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .title {
+            margin: 0;
+            text-align: center;
+            color: #454545;
+            font-style: italic;
+            font-size: 50px;
+        }
+        .subtitle {
+            margin: 0;
+            text-align: center;
+            color: rgb(160, 160, 160);
+            font-size: 20px;
+        }
+        </style>
+</head>
+<body>
+   <script type="text/javascript">
+      function myF() {
+          // 声明变量
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+  
+          // 循环表格每一行，查找匹配项
+          for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display="";
+                  }else {
+                      tr[i].style.display="none";
+                  }
+              }
+          }
+      }
+  </script>
+    <div style="margin: 0 auto;text-align: center;">
+    <h1 class="title" style="margin-top: 50px;">The topic 100 questions about type</h1>
+    <h2 class="subtitle">Data from stackoverflow</h2><br />
+    <input type="text" id="myInput" onkeyup="myF()" placeholder="search..." style="margin: 0 auto; width: 400px;height: 30px;"><br><br>
+    <div style="margin: 0 auto;">
+        <table id="myTable" class="hovertable" style="margin: 0 auto;">
+        <tr>
+            <th>question</th><th>Answers</th><th>Votes</th><th>Views</th><th>Date</th><th>Link</th>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert float to String and String to float in Java</td><td>10</td><td>228</td><td>886829</td><td>2017-01-06</td><td><a href="https://stackoverflow.com/questions/7552660/convert-float-to-string-and-string-to-float-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What data type to use for money in Java?</td><td>11</td><td>217</td><td>213799</td><td>2015-10-18</td><td><a href="https://stackoverflow.com/questions/8148684/what-data-type-to-use-for-money-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>make arrayList.toArray() return more specific types</td><td>6</td><td>212</td><td>179517</td><td>2012-07-09</td><td><a href="https://stackoverflow.com/questions/5061640/make-arraylist-toarray-return-more-specific-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do you know a variable type in java?</td><td>7</td><td>186</td><td>452910</td><td>2013-06-03</td><td><a href="https://stackoverflow.com/questions/2674554/how-do-you-know-a-variable-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Convert a byte array to integer in Java and vice versa</td><td>8</td><td>165</td><td>349621</td><td>2014-12-03</td><td><a href="https://stackoverflow.com/questions/7619058/convert-a-byte-array-to-integer-in-java-and-vice-versa" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Long vs Integer, long vs int, what to use and when?</td><td>7</td><td>161</td><td>353417</td><td>2011-05-02</td><td><a href="https://stackoverflow.com/questions/5857812/long-vs-integer-long-vs-int-what-to-use-and-when" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does the Java API use int instead of short or byte?</td><td>7</td><td>141</td><td>13741</td><td>2016-05-23</td><td><a href="https://stackoverflow.com/questions/27122610/why-does-the-java-api-use-int-instead-of-short-or-byte" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can Java Collections not directly store Primitives types?</td><td>7</td><td>139</td><td>62085</td><td>2011-08-23</td><td><a href="https://stackoverflow.com/questions/2504959/why-can-java-collections-not-directly-store-primitives-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Difference between class and type</td><td>6</td><td>122</td><td>42991</td><td>2013-05-17</td><td><a href="https://stackoverflow.com/questions/16600750/difference-between-class-and-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>For what value of i does while (i == i + 1) {} loop forever?</td><td>4</td><td>120</td><td>9949</td><td>2018-11-28</td><td><a href="https://stackoverflow.com/questions/53516189/for-what-value-of-i-does-while-i-i-1-loop-forever" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does Math.floor return a double?</td><td>6</td><td>120</td><td>53054</td><td>2014-03-17</td><td><a href="https://stackoverflow.com/questions/511921/why-does-math-floor-return-a-double" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to round up integer division and have int result in Java?</td><td>9</td><td>117</td><td>179083</td><td>2013-10-17</td><td><a href="https://stackoverflow.com/questions/7446710/how-to-round-up-integer-division-and-have-int-result-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Converting stream of int&#39;s to char&#39;s in java</td><td>12</td><td>114</td><td>368714</td><td>2012-07-26</td><td><a href="https://stackoverflow.com/questions/833709/converting-stream-of-ints-to-chars-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to pass a type as a method parameter in Java</td><td>6</td><td>95</td><td>193223</td><td>2010-02-10</td><td><a href="https://stackoverflow.com/questions/2240646/how-to-pass-a-type-as-a-method-parameter-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I create some variable type alias in Java</td><td>5</td><td>81</td><td>54944</td><td>2014-05-12</td><td><a href="https://stackoverflow.com/questions/5604390/how-do-i-create-some-variable-type-alias-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between primitive and reference types?</td><td>8</td><td>76</td><td>193746</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/8790809/whats-the-difference-between-primitive-and-reference-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Which one to use, int or Integer</td><td>11</td><td>72</td><td>55935</td><td>2013-03-10</td><td><a href="https://stackoverflow.com/questions/423704/which-one-to-use-int-or-integer" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why doesn&#39;t Java throw an Exception when dividing by 0.0?</td><td>5</td><td>69</td><td>53018</td><td>2011-06-18</td><td><a href="https://stackoverflow.com/questions/2381544/why-doesnt-java-throw-an-exception-when-dividing-by-0-0" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unsigned short in Java</td><td>16</td><td>69</td><td>107066</td><td>2014-09-13</td><td><a href="https://stackoverflow.com/questions/1841461/unsigned-short-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Parametric polymorphism vs Ad-hoc polymorphism</td><td>3</td><td>69</td><td>24040</td><td>2014-10-29</td><td><a href="https://stackoverflow.com/questions/6730126/parametric-polymorphism-vs-ad-hoc-polymorphism" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Hashmap holding different data types as values for instance Integer, String and Object</td><td>5</td><td>68</td><td>133054</td><td>2015-02-07</td><td><a href="https://stackoverflow.com/questions/14599317/hashmap-holding-different-data-types-as-values-for-instance-integer-string-and" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>In Java is boolean cast useless?</td><td>3</td><td>64</td><td>6603</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/66430308/in-java-is-boolean-cast-useless" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does it mean to say a type is &quot;boxed&quot;?</td><td>6</td><td>64</td><td>32181</td><td>2012-04-29</td><td><a href="https://stackoverflow.com/questions/1418296/what-does-it-mean-to-say-a-type-is-boxed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between a class and a type in Scala (and Java)?</td><td>4</td><td>58</td><td>7914</td><td>2014-04-06</td><td><a href="https://stackoverflow.com/questions/5031640/what-is-the-difference-between-a-class-and-a-type-in-scala-and-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>James Gosling&#39;s explanation of why Java&#39;s byte is signed</td><td>4</td><td>57</td><td>8114</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/3108297/james-goslings-explanation-of-why-javas-byte-is-signed" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to refer to the current type with a type variable?</td><td>6</td><td>56</td><td>16723</td><td>2012-07-19</td><td><a href="https://stackoverflow.com/questions/7354740/is-there-a-way-to-refer-to-the-current-type-with-a-type-variable" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java 6 annotation processing -- getting a class from an annotation</td><td>4</td><td>56</td><td>18085</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/7687829/java-6-annotation-processing-getting-a-class-from-an-annotation" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Comparing Class Types in Java</td><td>8</td><td>55</td><td>200427</td><td>2011-05-27</td><td><a href="https://stackoverflow.com/questions/6149677/comparing-class-types-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Are there any real life uses for the Java _signed_ byte primitive type?</td><td>10</td><td>55</td><td>15364</td><td>2016-07-28</td><td><a href="https://stackoverflow.com/questions/6892444/are-there-any-real-life-uses-for-the-java-signed-byte-primitive-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Can the generic type of a generic Java method be used to enforce the type of arguments?</td><td>6</td><td>54</td><td>4050</td><td>2015-05-16</td><td><a href="https://stackoverflow.com/questions/30217236/can-the-generic-type-of-a-generic-java-method-be-used-to-enforce-the-type-of-arg" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Dynamically find the class that represents a primitive Java type</td><td>8</td><td>53</td><td>60288</td><td>2008-10-08</td><td><a href="https://stackoverflow.com/questions/180097/dynamically-find-the-class-that-represents-a-primitive-java-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is there a way to output the java data type to the console?</td><td>5</td><td>52</td><td>116713</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10438448/is-there-a-way-to-output-the-java-data-type-to-the-console" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What&#39;s the difference between undefined in Haskell and null in Java?</td><td>2</td><td>52</td><td>7973</td><td>2015-08-20</td><td><a href="https://stackoverflow.com/questions/3962939/whats-the-difference-between-undefined-in-haskell-and-null-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the purpose of long, double, byte, char in Java?</td><td>7</td><td>47</td><td>88951</td><td>2009-01-06</td><td><a href="https://stackoverflow.com/questions/415924/what-is-the-purpose-of-long-double-byte-char-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Smartcast is impossible because property has open or custom getter</td><td>2</td><td>46</td><td>14915</td><td>2018-07-07</td><td><a href="https://stackoverflow.com/questions/41086296/smartcast-is-impossible-because-property-has-open-or-custom-getter" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What are Java&#39;s primitive types?</td><td>14</td><td>42</td><td>85111</td><td>2015-07-23</td><td><a href="https://stackoverflow.com/questions/10430582/what-are-javas-primitive-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Comma or ampersand with multiple bounded types?</td><td>4</td><td>42</td><td>7247</td><td>2016-08-25</td><td><a href="https://stackoverflow.com/questions/28870398/comma-or-ampersand-with-multiple-bounded-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to divide two long variables in java</td><td>7</td><td>42</td><td>88552</td><td>2014-07-09</td><td><a href="https://stackoverflow.com/questions/24650871/how-to-divide-two-long-variables-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How can I determine the type of a generic field in Java?</td><td>8</td><td>40</td><td>57692</td><td>2013-04-21</td><td><a href="https://stackoverflow.com/questions/1868333/how-can-i-determine-the-type-of-a-generic-field-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Switch over type in java</td><td>9</td><td>38</td><td>75462</td><td>2016-05-01</td><td><a href="https://stackoverflow.com/questions/29570767/switch-over-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Spring IoC and Generic Interface Type</td><td>6</td><td>38</td><td>28011</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/502994/spring-ioc-and-generic-interface-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Unexpected endless byte for loop</td><td>8</td><td>35</td><td>3241</td><td>2014-04-12</td><td><a href="https://stackoverflow.com/questions/3975826/unexpected-endless-byte-for-loop" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java interfaces and return types</td><td>3</td><td>34</td><td>36932</td><td>2010-03-10</td><td><a href="https://stackoverflow.com/questions/2413829/java-interfaces-and-return-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generics and varargs</td><td>6</td><td>34</td><td>33616</td><td>2012-12-02</td><td><a href="https://stackoverflow.com/questions/3096708/java-generics-and-varargs" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Map a tinyint as boolean hibernate</td><td>10</td><td>34</td><td>67698</td><td>2014-06-17</td><td><a href="https://stackoverflow.com/questions/8038939/map-a-tinyint-as-boolean-hibernate" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I display a byte array as an array of hex bytes or unsigned decimal numbers in the Eclipse Java debugger?</td><td>5</td><td>32</td><td>29347</td><td>2014-02-02</td><td><a href="https://stackoverflow.com/questions/3939461/how-do-i-display-a-byte-array-as-an-array-of-hex-bytes-or-unsigned-decimal-numbe" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Scala&#39;s .type and Java&#39;s .class literal</td><td>2</td><td>31</td><td>8180</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6118189/scalas-type-and-javas-class-literal" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Generics: interface method that receives type argument of implementing class</td><td>3</td><td>31</td><td>66713</td><td>2013-02-02</td><td><a href="https://stackoverflow.com/questions/14665499/java-generics-interface-method-that-receives-type-argument-of-implementing-clas" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generic OR instead of AND &lt;T extends Number | CharSequence&gt;</td><td>3</td><td>31</td><td>14568</td><td>2011-11-30</td><td><a href="https://stackoverflow.com/questions/8330370/generic-or-instead-of-and-t-extends-number-charsequence" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to check if java.lang.reflect.Type is an Enum</td><td>4</td><td>30</td><td>21218</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/8974350/how-to-check-if-java-lang-reflect-type-is-an-enum" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between double a = a + int b and int a += double b?</td><td>4</td><td>30</td><td>6407</td><td>2013-12-07</td><td><a href="https://stackoverflow.com/questions/608721/what-is-the-difference-between-double-a-a-int-b-and-int-a-double-b" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why does the Java compiler not like primitive int as type for values in HashMap?</td><td>2</td><td>29</td><td>28616</td><td>2012-04-08</td><td><a href="https://stackoverflow.com/questions/2508918/why-does-the-java-compiler-not-like-primitive-int-as-type-for-values-in-hashmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to get the class of type variable in Java Generics</td><td>7</td><td>29</td><td>54455</td><td>2013-02-26</td><td><a href="https://stackoverflow.com/questions/15084670/how-to-get-the-class-of-type-variable-in-java-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generic field declaration</td><td>5</td><td>16</td><td>28339</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/32008752/java-generic-field-declaration" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: How to check if a Field is of type java.util.Collection</td><td>6</td><td>28</td><td>37827</td><td>2011-12-07</td><td><a href="https://stackoverflow.com/questions/8423390/java-how-to-check-if-a-field-is-of-type-java-util-collection" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When you make an ArrayList without specifying the object type, does it create it automatically when you add the first object?</td><td>3</td><td>28</td><td>29473</td><td>2010-10-14</td><td><a href="https://stackoverflow.com/questions/3936556/when-you-make-an-arraylist-without-specifying-the-object-type-does-it-create-it" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: Is there a difference between L and l (lowercase L) when specifying a long?</td><td>2</td><td>28</td><td>11719</td><td>2016-12-03</td><td><a href="https://stackoverflow.com/questions/40953524/java-is-there-a-difference-between-l-and-l-lowercase-l-when-specifying-a-long" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is null typed in Java</td><td>4</td><td>28</td><td>1952</td><td>2015-03-11</td><td><a href="https://stackoverflow.com/questions/28994852/is-null-typed-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>ORM supporting immutable classes</td><td>6</td><td>28</td><td>5173</td><td>2010-04-23</td><td><a href="https://stackoverflow.com/questions/2698665/orm-supporting-immutable-classes" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the inclusive range of float and double in Java?</td><td>5</td><td>27</td><td>126943</td><td>2011-02-17</td><td><a href="https://stackoverflow.com/questions/1650505/what-is-the-inclusive-range-of-float-and-double-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Is it possible to use a primitive type (int) in as a generic type in Java?</td><td>2</td><td>25</td><td>13907</td><td>2009-01-05</td><td><a href="https://stackoverflow.com/questions/414408/is-it-possible-to-use-a-primitive-type-int-in-as-a-generic-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the difference between Collection&lt;?&gt; and Collection&lt;T&gt;</td><td>5</td><td>24</td><td>1416</td><td>2015-02-20</td><td><a href="https://stackoverflow.com/questions/10777701/what-is-the-difference-between-collection-and-collectiont" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What kinds of type errors can Haskell catch at compile time that Java cannot?</td><td>4</td><td>24</td><td>2393</td><td>2014-08-19</td><td><a href="https://stackoverflow.com/questions/25374362/what-kinds-of-type-errors-can-haskell-catch-at-compile-time-that-java-cannot" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: double vs float</td><td>6</td><td>23</td><td>61801</td><td>2015-07-29</td><td><a href="https://stackoverflow.com/questions/787181/java-double-vs-float" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Signed and unsigned data types in java</td><td>2</td><td>22</td><td>50273</td><td>2017-10-07</td><td><a href="https://stackoverflow.com/questions/21089540/signed-and-unsigned-data-types-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>JavaScript-like Object data type in Java?</td><td>4</td><td>22</td><td>18263</td><td>2014-11-07</td><td><a href="https://stackoverflow.com/questions/26785759/javascript-like-object-data-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>why byte += 1 compile but byte = byte + 1 not?</td><td>8</td><td>22</td><td>11480</td><td>2011-02-11</td><td><a href="https://stackoverflow.com/questions/4969339/why-byte-1-compile-but-byte-byte-1-not" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Persisting data suited for enums</td><td>8</td><td>22</td><td>5286</td><td>2012-06-16</td><td><a href="https://stackoverflow.com/questions/492096/persisting-data-suited-for-enums" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java: How to determine if type is any of primitive/wrapper/String, or something else</td><td>6</td><td>21</td><td>24563</td><td>2016-02-29</td><td><a href="https://stackoverflow.com/questions/25039080/java-how-to-determine-if-type-is-any-of-primitive-wrapper-string-or-something" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What is the fastest way to read a large number of small files into memory?</td><td>6</td><td>21</td><td>10771</td><td>2009-04-09</td><td><a href="https://stackoverflow.com/questions/625420/what-is-the-fastest-way-to-read-a-large-number-of-small-files-into-memory" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I use reflection to invoke a method with parameters?</td><td>3</td><td>21</td><td>24507</td><td>2012-06-13</td><td><a href="https://stackoverflow.com/questions/11022208/how-do-i-use-reflection-to-invoke-a-method-with-parameters" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How do I express NaN for integer types in Java?</td><td>9</td><td>21</td><td>34060</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/8329212/how-do-i-express-nan-for-integer-types-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generics, Type Parameters and Wildcards</td><td>1</td><td>21</td><td>412</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/27465348/generics-type-parameters-and-wildcards" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to use money data type in Java, SQL, ORM</td><td>4</td><td>20</td><td>26509</td><td>2011-01-28</td><td><a href="https://stackoverflow.com/questions/4826604/how-to-use-money-data-type-in-java-sql-orm" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Typecasting an object from parent class to child</td><td>5</td><td>20</td><td>43092</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/25193029/typecasting-an-object-from-parent-class-to-child" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java launch error selection does not contain a main type</td><td>3</td><td>19</td><td>80969</td><td>2012-10-28</td><td><a href="https://stackoverflow.com/questions/4252472/java-launch-error-selection-does-not-contain-a-main-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java best type to hold price</td><td>6</td><td>19</td><td>32955</td><td>2015-01-21</td><td><a href="https://stackoverflow.com/questions/12496555/java-best-type-to-hold-price" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Primitive Types: int vs. Integer</td><td>6</td><td>19</td><td>15161</td><td>2014-06-08</td><td><a href="https://stackoverflow.com/questions/6474576/java-primitive-types-int-vs-integer" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Generics Hell: Can I construct a TypeLiteral&lt;Set&lt;T&gt;&gt; using generics?</td><td>2</td><td>18</td><td>5282</td><td>2012-01-08</td><td><a href="https://stackoverflow.com/questions/8772555/generics-hell-can-i-construct-a-typeliteralsett-using-generics" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why is `Stream.collect` type-safe and `Stream.toArray(IntFunction&lt;A[]&gt;)` is not?</td><td>1</td><td>18</td><td>6488</td><td>2016-09-21</td><td><a href="https://stackoverflow.com/questions/23789829/why-is-stream-collect-type-safe-and-stream-toarrayintfunctiona-is-not" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>How to Tell JPA the prefered DataType</td><td>4</td><td>17</td><td>36711</td><td>2012-02-25</td><td><a href="https://stackoverflow.com/questions/4088400/how-to-tell-jpa-the-prefered-datatype" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java chained inequality if (5&lt;i&lt;10)</td><td>6</td><td>17</td><td>10126</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/10658343/java-chained-inequality-if-5i10" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>List is a raw type. References to generic type List&lt;E&gt; should be parameterized</td><td>4</td><td>17</td><td>75763</td><td>2014-12-13</td><td><a href="https://stackoverflow.com/questions/10477570/list-is-a-raw-type-references-to-generic-type-liste-should-be-parameterized" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>isAssignableFrom with reference and primitive types</td><td>2</td><td>17</td><td>5614</td><td>2009-10-30</td><td><a href="https://stackoverflow.com/questions/1650614/isassignablefrom-with-reference-and-primitive-types" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java generics - overriding an abstract method and having return type of the subclass</td><td>3</td><td>17</td><td>13798</td><td>2011-06-23</td><td><a href="https://stackoverflow.com/questions/6450762/java-generics-overriding-an-abstract-method-and-having-return-type-of-the-subc" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>What does it mean to resolve a type in Java?</td><td>1</td><td>17</td><td>2200</td><td>2015-07-28</td><td><a href="https://stackoverflow.com/questions/31685551/what-does-it-mean-to-resolve-a-type-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Cannot convert from type object to long</td><td>7</td><td>16</td><td>82421</td><td>2012-12-01</td><td><a href="https://stackoverflow.com/questions/2351189/cannot-convert-from-type-object-to-long" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>java why should equals method input parameter be Object</td><td>6</td><td>16</td><td>9802</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/6636920/java-why-should-equals-method-input-parameter-be-object" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Making a generic comparator class</td><td>3</td><td>16</td><td>47775</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/15189949/making-a-generic-comparator-class" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Java Generics Syntax for arrays</td><td>6</td><td>16</td><td>4984</td><td>2011-01-23</td><td><a href="https://stackoverflow.com/questions/185594/java-generics-syntax-for-arrays" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Should I never use primitive types again?</td><td>8</td><td>16</td><td>3703</td><td>2011-04-12</td><td><a href="https://stackoverflow.com/questions/124148/should-i-never-use-primitive-types-again" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Does Haskell&#39;s type system honor the Liskov Substitution Principle?</td><td>1</td><td>16</td><td>582</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/63210289/does-haskells-type-system-honor-the-liskov-substitution-principle" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Check if Object is instance of String, HashMap, or HashMap[ ]</td><td>2</td><td>15</td><td>97429</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/9337993/check-if-object-is-instance-of-string-hashmap-or-hashmap" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Jackson JSON List with Object Type</td><td>3</td><td>15</td><td>31388</td><td>2014-04-07</td><td><a href="https://stackoverflow.com/questions/22917324/jackson-json-list-with-object-type" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why Doesn&#39;t Java Allow Casting Boolean -&gt; Int?</td><td>3</td><td>15</td><td>15823</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/16281760/why-doesnt-java-allow-casting-boolean-int" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why can&#39;t I access static final members from a dedicated enum value in Java</td><td>3</td><td>15</td><td>1299</td><td>2015-12-29</td><td><a href="https://stackoverflow.com/questions/34347996/why-cant-i-access-static-final-members-from-a-dedicated-enum-value-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Hibernate TypeResolver</td><td>1</td><td>15</td><td>4106</td><td>1969-12-31</td><td><a href="https://stackoverflow.com/questions/4725719/hibernate-typeresolver" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>Why do you name the class twice during instantiation in Java?</td><td>12</td><td>14</td><td>2713</td><td>2013-05-04</td><td><a href="https://stackoverflow.com/questions/1956591/why-do-you-name-the-class-twice-during-instantiation-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>When to use linkedhashmap over hashmap in java?</td><td>6</td><td>14</td><td>21734</td><td>2017-01-23</td><td><a href="https://stackoverflow.com/questions/26623129/when-to-use-linkedhashmap-over-hashmap-in-java" target="_blank">click</a></td>
+        </tr>
+        <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#84e1ee';">
+           <td>more precise numeric datatype than double?</td><td>6</td><td>14</td><td>30711</td><td>2011-03-04</td><td><a href="https://stackoverflow.com/questions/5200081/more-precise-numeric-datatype-than-double" target="_blank">click</a></td>
+        </tr>    
+        </table>
+    </div>
+</div>
+</body>
+</html>
