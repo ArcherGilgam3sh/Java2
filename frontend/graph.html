@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Interface</title>
@@ -11,11 +13,13 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .search-container {
             display: flex;
             justify-content: center;
             margin-top: 50px;
         }
+
         .search-box {
             box-sizing: border-box;
             border: 2px solid #ccc;
@@ -23,14 +27,16 @@
             font-size: 16px;
             background-color: white;
             background-image: url('searchicon.png');
-            background-position: 10px 10px; 
+            background-position: 10px 10px;
             background-repeat: no-repeat;
             padding: 12px 20px 12px 40px;
             transition: border 0.3s;
         }
+
         .search-box:focus {
             border-color: #4CAF50;
         }
+
         .search-button {
             padding: 10px;
             margin-left: 8px;
@@ -40,27 +46,33 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         .search-button:hover {
             background: #45a049;
         }
     </style>
 </head>
+
 <body>
-<!-- 导航栏开始 -->
-<nav style="background-color: #333; padding: 10px; text-align: center;">
-  <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">demo1</a>
-  <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">demo2</a>
-  <a href="graph.html" style="color: white; text-decoration: none;">demo3</a>
-</nav>
-<!-- 导航栏结束 -->
+    <!-- 导航栏开始 -->
+    <nav style="background-color: #333; padding: 10px; text-align: center;">
+        <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">demo1</a>
+        <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">demo2</a>
+        <a href="graph.html" style="color: white; text-decoration: none;">demo3</a>
+    </nav>
+    <!-- 导航栏结束 -->
 
     <div class="search-container">
         <input type="text" class="search-box" id="search-box" placeholder="Search...">
         <button class="search-button" id="search-button">Search</button>
     </div>
 
+    <div style="width: 80%; margin: 20px auto;">
+        <canvas id="resultChart"></canvas>
+    </div>
+
     <script>
-        document.getElementById('search-button').onclick = function() {
+        document.getElementById('search-button').onclick = function () {
             var query = document.getElementById('search-box').value;
             fetch('YOUR_BACKEND_URL', {
                 method: 'POST', // or 'PUT' if your backend requires
@@ -72,13 +84,51 @@
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
-                // Process and display the search results if necessary
+                drawChart(data); // 使用从后端获取的数据绘制图表
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
         };
     </script>
+    
+
+    <script>
+        // 示例数据
+        const exampleData = { "ClassNotFoundException": 14, "IllegalArgumentException": 12, "NullPointerException": 11, "IOException": 10, "IllegalStateException": 8, "NoSuchElementException": 6, "BeanCreationException": 5, "FileNotFoundException": 5, "SQLException": 5, "ClassCastException": 5 };
+
+        // 绘制柱状图的函数
+        function drawChart(data) {
+            const ctx = document.getElementById('resultChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        label: 'Count',
+                        data: Object.values(data),
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', // 横向柱状图
+                    scales: {
+                        x: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // 使用示例数据绘制初始图表
+        drawChart(exampleData);
+
+        // 其他已有脚本...
+    </script>
 
 </body>
+
 </html>
