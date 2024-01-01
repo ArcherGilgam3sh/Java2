@@ -73,34 +73,74 @@
 
     <script>
         document.getElementById('search-button').onclick = function () {
-            var query = document.getElementById('search-box').value;
-            fetch('YOUR_BACKEND_URL', {
-                method: 'POST', // or 'PUT' if your backend requires
+            var query = document.getElementById('search-box').value.trim().split(' ')[0]; // 取第一个词
+            fetch('http://localhost:8081/rel/get?tag=' + encodeURIComponent(query), {
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ searchQuery: query }),
+                }
             })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                drawChart(data); // 使用从后端获取的数据绘制图表
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Original data:', data);
+                    // 剔除"java"和用户输入的tag
+                    delete data.java;
+                    delete data[query];
+
+                    // 数据标准化
+                    const normalizedData = normalizeAndTopTen(data);
+                    console.log('Normalized data:', normalizedData);
+
+                    drawChart(normalizedData); // 使用标准化后的数据绘制图表
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
         };
+
+        // 数据标准化函数
+        function normalizeAndTopTen(data) {
+            const maxVal = Math.max(...Object.values(data));
+            let normalized = {};
+
+            // 标准化数据
+            for (const key in data) {
+                normalized[key] = (data[key] / maxVal) * 100;
+            }
+
+            // 转换为数组并排序
+            let items = Object.keys(normalized).map(key => {
+                return { key: key, value: normalized[key] };
+            });
+
+            // 降序排序并选择前十个元素
+            items.sort((a, b) => b.value - a.value);
+            items = items.slice(0, 10);
+
+            // 转换回对象
+            let topTen = {};
+            items.forEach(item => {
+                topTen[item.key] = item.value;
+            });
+
+            return topTen;
+        } normalized;
     </script>
-    
+
 
     <script>
-        // 示例数据
-        const exampleData = { "ClassNotFoundException": 14, "IllegalArgumentException": 12, "NullPointerException": 11, "IOException": 10, "IllegalStateException": 8, "NoSuchElementException": 6, "BeanCreationException": 5, "FileNotFoundException": 5, "SQLException": 5, "ClassCastException": 5 };
-
+        let myChart = null;
         // 绘制柱状图的函数
         function drawChart(data) {
             const ctx = document.getElementById('resultChart').getContext('2d');
-            new Chart(ctx, {
+
+            // 销毁旧的图表实例（如果存在）
+            if (myChart) {
+                myChart.destroy();
+            }
+
+            // 创建新的图表实例，并将其赋值给 myChart
+            myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: Object.keys(data),
@@ -122,11 +162,6 @@
                 }
             });
         }
-
-        // 使用示例数据绘制初始图表
-        drawChart(exampleData);
-
-        // 其他已有脚本...
     </script>
 
 </body>
