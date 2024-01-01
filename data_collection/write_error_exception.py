@@ -2,7 +2,7 @@ import psycopg2
 import json
 
 # 读取 JSON 文件
-with open('error_exception_questions.json', 'r', encoding='utf-8') as file:
+with open('updates_error_exception_questions.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 try:
@@ -27,15 +27,17 @@ try:
                                 CreationDate BIGINT,
                                 AnswerCount INT,
                                 ViewCount INT,
-                                Score INT
+                                Score INT,
+                                ExceptionMatches TEXT,
+                                ErrorMatches TEXT
                             );'''
     cursor.execute(create_table_query)
     connection.commit()
 
     # 插入数据到数据库表格中
     for item in data:
-        insert_query = '''INSERT INTO error_exception_question (Tag, QuestionID, Title, CreationDate, AnswerCount, ViewCount, Score)
-                          VALUES (%s, %s, %s, %s, %s, %s, %s);'''
+        insert_query = '''INSERT INTO error_exception_question (Tag, QuestionID, Title, CreationDate, AnswerCount, ViewCount, Score, ExceptionMatches, ErrorMatches)
+                          VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);'''
         cursor.execute(insert_query, (
             item['Tag'],
             item['Question ID'],
@@ -43,7 +45,9 @@ try:
             item['Creation Date'],
             item['Answer Count'],
             item['View Count'],
-            item['Score']
+            item['Score'],
+            item['Exception Matches'],
+            item['Error Matches']
         ))
         connection.commit()
 
