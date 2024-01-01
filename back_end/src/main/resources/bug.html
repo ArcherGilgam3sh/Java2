@@ -37,9 +37,9 @@
 <body style="height: 100%; margin: 0">
   <!-- 导航栏开始 -->
   <nav style="background-color: #333; padding: 10px; text-align: center;">
-    <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">demo1</a>
-    <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">demo2</a>
-    <a href="graph.html" style="color: white; text-decoration: none;">demo3</a>
+    <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">Topics</a>
+    <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">Bugs</a>
+    <a href="graph.html" style="color: white; text-decoration: none;">Intimacy</a>
   </nav>
   <!-- 导航栏结束 -->
 
@@ -75,9 +75,9 @@
 
         // 准备图表数据
         const chartData = {
-          labels: ['Fatal Error Score', 'Exception Score'],
+          labels: ['Fatal Error', 'Exception'],
           datasets: [{
-            label: 'Score',
+            label: 'Popularity',
             data: [errorScore, exceptionScore],
             backgroundColor: ['rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)'],
             borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
@@ -121,7 +121,7 @@
           data: {
             labels: labels,
             datasets: [{
-              label: 'Error Count',
+              label: 'Popularity',
               data: mappedValues,
               backgroundColor: 'rgba(255, 99, 132, 0.2)',
               borderColor: 'rgba(255, 99, 132, 1)',
@@ -157,7 +157,7 @@
           data: {
             labels: labels,
             datasets: [{
-              label: 'Exception Count',
+              label: 'Popularity',
               data: mappedValues,
               backgroundColor: 'rgba(54, 162, 235, 0.2)',
               borderColor: 'rgba(54, 162, 235, 1)',

@@ -37,9 +37,9 @@
 <body style="height: 100%; margin: 0">
   <!-- 导航栏开始 -->
   <nav style="background-color: #333; padding: 10px; text-align: center;">
-    <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">demo1</a>
-    <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">demo2</a>
-    <a href="graph.html" style="color: white; text-decoration: none;">demo3</a>
+    <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">Topics</a>
+    <a href="bug.html" style="color: white; margin-right: 20px; text-decoration: none;">Bugs</a>
+    <a href="graph.html" style="color: white; text-decoration: none;">Intimacy</a>
   </nav>
   <!-- 导航栏结束 -->
 
@@ -64,7 +64,7 @@
     // 定义一个函数来获取数据并绘制图表
     async function fetchDataAndDrawChart() {
       try {
-        const response = await fetch('http://localhost:8081/bug/errAndExe');
+        const response = await fetch('http://10.16.13.71:8080/bug/errAndExe');
         const data = await response.json();
 
             // 假设您想将值标准化到最大值 1000
@@ -75,9 +75,9 @@
 
         // 准备图表数据
         const chartData = {
-          labels: ['Fatal Error Score', 'Exception Score'],
+          labels: ['Fatal Error', 'Exception'],
           datasets: [{
-            label: 'Score',
+            label: 'Popularity',
             data: [errorScore, exceptionScore],
             backgroundColor: ['rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)'],
             borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
@@ -107,7 +107,7 @@
     // 获取第一个折线图的数据并绘制
     async function drawLineChart1() {
       try {
-        const response = await fetch('http://localhost:8081/bug/errStat');
+        const response = await fetch('http://10.16.13.71:8080/bug/errStat');
         const data = await response.json();
         const labels = Object.keys(data);
         const values = Object.values(data);
@@ -121,7 +121,7 @@
           data: {
             labels: labels,
             datasets: [{
-              label: 'Error Count',
+              label: 'Popularity',
               data: mappedValues,
               backgroundColor: 'rgba(255, 99, 132, 0.2)',
               borderColor: 'rgba(255, 99, 132, 1)',
@@ -144,7 +144,7 @@
     // 获取第二个折线图的数据并绘制
     async function drawLineChart2() {
       try {
-        const response = await fetch('http://localhost:8081/bug/exeStat');
+        const response = await fetch('http://10.16.13.71:8080/bug/exeStat');
         const data = await response.json();
         const labels = Object.keys(data);
         const values = Object.values(data);
@@ -157,7 +157,7 @@
           data: {
             labels: labels,
             datasets: [{
-              label: 'Exception Count',
+              label: 'Popularity',
               data: mappedValues,
               backgroundColor: 'rgba(54, 162, 235, 0.2)',
               borderColor: 'rgba(54, 162, 235, 1)',
