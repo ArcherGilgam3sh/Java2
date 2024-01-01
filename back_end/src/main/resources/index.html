@@ -132,7 +132,7 @@
       };
       myChart.setOption(option);
 
-      fetch('http://localhost:8080/top/tagsCount')
+      fetch('http://10.16.13.71:8080/top/tagsCount')
         .then(response => response.json())
         .then(data => {
           var tags = Object.keys(data);
@@ -158,7 +158,7 @@
 
   <script type="text/javascript">
     {
-      fetch('http://localhost:8080/top/tagStat')
+      fetch('http://10.16.13.71:8080/top/tagStat')
         .then(response => response.json())
         .then(data => {
           // 使用normalizeData函数处理数据
@@ -252,7 +252,7 @@
     var tagData, tagStatData; // 全局变量存储数据
 
     function fetchAndDisplayData() {
-      fetch('http://localhost:8080/top/tagsCount')
+      fetch('http://10.16.13.71:8080/top/tagsCount')
         .then(response => response.json())
         .then(data => {
           tagData = data; // 存储到全局变量
@@ -262,7 +262,7 @@
     }
 
     function fetchTagStatData() {
-      fetch('http://localhost:8080/top/tagStat')
+      fetch('http://10.16.13.71:8080/top/tagStat')
         .then(response => response.json())
         .then(data => {
           tagStatData = data.data; // 存储到全局变量

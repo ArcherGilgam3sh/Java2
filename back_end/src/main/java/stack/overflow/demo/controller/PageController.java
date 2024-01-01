@@ -29,4 +29,52 @@ public class PageController {
                 .contentType(MediaType.TEXT_HTML)
                 .body(htmlContent);
     }
+
+    @RequestMapping(value = "/index.html", method = RequestMethod.GET)
+    public ResponseEntity<byte[]> getIndexHTML() throws IOException {
+        // 读取 HTML 文件
+        Resource resource = new ClassPathResource("index.html");
+        byte[] htmlContent = Files.readAllBytes(Path.of(resource.getURI()));
+
+        // 构建响应，设置 content type
+        return ResponseEntity.ok()
+                .contentType(MediaType.TEXT_HTML)
+                .body(htmlContent);
+    }
+
+    @RequestMapping(value = "/graph.html", method = RequestMethod.GET)
+    public ResponseEntity<byte[]> getGraphHTML() throws IOException {
+        // 读取 HTML 文件
+        Resource resource = new ClassPathResource("graph.html");
+        byte[] htmlContent = Files.readAllBytes(Path.of(resource.getURI()));
+
+        // 构建响应，设置 content type
+        return ResponseEntity.ok()
+                .contentType(MediaType.TEXT_HTML)
+                .body(htmlContent);
+    }
+
+    @RequestMapping(value = "/bug.html", method = RequestMethod.GET)
+    public ResponseEntity<byte[]> getBugHTML() throws IOException {
+        // 读取 HTML 文件
+        Resource resource = new ClassPathResource("bug.html");
+        byte[] htmlContent = Files.readAllBytes(Path.of(resource.getURI()));
+
+        // 构建响应，设置 content type
+        return ResponseEntity.ok()
+                .contentType(MediaType.TEXT_HTML)
+                .body(htmlContent);
+    }
+
+    @RequestMapping(value = "/echarts-wordcloud.js", method = RequestMethod.GET)
+    public ResponseEntity<byte[]> getJS() throws IOException {
+        // 读取 HTML 文件
+        Resource resource = new ClassPathResource("echarts-wordcloud.js");
+        byte[] htmlContent = Files.readAllBytes(Path.of(resource.getURI()));
+
+        // 构建响应，设置 content type
+        return ResponseEntity.ok()
+                .contentType(MediaType.TEXT_HTML)
+                .body(htmlContent);
+    }
 }

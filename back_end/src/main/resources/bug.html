@@ -64,7 +64,7 @@
     // 定义一个函数来获取数据并绘制图表
     async function fetchDataAndDrawChart() {
       try {
-        const response = await fetch('http://localhost:8080/bug/errAndExe');
+        const response = await fetch('http://10.16.13.71:8080/bug/errAndExe');
         const data = await response.json();
 
             // 假设您想将值标准化到最大值 1000
@@ -107,7 +107,7 @@
     // 获取第一个折线图的数据并绘制
     async function drawLineChart1() {
       try {
-        const response = await fetch('http://localhost:8080/bug/errStat');
+        const response = await fetch('http://10.16.13.71:8080/bug/errStat');
         const data = await response.json();
         const labels = Object.keys(data);
         const values = Object.values(data);
@@ -144,7 +144,7 @@
     // 获取第二个折线图的数据并绘制
     async function drawLineChart2() {
       try {
-        const response = await fetch('http://localhost:8080/bug/exeStat');
+        const response = await fetch('http://10.16.13.71:8080/bug/exeStat');
         const data = await response.json();
         const labels = Object.keys(data);
         const values = Object.values(data);

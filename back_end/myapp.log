@@ -1637,3 +1637,279 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Comparable.compareTo(Ob
 2024-01-01T15:37:43.902+08:00  INFO 109764 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-01-01T15:37:43.903+08:00  INFO 109764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-01-01T15:37:43.949+08:00  INFO 109764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-01T16:01:44.227+08:00  INFO 116387 --- [main] stack.overflow.demo.DemoApplication      : Starting DemoApplication using Java 17.0.9 with PID 116387 (/home/gulu/Desktop/JAVA2-Project/target/classes started by gulu in /home/gulu/Desktop/JAVA2-Project)
+2024-01-01T16:01:44.228+08:00  INFO 116387 --- [main] stack.overflow.demo.DemoApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-01T16:01:44.497+08:00  INFO 116387 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-01T16:01:44.524+08:00  INFO 116387 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-01-01T16:01:44.756+08:00  INFO 116387 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-01T16:01:44.762+08:00  INFO 116387 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-01T16:01:44.763+08:00  INFO 116387 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-01T16:01:44.790+08:00  INFO 116387 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-01T16:01:44.790+08:00  INFO 116387 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 539 ms
+2024-01-01T16:01:44.863+08:00  INFO 116387 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-01T16:01:44.889+08:00  INFO 116387 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-01T16:01:44.905+08:00  INFO 116387 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-01T16:01:45.021+08:00  INFO 116387 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-01T16:01:45.033+08:00  INFO 116387 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-01T16:01:45.247+08:00  INFO 116387 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@beabd6b
+2024-01-01T16:01:45.248+08:00  INFO 116387 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-01T16:01:45.274+08:00  WARN 116387 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-01T16:01:45.747+08:00  INFO 116387 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-01T16:01:45.798+08:00  INFO 116387 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:01:45.921+08:00  INFO 116387 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-01T16:01:46.073+08:00  INFO 116387 --- [main] s.o.demo.service.ErrExeQuestionService   : Create new ErrExeQuestionService
+2024-01-01T16:01:46.073+08:00  INFO 116387 --- [main] s.o.d.c.ErrExeQuestionController         : Create new ErrExeQuestionController
+2024-01-01T16:01:46.118+08:00  INFO 116387 --- [main] s.o.d.service.RelevantQuestionService    : Create new RelevantQuestionService
+2024-01-01T16:01:46.118+08:00  INFO 116387 --- [main] s.o.d.c.RelevantQuestionController       : Create new RelevantQuestionController
+2024-01-01T16:01:46.167+08:00  INFO 116387 --- [main] s.o.demo.service.TopTagQuestionService   : Create new TopTagQuestionService
+2024-01-01T16:01:46.168+08:00  INFO 116387 --- [main] s.o.d.c.TopTagQuestionController         : Create new TopTagQuestionController
+2024-01-01T16:01:46.183+08:00  WARN 116387 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-01T16:01:46.332+08:00  WARN 116387 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-01-01T16:01:46.333+08:00  INFO 116387 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:01:46.334+08:00  INFO 116387 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-01T16:01:46.387+08:00  INFO 116387 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-01T16:01:46.397+08:00  INFO 116387 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-01T16:01:46.405+08:00 ERROR 116387 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:287) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:467) ~[spring-context-6.1.2.jar:6.1.2]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:256) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:201) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:979) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at stack.overflow.demo.DemoApplication.main(DemoApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:249) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:284) ~[spring-context-6.1.2.jar:6.1.2]
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:235) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:306) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:234) ~[spring-boot-3.2.1.jar:3.2.1]
+	... 15 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1046) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:232) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	... 17 common frames omitted
+Caused by: java.net.BindException: 地址已在使用
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:555) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1366) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1043) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	... 19 common frames omitted
+
+2024-01-01T16:02:35.739+08:00  INFO 116900 --- [main] stack.overflow.demo.DemoApplication      : Starting DemoApplication using Java 17.0.9 with PID 116900 (/home/gulu/Desktop/JAVA2-Project/target/classes started by gulu in /home/gulu/Desktop/JAVA2-Project)
+2024-01-01T16:02:35.740+08:00  INFO 116900 --- [main] stack.overflow.demo.DemoApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-01T16:02:36.004+08:00  INFO 116900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-01T16:02:36.029+08:00  INFO 116900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2024-01-01T16:02:36.262+08:00  INFO 116900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-01T16:02:36.268+08:00  INFO 116900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-01T16:02:36.268+08:00  INFO 116900 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-01T16:02:36.295+08:00  INFO 116900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-01T16:02:36.295+08:00  INFO 116900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 533 ms
+2024-01-01T16:02:36.366+08:00  INFO 116900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-01T16:02:36.392+08:00  INFO 116900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-01T16:02:36.408+08:00  INFO 116900 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-01T16:02:36.517+08:00  INFO 116900 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-01T16:02:36.529+08:00  INFO 116900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-01T16:02:36.726+08:00  INFO 116900 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f4d01b6
+2024-01-01T16:02:36.727+08:00  INFO 116900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-01T16:02:36.752+08:00  WARN 116900 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-01T16:02:37.156+08:00  INFO 116900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-01T16:02:37.215+08:00  INFO 116900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:02:37.328+08:00  INFO 116900 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-01T16:02:37.475+08:00  INFO 116900 --- [main] s.o.demo.service.ErrExeQuestionService   : Create new ErrExeQuestionService
+2024-01-01T16:02:37.476+08:00  INFO 116900 --- [main] s.o.d.c.ErrExeQuestionController         : Create new ErrExeQuestionController
+2024-01-01T16:02:37.518+08:00  INFO 116900 --- [main] s.o.d.service.RelevantQuestionService    : Create new RelevantQuestionService
+2024-01-01T16:02:37.518+08:00  INFO 116900 --- [main] s.o.d.c.RelevantQuestionController       : Create new RelevantQuestionController
+2024-01-01T16:02:37.565+08:00  INFO 116900 --- [main] s.o.demo.service.TopTagQuestionService   : Create new TopTagQuestionService
+2024-01-01T16:02:37.565+08:00  INFO 116900 --- [main] s.o.d.c.TopTagQuestionController         : Create new TopTagQuestionController
+2024-01-01T16:02:37.583+08:00  WARN 116900 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-01T16:02:37.737+08:00  INFO 116900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-01T16:02:37.742+08:00  INFO 116900 --- [main] stack.overflow.demo.DemoApplication      : Started DemoApplication in 2.196 seconds (process running for 2.33)
+2024-01-01T16:02:41.721+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-01T16:02:41.722+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-01T16:02:41.723+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-01T16:02:42.263+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:02:42.263+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:02:42.410+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:02:42.443+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:02:42.730+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-1] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:02:42.730+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-3] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:02:42.766+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-2] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:02:42.810+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:03:21.865+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-8] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:03:21.865+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-10] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:03:21.912+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-3] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:03:21.942+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-1] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:05:02.040+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-10] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:05:02.060+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-8] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:05:02.084+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-3] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:05:02.126+08:00  INFO 116900 --- [http-nio-0.0.0.0-8080-exec-1] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:05:10.422+08:00  INFO 116900 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:05:10.424+08:00  INFO 116900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-01T16:05:10.480+08:00  INFO 116900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-01T16:05:16.597+08:00  INFO 117429 --- [main] stack.overflow.demo.DemoApplication      : Starting DemoApplication using Java 17.0.9 with PID 117429 (/home/gulu/Desktop/JAVA2-Project/target/classes started by gulu in /home/gulu/Desktop/JAVA2-Project)
+2024-01-01T16:05:16.598+08:00  INFO 117429 --- [main] stack.overflow.demo.DemoApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-01T16:05:16.874+08:00  INFO 117429 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-01T16:05:16.904+08:00  INFO 117429 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2024-01-01T16:05:17.210+08:00  INFO 117429 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-01T16:05:17.238+08:00  INFO 117429 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-01T16:05:17.239+08:00  INFO 117429 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-01T16:05:17.332+08:00  INFO 117429 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-01T16:05:17.337+08:00  INFO 117429 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 717 ms
+2024-01-01T16:05:17.584+08:00  INFO 117429 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-01T16:05:17.611+08:00  INFO 117429 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-01T16:05:17.628+08:00  INFO 117429 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-01T16:05:17.742+08:00  INFO 117429 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-01T16:05:17.757+08:00  INFO 117429 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-01T16:05:17.965+08:00  INFO 117429 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b7068d8
+2024-01-01T16:05:17.968+08:00  INFO 117429 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-01T16:05:18.003+08:00  WARN 117429 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-01T16:05:18.432+08:00  INFO 117429 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-01T16:05:18.489+08:00  INFO 117429 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:05:18.612+08:00  INFO 117429 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-01T16:05:18.771+08:00  INFO 117429 --- [main] s.o.demo.service.ErrExeQuestionService   : Create new ErrExeQuestionService
+2024-01-01T16:05:18.771+08:00  INFO 117429 --- [main] s.o.d.c.ErrExeQuestionController         : Create new ErrExeQuestionController
+2024-01-01T16:05:18.816+08:00  INFO 117429 --- [main] s.o.d.service.RelevantQuestionService    : Create new RelevantQuestionService
+2024-01-01T16:05:18.817+08:00  INFO 117429 --- [main] s.o.d.c.RelevantQuestionController       : Create new RelevantQuestionController
+2024-01-01T16:05:18.874+08:00  INFO 117429 --- [main] s.o.demo.service.TopTagQuestionService   : Create new TopTagQuestionService
+2024-01-01T16:05:18.874+08:00  INFO 117429 --- [main] s.o.d.c.TopTagQuestionController         : Create new TopTagQuestionController
+2024-01-01T16:05:18.889+08:00  WARN 117429 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-01T16:05:19.066+08:00  INFO 117429 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-01T16:05:19.072+08:00  INFO 117429 --- [main] stack.overflow.demo.DemoApplication      : Started DemoApplication in 2.725 seconds (process running for 2.946)
+2024-01-01T16:05:22.624+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-01T16:05:22.624+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-01T16:05:22.625+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-01T16:05:23.067+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:05:23.071+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:05:23.163+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:05:23.197+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:05:41.737+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:05:41.737+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:05:41.788+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:05:41.840+08:00  INFO 117429 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:08:34.611+08:00  INFO 117429 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:08:34.612+08:00  INFO 117429 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-01T16:08:34.662+08:00  INFO 117429 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-01T16:08:36.700+08:00  INFO 118032 --- [main] stack.overflow.demo.DemoApplication      : Starting DemoApplication using Java 17.0.9 with PID 118032 (/home/gulu/Desktop/JAVA2-Project/target/classes started by gulu in /home/gulu/Desktop/JAVA2-Project)
+2024-01-01T16:08:36.702+08:00  INFO 118032 --- [main] stack.overflow.demo.DemoApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-01T16:08:36.999+08:00  INFO 118032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-01T16:08:37.030+08:00  INFO 118032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2024-01-01T16:08:37.273+08:00  INFO 118032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-01T16:08:37.279+08:00  INFO 118032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-01T16:08:37.279+08:00  INFO 118032 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-01T16:08:37.305+08:00  INFO 118032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-01T16:08:37.305+08:00  INFO 118032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 579 ms
+2024-01-01T16:08:37.383+08:00  INFO 118032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-01T16:08:37.410+08:00  INFO 118032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-01T16:08:37.426+08:00  INFO 118032 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-01T16:08:37.538+08:00  INFO 118032 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-01T16:08:37.551+08:00  INFO 118032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-01T16:08:37.789+08:00  INFO 118032 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53f7a906
+2024-01-01T16:08:37.790+08:00  INFO 118032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-01T16:08:37.815+08:00  WARN 118032 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-01T16:08:38.256+08:00  INFO 118032 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-01T16:08:38.316+08:00  INFO 118032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:08:38.438+08:00  INFO 118032 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-01T16:08:38.602+08:00  INFO 118032 --- [main] s.o.demo.service.ErrExeQuestionService   : Create new ErrExeQuestionService
+2024-01-01T16:08:38.602+08:00  INFO 118032 --- [main] s.o.d.c.ErrExeQuestionController         : Create new ErrExeQuestionController
+2024-01-01T16:08:38.642+08:00  INFO 118032 --- [main] s.o.d.service.RelevantQuestionService    : Create new RelevantQuestionService
+2024-01-01T16:08:38.643+08:00  INFO 118032 --- [main] s.o.d.c.RelevantQuestionController       : Create new RelevantQuestionController
+2024-01-01T16:08:38.689+08:00  INFO 118032 --- [main] s.o.demo.service.TopTagQuestionService   : Create new TopTagQuestionService
+2024-01-01T16:08:38.690+08:00  INFO 118032 --- [main] s.o.d.c.TopTagQuestionController         : Create new TopTagQuestionController
+2024-01-01T16:08:38.704+08:00  WARN 118032 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-01T16:08:38.873+08:00  INFO 118032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-01T16:08:38.878+08:00  INFO 118032 --- [main] stack.overflow.demo.DemoApplication      : Started DemoApplication in 2.496 seconds (process running for 2.733)
+2024-01-01T16:08:43.439+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-01T16:08:43.440+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-01T16:08:43.441+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-01T16:08:43.951+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:08:43.951+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:08:44.065+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:08:44.117+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:08:50.428+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-1] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:08:50.428+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-2] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:08:50.487+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-3] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:08:50.519+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:08:51.796+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception and Error Stats
+2024-01-01T16:08:51.796+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.ErrExeQuestionController         : Receive new request for Error Stats
+2024-01-01T16:08:51.800+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-8] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception Stats
+2024-01-01T16:09:36.496+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception and Error Stats
+2024-01-01T16:09:36.503+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.ErrExeQuestionController         : Receive new request for Error Stats
+2024-01-01T16:09:36.510+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception Stats
+2024-01-01T16:09:44.924+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.ErrExeQuestionController         : Receive new request for Error Stats
+2024-01-01T16:09:44.924+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception Stats
+2024-01-01T16:09:44.924+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception and Error Stats
+2024-01-01T16:09:57.340+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-8] s.o.d.c.RelevantQuestionController       : Receive new request for tags relevant to spring
+2024-01-01T16:10:52.195+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-8] s.o.d.c.ErrExeQuestionController         : Receive new request for Error Stats
+2024-01-01T16:10:52.195+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception and Error Stats
+2024-01-01T16:10:52.199+08:00  INFO 118032 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception Stats
+2024-01-01T16:11:17.670+08:00  INFO 118032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:11:17.672+08:00  INFO 118032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-01T16:11:17.724+08:00  INFO 118032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-01T16:11:19.255+08:00  INFO 118679 --- [main] stack.overflow.demo.DemoApplication      : Starting DemoApplication using Java 17.0.9 with PID 118679 (/home/gulu/Desktop/JAVA2-Project/target/classes started by gulu in /home/gulu/Desktop/JAVA2-Project)
+2024-01-01T16:11:19.258+08:00  INFO 118679 --- [main] stack.overflow.demo.DemoApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-01-01T16:11:19.609+08:00  INFO 118679 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-01T16:11:19.640+08:00  INFO 118679 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2024-01-01T16:11:19.874+08:00  INFO 118679 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-01-01T16:11:19.880+08:00  INFO 118679 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-01T16:11:19.880+08:00  INFO 118679 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-01T16:11:19.907+08:00  INFO 118679 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-01T16:11:19.907+08:00  INFO 118679 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 611 ms
+2024-01-01T16:11:19.986+08:00  INFO 118679 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-01T16:11:20.011+08:00  INFO 118679 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-01T16:11:20.026+08:00  INFO 118679 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-01T16:11:20.134+08:00  INFO 118679 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-01T16:11:20.148+08:00  INFO 118679 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-01T16:11:20.360+08:00  INFO 118679 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a4c98d7
+2024-01-01T16:11:20.361+08:00  INFO 118679 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-01T16:11:20.408+08:00  WARN 118679 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-01T16:11:20.837+08:00  INFO 118679 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-01T16:11:20.901+08:00  INFO 118679 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:11:21.031+08:00  INFO 118679 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-01-01T16:11:21.195+08:00  INFO 118679 --- [main] s.o.demo.service.ErrExeQuestionService   : Create new ErrExeQuestionService
+2024-01-01T16:11:21.195+08:00  INFO 118679 --- [main] s.o.d.c.ErrExeQuestionController         : Create new ErrExeQuestionController
+2024-01-01T16:11:21.236+08:00  INFO 118679 --- [main] s.o.d.service.RelevantQuestionService    : Create new RelevantQuestionService
+2024-01-01T16:11:21.237+08:00  INFO 118679 --- [main] s.o.d.c.RelevantQuestionController       : Create new RelevantQuestionController
+2024-01-01T16:11:21.291+08:00  INFO 118679 --- [main] s.o.demo.service.TopTagQuestionService   : Create new TopTagQuestionService
+2024-01-01T16:11:21.291+08:00  INFO 118679 --- [main] s.o.d.c.TopTagQuestionController         : Create new TopTagQuestionController
+2024-01-01T16:11:21.305+08:00  WARN 118679 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-01T16:11:21.470+08:00  INFO 118679 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-01-01T16:11:21.476+08:00  INFO 118679 --- [main] stack.overflow.demo.DemoApplication      : Started DemoApplication in 2.787 seconds (process running for 3.038)
+2024-01-01T16:11:21.759+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-01T16:11:21.760+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-01T16:11:21.760+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-01-01T16:11:21.944+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:11:21.949+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-5] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:11:22.618+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:11:23.349+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:11:26.003+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-9] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception and Error Stats
+2024-01-01T16:11:26.003+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-10] s.o.d.c.ErrExeQuestionController         : Receive new request for Error Stats
+2024-01-01T16:11:26.003+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-1] s.o.d.c.ErrExeQuestionController         : Receive new request for Exception Stats
+2024-01-01T16:11:36.033+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-4] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:11:36.036+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-6] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:11:36.117+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-7] s.o.d.c.TopTagQuestionController         : Receive new request for all tags count
+2024-01-01T16:11:36.169+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-8] s.o.d.c.TopTagQuestionController         : Receive new request for all tags stats
+2024-01-01T16:11:54.355+08:00  INFO 118679 --- [http-nio-0.0.0.0-8080-exec-1] s.o.d.c.RelevantQuestionController       : Receive new request for tags relevant to lambda
+2024-01-01T16:12:36.384+08:00  INFO 118679 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-01T16:12:36.385+08:00  INFO 118679 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-01T16:12:36.439+08:00  INFO 118679 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
